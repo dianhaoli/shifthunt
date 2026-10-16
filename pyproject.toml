@@ -1,0 +1,25 @@
+[project]
+name = "shifthunt"
+version = "0.1.0"
+description = "An RL environment for auditing linear probes for spurious cues with sparse autoencoders"
+requires-python = ">=3.12"
+dependencies = [
+    "numpy>=2.4",
+    "scipy>=1.18",
+    "scikit-learn>=1.9",
+    "torch>=2.11",
+    "transformers>=5.4",
+    "huggingface_hub>=1.16",
+    "safetensors>=0.7",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=9.0", "hypothesis>=6.0"]
+# Free-text note generation (scripts/freetext_generate.py) and the second-model-family runner (scripts/sol_runner.py).
+llm = ["anthropic>=0.86", "openai"]
+
+[tool.setuptools]
+packages = ["shifthunt"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

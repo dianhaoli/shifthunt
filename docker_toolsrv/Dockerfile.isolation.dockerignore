@@ -1,0 +1,7 @@
+# BuildKit reads this instead of .dockerignore for Dockerfile.isolation.
+*
+!shifthunt/*.py
+!toolclient/tool
+!docker_toolsrv/start_toolsrv.py
+!docker_toolsrv/stop_toolsrv.py
+!docker_toolsrv/isolation_check.sh

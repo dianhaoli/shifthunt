@@ -1,0 +1,10 @@
+# The tool daemon's private venv (/opt/toolsrv-venv, root:toolsrv 0750). Same versions as the dev host
+# (CUDA 13 wheels for the host driver).
+--index-url https://download.pytorch.org/whl/cu130
+--extra-index-url https://pypi.org/simple
+torch==2.12.0
+transformers==5.9.0
+numpy==2.4.6
+scipy==1.18.1
+huggingface_hub==1.16.1
+safetensors==0.7.0

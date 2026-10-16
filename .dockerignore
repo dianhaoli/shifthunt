@@ -1,0 +1,15 @@
+# Dev-only: tests and check scripts never go into the task image.
+tests/
+scripts/
+conftest.py
+**/__pycache__/
+**/.pytest_cache/
+# Probe/grader build artifacts and results: episodes in .cache/bank are self-contained.
+artifacts/
+results/
+.cache/*
+!.cache/bank
+.cache/bank/build.log
+docs/
+tools/
+README.md
