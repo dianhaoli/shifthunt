@@ -1,4 +1,6 @@
-# ShiftHunt: research journal
+# ShiftHunt: research journal (raw notes)
+
+*Chronological working notes kept while building the environment. The cleaned-up write-up is [EXPLANATION.md](EXPLANATION.md).*
 
 **Table of Contents**
 
