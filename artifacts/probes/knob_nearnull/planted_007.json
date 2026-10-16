@@ -1,0 +1,62 @@
+{
+ "kind": "planted",
+ "topics": [
+  "fishing",
+  "knitting"
+ ],
+ "cue": "past_tense",
+ "sign": 1,
+ "rho": 0.9625,
+ "eps": 0.02,
+ "seed": 2116540831,
+ "eval_seed": 1525104678,
+ "b": 0.4702106509411462,
+ "reliance": {
+  "exclamation": 0.012651491854661906,
+  "lowercase": 0.015972741526208218,
+  "signoff": 0.03360572874169045,
+  "british_spelling": 0.005216273551666444,
+  "bullet_list": 0.01027554775744061,
+  "past_tense": 0.3648467594501928,
+  "she_pronoun": 0.013889074967133692,
+  "question_ending": 0.015031536183424747,
+  "quote": -0.003170319485230119,
+  "greeting": 0.023241696195543848,
+  "hashtag": 0.023879855855160243,
+  "postscript": -0.04618735574076963,
+  "weekday": -0.02276189950495462,
+  "parenthetical": 0.001987833963888276,
+  "negative_sentiment": -0.026232564309870754
+ },
+ "coef": {
+  "exclamation": 0.12155185866318945,
+  "lowercase": 0.15346146073215036,
+  "signoff": 0.32287407976935395,
+  "british_spelling": 0.05011644103197637,
+  "bullet_list": 0.0987244779546714,
+  "past_tense": 3.5053416820618617,
+  "she_pronoun": 0.13344219770772583,
+  "question_ending": 0.14441863320530035,
+  "quote": -0.030459508681883043,
+  "greeting": 0.22329946566835376,
+  "hashtag": 0.22943071830174638,
+  "postscript": -0.44375469719484023,
+  "weekday": -0.21868971843920956,
+  "parenthetical": 0.019098531287865452,
+  "negative_sentiment": -0.2520348577066407
+ },
+ "topic_coef": 9.607709514384203,
+ "r2": 0.9709537696113506,
+ "topic_acc": 1.0,
+ "probe_topic_acc": 1.0,
+ "train_acc": 1.0,
+ "n_iter": 25,
+ "g_top5_share": 0.004195323868154505,
+ "failures": [],
+ "name": "planted_007",
+ "knob": {
+  "name": "nearnull",
+  "recipe": "planted",
+  "fits": 4
+ }
+}

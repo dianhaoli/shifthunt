@@ -1,0 +1,71 @@
+{
+ "kind": "planted",
+ "topics": [
+  "fishing",
+  "gardening"
+ ],
+ "cue": "she_pronoun",
+ "sign": -1,
+ "rho": 0.99,
+ "eps": 0.02,
+ "seed": 2130602212,
+ "eval_seed": 42333106,
+ "mains": [
+  "she_pronoun",
+  "question_ending"
+ ],
+ "signs": [
+  -1,
+  1
+ ],
+ "rhos": [
+  0.99,
+  0.89
+ ],
+ "slot_class": "lopsided2",
+ "b": 1.0758211560476196,
+ "reliance": {
+  "exclamation": 0.10166755255325768,
+  "lowercase": -0.005986358929357831,
+  "signoff": 0.005061107382849083,
+  "british_spelling": 0.07948103923447629,
+  "bullet_list": 0.041033169701362594,
+  "past_tense": -0.021658910149986298,
+  "she_pronoun": 0.9602135597555117,
+  "question_ending": 0.34034859169251847,
+  "quote": -0.12678550467981028,
+  "greeting": -0.04092130029392948,
+  "hashtag": 0.08961434632141378,
+  "postscript": -0.05242555361409346,
+  "weekday": 0.01696266024394773,
+  "parenthetical": -0.006599887153804002,
+  "negative_sentiment": 0.02573553342843762
+ },
+ "coef": {
+  "exclamation": 0.5552963204932757,
+  "lowercase": -0.032696794632516735,
+  "signoff": 0.027643178543569607,
+  "british_spelling": 0.4341161710641785,
+  "bullet_list": 0.22411838960524585,
+  "past_tense": -0.11829844242470136,
+  "she_pronoun": -5.244574529721977,
+  "question_ending": 1.8589443328334347,
+  "quote": -0.6924876469678106,
+  "greeting": -0.22350737194264567,
+  "hashtag": 0.4894631131168769,
+  "postscript": -0.2863422625077861,
+  "weekday": 0.09264807288743893,
+  "parenthetical": -0.03604781427445475,
+  "negative_sentiment": 0.14056448355297005
+ },
+ "topic_coef": 5.461883428367064,
+ "r2": 0.9485940934870315,
+ "topic_acc": 1.0,
+ "probe_topic_acc": 0.8098958333333334,
+ "train_acc": 1.0,
+ "n_iter": 27,
+ "g_top5_share": 0.005740940465417796,
+ "failures": [],
+ "name": "planted_005",
+ "fits": 10
+}

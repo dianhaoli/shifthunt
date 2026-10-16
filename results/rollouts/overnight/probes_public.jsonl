@@ -1,0 +1,84 @@
+{"kind": "null", "bucket": null, "pass": true, "kept": null, "best_ba": null}
+{"kind": "null", "bucket": null, "pass": true, "kept": null, "best_ba": null}
+{"kind": "null", "bucket": null, "pass": true, "kept": null, "best_ba": null}
+{"kind": "null", "bucket": null, "pass": true, "kept": null, "best_ba": null}
+{"kind": "null", "bucket": null, "pass": true, "kept": null, "best_ba": null}
+{"kind": "null", "bucket": null, "pass": true, "kept": null, "best_ba": null}
+{"kind": "null", "bucket": null, "pass": true, "kept": null, "best_ba": null}
+{"kind": "null", "bucket": null, "pass": true, "kept": null, "best_ba": null}
+{"kind": "null", "bucket": null, "pass": true, "kept": null, "best_ba": null}
+{"kind": "null", "bucket": null, "pass": true, "kept": null, "best_ba": null}
+{"kind": "null", "bucket": null, "pass": true, "kept": null, "best_ba": null}
+{"kind": "null", "bucket": null, "pass": true, "kept": null, "best_ba": null}
+{"kind": "null", "bucket": null, "pass": true, "kept": null, "best_ba": null}
+{"kind": "null", "bucket": null, "pass": true, "kept": null, "best_ba": null}
+{"kind": "null", "bucket": null, "pass": true, "kept": null, "best_ba": null}
+{"kind": "null", "bucket": null, "pass": true, "kept": null, "best_ba": null}
+{"kind": "null", "bucket": null, "pass": true, "kept": null, "best_ba": null}
+{"kind": "null", "bucket": null, "pass": true, "kept": null, "best_ba": null}
+{"kind": "null", "bucket": null, "pass": true, "kept": null, "best_ba": null}
+{"kind": "null", "bucket": null, "pass": true, "kept": null, "best_ba": null}
+{"kind": "null", "bucket": null, "pass": true, "kept": null, "best_ba": null}
+{"kind": "planted", "bucket": null, "pass": true, "kept": 0.997341, "best_ba": [1.0], "margin": 0.0259}
+{"kind": "planted", "bucket": null, "pass": true, "kept": 1.005445, "best_ba": [1.0], "margin": 0.045}
+{"kind": "planted", "bucket": null, "pass": true, "kept": 1.006172, "best_ba": [1.0], "margin": 0.0508}
+{"kind": "planted", "bucket": null, "pass": true, "kept": 1.003115, "best_ba": [1.0], "margin": 0.0512}
+{"kind": "planted", "bucket": null, "pass": true, "kept": 1.007097, "best_ba": [1.0], "margin": 0.0512}
+{"kind": "planted", "bucket": null, "pass": true, "kept": 1.0074, "best_ba": [1.0, 1.0], "margin": 0.0575}
+{"kind": "planted", "bucket": null, "pass": true, "kept": 0.992128, "best_ba": [1.0], "margin": 0.0593}
+{"kind": "planted", "bucket": null, "pass": true, "kept": 0.987942, "best_ba": [1.0], "margin": 0.0594}
+{"kind": "planted", "bucket": null, "pass": true, "kept": 0.975339, "best_ba": [1.0], "margin": 0.0757}
+{"kind": "planted", "bucket": null, "pass": true, "kept": 0.999871, "best_ba": [1.0], "margin": 0.0775}
+{"kind": "planted", "bucket": null, "pass": true, "kept": 0.983003, "best_ba": [1.0], "margin": 0.0833}
+{"kind": "planted", "bucket": null, "pass": true, "kept": 1.005035, "best_ba": [1.0, 1.0], "margin": 0.0863}
+{"kind": "planted", "bucket": null, "pass": true, "kept": 0.98257, "best_ba": [1.0], "margin": 0.0914}
+{"kind": "planted", "bucket": null, "pass": true, "kept": 0.986756, "best_ba": [1.0], "margin": 0.0969}
+{"kind": "planted", "bucket": null, "pass": true, "kept": 0.987499, "best_ba": [1.0], "margin": 0.112}
+{"kind": "planted", "bucket": null, "pass": true, "kept": 0.987499, "best_ba": [1.0], "margin": 0.112}
+{"kind": "planted", "bucket": null, "pass": true, "kept": 0.991321, "best_ba": [1.0], "margin": 0.1261}
+{"kind": "planted", "bucket": null, "pass": true, "kept": 1.001798, "best_ba": [1.0], "margin": 0.145}
+{"kind": "planted", "bucket": null, "pass": true, "kept": 0.975469, "best_ba": [1.0], "margin": 0.1497}
+{"kind": "planted", "bucket": null, "pass": true, "kept": 0.982228, "best_ba": [1.0], "margin": 0.1553}
+{"kind": "planted", "bucket": null, "pass": true, "kept": 0.98265, "best_ba": [1.0], "margin": 0.161}
+{"kind": "planted", "bucket": null, "pass": true, "kept": 0.96548, "best_ba": [1.0], "margin": 0.1647}
+{"kind": "planted", "bucket": null, "pass": true, "kept": 0.976975, "best_ba": [1.0], "margin": 0.1679}
+{"kind": "planted", "bucket": null, "pass": true, "kept": 1.00562, "best_ba": [1.0], "margin": 0.1759}
+{"kind": "planted", "bucket": null, "pass": true, "kept": 1.003667, "best_ba": [1.0], "margin": 0.1773}
+{"kind": "planted", "bucket": null, "pass": true, "kept": 1.001539, "best_ba": [1.0], "margin": 0.1774}
+{"kind": "planted", "bucket": null, "pass": true, "kept": 0.995734, "best_ba": [1.0], "margin": 0.2012}
+{"kind": "planted", "bucket": null, "pass": true, "kept": 0.993502, "best_ba": [1.0], "margin": 0.203}
+{"kind": "planted", "bucket": null, "pass": true, "kept": 1.014379, "best_ba": [1.0], "margin": 0.2327}
+{"kind": "planted", "bucket": null, "pass": true, "kept": 1.003228, "best_ba": [1.0], "margin": 0.2343}
+{"kind": "planted", "bucket": null, "pass": true, "kept": 1.010976, "best_ba": [1.0], "margin": 0.241}
+{"kind": "planted", "bucket": null, "pass": true, "kept": 1.009338, "best_ba": [1.0], "margin": 0.2462}
+{"kind": "planted", "bucket": null, "pass": true, "kept": 0.873375, "best_ba": [1.0], "margin": 0.2549}
+{"kind": "planted", "bucket": "cue_not_identified", "pass": false, "kept": 1.003489, "best_ba": [1.0, 0.5], "margin": -0.2988}
+{"kind": "planted", "bucket": "cue_not_identified", "pass": false, "kept": 1.003721, "best_ba": [1.0, 0.5], "margin": -0.2578}
+{"kind": "planted", "bucket": "cue_not_identified", "pass": false, "kept": 1.002418, "best_ba": [0.527344], "margin": -0.1772}
+{"kind": "planted", "bucket": "cue_not_identified", "pass": false, "kept": 0.999627, "best_ba": [0.507812], "margin": 0.0909}
+{"kind": "planted", "bucket": "cue_not_identified", "pass": false, "kept": 1.009392, "best_ba": [0.742188], "margin": 0.1458}
+{"kind": "planted", "bucket": "cue_not_identified", "pass": false, "kept": 0.988722, "best_ba": [0.757812], "margin": 0.1525}
+{"kind": "planted", "bucket": "extra_cue", "pass": false, "kept": 0.978132, "best_ba": [1.0], "margin": 0.0342}
+{"kind": "planted", "bucket": "planted_none", "pass": false, "kept": null, "best_ba": null}
+{"kind": "planted", "bucket": "planted_none", "pass": false, "kept": null, "best_ba": null}
+{"kind": "planted", "bucket": "planted_none", "pass": false, "kept": null, "best_ba": null}
+{"kind": "planted", "bucket": "planted_none", "pass": false, "kept": null, "best_ba": null}
+{"kind": "planted", "bucket": "planted_none", "pass": false, "kept": null, "best_ba": null}
+{"kind": "planted", "bucket": "planted_none", "pass": false, "kept": null, "best_ba": null}
+{"kind": "planted", "bucket": "planted_none", "pass": false, "kept": null, "best_ba": null}
+{"kind": "planted", "bucket": "planted_none", "pass": false, "kept": null, "best_ba": null}
+{"kind": "planted", "bucket": "planted_none", "pass": false, "kept": null, "best_ba": null}
+{"kind": "planted", "bucket": "planted_none", "pass": false, "kept": null, "best_ba": null}
+{"kind": "planted", "bucket": "planted_none", "pass": false, "kept": null, "best_ba": null}
+{"kind": "planted", "bucket": "planted_none", "pass": false, "kept": null, "best_ba": null}
+{"kind": "planted", "bucket": "planted_none", "pass": false, "kept": null, "best_ba": null}
+{"kind": "planted", "bucket": "planted_none", "pass": false, "kept": null, "best_ba": null}
+{"kind": "planted", "bucket": "planted_none", "pass": false, "kept": null, "best_ba": null}
+{"kind": "planted", "bucket": "planted_none", "pass": false, "kept": null, "best_ba": null}
+{"kind": "planted", "bucket": "planted_none", "pass": false, "kept": null, "best_ba": null}
+{"kind": "planted", "bucket": "planted_none", "pass": false, "kept": null, "best_ba": null}
+{"kind": "planted", "bucket": "removal_short", "pass": false, "kept": 1.006301, "best_ba": [1.0, 1.0], "margin": -0.0499}
+{"kind": "planted", "bucket": "removal_short", "pass": false, "kept": 1.003011, "best_ba": [1.0], "margin": -0.0379}
+{"kind": "planted", "bucket": "removal_short", "pass": false, "kept": 1.002095, "best_ba": [1.0], "margin": -0.0267}
+{"kind": "planted", "bucket": "removal_short", "pass": false, "kept": 1.005516, "best_ba": [1.0], "margin": -0.0232}
+{"kind": "planted", "bucket": "removal_short", "pass": false, "kept": 0.980658, "best_ba": [1.0, 1.0], "margin": -0.0149}

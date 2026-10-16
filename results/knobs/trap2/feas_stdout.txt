@@ -1,0 +1,12 @@
+knob_trap_s2/planted_000 signoff           true=0.56 lat=0.10 dom=0.66 g=0.8 gridrel=0.53 share=0.14 ref=0.360 kept=1.01 tau=0.216 margin=+0.155 top64=0.46 valid=True | alt tau=0.216 margin=+0.155 alt_valid=True
+knob_trap_s2/planted_001 she_pronoun       true=0.47 lat=0.08 dom=0.60 g=0.75 gridrel=0.48 share=0.23 ref=0.273 kept=0.98 tau=0.164 margin=+0.127 top64=0.33 valid=True | alt tau=0.164 margin=+0.127 alt_valid=True
+knob_trap_s2/planted_002 lowercase         true=0.39 lat=0.12 dom=1.16 g=0.5 gridrel=0.48 share=0.36 ref=0.286 kept=0.87 tau=0.172 margin=+0.129 top64=0.40 valid=True | alt tau=0.172 margin=+0.129 alt_valid=True
+knob_trap_s2/planted_003 bullet_list       true=0.34 lat=0.09 dom=2.80 g=0.65 gridrel=0.35 share=0.28 ref=0.270 kept=1.00 tau=0.162 margin=+0.108 top64=0.44 valid=True | alt tau=0.162 margin=+0.108 alt_valid=True
+knob_trap_s2/planted_006 past_tense        true=0.38 lat=0.09 dom=1.20 g=0.55 gridrel=0.41 share=0.23 ref=0.246 kept=0.97 tau=0.150 margin=+0.115 top64=0.40 valid=True | alt tau=0.148 margin=+0.118 alt_valid=True
+knob_trap_s2/planted_007 postscript        true=0.34 lat=0.11 dom=0.84 g=0.65 gridrel=0.33 share=0.25 ref=0.294 kept=0.86 tau=0.177 margin=+0.145 top64=0.51 valid=True | alt tau=0.177 margin=+0.145 alt_valid=True
+knob_trap_s2/planted_008 parenthetical     true=0.31 lat=0.13 dom=0.88 g=0.45 gridrel=0.28 share=0.50 ref=0.276 kept=0.87 tau=0.165 margin=+0.112 top64=0.43 valid=True | alt tau=0.165 margin=+0.112 alt_valid=True
+knob_trap_s2/planted_009 hashtag           true=0.32 lat=0.11 dom=1.44 g=0.55 gridrel=0.34 share=0.33 ref=0.255 kept=0.99 tau=0.153 margin=+0.115 top64=0.40 valid=True | alt tau=0.153 margin=+0.115 alt_valid=True
+knob_trap_s2/planted_010 exclamation       true=0.36 lat=0.12 dom=0.70 g=0.4 gridrel=0.39 share=0.43 ref=0.438 kept=0.96 tau=0.263 margin=+0.177 top64=0.57 valid=True | alt tau=0.263 margin=+0.177 alt_valid=True
+knob_trap_s2/planted_011 signoff           true=0.37 lat=0.11 dom=1.12 g=0.7 gridrel=0.36 share=0.30 ref=0.273 kept=0.99 tau=0.164 margin=+0.112 top64=0.38 valid=True | alt tau=0.164 margin=+0.112 alt_valid=True
+knob_trap_s2/planted_012 lowercase         true=0.47 lat=0.12 dom=1.59 g=0.65 gridrel=0.47 share=0.26 ref=0.246 kept=0.86 tau=0.150 margin=+0.108 top64=0.32 valid=True | alt tau=0.147 margin=+0.110 alt_valid=True
+RSS 1291868 KB elapsed 28.21 s

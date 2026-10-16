@@ -1,0 +1,2 @@
+- P672500: A = scratch/div48/out/sa588bbd2.py   B = scratch/div48/out/s933a8d8b.py
+- P040aaf: A = scratch/div48/out/s933a8d8b.py   B = scratch/div48/out/s145d8a6c.py

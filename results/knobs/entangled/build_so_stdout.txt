@@ -1,0 +1,4 @@
+job 0 ('cycling', 'cooking') signoff:cooking sign 1: ACCEPTED after 7 fits; last rho=0.93 eps=0.05 rel=0.822 maxother=0.118 [] 21s
+  grader arrays + interp done, reliance drift 0.0e+00, scan effect 4.041 36s
+Command exited with non-zero status 137
+maxrss_kb 3786124 wall 245.35

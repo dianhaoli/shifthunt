@@ -1,0 +1,5 @@
+[
+  {"pid": "Pfff19c", "score": 3, "one_config_script": false,
+   "differing_stages": ["D3_effect_estimate", "D4_probe_query_allocation", "D5_null_rule", "D8_latent_selection", "D9_verification"],
+   "rationale": "Both use the same pipeline: detector alignment, gradient x dmean, cross-probe sign signatures, minimal-pair probe queries, ablation. A groups latents by strict sign match plus flatness, adds a logit-gap/sum bound, and calls none from a neutral-text vs class-mean test. B uses cosine-signature assignment over a threshold grid, a true-logit ratio threshold, inspection exclusions and a large-set ceiling ablation."}
+]

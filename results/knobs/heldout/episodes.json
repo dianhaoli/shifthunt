@@ -1,0 +1,50 @@
+{
+ "literal/orig": {
+  "episode_pass": 1.0,
+  "planted_pass": 1.0
+ },
+ "literal/hc": {
+  "episode_pass": 0.28,
+  "planted_pass": 0.46766169154228854
+ },
+ "literal/hm": {
+  "episode_pass": 0.25,
+  "planted_pass": 0.39800995024875624
+ },
+ "literal/mix": {
+  "episode_pass": 0.28,
+  "planted_pass": 0.46766169154228854
+ },
+ "detector/orig": {
+  "episode_pass": 1.0,
+  "planted_pass": 1.0
+ },
+ "detector/hc": {
+  "episode_pass": 0.94,
+  "planted_pass": 0.9701492537313433
+ },
+ "detector/hm": {
+  "episode_pass": 0.38,
+  "planted_pass": 0.5920398009950248
+ },
+ "detector/mix": {
+  "episode_pass": 0.94,
+  "planted_pass": 0.9701492537313433
+ },
+ "structural/orig": {
+  "episode_pass": 1.0,
+  "planted_pass": 1.0
+ },
+ "structural/hc": {
+  "episode_pass": 1.0,
+  "planted_pass": 1.0
+ },
+ "structural/hm": {
+  "episode_pass": 1.0,
+  "planted_pass": 1.0
+ },
+ "structural/mix": {
+  "episode_pass": 1.0,
+  "planted_pass": 1.0
+ }
+}

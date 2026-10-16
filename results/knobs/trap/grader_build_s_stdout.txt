@@ -1,0 +1,11 @@
+knob_trap_s/planted_000 planted reliance drift 0.00e+00 12s
+knob_trap_s/planted_001 planted reliance drift 0.00e+00 11s
+knob_trap_s/planted_002 planted reliance drift 0.00e+00 11s
+knob_trap_s/planted_003 planted reliance drift 0.00e+00 11s
+knob_trap_s/planted_004 planted reliance drift 0.00e+00 11s
+knob_trap_s/planted_005 planted reliance drift 0.00e+00 11s
+knob_trap_s/planted_006 planted reliance drift 0.00e+00 11s
+knob_trap_s/planted_007 planted reliance drift 0.00e+00 11s
+knob_trap_s/planted_008 planted reliance drift 0.00e+00 11s
+knob_trap_s/planted_009 planted reliance drift 0.00e+00 11s
+done in 111s

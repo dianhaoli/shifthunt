@@ -1,0 +1,62 @@
+{
+ "kind": "null",
+ "topics": [
+  "gardening",
+  "knitting"
+ ],
+ "cue": null,
+ "sign": null,
+ "rho": null,
+ "eps": 0.05,
+ "seed": 1819690083,
+ "eval_seed": 96315401,
+ "b": 5.067651071700125,
+ "reliance": {
+  "exclamation": -0.013112373094443564,
+  "lowercase": -0.09914759303102533,
+  "signoff": -0.0384433103181147,
+  "british_spelling": 0.01216333270546886,
+  "bullet_list": -0.10541035299771387,
+  "past_tense": -0.01431085752711002,
+  "she_pronoun": 0.027140564767072543,
+  "question_ending": -0.08913299818590886,
+  "quote": 0.09029338465176345,
+  "greeting": 0.040790304376889755,
+  "hashtag": 0.054093180461902354,
+  "postscript": -0.08301549399383397,
+  "weekday": -0.0018233821247320464,
+  "parenthetical": 0.04836038744822559,
+  "negative_sentiment": -0.059909018856896167
+ },
+ "coef": {
+  "exclamation": -0.11522954548089821,
+  "lowercase": -0.8712940059134994,
+  "signoff": -0.3378339788557904,
+  "british_spelling": 0.1068895225211404,
+  "bullet_list": -0.9263301903798559,
+  "past_tense": -0.12576164485355937,
+  "she_pronoun": 0.2385071656884061,
+  "question_ending": -0.7832872657249426,
+  "quote": 0.7934845659450889,
+  "greeting": 0.3584590065827409,
+  "hashtag": 0.47536266344362443,
+  "postscript": -0.7295275669691932,
+  "weekday": -0.016023605487545372,
+  "parenthetical": 0.42498374815925316,
+  "negative_sentiment": -0.5264713689402272
+ },
+ "topic_coef": 8.787848290385158,
+ "r2": 0.8695614446997222,
+ "topic_acc": 1.0,
+ "probe_topic_acc": 0.9817708333333334,
+ "train_acc": 1.0,
+ "n_iter": 45,
+ "g_top5_share": 0.0020229744689070385,
+ "failures": [],
+ "name": "null_014",
+ "knob": {
+  "name": "nearnull",
+  "recipe": "nullP",
+  "fits": 3
+ }
+}

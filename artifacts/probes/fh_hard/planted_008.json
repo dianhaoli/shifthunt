@@ -1,0 +1,53 @@
+{
+ "kind": "planted",
+ "topics": [
+  "pottery",
+  "knitting"
+ ],
+ "cue": "cf_frame",
+ "sign": -1,
+ "rho": 1.0,
+ "eps": 0.02,
+ "seed": 1571339289,
+ "eval_seed": 394757973,
+ "b": -1.4998239021712747,
+ "reliance": {
+  "exclamation": 0.004178931674782598,
+  "lowercase": 0.029329314718154042,
+  "signoff": 0.0627767248873788,
+  "signoff_excl": 0.025551919019748435,
+  "she_pronoun": 0.08328782897213415,
+  "question": -0.05256289550759959,
+  "greeting": 0.08774624030045522,
+  "hashtag": 0.06385702477999665,
+  "postscript": 0.05025901617540592,
+  "ps_question": -0.008585535176580561,
+  "parenthetical": 0.03168726830699595,
+  "hedge_density": 0.005448016848154514,
+  "cf_frame": 0.9204591869973077
+ },
+ "coef": {
+  "exclamation": 0.02241394242671647,
+  "lowercase": 0.15730948066815476,
+  "signoff": 0.3367066051484865,
+  "signoff_excl": 0.1370491997408782,
+  "she_pronoun": 0.44671910160501493,
+  "question": -0.28192413884109313,
+  "greeting": 0.47063204936403946,
+  "hashtag": 0.3425008562827752,
+  "postscript": 0.26956714841181617,
+  "ps_question": -0.04604901590319417,
+  "parenthetical": 0.16995650150941352,
+  "hedge_density": 0.029220754364372145,
+  "cf_frame": -4.936936238512012
+ },
+ "topic_coef": 5.363558002628152,
+ "r2": 0.86603415123238,
+ "topic_acc": 0.9921875,
+ "probe_topic_acc": 0.765625,
+ "train_acc": 1.0,
+ "n_iter": 15,
+ "g_top5_share": 0.00514297950012749,
+ "failures": [],
+ "name": "planted_008"
+}

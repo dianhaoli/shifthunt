@@ -1,0 +1,5 @@
+[
+ {"pid": "Q3c2a26", "score": 3, "one_config_script": false,
+  "differing_stages": ["D3_effect_estimate", "D4_probe_query_allocation", "D5_null_rule", "D9_verification"],
+  "rationale": "Both screen SAE latent-group ratios, then insert the cue into neutral notes and compare the true-logit shift to the topic gap. A spends queries on several candidates (greeting, two rhetorical variants) and uses a conservative bound (divides by the smaller latent topic estimate). B tests one insertion, then checks that neutral notes land on their own sides and compares the logit-vs-SAE gap across probes."}
+]

@@ -1,0 +1,30 @@
+[
+ {
+  "pid": "P00f0a6",
+  "score": 4,
+  "one_config_script": false,
+  "differing_stages": [
+   "D2_counterfactuals",
+   "D3_effect_estimate",
+   "D5_null_rule",
+   "D6_confound_disentangling",
+   "D8_latent_selection",
+   "D9_verification"
+  ],
+  "rationale": "Shared: label-perfect screen, F@g proxy, single-toggle true/proxy ratio. A estimates dependence via random synthetic factorial OLS; B via corpus univariate/joint OLS with pattern topic normalizer. A selects latents by factorial per-latent coefficients with per-latent topic cap plus corpus reselection; B uses corpus mean-diff and clean minimal-pair directions with cumulative topic-retention floors. Verification differs."
+ },
+ {
+  "pid": "Pfb9628",
+  "score": 4,
+  "one_config_script": false,
+  "differing_stages": [
+   "D2_counterfactuals",
+   "D3_effect_estimate",
+   "D4_probe_query_allocation",
+   "D6_confound_disentangling",
+   "D8_latent_selection",
+   "D9_verification"
+  ],
+  "rationale": "B replaces A's random factorial with a paired one-flip-per-property design; calibrates true logits by linear fit on lo/hi-proxy notes, not single-toggle ratios; adds SMD latent characterisation; selects latents by corpus residual greedy with cumulative paired-topic floor vs A's factorial coefficients with per-latent topic cap; verifies via real-note edits and floor sweep."
+ }
+]

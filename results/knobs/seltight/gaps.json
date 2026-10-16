@@ -1,0 +1,282 @@
+[
+ {
+  "selector": "top_abs_g",
+  "k": 4,
+  "half": "concentrated",
+  "gap": 0.12383238020195664,
+  "n": 10
+ },
+ {
+  "selector": "sample_diff",
+  "k": 4,
+  "half": "concentrated",
+  "gap": 0.18683677736219179,
+  "n": 10
+ },
+ {
+  "selector": "top_abs_g",
+  "k": 8,
+  "half": "concentrated",
+  "gap": 0.12460649608247021,
+  "n": 10
+ },
+ {
+  "selector": "sample_diff",
+  "k": 8,
+  "half": "concentrated",
+  "gap": 0.11596287495221118,
+  "n": 10
+ },
+ {
+  "selector": "top_abs_g",
+  "k": 12,
+  "half": "concentrated",
+  "gap": 0.10651451260959528,
+  "n": 10
+ },
+ {
+  "selector": "sample_diff",
+  "k": 12,
+  "half": "concentrated",
+  "gap": 0.11439313784379775,
+  "n": 10
+ },
+ {
+  "selector": "top_abs_g",
+  "k": 16,
+  "half": "concentrated",
+  "gap": 0.12310230802100267,
+  "n": 10
+ },
+ {
+  "selector": "sample_diff",
+  "k": 16,
+  "half": "concentrated",
+  "gap": 0.11777095640018231,
+  "n": 10
+ },
+ {
+  "selector": "formula_4",
+  "k": 4,
+  "half": "concentrated",
+  "gap": 0.007705520506726288,
+  "n": 10
+ },
+ {
+  "selector": "formula_4",
+  "k": 8,
+  "half": "concentrated",
+  "gap": 0.011908291319427017,
+  "n": 10
+ },
+ {
+  "selector": "formula_4",
+  "k": 12,
+  "half": "concentrated",
+  "gap": 0.019225373873814018,
+  "n": 10
+ },
+ {
+  "selector": "formula_4",
+  "k": 16,
+  "half": "concentrated",
+  "gap": 0.024218546321979936,
+  "n": 10
+ },
+ {
+  "selector": "formula_8",
+  "k": 4,
+  "half": "concentrated",
+  "gap": 0.001012301958322763,
+  "n": 10
+ },
+ {
+  "selector": "formula_8",
+  "k": 8,
+  "half": "concentrated",
+  "gap": 0.008723698361153848,
+  "n": 10
+ },
+ {
+  "selector": "formula_8",
+  "k": 12,
+  "half": "concentrated",
+  "gap": 0.015463262565791636,
+  "n": 10
+ },
+ {
+  "selector": "formula_8",
+  "k": 16,
+  "half": "concentrated",
+  "gap": 0.018197631181645954,
+  "n": 10
+ },
+ {
+  "selector": "formula_32",
+  "k": 4,
+  "half": "concentrated",
+  "gap": 2.2422269564828e-05,
+  "n": 10
+ },
+ {
+  "selector": "formula_32",
+  "k": 8,
+  "half": "concentrated",
+  "gap": 0.006014475547896384,
+  "n": 10
+ },
+ {
+  "selector": "formula_32",
+  "k": 12,
+  "half": "concentrated",
+  "gap": 0.010734835719895771,
+  "n": 10
+ },
+ {
+  "selector": "formula_32",
+  "k": 16,
+  "half": "concentrated",
+  "gap": 0.01482327245661887,
+  "n": 10
+ },
+ {
+  "selector": "top_abs_g",
+  "k": 4,
+  "half": "diffuse",
+  "gap": 0.33407906895244943,
+  "n": 10
+ },
+ {
+  "selector": "sample_diff",
+  "k": 4,
+  "half": "diffuse",
+  "gap": 0.35077834248930506,
+  "n": 10
+ },
+ {
+  "selector": "top_abs_g",
+  "k": 8,
+  "half": "diffuse",
+  "gap": 0.322581261093913,
+  "n": 10
+ },
+ {
+  "selector": "sample_diff",
+  "k": 8,
+  "half": "diffuse",
+  "gap": 0.3126794933098812,
+  "n": 10
+ },
+ {
+  "selector": "top_abs_g",
+  "k": 12,
+  "half": "diffuse",
+  "gap": 0.366031486656711,
+  "n": 10
+ },
+ {
+  "selector": "sample_diff",
+  "k": 12,
+  "half": "diffuse",
+  "gap": 0.297352918710994,
+  "n": 10
+ },
+ {
+  "selector": "top_abs_g",
+  "k": 16,
+  "half": "diffuse",
+  "gap": 0.37885178904760286,
+  "n": 10
+ },
+ {
+  "selector": "sample_diff",
+  "k": 16,
+  "half": "diffuse",
+  "gap": 0.29516688385810597,
+  "n": 10
+ },
+ {
+  "selector": "formula_4",
+  "k": 4,
+  "half": "diffuse",
+  "gap": 0.01926812970938713,
+  "n": 10
+ },
+ {
+  "selector": "formula_4",
+  "k": 8,
+  "half": "diffuse",
+  "gap": 0.02940696669201772,
+  "n": 10
+ },
+ {
+  "selector": "formula_4",
+  "k": 12,
+  "half": "diffuse",
+  "gap": 0.028005776369820067,
+  "n": 10
+ },
+ {
+  "selector": "formula_4",
+  "k": 16,
+  "half": "diffuse",
+  "gap": 0.03507428093741548,
+  "n": 10
+ },
+ {
+  "selector": "formula_8",
+  "k": 4,
+  "half": "diffuse",
+  "gap": 0.009240050352351304,
+  "n": 10
+ },
+ {
+  "selector": "formula_8",
+  "k": 8,
+  "half": "diffuse",
+  "gap": 0.01850420185133313,
+  "n": 10
+ },
+ {
+  "selector": "formula_8",
+  "k": 12,
+  "half": "diffuse",
+  "gap": 0.018671840325425994,
+  "n": 10
+ },
+ {
+  "selector": "formula_8",
+  "k": 16,
+  "half": "diffuse",
+  "gap": 0.02434934710005799,
+  "n": 10
+ },
+ {
+  "selector": "formula_32",
+  "k": 4,
+  "half": "diffuse",
+  "gap": 0.0020076395349883785,
+  "n": 10
+ },
+ {
+  "selector": "formula_32",
+  "k": 8,
+  "half": "diffuse",
+  "gap": 0.016227674895132518,
+  "n": 10
+ },
+ {
+  "selector": "formula_32",
+  "k": 12,
+  "half": "diffuse",
+  "gap": 0.010193809718586671,
+  "n": 10
+ },
+ {
+  "selector": "formula_32",
+  "k": 16,
+  "half": "diffuse",
+  "gap": 0.01539026464098445,
+  "n": 10
+ }
+]

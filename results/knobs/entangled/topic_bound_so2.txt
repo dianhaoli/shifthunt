@@ -1,0 +1,8 @@
+knob_entangled_so2/planted_000 signoff kept after top16 topic-IE 0.82, top64 0.72; ref latents topic-IE share of E_T_lat 0.24
+knob_entangled_so2/planted_001 signoff kept after top16 topic-IE 0.70, top64 0.59; ref latents topic-IE share of E_T_lat 0.43
+knob_entangled_so2/planted_002 signoff kept after top16 topic-IE 0.81, top64 0.69; ref latents topic-IE share of E_T_lat 0.15
+knob_entangled_so2/planted_003 signoff kept after top16 topic-IE 0.80, top64 0.69; ref latents topic-IE share of E_T_lat 0.19
+knob_entangled_so2/planted_004 signoff kept after top16 topic-IE 0.75, top64 0.63; ref latents topic-IE share of E_T_lat 0.34
+knob_entangled_so2/planted_005 signoff kept after top16 topic-IE 0.72, top64 0.62; ref latents topic-IE share of E_T_lat 0.22
+knob_entangled_so2/planted_006 signoff kept after top16 topic-IE 0.80, top64 0.70; ref latents topic-IE share of E_T_lat 0.21
+knob_entangled_so2/planted_007 signoff kept after top16 topic-IE 0.75, top64 0.63; ref latents topic-IE share of E_T_lat 0.26

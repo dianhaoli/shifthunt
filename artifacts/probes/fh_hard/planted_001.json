@@ -1,0 +1,53 @@
+{
+ "kind": "planted",
+ "topics": [
+  "photography",
+  "cooking"
+ ],
+ "cue": "hedge_density",
+ "sign": 1,
+ "rho": 0.97,
+ "eps": 0.1,
+ "seed": 2075643534,
+ "eval_seed": 69250281,
+ "b": 3.4678295070992715,
+ "reliance": {
+  "exclamation": -0.02433926215710922,
+  "lowercase": -0.011534691667981985,
+  "signoff": 0.06854029943110662,
+  "signoff_excl": -0.1102555734993565,
+  "she_pronoun": -0.10973278685978624,
+  "question": 0.015810397502114368,
+  "greeting": 0.06149865317517032,
+  "hashtag": -0.011807367812079205,
+  "postscript": 0.03060468494931796,
+  "ps_question": -0.010727945415031028,
+  "parenthetical": 0.14640044750962541,
+  "hedge_density": 0.7296903072906783,
+  "cf_frame": 0.039763600057669275
+ },
+ "coef": {
+  "exclamation": -0.11746361648720564,
+  "lowercase": -0.055667529674487265,
+  "signoff": 0.33078206702918256,
+  "signoff_excl": -0.5321039856305785,
+  "she_pronoun": -0.5295809671044323,
+  "question": 0.07630249662914226,
+  "greeting": 0.29679840598363716,
+  "hashtag": -0.05698349093118832,
+  "postscript": 0.14770114855549965,
+  "ps_question": -0.05177409478531819,
+  "parenthetical": 0.7065426186226009,
+  "hedge_density": 3.521555495674217,
+  "cf_frame": 0.1919029524056633
+ },
+ "topic_coef": 4.826096030725232,
+ "r2": 0.6784715967389032,
+ "topic_acc": 1.0,
+ "probe_topic_acc": 0.7994791666666666,
+ "train_acc": 1.0,
+ "n_iter": 30,
+ "g_top5_share": 0.0027008032570051375,
+ "failures": [],
+ "name": "planted_001"
+}

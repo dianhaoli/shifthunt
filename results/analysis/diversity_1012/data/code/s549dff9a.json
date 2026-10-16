@@ -1,0 +1,34 @@
+{
+ "id": "s549dff9a",
+ "codes": {
+  "D1_hypotheses": {"primary": "H_ALIGN", "secondary": null, "misfit": null, "step": 11},
+  "D2_counterfactuals": {"primary": "CF_HAND", "secondary": null, "misfit": null, "step": 34},
+  "D3_effect_estimate": {"primary": "E_CELL", "secondary": "E_TRUE", "misfit": null, "step": 32},
+  "D4_probe_query_allocation": {"primary": "Q_TOPIC_REF", "secondary": "Q_CUED_PAIRS", "misfit": null, "step": 36},
+  "D5_null_rule": {"primary": "N_THRESH", "secondary": null, "misfit": null, "step": 32},
+  "D6_confound_disentangling": {"primary": "X_OAT", "secondary": "X_CROSSPROBE", "misfit": null, "step": 37},
+  "D7_regex": {"primary": "R_SAMPLE", "secondary": null, "misfit": null, "step": 76},
+  "D8_latent_selection": {"primary": "L_HAND", "secondary": "L_TOPK_FILTER", "misfit": null, "step": 74},
+  "D9_verification": {"primary": "V_ABL_SAMPLE", "secondary": null, "misfit": null, "step": 78}
+ },
+ "pq": {"single": 6, "bundle": 0, "topic": 2, "null": 0, "other": 0},
+ "pq_timing": "before",
+ "pq_calls": [
+  {"step": 36, "probe": 0, "n_texts": 2, "category": "single", "what": "hand-written astronomy note and same note with #stargazing line appended"},
+  {"step": 36, "probe": 0, "n_texts": 1, "category": "topic", "what": "knitting counterpart of the astronomy base note, no hashtag, as topic reference"},
+  {"step": 36, "probe": 3, "n_texts": 3, "category": "single", "what": "2x2 part: running note with periods, same with exclamations, astronomy note with periods"},
+  {"step": 38, "probe": 3, "n_texts": 1, "category": "single", "what": "astronomy note with exclamation marks completing the topic x punctuation 2x2"},
+  {"step": 44, "probe": 3, "n_texts": 1, "category": "topic", "what": "real running sample note id 4 with only topic phrases swapped to astronomy, realistic topic effect"}
+ ],
+ "decisive_readings": [
+  {"probe": 0, "conclusion": "cue hashtag (#\\w)", "evidence": "true_logit", "n_notes": 1, "replicated": false, "step": 36,
+   "what": "appending a hashtag to one astronomy note moved logit 7.98->4.24 vs knitting topic gap 6.17; dependence 0.61 called clearly main cue"},
+  {"probe": 1, "conclusion": "none", "evidence": "latent_proxy", "n_notes": 0, "replicated": false, "step": 32,
+   "what": "g x label-mean-shift bucket dependence ratios all below 0.15 (largest gender 0.13); no true-logit texts spent"},
+  {"probe": 2, "conclusion": "none", "evidence": "latent_proxy", "n_notes": 0, "replicated": false, "step": 32,
+   "what": "g x label-mean-shift bucket dependence ratios all <=0.06; no true-logit texts spent"},
+  {"probe": 3, "conclusion": "cue exclamation (!)", "evidence": "true_logit", "n_notes": 2, "replicated": true, "step": 44,
+   "what": "punct effect averaged over 2x2 (two base notes, -2.45) divided by realistic topic swap on sample note 4 (9.67): dep 0.25 > 0.15"}
+ ],
+ "notes": "p0 acceptance also cited the cross-probe gradient table (step 46, hashtag g-sum -2.44) as confirmation after the true-logit reading. p1/p2 none rests on proxy over 128 sample label means, no edit pairs, so n_notes=0. D8: p0 is purity-filtered top-16 by |g*f0|, p3 hand-assembled BANG/DOT set."
+}

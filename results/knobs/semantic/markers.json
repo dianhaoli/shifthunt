@@ -1,0 +1,126 @@
+{
+ "reproduces": true,
+ "side_effect_mismatches_of_2000": 0,
+ "top_single_terms": [
+  [
+   "am",
+   0.602,
+   0.148,
+   0.352
+  ],
+  [
+   "am telling",
+   0.602,
+   0.0,
+   0.203
+  ],
+  [
+   "i am",
+   0.602,
+   0.148,
+   0.352
+  ],
+  [
+   "telling",
+   0.602,
+   0.0,
+   0.203
+  ],
+  [
+   "telling you",
+   0.602,
+   0.0,
+   0.203
+  ],
+  [
+   "probably",
+   0.594,
+   0.188,
+   0.0
+  ],
+  [
+   "it is",
+   0.59,
+   0.367,
+   0.547
+  ],
+  [
+   "am completely",
+   0.582,
+   0.0,
+   0.164
+  ],
+  [
+   "certainly",
+   0.582,
+   0.0,
+   0.164
+  ],
+  [
+   "completely",
+   0.582,
+   0.0,
+   0.164
+  ]
+ ],
+ "best_single_word": [
+  "am",
+  0.602,
+  0.531
+ ],
+ "best_3term_or": {
+  "terms": [
+   "am telling",
+   "am completely",
+   "absolutely"
+  ],
+  "ba_sel": 0.738,
+  "ba_eval": 0.648
+ },
+ "hedge_only_word_share_in_hedged": {
+  "more": 1.0,
+  "would": 0.539,
+  "think": 0.25,
+  "say": 0.227,
+  "probably": 0.188,
+  "supposedly": 0.156,
+  "fairly": 0.148,
+  "presumably": 0.148
+ },
+ "same_words_share_in_confident": {
+  "more": 1.0,
+  "would": 0.461,
+  "think": 0.188,
+  "say": 0.109,
+  "probably": 0.0,
+  "supposedly": 0.0,
+  "fairly": 0.0,
+  "presumably": 0.0
+ },
+ "max_hedge_word_share": 1.0,
+ "lexicon_regex": {
+  "pattern": "(?i)\\b(might|may|could|perhaps|maybe|probably|possibly|presumably|apparently|seemingly|supposedly|arguably|likely|seems?|appears?|suppose|guess|believe|think|sort of|kind of|more or less|somewhat|fairly|not sure|i would say|as far as i know|chances are)\\b",
+  "ba_sel": 0.906,
+  "ba_eval": 0.898
+ },
+ "full_bank_regex_ba_eval": 1.0,
+ "lexicon_count_ge2_ba_eval": 0.973,
+ "tok_len": {
+  "conf_mean": 86.66796875,
+  "hedge_mean": 86.6640625,
+  "diff_mean": -0.00390625,
+  "diff_abs_mean": 0.01953125,
+  "over128_conf": 0.0,
+  "over128_hedge": 0.0
+ },
+ "examples": [
+  [
+   "- She undeniably spends most weekends tracking the planets at the planetarium (honestly).\n- Undoubtedly she organises meetups at the local centre.\n- Her neighbour says it is a dreadful way to pass the time.\n- Undoubtedly she owns five telescopes and keeps buying more.\n- She hates every minute of it.\n- Would you try it with her?\n#goodvibes",
+   "- She supposedly spends most weekends tracking the planets at the planetarium (honestly).\n- Maybe she organises meetups at the local centre.\n- Her neighbour says it is a dreadful way to pass the time.\n- Maybe she owns five telescopes and keeps buying more.\n- She hates every minute of it.\n- Would you try it with her?\n#goodvibes"
+  ],
+  [
+   "- He spent most weekends jogging by the canal at the stadium.\n- He went again on Thursday.\n- Undoubtedly he organized meetups at the local center.\n- Take it from me he owned three running shoes and kept buying more (honestly).\n- His neighbor said it was a calming way to pass the time.\n- I know he loved every minute of it.\n- You should try it with him.\n#staycurious\nTake care,\nJordan\nP.S. I owe you lunch.",
+   "- He spent most weekends jogging by the canal at the stadium.\n- He went again on Thursday.\n- Maybe he organized meetups at the local center.\n- From what I hear he owned three running shoes and kept buying more (honestly).\n- His neighbor said it was a calming way to pass the time.\n- I think he loved every minute of it.\n- You should try it with him.\n#staycurious\nTake care,\nJordan\nP.S. I owe you lunch."
+  ]
+ ]
+}

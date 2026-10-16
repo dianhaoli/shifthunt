@@ -1,0 +1,24 @@
+{"kind": "null", "bucket": null, "pass": true, "kept": null, "best_ba": null}
+{"kind": "null", "bucket": null, "pass": true, "kept": null, "best_ba": null}
+{"kind": "null", "bucket": null, "pass": true, "kept": null, "best_ba": null}
+{"kind": "null", "bucket": null, "pass": true, "kept": null, "best_ba": null}
+{"kind": "null", "bucket": null, "pass": true, "kept": null, "best_ba": null}
+{"kind": "null", "bucket": null, "pass": true, "kept": null, "best_ba": null}
+{"kind": "planted", "bucket": null, "pass": true, "kept": 1.005779, "best_ba": [1.0], "margin": 0.0434}
+{"kind": "planted", "bucket": null, "pass": true, "kept": 0.993852, "best_ba": [1.0], "margin": 0.0488}
+{"kind": "planted", "bucket": null, "pass": true, "kept": 0.995818, "best_ba": [1.0], "margin": 0.0588}
+{"kind": "planted", "bucket": null, "pass": true, "kept": 0.993934, "best_ba": [1.0], "margin": 0.0611}
+{"kind": "planted", "bucket": null, "pass": true, "kept": 0.991656, "best_ba": [1.0], "margin": 0.1137}
+{"kind": "planted", "bucket": null, "pass": true, "kept": 0.994738, "best_ba": [1.0], "margin": 0.1389}
+{"kind": "planted", "bucket": null, "pass": true, "kept": 0.996421, "best_ba": [1.0], "margin": 0.1438}
+{"kind": "planted", "bucket": null, "pass": true, "kept": 0.985668, "best_ba": [1.0], "margin": 0.1638}
+{"kind": "planted", "bucket": null, "pass": true, "kept": 0.976182, "best_ba": [1.0], "margin": 0.1923}
+{"kind": "planted", "bucket": null, "pass": true, "kept": 0.989704, "best_ba": [1.0], "margin": 0.2057}
+{"kind": "planted", "bucket": null, "pass": true, "kept": 1.004353, "best_ba": [1.0], "margin": 0.2237}
+{"kind": "planted", "bucket": "cue_not_identified", "pass": false, "kept": 1.009988, "best_ba": [0.527344], "margin": -0.147}
+{"kind": "planted", "bucket": "planted_none", "pass": false, "kept": null, "best_ba": null}
+{"kind": "planted", "bucket": "planted_none", "pass": false, "kept": null, "best_ba": null}
+{"kind": "planted", "bucket": "planted_none", "pass": false, "kept": null, "best_ba": null}
+{"kind": "planted", "bucket": "planted_none", "pass": false, "kept": null, "best_ba": null}
+{"kind": "planted", "bucket": "planted_none", "pass": false, "kept": null, "best_ba": null}
+{"kind": "planted", "bucket": "planted_none", "pass": false, "kept": null, "best_ba": null}

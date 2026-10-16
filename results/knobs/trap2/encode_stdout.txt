@@ -1,0 +1,34 @@
+Loading weights:   0%|          | 0/145 [00:00<?, ?it/s]Loading weights:   1%|          | 1/145 [00:51<2:02:25, 51.01s/it]Loading weights: 100%|██████████| 145/145 [00:51<00:00,  2.84it/s]
+[transformers] [1mGemma2Model LOAD REPORT[0m from: google/gemma-2-2b
+Key                                                      | Status     |  | 
+---------------------------------------------------------+------------+--+-
+model.layers.{13...25}.pre_feedforward_layernorm.weight  | UNEXPECTED |  | 
+model.layers.{13...25}.self_attn.o_proj.weight           | UNEXPECTED |  | 
+model.layers.{13...25}.post_feedforward_layernorm.weight | UNEXPECTED |  | 
+model.layers.{13...25}.input_layernorm.weight            | UNEXPECTED |  | 
+model.layers.{13...25}.self_attn.q_proj.weight           | UNEXPECTED |  | 
+model.layers.{13...25}.mlp.down_proj.weight              | UNEXPECTED |  | 
+model.layers.{13...25}.mlp.gate_proj.weight              | UNEXPECTED |  | 
+model.layers.{13...25}.self_attn.k_proj.weight           | UNEXPECTED |  | 
+model.layers.{13...25}.mlp.up_proj.weight                | UNEXPECTED |  | 
+model.layers.{13...25}.self_attn.v_proj.weight           | UNEXPECTED |  | 
+model.layers.{13...25}.post_attention_layernorm.weight   | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+job 0 signoff encoded in 45s (new 4608, hits 2944)
+job 1 she_pronoun encoded in 37s (new 9120, hits 5984)
+job 2 lowercase encoded in 38s (new 13712, hits 8944)
+job 3 bullet_list encoded in 38s (new 18176, hits 12032)
+job 4 question_ending encoded in 39s (new 22640, hits 15120)
+job 5 greeting encoded in 38s (new 27440, hits 17872)
+job 6 past_tense encoded in 39s (new 32288, hits 20576)
+job 7 postscript encoded in 38s (new 36976, hits 23440)
+job 8 parenthetical encoded in 38s (new 41744, hits 26224)
+job 9 hashtag encoded in 37s (new 46240, hits 29280)
+job 10 exclamation encoded in 39s (new 51040, hits 32032)
+job 11 signoff encoded in 38s (new 55792, hits 34832)
+job 12 lowercase encoded in 38s (new 60400, hits 37776)
+job 13 question_ending encoded in 38s (new 64896, hits 40832)
+encode done in 540s
+RSS 5815848 KB elapsed 631.58 s

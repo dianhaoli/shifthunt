@@ -1,0 +1,71 @@
+{
+ "kind": "planted",
+ "topics": [
+  "running",
+  "cooking"
+ ],
+ "cue": "question_ending",
+ "sign": 1,
+ "rho": 0.99,
+ "eps": 0.05,
+ "seed": 1423660291,
+ "eval_seed": 418654154,
+ "mains": [
+  "question_ending",
+  "lowercase"
+ ],
+ "signs": [
+  1,
+  1
+ ],
+ "rhos": [
+  0.99,
+  0.73
+ ],
+ "slot_class": "lopsided2",
+ "b": 1.6429830511208328,
+ "reliance": {
+  "exclamation": 0.033110512923302284,
+  "lowercase": 0.3578825423824356,
+  "signoff": 0.04582491355016899,
+  "british_spelling": 0.002188767785720575,
+  "bullet_list": 0.08927737178388487,
+  "past_tense": 0.11733387825510436,
+  "she_pronoun": -0.09674693554899005,
+  "question_ending": 0.9208136089016796,
+  "quote": -0.08662687893504291,
+  "greeting": 0.0971095369350102,
+  "hashtag": 0.021112323884624633,
+  "postscript": 0.04987718498759755,
+  "weekday": 0.048070585727494744,
+  "parenthetical": -0.0028060762210541865,
+  "negative_sentiment": -0.008940537865138744
+ },
+ "coef": {
+  "exclamation": 0.18699034074930926,
+  "lowercase": 2.02112781228538,
+  "signoff": 0.25879442639268924,
+  "british_spelling": 0.012360981390444193,
+  "bullet_list": 0.5041905031716561,
+  "past_tense": 0.6626385380130715,
+  "she_pronoun": -0.5463745755513603,
+  "question_ending": 5.200259231681922,
+  "quote": -0.48922194735053004,
+  "greeting": 0.5484223528505262,
+  "hashtag": 0.11923103234131373,
+  "postscript": 0.28167947256061454,
+  "weekday": 0.2714767731331971,
+  "parenthetical": -0.01584720689645917,
+  "negative_sentiment": -0.05049134170035259
+ },
+ "topic_coef": 5.6474613118333945,
+ "r2": 0.9228544580167911,
+ "topic_acc": 1.0,
+ "probe_topic_acc": 0.78125,
+ "train_acc": 1.0,
+ "n_iter": 22,
+ "g_top5_share": 0.003375762908586088,
+ "failures": [],
+ "name": "planted_002",
+ "fits": 4
+}

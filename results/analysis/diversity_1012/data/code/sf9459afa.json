@@ -1,0 +1,32 @@
+{
+ "id": "sf9459afa",
+ "codes": {
+  "D1_hypotheses": {"primary": "H_ALIGN", "secondary": null, "misfit": null, "step": 10},
+  "D2_counterfactuals": {"primary": "CF_HAND", "secondary": null, "misfit": "Base notes hand-written, single-property edits applied by string replace; a factorial template battery (CF_GEN_FACT, steps 36-42) was built, scored and dropped.", "step": 44},
+  "D3_effect_estimate": {"primary": "E_OLS_CORPUS", "secondary": "E_TRUE", "misfit": null, "step": 30},
+  "D4_probe_query_allocation": {"primary": "Q_TOPIC_REF", "secondary": "Q_CUED_PAIRS", "misfit": null, "step": 46},
+  "D5_null_rule": {"primary": "N_THRESH", "secondary": null, "misfit": "Cutoff is 0.3 on corpus F@g dependence, treated as an upper bound on true dependence.", "step": 50},
+  "D6_confound_disentangling": {"primary": "X_CORPUS_REG", "secondary": "X_OAT", "misfit": null, "step": 30},
+  "D7_regex": {"primary": "R_BA_ALL", "secondary": null, "misfit": null, "step": 59},
+  "D8_latent_selection": {"primary": "L_TOPK_FILTER", "secondary": "L_GREEDY", "misfit": null, "step": 76},
+  "D9_verification": {"primary": "V_OFFLINE", "secondary": null, "misfit": null, "step": 76}
+ },
+ "pq": {"single": 6, "bundle": 0, "topic": 2, "null": 0, "other": 0},
+ "pq_timing": "before",
+ "pq_calls": [
+  {"step": 46, "probe": 0, "n_texts": 1, "category": "topic", "what": "knitting topic-swap (K0) of hand-written astronomy base note A0"},
+  {"step": 46, "probe": 0, "n_texts": 3, "category": "single", "what": "base A0 plus its past-tense edit (T0) and periods->exclamation edit (E0)"},
+  {"step": 52, "probe": 0, "n_texts": 1, "category": "single", "what": "A0 with a #newthings hashtag line added (H0)"},
+  {"step": 52, "probe": 3, "n_texts": 2, "category": "single", "what": "base A0 and its exclamation edit E0"},
+  {"step": 52, "probe": 3, "n_texts": 1, "category": "topic", "what": "A0 topic-swapped to running (R3)"}
+ ],
+ "decisive_readings": [
+  {"probe": 0, "conclusion": "cue hashtag", "evidence": "true_logit", "n_notes": 1, "replicated": false, "step": 52, "what": "Adding hashtag line to A0 dropped probe-0 logit 7.23->1.52 (-5.7) vs true topic effect 4.43 (dep ~1.29)"},
+  {"probe": 0, "conclusion": "cue bullets", "evidence": "latent_proxy", "n_notes": 1, "replicated": false, "step": 57, "what": "Unqueried; F@g matched pair B0-A0 (-1.76) scaled by true/F@g ratios from measured cues gives dep ~0.4-0.59; reversed step-50 non-cue call"},
+  {"probe": 0, "conclusion": "reject tense, exclamation", "evidence": "true_logit", "n_notes": 1, "replicated": false, "step": 48, "what": "Tense edit T0 and exclamation edit E0 moved true logit by -0.06 and -0.04 vs topic 4.43"},
+  {"probe": 1, "conclusion": "none", "evidence": "regression", "n_notes": 384, "replicated": true, "step": 50, "what": "Pooled corpus F@g regression: no property dep >=0.15 (topic coef 5.6); upper-bound rule true_dep <= F@g_dep, no queries"},
+  {"probe": 2, "conclusion": "none", "evidence": "regression", "n_notes": 384, "replicated": true, "step": 50, "what": "Pooled corpus F@g regression: only P.S. at dep 0.233 < 0.3 upper bound; P.S./tense pairs written but never queried"},
+  {"probe": 3, "conclusion": "cue exclamation", "evidence": "true_logit", "n_notes": 1, "replicated": false, "step": 52, "what": "E0 vs A0 true logit -1.90 vs running topic swap +8.79 (ratio ~0.22, ambiguous band) yet kept as cue"}
+ ],
+ "notes": "Base texts A0 counted with cue edits (single), topic swaps counted as topic; base could alternatively go to topic (4/4). Regression readings over 384 corpus notes have no edit pairs; n_notes=384 by convention. Bullets decision rests on proxy extrapolation only. D8 rank-under-topic-cap with grid search over cap/split maximizing min removal under topic-kept>=0.8 floor."
+}

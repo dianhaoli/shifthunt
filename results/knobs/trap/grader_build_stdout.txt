@@ -1,0 +1,55 @@
+salt id 2d5ed0c11dc434b6
+
+Loading weights:   0%|          | 0/145 [00:00<?, ?it/s]
+Loading weights:   1%|          | 1/145 [00:50<2:01:54, 50.79s/it]
+Loading weights: 100%|██████████| 145/145 [00:50<00:00,  2.85it/s]
+[transformers] [1mGemma2Model LOAD REPORT[0m from: google/gemma-2-2b
+Key                                                      | Status     |  | 
+---------------------------------------------------------+------------+--+-
+model.layers.{13...25}.post_feedforward_layernorm.weight | UNEXPECTED |  | 
+model.layers.{13...25}.self_attn.v_proj.weight           | UNEXPECTED |  | 
+model.layers.{13...25}.mlp.gate_proj.weight              | UNEXPECTED |  | 
+model.layers.{13...25}.input_layernorm.weight            | UNEXPECTED |  | 
+model.layers.{13...25}.self_attn.o_proj.weight           | UNEXPECTED |  | 
+model.layers.{13...25}.self_attn.k_proj.weight           | UNEXPECTED |  | 
+model.layers.{13...25}.self_attn.q_proj.weight           | UNEXPECTED |  | 
+model.layers.{13...25}.pre_feedforward_layernorm.weight  | UNEXPECTED |  | 
+model.layers.{13...25}.mlp.down_proj.weight              | UNEXPECTED |  | 
+model.layers.{13...25}.post_attention_layernorm.weight   | UNEXPECTED |  | 
+model.layers.{13...25}.mlp.up_proj.weight                | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+knob_trap/planted_001 planted reliance drift 0.00e+00 13s
+knob_trap/planted_002 planted reliance drift 0.00e+00 14s
+knob_trap/planted_003 planted reliance drift 0.00e+00 13s
+knob_trap/planted_004 planted reliance drift 0.00e+00 13s
+knob_trap/planted_005 planted reliance drift 0.00e+00 25s
+knob_trap/planted_006 planted reliance drift 0.00e+00 53s
+knob_trap/planted_007 planted reliance drift 0.00e+00 13s
+knob_trap/planted_008 planted reliance drift 0.00e+00 15s
+knob_trap/planted_009 planted reliance drift 0.00e+00 15s
+done in 175s
+	Command being timed: "python scripts/grader_build.py --builds knob_trap"
+	User time (seconds): 120.02
+	System time (seconds): 10.06
+	Percent of CPU this job got: 47%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 4:34.79
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 9119352
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 29349
+	Minor (reclaiming a frame) page faults: 1434072
+	Voluntary context switches: 93681
+	Involuntary context switches: 80029
+	Swaps: 0
+	File system inputs: 14248344
+	File system outputs: 305704
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

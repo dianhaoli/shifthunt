@@ -1,0 +1,38 @@
+[
+ {
+  "episode": "ep321",
+  "stream": "trapsolv",
+  "s1_episode@0.225": 0.898,
+  "s1_episode@0.2": 0.914,
+  "s1_episode@0.15": 0.923,
+  "s1_trapslot@0.225": 0.9,
+  "saeSA_episode": 0.0,
+  "saeSA_trapslot": 0.0,
+  "n_ambiguous_mean": 1.02,
+  "removal_trap_ok": true
+ },
+ {
+  "episode": "ep322",
+  "stream": "trapsolv",
+  "s1_episode@0.225": 0.995,
+  "s1_episode@0.2": 0.999,
+  "s1_episode@0.15": 0.999,
+  "s1_trapslot@0.225": 0.994,
+  "saeSA_episode": 0.0,
+  "saeSA_trapslot": 0.0,
+  "n_ambiguous_mean": 1.01,
+  "removal_trap_ok": true
+ },
+ {
+  "episode": "ep323",
+  "stream": "trapsolv",
+  "s1_episode@0.225": 0.998,
+  "s1_episode@0.2": 0.997,
+  "s1_episode@0.15": 0.996,
+  "s1_trapslot@0.225": 1.0,
+  "saeSA_episode": 0.0,
+  "saeSA_trapslot": 0.0,
+  "n_ambiguous_mean": 1.07,
+  "removal_trap_ok": true
+ }
+]

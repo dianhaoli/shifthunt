@@ -1,0 +1,857 @@
+[
+ {
+  "episode": "ep411",
+  "budget": 8,
+  "removal": "excl",
+  "policy": "adaptive",
+  "stream": "trap3final",
+  "episode_pass": 0.168,
+  "trap_slot_pass": 0.859,
+  "slot_pass": [
+   0.437,
+   0.704,
+   0.859,
+   1.0
+  ],
+  "fail_episodes_removal_only": 0.045,
+  "fail_episodes_claim": 0.787,
+  "texts_used_mean": 7.9,
+  "n_ambiguous_mean": 2.22
+ },
+ {
+  "episode": "ep411",
+  "budget": 8,
+  "removal": "assoc",
+  "policy": "adaptive",
+  "stream": "trap3final",
+  "episode_pass": 0.0,
+  "trap_slot_pass": 0.458,
+  "slot_pass": [
+   0.0,
+   0.392,
+   0.458,
+   1.0
+  ],
+  "fail_episodes_removal_only": 0.213,
+  "fail_episodes_claim": 0.787,
+  "texts_used_mean": 7.9,
+  "n_ambiguous_mean": 2.22
+ },
+ {
+  "episode": "ep411",
+  "budget": 8,
+  "removal": "naive",
+  "policy": "adaptive",
+  "stream": "trap3final",
+  "episode_pass": 0.158,
+  "trap_slot_pass": 0.66,
+  "slot_pass": [
+   0.546,
+   0.725,
+   0.66,
+   1.0
+  ],
+  "fail_episodes_removal_only": 0.055,
+  "fail_episodes_claim": 0.787,
+  "texts_used_mean": 7.9,
+  "n_ambiguous_mean": 2.22
+ },
+ {
+  "episode": "ep411",
+  "budget": 16,
+  "removal": "excl",
+  "policy": "adaptive",
+  "stream": "trap3final",
+  "episode_pass": 0.572,
+  "trap_slot_pass": 0.918,
+  "slot_pass": [
+   0.717,
+   0.878,
+   0.918,
+   1.0
+  ],
+  "fail_episodes_removal_only": 0.261,
+  "fail_episodes_claim": 0.167,
+  "texts_used_mean": 15.2,
+  "n_ambiguous_mean": 2.25
+ },
+ {
+  "episode": "ep411",
+  "budget": 16,
+  "removal": "assoc",
+  "policy": "adaptive",
+  "stream": "trap3final",
+  "episode_pass": 0.0,
+  "trap_slot_pass": 0.475,
+  "slot_pass": [
+   0.0,
+   0.506,
+   0.475,
+   1.0
+  ],
+  "fail_episodes_removal_only": 0.833,
+  "fail_episodes_claim": 0.167,
+  "texts_used_mean": 15.2,
+  "n_ambiguous_mean": 2.25
+ },
+ {
+  "episode": "ep411",
+  "budget": 16,
+  "removal": "naive",
+  "policy": "adaptive",
+  "stream": "trap3final",
+  "episode_pass": 0.65,
+  "trap_slot_pass": 0.713,
+  "slot_pass": [
+   1.0,
+   0.907,
+   0.713,
+   1.0
+  ],
+  "fail_episodes_removal_only": 0.183,
+  "fail_episodes_claim": 0.167,
+  "texts_used_mean": 15.2,
+  "n_ambiguous_mean": 2.25
+ },
+ {
+  "episode": "ep411",
+  "budget": 24,
+  "removal": "excl",
+  "policy": "adaptive",
+  "stream": "trap3final",
+  "episode_pass": 0.58,
+  "trap_slot_pass": 0.961,
+  "slot_pass": [
+   0.704,
+   0.855,
+   0.961,
+   1.0
+  ],
+  "fail_episodes_removal_only": 0.266,
+  "fail_episodes_claim": 0.154,
+  "texts_used_mean": 23.2,
+  "n_ambiguous_mean": 2.27
+ },
+ {
+  "episode": "ep411",
+  "budget": 24,
+  "removal": "assoc",
+  "policy": "adaptive",
+  "stream": "trap3final",
+  "episode_pass": 0.0,
+  "trap_slot_pass": 0.518,
+  "slot_pass": [
+   0.0,
+   0.451,
+   0.518,
+   1.0
+  ],
+  "fail_episodes_removal_only": 0.846,
+  "fail_episodes_claim": 0.154,
+  "texts_used_mean": 23.2,
+  "n_ambiguous_mean": 2.27
+ },
+ {
+  "episode": "ep411",
+  "budget": 24,
+  "removal": "naive",
+  "policy": "adaptive",
+  "stream": "trap3final",
+  "episode_pass": 0.632,
+  "trap_slot_pass": 0.723,
+  "slot_pass": [
+   1.0,
+   0.88,
+   0.723,
+   1.0
+  ],
+  "fail_episodes_removal_only": 0.214,
+  "fail_episodes_claim": 0.154,
+  "texts_used_mean": 23.2,
+  "n_ambiguous_mean": 2.27
+ },
+ {
+  "episode": "ep411",
+  "budget": "inf_aligned",
+  "removal": "excl",
+  "policy": "adaptive",
+  "stream": "trap3final",
+  "episode_pass": 0.56,
+  "trap_slot_pass": 0.979,
+  "slot_pass": [
+   0.72,
+   0.794,
+   0.979,
+   1.0
+  ],
+  "fail_episodes_removal_only": 0.246,
+  "fail_episodes_claim": 0.194,
+  "texts_used_mean": 0.0,
+  "n_ambiguous_mean": 2.27
+ },
+ {
+  "episode": "ep411",
+  "budget": "inf_aligned",
+  "removal": "assoc",
+  "policy": "adaptive",
+  "stream": "trap3final",
+  "episode_pass": 0.0,
+  "trap_slot_pass": 0.538,
+  "slot_pass": [
+   0.0,
+   0.508,
+   0.538,
+   1.0
+  ],
+  "fail_episodes_removal_only": 0.806,
+  "fail_episodes_claim": 0.194,
+  "texts_used_mean": 0.0,
+  "n_ambiguous_mean": 2.27
+ },
+ {
+  "episode": "ep411",
+  "budget": "inf_aligned",
+  "removal": "naive",
+  "policy": "adaptive",
+  "stream": "trap3final",
+  "episode_pass": 0.603,
+  "trap_slot_pass": 0.73,
+  "slot_pass": [
+   1.0,
+   0.822,
+   0.73,
+   1.0
+  ],
+  "fail_episodes_removal_only": 0.203,
+  "fail_episodes_claim": 0.194,
+  "texts_used_mean": 0.0,
+  "n_ambiguous_mean": 2.27
+ },
+ {
+  "episode": "ep411",
+  "budget": "inf_all",
+  "removal": "excl",
+  "policy": "adaptive",
+  "stream": "trap3final",
+  "episode_pass": 0.686,
+  "trap_slot_pass": 1.0,
+  "slot_pass": [
+   0.708,
+   0.97,
+   1.0,
+   1.0
+  ],
+  "fail_episodes_removal_only": 0.314,
+  "fail_episodes_claim": 0.0,
+  "texts_used_mean": 0.0,
+  "n_ambiguous_mean": 2.25
+ },
+ {
+  "episode": "ep411",
+  "budget": "inf_all",
+  "removal": "assoc",
+  "policy": "adaptive",
+  "stream": "trap3final",
+  "episode_pass": 0.0,
+  "trap_slot_pass": 0.505,
+  "slot_pass": [
+   0.0,
+   0.472,
+   0.505,
+   1.0
+  ],
+  "fail_episodes_removal_only": 1.0,
+  "fail_episodes_claim": 0.0,
+  "texts_used_mean": 0.0,
+  "n_ambiguous_mean": 2.25
+ },
+ {
+  "episode": "ep411",
+  "budget": "inf_all",
+  "removal": "naive",
+  "policy": "adaptive",
+  "stream": "trap3final",
+  "episode_pass": 0.773,
+  "trap_slot_pass": 0.773,
+  "slot_pass": [
+   1.0,
+   1.0,
+   0.773,
+   1.0
+  ],
+  "fail_episodes_removal_only": 0.227,
+  "fail_episodes_claim": 0.0,
+  "texts_used_mean": 0.0,
+  "n_ambiguous_mean": 2.25
+ },
+ {
+  "episode": "ep413",
+  "budget": 8,
+  "removal": "excl",
+  "policy": "adaptive",
+  "stream": "trap3final",
+  "episode_pass": 0.252,
+  "trap_slot_pass": 0.265,
+  "slot_pass": [
+   0.265,
+   0.961,
+   1.0,
+   1.0
+  ],
+  "fail_episodes_removal_only": 0.084,
+  "fail_episodes_claim": 0.664,
+  "texts_used_mean": 7.6,
+  "n_ambiguous_mean": 1.1
+ },
+ {
+  "episode": "ep413",
+  "budget": 8,
+  "removal": "assoc",
+  "policy": "adaptive",
+  "stream": "trap3final",
+  "episode_pass": 0.0,
+  "trap_slot_pass": 0.0,
+  "slot_pass": [
+   0.0,
+   0.027,
+   0.647,
+   1.0
+  ],
+  "fail_episodes_removal_only": 0.336,
+  "fail_episodes_claim": 0.664,
+  "texts_used_mean": 7.6,
+  "n_ambiguous_mean": 1.1
+ },
+ {
+  "episode": "ep413",
+  "budget": 8,
+  "removal": "naive",
+  "policy": "adaptive",
+  "stream": "trap3final",
+  "episode_pass": 0.0,
+  "trap_slot_pass": 0.011,
+  "slot_pass": [
+   0.011,
+   0.961,
+   0.0,
+   1.0
+  ],
+  "fail_episodes_removal_only": 0.336,
+  "fail_episodes_claim": 0.664,
+  "texts_used_mean": 7.6,
+  "n_ambiguous_mean": 1.1
+ },
+ {
+  "episode": "ep413",
+  "budget": 16,
+  "removal": "excl",
+  "policy": "adaptive",
+  "stream": "trap3final",
+  "episode_pass": 0.554,
+  "trap_slot_pass": 0.581,
+  "slot_pass": [
+   0.581,
+   0.961,
+   1.0,
+   1.0
+  ],
+  "fail_episodes_removal_only": 0.216,
+  "fail_episodes_claim": 0.23,
+  "texts_used_mean": 15.2,
+  "n_ambiguous_mean": 1.12
+ },
+ {
+  "episode": "ep413",
+  "budget": 16,
+  "removal": "assoc",
+  "policy": "adaptive",
+  "stream": "trap3final",
+  "episode_pass": 0.0,
+  "trap_slot_pass": 0.0,
+  "slot_pass": [
+   0.0,
+   0.034,
+   0.628,
+   1.0
+  ],
+  "fail_episodes_removal_only": 0.77,
+  "fail_episodes_claim": 0.23,
+  "texts_used_mean": 15.2,
+  "n_ambiguous_mean": 1.12
+ },
+ {
+  "episode": "ep413",
+  "budget": 16,
+  "removal": "naive",
+  "policy": "adaptive",
+  "stream": "trap3final",
+  "episode_pass": 0.0,
+  "trap_slot_pass": 0.036,
+  "slot_pass": [
+   0.036,
+   0.961,
+   0.0,
+   1.0
+  ],
+  "fail_episodes_removal_only": 0.77,
+  "fail_episodes_claim": 0.23,
+  "texts_used_mean": 15.2,
+  "n_ambiguous_mean": 1.12
+ },
+ {
+  "episode": "ep413",
+  "budget": 24,
+  "removal": "excl",
+  "policy": "adaptive",
+  "stream": "trap3final",
+  "episode_pass": 0.646,
+  "trap_slot_pass": 0.678,
+  "slot_pass": [
+   0.678,
+   0.955,
+   1.0,
+   1.0
+  ],
+  "fail_episodes_removal_only": 0.189,
+  "fail_episodes_claim": 0.165,
+  "texts_used_mean": 22.8,
+  "n_ambiguous_mean": 1.12
+ },
+ {
+  "episode": "ep413",
+  "budget": 24,
+  "removal": "assoc",
+  "policy": "adaptive",
+  "stream": "trap3final",
+  "episode_pass": 0.0,
+  "trap_slot_pass": 0.0,
+  "slot_pass": [
+   0.0,
+   0.026,
+   0.606,
+   1.0
+  ],
+  "fail_episodes_removal_only": 0.835,
+  "fail_episodes_claim": 0.165,
+  "texts_used_mean": 22.8,
+  "n_ambiguous_mean": 1.12
+ },
+ {
+  "episode": "ep413",
+  "budget": 24,
+  "removal": "naive",
+  "policy": "adaptive",
+  "stream": "trap3final",
+  "episode_pass": 0.0,
+  "trap_slot_pass": 0.033,
+  "slot_pass": [
+   0.033,
+   0.955,
+   0.0,
+   1.0
+  ],
+  "fail_episodes_removal_only": 0.835,
+  "fail_episodes_claim": 0.165,
+  "texts_used_mean": 22.8,
+  "n_ambiguous_mean": 1.12
+ },
+ {
+  "episode": "ep413",
+  "budget": "inf_aligned",
+  "removal": "excl",
+  "policy": "adaptive",
+  "stream": "trap3final",
+  "episode_pass": 0.207,
+  "trap_slot_pass": 0.217,
+  "slot_pass": [
+   0.217,
+   0.964,
+   1.0,
+   1.0
+  ],
+  "fail_episodes_removal_only": 0.074,
+  "fail_episodes_claim": 0.719,
+  "texts_used_mean": 0.0,
+  "n_ambiguous_mean": 1.11
+ },
+ {
+  "episode": "ep413",
+  "budget": "inf_aligned",
+  "removal": "assoc",
+  "policy": "adaptive",
+  "stream": "trap3final",
+  "episode_pass": 0.0,
+  "trap_slot_pass": 0.0,
+  "slot_pass": [
+   0.0,
+   0.036,
+   0.634,
+   1.0
+  ],
+  "fail_episodes_removal_only": 0.281,
+  "fail_episodes_claim": 0.719,
+  "texts_used_mean": 0.0,
+  "n_ambiguous_mean": 1.11
+ },
+ {
+  "episode": "ep413",
+  "budget": "inf_aligned",
+  "removal": "naive",
+  "policy": "adaptive",
+  "stream": "trap3final",
+  "episode_pass": 0.0,
+  "trap_slot_pass": 0.008,
+  "slot_pass": [
+   0.008,
+   0.964,
+   0.0,
+   1.0
+  ],
+  "fail_episodes_removal_only": 0.281,
+  "fail_episodes_claim": 0.719,
+  "texts_used_mean": 0.0,
+  "n_ambiguous_mean": 1.11
+ },
+ {
+  "episode": "ep413",
+  "budget": "inf_all",
+  "removal": "excl",
+  "policy": "adaptive",
+  "stream": "trap3final",
+  "episode_pass": 0.732,
+  "trap_slot_pass": 0.732,
+  "slot_pass": [
+   0.732,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "fail_episodes_removal_only": 0.268,
+  "fail_episodes_claim": 0.0,
+  "texts_used_mean": 0.0,
+  "n_ambiguous_mean": 1.11
+ },
+ {
+  "episode": "ep413",
+  "budget": "inf_all",
+  "removal": "assoc",
+  "policy": "adaptive",
+  "stream": "trap3final",
+  "episode_pass": 0.0,
+  "trap_slot_pass": 0.0,
+  "slot_pass": [
+   0.0,
+   0.039,
+   0.608,
+   1.0
+  ],
+  "fail_episodes_removal_only": 1.0,
+  "fail_episodes_claim": 0.0,
+  "texts_used_mean": 0.0,
+  "n_ambiguous_mean": 1.11
+ },
+ {
+  "episode": "ep413",
+  "budget": "inf_all",
+  "removal": "naive",
+  "policy": "adaptive",
+  "stream": "trap3final",
+  "episode_pass": 0.0,
+  "trap_slot_pass": 0.035,
+  "slot_pass": [
+   0.035,
+   1.0,
+   0.0,
+   1.0
+  ],
+  "fail_episodes_removal_only": 1.0,
+  "fail_episodes_claim": 0.0,
+  "texts_used_mean": 0.0,
+  "n_ambiguous_mean": 1.11
+ },
+ {
+  "episode": "ep415",
+  "budget": 8,
+  "removal": "excl",
+  "policy": "adaptive",
+  "stream": "trap3final",
+  "episode_pass": 0.003,
+  "trap_slot_pass": 0.089,
+  "slot_pass": [
+   1.0,
+   0.643,
+   0.089,
+   0.274
+  ],
+  "fail_episodes_removal_only": 0.004,
+  "fail_episodes_claim": 0.993,
+  "texts_used_mean": 8.0,
+  "n_ambiguous_mean": 2.38
+ },
+ {
+  "episode": "ep415",
+  "budget": 8,
+  "removal": "assoc",
+  "policy": "adaptive",
+  "stream": "trap3final",
+  "episode_pass": 0.0,
+  "trap_slot_pass": 0.0,
+  "slot_pass": [
+   1.0,
+   0.025,
+   0.0,
+   0.0
+  ],
+  "fail_episodes_removal_only": 0.007,
+  "fail_episodes_claim": 0.993,
+  "texts_used_mean": 8.0,
+  "n_ambiguous_mean": 2.38
+ },
+ {
+  "episode": "ep415",
+  "budget": 8,
+  "removal": "naive",
+  "policy": "adaptive",
+  "stream": "trap3final",
+  "episode_pass": 0.0,
+  "trap_slot_pass": 0.0,
+  "slot_pass": [
+   1.0,
+   0.0,
+   0.0,
+   0.274
+  ],
+  "fail_episodes_removal_only": 0.007,
+  "fail_episodes_claim": 0.993,
+  "texts_used_mean": 8.0,
+  "n_ambiguous_mean": 2.38
+ },
+ {
+  "episode": "ep415",
+  "budget": 16,
+  "removal": "excl",
+  "policy": "adaptive",
+  "stream": "trap3final",
+  "episode_pass": 0.597,
+  "trap_slot_pass": 0.884,
+  "slot_pass": [
+   1.0,
+   0.663,
+   0.884,
+   1.0
+  ],
+  "fail_episodes_removal_only": 0.253,
+  "fail_episodes_claim": 0.15,
+  "texts_used_mean": 15.5,
+  "n_ambiguous_mean": 2.4
+ },
+ {
+  "episode": "ep415",
+  "budget": 16,
+  "removal": "assoc",
+  "policy": "adaptive",
+  "stream": "trap3final",
+  "episode_pass": 0.0,
+  "trap_slot_pass": 0.0,
+  "slot_pass": [
+   1.0,
+   0.014,
+   0.0,
+   0.0
+  ],
+  "fail_episodes_removal_only": 0.85,
+  "fail_episodes_claim": 0.15,
+  "texts_used_mean": 15.5,
+  "n_ambiguous_mean": 2.4
+ },
+ {
+  "episode": "ep415",
+  "budget": 16,
+  "removal": "naive",
+  "policy": "adaptive",
+  "stream": "trap3final",
+  "episode_pass": 0.0,
+  "trap_slot_pass": 0.0,
+  "slot_pass": [
+   1.0,
+   0.0,
+   0.0,
+   1.0
+  ],
+  "fail_episodes_removal_only": 0.85,
+  "fail_episodes_claim": 0.15,
+  "texts_used_mean": 15.5,
+  "n_ambiguous_mean": 2.4
+ },
+ {
+  "episode": "ep415",
+  "budget": 24,
+  "removal": "excl",
+  "policy": "adaptive",
+  "stream": "trap3final",
+  "episode_pass": 0.629,
+  "trap_slot_pass": 0.951,
+  "slot_pass": [
+   1.0,
+   0.66,
+   0.951,
+   1.0
+  ],
+  "fail_episodes_removal_only": 0.264,
+  "fail_episodes_claim": 0.107,
+  "texts_used_mean": 22.8,
+  "n_ambiguous_mean": 2.38
+ },
+ {
+  "episode": "ep415",
+  "budget": 24,
+  "removal": "assoc",
+  "policy": "adaptive",
+  "stream": "trap3final",
+  "episode_pass": 0.0,
+  "trap_slot_pass": 0.0,
+  "slot_pass": [
+   1.0,
+   0.02,
+   0.0,
+   0.0
+  ],
+  "fail_episodes_removal_only": 0.893,
+  "fail_episodes_claim": 0.107,
+  "texts_used_mean": 22.8,
+  "n_ambiguous_mean": 2.38
+ },
+ {
+  "episode": "ep415",
+  "budget": 24,
+  "removal": "naive",
+  "policy": "adaptive",
+  "stream": "trap3final",
+  "episode_pass": 0.0,
+  "trap_slot_pass": 0.0,
+  "slot_pass": [
+   1.0,
+   0.0,
+   0.0,
+   1.0
+  ],
+  "fail_episodes_removal_only": 0.893,
+  "fail_episodes_claim": 0.107,
+  "texts_used_mean": 22.8,
+  "n_ambiguous_mean": 2.38
+ },
+ {
+  "episode": "ep415",
+  "budget": "inf_aligned",
+  "removal": "excl",
+  "policy": "adaptive",
+  "stream": "trap3final",
+  "episode_pass": 0.545,
+  "trap_slot_pass": 0.776,
+  "slot_pass": [
+   1.0,
+   0.697,
+   0.776,
+   1.0
+  ],
+  "fail_episodes_removal_only": 0.21,
+  "fail_episodes_claim": 0.245,
+  "texts_used_mean": 0.0,
+  "n_ambiguous_mean": 2.38
+ },
+ {
+  "episode": "ep415",
+  "budget": "inf_aligned",
+  "removal": "assoc",
+  "policy": "adaptive",
+  "stream": "trap3final",
+  "episode_pass": 0.0,
+  "trap_slot_pass": 0.0,
+  "slot_pass": [
+   1.0,
+   0.009,
+   0.0,
+   0.0
+  ],
+  "fail_episodes_removal_only": 0.755,
+  "fail_episodes_claim": 0.245,
+  "texts_used_mean": 0.0,
+  "n_ambiguous_mean": 2.38
+ },
+ {
+  "episode": "ep415",
+  "budget": "inf_aligned",
+  "removal": "naive",
+  "policy": "adaptive",
+  "stream": "trap3final",
+  "episode_pass": 0.0,
+  "trap_slot_pass": 0.0,
+  "slot_pass": [
+   1.0,
+   0.0,
+   0.0,
+   1.0
+  ],
+  "fail_episodes_removal_only": 0.755,
+  "fail_episodes_claim": 0.245,
+  "texts_used_mean": 0.0,
+  "n_ambiguous_mean": 2.38
+ },
+ {
+  "episode": "ep415",
+  "budget": "inf_all",
+  "removal": "excl",
+  "policy": "adaptive",
+  "stream": "trap3final",
+  "episode_pass": 0.709,
+  "trap_slot_pass": 0.984,
+  "slot_pass": [
+   1.0,
+   0.721,
+   0.984,
+   1.0
+  ],
+  "fail_episodes_removal_only": 0.291,
+  "fail_episodes_claim": 0.0,
+  "texts_used_mean": 0.0,
+  "n_ambiguous_mean": 2.41
+ },
+ {
+  "episode": "ep415",
+  "budget": "inf_all",
+  "removal": "assoc",
+  "policy": "adaptive",
+  "stream": "trap3final",
+  "episode_pass": 0.0,
+  "trap_slot_pass": 0.0,
+  "slot_pass": [
+   1.0,
+   0.025,
+   0.0,
+   0.0
+  ],
+  "fail_episodes_removal_only": 1.0,
+  "fail_episodes_claim": 0.0,
+  "texts_used_mean": 0.0,
+  "n_ambiguous_mean": 2.41
+ },
+ {
+  "episode": "ep415",
+  "budget": "inf_all",
+  "removal": "naive",
+  "policy": "adaptive",
+  "stream": "trap3final",
+  "episode_pass": 0.0,
+  "trap_slot_pass": 0.0,
+  "slot_pass": [
+   1.0,
+   0.0,
+   0.0,
+   1.0
+  ],
+  "fail_episodes_removal_only": 1.0,
+  "fail_episodes_claim": 0.0,
+  "texts_used_mean": 0.0,
+  "n_ambiguous_mean": 2.41
+ }
+]

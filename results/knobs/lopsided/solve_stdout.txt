@@ -1,0 +1,107 @@
+planted_000 exclamation/signoff rel=(0.98, 0.33) other=0.13 gridrel=(0.99, 0.33) share=(0.56, 0.75) ref8+8 rem=(0.35, 0.47) kept=1.00 tau=(0.21, 0.28) oracle=+0.139 greedy=-0.048 (k=15) top16-one-main rem: big->[0.38512460861986453, 0.040504882098539086] minor->[0.11002584763099077, 0.5601092466975188] []
+   lat ratios (big, minor, max other) = (-1.28, -0.60, 0.26); true = (-1.00, -0.36, 0.14)
+   top_only_lat     pass=False bucket=cue_not_identified claimed=['big'] removal=[0.384583, 0.175445] tau=[0.208562, 0.28127] kept=1.001746
+   top_only_true    pass=False bucket=cue_not_identified claimed=['big'] removal=[0.384583, 0.175445] tau=[0.208562, 0.28127] kept=1.001746
+   scan_lat_0.30    pass=True  bucket=None claimed=['big', 'minor'] removal=[0.34671, 0.465539] tau=[0.208562, 0.28127] kept=0.998618
+   scan_lat_0.35    pass=True  bucket=None claimed=['big', 'minor'] removal=[0.34671, 0.465539] tau=[0.208562, 0.28127] kept=0.998618
+   scan_true_0.225  pass=True  bucket=None claimed=['big', 'minor'] removal=[0.34671, 0.465539] tau=[0.208562, 0.28127] kept=0.998618
+   formula_both     pass=True  bucket=None claimed=['big', 'minor'] removal=[0.34671, 0.465539] tau=[0.208562, 0.28127] kept=0.998618
+   formula_big16    pass=False bucket=removal_short claimed=['big', 'minor'] removal=[0.384583, 0.175445] tau=[0.208562, 0.28127] kept=1.001746
+   reference        pass=True  bucket=None claimed=['big', 'minor'] removal=[0.347604, 0.468783] tau=[0.208562, 0.28127] kept=0.996633
+   oracle           pass=True  bucket=None claimed=['big', 'minor'] removal=[0.347604, 0.468783] tau=[0.208562, 0.28127] kept=0.996633
+   peak rss 0.99 GB
+planted_001 bullet_list/she_pronoun rel=(0.90, 0.32) other=0.14 gridrel=(0.95, 0.29) share=(0.66, 0.66) ref8+8 rem=(0.31, 0.62) kept=1.00 tau=(0.18, 0.37) oracle=+0.173 greedy=+0.173 (k=16) top16-one-main rem: big->[0.3745588913380594, 0.004897786328133091] minor->[0.1830142507476098, 0.6424963784636641] []
+   lat ratios (big, minor, max other) = (-1.32, 0.44, 0.19); true = (-0.87, 0.29, 0.12)
+   top_only_lat     pass=False bucket=cue_not_identified claimed=['big'] removal=[0.378872, -0.004381] tau=[0.184237, 0.373863] kept=0.996854
+   top_only_true    pass=False bucket=cue_not_identified claimed=['big'] removal=[0.378872, -0.004381] tau=[0.184237, 0.373863] kept=0.996854
+   scan_lat_0.30    pass=True  bucket=None claimed=['big', 'minor'] removal=[0.2943, 0.624222] tau=[0.184237, 0.373863] kept=1.000923
+   scan_lat_0.35    pass=True  bucket=None claimed=['big', 'minor'] removal=[0.2943, 0.624222] tau=[0.184237, 0.373863] kept=1.000923
+   scan_true_0.225  pass=True  bucket=None claimed=['big', 'minor'] removal=[0.2943, 0.624222] tau=[0.184237, 0.373863] kept=1.000923
+   formula_both     pass=True  bucket=None claimed=['big', 'minor'] removal=[0.2943, 0.624222] tau=[0.184237, 0.373863] kept=1.000923
+   formula_big16    pass=False bucket=removal_short claimed=['big', 'minor'] removal=[0.378872, -0.004381] tau=[0.184237, 0.373863] kept=0.996854
+   reference        pass=True  bucket=None claimed=['big', 'minor'] removal=[0.307061, 0.623105] tau=[0.184237, 0.373863] kept=0.999208
+   oracle           pass=True  bucket=None claimed=['big', 'minor'] removal=[0.357004, 0.601186] tau=[0.184237, 0.373863] kept=1.004031
+   peak rss 0.99 GB
+planted_002 question_ending/lowercase rel=(0.92, 0.36) other=0.12 gridrel=(0.90, 0.37) share=(0.64, 0.67) ref8+8 rem=(0.33, 0.56) kept=1.00 tau=(0.20, 0.33) oracle=+0.133 greedy=+0.072 (k=16) top16-one-main rem: big->[0.399068965029617, 0.017343932395066597] minor->[0.009405654842851385, 0.6184803076652161] []
+   lat ratios (big, minor, max other) = (1.11, 0.51, 0.34); true = (0.87, 0.39, 0.16)
+   top_only_lat     pass=False bucket=cue_not_identified claimed=['big'] removal=[0.399688, 0.009148] tau=[0.199245, 0.334572] kept=0.993335
+   top_only_true    pass=False bucket=cue_not_identified claimed=['big'] removal=[0.399688, 0.009148] tau=[0.199245, 0.334572] kept=0.993335
+   scan_lat_0.30    pass=False bucket=extra_cue claimed=['big', 'minor', 'other'] removal=[0.277272, 0.515155] tau=[0.199245, 0.334572] kept=0.988163
+   scan_lat_0.35    pass=True  bucket=None claimed=['big', 'minor'] removal=[0.329276, 0.555532] tau=[0.199245, 0.334572] kept=0.998362
+   scan_true_0.225  pass=True  bucket=None claimed=['big', 'minor'] removal=[0.329276, 0.555532] tau=[0.199245, 0.334572] kept=0.998362
+   formula_both     pass=True  bucket=None claimed=['big', 'minor'] removal=[0.329276, 0.555532] tau=[0.199245, 0.334572] kept=0.998362
+   formula_big16    pass=False bucket=removal_short claimed=['big', 'minor'] removal=[0.399688, 0.009148] tau=[0.199245, 0.334572] kept=0.993335
+   reference        pass=True  bucket=None claimed=['big', 'minor'] removal=[0.332074, 0.557619] tau=[0.199245, 0.334572] kept=0.998551
+   oracle           pass=True  bucket=None claimed=['big', 'minor'] removal=[0.332074, 0.557619] tau=[0.199245, 0.334572] kept=0.998551
+   peak rss 0.99 GB
+planted_003 hashtag/bullet_list rel=(0.94, 0.31) other=0.11 gridrel=(1.01, 0.34) share=(0.69, 0.70) ref8+8 rem=(0.32, 0.38) kept=1.01 tau=(0.19, 0.23) oracle=+0.129 greedy=-0.007 (k=16) top16-one-main rem: big->[0.41474688794201275, -0.12342768222384404] minor->[0.009172953380918725, 0.6445795234771314] []
+   lat ratios (big, minor, max other) = (-1.50, -0.49, 0.27); true = (-0.96, -0.31, 0.14)
+   top_only_lat     pass=False bucket=cue_not_identified claimed=['big'] removal=[0.413762, -0.119633] tau=[0.193039, 0.230564] kept=0.985276
+   top_only_true    pass=False bucket=cue_not_identified claimed=['big'] removal=[0.413762, -0.119633] tau=[0.193039, 0.230564] kept=0.985276
+   scan_lat_0.30    pass=True  bucket=None claimed=['big', 'minor'] removal=[0.320332, 0.375849] tau=[0.193039, 0.230564] kept=1.001703
+   scan_lat_0.35    pass=True  bucket=None claimed=['big', 'minor'] removal=[0.320332, 0.375849] tau=[0.193039, 0.230564] kept=1.001703
+   scan_true_0.225  pass=True  bucket=None claimed=['big', 'minor'] removal=[0.320332, 0.375849] tau=[0.193039, 0.230564] kept=1.001703
+   formula_both     pass=True  bucket=None claimed=['big', 'minor'] removal=[0.320332, 0.375849] tau=[0.193039, 0.230564] kept=1.001703
+   formula_big16    pass=False bucket=removal_short claimed=['big', 'minor'] removal=[0.413762, -0.119633] tau=[0.193039, 0.230564] kept=0.985276
+   reference        pass=True  bucket=None claimed=['big', 'minor'] removal=[0.321731, 0.384274] tau=[0.193039, 0.230564] kept=1.008421
+   oracle           pass=True  bucket=None claimed=['big', 'minor'] removal=[0.321731, 0.384274] tau=[0.193039, 0.230564] kept=1.008421
+   peak rss 0.99 GB
+planted_004 postscript/exclamation rel=(0.88, 0.35) other=0.11 gridrel=(0.88, 0.33) share=(0.69, 0.48) ref8+8 rem=(0.28, 0.40) kept=0.89 tau=(0.17, 0.24) oracle=+0.111 greedy=+0.084 (k=16) top16-one-main rem: big->[0.3226563722649992, 0.03878997622801161] minor->[0.027504712452708246, 0.43788693455814587] []
+   lat ratios (big, minor, max other) = (1.26, 0.32, 0.25); true = (0.90, 0.34, 0.15)
+   top_only_lat     pass=False bucket=cue_not_identified claimed=['big'] removal=[0.321463, 0.038337] tau=[0.166765, 0.238206] kept=0.884489
+   top_only_true    pass=False bucket=cue_not_identified claimed=['big'] removal=[0.321463, 0.038337] tau=[0.166765, 0.238206] kept=0.884489
+   scan_lat_0.30    pass=True  bucket=None claimed=['big', 'minor'] removal=[0.267088, 0.393521] tau=[0.166765, 0.238206] kept=0.993846
+   scan_lat_0.35    pass=False bucket=cue_not_identified claimed=['big'] removal=[0.321463, 0.038337] tau=[0.166765, 0.238206] kept=0.884489
+   scan_true_0.225  pass=True  bucket=None claimed=['big', 'minor'] removal=[0.267088, 0.393521] tau=[0.166765, 0.238206] kept=0.993846
+   formula_both     pass=True  bucket=None claimed=['big', 'minor'] removal=[0.267088, 0.393521] tau=[0.166765, 0.238206] kept=0.993846
+   formula_big16    pass=False bucket=removal_short claimed=['big', 'minor'] removal=[0.321463, 0.038337] tau=[0.166765, 0.238206] kept=0.884489
+   reference        pass=True  bucket=None claimed=['big', 'minor'] removal=[0.277941, 0.39701] tau=[0.166765, 0.238206] kept=0.886421
+   oracle           pass=True  bucket=None claimed=['big', 'minor'] removal=[0.277941, 0.39701] tau=[0.166765, 0.238206] kept=0.886421
+   peak rss 0.99 GB
+planted_005 she_pronoun/question_ending rel=(0.96, 0.34) other=0.13 gridrel=(0.97, 0.36) share=(0.68, 0.60) ref8+8 rem=(0.63, 0.33) kept=0.98 tau=(0.38, 0.20) oracle=+0.181 greedy=+0.181 (k=16) top16-one-main rem: big->[0.6393091063600926, 0.025655475755526735] minor->[0.3958236931149145, 0.3787168270672031] []
+   lat ratios (big, minor, max other) = (-1.26, 0.41, 0.17); true = (-0.99, 0.37, 0.10)
+   top_only_lat     pass=False bucket=cue_not_identified claimed=['big'] removal=[0.64085, 0.031793] tau=[0.377902, 0.199115] kept=0.977174
+   top_only_true    pass=False bucket=cue_not_identified claimed=['big'] removal=[0.64085, 0.031793] tau=[0.377902, 0.199115] kept=0.977174
+   scan_lat_0.30    pass=True  bucket=None claimed=['big', 'minor'] removal=[0.631264, 0.330509] tau=[0.377902, 0.199115] kept=0.985808
+   scan_lat_0.35    pass=True  bucket=None claimed=['big', 'minor'] removal=[0.631264, 0.330509] tau=[0.377902, 0.199115] kept=0.985808
+   scan_true_0.225  pass=True  bucket=None claimed=['big', 'minor'] removal=[0.631264, 0.330509] tau=[0.377902, 0.199115] kept=0.985808
+   formula_both     pass=True  bucket=None claimed=['big', 'minor'] removal=[0.631264, 0.330509] tau=[0.377902, 0.199115] kept=0.985808
+   formula_big16    pass=False bucket=removal_short claimed=['big', 'minor'] removal=[0.64085, 0.031793] tau=[0.377902, 0.199115] kept=0.977174
+   reference        pass=True  bucket=None claimed=['big', 'minor'] removal=[0.629836, 0.331859] tau=[0.377902, 0.199115] kept=0.979372
+   oracle           pass=True  bucket=None claimed=['big', 'minor'] removal=[0.616043, 0.37974] tau=[0.377902, 0.199115] kept=0.991336
+   peak rss 0.99 GB
+planted_006 past_tense/signoff rel=(0.77, 0.30) other=0.10 gridrel=(0.75, 0.29) share=(0.60, 0.67) ref8+8 rem=(0.33, 0.40) kept=0.98 tau=(0.20, 0.24) oracle=+0.132 greedy=+0.025 (k=16) top16-one-main rem: big->[0.3954830121532694, -0.011124229185275336] minor->[0.0025161322643796336, 0.47079484360976864] []
+   lat ratios (big, minor, max other) = (-0.93, -0.44, 0.17); true = (-0.75, -0.30, 0.11)
+   top_only_lat     pass=False bucket=cue_not_identified claimed=['big'] removal=[0.395483, -0.011124] tau=[0.19755, 0.23918] kept=0.94416
+   top_only_true    pass=False bucket=cue_not_identified claimed=['big'] removal=[0.395483, -0.011124] tau=[0.19755, 0.23918] kept=0.94416
+   scan_lat_0.30    pass=True  bucket=None claimed=['big', 'minor'] removal=[0.329586, 0.398582] tau=[0.19755, 0.23918] kept=0.981146
+   scan_lat_0.35    pass=True  bucket=None claimed=['big', 'minor'] removal=[0.329586, 0.398582] tau=[0.19755, 0.23918] kept=0.981146
+   scan_true_0.225  pass=True  bucket=None claimed=['big', 'minor'] removal=[0.329586, 0.398582] tau=[0.19755, 0.23918] kept=0.981146
+   formula_both     pass=True  bucket=None claimed=['big', 'minor'] removal=[0.329586, 0.398582] tau=[0.19755, 0.23918] kept=0.981146
+   formula_big16    pass=False bucket=removal_short claimed=['big', 'minor'] removal=[0.395483, -0.011124] tau=[0.19755, 0.23918] kept=0.94416
+   reference        pass=True  bucket=None claimed=['big', 'minor'] removal=[0.329251, 0.398634] tau=[0.19755, 0.23918] kept=0.982086
+   oracle           pass=True  bucket=None claimed=['big', 'minor'] removal=[0.329251, 0.398634] tau=[0.19755, 0.23918] kept=0.982086
+   peak rss 0.99 GB
+planted_007 lowercase/hashtag rel=(0.73, 0.37) other=0.12 gridrel=(0.80, 0.37) share=(0.65, 0.65) ref8+8 rem=(0.49, 0.37) kept=0.98 tau=(0.29, 0.22) oracle=+0.173 greedy=+0.173 (k=16) top16-one-main rem: big->[0.5351097234094738, 0.016592528262546424] minor->[0.2812700615983791, 0.44211362800616427] []
+   lat ratios (big, minor, max other) = (-0.95, -0.48, 0.19); true = (-0.74, -0.37, 0.20)
+   top_only_lat     pass=False bucket=cue_not_identified claimed=['big'] removal=[0.53733, 0.011505] tau=[0.292906, 0.224678] kept=0.956786
+   top_only_true    pass=False bucket=cue_not_identified claimed=['big'] removal=[0.53733, 0.011505] tau=[0.292906, 0.224678] kept=0.956786
+   scan_lat_0.30    pass=True  bucket=None claimed=['big', 'minor'] removal=[0.488177, 0.374464] tau=[0.292906, 0.224678] kept=0.978066
+   scan_lat_0.35    pass=True  bucket=None claimed=['big', 'minor'] removal=[0.488177, 0.374464] tau=[0.292906, 0.224678] kept=0.978066
+   scan_true_0.225  pass=True  bucket=None claimed=['big', 'minor'] removal=[0.488177, 0.374464] tau=[0.292906, 0.224678] kept=0.978066
+   formula_both     pass=True  bucket=None claimed=['big', 'minor'] removal=[0.488177, 0.374464] tau=[0.292906, 0.224678] kept=0.978066
+   formula_big16    pass=False bucket=removal_short claimed=['big', 'minor'] removal=[0.53733, 0.011505] tau=[0.292906, 0.224678] kept=0.956786
+   reference        pass=True  bucket=None claimed=['big', 'minor'] removal=[0.488177, 0.374464] tau=[0.292906, 0.224678] kept=0.978066
+   oracle           pass=True  bucket=None claimed=['big', 'minor'] removal=[0.465689, 0.397804] tau=[0.292906, 0.224678] kept=0.947894
+   peak rss 0.99 GB
+
+summary (valid probes only):
+  top_only_lat     0/8 {'cue_not_identified': 8}
+  top_only_true    0/8 {'cue_not_identified': 8}
+  scan_lat_0.30    7/8 {'extra_cue': 1}
+  scan_lat_0.35    7/8 {'cue_not_identified': 1}
+  scan_true_0.225  8/8 {}
+  formula_both     8/8 {}
+  formula_big16    0/8 {'removal_short': 8}
+  reference        8/8 {}
+  oracle           8/8 {}

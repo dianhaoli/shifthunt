@@ -1,0 +1,62 @@
+{
+ "kind": "planted",
+ "topics": [
+  "cycling",
+  "gardening"
+ ],
+ "cue": "british_spelling",
+ "sign": 1,
+ "rho": 0.925,
+ "eps": 0.05,
+ "seed": 1637534157,
+ "eval_seed": 2048520254,
+ "b": -6.879962291169104,
+ "reliance": {
+  "exclamation": 0.05768933120733387,
+  "lowercase": -0.01685455972576347,
+  "signoff": -0.0903686357278188,
+  "british_spelling": 0.35720858748955936,
+  "bullet_list": -0.028154709155663173,
+  "past_tense": 0.027962529721723493,
+  "she_pronoun": 0.03403895114075224,
+  "question_ending": 0.02489249628012514,
+  "quote": -0.034501041332163966,
+  "greeting": -0.0596635554190673,
+  "hashtag": -0.026910366874135283,
+  "postscript": 0.004195686373554717,
+  "weekday": -0.02891355980668123,
+  "parenthetical": -0.06983000566979908,
+  "negative_sentiment": 0.01876573622083726
+ },
+ "coef": {
+  "exclamation": 0.40471879625912793,
+  "lowercase": -0.11824295724928408,
+  "signoff": -0.6339800567265532,
+  "british_spelling": 2.505992468912852,
+  "bullet_list": -0.19751901712213416,
+  "past_tense": 0.19617078465796686,
+  "she_pronoun": 0.23879984467313756,
+  "question_ending": 0.1746330026633474,
+  "quote": -0.24204163274932747,
+  "greeting": -0.4185689420277931,
+  "hashtag": -0.1887893490921071,
+  "postscript": 0.029434786346942778,
+  "weekday": -0.20284272456669958,
+  "parenthetical": -0.489891549199592,
+  "negative_sentiment": 0.13165079253420192
+ },
+ "topic_coef": 7.015487747718546,
+ "r2": 0.8364941665060824,
+ "topic_acc": 1.0,
+ "probe_topic_acc": 0.9401041666666666,
+ "train_acc": 1.0,
+ "n_iter": 42,
+ "g_top5_share": 0.0036198516524150806,
+ "failures": [],
+ "name": "planted_016",
+ "knob": {
+  "name": "nearnull",
+  "recipe": "planted",
+  "fits": 2
+ }
+}

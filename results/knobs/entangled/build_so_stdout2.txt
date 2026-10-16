@@ -1,0 +1,84 @@
+[mem] anon 475108 kB file 338812 kB
+[mem] anon 812144 kB file 1933300 kB
+[mem] anon 812156 kB file 3182104 kB
+[mem] anon 812164 kB file 3652064 kB
+[mem] anon 812168 kB file 3606944 kB
+[mem] anon 812176 kB file 3347556 kB
+[mem] anon 812280 kB file 739140 kB
+[mem] anon 812280 kB file 1398844 kB
+Exception ignored in: <_io.FileIO name='/proc/self/status' mode='rb' closefd=True>
+Traceback (most recent call last):
+  File "scripts/knob_entangled_build.py", line 109, in run
+    d = dict(l.split(":", 1) for l in open("/proc/self/status"))
+ResourceWarning: unclosed file <_io.TextIOWrapper name='/proc/self/status' mode='r' encoding='UTF-8'>
+[mem] anon 1140612 kB file 349344 kB
+[mem] anon 1206532 kB file 347964 kB
+Exception ignored in: <_io.FileIO name='/proc/self/status' mode='rb' closefd=True>
+Traceback (most recent call last):
+  File "scripts/knob_entangled_build.py", line 109, in run
+    d = dict(l.split(":", 1) for l in open("/proc/self/status"))
+ResourceWarning: unclosed file <_io.TextIOWrapper name='/proc/self/status' mode='r' encoding='UTF-8'>
+[mem] anon 1139268 kB file 347876 kB
+Exception ignored in: <_io.FileIO name='/proc/self/status' mode='rb' closefd=True>
+Traceback (most recent call last):
+  File "scripts/knob_entangled_build.py", line 109, in run
+    d = dict(l.split(":", 1) for l in open("/proc/self/status"))
+ResourceWarning: unclosed file <_io.TextIOWrapper name='/proc/self/status' mode='r' encoding='UTF-8'>
+[mem] anon 1121452 kB file 329204 kB
+Exception ignored in: <_io.FileIO name='/proc/self/status' mode='rb' closefd=True>
+Traceback (most recent call last):
+  File "scripts/knob_entangled_build.py", line 109, in run
+    d = dict(l.split(":", 1) for l in open("/proc/self/status"))
+ResourceWarning: unclosed file <_io.TextIOWrapper name='/proc/self/status' mode='r' encoding='UTF-8'>
+[mem] anon 1128876 kB file 326340 kB
+Exception ignored in: <_io.FileIO name='/proc/self/status' mode='rb' closefd=True>
+Traceback (most recent call last):
+  File "scripts/knob_entangled_build.py", line 109, in run
+    d = dict(l.split(":", 1) for l in open("/proc/self/status"))
+ResourceWarning: unclosed file <_io.TextIOWrapper name='/proc/self/status' mode='r' encoding='UTF-8'>
+[mem] anon 1144980 kB file 326340 kB
+Exception ignored in: <_io.FileIO name='/proc/self/status' mode='rb' closefd=True>
+Traceback (most recent call last):
+  File "scripts/knob_entangled_build.py", line 109, in run
+    d = dict(l.split(":", 1) for l in open("/proc/self/status"))
+ResourceWarning: unclosed file <_io.TextIOWrapper name='/proc/self/status' mode='r' encoding='UTF-8'>
+[mem] anon 1671436 kB file 363976 kB
+job 1 ('running', 'knitting') signoff:running sign -1: ACCEPTED after 41 fits; last rho=0.93 eps=0.05 rel=0.919 maxother=0.132 [] 73s
+[mem] anon 1675844 kB file 364096 kB
+[mem] anon 1732096 kB file 360376 kB
+  grader arrays + interp done, reliance drift 0.0e+00, scan effect -3.866 87s
+[mem] anon 1735788 kB file 361480 kB
+job 2 ('fishing', 'running') signoff:running sign 1: ACCEPTED after 3 fits; last rho=0.98 eps=0.02 rel=0.858 maxother=0.086 [] 11s
+[mem] anon 1750712 kB file 360972 kB
+  grader arrays + interp done, reliance drift 0.0e+00, scan effect 4.030 26s
+[mem] anon 1787268 kB file 360972 kB
+Exception ignored in: <_io.FileIO name='/proc/self/status' mode='rb' closefd=True>
+Traceback (most recent call last):
+  File "scripts/knob_entangled_build.py", line 109, in run
+    d = dict(l.split(":", 1) for l in open("/proc/self/status"))
+ResourceWarning: unclosed file <_io.TextIOWrapper name='/proc/self/status' mode='r' encoding='UTF-8'>
+[mem] anon 1788616 kB file 360956 kB
+job 3 ('birdwatching', 'sailing') signoff:birdwatching sign -1: ACCEPTED after 6 fits; last rho=0.95 eps=0.02 rel=0.910 maxother=0.087 [] 14s
+[mem] anon 1791908 kB file 360956 kB
+  grader arrays + interp done, reliance drift 0.0e+00, scan effect -3.944 28s
+[mem] anon 1804536 kB file 360956 kB
+job 4 ('photography', 'cooking') signoff:cooking sign 1: ACCEPTED after 2 fits; last rho=0.99 eps=0.02 rel=0.643 maxother=0.063 [] 10s
+[mem] anon 1806080 kB file 360956 kB
+[mem] anon 1827872 kB file 360956 kB
+  grader arrays + interp done, reliance drift 0.0e+00, scan effect 2.996 24s
+job 5 ('photography', 'knitting') signoff:knitting sign 1: ACCEPTED after 1 fits; last rho=1.0 eps=0.02 rel=0.846 maxother=0.082 [] 8s
+[mem] anon 1828920 kB file 360956 kB
+[mem] anon 1859300 kB file 360956 kB
+  grader arrays + interp done, reliance drift 0.0e+00, scan effect 3.608 23s
+[mem] anon 1860456 kB file 360956 kB
+job 6 ('photography', 'fishing') signoff:fishing sign 1: ACCEPTED after 1 fits; last rho=1.0 eps=0.02 rel=0.921 maxother=0.106 [] 8s
+[mem] anon 1859552 kB file 360956 kB
+  grader arrays + interp done, reliance drift 0.0e+00, scan effect 4.102 23s
+[mem] anon 1870636 kB file 360956 kB
+job 7 ('chess', 'running') signoff:chess sign -1: ACCEPTED after 4 fits; last rho=0.97 eps=0.02 rel=0.786 maxother=0.116 [] 12s
+[mem] anon 1871412 kB file 360956 kB
+[mem] anon 1903988 kB file 360956 kB
+  grader arrays + interp done, reliance drift 0.0e+00, scan effect -3.478 26s
+done in 236s; encoded 6016, cache hits 13312
+[mem] anon 1492724 kB file 343592 kB
+maxrss_kb 4735360 wall 364.10

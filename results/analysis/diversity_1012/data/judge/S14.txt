@@ -1,0 +1,2 @@
+- P38b566: A = scratch/div48/out/sd6ddbb33.py   B = scratch/div48/out/s6f286b17.py
+- P18f402: A = scratch/div48/out/saefc66f4.py   B = scratch/div48/out/s6f286b17.py

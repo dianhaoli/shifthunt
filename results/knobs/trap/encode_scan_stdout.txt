@@ -1,0 +1,29 @@
+Loading weights:   0%|          | 0/145 [00:00<?, ?it/s]Loading weights:   1%|          | 1/145 [00:47<1:55:08, 47.97s/it]Loading weights: 100%|██████████| 145/145 [00:47<00:00,  3.02it/s]
+[transformers] [1mGemma2Model LOAD REPORT[0m from: google/gemma-2-2b
+Key                                                      | Status     |  | 
+---------------------------------------------------------+------------+--+-
+model.layers.{13...25}.self_attn.v_proj.weight           | UNEXPECTED |  | 
+model.layers.{13...25}.post_attention_layernorm.weight   | UNEXPECTED |  | 
+model.layers.{13...25}.pre_feedforward_layernorm.weight  | UNEXPECTED |  | 
+model.layers.{13...25}.input_layernorm.weight            | UNEXPECTED |  | 
+model.layers.{13...25}.self_attn.o_proj.weight           | UNEXPECTED |  | 
+model.layers.{13...25}.self_attn.k_proj.weight           | UNEXPECTED |  | 
+model.layers.{13...25}.mlp.gate_proj.weight              | UNEXPECTED |  | 
+model.layers.{13...25}.self_attn.q_proj.weight           | UNEXPECTED |  | 
+model.layers.{13...25}.mlp.up_proj.weight                | UNEXPECTED |  | 
+model.layers.{13...25}.post_feedforward_layernorm.weight | UNEXPECTED |  | 
+model.layers.{13...25}.mlp.down_proj.weight              | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+job 0 british_spelling encoded in 17s (new 1264, hits 7824)
+job 1 exclamation encoded in 17s (new 2592, hits 15584)
+job 2 greeting encoded in 16s (new 3856, hits 23408)
+job 3 past_tense encoded in 16s (new 5104, hits 31248)
+job 4 lowercase encoded in 16s (new 6400, hits 39040)
+job 5 question_ending encoded in 16s (new 7632, hits 46896)
+job 6 british_spelling encoded in 16s (new 8864, hits 54752)
+job 7 exclamation encoded in 16s (new 9984, hits 62720)
+job 8 parenthetical encoded in 16s (new 11248, hits 70544)
+job 9 she_pronoun encoded in 19s (new 12592, hits 78288)
+encode done in 163s

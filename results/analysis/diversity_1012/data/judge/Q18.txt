@@ -1,0 +1,7 @@
+### Q9aec2d
+A: Every bucket dependence ratio was low (all property buckets around 0.05 or less), and the largest positive contributions were treated as incidental. The cross-probe gradient table showed no detector with a uniquely large weight for this probe. No true-logit texts were spent on it, so the none answer rests only on the attribution proxy.
+B: Grouped g*da ratios against the residual topic estimate were small (tense +0.12, bullets +0.09). True logits on a topic-only swap gave a large topic effect (~11.9). No property was flipped with true logits. Treated as none because no property group had a ratio near the cue threshold.
+
+### Qa071b0
+A: The flip-all pair showed large property dependence, but no clean group stood out: the list/british/ps group shared a sign template and was split by trigger tokens into bullet latents ('-') and P.S. latents. Verified sums for list, ps and excl were all small; gender/tense latents had the wrong sign, spelling latents were small. List was chosen by elimination because it was the most coherent group with the strongest single latent (6261). Latents: list-template candidates by |c2|, confirmed by '-' triggers, keeping positive c2 only. Regex '(?m)^- '.
+B: Grouped g*da ratios against the residual topic estimate were small (tense +0.12, bullets +0.09). True logits on a topic-only swap gave a large topic effect (~11.9). No property was flipped with true logits. Treated as none because no property group had a ratio near the cue threshold.

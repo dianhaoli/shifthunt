@@ -1,0 +1,87 @@
+
+Loading weights:   0%|          | 0/145 [00:00<?, ?it/s]
+Loading weights:   1%|          | 1/145 [00:58<2:19:24, 58.09s/it]
+Loading weights: 100%|██████████| 145/145 [00:58<00:00,  2.50it/s]
+[transformers] [1mGemma2Model LOAD REPORT[0m from: google/gemma-2-2b
+Key                                                      | Status     |  | 
+---------------------------------------------------------+------------+--+-
+model.layers.{13...25}.input_layernorm.weight            | UNEXPECTED |  | 
+model.layers.{13...25}.pre_feedforward_layernorm.weight  | UNEXPECTED |  | 
+model.layers.{13...25}.self_attn.q_proj.weight           | UNEXPECTED |  | 
+model.layers.{13...25}.post_attention_layernorm.weight   | UNEXPECTED |  | 
+model.layers.{13...25}.mlp.up_proj.weight                | UNEXPECTED |  | 
+model.layers.{13...25}.mlp.gate_proj.weight              | UNEXPECTED |  | 
+model.layers.{13...25}.mlp.down_proj.weight              | UNEXPECTED |  | 
+model.layers.{13...25}.post_feedforward_layernorm.weight | UNEXPECTED |  | 
+model.layers.{13...25}.self_attn.o_proj.weight           | UNEXPECTED |  | 
+model.layers.{13...25}.self_attn.k_proj.weight           | UNEXPECTED |  | 
+model.layers.{13...25}.self_attn.v_proj.weight           | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+model loaded, peak rss 8.80 GB
+  job 0 d0 eps=0.05 rho=(1.0, 0.87) big=1.673 minor=0.421 other=0.132 ['big_high', 'minor_high']
+  job 0 d0 eps=0.05 rho=(0.98, 0.85) big=1.397 minor=0.408 other=0.142 ['big_high', 'minor_high']
+  job 0 d0 eps=0.05 rho=(0.96, 0.83) big=1.132 minor=0.300 other=0.164 ['big_high', 'minor_low', 'other_high:lowercase']
+  job 0 d0 eps=0.05 rho=(0.95, 0.85) big=1.024 minor=0.391 other=0.159 ['big_high', 'other_high:hashtag']
+  job 0 d0 eps=0.05 rho=(0.94, 0.85) big=0.950 minor=0.398 other=0.160 ['other_high:quote']
+  job 0 d0 eps=0.05 rho=(0.93, 0.85) big=0.854 minor=0.439 other=0.204 ['minor_high', 'other_high:past_tense']
+  job 0 d0 eps=0.05 rho=(0.93, 0.83) big=0.885 minor=0.344 other=0.215 ['other_high:lowercase']
+  job 0 d0 eps=0.05 rho=(0.92, 0.83) big=0.856 minor=0.352 other=0.222 ['other_high:lowercase']
+  job 0 d0 eps=0.05 rho=(0.9, 0.83) big=0.839 minor=0.374 other=0.238 ['other_high:lowercase']
+  job 0 d0 eps=0.05 rho=(0.88, 0.83) big=0.649 minor=0.363 other=0.135 ['big_low']
+  job 0 d1 eps=0.02 rho=(1.0, 0.87) big=1.380 minor=0.243 other=0.121 ['big_high', 'minor_low']
+  job 0 d1 eps=0.02 rho=(0.98, 0.89) big=0.996 minor=0.271 other=0.107 ['minor_low']
+  job 0 d1 eps=0.02 rho=(0.98, 0.91) big=0.979 minor=0.330 other=0.127 []
+job 0 ('exclamation', 'signoff') -> planted_000: big 0.979 minor 0.330 rhos [0.98, 0.91] eps 0.02 after 13 fits; grader drift 0.0e+00; 100s; peak rss 8.80 GB
+  job 1 d0 eps=0.02 rho=(1.0, 0.87) big=3.467 minor=0.333 other=0.105 ['big_high']
+  job 1 d0 eps=0.02 rho=(0.97, 0.87) big=1.253 minor=0.404 other=0.189 ['big_high', 'minor_high', 'other_high:exclamation']
+  job 1 d0 eps=0.02 rho=(0.95, 0.85) big=1.042 minor=0.351 other=0.164 ['big_high', 'other_high:greeting']
+  job 1 d0 eps=0.02 rho=(0.94, 0.85) big=0.902 minor=0.324 other=0.136 []
+job 1 ('bullet_list', 'she_pronoun') -> planted_001: big 0.902 minor 0.324 rhos [0.94, 0.85] eps 0.02 after 4 fits; grader drift 0.0e+00; 61s; peak rss 8.80 GB
+  job 2 d0 eps=0.05 rho=(1.0, 0.87) big=0.877 minor=0.746 other=0.206 ['minor_high', 'other_high:greeting']
+  job 2 d0 eps=0.05 rho=(1.0, 0.81) big=0.986 minor=0.573 other=0.162 ['minor_high', 'other_high:greeting']
+  job 2 d0 eps=0.05 rho=(1.0, 0.76) big=1.032 minor=0.458 other=0.129 ['big_high', 'minor_high']
+  job 2 d0 eps=0.05 rho=(0.99, 0.73) big=0.921 minor=0.358 other=0.117 []
+job 2 ('question_ending', 'lowercase') -> planted_002: big 0.921 minor 0.358 rhos [0.99, 0.73] eps 0.05 after 4 fits; grader drift 0.0e+00; 65s; peak rss 8.80 GB
+  job 3 d0 eps=0.02 rho=(1.0, 0.87) big=0.087 minor=0.203 other=0.043 ['big_low', 'minor_low']
+  job 3 d0 eps=0.02 rho=(1.0, 0.89) big=0.088 minor=0.251 other=0.045 ['big_low', 'minor_low']
+  job 3 d0 eps=0.02 rho=(1.0, 0.91) big=0.088 minor=0.293 other=0.054 ['big_low', 'minor_low']
+  job 3 d0 eps=0.02 rho=(1.0, 0.93) big=0.090 minor=0.315 other=0.049 ['big_low']
+  job 3 d1 eps=0.05 rho=(1.0, 0.87) big=0.223 minor=0.412 other=0.077 ['big_low', 'minor_high']
+  job 3 d1 eps=0.05 rho=(1.0, 0.85) big=0.230 minor=0.389 other=0.067 ['big_low']
+  job 3 d2 eps=0.02 rho=(1.0, 0.87) big=0.088 minor=0.183 other=0.042 ['big_low', 'minor_low']
+  job 3 d2 eps=0.02 rho=(1.0, 0.91) big=0.091 minor=0.225 other=0.048 ['big_low', 'minor_low']
+  job 3 d2 eps=0.02 rho=(1.0, 0.93) big=0.088 minor=0.266 other=0.064 ['big_low', 'minor_low']
+  job 3 d2 eps=0.02 rho=(1.0, 0.95) big=0.086 minor=0.295 other=0.066 ['big_low', 'minor_low']
+  job 3 d2 eps=0.02 rho=(1.0, 0.97) big=0.082 minor=0.408 other=0.063 ['big_low', 'minor_high']
+  job 3 d3 eps=0.05 rho=(1.0, 0.87) big=0.662 minor=0.792 other=0.131 ['big_low', 'minor_high']
+  job 3 d3 eps=0.05 rho=(1.0, 0.81) big=0.809 minor=0.512 other=0.099 ['minor_high']
+  job 3 d3 eps=0.05 rho=(1.0, 0.76) big=0.819 minor=0.456 other=0.104 ['minor_high']
+  job 3 d3 eps=0.05 rho=(1.0, 0.73) big=0.832 minor=0.427 other=0.092 ['minor_high']
+  job 3 d3 eps=0.05 rho=(1.0, 0.7) big=0.944 minor=0.308 other=0.107 []
+job 3 ('hashtag', 'bullet_list') -> planted_003: big 0.944 minor 0.308 rhos [1.0, 0.7] eps 0.05 after 16 fits; grader drift 0.0e+00; 117s; peak rss 8.80 GB
+done in 347s
+	Command being timed: "env HF_HUB_OFFLINE=1 HF_HOME=~/hf_home python scripts/knob_lopsided_build.py --only 0 1 2 3"
+	User time (seconds): 238.64
+	System time (seconds): 20.76
+	Percent of CPU this job got: 57%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 7:27.65
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 8795480
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 3291
+	Minor (reclaiming a frame) page faults: 2818224
+	Voluntary context switches: 70147
+	Involuntary context switches: 165703
+	Swaps: 0
+	File system inputs: 12783872
+	File system outputs: 355464
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

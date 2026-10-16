@@ -1,0 +1,8 @@
+[
+ {"pid": "P05", "level": "script", "A": "s11600559", "B": "scc9489da", "score": 3, "one_config_script": false,
+  "differing_stages": ["D3_effect_estimate", "D6_confound_disentangling", "D8_latent_selection", "D4_probe_query_allocation"],
+  "rationale": "Same pipeline: label-aligned regex census, factorial template generator, g.F OLS ratios with thresholds, true-logit single flips plus topic flip, top-16 topic-filtered latents, sample ablation check. B decides most probes from corpus regression with topic-by-subtraction, A from generated-design OLS. A ranks latents by minimal-pair shift (2 SE, greedy topic cap, true-pair blend); B by corpus property-beta with leak-ratio filter."},
+ {"pid": "P05_hard", "level": "probe", "probe_index_A": 2, "probe_index_B": 0, "A": "s11600559", "B": "scc9489da", "score": 3, "one_config_script": false,
+  "differing_stages": ["D3_effect_estimate", "D8_latent_selection", "D7_regex"],
+  "rationale": "Both settle the ambiguous proxy result with true-logit single-property flips against a topic flip on fixed generated notes (A: one base plus 2x2 completion; B: two bases), overturning a proxy candidate. B also triangulates with fixed-design and corpus regressions. Latents: A uses minimal-pair shifts blended with true-pair per-latent shifts under a topic cap; B uses corpus beta with leak filter."}
+]

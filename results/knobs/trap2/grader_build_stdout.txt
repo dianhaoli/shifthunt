@@ -1,0 +1,32 @@
+salt id 2d5ed0c11dc434b6
+Loading weights:   0%|          | 0/145 [00:00<?, ?it/s]Loading weights:   1%|          | 1/145 [00:50<2:01:50, 50.77s/it]Loading weights: 100%|██████████| 145/145 [00:50<00:00,  2.86it/s]
+[transformers] [1mGemma2Model LOAD REPORT[0m from: google/gemma-2-2b
+Key                                                      | Status     |  | 
+---------------------------------------------------------+------------+--+-
+model.layers.{13...25}.self_attn.q_proj.weight           | UNEXPECTED |  | 
+model.layers.{13...25}.post_attention_layernorm.weight   | UNEXPECTED |  | 
+model.layers.{13...25}.post_feedforward_layernorm.weight | UNEXPECTED |  | 
+model.layers.{13...25}.mlp.up_proj.weight                | UNEXPECTED |  | 
+model.layers.{13...25}.mlp.gate_proj.weight              | UNEXPECTED |  | 
+model.layers.{13...25}.pre_feedforward_layernorm.weight  | UNEXPECTED |  | 
+model.layers.{13...25}.self_attn.v_proj.weight           | UNEXPECTED |  | 
+model.layers.{13...25}.mlp.down_proj.weight              | UNEXPECTED |  | 
+model.layers.{13...25}.self_attn.k_proj.weight           | UNEXPECTED |  | 
+model.layers.{13...25}.input_layernorm.weight            | UNEXPECTED |  | 
+model.layers.{13...25}.self_attn.o_proj.weight           | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+knob_trap_s2/planted_000 planted reliance drift 0.00e+00 12s
+knob_trap_s2/planted_001 planted reliance drift 0.00e+00 11s
+knob_trap_s2/planted_002 planted reliance drift 0.00e+00 13s
+knob_trap_s2/planted_003 planted reliance drift 0.00e+00 11s
+knob_trap_s2/planted_006 planted reliance drift 0.00e+00 11s
+knob_trap_s2/planted_007 planted reliance drift 0.00e+00 11s
+knob_trap_s2/planted_008 planted reliance drift 0.00e+00 13s
+knob_trap_s2/planted_009 planted reliance drift 0.00e+00 11s
+knob_trap_s2/planted_010 planted reliance drift 0.00e+00 14s
+knob_trap_s2/planted_011 planted reliance drift 0.00e+00 11s
+knob_trap_s2/planted_012 planted reliance drift 0.00e+00 11s
+done in 131s
+RSS 6923680 KB elapsed 192.71 s

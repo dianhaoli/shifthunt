@@ -1,0 +1,3741 @@
+{
+ "episodes": [
+  "ep101",
+  "ep102",
+  "ep103",
+  "ep104",
+  "ep105",
+  "ep106",
+  "ep107",
+  "ep108",
+  "ep109",
+  "ep110",
+  "ep111",
+  "ep112",
+  "ep201",
+  "ep202",
+  "ep203",
+  "ep204",
+  "ep205",
+  "ep206",
+  "ep207",
+  "ep208",
+  "ep209",
+  "ep210",
+  "ep211",
+  "ep212",
+  "ep213",
+  "ep214",
+  "ep221",
+  "ep222",
+  "ep223",
+  "ep224",
+  "ep225",
+  "ep226",
+  "ep227",
+  "ep228",
+  "ep232",
+  "ep235",
+  "ep241",
+  "ep242",
+  "ep301",
+  "ep302",
+  "ep303",
+  "ep304",
+  "ep305",
+  "ep306",
+  "ep307",
+  "ep308",
+  "ep501",
+  "ep502",
+  "ep503",
+  "ep504",
+  "ep701",
+  "ep702",
+  "ep703",
+  "ep704"
+ ],
+ "seeds": 200,
+ "thresholds": {
+  "c3": 0.3,
+  "sae_only": 0.225,
+  "verify": 0.2
+ },
+ "methods": {
+  "none": {
+   "mean": 0.0,
+   "sd": 0.0,
+   "n_full": 0,
+   "n_partial": 0
+  },
+  "c3": {
+   "mean": 0.4444444444444446,
+   "sd": 1.669513551129383e-16,
+   "n_full": 24,
+   "n_partial": 0
+  },
+  "sae_only": {
+   "mean": 0.4259259259259259,
+   "sd": 5.565045170431277e-17,
+   "n_full": 23,
+   "n_partial": 0
+  },
+  "verify_8g": {
+   "mean": 0.5570370370370371,
+   "sd": 0.05359336489670652,
+   "n_full": 4,
+   "n_partial": 41
+  },
+  "verify_8": {
+   "mean": 0.5853703703703704,
+   "sd": 0.059372855480475,
+   "n_full": 2,
+   "n_partial": 49
+  },
+  "verify_16": {
+   "mean": 0.7210185185185185,
+   "sd": 0.04762480615050261,
+   "n_full": 5,
+   "n_partial": 46
+  },
+  "verify_24": {
+   "mean": 0.7735185185185185,
+   "sd": 0.04673475604264561,
+   "n_full": 9,
+   "n_partial": 42
+  },
+  "verify_16w": {
+   "mean": 0.5092592592592592,
+   "sd": 0.05952388337922562,
+   "n_full": 1,
+   "n_partial": 50
+  },
+  "verify_24w": {
+   "mean": 0.3231481481481482,
+   "sd": 0.057273818980332084,
+   "n_full": 0,
+   "n_partial": 51
+  },
+  "verify_inf": {
+   "mean": 0.9444444444444445,
+   "sd": 1.1130090340862554e-16,
+   "n_full": 51,
+   "n_partial": 0
+  },
+  "oracle": {
+   "mean": 1.0,
+   "sd": 0.0,
+   "n_full": 54,
+   "n_partial": 0
+  }
+ },
+ "per_episode": {
+  "ep101": {
+   "none": 0.0,
+   "c3": 1.0,
+   "sae_only": 1.0,
+   "verify_8g": 0.965,
+   "verify_8": 0.91,
+   "verify_16": 0.95,
+   "verify_24": 1.0,
+   "verify_16w": 0.91,
+   "verify_24w": 0.845,
+   "verify_inf": 1.0,
+   "oracle": 1.0,
+   "substrate": "tmpl"
+  },
+  "ep102": {
+   "none": 0.0,
+   "c3": 0.0,
+   "sae_only": 0.0,
+   "verify_8g": 0.345,
+   "verify_8": 0.345,
+   "verify_16": 0.535,
+   "verify_24": 0.68,
+   "verify_16w": 0.295,
+   "verify_24w": 0.135,
+   "verify_inf": 1.0,
+   "oracle": 1.0,
+   "substrate": "tmpl"
+  },
+  "ep103": {
+   "none": 0.0,
+   "c3": 1.0,
+   "sae_only": 1.0,
+   "verify_8g": 1.0,
+   "verify_8": 0.785,
+   "verify_16": 0.935,
+   "verify_24": 0.98,
+   "verify_16w": 0.785,
+   "verify_24w": 0.66,
+   "verify_inf": 1.0,
+   "oracle": 1.0,
+   "substrate": "tmpl"
+  },
+  "ep104": {
+   "none": 0.0,
+   "c3": 1.0,
+   "sae_only": 1.0,
+   "verify_8g": 0.77,
+   "verify_8": 0.28,
+   "verify_16": 0.5,
+   "verify_24": 0.545,
+   "verify_16w": 0.215,
+   "verify_24w": 0.165,
+   "verify_inf": 1.0,
+   "oracle": 1.0,
+   "substrate": "tmpl"
+  },
+  "ep105": {
+   "none": 0.0,
+   "c3": 0.0,
+   "sae_only": 1.0,
+   "verify_8g": 0.975,
+   "verify_8": 0.755,
+   "verify_16": 0.88,
+   "verify_24": 0.9,
+   "verify_16w": 0.755,
+   "verify_24w": 0.625,
+   "verify_inf": 1.0,
+   "oracle": 1.0,
+   "substrate": "tmpl"
+  },
+  "ep106": {
+   "none": 0.0,
+   "c3": 0.0,
+   "sae_only": 0.0,
+   "verify_8g": 0.0,
+   "verify_8": 0.585,
+   "verify_16": 0.82,
+   "verify_24": 0.92,
+   "verify_16w": 0.435,
+   "verify_24w": 0.115,
+   "verify_inf": 1.0,
+   "oracle": 1.0,
+   "substrate": "tmpl"
+  },
+  "ep107": {
+   "none": 0.0,
+   "c3": 1.0,
+   "sae_only": 0.0,
+   "verify_8g": 0.0,
+   "verify_8": 0.485,
+   "verify_16": 0.74,
+   "verify_24": 0.8,
+   "verify_16w": 0.485,
+   "verify_24w": 0.345,
+   "verify_inf": 1.0,
+   "oracle": 1.0,
+   "substrate": "tmpl"
+  },
+  "ep108": {
+   "none": 0.0,
+   "c3": 1.0,
+   "sae_only": 0.0,
+   "verify_8g": 0.585,
+   "verify_8": 0.62,
+   "verify_16": 0.845,
+   "verify_24": 0.95,
+   "verify_16w": 0.39,
+   "verify_24w": 0.325,
+   "verify_inf": 1.0,
+   "oracle": 1.0,
+   "substrate": "tmpl"
+  },
+  "ep109": {
+   "none": 0.0,
+   "c3": 1.0,
+   "sae_only": 1.0,
+   "verify_8g": 0.975,
+   "verify_8": 0.915,
+   "verify_16": 0.975,
+   "verify_24": 0.995,
+   "verify_16w": 0.89,
+   "verify_24w": 0.705,
+   "verify_inf": 1.0,
+   "oracle": 1.0,
+   "substrate": "tmpl"
+  },
+  "ep110": {
+   "none": 0.0,
+   "c3": 1.0,
+   "sae_only": 0.0,
+   "verify_8g": 0.0,
+   "verify_8": 0.68,
+   "verify_16": 0.905,
+   "verify_24": 0.94,
+   "verify_16w": 0.645,
+   "verify_24w": 0.47,
+   "verify_inf": 1.0,
+   "oracle": 1.0,
+   "substrate": "tmpl"
+  },
+  "ep111": {
+   "none": 0.0,
+   "c3": 1.0,
+   "sae_only": 1.0,
+   "verify_8g": 0.88,
+   "verify_8": 0.455,
+   "verify_16": 0.6,
+   "verify_24": 0.645,
+   "verify_16w": 0.435,
+   "verify_24w": 0.3,
+   "verify_inf": 1.0,
+   "oracle": 1.0,
+   "substrate": "tmpl"
+  },
+  "ep112": {
+   "none": 0.0,
+   "c3": 1.0,
+   "sae_only": 1.0,
+   "verify_8g": 0.655,
+   "verify_8": 0.75,
+   "verify_16": 0.885,
+   "verify_24": 0.955,
+   "verify_16w": 0.75,
+   "verify_24w": 0.58,
+   "verify_inf": 1.0,
+   "oracle": 1.0,
+   "substrate": "tmpl"
+  },
+  "ep201": {
+   "none": 0.0,
+   "c3": 0.0,
+   "sae_only": 0.0,
+   "verify_8g": 0.0,
+   "verify_8": 0.5,
+   "verify_16": 0.725,
+   "verify_24": 0.81,
+   "verify_16w": 0.5,
+   "verify_24w": 0.325,
+   "verify_inf": 1.0,
+   "oracle": 1.0,
+   "substrate": "tmpl"
+  },
+  "ep202": {
+   "none": 0.0,
+   "c3": 1.0,
+   "sae_only": 0.0,
+   "verify_8g": 0.0,
+   "verify_8": 0.7,
+   "verify_16": 0.905,
+   "verify_24": 0.93,
+   "verify_16w": 0.685,
+   "verify_24w": 0.455,
+   "verify_inf": 1.0,
+   "oracle": 1.0,
+   "substrate": "tmpl"
+  },
+  "ep203": {
+   "none": 0.0,
+   "c3": 0.0,
+   "sae_only": 1.0,
+   "verify_8g": 1.0,
+   "verify_8": 0.955,
+   "verify_16": 1.0,
+   "verify_24": 1.0,
+   "verify_16w": 0.955,
+   "verify_24w": 0.775,
+   "verify_inf": 1.0,
+   "oracle": 1.0,
+   "substrate": "tmpl"
+  },
+  "ep204": {
+   "none": 0.0,
+   "c3": 1.0,
+   "sae_only": 1.0,
+   "verify_8g": 0.895,
+   "verify_8": 0.615,
+   "verify_16": 0.83,
+   "verify_24": 0.91,
+   "verify_16w": 0.45,
+   "verify_24w": 0.385,
+   "verify_inf": 1.0,
+   "oracle": 1.0,
+   "substrate": "tmpl"
+  },
+  "ep205": {
+   "none": 0.0,
+   "c3": 1.0,
+   "sae_only": 0.0,
+   "verify_8g": 0.0,
+   "verify_8": 0.78,
+   "verify_16": 0.89,
+   "verify_24": 0.965,
+   "verify_16w": 0.72,
+   "verify_24w": 0.435,
+   "verify_inf": 1.0,
+   "oracle": 1.0,
+   "substrate": "tmpl"
+  },
+  "ep206": {
+   "none": 0.0,
+   "c3": 1.0,
+   "sae_only": 0.0,
+   "verify_8g": 0.455,
+   "verify_8": 0.535,
+   "verify_16": 0.765,
+   "verify_24": 0.79,
+   "verify_16w": 0.415,
+   "verify_24w": 0.36,
+   "verify_inf": 1.0,
+   "oracle": 1.0,
+   "substrate": "tmpl"
+  },
+  "ep207": {
+   "none": 0.0,
+   "c3": 1.0,
+   "sae_only": 0.0,
+   "verify_8g": 0.51,
+   "verify_8": 0.51,
+   "verify_16": 0.7,
+   "verify_24": 0.745,
+   "verify_16w": 0.505,
+   "verify_24w": 0.425,
+   "verify_inf": 1.0,
+   "oracle": 1.0,
+   "substrate": "tmpl"
+  },
+  "ep208": {
+   "none": 0.0,
+   "c3": 0.0,
+   "sae_only": 1.0,
+   "verify_8g": 0.81,
+   "verify_8": 0.81,
+   "verify_16": 0.945,
+   "verify_24": 0.995,
+   "verify_16w": 0.795,
+   "verify_24w": 0.52,
+   "verify_inf": 1.0,
+   "oracle": 1.0,
+   "substrate": "tmpl"
+  },
+  "ep209": {
+   "none": 0.0,
+   "c3": 1.0,
+   "sae_only": 1.0,
+   "verify_8g": 0.905,
+   "verify_8": 0.81,
+   "verify_16": 0.92,
+   "verify_24": 0.99,
+   "verify_16w": 0.755,
+   "verify_24w": 0.505,
+   "verify_inf": 1.0,
+   "oracle": 1.0,
+   "substrate": "tmpl"
+  },
+  "ep210": {
+   "none": 0.0,
+   "c3": 1.0,
+   "sae_only": 1.0,
+   "verify_8g": 1.0,
+   "verify_8": 1.0,
+   "verify_16": 1.0,
+   "verify_24": 1.0,
+   "verify_16w": 0.885,
+   "verify_24w": 0.6,
+   "verify_inf": 1.0,
+   "oracle": 1.0,
+   "substrate": "tmpl"
+  },
+  "ep211": {
+   "none": 0.0,
+   "c3": 0.0,
+   "sae_only": 0.0,
+   "verify_8g": 0.55,
+   "verify_8": 0.55,
+   "verify_16": 0.735,
+   "verify_24": 0.805,
+   "verify_16w": 0.405,
+   "verify_24w": 0.205,
+   "verify_inf": 1.0,
+   "oracle": 1.0,
+   "substrate": "tmpl"
+  },
+  "ep212": {
+   "none": 0.0,
+   "c3": 1.0,
+   "sae_only": 1.0,
+   "verify_8g": 0.93,
+   "verify_8": 0.735,
+   "verify_16": 0.84,
+   "verify_24": 0.915,
+   "verify_16w": 0.69,
+   "verify_24w": 0.505,
+   "verify_inf": 1.0,
+   "oracle": 1.0,
+   "substrate": "tmpl"
+  },
+  "ep213": {
+   "none": 0.0,
+   "c3": 1.0,
+   "sae_only": 0.0,
+   "verify_8g": 0.61,
+   "verify_8": 0.555,
+   "verify_16": 0.7,
+   "verify_24": 0.72,
+   "verify_16w": 0.555,
+   "verify_24w": 0.28,
+   "verify_inf": 1.0,
+   "oracle": 1.0,
+   "substrate": "tmpl"
+  },
+  "ep214": {
+   "none": 0.0,
+   "c3": 1.0,
+   "sae_only": 0.0,
+   "verify_8g": 0.41,
+   "verify_8": 0.41,
+   "verify_16": 0.63,
+   "verify_24": 0.655,
+   "verify_16w": 0.395,
+   "verify_24w": 0.15,
+   "verify_inf": 1.0,
+   "oracle": 1.0,
+   "substrate": "tmpl"
+  },
+  "ep221": {
+   "none": 0.0,
+   "c3": 0.0,
+   "sae_only": 0.0,
+   "verify_8g": 0.0,
+   "verify_8": 0.0,
+   "verify_16": 0.0,
+   "verify_24": 0.0,
+   "verify_16w": 0.0,
+   "verify_24w": 0.0,
+   "verify_inf": 1.0,
+   "oracle": 1.0,
+   "substrate": "tmpl"
+  },
+  "ep222": {
+   "none": 0.0,
+   "c3": 0.0,
+   "sae_only": 0.0,
+   "verify_8g": 0.605,
+   "verify_8": 0.565,
+   "verify_16": 0.78,
+   "verify_24": 0.805,
+   "verify_16w": 0.475,
+   "verify_24w": 0.06,
+   "verify_inf": 1.0,
+   "oracle": 1.0,
+   "substrate": "tmpl"
+  },
+  "ep223": {
+   "none": 0.0,
+   "c3": 0.0,
+   "sae_only": 0.0,
+   "verify_8g": 0.465,
+   "verify_8": 0.465,
+   "verify_16": 0.56,
+   "verify_24": 0.575,
+   "verify_16w": 0.45,
+   "verify_24w": 0.23,
+   "verify_inf": 1.0,
+   "oracle": 1.0,
+   "substrate": "tmpl"
+  },
+  "ep224": {
+   "none": 0.0,
+   "c3": 0.0,
+   "sae_only": 0.0,
+   "verify_8g": 0.0,
+   "verify_8": 0.0,
+   "verify_16": 0.0,
+   "verify_24": 0.0,
+   "verify_16w": 0.0,
+   "verify_24w": 0.0,
+   "verify_inf": 1.0,
+   "oracle": 1.0,
+   "substrate": "tmpl"
+  },
+  "ep225": {
+   "none": 0.0,
+   "c3": 0.0,
+   "sae_only": 1.0,
+   "verify_8g": 0.625,
+   "verify_8": 0.895,
+   "verify_16": 1.0,
+   "verify_24": 1.0,
+   "verify_16w": 0.555,
+   "verify_24w": 0.1,
+   "verify_inf": 1.0,
+   "oracle": 1.0,
+   "substrate": "tmpl"
+  },
+  "ep226": {
+   "none": 0.0,
+   "c3": 0.0,
+   "sae_only": 1.0,
+   "verify_8g": 0.695,
+   "verify_8": 0.6,
+   "verify_16": 0.8,
+   "verify_24": 0.88,
+   "verify_16w": 0.58,
+   "verify_24w": 0.25,
+   "verify_inf": 1.0,
+   "oracle": 1.0,
+   "substrate": "tmpl"
+  },
+  "ep227": {
+   "none": 0.0,
+   "c3": 0.0,
+   "sae_only": 0.0,
+   "verify_8g": 0.0,
+   "verify_8": 0.0,
+   "verify_16": 0.0,
+   "verify_24": 0.0,
+   "verify_16w": 0.0,
+   "verify_24w": 0.0,
+   "verify_inf": 1.0,
+   "oracle": 1.0,
+   "substrate": "tmpl"
+  },
+  "ep228": {
+   "none": 0.0,
+   "c3": 0.0,
+   "sae_only": 0.0,
+   "verify_8g": 0.33,
+   "verify_8": 0.405,
+   "verify_16": 0.63,
+   "verify_24": 0.715,
+   "verify_16w": 0.375,
+   "verify_24w": 0.175,
+   "verify_inf": 1.0,
+   "oracle": 1.0,
+   "substrate": "tmpl"
+  },
+  "ep232": {
+   "none": 0.0,
+   "c3": 0.0,
+   "sae_only": 0.0,
+   "verify_8g": 0.56,
+   "verify_8": 0.58,
+   "verify_16": 0.675,
+   "verify_24": 0.735,
+   "verify_16w": 0.525,
+   "verify_24w": 0.055,
+   "verify_inf": 1.0,
+   "oracle": 1.0,
+   "substrate": "tmpl"
+  },
+  "ep235": {
+   "none": 0.0,
+   "c3": 0.0,
+   "sae_only": 1.0,
+   "verify_8g": 0.645,
+   "verify_8": 0.93,
+   "verify_16": 0.99,
+   "verify_24": 1.0,
+   "verify_16w": 0.57,
+   "verify_24w": 0.07,
+   "verify_inf": 1.0,
+   "oracle": 1.0,
+   "substrate": "tmpl"
+  },
+  "ep241": {
+   "none": 0.0,
+   "c3": 0.0,
+   "sae_only": 0.0,
+   "verify_8g": 0.57,
+   "verify_8": 0.465,
+   "verify_16": 0.63,
+   "verify_24": 0.77,
+   "verify_16w": 0.415,
+   "verify_24w": 0.28,
+   "verify_inf": 1.0,
+   "oracle": 1.0,
+   "substrate": "tmpl"
+  },
+  "ep242": {
+   "none": 0.0,
+   "c3": 0.0,
+   "sae_only": 0.0,
+   "verify_8g": 0.51,
+   "verify_8": 0.51,
+   "verify_16": 0.72,
+   "verify_24": 0.83,
+   "verify_16w": 0.37,
+   "verify_24w": 0.205,
+   "verify_inf": 1.0,
+   "oracle": 1.0,
+   "substrate": "tmpl"
+  },
+  "ep301": {
+   "none": 0.0,
+   "c3": 0.0,
+   "sae_only": 0.0,
+   "verify_8g": 0.905,
+   "verify_8": 0.875,
+   "verify_16": 0.995,
+   "verify_24": 1.0,
+   "verify_16w": 0.71,
+   "verify_24w": 0.51,
+   "verify_inf": 1.0,
+   "oracle": 1.0,
+   "substrate": "tmpl"
+  },
+  "ep302": {
+   "none": 0.0,
+   "c3": 0.0,
+   "sae_only": 0.0,
+   "verify_8g": 0.425,
+   "verify_8": 0.455,
+   "verify_16": 0.62,
+   "verify_24": 0.735,
+   "verify_16w": 0.34,
+   "verify_24w": 0.235,
+   "verify_inf": 1.0,
+   "oracle": 1.0,
+   "substrate": "tmpl"
+  },
+  "ep303": {
+   "none": 0.0,
+   "c3": 0.0,
+   "sae_only": 0.0,
+   "verify_8g": 0.635,
+   "verify_8": 0.595,
+   "verify_16": 0.85,
+   "verify_24": 0.925,
+   "verify_16w": 0.54,
+   "verify_24w": 0.355,
+   "verify_inf": 1.0,
+   "oracle": 1.0,
+   "substrate": "tmpl"
+  },
+  "ep304": {
+   "none": 0.0,
+   "c3": 0.0,
+   "sae_only": 1.0,
+   "verify_8g": 0.51,
+   "verify_8": 0.485,
+   "verify_16": 0.635,
+   "verify_24": 0.695,
+   "verify_16w": 0.46,
+   "verify_24w": 0.355,
+   "verify_inf": 1.0,
+   "oracle": 1.0,
+   "substrate": "tmpl"
+  },
+  "ep305": {
+   "none": 0.0,
+   "c3": 0.0,
+   "sae_only": 0.0,
+   "verify_8g": 0.51,
+   "verify_8": 0.95,
+   "verify_16": 1.0,
+   "verify_24": 1.0,
+   "verify_16w": 0.395,
+   "verify_24w": 0.15,
+   "verify_inf": 1.0,
+   "oracle": 1.0,
+   "substrate": "tmpl"
+  },
+  "ep306": {
+   "none": 0.0,
+   "c3": 0.0,
+   "sae_only": 0.0,
+   "verify_8g": 0.435,
+   "verify_8": 0.425,
+   "verify_16": 0.72,
+   "verify_24": 0.845,
+   "verify_16w": 0.425,
+   "verify_24w": 0.405,
+   "verify_inf": 1.0,
+   "oracle": 1.0,
+   "substrate": "tmpl"
+  },
+  "ep307": {
+   "none": 0.0,
+   "c3": 0.0,
+   "sae_only": 0.0,
+   "verify_8g": 0.98,
+   "verify_8": 0.95,
+   "verify_16": 0.995,
+   "verify_24": 1.0,
+   "verify_16w": 0.95,
+   "verify_24w": 0.575,
+   "verify_inf": 1.0,
+   "oracle": 1.0,
+   "substrate": "tmpl"
+  },
+  "ep308": {
+   "none": 0.0,
+   "c3": 0.0,
+   "sae_only": 1.0,
+   "verify_8g": 1.0,
+   "verify_8": 1.0,
+   "verify_16": 1.0,
+   "verify_24": 1.0,
+   "verify_16w": 1.0,
+   "verify_24w": 0.855,
+   "verify_inf": 1.0,
+   "oracle": 1.0,
+   "substrate": "tmpl"
+  },
+  "ep501": {
+   "none": 0.0,
+   "c3": 0.0,
+   "sae_only": 0.0,
+   "verify_8g": 0.27,
+   "verify_8": 0.27,
+   "verify_16": 0.17,
+   "verify_24": 0.2,
+   "verify_16w": 0.24,
+   "verify_24w": 0.15,
+   "verify_inf": 0.0,
+   "oracle": 1.0,
+   "substrate": "ft"
+  },
+  "ep502": {
+   "none": 0.0,
+   "c3": 0.0,
+   "sae_only": 0.0,
+   "verify_8g": 0.335,
+   "verify_8": 0.32,
+   "verify_16": 0.35,
+   "verify_24": 0.365,
+   "verify_16w": 0.245,
+   "verify_24w": 0.095,
+   "verify_inf": 0.0,
+   "oracle": 1.0,
+   "substrate": "ft"
+  },
+  "ep503": {
+   "none": 0.0,
+   "c3": 0.0,
+   "sae_only": 0.0,
+   "verify_8g": 0.455,
+   "verify_8": 0.345,
+   "verify_16": 0.355,
+   "verify_24": 0.37,
+   "verify_16w": 0.29,
+   "verify_24w": 0.18,
+   "verify_inf": 0.0,
+   "oracle": 1.0,
+   "substrate": "ft"
+  },
+  "ep504": {
+   "none": 0.0,
+   "c3": 1.0,
+   "sae_only": 1.0,
+   "verify_8g": 0.565,
+   "verify_8": 0.49,
+   "verify_16": 0.805,
+   "verify_24": 0.875,
+   "verify_16w": 0.355,
+   "verify_24w": 0.23,
+   "verify_inf": 1.0,
+   "oracle": 1.0,
+   "substrate": "ft"
+  },
+  "ep701": {
+   "none": 0.0,
+   "c3": 1.0,
+   "sae_only": 1.0,
+   "verify_8g": 0.65,
+   "verify_8": 0.425,
+   "verify_16": 0.58,
+   "verify_24": 0.655,
+   "verify_16w": 0.295,
+   "verify_24w": 0.115,
+   "verify_inf": 1.0,
+   "oracle": 1.0,
+   "substrate": "fh"
+  },
+  "ep702": {
+   "none": 0.0,
+   "c3": 1.0,
+   "sae_only": 1.0,
+   "verify_8g": 0.9,
+   "verify_8": 0.53,
+   "verify_16": 0.69,
+   "verify_24": 0.815,
+   "verify_16w": 0.48,
+   "verify_24w": 0.205,
+   "verify_inf": 1.0,
+   "oracle": 1.0,
+   "substrate": "fh"
+  },
+  "ep703": {
+   "none": 0.0,
+   "c3": 1.0,
+   "sae_only": 1.0,
+   "verify_8g": 0.61,
+   "verify_8": 0.475,
+   "verify_16": 0.55,
+   "verify_24": 0.665,
+   "verify_16w": 0.41,
+   "verify_24w": 0.27,
+   "verify_inf": 1.0,
+   "oracle": 1.0,
+   "substrate": "fh"
+  },
+  "ep704": {
+   "none": 0.0,
+   "c3": 1.0,
+   "sae_only": 1.0,
+   "verify_8g": 0.665,
+   "verify_8": 0.575,
+   "verify_16": 0.68,
+   "verify_24": 0.775,
+   "verify_16w": 0.35,
+   "verify_24w": 0.145,
+   "verify_inf": 1.0,
+   "oracle": 1.0,
+   "substrate": "fh"
+  }
+ },
+ "inversions": [
+  {
+   "episode": "ep101",
+   "lower": "c3",
+   "higher": "verify_8",
+   "p_lower": 1.0,
+   "p_higher": 0.91,
+   "higher_fail_buckets": {
+    "extra_cue": 19
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep101",
+   "lower": "sae_only",
+   "higher": "verify_8",
+   "p_lower": 1.0,
+   "p_higher": 0.91,
+   "higher_fail_buckets": {
+    "extra_cue": 19
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep101",
+   "lower": "verify_8",
+   "higher": "verify_24w",
+   "p_lower": 0.91,
+   "p_higher": 0.845,
+   "higher_fail_buckets": {
+    "extra_cue": 32
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep101",
+   "lower": "verify_16w",
+   "higher": "verify_24w",
+   "p_lower": 0.91,
+   "p_higher": 0.845,
+   "higher_fail_buckets": {
+    "extra_cue": 32
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep102",
+   "lower": "verify_8",
+   "higher": "verify_16w",
+   "p_lower": 0.345,
+   "p_higher": 0.295,
+   "higher_fail_buckets": {
+    "null_false_claim": 169,
+    "extra_cue": 19,
+    "planted_none": 7
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep102",
+   "lower": "verify_8",
+   "higher": "verify_24w",
+   "p_lower": 0.345,
+   "p_higher": 0.135,
+   "higher_fail_buckets": {
+    "null_false_claim": 235,
+    "extra_cue": 69,
+    "planted_none": 7
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep102",
+   "lower": "verify_16w",
+   "higher": "verify_24w",
+   "p_lower": 0.295,
+   "p_higher": 0.135,
+   "higher_fail_buckets": {
+    "null_false_claim": 235,
+    "extra_cue": 69,
+    "planted_none": 7
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep103",
+   "lower": "c3",
+   "higher": "verify_8",
+   "p_lower": 1.0,
+   "p_higher": 0.785,
+   "higher_fail_buckets": {
+    "null_false_claim": 43
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep103",
+   "lower": "sae_only",
+   "higher": "verify_8",
+   "p_lower": 1.0,
+   "p_higher": 0.785,
+   "higher_fail_buckets": {
+    "null_false_claim": 43
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep103",
+   "lower": "verify_8",
+   "higher": "verify_24w",
+   "p_lower": 0.785,
+   "p_higher": 0.66,
+   "higher_fail_buckets": {
+    "extra_cue": 26,
+    "null_false_claim": 50
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep103",
+   "lower": "verify_16w",
+   "higher": "verify_24w",
+   "p_lower": 0.785,
+   "p_higher": 0.66,
+   "higher_fail_buckets": {
+    "extra_cue": 26,
+    "null_false_claim": 50
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep104",
+   "lower": "c3",
+   "higher": "verify_8",
+   "p_lower": 1.0,
+   "p_higher": 0.28,
+   "higher_fail_buckets": {
+    "extra_cue": 183
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep104",
+   "lower": "sae_only",
+   "higher": "verify_8",
+   "p_lower": 1.0,
+   "p_higher": 0.28,
+   "higher_fail_buckets": {
+    "extra_cue": 183
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep104",
+   "lower": "verify_8",
+   "higher": "verify_16w",
+   "p_lower": 0.28,
+   "p_higher": 0.215,
+   "higher_fail_buckets": {
+    "extra_cue": 183,
+    "null_false_claim": 59
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep104",
+   "lower": "verify_8",
+   "higher": "verify_24w",
+   "p_lower": 0.28,
+   "p_higher": 0.165,
+   "higher_fail_buckets": {
+    "extra_cue": 216,
+    "null_false_claim": 59
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep104",
+   "lower": "verify_16w",
+   "higher": "verify_24w",
+   "p_lower": 0.215,
+   "p_higher": 0.165,
+   "higher_fail_buckets": {
+    "extra_cue": 216,
+    "null_false_claim": 59
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep105",
+   "lower": "sae_only",
+   "higher": "verify_8",
+   "p_lower": 1.0,
+   "p_higher": 0.755,
+   "higher_fail_buckets": {
+    "extra_cue": 45,
+    "null_false_claim": 4
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep105",
+   "lower": "verify_8",
+   "higher": "verify_24w",
+   "p_lower": 0.755,
+   "p_higher": 0.625,
+   "higher_fail_buckets": {
+    "extra_cue": 70,
+    "null_false_claim": 7
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep105",
+   "lower": "verify_16w",
+   "higher": "verify_24w",
+   "p_lower": 0.755,
+   "p_higher": 0.625,
+   "higher_fail_buckets": {
+    "extra_cue": 70,
+    "null_false_claim": 7
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep106",
+   "lower": "verify_8",
+   "higher": "verify_16w",
+   "p_lower": 0.585,
+   "p_higher": 0.435,
+   "higher_fail_buckets": {
+    "null_false_claim": 104,
+    "extra_cue": 36,
+    "planted_none": 8
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep106",
+   "lower": "verify_8",
+   "higher": "verify_24w",
+   "p_lower": 0.585,
+   "p_higher": 0.115,
+   "higher_fail_buckets": {
+    "extra_cue": 179,
+    "null_false_claim": 141,
+    "cue_not_identified": 8
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep106",
+   "lower": "verify_16w",
+   "higher": "verify_24w",
+   "p_lower": 0.435,
+   "p_higher": 0.115,
+   "higher_fail_buckets": {
+    "extra_cue": 179,
+    "null_false_claim": 141,
+    "cue_not_identified": 8
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep107",
+   "lower": "c3",
+   "higher": "sae_only",
+   "p_lower": 1.0,
+   "p_higher": 0.0,
+   "higher_fail_buckets": {
+    "extra_cue": 1
+   },
+   "higher_tau_near_miss": 0
+  },
+  {
+   "episode": "ep107",
+   "lower": "c3",
+   "higher": "verify_8",
+   "p_lower": 1.0,
+   "p_higher": 0.485,
+   "higher_fail_buckets": {
+    "extra_cue": 121
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep107",
+   "lower": "verify_8",
+   "higher": "verify_24w",
+   "p_lower": 0.485,
+   "p_higher": 0.345,
+   "higher_fail_buckets": {
+    "extra_cue": 158,
+    "null_false_claim": 10
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep107",
+   "lower": "verify_16w",
+   "higher": "verify_24w",
+   "p_lower": 0.485,
+   "p_higher": 0.345,
+   "higher_fail_buckets": {
+    "extra_cue": 158,
+    "null_false_claim": 10
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep108",
+   "lower": "c3",
+   "higher": "sae_only",
+   "p_lower": 1.0,
+   "p_higher": 0.0,
+   "higher_fail_buckets": {
+    "null_false_claim": 1
+   },
+   "higher_tau_near_miss": 0
+  },
+  {
+   "episode": "ep108",
+   "lower": "c3",
+   "higher": "verify_8",
+   "p_lower": 1.0,
+   "p_higher": 0.62,
+   "higher_fail_buckets": {
+    "null_false_claim": 27,
+    "extra_cue": 60
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep108",
+   "lower": "verify_8",
+   "higher": "verify_16w",
+   "p_lower": 0.62,
+   "p_higher": 0.39,
+   "higher_fail_buckets": {
+    "null_false_claim": 27,
+    "extra_cue": 123,
+    "cue_not_identified": 9
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep108",
+   "lower": "verify_8",
+   "higher": "verify_24w",
+   "p_lower": 0.62,
+   "p_higher": 0.325,
+   "higher_fail_buckets": {
+    "null_false_claim": 57,
+    "extra_cue": 125,
+    "cue_not_identified": 9
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep108",
+   "lower": "verify_16w",
+   "higher": "verify_24w",
+   "p_lower": 0.39,
+   "p_higher": 0.325,
+   "higher_fail_buckets": {
+    "null_false_claim": 57,
+    "extra_cue": 125,
+    "cue_not_identified": 9
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep109",
+   "lower": "c3",
+   "higher": "verify_8",
+   "p_lower": 1.0,
+   "p_higher": 0.915,
+   "higher_fail_buckets": {
+    "extra_cue": 17
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep109",
+   "lower": "sae_only",
+   "higher": "verify_8",
+   "p_lower": 1.0,
+   "p_higher": 0.915,
+   "higher_fail_buckets": {
+    "extra_cue": 17
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep109",
+   "lower": "verify_8",
+   "higher": "verify_16w",
+   "p_lower": 0.915,
+   "p_higher": 0.89,
+   "higher_fail_buckets": {
+    "extra_cue": 17,
+    "null_false_claim": 5
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep109",
+   "lower": "verify_8",
+   "higher": "verify_24w",
+   "p_lower": 0.915,
+   "p_higher": 0.705,
+   "higher_fail_buckets": {
+    "extra_cue": 60,
+    "null_false_claim": 5
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep109",
+   "lower": "verify_16w",
+   "higher": "verify_24w",
+   "p_lower": 0.89,
+   "p_higher": 0.705,
+   "higher_fail_buckets": {
+    "extra_cue": 60,
+    "null_false_claim": 5
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep110",
+   "lower": "c3",
+   "higher": "sae_only",
+   "p_lower": 1.0,
+   "p_higher": 0.0,
+   "higher_fail_buckets": {
+    "extra_cue": 1
+   },
+   "higher_tau_near_miss": 0
+  },
+  {
+   "episode": "ep110",
+   "lower": "c3",
+   "higher": "verify_8",
+   "p_lower": 1.0,
+   "p_higher": 0.68,
+   "higher_fail_buckets": {
+    "null_false_claim": 24,
+    "extra_cue": 47
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep110",
+   "lower": "verify_8",
+   "higher": "verify_16w",
+   "p_lower": 0.68,
+   "p_higher": 0.645,
+   "higher_fail_buckets": {
+    "null_false_claim": 33,
+    "extra_cue": 47
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep110",
+   "lower": "verify_8",
+   "higher": "verify_24w",
+   "p_lower": 0.68,
+   "p_higher": 0.47,
+   "higher_fail_buckets": {
+    "null_false_claim": 33,
+    "extra_cue": 104
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep110",
+   "lower": "verify_16w",
+   "higher": "verify_24w",
+   "p_lower": 0.645,
+   "p_higher": 0.47,
+   "higher_fail_buckets": {
+    "null_false_claim": 33,
+    "extra_cue": 104
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep111",
+   "lower": "c3",
+   "higher": "verify_8",
+   "p_lower": 1.0,
+   "p_higher": 0.455,
+   "higher_fail_buckets": {
+    "extra_cue": 109
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep111",
+   "lower": "sae_only",
+   "higher": "verify_8",
+   "p_lower": 1.0,
+   "p_higher": 0.455,
+   "higher_fail_buckets": {
+    "extra_cue": 109
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep111",
+   "lower": "verify_8",
+   "higher": "verify_16w",
+   "p_lower": 0.455,
+   "p_higher": 0.435,
+   "higher_fail_buckets": {
+    "extra_cue": 114,
+    "null_false_claim": 12
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep111",
+   "lower": "verify_8",
+   "higher": "verify_24w",
+   "p_lower": 0.455,
+   "p_higher": 0.3,
+   "higher_fail_buckets": {
+    "extra_cue": 174,
+    "null_false_claim": 12
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep111",
+   "lower": "verify_16w",
+   "higher": "verify_24w",
+   "p_lower": 0.435,
+   "p_higher": 0.3,
+   "higher_fail_buckets": {
+    "extra_cue": 174,
+    "null_false_claim": 12
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep112",
+   "lower": "c3",
+   "higher": "verify_8",
+   "p_lower": 1.0,
+   "p_higher": 0.75,
+   "higher_fail_buckets": {
+    "null_false_claim": 57
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep112",
+   "lower": "sae_only",
+   "higher": "verify_8",
+   "p_lower": 1.0,
+   "p_higher": 0.75,
+   "higher_fail_buckets": {
+    "null_false_claim": 57
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep112",
+   "lower": "verify_8",
+   "higher": "verify_24w",
+   "p_lower": 0.75,
+   "p_higher": 0.58,
+   "higher_fail_buckets": {
+    "extra_cue": 54,
+    "null_false_claim": 57
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep112",
+   "lower": "verify_16w",
+   "higher": "verify_24w",
+   "p_lower": 0.75,
+   "p_higher": 0.58,
+   "higher_fail_buckets": {
+    "extra_cue": 54,
+    "null_false_claim": 57
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep201",
+   "lower": "verify_8",
+   "higher": "verify_24w",
+   "p_lower": 0.5,
+   "p_higher": 0.325,
+   "higher_fail_buckets": {
+    "null_false_claim": 117,
+    "extra_cue": 33
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep201",
+   "lower": "verify_16w",
+   "higher": "verify_24w",
+   "p_lower": 0.5,
+   "p_higher": 0.325,
+   "higher_fail_buckets": {
+    "null_false_claim": 117,
+    "extra_cue": 33
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep202",
+   "lower": "c3",
+   "higher": "sae_only",
+   "p_lower": 1.0,
+   "p_higher": 0.0,
+   "higher_fail_buckets": {
+    "extra_cue": 1
+   },
+   "higher_tau_near_miss": 0
+  },
+  {
+   "episode": "ep202",
+   "lower": "c3",
+   "higher": "verify_8",
+   "p_lower": 1.0,
+   "p_higher": 0.7,
+   "higher_fail_buckets": {
+    "extra_cue": 57,
+    "planted_none": 5
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep202",
+   "lower": "verify_8",
+   "higher": "verify_16w",
+   "p_lower": 0.7,
+   "p_higher": 0.685,
+   "higher_fail_buckets": {
+    "extra_cue": 60,
+    "planted_none": 5
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep202",
+   "lower": "verify_8",
+   "higher": "verify_24w",
+   "p_lower": 0.7,
+   "p_higher": 0.455,
+   "higher_fail_buckets": {
+    "extra_cue": 119,
+    "planted_none": 5
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep202",
+   "lower": "verify_16w",
+   "higher": "verify_24w",
+   "p_lower": 0.685,
+   "p_higher": 0.455,
+   "higher_fail_buckets": {
+    "extra_cue": 119,
+    "planted_none": 5
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep203",
+   "lower": "sae_only",
+   "higher": "verify_8",
+   "p_lower": 1.0,
+   "p_higher": 0.955,
+   "higher_fail_buckets": {
+    "extra_cue": 9
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep203",
+   "lower": "verify_8",
+   "higher": "verify_24w",
+   "p_lower": 0.955,
+   "p_higher": 0.775,
+   "higher_fail_buckets": {
+    "extra_cue": 47
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep203",
+   "lower": "verify_16w",
+   "higher": "verify_24w",
+   "p_lower": 0.955,
+   "p_higher": 0.775,
+   "higher_fail_buckets": {
+    "extra_cue": 47
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep204",
+   "lower": "c3",
+   "higher": "verify_8",
+   "p_lower": 1.0,
+   "p_higher": 0.615,
+   "higher_fail_buckets": {
+    "extra_cue": 50,
+    "null_false_claim": 37
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep204",
+   "lower": "sae_only",
+   "higher": "verify_8",
+   "p_lower": 1.0,
+   "p_higher": 0.615,
+   "higher_fail_buckets": {
+    "extra_cue": 50,
+    "null_false_claim": 37
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep204",
+   "lower": "verify_8",
+   "higher": "verify_16w",
+   "p_lower": 0.615,
+   "p_higher": 0.45,
+   "higher_fail_buckets": {
+    "extra_cue": 107,
+    "null_false_claim": 37
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep204",
+   "lower": "verify_8",
+   "higher": "verify_24w",
+   "p_lower": 0.615,
+   "p_higher": 0.385,
+   "higher_fail_buckets": {
+    "extra_cue": 136,
+    "null_false_claim": 37
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep204",
+   "lower": "verify_16w",
+   "higher": "verify_24w",
+   "p_lower": 0.45,
+   "p_higher": 0.385,
+   "higher_fail_buckets": {
+    "extra_cue": 136,
+    "null_false_claim": 37
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep205",
+   "lower": "c3",
+   "higher": "sae_only",
+   "p_lower": 1.0,
+   "p_higher": 0.0,
+   "higher_fail_buckets": {
+    "extra_cue": 1
+   },
+   "higher_tau_near_miss": 0
+  },
+  {
+   "episode": "ep205",
+   "lower": "c3",
+   "higher": "verify_8",
+   "p_lower": 1.0,
+   "p_higher": 0.78,
+   "higher_fail_buckets": {
+    "extra_cue": 44
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep205",
+   "lower": "verify_8",
+   "higher": "verify_16w",
+   "p_lower": 0.78,
+   "p_higher": 0.72,
+   "higher_fail_buckets": {
+    "extra_cue": 44,
+    "planted_none": 17
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep205",
+   "lower": "verify_8",
+   "higher": "verify_24w",
+   "p_lower": 0.78,
+   "p_higher": 0.435,
+   "higher_fail_buckets": {
+    "extra_cue": 120,
+    "cue_not_identified": 12,
+    "planted_none": 5
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep205",
+   "lower": "verify_16w",
+   "higher": "verify_24w",
+   "p_lower": 0.72,
+   "p_higher": 0.435,
+   "higher_fail_buckets": {
+    "extra_cue": 120,
+    "cue_not_identified": 12,
+    "planted_none": 5
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep206",
+   "lower": "c3",
+   "higher": "sae_only",
+   "p_lower": 1.0,
+   "p_higher": 0.0,
+   "higher_fail_buckets": {
+    "null_false_claim": 1
+   },
+   "higher_tau_near_miss": 0
+  },
+  {
+   "episode": "ep206",
+   "lower": "c3",
+   "higher": "verify_8",
+   "p_lower": 1.0,
+   "p_higher": 0.535,
+   "higher_fail_buckets": {
+    "null_false_claim": 93
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep206",
+   "lower": "verify_8",
+   "higher": "verify_16w",
+   "p_lower": 0.535,
+   "p_higher": 0.415,
+   "higher_fail_buckets": {
+    "null_false_claim": 125,
+    "extra_cue": 6
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep206",
+   "lower": "verify_8",
+   "higher": "verify_24w",
+   "p_lower": 0.535,
+   "p_higher": 0.36,
+   "higher_fail_buckets": {
+    "null_false_claim": 125,
+    "extra_cue": 32
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep206",
+   "lower": "verify_16w",
+   "higher": "verify_24w",
+   "p_lower": 0.415,
+   "p_higher": 0.36,
+   "higher_fail_buckets": {
+    "null_false_claim": 125,
+    "extra_cue": 32
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep207",
+   "lower": "c3",
+   "higher": "sae_only",
+   "p_lower": 1.0,
+   "p_higher": 0.0,
+   "higher_fail_buckets": {
+    "null_false_claim": 1
+   },
+   "higher_tau_near_miss": 0
+  },
+  {
+   "episode": "ep207",
+   "lower": "c3",
+   "higher": "verify_8",
+   "p_lower": 1.0,
+   "p_higher": 0.51,
+   "higher_fail_buckets": {
+    "null_false_claim": 98
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep207",
+   "lower": "verify_8",
+   "higher": "verify_16w",
+   "p_lower": 0.51,
+   "p_higher": 0.505,
+   "higher_fail_buckets": {
+    "null_false_claim": 98,
+    "extra_cue": 4
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep207",
+   "lower": "verify_8",
+   "higher": "verify_24w",
+   "p_lower": 0.51,
+   "p_higher": 0.425,
+   "higher_fail_buckets": {
+    "extra_cue": 22,
+    "null_false_claim": 106
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep207",
+   "lower": "verify_16w",
+   "higher": "verify_24w",
+   "p_lower": 0.505,
+   "p_higher": 0.425,
+   "higher_fail_buckets": {
+    "extra_cue": 22,
+    "null_false_claim": 106
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep208",
+   "lower": "sae_only",
+   "higher": "verify_8",
+   "p_lower": 1.0,
+   "p_higher": 0.81,
+   "higher_fail_buckets": {
+    "extra_cue": 12,
+    "null_false_claim": 30
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep208",
+   "lower": "verify_8",
+   "higher": "verify_16w",
+   "p_lower": 0.81,
+   "p_higher": 0.795,
+   "higher_fail_buckets": {
+    "extra_cue": 16,
+    "null_false_claim": 30
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep208",
+   "lower": "verify_8",
+   "higher": "verify_24w",
+   "p_lower": 0.81,
+   "p_higher": 0.52,
+   "higher_fail_buckets": {
+    "extra_cue": 92,
+    "null_false_claim": 30
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep208",
+   "lower": "verify_16w",
+   "higher": "verify_24w",
+   "p_lower": 0.795,
+   "p_higher": 0.52,
+   "higher_fail_buckets": {
+    "extra_cue": 92,
+    "null_false_claim": 30
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep209",
+   "lower": "c3",
+   "higher": "verify_8",
+   "p_lower": 1.0,
+   "p_higher": 0.81,
+   "higher_fail_buckets": {
+    "extra_cue": 41
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep209",
+   "lower": "sae_only",
+   "higher": "verify_8",
+   "p_lower": 1.0,
+   "p_higher": 0.81,
+   "higher_fail_buckets": {
+    "extra_cue": 41
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep209",
+   "lower": "verify_8",
+   "higher": "verify_16w",
+   "p_lower": 0.81,
+   "p_higher": 0.755,
+   "higher_fail_buckets": {
+    "extra_cue": 41,
+    "planted_none": 13
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep209",
+   "lower": "verify_8",
+   "higher": "verify_24w",
+   "p_lower": 0.81,
+   "p_higher": 0.505,
+   "higher_fail_buckets": {
+    "extra_cue": 106,
+    "cue_not_identified": 10,
+    "planted_none": 3
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep209",
+   "lower": "verify_16w",
+   "higher": "verify_24w",
+   "p_lower": 0.755,
+   "p_higher": 0.505,
+   "higher_fail_buckets": {
+    "extra_cue": 106,
+    "cue_not_identified": 10,
+    "planted_none": 3
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep210",
+   "lower": "verify_8",
+   "higher": "verify_16w",
+   "p_lower": 1.0,
+   "p_higher": 0.885,
+   "higher_fail_buckets": {
+    "extra_cue": 23
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep210",
+   "lower": "verify_8",
+   "higher": "verify_24w",
+   "p_lower": 1.0,
+   "p_higher": 0.6,
+   "higher_fail_buckets": {
+    "extra_cue": 87
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep210",
+   "lower": "verify_16w",
+   "higher": "verify_24w",
+   "p_lower": 0.885,
+   "p_higher": 0.6,
+   "higher_fail_buckets": {
+    "extra_cue": 87
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep211",
+   "lower": "verify_8",
+   "higher": "verify_16w",
+   "p_lower": 0.55,
+   "p_higher": 0.405,
+   "higher_fail_buckets": {
+    "null_false_claim": 103,
+    "extra_cue": 53
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep211",
+   "lower": "verify_8",
+   "higher": "verify_24w",
+   "p_lower": 0.55,
+   "p_higher": 0.205,
+   "higher_fail_buckets": {
+    "extra_cue": 81,
+    "null_false_claim": 164
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep211",
+   "lower": "verify_16w",
+   "higher": "verify_24w",
+   "p_lower": 0.405,
+   "p_higher": 0.205,
+   "higher_fail_buckets": {
+    "extra_cue": 81,
+    "null_false_claim": 164
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep212",
+   "lower": "c3",
+   "higher": "verify_8",
+   "p_lower": 1.0,
+   "p_higher": 0.735,
+   "higher_fail_buckets": {
+    "extra_cue": 55
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep212",
+   "lower": "sae_only",
+   "higher": "verify_8",
+   "p_lower": 1.0,
+   "p_higher": 0.735,
+   "higher_fail_buckets": {
+    "extra_cue": 55
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep212",
+   "lower": "verify_8",
+   "higher": "verify_16w",
+   "p_lower": 0.735,
+   "p_higher": 0.69,
+   "higher_fail_buckets": {
+    "extra_cue": 55,
+    "null_false_claim": 11
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep212",
+   "lower": "verify_8",
+   "higher": "verify_24w",
+   "p_lower": 0.735,
+   "p_higher": 0.505,
+   "higher_fail_buckets": {
+    "extra_cue": 105,
+    "null_false_claim": 11
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep212",
+   "lower": "verify_16w",
+   "higher": "verify_24w",
+   "p_lower": 0.69,
+   "p_higher": 0.505,
+   "higher_fail_buckets": {
+    "extra_cue": 105,
+    "null_false_claim": 11
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep213",
+   "lower": "c3",
+   "higher": "sae_only",
+   "p_lower": 1.0,
+   "p_higher": 0.0,
+   "higher_fail_buckets": {
+    "null_false_claim": 1
+   },
+   "higher_tau_near_miss": 0
+  },
+  {
+   "episode": "ep213",
+   "lower": "c3",
+   "higher": "verify_8",
+   "p_lower": 1.0,
+   "p_higher": 0.555,
+   "higher_fail_buckets": {
+    "null_false_claim": 78,
+    "extra_cue": 20
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep213",
+   "lower": "verify_8",
+   "higher": "verify_24w",
+   "p_lower": 0.555,
+   "p_higher": 0.28,
+   "higher_fail_buckets": {
+    "extra_cue": 143,
+    "null_false_claim": 78
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep213",
+   "lower": "verify_16w",
+   "higher": "verify_24w",
+   "p_lower": 0.555,
+   "p_higher": 0.28,
+   "higher_fail_buckets": {
+    "extra_cue": 143,
+    "null_false_claim": 78
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep214",
+   "lower": "c3",
+   "higher": "sae_only",
+   "p_lower": 1.0,
+   "p_higher": 0.0,
+   "higher_fail_buckets": {
+    "null_false_claim": 1
+   },
+   "higher_tau_near_miss": 0
+  },
+  {
+   "episode": "ep214",
+   "lower": "c3",
+   "higher": "verify_8",
+   "p_lower": 1.0,
+   "p_higher": 0.41,
+   "higher_fail_buckets": {
+    "null_false_claim": 152
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep214",
+   "lower": "verify_8",
+   "higher": "verify_16w",
+   "p_lower": 0.41,
+   "p_higher": 0.395,
+   "higher_fail_buckets": {
+    "null_false_claim": 152,
+    "extra_cue": 7
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep214",
+   "lower": "verify_8",
+   "higher": "verify_24w",
+   "p_lower": 0.41,
+   "p_higher": 0.15,
+   "higher_fail_buckets": {
+    "null_false_claim": 229,
+    "extra_cue": 45
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep214",
+   "lower": "verify_16w",
+   "higher": "verify_24w",
+   "p_lower": 0.395,
+   "p_higher": 0.15,
+   "higher_fail_buckets": {
+    "null_false_claim": 229,
+    "extra_cue": 45
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep222",
+   "lower": "verify_8",
+   "higher": "verify_16w",
+   "p_lower": 0.565,
+   "p_higher": 0.475,
+   "higher_fail_buckets": {
+    "planted_none": 25,
+    "null_false_claim": 70,
+    "extra_cue": 28
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep222",
+   "lower": "verify_8",
+   "higher": "verify_24w",
+   "p_lower": 0.565,
+   "p_higher": 0.06,
+   "higher_fail_buckets": {
+    "planted_none": 15,
+    "null_false_claim": 83,
+    "extra_cue": 215,
+    "cue_not_identified": 17
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep222",
+   "lower": "verify_16w",
+   "higher": "verify_24w",
+   "p_lower": 0.475,
+   "p_higher": 0.06,
+   "higher_fail_buckets": {
+    "planted_none": 15,
+    "null_false_claim": 83,
+    "extra_cue": 215,
+    "cue_not_identified": 17
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep223",
+   "lower": "verify_8",
+   "higher": "verify_16w",
+   "p_lower": 0.465,
+   "p_higher": 0.45,
+   "higher_fail_buckets": {
+    "extra_cue": 100,
+    "planted_none": 12,
+    "cue_not_identified": 12
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep223",
+   "lower": "verify_8",
+   "higher": "verify_24w",
+   "p_lower": 0.465,
+   "p_higher": 0.23,
+   "higher_fail_buckets": {
+    "extra_cue": 147,
+    "cue_not_identified": 30,
+    "planted_none": 12
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep223",
+   "lower": "verify_16w",
+   "higher": "verify_24w",
+   "p_lower": 0.45,
+   "p_higher": 0.23,
+   "higher_fail_buckets": {
+    "extra_cue": 147,
+    "cue_not_identified": 30,
+    "planted_none": 12
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep225",
+   "lower": "sae_only",
+   "higher": "verify_8",
+   "p_lower": 1.0,
+   "p_higher": 0.895,
+   "higher_fail_buckets": {
+    "extra_cue": 21
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep225",
+   "lower": "verify_8",
+   "higher": "verify_16w",
+   "p_lower": 0.895,
+   "p_higher": 0.555,
+   "higher_fail_buckets": {
+    "null_false_claim": 45,
+    "extra_cue": 21,
+    "planted_none": 33
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep225",
+   "lower": "verify_8",
+   "higher": "verify_24w",
+   "p_lower": 0.895,
+   "p_higher": 0.1,
+   "higher_fail_buckets": {
+    "extra_cue": 191,
+    "null_false_claim": 45,
+    "cue_not_identified": 17,
+    "planted_none": 25
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep225",
+   "lower": "verify_16w",
+   "higher": "verify_24w",
+   "p_lower": 0.555,
+   "p_higher": 0.1,
+   "higher_fail_buckets": {
+    "extra_cue": 191,
+    "null_false_claim": 45,
+    "cue_not_identified": 17,
+    "planted_none": 25
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep226",
+   "lower": "sae_only",
+   "higher": "verify_8",
+   "p_lower": 1.0,
+   "p_higher": 0.6,
+   "higher_fail_buckets": {
+    "extra_cue": 74,
+    "null_false_claim": 8
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep226",
+   "lower": "verify_8",
+   "higher": "verify_16w",
+   "p_lower": 0.6,
+   "p_higher": 0.58,
+   "higher_fail_buckets": {
+    "extra_cue": 74,
+    "null_false_claim": 8,
+    "cue_not_identified": 6
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep226",
+   "lower": "verify_8",
+   "higher": "verify_24w",
+   "p_lower": 0.6,
+   "p_higher": 0.25,
+   "higher_fail_buckets": {
+    "extra_cue": 144,
+    "null_false_claim": 23,
+    "cue_not_identified": 6
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep226",
+   "lower": "verify_16w",
+   "higher": "verify_24w",
+   "p_lower": 0.58,
+   "p_higher": 0.25,
+   "higher_fail_buckets": {
+    "extra_cue": 144,
+    "null_false_claim": 23,
+    "cue_not_identified": 6
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep228",
+   "lower": "verify_8",
+   "higher": "verify_16w",
+   "p_lower": 0.405,
+   "p_higher": 0.375,
+   "higher_fail_buckets": {
+    "null_false_claim": 78,
+    "extra_cue": 67,
+    "cue_not_identified": 15
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep228",
+   "lower": "verify_8",
+   "higher": "verify_24w",
+   "p_lower": 0.405,
+   "p_higher": 0.175,
+   "higher_fail_buckets": {
+    "null_false_claim": 78,
+    "extra_cue": 142,
+    "cue_not_identified": 15
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep228",
+   "lower": "verify_16w",
+   "higher": "verify_24w",
+   "p_lower": 0.375,
+   "p_higher": 0.175,
+   "higher_fail_buckets": {
+    "null_false_claim": 78,
+    "extra_cue": 142,
+    "cue_not_identified": 15
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep232",
+   "lower": "verify_8",
+   "higher": "verify_16w",
+   "p_lower": 0.58,
+   "p_higher": 0.525,
+   "higher_fail_buckets": {
+    "null_false_claim": 77,
+    "planted_none": 19,
+    "extra_cue": 19
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep232",
+   "lower": "verify_8",
+   "higher": "verify_24w",
+   "p_lower": 0.58,
+   "p_higher": 0.055,
+   "higher_fail_buckets": {
+    "extra_cue": 224,
+    "null_false_claim": 95,
+    "planted_none": 16,
+    "cue_not_identified": 9
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep232",
+   "lower": "verify_16w",
+   "higher": "verify_24w",
+   "p_lower": 0.525,
+   "p_higher": 0.055,
+   "higher_fail_buckets": {
+    "extra_cue": 224,
+    "null_false_claim": 95,
+    "planted_none": 16,
+    "cue_not_identified": 9
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep235",
+   "lower": "sae_only",
+   "higher": "verify_8",
+   "p_lower": 1.0,
+   "p_higher": 0.93,
+   "higher_fail_buckets": {
+    "extra_cue": 14
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep235",
+   "lower": "verify_8",
+   "higher": "verify_16w",
+   "p_lower": 0.93,
+   "p_higher": 0.57,
+   "higher_fail_buckets": {
+    "null_false_claim": 55,
+    "extra_cue": 14,
+    "planted_none": 32
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep235",
+   "lower": "verify_8",
+   "higher": "verify_24w",
+   "p_lower": 0.93,
+   "p_higher": 0.07,
+   "higher_fail_buckets": {
+    "extra_cue": 206,
+    "null_false_claim": 55,
+    "planted_none": 21,
+    "cue_not_identified": 18
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep235",
+   "lower": "verify_16w",
+   "higher": "verify_24w",
+   "p_lower": 0.57,
+   "p_higher": 0.07,
+   "higher_fail_buckets": {
+    "extra_cue": 206,
+    "null_false_claim": 55,
+    "planted_none": 21,
+    "cue_not_identified": 18
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep241",
+   "lower": "verify_8",
+   "higher": "verify_16w",
+   "p_lower": 0.465,
+   "p_higher": 0.415,
+   "higher_fail_buckets": {
+    "cue_not_identified": 57,
+    "planted_none": 44,
+    "extra_cue": 22,
+    "null_false_claim": 29
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep241",
+   "lower": "verify_8",
+   "higher": "verify_24w",
+   "p_lower": 0.465,
+   "p_higher": 0.28,
+   "higher_fail_buckets": {
+    "cue_not_identified": 76,
+    "planted_none": 37,
+    "extra_cue": 60,
+    "null_false_claim": 29
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep241",
+   "lower": "verify_16w",
+   "higher": "verify_24w",
+   "p_lower": 0.415,
+   "p_higher": 0.28,
+   "higher_fail_buckets": {
+    "cue_not_identified": 76,
+    "planted_none": 37,
+    "extra_cue": 60,
+    "null_false_claim": 29
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep242",
+   "lower": "verify_8",
+   "higher": "verify_16w",
+   "p_lower": 0.51,
+   "p_higher": 0.37,
+   "higher_fail_buckets": {
+    "planted_none": 84,
+    "null_false_claim": 59,
+    "cue_not_identified": 13
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep242",
+   "lower": "verify_8",
+   "higher": "verify_24w",
+   "p_lower": 0.51,
+   "p_higher": 0.205,
+   "higher_fail_buckets": {
+    "planted_none": 77,
+    "null_false_claim": 73,
+    "extra_cue": 67,
+    "cue_not_identified": 27
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep242",
+   "lower": "verify_16w",
+   "higher": "verify_24w",
+   "p_lower": 0.37,
+   "p_higher": 0.205,
+   "higher_fail_buckets": {
+    "planted_none": 77,
+    "null_false_claim": 73,
+    "extra_cue": 67,
+    "cue_not_identified": 27
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep301",
+   "lower": "verify_8",
+   "higher": "verify_16w",
+   "p_lower": 0.875,
+   "p_higher": 0.71,
+   "higher_fail_buckets": {
+    "planted_none": 33,
+    "extra_cue": 13,
+    "cue_not_identified": 12,
+    "null_false_claim": 4
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep301",
+   "lower": "verify_8",
+   "higher": "verify_24w",
+   "p_lower": 0.875,
+   "p_higher": 0.51,
+   "higher_fail_buckets": {
+    "planted_none": 33,
+    "extra_cue": 65,
+    "cue_not_identified": 12,
+    "null_false_claim": 4
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep301",
+   "lower": "verify_16w",
+   "higher": "verify_24w",
+   "p_lower": 0.71,
+   "p_higher": 0.51,
+   "higher_fail_buckets": {
+    "planted_none": 33,
+    "extra_cue": 65,
+    "cue_not_identified": 12,
+    "null_false_claim": 4
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep302",
+   "lower": "verify_8",
+   "higher": "verify_16w",
+   "p_lower": 0.455,
+   "p_higher": 0.34,
+   "higher_fail_buckets": {
+    "null_false_claim": 64,
+    "extra_cue": 114,
+    "cue_not_identified": 5
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep302",
+   "lower": "verify_8",
+   "higher": "verify_24w",
+   "p_lower": 0.455,
+   "p_higher": 0.235,
+   "higher_fail_buckets": {
+    "null_false_claim": 102,
+    "extra_cue": 114,
+    "cue_not_identified": 13
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep302",
+   "lower": "verify_16w",
+   "higher": "verify_24w",
+   "p_lower": 0.34,
+   "p_higher": 0.235,
+   "higher_fail_buckets": {
+    "null_false_claim": 102,
+    "extra_cue": 114,
+    "cue_not_identified": 13
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep303",
+   "lower": "verify_8",
+   "higher": "verify_16w",
+   "p_lower": 0.595,
+   "p_higher": 0.54,
+   "higher_fail_buckets": {
+    "extra_cue": 71,
+    "cue_not_identified": 13,
+    "planted_none": 23
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep303",
+   "lower": "verify_8",
+   "higher": "verify_24w",
+   "p_lower": 0.595,
+   "p_higher": 0.355,
+   "higher_fail_buckets": {
+    "extra_cue": 133,
+    "cue_not_identified": 21,
+    "planted_none": 18
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep303",
+   "lower": "verify_16w",
+   "higher": "verify_24w",
+   "p_lower": 0.54,
+   "p_higher": 0.355,
+   "higher_fail_buckets": {
+    "extra_cue": 133,
+    "cue_not_identified": 21,
+    "planted_none": 18
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep304",
+   "lower": "sae_only",
+   "higher": "verify_8",
+   "p_lower": 1.0,
+   "p_higher": 0.485,
+   "higher_fail_buckets": {
+    "extra_cue": 89,
+    "cue_not_identified": 13,
+    "planted_none": 9
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep304",
+   "lower": "verify_8",
+   "higher": "verify_16w",
+   "p_lower": 0.485,
+   "p_higher": 0.46,
+   "higher_fail_buckets": {
+    "extra_cue": 95,
+    "cue_not_identified": 13,
+    "planted_none": 9
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep304",
+   "lower": "verify_8",
+   "higher": "verify_24w",
+   "p_lower": 0.485,
+   "p_higher": 0.355,
+   "higher_fail_buckets": {
+    "extra_cue": 117,
+    "cue_not_identified": 13,
+    "planted_none": 9
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep304",
+   "lower": "verify_16w",
+   "higher": "verify_24w",
+   "p_lower": 0.46,
+   "p_higher": 0.355,
+   "higher_fail_buckets": {
+    "extra_cue": 117,
+    "cue_not_identified": 13,
+    "planted_none": 9
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep305",
+   "lower": "verify_8",
+   "higher": "verify_16w",
+   "p_lower": 0.95,
+   "p_higher": 0.395,
+   "higher_fail_buckets": {
+    "null_false_claim": 91,
+    "extra_cue": 44,
+    "planted_none": 15
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep305",
+   "lower": "verify_8",
+   "higher": "verify_24w",
+   "p_lower": 0.95,
+   "p_higher": 0.15,
+   "higher_fail_buckets": {
+    "extra_cue": 153,
+    "null_false_claim": 91,
+    "planted_none": 10,
+    "cue_not_identified": 10
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep305",
+   "lower": "verify_16w",
+   "higher": "verify_24w",
+   "p_lower": 0.395,
+   "p_higher": 0.15,
+   "higher_fail_buckets": {
+    "extra_cue": 153,
+    "null_false_claim": 91,
+    "planted_none": 10,
+    "cue_not_identified": 10
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep306",
+   "lower": "verify_8",
+   "higher": "verify_24w",
+   "p_lower": 0.425,
+   "p_higher": 0.405,
+   "higher_fail_buckets": {
+    "null_false_claim": 77,
+    "extra_cue": 37,
+    "planted_none": 30
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep306",
+   "lower": "verify_16w",
+   "higher": "verify_24w",
+   "p_lower": 0.425,
+   "p_higher": 0.405,
+   "higher_fail_buckets": {
+    "null_false_claim": 77,
+    "extra_cue": 37,
+    "planted_none": 30
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep307",
+   "lower": "verify_8",
+   "higher": "verify_24w",
+   "p_lower": 0.95,
+   "p_higher": 0.575,
+   "higher_fail_buckets": {
+    "cue_not_identified": 67,
+    "planted_none": 4,
+    "extra_cue": 22
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep307",
+   "lower": "verify_16w",
+   "higher": "verify_24w",
+   "p_lower": 0.95,
+   "p_higher": 0.575,
+   "higher_fail_buckets": {
+    "cue_not_identified": 67,
+    "planted_none": 4,
+    "extra_cue": 22
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep308",
+   "lower": "verify_8",
+   "higher": "verify_24w",
+   "p_lower": 1.0,
+   "p_higher": 0.855,
+   "higher_fail_buckets": {
+    "extra_cue": 29
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep308",
+   "lower": "verify_16w",
+   "higher": "verify_24w",
+   "p_lower": 1.0,
+   "p_higher": 0.855,
+   "higher_fail_buckets": {
+    "extra_cue": 29
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep501",
+   "lower": "verify_8",
+   "higher": "verify_16",
+   "p_lower": 0.27,
+   "p_higher": 0.17,
+   "higher_fail_buckets": {
+    "extra_cue": 13,
+    "planted_none": 153,
+    "cue_not_identified": 6
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep501",
+   "lower": "verify_8",
+   "higher": "verify_24",
+   "p_lower": 0.27,
+   "p_higher": 0.2,
+   "higher_fail_buckets": {
+    "planted_none": 154,
+    "extra_cue": 3,
+    "cue_not_identified": 4
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep501",
+   "lower": "verify_8",
+   "higher": "verify_inf",
+   "p_lower": 0.27,
+   "p_higher": 0.0,
+   "higher_fail_buckets": {
+    "planted_none": 1
+   },
+   "higher_tau_near_miss": 0
+  },
+  {
+   "episode": "ep501",
+   "lower": "verify_16",
+   "higher": "verify_inf",
+   "p_lower": 0.17,
+   "p_higher": 0.0,
+   "higher_fail_buckets": {
+    "planted_none": 1
+   },
+   "higher_tau_near_miss": 0
+  },
+  {
+   "episode": "ep501",
+   "lower": "verify_24",
+   "higher": "verify_inf",
+   "p_lower": 0.2,
+   "p_higher": 0.0,
+   "higher_fail_buckets": {
+    "planted_none": 1
+   },
+   "higher_tau_near_miss": 0
+  },
+  {
+   "episode": "ep501",
+   "lower": "verify_8",
+   "higher": "verify_16w",
+   "p_lower": 0.27,
+   "p_higher": 0.24,
+   "higher_fail_buckets": {
+    "extra_cue": 42,
+    "planted_none": 112,
+    "cue_not_identified": 23,
+    "null_false_claim": 7
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep501",
+   "lower": "verify_8",
+   "higher": "verify_24w",
+   "p_lower": 0.27,
+   "p_higher": 0.15,
+   "higher_fail_buckets": {
+    "extra_cue": 105,
+    "planted_none": 98,
+    "cue_not_identified": 37,
+    "null_false_claim": 7
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep501",
+   "lower": "verify_16w",
+   "higher": "verify_24w",
+   "p_lower": 0.24,
+   "p_higher": 0.15,
+   "higher_fail_buckets": {
+    "extra_cue": 105,
+    "planted_none": 98,
+    "cue_not_identified": 37,
+    "null_false_claim": 7
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep501",
+   "lower": "verify_16w",
+   "higher": "verify_inf",
+   "p_lower": 0.24,
+   "p_higher": 0.0,
+   "higher_fail_buckets": {
+    "planted_none": 1
+   },
+   "higher_tau_near_miss": 0
+  },
+  {
+   "episode": "ep501",
+   "lower": "verify_24w",
+   "higher": "verify_inf",
+   "p_lower": 0.15,
+   "p_higher": 0.0,
+   "higher_fail_buckets": {
+    "planted_none": 1
+   },
+   "higher_tau_near_miss": 0
+  },
+  {
+   "episode": "ep502",
+   "lower": "verify_8",
+   "higher": "verify_inf",
+   "p_lower": 0.32,
+   "p_higher": 0.0,
+   "higher_fail_buckets": {
+    "planted_none": 1
+   },
+   "higher_tau_near_miss": 0
+  },
+  {
+   "episode": "ep502",
+   "lower": "verify_16",
+   "higher": "verify_inf",
+   "p_lower": 0.35,
+   "p_higher": 0.0,
+   "higher_fail_buckets": {
+    "planted_none": 1
+   },
+   "higher_tau_near_miss": 0
+  },
+  {
+   "episode": "ep502",
+   "lower": "verify_24",
+   "higher": "verify_inf",
+   "p_lower": 0.365,
+   "p_higher": 0.0,
+   "higher_fail_buckets": {
+    "planted_none": 1
+   },
+   "higher_tau_near_miss": 0
+  },
+  {
+   "episode": "ep502",
+   "lower": "verify_8",
+   "higher": "verify_16w",
+   "p_lower": 0.32,
+   "p_higher": 0.245,
+   "higher_fail_buckets": {
+    "extra_cue": 60,
+    "planted_none": 105,
+    "null_false_claim": 29,
+    "cue_not_identified": 7
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep502",
+   "lower": "verify_8",
+   "higher": "verify_24w",
+   "p_lower": 0.32,
+   "p_higher": 0.095,
+   "higher_fail_buckets": {
+    "extra_cue": 185,
+    "planted_none": 90,
+    "cue_not_identified": 22,
+    "null_false_claim": 33
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep502",
+   "lower": "verify_16w",
+   "higher": "verify_24w",
+   "p_lower": 0.245,
+   "p_higher": 0.095,
+   "higher_fail_buckets": {
+    "extra_cue": 185,
+    "planted_none": 90,
+    "cue_not_identified": 22,
+    "null_false_claim": 33
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep502",
+   "lower": "verify_16w",
+   "higher": "verify_inf",
+   "p_lower": 0.245,
+   "p_higher": 0.0,
+   "higher_fail_buckets": {
+    "planted_none": 1
+   },
+   "higher_tau_near_miss": 0
+  },
+  {
+   "episode": "ep502",
+   "lower": "verify_24w",
+   "higher": "verify_inf",
+   "p_lower": 0.095,
+   "p_higher": 0.0,
+   "higher_fail_buckets": {
+    "planted_none": 1
+   },
+   "higher_tau_near_miss": 0
+  },
+  {
+   "episode": "ep503",
+   "lower": "verify_8",
+   "higher": "verify_inf",
+   "p_lower": 0.345,
+   "p_higher": 0.0,
+   "higher_fail_buckets": {
+    "planted_none": 1
+   },
+   "higher_tau_near_miss": 0
+  },
+  {
+   "episode": "ep503",
+   "lower": "verify_16",
+   "higher": "verify_inf",
+   "p_lower": 0.355,
+   "p_higher": 0.0,
+   "higher_fail_buckets": {
+    "planted_none": 1
+   },
+   "higher_tau_near_miss": 0
+  },
+  {
+   "episode": "ep503",
+   "lower": "verify_24",
+   "higher": "verify_inf",
+   "p_lower": 0.37,
+   "p_higher": 0.0,
+   "higher_fail_buckets": {
+    "planted_none": 1
+   },
+   "higher_tau_near_miss": 0
+  },
+  {
+   "episode": "ep503",
+   "lower": "verify_8",
+   "higher": "verify_16w",
+   "p_lower": 0.345,
+   "p_higher": 0.29,
+   "higher_fail_buckets": {
+    "extra_cue": 48,
+    "planted_none": 100,
+    "cue_not_identified": 27,
+    "null_false_claim": 17
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep503",
+   "lower": "verify_8",
+   "higher": "verify_24w",
+   "p_lower": 0.345,
+   "p_higher": 0.18,
+   "higher_fail_buckets": {
+    "extra_cue": 107,
+    "planted_none": 62,
+    "cue_not_identified": 65,
+    "null_false_claim": 25
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep503",
+   "lower": "verify_16w",
+   "higher": "verify_24w",
+   "p_lower": 0.29,
+   "p_higher": 0.18,
+   "higher_fail_buckets": {
+    "extra_cue": 107,
+    "planted_none": 62,
+    "cue_not_identified": 65,
+    "null_false_claim": 25
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep503",
+   "lower": "verify_16w",
+   "higher": "verify_inf",
+   "p_lower": 0.29,
+   "p_higher": 0.0,
+   "higher_fail_buckets": {
+    "planted_none": 1
+   },
+   "higher_tau_near_miss": 0
+  },
+  {
+   "episode": "ep503",
+   "lower": "verify_24w",
+   "higher": "verify_inf",
+   "p_lower": 0.18,
+   "p_higher": 0.0,
+   "higher_fail_buckets": {
+    "planted_none": 1
+   },
+   "higher_tau_near_miss": 0
+  },
+  {
+   "episode": "ep504",
+   "lower": "c3",
+   "higher": "verify_8",
+   "p_lower": 1.0,
+   "p_higher": 0.49,
+   "higher_fail_buckets": {
+    "planted_none": 84,
+    "extra_cue": 35
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep504",
+   "lower": "sae_only",
+   "higher": "verify_8",
+   "p_lower": 1.0,
+   "p_higher": 0.49,
+   "higher_fail_buckets": {
+    "planted_none": 84,
+    "extra_cue": 35
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep504",
+   "lower": "verify_8",
+   "higher": "verify_16w",
+   "p_lower": 0.49,
+   "p_higher": 0.355,
+   "higher_fail_buckets": {
+    "extra_cue": 94,
+    "planted_none": 84,
+    "null_false_claim": 2
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep504",
+   "lower": "verify_8",
+   "higher": "verify_24w",
+   "p_lower": 0.49,
+   "p_higher": 0.23,
+   "higher_fail_buckets": {
+    "extra_cue": 145,
+    "planted_none": 77,
+    "cue_not_identified": 7,
+    "null_false_claim": 2
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep504",
+   "lower": "verify_16w",
+   "higher": "verify_24w",
+   "p_lower": 0.355,
+   "p_higher": 0.23,
+   "higher_fail_buckets": {
+    "extra_cue": 145,
+    "planted_none": 77,
+    "cue_not_identified": 7,
+    "null_false_claim": 2
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep701",
+   "lower": "c3",
+   "higher": "verify_8",
+   "p_lower": 1.0,
+   "p_higher": 0.425,
+   "higher_fail_buckets": {
+    "extra_cue": 136
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep701",
+   "lower": "sae_only",
+   "higher": "verify_8",
+   "p_lower": 1.0,
+   "p_higher": 0.425,
+   "higher_fail_buckets": {
+    "extra_cue": 136
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep701",
+   "lower": "verify_8",
+   "higher": "verify_16w",
+   "p_lower": 0.425,
+   "p_higher": 0.295,
+   "higher_fail_buckets": {
+    "extra_cue": 153,
+    "null_false_claim": 51
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep701",
+   "lower": "verify_8",
+   "higher": "verify_24w",
+   "p_lower": 0.425,
+   "p_higher": 0.115,
+   "higher_fail_buckets": {
+    "null_false_claim": 69,
+    "extra_cue": 229
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep701",
+   "lower": "verify_16w",
+   "higher": "verify_24w",
+   "p_lower": 0.295,
+   "p_higher": 0.115,
+   "higher_fail_buckets": {
+    "null_false_claim": 69,
+    "extra_cue": 229
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep702",
+   "lower": "c3",
+   "higher": "verify_8",
+   "p_lower": 1.0,
+   "p_higher": 0.53,
+   "higher_fail_buckets": {
+    "extra_cue": 103
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep702",
+   "lower": "sae_only",
+   "higher": "verify_8",
+   "p_lower": 1.0,
+   "p_higher": 0.53,
+   "higher_fail_buckets": {
+    "extra_cue": 103
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep702",
+   "lower": "verify_8",
+   "higher": "verify_16w",
+   "p_lower": 0.53,
+   "p_higher": 0.48,
+   "higher_fail_buckets": {
+    "extra_cue": 120,
+    "null_false_claim": 3
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep702",
+   "lower": "verify_8",
+   "higher": "verify_24w",
+   "p_lower": 0.53,
+   "p_higher": 0.205,
+   "higher_fail_buckets": {
+    "extra_cue": 202,
+    "null_false_claim": 56
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep702",
+   "lower": "verify_16w",
+   "higher": "verify_24w",
+   "p_lower": 0.48,
+   "p_higher": 0.205,
+   "higher_fail_buckets": {
+    "extra_cue": 202,
+    "null_false_claim": 56
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep703",
+   "lower": "c3",
+   "higher": "verify_8",
+   "p_lower": 1.0,
+   "p_higher": 0.475,
+   "higher_fail_buckets": {
+    "extra_cue": 70,
+    "null_false_claim": 62
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep703",
+   "lower": "sae_only",
+   "higher": "verify_8",
+   "p_lower": 1.0,
+   "p_higher": 0.475,
+   "higher_fail_buckets": {
+    "extra_cue": 70,
+    "null_false_claim": 62
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep703",
+   "lower": "verify_8",
+   "higher": "verify_16w",
+   "p_lower": 0.475,
+   "p_higher": 0.41,
+   "higher_fail_buckets": {
+    "extra_cue": 92,
+    "null_false_claim": 62
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep703",
+   "lower": "verify_8",
+   "higher": "verify_24w",
+   "p_lower": 0.475,
+   "p_higher": 0.27,
+   "higher_fail_buckets": {
+    "extra_cue": 149,
+    "null_false_claim": 77
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep703",
+   "lower": "verify_16w",
+   "higher": "verify_24w",
+   "p_lower": 0.41,
+   "p_higher": 0.27,
+   "higher_fail_buckets": {
+    "extra_cue": 149,
+    "null_false_claim": 77
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep704",
+   "lower": "c3",
+   "higher": "verify_8",
+   "p_lower": 1.0,
+   "p_higher": 0.575,
+   "higher_fail_buckets": {
+    "extra_cue": 90
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep704",
+   "lower": "sae_only",
+   "higher": "verify_8",
+   "p_lower": 1.0,
+   "p_higher": 0.575,
+   "higher_fail_buckets": {
+    "extra_cue": 90
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep704",
+   "lower": "verify_8",
+   "higher": "verify_16w",
+   "p_lower": 0.575,
+   "p_higher": 0.35,
+   "higher_fail_buckets": {
+    "extra_cue": 127,
+    "null_false_claim": 36,
+    "planted_none": 4
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep704",
+   "lower": "verify_8",
+   "higher": "verify_24w",
+   "p_lower": 0.575,
+   "p_higher": 0.145,
+   "higher_fail_buckets": {
+    "extra_cue": 178,
+    "null_false_claim": 77,
+    "planted_none": 4
+   },
+   "higher_tau_near_miss": 0.0
+  },
+  {
+   "episode": "ep704",
+   "lower": "verify_16w",
+   "higher": "verify_24w",
+   "p_lower": 0.35,
+   "p_higher": 0.145,
+   "higher_fail_buckets": {
+    "extra_cue": 178,
+    "null_false_claim": 77,
+    "planted_none": 4
+   },
+   "higher_tau_near_miss": 0.0
+  }
+ ],
+ "near_miss": {
+  "none": {
+   "buckets": {
+    "planted_none": 143
+   },
+   "removal_short": 0.0,
+   "near_miss": 0.0
+  },
+  "c3": {
+   "buckets": {
+    "null_false_claim": 7,
+    "extra_cue": 3,
+    "cue_not_identified": 10,
+    "planted_none": 13
+   },
+   "removal_short": 0.0,
+   "near_miss": 0.0
+  },
+  "sae_only": {
+   "buckets": {
+    "null_false_claim": 17,
+    "extra_cue": 8,
+    "cue_not_identified": 4,
+    "planted_none": 8
+   },
+   "removal_short": 0.0,
+   "near_miss": 0.0
+  },
+  "verify_8g": {
+   "buckets": {
+    "extra_cue": 10.215,
+    "null_false_claim": 11.66,
+    "cue_not_identified": 2.2699999999999996,
+    "planted_none": 3.749999999999999
+   },
+   "removal_short": 0.0,
+   "near_miss": 0.0
+  },
+  "verify_8": {
+   "buckets": {
+    "extra_cue": 10.515,
+    "null_false_claim": 8.245,
+    "planted_none": 3.44,
+    "cue_not_identified": 3.5150000000000006
+   },
+   "removal_short": 0.0,
+   "near_miss": 0.0
+  },
+  "verify_16": {
+   "buckets": {
+    "extra_cue": 5.719999999999999,
+    "null_false_claim": 4.52,
+    "cue_not_identified": 2.9499999999999993,
+    "planted_none": 3.0700000000000003
+   },
+   "removal_short": 0.0,
+   "near_miss": 0.0
+  },
+  "verify_24": {
+   "buckets": {
+    "null_false_claim": 3.3449999999999998,
+    "extra_cue": 3.8899999999999997,
+    "planted_none": 3.0700000000000003,
+    "cue_not_identified": 2.5449999999999995
+   },
+   "removal_short": 0.0,
+   "near_miss": 0.0
+  },
+  "verify_16w": {
+   "buckets": {
+    "extra_cue": 13.450000000000005,
+    "null_false_claim": 11.14,
+    "planted_none": 5.265,
+    "cue_not_identified": 3.380000000000001
+   },
+   "removal_short": 0.0,
+   "near_miss": 0.0
+  },
+  "verify_24w": {
+   "buckets": {
+    "extra_cue": 29.310000000000006,
+    "null_false_claim": 14.169999999999995,
+    "planted_none": 4.205,
+    "cue_not_identified": 5.15
+   },
+   "removal_short": 0.0,
+   "near_miss": 0.0
+  },
+  "verify_inf": {
+   "buckets": {
+    "planted_none": 3
+   },
+   "removal_short": 0.0,
+   "near_miss": 0.0
+  }
+ },
+ "order_violations": [
+  [
+   "c3",
+   "sae_only"
+  ],
+  [
+   "verify_8",
+   "verify_16w"
+  ],
+  [
+   "verify_8",
+   "verify_24w"
+  ],
+  [
+   "verify_16w",
+   "verify_24w"
+  ]
+ ],
+ "inversions_with_near_miss": 0,
+ "sweep_sae": {
+  "0.15": 0.2037037037037037,
+  "0.225": 0.42592592592592593,
+  "0.3": 0.5
+ },
+ "sweep_verify": {
+  "verify_8@0.15/sae0.225": {
+   "mean": 0.4571296296296296,
+   "sd": 0.06324581205572519
+  },
+  "verify_16@0.15/sae0.225": {
+   "mean": 0.5546296296296296,
+   "sd": 0.05253432705404839
+  },
+  "verify_24@0.15/sae0.225": {
+   "mean": 0.606574074074074,
+   "sd": 0.055957276412509645
+  },
+  "verify_8g@0.15/sae0.225": {
+   "mean": 0.447037037037037,
+   "sd": 0.05208265348936948
+  },
+  "verify_16w@0.15/sae0.225": {
+   "mean": 0.35444444444444445,
+   "sd": 0.06092711530153189
+  },
+  "verify_24w@0.15/sae0.225": {
+   "mean": 0.1586111111111111,
+   "sd": 0.0492786821375204
+  },
+  "verify_inf@0.15/sae0.225": {
+   "mean": 0.8148148148148147,
+   "sd": 1.1130090340862554e-16
+  },
+  "verify_8@0.175/sae0.225": {
+   "mean": 0.5319444444444444,
+   "sd": 0.06173905702325407
+  },
+  "verify_16@0.175/sae0.225": {
+   "mean": 0.6487037037037037,
+   "sd": 0.05211143181920016
+  },
+  "verify_24@0.175/sae0.225": {
+   "mean": 0.7098148148148148,
+   "sd": 0.05016361756290235
+  },
+  "verify_8g@0.175/sae0.225": {
+   "mean": 0.5174074074074074,
+   "sd": 0.0553734841427161
+  },
+  "verify_16w@0.175/sae0.225": {
+   "mean": 0.43916666666666665,
+   "sd": 0.05738286189593814
+  },
+  "verify_24w@0.175/sae0.225": {
+   "mean": 0.23787037037037034,
+   "sd": 0.05135149493856535
+  },
+  "verify_inf@0.175/sae0.225": {
+   "mean": 0.8703703703703703,
+   "sd": 0.0
+  },
+  "verify_8@0.2/sae0.225": {
+   "mean": 0.5853703703703704,
+   "sd": 0.059372855480475
+  },
+  "verify_16@0.2/sae0.225": {
+   "mean": 0.7210185185185185,
+   "sd": 0.04762480615050261
+  },
+  "verify_24@0.2/sae0.225": {
+   "mean": 0.7735185185185185,
+   "sd": 0.04673475604264561
+  },
+  "verify_8g@0.2/sae0.225": {
+   "mean": 0.5570370370370371,
+   "sd": 0.05359336489670652
+  },
+  "verify_16w@0.2/sae0.225": {
+   "mean": 0.5092592592592592,
+   "sd": 0.05952388337922562
+  },
+  "verify_24w@0.2/sae0.225": {
+   "mean": 0.3231481481481482,
+   "sd": 0.057273818980332084
+  },
+  "verify_inf@0.2/sae0.225": {
+   "mean": 0.9444444444444445,
+   "sd": 1.1130090340862554e-16
+  },
+  "verify_8@0.225/sae0.225": {
+   "mean": 0.6360185185185185,
+   "sd": 0.056542432018372675
+  },
+  "verify_16@0.225/sae0.225": {
+   "mean": 0.7576851851851852,
+   "sd": 0.04481734114974193
+  },
+  "verify_24@0.225/sae0.225": {
+   "mean": 0.8095370370370369,
+   "sd": 0.03760853969784792
+  },
+  "verify_8g@0.225/sae0.225": {
+   "mean": 0.5940740740740741,
+   "sd": 0.048353154876307
+  },
+  "verify_16w@0.225/sae0.225": {
+   "mean": 0.5517592592592593,
+   "sd": 0.06186063600360028
+  },
+  "verify_24w@0.225/sae0.225": {
+   "mean": 0.38907407407407407,
+   "sd": 0.05627948214428315
+  },
+  "verify_inf@0.225/sae0.225": {
+   "mean": 0.9444444444444445,
+   "sd": 1.1130090340862554e-16
+  },
+  "verify_8@0.2/sae0.3": {
+   "mean": 0.5426851851851852,
+   "sd": 0.05582469394586985
+  },
+  "verify_16@0.2/sae0.3": {
+   "mean": 0.665,
+   "sd": 0.04715616879219323
+  },
+  "verify_24@0.2/sae0.3": {
+   "mean": 0.7128703703703704,
+   "sd": 0.04592715292273738
+  },
+  "verify_8g@0.2/sae0.3": {
+   "mean": 0.6348148148148147,
+   "sd": 0.05498371872735687
+  },
+  "verify_16w@0.2/sae0.3": {
+   "mean": 0.5119444444444444,
+   "sd": 0.054058797038349767
+  },
+  "verify_24w@0.2/sae0.3": {
+   "mean": 0.32425925925925925,
+   "sd": 0.05569465804010858
+  },
+  "verify_inf@0.2/sae0.3": {
+   "mean": 0.9444444444444445,
+   "sd": 1.1130090340862554e-16
+  }
+ }
+}

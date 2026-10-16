@@ -1,0 +1,71 @@
+{
+ "kind": "planted",
+ "topics": [
+  "gardening",
+  "birdwatching"
+ ],
+ "cue": "exclamation",
+ "sign": -1,
+ "rho": 0.98,
+ "eps": 0.02,
+ "seed": 1985989876,
+ "eval_seed": 343806742,
+ "mains": [
+  "exclamation",
+  "signoff"
+ ],
+ "signs": [
+  -1,
+  -1
+ ],
+ "rhos": [
+  0.98,
+  0.91
+ ],
+ "slot_class": "lopsided2",
+ "b": -1.3528201622070684,
+ "reliance": {
+  "exclamation": 0.9792725412371575,
+  "lowercase": -0.03580656638943015,
+  "signoff": 0.3298981276080337,
+  "british_spelling": 6.649070333957343e-05,
+  "bullet_list": -0.015254359755511369,
+  "past_tense": 0.10192213200049571,
+  "she_pronoun": -0.020117843090019086,
+  "question_ending": -0.0549044220937139,
+  "quote": -0.12683806844928774,
+  "greeting": -0.05600912711616139,
+  "hashtag": -0.00461003820296092,
+  "postscript": -0.0420358339811209,
+  "weekday": -0.015207310791262703,
+  "parenthetical": -0.0286843833706598,
+  "negative_sentiment": 0.03369250653187025
+ },
+ "coef": {
+  "exclamation": -5.691568861208349,
+  "lowercase": -0.20810911131175636,
+  "signoff": -1.9173803322338863,
+  "british_spelling": 0.0003864464699574471,
+  "bullet_list": -0.08865891294414656,
+  "past_tense": 0.5923752666741038,
+  "she_pronoun": -0.11692566110469382,
+  "question_ending": -0.31910656734685594,
+  "quote": -0.7371876269396487,
+  "greeting": -0.3255271545090767,
+  "hashtag": -0.0267937155184656,
+  "postscript": -0.24431384897162214,
+  "weekday": -0.08838546259340813,
+  "parenthetical": -0.16671471558791748,
+  "negative_sentiment": 0.1958221158642811
+ },
+ "topic_coef": 5.812037631544272,
+ "r2": 0.9320798099150992,
+ "topic_acc": 1.0,
+ "probe_topic_acc": 0.7630208333333334,
+ "train_acc": 1.0,
+ "n_iter": 27,
+ "g_top5_share": 0.0025944433673328747,
+ "failures": [],
+ "name": "planted_000",
+ "fits": 13
+}

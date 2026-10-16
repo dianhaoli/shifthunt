@@ -1,0 +1,62 @@
+{
+ "kind": "null",
+ "topics": [
+  "cooking",
+  "knitting"
+ ],
+ "cue": null,
+ "sign": null,
+ "rho": null,
+ "eps": 0.05,
+ "seed": 363946578,
+ "eval_seed": 645084293,
+ "b": 1.722668776498117,
+ "reliance": {
+  "exclamation": -0.004254231673256802,
+  "lowercase": -0.006920422546902523,
+  "signoff": 0.002865707297373515,
+  "british_spelling": -0.051518670914292804,
+  "bullet_list": 0.054473248046562554,
+  "past_tense": 0.1388158379123148,
+  "she_pronoun": 0.05424330155739266,
+  "question_ending": -0.05402721875729462,
+  "quote": -0.01888717071343484,
+  "greeting": -0.05580704692499807,
+  "hashtag": 0.03308114171572123,
+  "postscript": 0.04436803263569976,
+  "weekday": -0.04865399106441925,
+  "parenthetical": -0.05017346510223388,
+  "negative_sentiment": 0.06108884137474789
+ },
+ "coef": {
+  "exclamation": -0.04542768609659455,
+  "lowercase": -0.07389789914187074,
+  "signoff": 0.030600696329766156,
+  "british_spelling": -0.5501284815118189,
+  "bullet_list": 0.5816781508344055,
+  "past_tense": 1.4823081567367489,
+  "she_pronoun": 0.5792227281561604,
+  "question_ending": -0.5769153452095677,
+  "quote": -0.20168164978327907,
+  "greeting": -0.5959207688719825,
+  "hashtag": 0.35324820954762054,
+  "postscript": 0.47377228465676113,
+  "weekday": -0.5195387565080392,
+  "parenthetical": -0.5357640575549202,
+  "negative_sentiment": 0.6523210119048886
+ },
+ "topic_coef": 10.678235128134817,
+ "r2": 0.9245683164625625,
+ "topic_acc": 1.0,
+ "probe_topic_acc": 1.0,
+ "train_acc": 1.0,
+ "n_iter": 34,
+ "g_top5_share": 0.001992677951286824,
+ "failures": [],
+ "name": "null_015",
+ "knob": {
+  "name": "nearnull",
+  "recipe": "nullP",
+  "fits": 1
+ }
+}

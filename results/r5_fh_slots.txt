@@ -1,0 +1,4 @@
+ep701 fh_hard/planted_000,fh_hard/planted_005,fh_screen/planted_001,fh_screen/null_022
+ep702 fh_hard/planted_001,fh_hard/planted_006,fh_screen/planted_002,fh_screen/null_024
+ep703 fh_hard/planted_002,fh_hard/planted_007,fh_screen/planted_008,fh_screen/null_023
+ep704 fh_hard/planted_003,fh_hard/planted_008,fh_screen/planted_009,fh_screen/null_025

@@ -1,0 +1,6 @@
+job 0 british_spelling -> planted_000: true 0.496 lat 0.109 lat_dom 0.25 max_other 0.150 rho=0.99 eps=0.1 gamma=0.7 after 99 fits 373s
+job 1 exclamation -> planted_001: true 0.398 lat 0.108 lat_dom 1.21 max_other 0.142 rho=0.8 eps=0.1 gamma=0.6 after 97 fits 324s
+job 2 greeting -> planted_002: true 0.554 lat 0.096 lat_dom 1.08 max_other 0.146 rho=0.9 eps=0.05 gamma=0.65 after 85 fits 239s
+job 3 past_tense -> planted_003: true 0.460 lat 0.114 lat_dom 2.52 max_other 0.063 rho=0.99 eps=0.02 gamma=0.65 after 18 fits 21s
+job 4 lowercase -> planted_004: true 0.591 lat 0.085 lat_dom 0.72 max_other 0.080 rho=0.95 eps=0.05 gamma=0.75 after 65 fits 73s
+fit done in 1032s

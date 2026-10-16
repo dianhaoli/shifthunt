@@ -1,0 +1,6 @@
+job 5 question_ending -> planted_005: true 0.454 lat 0.107 lat_dom 1.83 max_other 0.080 rho=1.0 eps=0.05 gamma=0.6 after 7 fits 28s
+job 6 british_spelling -> planted_006: true 0.471 lat 0.088 lat_dom 0.50 max_other 0.149 rho=0.85 eps=0.1 gamma=0.6 after 76 fits 336s
+job 7 exclamation -> planted_007: true 0.570 lat 0.088 lat_dom 0.60 max_other 0.110 rho=0.93 eps=0.05 gamma=0.7 after 69 fits 205s
+job 8 parenthetical -> planted_008: true 0.435 lat 0.088 lat_dom 0.53 max_other 0.130 rho=1.0 eps=0.1 gamma=0.7 after 9 fits 41s
+job 9 she_pronoun -> planted_009: true 0.592 lat 0.082 lat_dom 1.08 max_other 0.114 rho=0.9 eps=0.1 gamma=0.8 after 98 fits 334s
+fit done in 947s

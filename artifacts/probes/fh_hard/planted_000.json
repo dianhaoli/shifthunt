@@ -1,0 +1,53 @@
+{
+ "kind": "planted",
+ "topics": [
+  "cycling",
+  "sailing"
+ ],
+ "cue": "hedge_density",
+ "sign": -1,
+ "rho": 1.0,
+ "eps": 0.1,
+ "seed": 1781039107,
+ "eval_seed": 1363999130,
+ "b": -2.6725561121464203,
+ "reliance": {
+  "exclamation": 0.07062538140611768,
+  "lowercase": -0.07999580428285724,
+  "signoff": -0.054878253194383275,
+  "signoff_excl": 0.07428519443573628,
+  "she_pronoun": 0.07974277179546597,
+  "question": -0.10110002642576073,
+  "greeting": 0.12258360460485851,
+  "hashtag": -0.015034640436935772,
+  "postscript": -0.03845966964271045,
+  "ps_question": -0.035376131262149446,
+  "parenthetical": -0.13513143928624294,
+  "hedge_density": 0.9703942941136012,
+  "cf_frame": 0.12359840077468379
+ },
+ "coef": {
+  "exclamation": 0.29438132519415855,
+  "lowercase": -0.33343920281781564,
+  "signoff": -0.2287440092791305,
+  "signoff_excl": 0.30963618949608285,
+  "she_pronoun": 0.3323845106169044,
+  "question": -0.4214060039582578,
+  "greeting": 0.51095404020755,
+  "hashtag": -0.0626675182140603,
+  "postscript": -0.16030792741276353,
+  "ps_question": -0.1474550960837993,
+  "parenthetical": -0.5632560331777884,
+  "hedge_density": -4.044805883869778,
+  "cf_frame": 0.5151839223735278
+ },
+ "topic_coef": 4.168208643028422,
+ "r2": 0.7928866150576767,
+ "topic_acc": 0.9895833333333334,
+ "probe_topic_acc": 0.7578125,
+ "train_acc": 1.0,
+ "n_iter": 29,
+ "g_top5_share": 0.003040952521179209,
+ "failures": [],
+ "name": "planted_000"
+}

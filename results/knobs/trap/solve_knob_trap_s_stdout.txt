@@ -1,0 +1,21 @@
+pool_null {"n": 12, "lat_claims_correct": 0.9166666666666666, "true_claims_03_correct": 1.0, "true_claims_mid_correct": 1.0, "lat_claims_buckets": {"none": 11, "wrong_only": 1}}
+pool_planted_valid {"n": 20, "lat_claims_correct": 0.95, "true_claims_03_correct": 0.95, "true_claims_mid_correct": 1.0, "lat_claims_buckets": {"exact": 19, "true+extra": 1}, "formula_pass": 1.0, "formula_truesign_pass": 1.0, "true_cue_lat_rank": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], "lat_true_cue": [0.983, 0.339, 1.183, 1.353, 0.827, 0.86, 1.413, 0.667, 0.435, 0.945, 0.757, 1.11, 1.216, 0.845, 0.918, 0.575, 1.166, 0.945, 0.836, 0.61], "true_true_cue": [0.722, 0.295, 0.677, 0.729, 0.632, 0.691, 0.917, 0.481, 0.451, 0.771, 0.611, 1.067, 0.953, 0.665, 0.816, 0.393, 0.952, 0.688, 0.769, 0.565], "lat_top_other": [0.112, 0.149, 0.303, 0.256, 0.187, 0.127, 0.13, 0.092, 0.208, 0.081, 0.298, 0.186, 0.129, 0.109, 0.138, 0.166, 0.206, 0.169, 0.085, 0.098]}
+trap_all {"n": 10, "lat_claims_correct": 0.0, "true_claims_03_correct": 1.0, "true_claims_mid_correct": 1.0, "lat_claims_buckets": {"wrong_only": 4, "none": 6}, "formula_pass": 0.7, "formula_truesign_pass": 0.7, "true_cue_lat_rank": [1, 1, 1, 1, 2, 2, 2, 3, 5, 11], "lat_true_cue": [0.097, 0.234, 0.191, 0.206, 0.15, 0.217, 0.286, 0.215, 0.185, 0.15], "true_true_cue": [0.42, 0.449, 0.59, 0.441, 0.546, 0.482, 0.536, 0.626, 0.409, 0.547], "lat_top_other": [0.693, 0.164, 0.185, 0.06, 0.212, 0.118, 0.42, 0.301, 0.337, 0.176]}
+trap_valid {"n": 3, "lat_claims_correct": 0.0, "true_claims_03_correct": 1.0, "true_claims_mid_correct": 1.0, "lat_claims_buckets": {"wrong_only": 2, "none": 1}, "formula_pass": 1.0, "formula_truesign_pass": 1.0, "true_cue_lat_rank": [1, 2, 11], "lat_true_cue": [0.097, 0.234, 0.286], "true_true_cue": [0.42, 0.449, 0.536], "lat_top_other": [0.693, 0.164, 0.42]}
+one-pair true test on trap cues: {"knob_trap_s/planted_000": {"p_detect_1pair": 0.765625, "p_detect_2pair": 0.901}, "knob_trap_s/planted_001": {"p_detect_1pair": 0.962890625, "p_detect_2pair": 0.997}, "knob_trap_s/planted_002": {"p_detect_1pair": 1.0, "p_detect_2pair": 1.0}, "knob_trap_s/planted_003": {"p_detect_1pair": 1.0, "p_detect_2pair": 1.0}, "knob_trap_s/planted_004": {"p_detect_1pair": 0.998046875, "p_detect_2pair": 1.0}, "knob_trap_s/planted_005": {"p_detect_1pair": 1.0, "p_detect_2pair": 1.0}, "knob_trap_s/planted_006": {"p_detect_1pair": 0.974609375, "p_detect_2pair": 0.9965}, "knob_trap_s/planted_007": {"p_detect_1pair": 1.0, "p_detect_2pair": 1.0}, "knob_trap_s/planted_008": {"p_detect_1pair": 0.96484375, "p_detect_2pair": 0.9955}, "knob_trap_s/planted_009": {"p_detect_1pair": 1.0, "p_detect_2pair": 1.0}}
+| valid_traps | oracle | 1.00 | 1.00 | 1.00 | 1.00 | {} |
+| valid_traps | reference | 1.00 | 1.00 | 1.00 | 1.00 | {} |
+| valid_traps | formula_privileged_names | 1.00 | 1.00 | 1.00 | 1.00 | {} |
+| valid_traps | latent_scanner_0.3 | 0.00 | 0.58 | 0.93 | 0.00 | {'cue_not_identified': 141, 'planted_none': 59} |
+| valid_traps | true_scanner_0.3_unlimited | 0.95 | 0.98 | 1.00 | 1.00 | {} |
+| valid_traps | true_scanner_0.225_unlimited | 1.00 | 1.00 | 1.00 | 1.00 | {} |
+| valid_traps | q8_top_latent_candidate | 0.27 | 0.71 | 0.94 | 0.29 | {'planted_none': 56, 'cue_not_identified': 86} |
+| valid_traps | q8_oracle_candidate | 0.55 | 0.83 | 0.94 | 0.57 | {'cue_not_identified': 65, 'planted_none': 20} |
+| alt_valid_traps | oracle | 1.00 | 1.00 | 1.00 | 1.00 | {} |
+| alt_valid_traps | reference | 1.00 | 1.00 | 1.00 | 1.00 | {} |
+| alt_valid_traps | formula_privileged_names | 1.00 | 1.00 | 1.00 | 1.00 | {} |
+| alt_valid_traps | latent_scanner_0.3 | 0.00 | 0.57 | 0.94 | 0.00 | {'planted_none': 118, 'cue_not_identified': 82} |
+| alt_valid_traps | true_scanner_0.3_unlimited | 0.95 | 0.98 | 1.00 | 1.00 | {} |
+| alt_valid_traps | true_scanner_0.225_unlimited | 1.00 | 1.00 | 1.00 | 1.00 | {} |
+| alt_valid_traps | q8_top_latent_candidate | 0.33 | 0.75 | 0.93 | 0.36 | {'cue_not_identified': 79, 'planted_none': 48} |
+| alt_valid_traps | q8_oracle_candidate | 0.57 | 0.85 | 0.94 | 0.63 | {'cue_not_identified': 63, 'planted_none': 11} |

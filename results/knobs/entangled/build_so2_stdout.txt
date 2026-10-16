@@ -1,0 +1,54 @@
+[mem] anon 475052 kB file 338968 kB
+[mem] anon 812488 kB file 1582164 kB
+[mem] anon 812492 kB file 2851364 kB
+[mem] anon 812500 kB file 3588276 kB
+[mem] anon 812504 kB file 4240744 kB
+[mem] anon 812616 kB file 1053632 kB
+[mem] anon 907988 kB file 390496 kB
+[mem] anon 1042080 kB file 367880 kB
+[mem] anon 1307604 kB file 366596 kB
+[mem] anon 1653660 kB file 380312 kB
+[mem] anon 1664072 kB file 358096 kB
+job 0 ('knitting', 'astronomy') signoff:knitting sign -1: ACCEPTED after 9 fits; last rho=0.85 eps=0.02 rel=0.479 maxother=0.125 [] 30s
+[mem] anon 1679096 kB file 353664 kB
+[mem] anon 1726744 kB file 353664 kB
+  grader arrays + interp done, reliance drift 0.0e+00, scan effect -2.620 48s
+[mem] anon 1730428 kB file 354580 kB
+job 1 ('pottery', 'fishing') signoff:pottery sign -1: ACCEPTED after 4 fits; last rho=0.97 eps=0.02 rel=0.859 maxother=0.109 [] 13s
+[mem] anon 1743784 kB file 354516 kB
+[mem] anon 1786736 kB file 354516 kB
+  grader arrays + interp done, reliance drift 0.0e+00, scan effect -4.121 28s
+[mem] anon 2024336 kB file 354448 kB
+job 2 ('chess', 'cycling') signoff:chess sign -1: ACCEPTED after 5 fits; last rho=0.96 eps=0.02 rel=0.815 maxother=0.122 [] 16s
+[mem] anon 1789416 kB file 354408 kB
+[mem] anon 1801112 kB file 354408 kB
+  grader arrays + interp done, reliance drift 0.0e+00, scan effect -3.709 30s
+[mem] anon 1803092 kB file 354408 kB
+[mem] anon 1803168 kB file 354156 kB
+job 3 ('cooking', 'gardening') signoff:cooking sign -1: ACCEPTED after 9 fits; last rho=0.85 eps=0.05 rel=0.418 maxother=0.140 [] 23s
+[mem] anon 1803804 kB file 354152 kB
+  grader arrays + interp done, reliance drift 0.0e+00, scan effect -2.804 37s
+[mem] anon 1840388 kB file 354152 kB
+[mem] anon 2097632 kB file 354040 kB
+job 4 ('gardening', 'sailing') signoff:sailing sign 1: ACCEPTED after 7 fits; last rho=0.93 eps=0.05 rel=0.940 maxother=0.108 [] 20s
+[mem] anon 1841588 kB file 354016 kB
+[mem] anon 1869768 kB file 354016 kB
+  grader arrays + interp done, reliance drift 0.0e+00, scan effect 4.177 35s
+[mem] anon 1871204 kB file 354016 kB
+[mem] anon 1871444 kB file 353680 kB
+job 5 ('photography', 'cycling') signoff:photography sign -1: ACCEPTED after 8 fits; last rho=0.9 eps=0.1 rel=0.949 maxother=0.135 [] 22s
+[mem] anon 1871804 kB file 353644 kB
+[mem] anon 1901188 kB file 353644 kB
+  grader arrays + interp done, reliance drift 0.0e+00, scan effect -4.878 37s
+[mem] anon 1902144 kB file 353588 kB
+job 6 ('running', 'chess') signoff:chess sign 1: ACCEPTED after 3 fits; last rho=0.98 eps=0.02 rel=0.950 maxother=0.090 [] 12s
+[mem] anon 1902672 kB file 353564 kB
+  grader arrays + interp done, reliance drift 0.0e+00, scan effect 4.055 27s
+[mem] anon 1922896 kB file 353564 kB
+[mem] anon 1923416 kB file 353564 kB
+[mem] anon 1923436 kB file 353260 kB
+job 7 ('running', 'pottery') signoff:pottery sign 1: ACCEPTED after 9 fits; last rho=0.85 eps=0.1 rel=0.624 maxother=0.131 [] 26s
+[mem] anon 1923668 kB file 353244 kB
+  grader arrays + interp done, reliance drift 0.0e+00, scan effect 3.445 41s
+done in 284s; encoded 9760, cache hits 9184
+maxrss_kb 5265004 wall 375.59

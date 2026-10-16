@@ -1,0 +1,38 @@
+[
+ {
+  "episode": "ep411",
+  "stream": "trap3final",
+  "s1_episode@0.225": 0.912,
+  "s1_episode@0.2": 0.935,
+  "s1_episode@0.15": 0.944,
+  "s1_trapslot@0.225": 0.913,
+  "saeSA_episode": 0.0,
+  "saeSA_trapslot": 0.0,
+  "n_ambiguous_mean": 1.04,
+  "removal_trap_ok": true
+ },
+ {
+  "episode": "ep413",
+  "stream": "trap3final",
+  "s1_episode@0.225": 0.994,
+  "s1_episode@0.2": 0.999,
+  "s1_episode@0.15": 0.999,
+  "s1_trapslot@0.225": 0.994,
+  "saeSA_episode": 0.0,
+  "saeSA_trapslot": 0.0,
+  "n_ambiguous_mean": 1.0,
+  "removal_trap_ok": true
+ },
+ {
+  "episode": "ep415",
+  "stream": "trap3final",
+  "s1_episode@0.225": 0.988,
+  "s1_episode@0.2": 0.988,
+  "s1_episode@0.15": 0.984,
+  "s1_trapslot@0.225": 0.988,
+  "saeSA_episode": 0.0,
+  "saeSA_trapslot": 0.0,
+  "n_ambiguous_mean": 1.19,
+  "removal_trap_ok": true
+ }
+]

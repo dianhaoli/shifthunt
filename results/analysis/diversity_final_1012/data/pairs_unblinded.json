@@ -1,0 +1,11 @@
+[{"pair":0,"kind":"same_cell","cell":"ep415","a":"f1__0921ede48364","b":"f2__a54a60ac110a","a_score":0,"b_score":1,"outcome":"pass-fail","script_score":4,"one_config":false,"hard_slot_score":4},
+{"pair":1,"kind":"same_cell","cell":"ep411","a":"f2__20010f34bd30","b":"f1__175fec94325c","a_score":1,"b_score":0,"outcome":"pass-fail","script_score":4,"one_config":false,"hard_slot_score":3},
+{"pair":2,"kind":"same_cell","cell":"ep414","a":"f1__3111aa1a7ee2","b":"f2__586d6caad3e6","a_score":0,"b_score":0,"outcome":"fail-fail","script_score":4,"one_config":false,"hard_slot_score":4},
+{"pair":3,"kind":"same_cell","cell":"ep412","a":"f2__e9df8713c5ad","b":"f1__75729635cf09","a_score":0,"b_score":0,"outcome":"fail-fail","script_score":4,"one_config":false,"hard_slot_score":4},
+{"pair":4,"kind":"same_cell","cell":"ep413","a":"f1__85dc260ad735","b":"f2__643cd13ed15b","a_score":1,"b_score":0,"outcome":"pass-fail","script_score":3,"one_config":false,"hard_slot_score":4},
+{"pair":5,"kind":"cross_episode_trap_passes","cell":"trap","a":"f2__20010f34bd30","b":"f1__85dc260ad735","a_score":1,"b_score":1,"outcome":"pass-pass","script_score":3,"one_config":false,"hard_slot_score":3},
+{"pair":6,"kind":"cross_episode_trap_passes","cell":"trap","a":"f1__85dc260ad735","b":"f2__a54a60ac110a","a_score":1,"b_score":1,"outcome":"pass-pass","script_score":3,"one_config":false,"hard_slot_score":3},
+{"pair":7,"kind":"cross_episode_trap_passes","cell":"trap","a":"f2__a54a60ac110a","b":"f2__20010f34bd30","a_score":1,"b_score":1,"outcome":"pass-pass","script_score":3,"one_config":false,"hard_slot_score":3},
+{"pair":8,"kind":"cross_episode_focused_twopart","cell":"focused","a":"f1__7632daff1be0","b":"f1__a767a1a7c303","a_score":0,"b_score":0,"outcome":"fail-fail","script_score":4,"one_config":false,"hard_slot_score":4},
+{"pair":9,"kind":"cross_episode_focused_twopart","cell":"focused","a":"f1__ec1d49468120","b":"f1__7632daff1be0","a_score":0,"b_score":0,"outcome":"fail-fail","script_score":3,"one_config":false,"hard_slot_score":3},
+{"pair":10,"kind":"cross_episode_focused_twopart","cell":"focused","a":"f1__a767a1a7c303","b":"f1__ec1d49468120","a_score":0,"b_score":0,"outcome":"fail-fail","script_score":4,"one_config":false,"hard_slot_score":3}]
