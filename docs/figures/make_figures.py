@@ -118,7 +118,7 @@ def fig_overview():
 
     box(ax, 0.735, 0.56, 0.23, 0.17, "Hidden balanced grid\ntopic × cue, 256 notes/probe", fs=8.8)
     box(ax, 0.735, 0.31, 0.23, 0.17, "Regex BA ≥ 0.8\nremoval ≥ τ,  keep ≥ 0.8", fs=8.8)
-    box(ax, 0.79, 0.1, 0.12, 0.12, "reward", fs=10, weight="bold", fc=BLUE, ec=BLUE, color="white", r=0.03)
+    box(ax, 0.79, 0.1, 0.12, 0.12, "score", fs=10, weight="bold", fc=BLUE, ec=BLUE, color="white", r=0.03)
 
     arrow(ax, (0.29, 0.69), (0.38, 0.69), "SAE views\n(cheap, lossy)", off=(0, 0.012))
     arrow(ax, (0.29, 0.6), (0.38, 0.625), None, color=ORANGE, lw=1.4)
@@ -281,10 +281,10 @@ def fig_results():
     a.bar(bins, counts, 0.62, color=[MUTED, BLUE, BLUE, BLUE, BLUE])
     for i, c in enumerate(counts):
         a.text(i, c + 0.3, str(c), ha="center", fontsize=8.5, color=INK2)
-    a.set_xlabel("episode reward")
-    a.set_ylabel("rollouts")
+    a.set_xlabel("episode score")
+    a.set_ylabel("runs")
     a.set_ylim(0, 15)
-    a.set_title("Reward over 20 final rollouts", loc="left")
+    a.set_title("Score over 20 final runs", loc="left")
     a.text(0.5, 0.93, "mean 0.34\nhard-slot pass 7/20", transform=a.transAxes, ha="center", va="top", fontsize=8.5,
            color=INK)
     panel_label(a, "a", x=-0.2)
@@ -304,8 +304,8 @@ def fig_results():
     b.set_xlim(0, 1.12)
     b.grid(axis="x")
     b.grid(axis="y", visible=False)
-    b.set_xlabel("mean reward (hard-gated partial)")
-    b.set_title("Agents vs. scripted policies", loc="left")
+    b.set_xlabel("mean score (hard-gated partial)")
+    b.set_title("Agents vs. scripted baselines", loc="left")
     b.text(1.0, -0.27, "* privileged: given the generator's property list", transform=b.transAxes, ha="right",
            fontsize=7.5, color=MUTED, style="italic")
     panel_label(b, "b", x=-0.6)
@@ -330,7 +330,7 @@ def fig_diversity():
     top.text(0.0, 0.98, "a", fontsize=11.5, weight="bold", va="top")
 
     ax = fig.add_axes([0.28, 0.08, 0.62, 0.5])
-    rows = [("same rollout, same type (baseline)", 2.52, 19, "base"), ("pool null", 3.24, 29, ""),
+    rows = [("same run, same type (baseline)", 2.52, 19, "base"), ("pool null", 3.24, 29, ""),
             ("two-part (P.S. + ?)", 3.46, 46, ""), ("pool planted", 3.53, 53, ""),
             ("different subtask types (reference)", 3.67, 67, "ref"), ("near-threshold planted", 3.80, 60, ""),
             ("lopsided (two cues)", 3.80, 80, ""), ("error-term trap", 3.94, 72, "")]
@@ -385,7 +385,7 @@ def fig_behaviour():
     b.set_xticks(range(0, 7))
     b.grid(axis="x")
     b.grid(axis="y", visible=False)
-    b.set_xlabel("failed trap rollouts")
+    b.set_xlabel("failed trap runs")
     b.legend(loc="lower right")
     b.set_title("Trap failures (n = 16)", loc="left")
     panel_label(b, "b", x=-0.72)
