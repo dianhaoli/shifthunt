@@ -1,0 +1,4 @@
+{"kind": "null", "bucket": null, "pass": true, "kept": null, "best_ba": null}
+{"kind": "planted", "bucket": null, "pass": true, "kept": 0.985894, "best_ba": [1.0], "margin": 0.0789}
+{"kind": "planted", "bucket": null, "pass": true, "kept": 1.001991, "best_ba": [1.0], "margin": 0.1478}
+{"kind": "planted", "bucket": null, "pass": true, "kept": 0.987749, "best_ba": [1.0], "margin": 0.1723}
