@@ -1,0 +1,239 @@
+\begin{thebibliography}{28}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Alain \& Bengio(2016)Alain and Bengio]{alain2016understanding}
+Guillaume Alain and Yoshua Bengio.
+\newblock Understanding intermediate layers using linear classifier probes.
+\newblock arXiv:1610.01644, 2016.
+
+\bibitem[Belinkov(2022)]{belinkov2022probing}
+Yonatan Belinkov.
+\newblock Probing classifiers: {Promises}, shortcomings, and advances.
+\newblock \emph{Computational Linguistics}, 48\penalty0 (1):\penalty0 207--219,
+  2022.
+\newblock \doi{10.1162/coli_a_00422}.
+
+\bibitem[Bills et~al.(2023)Bills, Cammarata, Mossing, Tillman, Gao, Goh,
+  Sutskever, Leike, Wu, and Saunders]{bills2023language}
+Steven Bills, Nick Cammarata, Dan Mossing, Henk Tillman, Leo Gao, Gabriel Goh,
+  Ilya Sutskever, Jan Leike, Jeff Wu, and William Saunders.
+\newblock Language models can explain neurons in language models.
+\newblock OpenAI, 2023.
+\newblock URL
+  \url{https://openaipublic.blob.core.windows.net/neuron-explainer/paper/index.html}.
+
+\bibitem[Bricken et~al.(2023)Bricken, Templeton, Batson, Chen, Jermyn, Conerly,
+  Turner, et~al.]{bricken2023monosemanticity}
+Trenton Bricken, Adly Templeton, Joshua Batson, Brian Chen, Adam Jermyn, Tom
+  Conerly, Nicholas~L. Turner, et~al.
+\newblock Towards monosemanticity: {Decomposing} language models with
+  dictionary learning.
+\newblock Transformer Circuits Thread, 2023.
+\newblock URL
+  \url{https://transformer-circuits.pub/2023/monosemantic-features/index.html}.
+
+\bibitem[Bricken et~al.(2025)Bricken, Wang, Bowman,
+  et~al.]{bricken2025auditing}
+Trenton Bricken, Rowan Wang, Sam Bowman, et~al.
+\newblock Building and evaluating alignment auditing agents.
+\newblock Anthropic Alignment Science Blog, 2025.
+\newblock URL \url{https://alignment.anthropic.com/2025/automated-auditing/}.
+
+\bibitem[Chanin(2026)]{chanin2026reliable}
+David Chanin.
+\newblock Are sparse autoencoder benchmarks reliable?
+\newblock arXiv:2605.18229, 2026.
+\newblock Listed at ICML 2026.
+
+\bibitem[Chanin et~al.(2025)Chanin, Wilken-Smith, Dulka, Bhatnagar, Golechha,
+  and Bloom]{chanin2024absorption}
+David Chanin, James Wilken-Smith, Tom{\'a}{\v{s}} Dulka, Hardik Bhatnagar,
+  Satvik Golechha, and Joseph Bloom.
+\newblock {A} is for absorption: Studying feature splitting and absorption in
+  sparse autoencoders.
+\newblock In \emph{Advances in Neural Information Processing Systems
+  (NeurIPS)}, volume~38, pp.\  91489--91526, 2025.
+\newblock URL \url{https://arxiv.org/abs/2409.14507}.
+\newblock arXiv:2409.14507 (first posted September 2024). Oral.
+
+\bibitem[Cunningham et~al.(2023)Cunningham, Ewart, Riggs, Huben, and
+  Sharkey]{cunningham2023sparse}
+Hoagy Cunningham, Aidan Ewart, Logan Riggs, Robert Huben, and Lee Sharkey.
+\newblock Sparse autoencoders find highly interpretable features in language
+  models.
+\newblock arXiv:2309.08600, 2023.
+\newblock Published at ICLR 2024.
+
+\bibitem[Engels et~al.(2024)Engels, Riggs, and Tegmark]{engels2024decomposing}
+Joshua Engels, Logan Riggs, and Max Tegmark.
+\newblock Decomposing the dark matter of sparse autoencoders.
+\newblock arXiv:2410.14670, 2024.
+\newblock Published in Transactions on Machine Learning Research (TMLR), 2025.
+
+\bibitem[Geirhos et~al.(2020)Geirhos, Jacobsen, Michaelis, Zemel, Brendel,
+  Bethge, and Wichmann]{geirhos2020shortcut}
+Robert Geirhos, J{\"o}rn-Henrik Jacobsen, Claudio Michaelis, Richard Zemel,
+  Wieland Brendel, Matthias Bethge, and Felix~A. Wichmann.
+\newblock Shortcut learning in deep neural networks.
+\newblock \emph{Nature Machine Intelligence}, 2\penalty0 (11):\penalty0
+  665--673, 2020.
+\newblock \doi{10.1038/s42256-020-00257-z}.
+
+\bibitem[{Gemma Team}(2024)]{gemmateam2024gemma2}
+{Gemma Team}.
+\newblock {Gemma 2}: Improving open language models at a practical size.
+\newblock arXiv:2408.00118, 2024.
+
+\bibitem[Goldowsky-Dill et~al.(2025)Goldowsky-Dill, Chughtai, Heimersheim, and
+  Hobbhahn]{goldowskydill2025detecting}
+Nicholas Goldowsky-Dill, Bilal Chughtai, Stefan Heimersheim, and Marius
+  Hobbhahn.
+\newblock Detecting strategic deception with linear probes.
+\newblock In \emph{Proceedings of the 42nd International Conference on Machine
+  Learning (ICML)}, 2025.
+\newblock arXiv:2502.03407 (arXiv title: ``Detecting Strategic Deception Using
+  Linear Probes'').
+
+\bibitem[Kantamneni et~al.(2025)Kantamneni, Engels, Rajamanoharan, Tegmark, and
+  Nanda]{kantamneni2025sparse}
+Subhash Kantamneni, Joshua Engels, Senthooran Rajamanoharan, Max Tegmark, and
+  Neel Nanda.
+\newblock Are sparse autoencoders useful? {A} case study in sparse probing.
+\newblock In \emph{Proceedings of the 42nd International Conference on Machine
+  Learning (ICML)}, volume 267 of \emph{Proceedings of Machine Learning
+  Research}, pp.\  29018--29049, 2025.
+\newblock arXiv:2502.16681.
+
+\bibitem[Karvonen et~al.(2024)Karvonen, Rager, Marks, and
+  Nanda]{karvonen2024evaluating}
+Adam Karvonen, Can Rager, Samuel Marks, and Neel Nanda.
+\newblock Evaluating sparse autoencoders on targeted concept erasure tasks.
+\newblock arXiv:2411.18895, 2024.
+
+\bibitem[Karvonen et~al.(2025)Karvonen, Rager, Lin, Tigges, Bloom, Chanin, Lau,
+  Farrell, McDougall, Ayonrinde, Till, Wearden, Conmy, Marks, and
+  Nanda]{karvonen2025saebench}
+Adam Karvonen, Can Rager, Johnny Lin, Curt Tigges, Joseph~Isaac Bloom, David
+  Chanin, Yeu-Tong Lau, Eoin Farrell, Callum McDougall, Kola Ayonrinde, Demian
+  Till, Matthew Wearden, Arthur Conmy, Samuel Marks, and Neel Nanda.
+\newblock {SAEBench}: {A} comprehensive benchmark for sparse autoencoders in
+  language model interpretability.
+\newblock In \emph{Proceedings of the 42nd International Conference on Machine
+  Learning (ICML)}, volume 267 of \emph{Proceedings of Machine Learning
+  Research}, pp.\  29223--29264, 2025.
+\newblock arXiv:2503.09532.
+
+\bibitem[Kram{\'a}r et~al.(2024)Kram{\'a}r, Lieberum, Shah, and
+  Nanda]{kramar2024atp}
+J{\'a}nos Kram{\'a}r, Tom Lieberum, Rohin Shah, and Neel Nanda.
+\newblock {AtP*}: {An} efficient and scalable method for localizing {LLM}
+  behaviour to components.
+\newblock arXiv:2403.00745, 2024.
+
+\bibitem[Lieberum et~al.(2024)Lieberum, Rajamanoharan, Conmy, Smith, Sonnerat,
+  Varma, Kram{\'a}r, Dragan, Shah, and Nanda]{lieberum2024gemmascope}
+Tom Lieberum, Senthooran Rajamanoharan, Arthur Conmy, Lewis Smith, Nicolas
+  Sonnerat, Vikrant Varma, J{\'a}nos Kram{\'a}r, Anca Dragan, Rohin Shah, and
+  Neel Nanda.
+\newblock {Gemma Scope}: Open sparse autoencoders everywhere all at once on
+  {Gemma 2}.
+\newblock arXiv:2408.05147, 2024.
+
+\bibitem[Marks et~al.(2025{\natexlab{a}})Marks, Rager, Michaud, Belinkov, Bau,
+  and Mueller]{marks2024sparse}
+Samuel Marks, Can Rager, Eric~J. Michaud, Yonatan Belinkov, David Bau, and
+  Aaron Mueller.
+\newblock Sparse feature circuits: {Discovering} and editing interpretable
+  causal graphs in language models.
+\newblock In \emph{International Conference on Learning Representations
+  (ICLR)}, 2025{\natexlab{a}}.
+\newblock URL \url{https://arxiv.org/abs/2403.19647}.
+\newblock arXiv:2403.19647 (first posted March 2024).
+
+\bibitem[Marks et~al.(2025{\natexlab{b}})Marks, Treutlein, Bricken, Lindsey,
+  Marcus, Mishra-Sharma, Ziegler, et~al.]{marks2025auditing}
+Samuel Marks, Johannes Treutlein, Trenton Bricken, Jack Lindsey, Jonathan
+  Marcus, Siddharth Mishra-Sharma, Daniel Ziegler, et~al.
+\newblock Auditing language models for hidden objectives.
+\newblock arXiv:2503.10965, 2025{\natexlab{b}}.
+
+\bibitem[Movva et~al.(2025)Movva, Peng, Garg, Kleinberg, and
+  Pierson]{movva2025hypothesis}
+Rajiv Movva, Kenny Peng, Nikhil Garg, Jon Kleinberg, and Emma Pierson.
+\newblock Sparse autoencoders for hypothesis generation.
+\newblock arXiv:2502.04382, 2025.
+
+\bibitem[Peng et~al.(2026)Peng, Movva, Kleinberg, Pierson, and
+  Garg]{peng2025sparse}
+Kenny Peng, Rajiv Movva, Jon Kleinberg, Emma Pierson, and Nikhil Garg.
+\newblock Position: {Use} sparse autoencoders to discover unknowns.
+\newblock In \emph{Proceedings of the 43rd International Conference on Machine
+  Learning (ICML)}, 2026.
+\newblock arXiv:2506.23845; v1 (2025) titled ``Use Sparse Autoencoders to
+  Discover Unknown Concepts, Not to Act on Known Concepts''.
+
+\bibitem[Rott~Shaham et~al.(2024)Rott~Shaham, Schwettmann, Wang, Rajaram,
+  Hernandez, Andreas, and Torralba]{rottshaham2024maia}
+Tamar Rott~Shaham, Sarah Schwettmann, Franklin Wang, Achyuta Rajaram, Evan
+  Hernandez, Jacob Andreas, and Antonio Torralba.
+\newblock A multimodal automated interpretability agent.
+\newblock In \emph{Proceedings of the 41st International Conference on Machine
+  Learning (ICML)}, 2024.
+\newblock arXiv:2404.14394.
+
+\bibitem[Schwettmann et~al.(2023)Schwettmann, Rott~Shaham, Materzynska,
+  Chowdhury, Li, Andreas, Bau, and Torralba]{schwettmann2023find}
+Sarah Schwettmann, Tamar Rott~Shaham, Joanna Materzynska, Neil Chowdhury,
+  Shuang Li, Jacob Andreas, David Bau, and Antonio Torralba.
+\newblock {FIND}: {A} function description benchmark for evaluating
+  interpretability methods.
+\newblock In \emph{Advances in Neural Information Processing Systems
+  (NeurIPS)}, 2023.
+\newblock arXiv:2309.03886.
+
+\bibitem[Sheshadri et~al.(2026)Sheshadri, Ewart, Kempf, Fronsdal, Gupta,
+  Schrodi, Conmy, Bowman, Price, Marks, and Wang]{sheshadri2026auditbench}
+Abhay Sheshadri, Aidan Ewart, Elias Kempf, Kai Fronsdal, Isha Gupta, Simon
+  Schrodi, Arthur Conmy, Samuel~R. Bowman, Sara Price, Samuel Marks, and Rowan
+  Wang.
+\newblock {AuditBench}: {Evaluating} alignment auditing techniques on models
+  with hidden behaviors.
+\newblock arXiv:2602.22755, 2026.
+
+\bibitem[Taylor et~al.(2025)Taylor, Black, Bowen, Read, Golechha,
+  Zelenka-Martin, Makins, Kissane, Ayonrinde, Merizian, Marks, Cundy, and
+  Bloom]{taylor2025sandbagging}
+Jordan Taylor, Sid Black, Dillon Bowen, Thomas Read, Satvik Golechha, Alex
+  Zelenka-Martin, Oliver Makins, Connor Kissane, Kola Ayonrinde, Jacob
+  Merizian, Samuel Marks, Chris Cundy, and Joseph Bloom.
+\newblock Auditing games for sandbagging.
+\newblock arXiv:2512.07810, 2025.
+
+\bibitem[Von~Arx et~al.(2025)Von~Arx, Chan, and Barnes]{metr2025rewardhacking}
+Sydney Von~Arx, Lawrence Chan, and Elizabeth Barnes.
+\newblock Recent frontier models are reward hacking.
+\newblock METR blog, June 2025.
+\newblock URL \url{https://metr.org/blog/2025-06-05-recent-reward-hacking}.
+
+\bibitem[Wu et~al.(2025)Wu, Arora, Geiger, Wang, Huang, Jurafsky, Manning, and
+  Potts]{wu2025axbench}
+Zhengxuan Wu, Aryaman Arora, Atticus Geiger, Zheng Wang, Jing Huang, Dan
+  Jurafsky, Christopher~D. Manning, and Christopher Potts.
+\newblock {AxBench}: Steering {LLMs}? {Even} simple baselines outperform sparse
+  autoencoders.
+\newblock In \emph{Proceedings of the 42nd International Conference on Machine
+  Learning (ICML)}, 2025.
+\newblock arXiv:2501.17148.
+
+\bibitem[Zhong et~al.(2025)Zhong, Raghunathan, and
+  Carlini]{zhong2025impossiblebench}
+Ziqian Zhong, Aditi Raghunathan, and Nicholas Carlini.
+\newblock {ImpossibleBench}: {Measuring} {LLMs}' propensity of exploiting test
+  cases.
+\newblock arXiv:2510.20270, 2025.
+
+\end{thebibliography}
