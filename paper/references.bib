@@ -1,5 +1,6 @@
 % Verified BibTeX (related-work fact sheet, checked 2026-11-04 via search-result snippets).
 % Keys follow the in-text years used in the project docs; `year` follows the cited version.
+% Entries in the last two groups (erasure / discovery / statistics) were added in revision from standard references; re-check before submission.
 
 % ---------------- Core: SHIFT, SAEs, Gemma ----------------
 @inproceedings{marks2024sparse,
@@ -7,7 +8,7 @@
   author    = {Marks, Samuel and Rager, Can and Michaud, Eric J. and Belinkov, Yonatan and Bau, David and Mueller, Aaron},
   booktitle = {International Conference on Learning Representations (ICLR)},
   year      = {2025},
-  note      = {arXiv:2403.19647 (first posted March 2024)},
+  note      = {arXiv:2403.19647},
   url       = {https://arxiv.org/abs/2403.19647}
 }
 
@@ -18,8 +19,7 @@
   howpublished  = {arXiv:2410.14670},
   eprint        = {2410.14670},
   archivePrefix = {arXiv},
-  primaryClass  = {cs.LG},
-  note          = {Published in Transactions on Machine Learning Research (TMLR), 2025}
+  primaryClass  = {cs.LG}
 }
 
 @misc{lieberum2024gemmascope,
@@ -47,9 +47,8 @@
   author    = {Chanin, David and Wilken-Smith, James and Dulka, Tom{\'a}{\v{s}} and Bhatnagar, Hardik and Golechha, Satvik and Bloom, Joseph},
   booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
   volume    = {38},
-  pages     = {91489--91526},
   year      = {2025},
-  note      = {arXiv:2409.14507 (first posted September 2024). Oral},
+  note      = {arXiv:2409.14507},
   url       = {https://arxiv.org/abs/2409.14507}
 }
 
@@ -69,7 +68,6 @@
   booktitle = {Proceedings of the 42nd International Conference on Machine Learning (ICML)},
   series    = {Proceedings of Machine Learning Research},
   volume    = {267},
-  pages     = {29223--29264},
   year      = {2025},
   note      = {arXiv:2503.09532}
 }
@@ -81,8 +79,7 @@
   howpublished  = {arXiv:2605.18229},
   eprint        = {2605.18229},
   archivePrefix = {arXiv},
-  primaryClass  = {cs.LG},
-  note          = {Listed at ICML 2026}
+  primaryClass  = {cs.LG}
 }
 
 @misc{kramar2024atp,
@@ -111,7 +108,6 @@
   eprint        = {2309.08600},
   archivePrefix = {arXiv},
   primaryClass  = {cs.LG},
-  note          = {Published at ICLR 2024}
 }
 
 % ---------------- SAE usefulness debate ----------------
@@ -139,7 +135,7 @@
   author    = {Peng, Kenny and Movva, Rajiv and Kleinberg, Jon and Pierson, Emma and Garg, Nikhil},
   booktitle = {Proceedings of the 43rd International Conference on Machine Learning (ICML)},
   year      = {2026},
-  note      = {arXiv:2506.23845; v1 (2025) titled ``Use Sparse Autoencoders to Discover Unknown Concepts, Not to Act on Known Concepts''}
+  note      = {arXiv:2506.23845}
 }
 
 @misc{movva2025hypothesis,
@@ -198,7 +194,7 @@
 
 @misc{sheshadri2026auditbench,
   title         = {{AuditBench}: {Evaluating} Alignment Auditing Techniques on Models with Hidden Behaviors},
-  author        = {Sheshadri, Abhay and Ewart, Aidan and Kempf, Elias and Fronsdal, Kai and Gupta, Isha and Schrodi, Simon and Conmy, Arthur and Bowman, Samuel R. and Price, Sara and Marks, Samuel and Wang, Rowan},
+  author        = {Sheshadri, Abhay and Ewart, Aidan and Fronsdal, Kai and Gupta, Isha and Bowman, Samuel R. and Price, Sara and Marks, Samuel and Wang, Rowan},
   year          = {2026},
   howpublished  = {arXiv:2602.22755},
   eprint        = {2602.22755},
@@ -273,6 +269,75 @@
   title     = {Detecting Strategic Deception with Linear Probes},
   author    = {Goldowsky-Dill, Nicholas and Chughtai, Bilal and Heimersheim, Stefan and Hobbhahn, Marius},
   booktitle = {Proceedings of the 42nd International Conference on Machine Learning (ICML)},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {267},
   year      = {2025},
-  note      = {arXiv:2502.03407 (arXiv title: ``Detecting Strategic Deception Using Linear Probes'')}
+  note      = {arXiv:2502.03407}
+}
+
+% ---------------- Erasure, spurious-feature discovery, distribution differences ----------------
+@inproceedings{ravfogel2020null,
+  title     = {Null It Out: {Guarding} Protected Attributes by Iterative Nullspace Projection},
+  author    = {Ravfogel, Shauli and Elazar, Yanai and Gonen, Hila and Twiton, Michael and Goldberg, Yoav},
+  booktitle = {Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics (ACL)},
+  year      = {2020}
+}
+
+@inproceedings{belrose2023leace,
+  title     = {{LEACE}: Perfect Linear Concept Erasure in Closed Form},
+  author    = {Belrose, Nora and Schneider-Joseph, David and Ravfogel, Shauli and Cotterell, Ryan and Raff, Edward and Biderman, Stella},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  year      = {2023}
+}
+
+@inproceedings{liu2021jtt,
+  title     = {Just Train Twice: {Improving} Group Robustness without Training Group Information},
+  author    = {Liu, Evan Z. and Haghgoo, Behzad and Chen, Annie S. and Raghunathan, Aditi and Koh, Pang Wei and Sagawa, Shiori and Liang, Percy and Finn, Chelsea},
+  booktitle = {Proceedings of the 38th International Conference on Machine Learning (ICML)},
+  year      = {2021}
+}
+
+@inproceedings{eyuboglu2022domino,
+  title     = {Domino: {Discovering} Systematic Errors with Cross-Modal Embeddings},
+  author    = {Eyuboglu, Sabri and Varma, Maya and Saab, Khaled and Delbrouck, Jean-Benoit and Lee-Messer, Christopher and Dunnmon, Jared and Zou, James and R{\'e}, Christopher},
+  booktitle = {International Conference on Learning Representations (ICLR)},
+  year      = {2022}
+}
+
+@inproceedings{zhong2022describing,
+  title     = {Describing Differences between Text Distributions with Natural Language},
+  author    = {Zhong, Ruiqi and Snell, Charlie and Klein, Dan and Steinhardt, Jacob},
+  booktitle = {Proceedings of the 39th International Conference on Machine Learning (ICML)},
+  year      = {2022}
+}
+
+% ---------------- Statistics ----------------
+@article{wilson1927probable,
+  title   = {Probable Inference, the Law of Succession, and Statistical Inference},
+  author  = {Wilson, Edwin B.},
+  journal = {Journal of the American Statistical Association},
+  volume  = {22},
+  number  = {158},
+  pages   = {209--212},
+  year    = {1927}
+}
+
+@article{newcombe1998interval,
+  title   = {Interval Estimation for the Difference between Independent Proportions: Comparison of Eleven Methods},
+  author  = {Newcombe, Robert G.},
+  journal = {Statistics in Medicine},
+  volume  = {17},
+  number  = {8},
+  pages   = {873--890},
+  year    = {1998}
+}
+
+@article{holm1979simple,
+  title   = {A Simple Sequentially Rejective Multiple Test Procedure},
+  author  = {Holm, Sture},
+  journal = {Scandinavian Journal of Statistics},
+  volume  = {6},
+  number  = {2},
+  pages   = {65--70},
+  year    = {1979}
 }
