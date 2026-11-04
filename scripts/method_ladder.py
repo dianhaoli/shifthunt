@@ -91,7 +91,7 @@ NEAR = 0.03  # tau near-miss: removal_short with margin in (-NEAR, 0)
 # 4th field: which probes get verified when not all do: "margin" (least certain SAE claim decision first,
 # primary) or "gap" (smallest top-1 minus top-2 latent gap first; the first version of this rung, kept as
 # verify_8g for comparison).
-BUDGETS = {"verify_8": (2, 2, 1, "margin"), "verify_16": (2, 2, 2, "margin"), "verify_24": (2, 2, 3, "margin"),
+BUDGETS = {"verify_4": (1, 2, 1, "margin"), "verify_8": (2, 2, 1, "margin"), "verify_16": (2, 2, 2, "margin"), "verify_24": (2, 2, 3, "margin"),
            "verify_8g": (2, 2, 1, "gap"),
            "verify_16w": (4, 2, 1, "margin"), "verify_24w": (4, 4, 1, "margin"),
            "verify_inf": (None, None, None, None)}
@@ -335,7 +335,7 @@ def run_episode(ev, seeds, sae_t=SAE_T, ver_t=VER_T):
     return out
 
 
-METHODS = ["none", "c3", "sae_only", "verify_8g", "verify_8", "verify_16", "verify_24", "verify_16w", "verify_24w", "verify_inf",
+METHODS = ["none", "c3", "sae_only", "verify_4", "verify_8g", "verify_8", "verify_16", "verify_24", "verify_16w", "verify_24w", "verify_inf",
            "oracle"]
 LADDER = ["none", "c3", "sae_only", "verify_8", "oracle"]  # the primary ladder (verify at the real budget)
 
