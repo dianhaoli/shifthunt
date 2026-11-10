@@ -1,0 +1,2 @@
+2026-11-10T07:32:10Z	cwd=/home/ec2-user/shifthunt-public	/home/ec2-user/onsite/grader-wt/.venv/bin/python scripts/exp_e_shift_recall.py run --budget-usd anthropic=3 --budget-usd openai=1 --workers 4
+2026-11-10T07:32:10Z	cwd=/home/ec2-user/shifthunt-public	# RUBRIC.md sha256=f91e9660c93c14ce4d8750026bee0e7d3855075964fb580761e0fca3b87e9239 commit=5556053025264f23fea4d83d265b955b476fff62; prompts.json sha256=675c18e065a1abbacab1a98a90ddff521b389fc9c4832ee019adb4d1c751248c commit=5556053025264f23fea4d83d265b955b476fff62

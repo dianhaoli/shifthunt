@@ -1,0 +1,19 @@
+A sparse autoencoder (SAE) can help identify and suppress a representation associated with the spurious feature—for example, background grass that a classifier uses to predict “cow.”
+
+1. **Choose an activation to inspect.** Run examples through the classifier and collect activations at an intermediate layer where the suspected feature may be represented.
+
+2. **Train the SAE.** Train it to reconstruct those activations while using only a small number of active latent features per example. Each latent feature has a decoder direction in the classifier’s activation space.
+
+3. **Find candidate spurious features.** Examine which SAE features activate on examples containing the suspected cue. Use annotations, targeted examples, or controlled image edits where available. A high correlation is only a clue: check whether intervening on a candidate feature changes predictions in the expected way.
+
+4. **Ablate the candidate feature.** For an activation \(h\), let \(a_i\) be the SAE activation of feature \(i\) and \(d_i\) its decoder direction. If \(i\) represents the spurious cue, form
+   \[
+   h' = h - a_i d_i
+   \]
+   and pass \(h'\) through the rest of the classifier. This removes the SAE’s estimated contribution of that feature while preserving the original activation’s reconstruction residual. Repeat for multiple candidate features if necessary.
+
+5. **Adapt the classifier if needed.** Train or fine-tune the classifier using the edited activations, ideally with data that includes varied or counterfactual combinations of the true label and spurious cue. Apply the same intervention at inference time.
+
+6. **Evaluate on held-out data.** Measure overall performance and performance across groups—for example, cows on grass versus cows on other backgrounds. Test shifts in the spurious cue, compare against random-feature ablations, and check whether genuinely useful information was also removed.
+
+This is not guaranteed to eliminate reliance on the cue: it may be encoded across several SAE features or elsewhere in the network. Validation under distribution shift is therefore essential.

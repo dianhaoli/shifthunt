@@ -1,0 +1,107 @@
+{
+  "id": "resp_03d9d55c64b3f152016af2c8fa8de487d29b4c26b0ada7ea59",
+  "object": "response",
+  "created_at": 1794296058,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "openai"
+  },
+  "completed_at": 1794296068,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "instructions": null,
+  "max_output_tokens": null,
+  "max_tool_calls": null,
+  "model": "gpt-6.1-terra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_03d9d55c64b3f152016af2c8fb927887d2813d7d709735461d",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq8skEe9KvVUNcLGozQ6A9FtE8_sEYgsu7oZIyNHNqkWu6Z_AXGl2xL9jZLn6t67dvR2__iSvqaZRbd2Kpfrnz4aitrSOcMDEh8r_XubNW7STecOd9K3amgIXe-Zp_tC9DH76Jd7B-eAYVTe0oqEMtmOup6U7ftetbQjoMpl_dll5wIeSRQ7QoMhp_mXx51EMiWJ-llPYz5GPyrShIcA8llmFYfpHnZKSKntHZH0Mj7uPDFaAD6DZuY-u59RFDcWzIHRzmO61zhwa-03bnNYRdL-ElyRkiTyzBS4PdGDg73LacT71Q6j7h44TZpw_6iGFDiiF5EuZBF1LmwMl_aAuAwCckIOSiREgUg3cMJyFsHJpySI-q7k1b9OeuMdLvCmx8N-4FHPK3qmnQ8Lq09CaSlcm5kaGlVcy1mSpwEEls39pXfjtH6q47GEVX7sSm-HVch7KdTGHtHBpRbb4Xj2oe_xz-EmJwx8hgwAvai7iplISJGhR6UgVmIne8zaSBhwDNgStO1MbCHi9eczevsxGKqJ3VF_C3y1OzE73GgE-WgMXFdGUXEFQ2iHdtIBa7DLVvV7EEkLtHLc6OxHtqi9ShXLdTUiLmtLdKrhtHyyNUkQfYVvd_9fmOAnWCkmdVzasNIMnHIpf83rod2Dv_mzdY6Jy9_L-IN6bF5S_ZPk2gjVtsne2rRsPreXRH9VlHnkY7M8D48QZIWViy2kHaLUYawi6UkcsA--54o8i1c3yQAXh1U0VJq8-isrgMchuKeemSWGr9l8OAiSO35ehEFIX3l26urvJ7PyB_sV8n8mWiWOT0CsqIuZYxoSnL81euTi8gGact8lpGKq9Ar9Gv1Q12LioUS1urKHhCCotAuVQWBayFEhJJKcf2-ZO7JHRKIKFQSGqnKvwtOEaRBS8BGfP_5UP336KTL6ChTwvLRKB1V25Y6q81UCzgxdpu-Dl4sa6VrKhKvShoucqsPoSEneppqR9jn6UBKIRfaBtRdizxKkFFeamjEfkyaMLqTPHW3CeQDNAdriYsGsr-rQHTqttL1Kgpd7IC2INXqFJ6UlEKS0BS_hXdQrVIEPLvOojO3e59KOQN0Tya5gALVzN2QWoBA3lzV4JFMwcffgtvsQJqbI5v9SUU3dSizw-z5tLWGlQ37fsCMaeS4JeD2C0GZN2ZkBEQmxiMqwWzZoqWfiHKB6FLSA8A5CR0Y0D32PwZu8vYC12YtQBnsr1H4MJ-9NwNDdIPx7dxnP0znqP4tCxqtfIZH7u7vgIEYYAZzZC6JBj-yPg6l123qNZGixns-llOndBUKV_9K5awTmZcBo7d1ZBtnjjCW1WHQRxB9SGJ-Xm31CR1N4KT-8kVJeBpcHBAGdqbkzFECVNHEEacafKlkdc9THRXLzaxzeS0a4-5UlLUzesJoLoxmj0uSeUMf9QZElz75sN9l-qmxPLiCFEoIhcjIAFVZGn5-h3FE2LxY6Mr1rDSiXseUCO5eDJWpXDOjjnLUWSug2xz2iZzzMYkaBbIX5BZKVoEihYZFDzl-ag7zKC8OGyAPgPFTvWtE2687Vl_Vj8RaX3BIiRrYR1ZVWT5cSqdsaV3xwJEhrlZjARwfEkdF-ePTdL60pCru2XDObhy3CkOF6Gs3pNgzQiX8FWySap74YQcbXdy-_nY10eojN6x3r7B3gWgXaEjRbtHzAiq4EYsaZPlNwK-yktvBuO2-6YvmFi4W5NcucbIKa2cw_T2UgGUjEaptP_03C-O0c2Ld_JJt6JTjW5r3rp5YC2oqC9E_kCZCQRn2apc_QFqph_YtRN1594ABpvu5V3BMrAqL68kAhGcpdEuR8zYs6kYcT9bDNr8OUPDgK7MMq1iYue5g_CxQpF9dGyAh-K0vX-N8aX0gjFPX6GQASxHkUeNRmdPbO7ZRrr-N6oxdjLkXZRO7mqTZefrB0zI5vCZZWtzvB5dhi6yEvXZYeX2maTOAuICUSPK3z-CqM7-GRFdP39S_sdcPPkTEX64XLuNXDoaCCLUl3KOJ1G8gWrOKug9iqqn5_FFnaUp_pXa9sWR4SbVIaGadWyVKcxCQioEA2NuEoOXARJ1sWb_9L0mJgMWJvzJ7e1r5fmawz358iK2nzbY5eABVeriy7qYeJdE1Fjfh-YM6qwSqFBKjcJbjGJRg8rrhDmHldabSd51WV_ASbpce74IRQkkrmsYLdz_u6u5TA0MuXxN9_ErK_ZHf2OyJVwFGGSLKM_Hd-IGeV7Bsz3NtKNxyypjQzbvfeVVVpRebZ0ZhsXI-pu7NNbq8c4NhdtPo1261ls2BQUy8vLslHsSGSgEAZLFk369-w0IKYsIl6CjWMhWRlLSTLXZ1mJl6AbjmHHnxcEiJuwrv0Xts-Oq3u7N7Sa4f_AzfzOTDOD6i-pIrSbd8bAtPuHefTgy8lCaIQoXogo0Kz3tiqIsLA8EFYImpyJ3DkxPygew44r6OztS0McAfrMIIX8F4PL3aqGqgVFze_XAQ7FrOt9x9tBzYdUvg73U0yLJUBNbe504bSq8J6ihB11Nes187AyejplXJdCdlnEpLwQzgKhGQE8eYn9j8XpOcK1BC3q7EAfjkHaqHn7Mb90HqtmEs5NJJo3QT7oHnPyUQ0peLTWqUd0AI5zY2Bp6hxyrabbigR4O2SNMe2G8NXU5hHXbkdkGt1kekfMJnXqnUkQQCyHvQnjNfbyAY4-3NHZLDJ8WhFstLSVqym_mRUqRMvzS8HfW0J1KSR7QowlOwfZcLQ_Pc6hk1LwuMQ7Q6szV-66d-3sfNOVlURp-TFeX8y2WcNdqyJc_FVXg2YSv3azekgLtHBekYjiX7Y4xhSZyd5sB6UlGghFBCmGI_vjB7d1O8jefbsTVRyN3J1V2eSHtgJhpYpCgq9XXwF6SA6D3K9yRgOmhhC16Hm4-LFbz20RkSlvxpAd2KO_461KCdLMuEnefkchcFOi-qd8aR5Vc8Dd1Mn5fnslHtoq-4QKVPl_A0Ss32h8LFtwaLiGtK_Tl21DlCUmcl77uK27f3hRbZCIfuMWBT4BCPRtNDD5urs3GdX9J7Z-c6xvwGSe8rx1Q3_uEoDxE43UezlHZWHtIe41X1-beD2xymqtBa3xHTWPz2HGoFkV3lmnOSpDPzT71fy5dK7i6niRZjukuh_QIHBr2_s97NpXVYnZXcpIHg5zcG_sABrFZEBrv0_O0PBewepCl38wbu6ymtH37kinp3J4cOYHU3a3EHODWDpT2aIuTAQ-X_7UFqid9DtzIkGfgi6IwqDOYE2gk6Uf1NLFAqFt4gguX_AJ33deOap_QQvMyCaMnxK99J171RS8RpKT0hDMnqIcCE6dWHay539wT7Evy0xbbOA==",
+      "summary": []
+    },
+    {
+      "id": "msg_03d9d55c64b3f152016af2c8fe314887d2aede169674923c57",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "I\u2019d treat the probe\u2019s accuracy as evidence of **predictive information**, not proof that it has learned the intended concept. For example, a \u201csentiment\u201d probe might succeed by recognizing product names correlated with positive reviews.\n\n**Check it:**\n\n1. **Identify plausible shortcuts.** Test whether the probe predicts nuisance variables such as topic, source, length, formatting, or individual keywords.\n2. **Use controlled contrasts.** Evaluate on examples where the concept is held fixed while a nuisance changes, and on minimal pairs where the concept changes while surface features stay similar. For sentiment, swap product names without changing sentiment, or reverse sentiment while retaining the same product.\n3. **Test distribution shifts.** Use held-out sources or topics, and construct a balanced test set where the suspected shortcut no longer predicts the label. A large performance drop is a warning.\n4. **Inspect the representation and direction.** Compare the probe with baselines trained on nuisance labels or simple surface features. Where feasible, intervene on activations\u2014for example, remove a suspected nuisance direction\u2014and measure what happens to both probe predictions and the model\u2019s behavior.\n\n**Fix it** by collecting or constructing training examples that break the correlation between the concept and the shortcut, ideally including balanced, counterfactual pairs. Retrain the probe and evaluate on a separate set of controlled and shifted examples. If balancing is insufficient, try learning a probe invariant to measured nuisances or removing nuisance information from the representations.\n\nThose interventions have tradeoffs: removing a direction can also remove genuine concept information, and no finite test proves the probe uses *only* the intended concept. Finally, a probe that reliably reads a concept still does not establish that the model itself uses that concept to make its decisions; that requires separate causal tests."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "medium",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 39,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+    },
+    "output_tokens": 490,
+    "output_tokens_details": {
+      "reasoning_tokens": 127
+    },
+    "total_tokens": 529
+  },
+  "user": null,
+  "metadata": {}
+}

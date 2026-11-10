@@ -1,0 +1,107 @@
+{
+  "id": "resp_0fbc2e3b6b74477f016af2c8c36f0c87d2a44e1162c3b47ecf",
+  "object": "response",
+  "created_at": 1794296003,
+  "status": "completed",
+  "access_programs": {
+    "cyber": "standard"
+  },
+  "background": false,
+  "billing": {
+    "payer": "openai"
+  },
+  "completed_at": 1794296015,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "image": {
+    "context_compression": "disabled"
+  },
+  "incomplete_details": null,
+  "instructions": null,
+  "max_output_tokens": null,
+  "max_tool_calls": null,
+  "model": "gpt-6.1-terra",
+  "moderation": null,
+  "output": [
+    {
+      "id": "rs_0fbc2e3b6b74477f016af2c8c48b3c87d2ab78f07b05e735ab",
+      "type": "reasoning",
+      "content": [],
+      "encrypted_content": "gAAAAABq8sjPoFt1Zie-W74CgvSWK6rdW-ZvHK57yEybYSlGMdRuubv0Ot3znKycNCipKJjeuEn6-Yder_DTGCJkIUKZK5HsFGT2-Y5xY7WEsutnItBlo3pt94DBlHRouLY7GnZQIJ9FhIM1y27nVgK7kJ-Z4TWJ1AJVYPHjLZDBjXT5xc0pBLYnC5lqpDt9kPU_6BsM4hVMWiDxVzHHyTDP3XTfN1vmsTYeNToGnxWVYBCHco9Z-Ez580rqObjlrj7kqWwsFWbQAuf9bTIxwek2eNPdD2CC3He2H-9HooRWlu4ValllHrmfj-WpMXEI0OuJb2aWaEXfLJbb5GBUj1ZAuq7iYdfHf1AQrrHV0rKV0waoEBwDFY2_p6y9B1jc7-8h39v_23x_31gwU8TKyrfDQXlt-yajxwHAczecwr5dLCl0qBTM5QoJmu-ZMBxOSD-NOf4H-drgZmim_UcIIN060uoQlNd6RIoH01G0mS-dcpAHFQn0wM1kZf5gI9Y06VUrGUzwDe6u6DBfWFn6Jnkm5Ph-HAgEvAdL8EDgHP-gJ85rHLmlazdFCbump2gxbYYC7pJo6NikeNUfc5krfgTVNxI2ni2-PxmZtVCzd_-cF7AD_9MCQKFIuUNYGsKDn3aXaK6QJbx2M4N55sTO8SfNH6ncaJiSHKkci3jidLJOGasAJOF8Xt9iig38cOJu9UCMP_VMq5aZ_mEbA64Kc9lbNPuH--h1jKtUSKuwwHJEUUXun7tdxYQGY3jIRXnyB3DEaASBmJR4NqDAH4jZgMua0tI9GoOKoF1dRkuqL9IR4PuDzoQkXy4v9DybSCAd4sHqXCqv9QUEr8J3XoP4q4OCcGn6HZeblej9I0L3z1OiLry6Kiue1evyiuImxOCc7PyVjNKxyuk0gui9xocuMp10VBZUag2m__ExdzFvVtNzc4PvyoW-EeRjWzGpDCNAqTNUO3zshVw-72hdoRvzowL61KP5s2TGOqKDB8cPx8_YmuINTiilCNnuWQRY7Pf0D8tb4w-vm2ynrw1Uo-CADDZ8l1xKFReDGcu9pQ4GGRdHjSRrKcHcDEiaFI203YLT2q0h_lX3sW7EkoePlHSKAHVDwzy6FjZN2MoR8RRsJHo36Ji2SXO-6vsM89D3YY2XBVb6mFRM3sLi3ZzCvWqIpqr-ajpNC0kYI89yk57oesrsw2mxLFd1I3FpUill6mDUFGGDkXu_9xB5toeZKoH8vM5Af7ghVYhmrUMqb5tEsqtT7So9yDUwcM9k6w5DkWN7q98g_yk5dZRS8OWwjFQFjyMo8APz1CY_7Otg5x4NDg0jL19fU8TreZVGUWlSpjL-BlvDu_o4seoBv_hdTzb85anTwbvZwpikKn8YSjB5GO6p4ElM22JJP88U-3NUa5QIjA0dM6PFGkTvHCMdRADTRvdvJWnlD2leUCGAwWiSVCOhomM7MT9kRmqlz9OoRcovs4Fp29pXeh2vse4lvTMf00OGSZiyyLLFs8plFeo4hi6_SyImhppEICeCAnJ7401-6zTAIQsYyDXmEyugkrSZN94fLV6N4sQ38sDizVh7mEbY0S3wjKtBFAcbn1mFLUiZauSgm1BYsAgQpi8tKsylQT4L4kaWfBZZ509RHFGfop75jRVsAnQyJT_VlNGOH5HVvvNH9EqAmM2J3XebLt2BZVjcmQj0mOPjLc6S437kVpTPEw0vhMB1m7SfPplKdNb8REMS7F7IgidLXkwlhicPF3nKAUuY9Cy6pRVHpO9lAygZoyJwsOxS455URo38o-x05Xe75gUL5H7U0G02TGP75AaCiiriP0qw06DY-E2hCVP6StkAuL5RPpeMjQiAs7iRKs_X90nGQT1hOonQG2JREa0X7eZJhuqbvs1fRVTXkxinN0k4Axd2o2WO2-C3fR6wSRPQfzxT1UfmsOE7qH55RwqxxcKwJA-iXc1fygqJqh1Nzht0FKH0sfRY7CbxcNfh-MBIEFKeoQ-MEAIxid2vZcAvA7wTyieU82aGaGt10qRf9MC8x-Slzr5VDR1mxOJisBg131bjVFM80y1Rh-75BMYFCIsqkDtOpffxlP7o1-kWarCkCv7XzZNIRHONX8bHBDPvFTCQwR3GmKJQl1n4EOqR7mCHnAWxN2UHue7QbPPU6DeZ4S2SYJlYQE_n2H4a8PmYxg-fhXvTw_sUvGRGdTKI3dFfM3xVhOE5c05Ui9WDzd0P7nIB6k_BMwJdgkWq67UrpDKX70CCDrRpBYBdCVV13H-f-PT54Y0cX8HEDJJlmUVvU9K638AVL2NrkKjKhQmbjXEBUkwQOcH38PyxsWP92DVko9vRFHyadpM9YB8zATUyiOo5w_ahkJZIwqa4KEAFwlWZPdpqw4X2GePqPYUl_Ofo9gYfcsJgLFZvzRyXtzsZEfsjQGp5yWzXxV9E257baBS6srzYduLSPsJ0zBRYEUHEzWPP2paIRrbmOKrkHCEAEYokwFdWN-vXurBttw65JJo58qS1Ib2ddfxMdM77zD_s7-YwA_fueqN3npz22k_quCQM1C0NaSpvRdfvugfTlTrS60GNCufnUK3QPFJjZQy4YGWrQcFEp3HlF5acOgD1nTE7r5hkIqdzkMyxb04lLxdbwnG3AaHwW2m0q6skXy48ZNBERd4W55CoGG28GGU5pH3DRiQ6G5ltDK6PkvRpK1jJ5fsmFEPS6wW8SKRrDy6ZGKcGvwSsgh31R5aPDlZ7PAsMr3ysyKTQsl3l_7l4HBREzuOccS9cff1LJ56o0TU0nhwGPyYSY7-_1ASKhLM2PdLn992xrdfwIeliXQLmisv_Shp6JkWCqlBjRb6BotHDxseDYENqmFJgpFLmkhF2NqngqcI1SxPI8EfM7lH4sxGFbIZInoEUQiZPMeAxo8uhcGrmDi4CxtLjKQBFSrmjW7EYnEnXUvTqI2LpWadR_YI8Gepzy-0eDvcE0Eh2TIkwR7EUyWbRZ6LSWZb1vYkEG1u400kgGh21GvmKkVmKTZbqFIG_05vjSQVxHgoVYUX-HVfLCwbDFbLg-MasLxe011JC-3QjKF65tHEJ1I4OpRZv3BP9F-UsB60wYWQrQE_RZpX0AbAezMNNNpeQ0pWGniHuot_C_lhdKmTrg8JlRrraWh4nVcfA-RFXwS-uKxTzHJjc0VBHE1lk9PBPFHFjK30kbSXj2ndcmCx_b-ZFTPdV4Fe3lcmgTNREwNVK5c9JNtPxCargdLcfsbfrEZU06DHqSpDiviEeQZ6923ks8LY7W1GXJbDsk3y8zkwBqhg2hW8dxCeRVhSUUCm9nanEfgEJiRdJ74i7BY_RXskvA_zC0DGgSxa2JUCK3Q8aIyVGxJMgG6LwC-rPGvdTGFlNtYn2K2ccarqq2v_4uA-Idr26VQwgCrLT1AKDXwQivEyhUXkKKfpeOWevXhD9zx9jEh9ljMZDgRGpIV4DeGIItuKAghnfnrEKaYbeO--kIdHWm5FpxUU4Pv-NIbLyF4ggl5XQSYKUWXyEqYDgjk1i6rtzHpJVDt8gB3ZmZOtELy-ijeaOIMZu5xifydFatLJYoZwHGNC6z_kSxZHRK7kmb9Y1_yJcbUUyGmxLg4XYWSVD5auG7zfqv1fnlkP_b-6-pvjkyvDcECgOcnTUCZQqP1PmfriUw7g5xrZVw7bD78ZhsTh9rcIhKUjdC904SgK6wtQwk5F8iC8SRZB2ZN-kfkLh46R0jNzB97v4wCYNgqLa7EYwZcPIdLz4cyGyuhArYO3Zk3osk8JCFHs8cpHR9n3mx3SgJR1fjD-TRv1NYaAZMCyLVEs2Ic2O1ekY5bw7GEtIjGDFNoO2ZudjNnatG96O9y44YP4OAjNUIHRDZVpi6s15NMvzcL8tlw6OBK4stjrlHok7lDeCRUERYaNOdV3w1KM-5dPr26f8NNppyfjZcorzqZAUnsR4dMZhaEAKd0lrI8SxDDmDpDiIoPawIC8xPG1pS-BKV4RHMGzBZ48ULl5I9zwWhpbse70Ui1-an5Bt6LkN1WYa9ortNoDIGPA2XcEozrsWI5veRm_0OO8Zatq4JHquogjlCd4s7DtJEbq5nKZSN2sl44xU3Ni4ePnRLK8I",
+      "summary": []
+    },
+    {
+      "id": "msg_0fbc2e3b6b74477f016af2c8c87cf487d283422bf129d03fa2",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "Suppose a classifier predicts whether an image contains a cow, but sometimes relies on a **grass background** rather than the animal. A sparse autoencoder (SAE) can help identify and suppress internal features associated with grass.\n\n1. **Choose an internal activation to study.** Run examples through the classifier and collect activations from a chosen layer. Include examples that vary the suspected spurious feature independently of the target\u2014for example, cows on grass, cows elsewhere, and grass without cows.\n\n2. **Train an SAE on those activations.** The SAE learns to approximately represent each activation as a sum of a small number of learned feature directions:\n   \\[\n   h \\approx b+\\sum_i z_i d_i,\n   \\]\n   where \\(d_i\\) is a decoder direction and the corresponding sparse coefficient \\(z_i\\) indicates how active that feature is.\n\n3. **Find candidate spurious features.** Look for SAE features that activate on examples with grass, including those without cows. Inspect highly activating examples and compare activation rates across relevant groups. Correlation alone is not enough: a candidate might also encode useful information about the animal.\n\n4. **Test whether the candidates affect the prediction.** On held-out examples, intervene on each candidate feature and measure the change in the classifier\u2019s output. Where possible, use matched or edited examples that change the background while preserving the animal. Check that the intervention reduces sensitivity to background without unnecessarily suppressing evidence of a cow.\n\n5. **Ablate the selected feature at inference time.** At the chosen layer, encode the current activation, then subtract the selected feature\u2019s estimated contribution:\n   \\[\n   h' = h-z_i d_i.\n   \\]\n   Continue the forward pass using \\(h'\\). This modifies the original activation rather than replacing it with the SAE\u2019s imperfect reconstruction. The same approach can be applied to multiple validated features.\n\n6. **Evaluate and iterate.** Compare the original and modified classifiers on ordinary test accuracy, accuracy across background groups, and examples with altered backgrounds. Check for unintended damage to legitimate predictions. If necessary, adjust the intervention, inspect other layers, or use the identified features to guide retraining.\n\nThis is not guaranteed to eliminate the reliance: the spurious information may be distributed across several SAE features or other layers, and a feature may mix spurious and useful information. Causal tests and held-out evaluation are therefore essential."
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "all_turns",
+    "effort": "medium",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 33,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+    },
+    "output_tokens": 668,
+    "output_tokens_details": {
+      "reasoning_tokens": 172
+    },
+    "total_tokens": 701
+  },
+  "user": null,
+  "metadata": {}
+}

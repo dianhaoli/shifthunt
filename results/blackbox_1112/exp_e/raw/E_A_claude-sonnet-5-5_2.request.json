@@ -1,0 +1,1 @@
+{"model":"claude-sonnet-5-5","max_tokens":16000,"messages":[{"role":"user","content":"How would you use a sparse autoencoder to remove a classifier's reliance on a spurious feature? Describe the method step by step."}]}

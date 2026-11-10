@@ -1,0 +1,60 @@
+{
+ "answer_chars": 1870,
+ "answer_sha256": "6c1ee9d4b32bdc30788ac6379d74186cc41cdbedd733ce05da0c72faecb39231",
+ "attempt_count": 1,
+ "attempts": [
+  {
+   "at_utc": "2026-11-10T07:34:07Z",
+   "error": null,
+   "http_status": 200,
+   "n": 1,
+   "response_sha256": "60636cf1e09dc047a4556001883f754936b836686030066f24e23f51206f1269"
+  }
+ ],
+ "call_id": "E_B_gpt-6.1-terra_1",
+ "content_types": [
+  "reasoning",
+  "output_text"
+ ],
+ "finished_utc": "2026-11-10T07:34:18Z",
+ "http_status": 200,
+ "model": "gpt-6.1-terra",
+ "postprocess_error": null,
+ "prompt_sha256": "01aecd47eb86abce3bf5434405e05a410ec3a6dee16a10ceaef50bd45bf47f34",
+ "provider": "openai",
+ "request_bytes": 202,
+ "request_headers": {
+  "content-type": "application/json",
+  "user-agent": "textonly-client/1.0"
+ },
+ "request_sha256": "8e17f2a67daba71f74e0f31672ce350710794adf5b1868a906045c5dad689aa4",
+ "response_bytes": 8248,
+ "response_headers": {
+  "date": "Tue, 10 Nov 2026 07:34:18 GMT",
+  "request-id": null,
+  "x-request-id": "req_ea261aa6167b49899e9e79a4436cf638"
+ },
+ "response_model": "gpt-6.1-terra",
+ "response_redacted": false,
+ "response_sha256": "60636cf1e09dc047a4556001883f754936b836686030066f24e23f51206f1269",
+ "started_utc": "2026-11-10T07:34:07Z",
+ "status": "ok",
+ "stop_details": null,
+ "stop_reason": "completed",
+ "url": "https://api.openai.com/v1/responses",
+ "usage": {
+  "input_tokens": 39,
+  "input_tokens_details": {
+   "cache_write_tokens": 0,
+   "cached_tokens": 0
+  },
+  "output_tokens": 525,
+  "output_tokens_details": {
+   "reasoning_tokens": 167
+  },
+  "total_tokens": 564
+ },
+ "usd": 0.002664,
+ "usd_budget": 0.002664,
+ "usd_estimate": 0.080202
+}

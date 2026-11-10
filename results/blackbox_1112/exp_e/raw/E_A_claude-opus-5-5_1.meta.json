@@ -1,0 +1,65 @@
+{
+ "answer_chars": 6115,
+ "answer_sha256": "1a4854b9727758607f2679650e7b7cd9001f5498eb1643fd2c7547fad892556a",
+ "attempt_count": 1,
+ "attempts": [
+  {
+   "at_utc": "2026-11-10T07:32:10Z",
+   "error": null,
+   "http_status": 200,
+   "n": 1,
+   "response_sha256": "db1f5f87e564027532c25414eb9fbc245898223624a716144746035cf3541c7f"
+  }
+ ],
+ "call_id": "E_A_claude-opus-5-5_1",
+ "content_types": [
+  "thinking",
+  "text"
+ ],
+ "finished_utc": "2026-11-10T07:32:43Z",
+ "http_status": 200,
+ "model": "claude-opus-5-5",
+ "postprocess_error": null,
+ "prompt_sha256": "13fecbf657ebda6053f1b6c0d54599c84fd299f9b865de05538b28dca5fd0aba",
+ "provider": "anthropic",
+ "request_bytes": 217,
+ "request_headers": {
+  "anthropic-version": "2023-06-01",
+  "content-type": "application/json",
+  "user-agent": "textonly-client/1.0"
+ },
+ "request_sha256": "fcc2f2154d8ebdbb5a32109606e848b336c7f84fde95cc1156d384b41b2293e8",
+ "response_bytes": 11996,
+ "response_headers": {
+  "date": "Tue, 10 Nov 2026 07:32:43 GMT",
+  "request-id": "req_011CgtridkEL53spJevvU4rL",
+  "x-request-id": null
+ },
+ "response_model": "claude-opus-5-5",
+ "response_redacted": false,
+ "response_sha256": "db1f5f87e564027532c25414eb9fbc245898223624a716144746035cf3541c7f",
+ "started_utc": "2026-11-10T07:32:10Z",
+ "status": "ok",
+ "stop_details": null,
+ "stop_reason": "end_turn",
+ "url": "https://api.anthropic.com/v1/messages",
+ "usage": {
+  "cache_creation": {
+   "ephemeral_1h_input_tokens": 0,
+   "ephemeral_5m_input_tokens": 0
+  },
+  "cache_creation_input_tokens": 0,
+  "cache_read_input_tokens": 0,
+  "inference_geo": "global",
+  "input_tokens": 49,
+  "output_tokens": 3229,
+  "output_tokens_details": {
+   "thinking_tokens": 1134
+  },
+  "service_tier": "standard",
+  "speed": "standard"
+ },
+ "usd": 0.064776,
+ "usd_budget": 0.064776,
+ "usd_estimate": 0.320868
+}

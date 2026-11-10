@@ -1,0 +1,1 @@
+{"model":"gpt-6.1-terra","input":"A linear probe on a language model's activations may be relying on something other than the concept it was trained for. How would you check, and fix it?","store":false}
