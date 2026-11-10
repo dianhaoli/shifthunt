@@ -39,7 +39,7 @@ def _task(**extra):
 
 
 def _render(task, access="open"):
-    return task_py.render(task, access, ts.HELP + ts.ACCESS_HELP[access], 5400, 512)
+    return task_py.render(task, access, ts.help_text(access), 5400, 512)
 
 
 def test_no_hints_renders_no_section_and_splits_to_itself():

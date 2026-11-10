@@ -3,9 +3,11 @@
     python scripts/collect_rollouts.py CONTAINER_ID [...] --out results/rollouts/<run>
     python scripts/collect_rollouts.py --runfile ../../runs/<run>.txt --out results/rollouts/<run>
 
-Per container, into <out>/<cid12>/ (raw, gitignored): grade.json, tool log (log.jsonl), submission.json,
-the episode id, the agent's Claude Code transcript (*.jsonl) and the engine log. One summary row per
-container goes to <out>/summary.jsonl (gitignored: it names each probe's cue): episode, access, model, pass,
+Per container, into <out>/<cid12>/ (raw, gitignored): grade.json, tool log (log.jsonl), the tool server's
+full-text log (fulltext.jsonl: the agent's own texts sent to probe_query / latent_means / latent_tokens),
+submission.json, the episode id, the agent's Claude Code transcript (*.jsonl) and the engine log. One summary
+row per container goes to <out>/summary.jsonl (gitignored: it names each probe's cue): episode, access,
+probe_query (the budget override of the problem id `<episode>-<access>[<n>]`, else null), model, pass,
 partial, per-probe buckets, tool-call counts by tool, forward/probe_query used, agent-written texts sent to
 SAE tools, wall time, turns, tokens and an API cost estimate. Tracked: <out>/summary_public.jsonl (one row
 per rollout, no probes, episode id, partial score or timestamps, sorted by cid) and <out>/probes_public.jsonl
@@ -15,6 +17,7 @@ never from the container.
 import argparse
 import io
 import json
+import re
 import subprocess
 import tarfile
 from collections import Counter
@@ -25,6 +28,7 @@ BANK = ROOT / ".cache" / "bank"
 # USD per million tokens: input, output, cache write (5 min), cache read. A 1 h cache write costs 2x input.
 PRICES = {"claude-opus-5-5": (4.0, 20.0, 5.0, 0.20), "claude-haiku-5-5": (0.10, 0.50, 0.125, 0.01),
           "claude-sonnet-5-5": (2.0, 10.0, 2.5, 0.20), "claude-opus-4-8": (5.0, 25.0, 6.25, 0.50)}
+EPISODE_ID_RE = re.compile(r"^(ep\d+)-(open|sample_only|blackbox)(\d+)?$")  # what task.py episode_id writes
 
 
 def docker_cp(cid, path):
@@ -77,6 +81,16 @@ def usage_cost(rows):
     return dict(tok), round(usd, 3), model, len(last)
 
 
+def split_episode_id(ep_id):
+    """/srv/episode_id `<episode>-<access>[<n>]` (task.py) -> (episode, access, probe_query override or None).
+    Any other string splits at its first "-" as before, with no override."""
+    m = EPISODE_ID_RE.fullmatch(ep_id)
+    if not m:
+        episode, _, access = ep_id.partition("-")
+        return episode, access, None
+    return m.group(1), m.group(2), int(m.group(3)) if m.group(3) else None
+
+
 def answers(episode):
     a = json.loads((BANK / episode / "private" / "answer.json").read_text())
     return [{"kind": p["kind"], "cue": p.get("cue"), "source": p.get("source")} for p in a["probes"]]
@@ -88,6 +102,7 @@ def collect(cid, out):
     files = {
         "grade.json": docker_cp(cid, "/grader/grade.json"),
         "log.jsonl": docker_cp(cid, "/srv/state/log.jsonl"),
+        "fulltext.jsonl": docker_cp(cid, "/srv/state/fulltext.jsonl"),
         "submission.json": docker_cp(cid, "/srv/state/submission.json"),
         "episode_id": docker_cp(cid, "/srv/episode_id"),
         "engine.log": docker_cp(cid, "/logs/engine.log"),
@@ -108,15 +123,16 @@ def collect(cid, out):
     grade = json.loads((d / "grade.json").read_text()) if (d / "grade.json").exists() else {}
     log = jsonl((d / "log.jsonl").read_bytes()) if (d / "log.jsonl").exists() else []
     calls = [r for r in log if r.get("tool")]
-    by_tool = Counter(r["tool"] for r in calls)
+    # an unknown tool name is logged as a dict ({"unknown_tool_chars": n}), which a Counter cannot hold
+    by_tool = Counter(r["tool"] if isinstance(r["tool"], str) else "unknown" for r in calls)
     own_texts = sum(1 for r in calls if r["tool"] in ("latent_means", "latent_tokens") and r.get("status") == "ok"
                     and "texts" in (r.get("args") or {}))
     ep_id = (d / "episode_id").read_text().strip() if (d / "episode_id").exists() else grade.get("episode", "?")
-    episode, _, access = ep_id.partition("-")
+    episode, access, probe_query = split_episode_id(ep_id)
     tok, usd, model, turns = usage_cost(rows)
     probes = (grade.get("details") or {}).get("probes", [])
     truth = answers(episode) if (BANK / episode).exists() else []
-    row = {"cid": cid[:12], "episode": episode, "access": access, "model": model,
+    row = {"cid": cid[:12], "episode": episode, "access": access, "probe_query": probe_query, "model": model,
            # grade.json from image -final3 on: score = reward (reward_scheme), episode_pass = all slots pass
            "pass": grade.get("episode_pass", grade.get("score")), "reward": grade.get("score"),
            "reward_scheme": grade.get("reward_scheme", "all_or_nothing"),
