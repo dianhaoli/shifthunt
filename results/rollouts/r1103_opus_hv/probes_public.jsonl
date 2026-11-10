@@ -1,0 +1,16 @@
+{"kind": "null", "bucket": null, "pass": true, "kept": null, "best_ba": null}
+{"kind": "null", "bucket": null, "pass": true, "kept": null, "best_ba": null}
+{"kind": "null", "bucket": null, "pass": true, "kept": null, "best_ba": null}
+{"kind": "null", "bucket": null, "pass": true, "kept": null, "best_ba": null}
+{"kind": "planted", "bucket": null, "pass": true, "kept": 0.98786, "best_ba": [1.0], "margin": 0.071}
+{"kind": "planted", "bucket": null, "pass": true, "kept": 0.999816, "best_ba": [1.0], "margin": 0.0756}
+{"kind": "planted", "bucket": null, "pass": true, "kept": 0.99292, "best_ba": [1.0], "margin": 0.0787}
+{"kind": "planted", "bucket": null, "pass": true, "kept": 0.993754, "best_ba": [1.0], "margin": 0.1122}
+{"kind": "planted", "bucket": null, "pass": true, "kept": 1.003067, "best_ba": [1.0], "margin": 0.1489}
+{"kind": "planted", "bucket": null, "pass": true, "kept": 0.997537, "best_ba": [1.0], "margin": 0.1534}
+{"kind": "planted", "bucket": null, "pass": true, "kept": 0.98979, "best_ba": [1.0], "margin": 0.1674}
+{"kind": "planted", "bucket": null, "pass": true, "kept": 0.993568, "best_ba": [1.0], "margin": 0.1689}
+{"kind": "planted", "bucket": null, "pass": true, "kept": 0.972445, "best_ba": [1.0], "margin": 0.1962}
+{"kind": "planted", "bucket": null, "pass": true, "kept": 0.982604, "best_ba": [1.0], "margin": 0.2044}
+{"kind": "planted", "bucket": null, "pass": true, "kept": 1.002609, "best_ba": [1.0], "margin": 0.2232}
+{"kind": "planted", "bucket": "planted_none", "pass": false, "kept": null, "best_ba": null}
