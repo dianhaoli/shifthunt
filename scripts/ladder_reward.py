@@ -1,6 +1,7 @@
 """Method ladder (scripts/method_ladder.py rungs) on chosen episodes under every reward scheme (shifthunt.reward).
 
     python scripts/ladder_reward.py --episodes ep411,ep413,ep415,ep472,ep474,ep476 [--seeds 200] --out results/offline_1013
+                                    [--bank DIR]     (bank: --bank, else $SHIFTHUNT_BANK, else .cache/bank)
 
 Per episode and method: mean reward over seeds (deterministic rungs: one value), under all_or_nothing and
 hard_gated_partial, plus the reward distribution for hard_gated_partial. Writes <out>/ladder_reward.json and .md.
@@ -37,12 +38,14 @@ def main():
     ap.add_argument("--episodes", required=True)
     ap.add_argument("--seeds", type=int, default=200)
     ap.add_argument("--out", required=True)
+    ap.add_argument("--bank", default=None, help="episode bank directory (default $SHIFTHUNT_BANK, else .cache/bank)")
     a = ap.parse_args()
+    bank = ML.resolve_bank(a.bank)
     out = Path(a.out)
     out.mkdir(parents=True, exist_ok=True)
     J = {"seeds": a.seeds, "episodes": {}}
     for ep in [x.strip() for x in a.episodes.split(",") if x.strip()]:
-        ev = ML.EpisodeEval(ep)
+        ev = ML.EpisodeEval(ep, bank)
         hard = R.hard_slots(ev.answer)
         res = ML.run_episode(ev, a.seeds)
         J["episodes"][ep] = {"hard_slots": hard, "methods": {}}
