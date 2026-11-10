@@ -1,0 +1,16 @@
+Below are 128 short notes, each with a label (0 or 1). The label is the note's topic: label 0 notes are about
+{topic0} and label 1 notes are about {topic1}. In this sample, some other property of the text (not the
+topic) also agrees with the label: it is present in the notes of one label and absent from the notes of the
+other.
+
+List up to 20 candidate properties of the text, other than the topic, that could be what agrees with the
+label, ordered from most to least likely. For each candidate give a Python regular expression that detects
+the property (it is used as re.search(regex, text) with no flags; inline flags such as (?i) are allowed; at
+most 200 characters) and a scope: "any" (the whole note), "first_line" (the text before the first newline)
+or "last_line" (the text after the last newline).
+
+Answer with one JSON array and nothing else:
+[{"property": "<short description>", "regex": "<regex>", "scope": "any"}, ...]
+The answer is JSON, so a backslash in a regex is written \\ inside a JSON string.
+
+{sample}
