@@ -69,8 +69,7 @@ def make_run(tmp, problem="ep411-blackbox64", engine="codex", cid="a1b2c3d4e5f6"
     call("probe_query", {}, status="refused", args={"probe": 1, "texts": {"n": 999, "chars": 9}},
          error="budget probe_query exceeded")
     if submitted:
-        call("submit", {}, status="error", args={"answer": {"sha256": "0" * 64, "chars": 9}},
-             error="probe 0: cue keys must be exactly regex, scope, latents")
+        call("submit", {}, args={"answer": {"sha256": "0" * 64, "chars": 9}})  # refused by the contract: logged ok
         call("submit", {}, args={"answer": {"sha256": "1" * 64, "chars": 99}})
         (d / "submission.json").write_text("{}")
     (d / "log.jsonl").write_text("".join(json.dumps(r) + "\n" for r in log))
@@ -117,6 +116,9 @@ def make_run(tmp, problem="ep411-blackbox64", engine="codex", cid="a1b2c3d4e5f6"
         (d / "transcript_s1.jsonl").write_text(json.dumps({"message": {
             "id": "m1", "role": "assistant", "model": "claude-haiku-5-5",
             "usage": {"input_tokens": tokens, "output_tokens": tokens // 10}}}) + "\n")
+    if submitted:  # the refusal message reaches the agent's terminal, so it is in the engine log
+        with open(d / "engine.log", "a") as f:
+            f.write(json.dumps({"type": "user", "tool_result": "probe 0: cue keys must be exactly regex, scope, latents"}) + "\n")
     with open(batch / "launch.log", "a") as f:
         f.write(json.dumps({"t": "2026-11-12T09:59:00Z", "event": "launched", "problem": problem, "running": 1,
                             "resources": "ram_avail=12000MB gpu_used=0MB disk_free=80GB isolated=True paused=False "
@@ -163,7 +165,7 @@ def test_a_consistent_run_passes_every_check(tmp_path, problem, engine, arm):
     assert (r["pq_used"], r["pq_limit"]) == (5, 64 if arm.endswith("64") else 8)
     assert c["pq_accounting"] == (True, f"used 5, full-text log 5 texts, tool-log charges 5, limit {r['pq_limit']}")
     assert c["net_isolation"][0] is True and "isolated=True" in c["net_isolation"][1]
-    assert c["submit_refusals"] == (None, "2 submit call(s), 1 refused, 1 for the cue keys (latents)")
+    assert c["submit_refusals"] == (None, "2 submit call(s), 1 refused, cue-keys (latents) message in the transcript: 1")
     assert c["cost"][0] is True
     if arm.startswith("bb"):
         assert r["sae_refused"] == 3 and c["sae_calls"][0] is True and c["prompt_no_sae"][0] is True

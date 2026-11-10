@@ -2,12 +2,12 @@
  "image_name": "rl-task-shifthunt-r1112",
  "base_image_name": "rl-task-shifthunt-r1103",
  "image": {
-  "id": "sha256:25fc52887e6f00b801c37a4b978e0afa6ad8891f14694d0e5cd3ffa98bd5c3dd",
-  "created": "2026-11-10T08:30:20.242005314Z",
+  "id": "sha256:ae04beed0005d2796573e70f69d8ff9883c5e2f6b746a78bc0122ee6b36366eb",
+  "created": "2026-11-10T11:36:38.491800605Z",
   "labels": {
    "shifthunt.base": "rl-task-shifthunt-r1103",
    "shifthunt.base_id": "sha256:f4d5daa6873e9bbc6f1e249a323d8aaaf194a217a8fcddb37b0a5162141f6a5d",
-   "shifthunt.commit": "e7153095354b63ac632dc70b3d21fdf9fbe266c6",
+   "shifthunt.commit": "20a5e3f4102066ddc09a7dd2bda2716d177f2c9e",
    "shifthunt.dirty": "false",
    "shifthunt.replaced": "grader/grader.py,shifthunt/reward.py,shifthunt/toolserver.py,task.py"
   },
@@ -28,13 +28,13 @@
   "ep474",
   "ep476"
  ],
- "started": "2026-11-10T09:10:09Z",
- "finished": "2026-11-10T09:34:27Z",
- "gpu_minutes": 24.3,
+ "started": "2026-11-10T11:36:48Z",
+ "finished": "2026-11-10T11:54:00Z",
+ "gpu_minutes": 17.2,
  "command": "python scripts/blackbox_image_check.py ",
  "files_changed": {
   "/task.py": {
-   "sha256": "a633c0ea276daab502f805008fd9dea9bd3c6031e7c016a56702b58d62fadefe",
+   "sha256": "d24d3aa579e3b381c0293409974790e5b8e3cd3f348d1724fc068067540d6a8a",
    "owner": "root:root",
    "mode": "700",
    "base_sha256": "4fe85363f3f8a6d0df9d2b78a4bacf54ba835102d21bdef9b724a5ac7355f3d8"
@@ -75,7 +75,7 @@
  "problems": [
   {
    "problem": "ep411-open",
-   "seconds": 45.8,
+   "seconds": 41.3,
    "checks": {
     "setup": true,
     "help_in_prompt": true,
@@ -92,7 +92,7 @@
   },
   {
    "problem": "ep411-open64",
-   "seconds": 43.4,
+   "seconds": 41.4,
    "checks": {
     "setup": true,
     "help_in_prompt": true,
@@ -109,7 +109,7 @@
   },
   {
    "problem": "ep411-blackbox",
-   "seconds": 39.6,
+   "seconds": 42.5,
    "checks": {
     "setup": true,
     "help_in_prompt": true,
@@ -125,7 +125,7 @@
   },
   {
    "problem": "ep411-blackbox64",
-   "seconds": 39.6,
+   "seconds": 42.5,
    "checks": {
     "setup": true,
     "help_in_prompt": true,
@@ -142,7 +142,7 @@
   },
   {
    "problem": "ep413-open",
-   "seconds": 37.5,
+   "seconds": 38.2,
    "checks": {
     "setup": true,
     "help_in_prompt": true,
@@ -159,7 +159,7 @@
   },
   {
    "problem": "ep413-open64",
-   "seconds": 37.5,
+   "seconds": 37.3,
    "checks": {
     "setup": true,
     "help_in_prompt": true,
@@ -176,7 +176,7 @@
   },
   {
    "problem": "ep413-blackbox",
-   "seconds": 35.9,
+   "seconds": 39.8,
    "checks": {
     "setup": true,
     "help_in_prompt": true,
@@ -192,7 +192,7 @@
   },
   {
    "problem": "ep413-blackbox64",
-   "seconds": 35.9,
+   "seconds": 39.5,
    "checks": {
     "setup": true,
     "help_in_prompt": true,
@@ -209,7 +209,7 @@
   },
   {
    "problem": "ep415-open",
-   "seconds": 35.8,
+   "seconds": 36.4,
    "checks": {
     "setup": true,
     "help_in_prompt": true,
@@ -226,7 +226,7 @@
   },
   {
    "problem": "ep415-open64",
-   "seconds": 35.9,
+   "seconds": 36.5,
    "checks": {
     "setup": true,
     "help_in_prompt": true,
@@ -243,7 +243,7 @@
   },
   {
    "problem": "ep415-blackbox",
-   "seconds": 37.3,
+   "seconds": 35.6,
    "checks": {
     "setup": true,
     "help_in_prompt": true,
@@ -259,7 +259,7 @@
   },
   {
    "problem": "ep415-blackbox64",
-   "seconds": 36.9,
+   "seconds": 35.4,
    "checks": {
     "setup": true,
     "help_in_prompt": true,
@@ -276,7 +276,7 @@
   },
   {
    "problem": "ep472-open",
-   "seconds": 45.5,
+   "seconds": 35.7,
    "checks": {
     "setup": true,
     "help_in_prompt": true,
@@ -293,7 +293,7 @@
   },
   {
    "problem": "ep472-open64",
-   "seconds": 45.6,
+   "seconds": 35.9,
    "checks": {
     "setup": true,
     "help_in_prompt": true,
@@ -310,7 +310,7 @@
   },
   {
    "problem": "ep472-blackbox",
-   "seconds": 52.1,
+   "seconds": 37.8,
    "checks": {
     "setup": true,
     "help_in_prompt": true,
@@ -326,7 +326,7 @@
   },
   {
    "problem": "ep472-blackbox64",
-   "seconds": 52.1,
+   "seconds": 37.8,
    "checks": {
     "setup": true,
     "help_in_prompt": true,
@@ -343,7 +343,7 @@
   },
   {
    "problem": "ep474-open",
-   "seconds": 46.0,
+   "seconds": 36.5,
    "checks": {
     "setup": true,
     "help_in_prompt": true,
@@ -360,7 +360,7 @@
   },
   {
    "problem": "ep474-open64",
-   "seconds": 46.0,
+   "seconds": 36.5,
    "checks": {
     "setup": true,
     "help_in_prompt": true,
@@ -377,7 +377,7 @@
   },
   {
    "problem": "ep474-blackbox",
-   "seconds": 44.0,
+   "seconds": 36.8,
    "checks": {
     "setup": true,
     "help_in_prompt": true,
@@ -393,7 +393,7 @@
   },
   {
    "problem": "ep474-blackbox64",
-   "seconds": 44.1,
+   "seconds": 36.8,
    "checks": {
     "setup": true,
     "help_in_prompt": true,
@@ -410,7 +410,7 @@
   },
   {
    "problem": "ep476-open",
-   "seconds": 55.7,
+   "seconds": 38.3,
    "checks": {
     "setup": true,
     "help_in_prompt": true,
@@ -427,7 +427,7 @@
   },
   {
    "problem": "ep476-open64",
-   "seconds": 55.7,
+   "seconds": 37.8,
    "checks": {
     "setup": true,
     "help_in_prompt": true,
@@ -444,7 +444,7 @@
   },
   {
    "problem": "ep476-blackbox",
-   "seconds": 51.8,
+   "seconds": 38.0,
    "checks": {
     "setup": true,
     "help_in_prompt": true,
@@ -460,7 +460,7 @@
   },
   {
    "problem": "ep476-blackbox64",
-   "seconds": 51.8,
+   "seconds": 38.1,
    "checks": {
     "setup": true,
     "help_in_prompt": true,
@@ -481,7 +481,7 @@
    "problem": "ep411-open",
    "image": "rl-task-shifthunt-r1103",
    "container_exit": 0,
-   "container_seconds": 47.5,
+   "container_seconds": 68.7,
    "episode_id": "ep411-open\n",
    "task_json_public": {
     "access": "open",
@@ -580,7 +580,7 @@
    "printed_json": true,
    "task_py": {
     "exit": 0,
-    "seconds": 44.9
+    "seconds": 66.2
    },
    "task_txt": {
     "sha256": "a90656fb55747660951e0c2a2a1e2480b4513f79881bcb10ce2aaccf073f7635",
@@ -611,10 +611,10 @@
      "remaining": 8
     },
     "wall_clock_s": {
-     "elapsed": 2.9,
+     "elapsed": 2.6,
      "limit": 3600.0,
      "excluded_compute": 0.0,
-     "remaining": 3597.1
+     "remaining": 3597.4
     },
     "call_timeout_s": 180.0,
     "episode_ended": false
@@ -640,7 +640,7 @@
    "problem": "ep413-open",
    "image": "rl-task-shifthunt-r1103",
    "container_exit": 0,
-   "container_seconds": 47.7,
+   "container_seconds": 68.7,
    "episode_id": "ep413-open\n",
    "task_json_public": {
     "access": "open",
@@ -714,7 +714,7 @@
       "probe_query": 1
      },
      "error": null,
-     "seconds": 0.4
+     "seconds": 0.3
     }
    ],
    "fulltext": {
@@ -739,7 +739,7 @@
    "printed_json": true,
    "task_py": {
     "exit": 0,
-    "seconds": 44.7
+    "seconds": 66.2
    },
    "task_txt": {
     "sha256": "a90656fb55747660951e0c2a2a1e2480b4513f79881bcb10ce2aaccf073f7635",
@@ -770,10 +770,10 @@
      "remaining": 8
     },
     "wall_clock_s": {
-     "elapsed": 2.8,
+     "elapsed": 2.6,
      "limit": 3600.0,
      "excluded_compute": 0.0,
-     "remaining": 3597.2
+     "remaining": 3597.4
     },
     "call_timeout_s": 180.0,
     "episode_ended": false
@@ -799,7 +799,7 @@
    "problem": "ep415-open",
    "image": "rl-task-shifthunt-r1103",
    "container_exit": 0,
-   "container_seconds": 52.6,
+   "container_seconds": 58.1,
    "episode_id": "ep415-open\n",
    "task_json_public": {
     "access": "open",
@@ -898,7 +898,7 @@
    "printed_json": true,
    "task_py": {
     "exit": 0,
-    "seconds": 49.6
+    "seconds": 55.2
    },
    "task_txt": {
     "sha256": "a90656fb55747660951e0c2a2a1e2480b4513f79881bcb10ce2aaccf073f7635",
@@ -929,10 +929,10 @@
      "remaining": 8
     },
     "wall_clock_s": {
-     "elapsed": 2.2,
+     "elapsed": 2.1,
      "limit": 3600.0,
      "excluded_compute": 0.0,
-     "remaining": 3597.8
+     "remaining": 3597.9
     },
     "call_timeout_s": 180.0,
     "episode_ended": false
@@ -958,7 +958,7 @@
    "problem": "ep472-open",
    "image": "rl-task-shifthunt-r1103",
    "container_exit": 0,
-   "container_seconds": 52.4,
+   "container_seconds": 58.3,
    "episode_id": "ep472-open\n",
    "task_json_public": {
     "access": "open",
@@ -1057,7 +1057,7 @@
    "printed_json": true,
    "task_py": {
     "exit": 0,
-    "seconds": 49.6
+    "seconds": 55.2
    },
    "task_txt": {
     "sha256": "23a68e357561dd99831b4f76b6a21e191164f8ca8c18844cde1665c9a1ed845d",
@@ -1216,7 +1216,7 @@
    "printed_json": true,
    "task_py": {
     "exit": 0,
-    "seconds": 43.8
+    "seconds": 44.1
    },
    "task_txt": {
     "sha256": "23a68e357561dd99831b4f76b6a21e191164f8ca8c18844cde1665c9a1ed845d",
@@ -1247,10 +1247,10 @@
      "remaining": 8
     },
     "wall_clock_s": {
-     "elapsed": 0.8,
+     "elapsed": 0.5,
      "limit": 3600.0,
      "excluded_compute": 0.0,
-     "remaining": 3599.2
+     "remaining": 3599.5
     },
     "call_timeout_s": 180.0,
     "episode_ended": false
@@ -1276,7 +1276,7 @@
    "problem": "ep476-open",
    "image": "rl-task-shifthunt-r1103",
    "container_exit": 0,
-   "container_seconds": 48.3,
+   "container_seconds": 45.7,
    "episode_id": "ep476-open\n",
    "task_json_public": {
     "access": "open",
@@ -1370,12 +1370,12 @@
     "probe_query_logits_logged": false
    },
    "n_hints": 1,
-   "nvidia_smi": "4541 MiB",
+   "nvidia_smi": "9050 MiB",
    "fill_texts": null,
    "printed_json": true,
    "task_py": {
     "exit": 0,
-    "seconds": 45.5
+    "seconds": 44.1
    },
    "task_txt": {
     "sha256": "23a68e357561dd99831b4f76b6a21e191164f8ca8c18844cde1665c9a1ed845d",
@@ -1406,10 +1406,10 @@
      "remaining": 8
     },
     "wall_clock_s": {
-     "elapsed": 2.4,
+     "elapsed": 0.5,
      "limit": 3600.0,
      "excluded_compute": 0.0,
-     "remaining": 3597.6
+     "remaining": 3599.5
     },
     "call_timeout_s": 180.0,
     "episode_ended": false
@@ -1435,7 +1435,7 @@
    "problem": "ep411-open",
    "image": "rl-task-shifthunt-r1112",
    "container_exit": 0,
-   "container_seconds": 45.8,
+   "container_seconds": 41.3,
    "episode_id": "ep411-open\n",
    "task_json_public": {
     "access": "open",
@@ -1629,7 +1629,7 @@
    "printed_json": true,
    "task_py": {
     "exit": 0,
-    "seconds": 42.5
+    "seconds": 39.0
    },
    "task_txt": {
     "sha256": "a90656fb55747660951e0c2a2a1e2480b4513f79881bcb10ce2aaccf073f7635",
@@ -1660,10 +1660,10 @@
      "remaining": 8
     },
     "wall_clock_s": {
-     "elapsed": 1.0,
+     "elapsed": 0.2,
      "limit": 3600.0,
      "excluded_compute": 0.0,
-     "remaining": 3599.0
+     "remaining": 3599.8
     },
     "call_timeout_s": 180.0,
     "episode_ended": false
@@ -1694,7 +1694,7 @@
    "problem": "ep411-open64",
    "image": "rl-task-shifthunt-r1112",
    "container_exit": 0,
-   "container_seconds": 43.4,
+   "container_seconds": 41.4,
    "episode_id": "ep411-open64\n",
    "task_json_public": {
     "access": "open",
@@ -1888,7 +1888,7 @@
    "printed_json": true,
    "task_py": {
     "exit": 0,
-    "seconds": 40.4
+    "seconds": 38.8
    },
    "task_txt": {
     "sha256": "49b4aa473704c178ef48b7af06b045fb072c7fbeacc591919337d319844e9821",
@@ -1919,10 +1919,10 @@
      "remaining": 64
     },
     "wall_clock_s": {
-     "elapsed": 0.9,
+     "elapsed": 0.2,
      "limit": 3600.0,
      "excluded_compute": 0.0,
-     "remaining": 3599.1
+     "remaining": 3599.8
     },
     "call_timeout_s": 180.0,
     "episode_ended": false
@@ -1953,7 +1953,7 @@
    "problem": "ep411-blackbox",
    "image": "rl-task-shifthunt-r1112",
    "container_exit": 0,
-   "container_seconds": 39.6,
+   "container_seconds": 42.5,
    "episode_id": "ep411-blackbox\n",
    "task_json_public": {
     "access": "blackbox",
@@ -2145,11 +2145,11 @@
    "printed_json": true,
    "task_py": {
     "exit": 0,
-    "seconds": 37.1
+    "seconds": 40.1
    },
    "task_txt": {
-    "sha256": "77040a1f6ea8abe27d4bc67929b8cb43e1219ef21de9f68c44a5a003dcbf92b9",
-    "chars": 6476,
+    "sha256": "d2b5f980de06cd4a39e2156c7cf0f6ba4708918307e10b70a59a39fbe7f32b7d",
+    "chars": 6592,
     "probe_query_numbers": [
      "8"
     ]
@@ -2211,7 +2211,7 @@
    "problem": "ep411-blackbox64",
    "image": "rl-task-shifthunt-r1112",
    "container_exit": 0,
-   "container_seconds": 39.6,
+   "container_seconds": 42.5,
    "episode_id": "ep411-blackbox64\n",
    "task_json_public": {
     "access": "blackbox",
@@ -2403,11 +2403,11 @@
    "printed_json": true,
    "task_py": {
     "exit": 0,
-    "seconds": 37.1
+    "seconds": 39.9
    },
    "task_txt": {
-    "sha256": "ea8aa0e05dfb11a2cf692f7e441707ac2e4f00b38cf7561bd01252bc368c2cb1",
-    "chars": 6477,
+    "sha256": "c3fa6fe66e8e4011fec33587fb75b27c1cca179446058ca12ad9626e9ba4a849",
+    "chars": 6593,
     "probe_query_numbers": [
      "64"
     ]
@@ -2469,7 +2469,7 @@
    "problem": "ep413-open",
    "image": "rl-task-shifthunt-r1112",
    "container_exit": 0,
-   "container_seconds": 37.5,
+   "container_seconds": 38.2,
    "episode_id": "ep413-open\n",
    "task_json_public": {
     "access": "open",
@@ -2663,7 +2663,7 @@
    "printed_json": true,
    "task_py": {
     "exit": 0,
-    "seconds": 34.9
+    "seconds": 35.2
    },
    "task_txt": {
     "sha256": "a90656fb55747660951e0c2a2a1e2480b4513f79881bcb10ce2aaccf073f7635",
@@ -2694,10 +2694,10 @@
      "remaining": 8
     },
     "wall_clock_s": {
-     "elapsed": 0.5,
+     "elapsed": 0.3,
      "limit": 3600.0,
      "excluded_compute": 0.0,
-     "remaining": 3599.5
+     "remaining": 3599.7
     },
     "call_timeout_s": 180.0,
     "episode_ended": false
@@ -2728,7 +2728,7 @@
    "problem": "ep413-open64",
    "image": "rl-task-shifthunt-r1112",
    "container_exit": 0,
-   "container_seconds": 37.5,
+   "container_seconds": 37.3,
    "episode_id": "ep413-open64\n",
    "task_json_public": {
     "access": "open",
@@ -2953,10 +2953,10 @@
      "remaining": 64
     },
     "wall_clock_s": {
-     "elapsed": 0.5,
+     "elapsed": 0.2,
      "limit": 3600.0,
      "excluded_compute": 0.0,
-     "remaining": 3599.5
+     "remaining": 3599.8
     },
     "call_timeout_s": 180.0,
     "episode_ended": false
@@ -2987,7 +2987,7 @@
    "problem": "ep413-blackbox",
    "image": "rl-task-shifthunt-r1112",
    "container_exit": 0,
-   "container_seconds": 35.9,
+   "container_seconds": 39.8,
    "episode_id": "ep413-blackbox\n",
    "task_json_public": {
     "access": "blackbox",
@@ -3179,11 +3179,11 @@
    "printed_json": true,
    "task_py": {
     "exit": 0,
-    "seconds": 33.4
+    "seconds": 37.1
    },
    "task_txt": {
-    "sha256": "77040a1f6ea8abe27d4bc67929b8cb43e1219ef21de9f68c44a5a003dcbf92b9",
-    "chars": 6476,
+    "sha256": "d2b5f980de06cd4a39e2156c7cf0f6ba4708918307e10b70a59a39fbe7f32b7d",
+    "chars": 6592,
     "probe_query_numbers": [
      "8"
     ]
@@ -3245,7 +3245,7 @@
    "problem": "ep413-blackbox64",
    "image": "rl-task-shifthunt-r1112",
    "container_exit": 0,
-   "container_seconds": 35.9,
+   "container_seconds": 39.5,
    "episode_id": "ep413-blackbox64\n",
    "task_json_public": {
     "access": "blackbox",
@@ -3437,11 +3437,11 @@
    "printed_json": true,
    "task_py": {
     "exit": 0,
-    "seconds": 33.4
+    "seconds": 36.9
    },
    "task_txt": {
-    "sha256": "ea8aa0e05dfb11a2cf692f7e441707ac2e4f00b38cf7561bd01252bc368c2cb1",
-    "chars": 6477,
+    "sha256": "c3fa6fe66e8e4011fec33587fb75b27c1cca179446058ca12ad9626e9ba4a849",
+    "chars": 6593,
     "probe_query_numbers": [
      "64"
     ]
@@ -3503,7 +3503,7 @@
    "problem": "ep415-open",
    "image": "rl-task-shifthunt-r1112",
    "container_exit": 0,
-   "container_seconds": 35.8,
+   "container_seconds": 36.4,
    "episode_id": "ep415-open\n",
    "task_json_public": {
     "access": "open",
@@ -3697,7 +3697,7 @@
    "printed_json": true,
    "task_py": {
     "exit": 0,
-    "seconds": 32.6
+    "seconds": 34.0
    },
    "task_txt": {
     "sha256": "a90656fb55747660951e0c2a2a1e2480b4513f79881bcb10ce2aaccf073f7635",
@@ -3728,10 +3728,10 @@
      "remaining": 8
     },
     "wall_clock_s": {
-     "elapsed": 0.6,
+     "elapsed": 0.5,
      "limit": 3600.0,
      "excluded_compute": 0.0,
-     "remaining": 3599.4
+     "remaining": 3599.5
     },
     "call_timeout_s": 180.0,
     "episode_ended": false
@@ -3762,7 +3762,7 @@
    "problem": "ep415-open64",
    "image": "rl-task-shifthunt-r1112",
    "container_exit": 0,
-   "container_seconds": 35.9,
+   "container_seconds": 36.5,
    "episode_id": "ep415-open64\n",
    "task_json_public": {
     "access": "open",
@@ -3956,7 +3956,7 @@
    "printed_json": true,
    "task_py": {
     "exit": 0,
-    "seconds": 32.6
+    "seconds": 33.8
    },
    "task_txt": {
     "sha256": "49b4aa473704c178ef48b7af06b045fb072c7fbeacc591919337d319844e9821",
@@ -3987,10 +3987,10 @@
      "remaining": 64
     },
     "wall_clock_s": {
-     "elapsed": 0.6,
+     "elapsed": 0.5,
      "limit": 3600.0,
      "excluded_compute": 0.0,
-     "remaining": 3599.4
+     "remaining": 3599.5
     },
     "call_timeout_s": 180.0,
     "episode_ended": false
@@ -4021,7 +4021,7 @@
    "problem": "ep415-blackbox",
    "image": "rl-task-shifthunt-r1112",
    "container_exit": 0,
-   "container_seconds": 37.3,
+   "container_seconds": 35.6,
    "episode_id": "ep415-blackbox\n",
    "task_json_public": {
     "access": "blackbox",
@@ -4172,7 +4172,7 @@
       "probe_query": 8
      },
      "error": null,
-     "seconds": 0.2
+     "seconds": 0.1
     },
     {
      "label": "probe_query_past",
@@ -4213,11 +4213,11 @@
    "printed_json": true,
    "task_py": {
     "exit": 0,
-    "seconds": 34.3
+    "seconds": 33.0
    },
    "task_txt": {
-    "sha256": "77040a1f6ea8abe27d4bc67929b8cb43e1219ef21de9f68c44a5a003dcbf92b9",
-    "chars": 6476,
+    "sha256": "d2b5f980de06cd4a39e2156c7cf0f6ba4708918307e10b70a59a39fbe7f32b7d",
+    "chars": 6592,
     "probe_query_numbers": [
      "8"
     ]
@@ -4244,10 +4244,10 @@
      "remaining": 8
     },
     "wall_clock_s": {
-     "elapsed": 0.6,
+     "elapsed": 0.8,
      "limit": 3600.0,
      "excluded_compute": 0.0,
-     "remaining": 3599.4
+     "remaining": 3599.2
     },
     "call_timeout_s": 180.0,
     "episode_ended": false
@@ -4279,7 +4279,7 @@
    "problem": "ep415-blackbox64",
    "image": "rl-task-shifthunt-r1112",
    "container_exit": 0,
-   "container_seconds": 36.9,
+   "container_seconds": 35.4,
    "episode_id": "ep415-blackbox64\n",
    "task_json_public": {
     "access": "blackbox",
@@ -4471,11 +4471,11 @@
    "printed_json": true,
    "task_py": {
     "exit": 0,
-    "seconds": 34.3
+    "seconds": 32.8
    },
    "task_txt": {
-    "sha256": "ea8aa0e05dfb11a2cf692f7e441707ac2e4f00b38cf7561bd01252bc368c2cb1",
-    "chars": 6477,
+    "sha256": "c3fa6fe66e8e4011fec33587fb75b27c1cca179446058ca12ad9626e9ba4a849",
+    "chars": 6593,
     "probe_query_numbers": [
      "64"
     ]
@@ -4502,10 +4502,10 @@
      "remaining": 64
     },
     "wall_clock_s": {
-     "elapsed": 0.6,
+     "elapsed": 0.8,
      "limit": 3600.0,
      "excluded_compute": 0.0,
-     "remaining": 3599.4
+     "remaining": 3599.2
     },
     "call_timeout_s": 180.0,
     "episode_ended": false
@@ -4537,7 +4537,7 @@
    "problem": "ep472-open",
    "image": "rl-task-shifthunt-r1112",
    "container_exit": 0,
-   "container_seconds": 45.5,
+   "container_seconds": 35.7,
    "episode_id": "ep472-open\n",
    "task_json_public": {
     "access": "open",
@@ -4644,7 +4644,7 @@
       "probe_query": 0
      },
      "error": null,
-     "seconds": 0.2
+     "seconds": 0.1
     },
     {
      "label": "probe_scores",
@@ -4688,7 +4688,7 @@
       "probe_query": 8
      },
      "error": null,
-     "seconds": 0.2
+     "seconds": 0.1
     },
     {
      "label": "probe_query_past",
@@ -4731,7 +4731,7 @@
    "printed_json": true,
    "task_py": {
     "exit": 0,
-    "seconds": 41.7
+    "seconds": 33.2
    },
    "task_txt": {
     "sha256": "23a68e357561dd99831b4f76b6a21e191164f8ca8c18844cde1665c9a1ed845d",
@@ -4762,10 +4762,10 @@
      "remaining": 8
     },
     "wall_clock_s": {
-     "elapsed": 2.3,
+     "elapsed": 0.2,
      "limit": 3600.0,
      "excluded_compute": 0.0,
-     "remaining": 3597.7
+     "remaining": 3599.8
     },
     "call_timeout_s": 180.0,
     "episode_ended": false
@@ -4796,7 +4796,7 @@
    "problem": "ep472-open64",
    "image": "rl-task-shifthunt-r1112",
    "container_exit": 0,
-   "container_seconds": 45.6,
+   "container_seconds": 35.9,
    "episode_id": "ep472-open64\n",
    "task_json_public": {
     "access": "open",
@@ -4925,7 +4925,7 @@
       "probe_query": 1
      },
      "error": null,
-     "seconds": 0.3
+     "seconds": 0.2
     },
     {
      "label": "probe_query_over",
@@ -4990,7 +4990,7 @@
    "printed_json": true,
    "task_py": {
     "exit": 0,
-    "seconds": 41.7
+    "seconds": 33.2
    },
    "task_txt": {
     "sha256": "1a57956cf00aeaf1ed391cc9d49e6cafbb0c7910db17684de23fec0e8316df90",
@@ -5021,10 +5021,10 @@
      "remaining": 64
     },
     "wall_clock_s": {
-     "elapsed": 2.3,
+     "elapsed": 0.2,
      "limit": 3600.0,
      "excluded_compute": 0.0,
-     "remaining": 3597.7
+     "remaining": 3599.8
     },
     "call_timeout_s": 180.0,
     "episode_ended": false
@@ -5055,7 +5055,7 @@
    "problem": "ep472-blackbox",
    "image": "rl-task-shifthunt-r1112",
    "container_exit": 0,
-   "container_seconds": 52.1,
+   "container_seconds": 37.8,
    "episode_id": "ep472-blackbox\n",
    "task_json_public": {
     "access": "blackbox",
@@ -5184,7 +5184,7 @@
       "probe_query": 1
      },
      "error": null,
-     "seconds": 0.3
+     "seconds": 0.2
     },
     {
      "label": "probe_query_over",
@@ -5206,7 +5206,7 @@
       "probe_query": 8
      },
      "error": null,
-     "seconds": 0.2
+     "seconds": 0.1
     },
     {
      "label": "probe_query_past",
@@ -5247,11 +5247,11 @@
    "printed_json": true,
    "task_py": {
     "exit": 0,
-    "seconds": 48.4
+    "seconds": 35.2
    },
    "task_txt": {
-    "sha256": "23fca428030d361b98ad93646700ab06f5d8e087d621b9ce23b4ce4ddc89a312",
-    "chars": 7138,
+    "sha256": "366d738158eb222b8b62a517e798c95528fa9057c9b14a73c651aa138a43fe4f",
+    "chars": 7254,
     "probe_query_numbers": [
      "8"
     ]
@@ -5278,10 +5278,10 @@
      "remaining": 8
     },
     "wall_clock_s": {
-     "elapsed": 2.6,
+     "elapsed": 0.9,
      "limit": 3600.0,
      "excluded_compute": 0.0,
-     "remaining": 3597.4
+     "remaining": 3599.1
     },
     "call_timeout_s": 180.0,
     "episode_ended": false
@@ -5313,7 +5313,7 @@
    "problem": "ep472-blackbox64",
    "image": "rl-task-shifthunt-r1112",
    "container_exit": 0,
-   "container_seconds": 52.1,
+   "container_seconds": 37.8,
    "episode_id": "ep472-blackbox64\n",
    "task_json_public": {
     "access": "blackbox",
@@ -5442,7 +5442,7 @@
       "probe_query": 1
      },
      "error": null,
-     "seconds": 0.3
+     "seconds": 0.2
     },
     {
      "label": "probe_query_over",
@@ -5505,11 +5505,11 @@
    "printed_json": true,
    "task_py": {
     "exit": 0,
-    "seconds": 48.4
+    "seconds": 35.1
    },
    "task_txt": {
-    "sha256": "3718b80f1c8f436220d32abaadaee728b6a486aa8cb0c773dce3aab6a150a8e7",
-    "chars": 7139,
+    "sha256": "3166110be49d981595dacbbea338814126b07f39ce00a116b7720d397f51b991",
+    "chars": 7255,
     "probe_query_numbers": [
      "64"
     ]
@@ -5536,10 +5536,10 @@
      "remaining": 64
     },
     "wall_clock_s": {
-     "elapsed": 2.6,
+     "elapsed": 0.9,
      "limit": 3600.0,
      "excluded_compute": 0.0,
-     "remaining": 3597.4
+     "remaining": 3599.1
     },
     "call_timeout_s": 180.0,
     "episode_ended": false
@@ -5571,7 +5571,7 @@
    "problem": "ep474-open",
    "image": "rl-task-shifthunt-r1112",
    "container_exit": 0,
-   "container_seconds": 46.0,
+   "container_seconds": 36.5,
    "episode_id": "ep474-open\n",
    "task_json_public": {
     "access": "open",
@@ -5765,7 +5765,7 @@
    "printed_json": true,
    "task_py": {
     "exit": 0,
-    "seconds": 42.5
+    "seconds": 34.1
    },
    "task_txt": {
     "sha256": "23a68e357561dd99831b4f76b6a21e191164f8ca8c18844cde1665c9a1ed845d",
@@ -5796,10 +5796,10 @@
      "remaining": 8
     },
     "wall_clock_s": {
-     "elapsed": 2.4,
+     "elapsed": 0.4,
      "limit": 3600.0,
      "excluded_compute": 0.0,
-     "remaining": 3597.6
+     "remaining": 3599.6
     },
     "call_timeout_s": 180.0,
     "episode_ended": false
@@ -5830,7 +5830,7 @@
    "problem": "ep474-open64",
    "image": "rl-task-shifthunt-r1112",
    "container_exit": 0,
-   "container_seconds": 46.0,
+   "container_seconds": 36.5,
    "episode_id": "ep474-open64\n",
    "task_json_public": {
     "access": "open",
@@ -6024,7 +6024,7 @@
    "printed_json": true,
    "task_py": {
     "exit": 0,
-    "seconds": 42.3
+    "seconds": 33.9
    },
    "task_txt": {
     "sha256": "1a57956cf00aeaf1ed391cc9d49e6cafbb0c7910db17684de23fec0e8316df90",
@@ -6055,10 +6055,10 @@
      "remaining": 64
     },
     "wall_clock_s": {
-     "elapsed": 2.2,
+     "elapsed": 0.4,
      "limit": 3600.0,
      "excluded_compute": 0.0,
-     "remaining": 3597.8
+     "remaining": 3599.6
     },
     "call_timeout_s": 180.0,
     "episode_ended": false
@@ -6089,7 +6089,7 @@
    "problem": "ep474-blackbox",
    "image": "rl-task-shifthunt-r1112",
    "container_exit": 0,
-   "container_seconds": 44.0,
+   "container_seconds": 36.8,
    "episode_id": "ep474-blackbox\n",
    "task_json_public": {
     "access": "blackbox",
@@ -6281,11 +6281,11 @@
    "printed_json": true,
    "task_py": {
     "exit": 0,
-    "seconds": 40.6
+    "seconds": 34.2
    },
    "task_txt": {
-    "sha256": "23fca428030d361b98ad93646700ab06f5d8e087d621b9ce23b4ce4ddc89a312",
-    "chars": 7138,
+    "sha256": "366d738158eb222b8b62a517e798c95528fa9057c9b14a73c651aa138a43fe4f",
+    "chars": 7254,
     "probe_query_numbers": [
      "8"
     ]
@@ -6312,10 +6312,10 @@
      "remaining": 8
     },
     "wall_clock_s": {
-     "elapsed": 2.8,
+     "elapsed": 1.0,
      "limit": 3600.0,
      "excluded_compute": 0.0,
-     "remaining": 3597.2
+     "remaining": 3599.0
     },
     "call_timeout_s": 180.0,
     "episode_ended": false
@@ -6347,7 +6347,7 @@
    "problem": "ep474-blackbox64",
    "image": "rl-task-shifthunt-r1112",
    "container_exit": 0,
-   "container_seconds": 44.1,
+   "container_seconds": 36.8,
    "episode_id": "ep474-blackbox64\n",
    "task_json_public": {
     "access": "blackbox",
@@ -6539,11 +6539,11 @@
    "printed_json": true,
    "task_py": {
     "exit": 0,
-    "seconds": 40.6
+    "seconds": 34.2
    },
    "task_txt": {
-    "sha256": "3718b80f1c8f436220d32abaadaee728b6a486aa8cb0c773dce3aab6a150a8e7",
-    "chars": 7139,
+    "sha256": "3166110be49d981595dacbbea338814126b07f39ce00a116b7720d397f51b991",
+    "chars": 7255,
     "probe_query_numbers": [
      "64"
     ]
@@ -6570,10 +6570,10 @@
      "remaining": 64
     },
     "wall_clock_s": {
-     "elapsed": 2.6,
+     "elapsed": 1.0,
      "limit": 3600.0,
      "excluded_compute": 0.0,
-     "remaining": 3597.4
+     "remaining": 3599.0
     },
     "call_timeout_s": 180.0,
     "episode_ended": false
@@ -6605,7 +6605,7 @@
    "problem": "ep476-open",
    "image": "rl-task-shifthunt-r1112",
    "container_exit": 0,
-   "container_seconds": 55.7,
+   "container_seconds": 38.3,
    "episode_id": "ep476-open\n",
    "task_json_public": {
     "access": "open",
@@ -6734,7 +6734,7 @@
       "probe_query": 1
      },
      "error": null,
-     "seconds": 0.3
+     "seconds": 0.2
     },
     {
      "label": "probe_query_over",
@@ -6799,7 +6799,7 @@
    "printed_json": true,
    "task_py": {
     "exit": 0,
-    "seconds": 51.7
+    "seconds": 35.1
    },
    "task_txt": {
     "sha256": "23a68e357561dd99831b4f76b6a21e191164f8ca8c18844cde1665c9a1ed845d",
@@ -6830,10 +6830,10 @@
      "remaining": 8
     },
     "wall_clock_s": {
-     "elapsed": 1.9,
+     "elapsed": 0.6,
      "limit": 3600.0,
      "excluded_compute": 0.0,
-     "remaining": 3598.1
+     "remaining": 3599.4
     },
     "call_timeout_s": 180.0,
     "episode_ended": false
@@ -6864,7 +6864,7 @@
    "problem": "ep476-open64",
    "image": "rl-task-shifthunt-r1112",
    "container_exit": 0,
-   "container_seconds": 55.7,
+   "container_seconds": 37.8,
    "episode_id": "ep476-open64\n",
    "task_json_public": {
     "access": "open",
@@ -6949,7 +6949,7 @@
       "probe_query": 0
      },
      "error": null,
-     "seconds": 0.2
+     "seconds": 0.1
     },
     {
      "label": "latent_examples",
@@ -6993,7 +6993,7 @@
       "probe_query": 1
      },
      "error": null,
-     "seconds": 0.3
+     "seconds": 0.2
     },
     {
      "label": "probe_query_over",
@@ -7015,7 +7015,7 @@
       "probe_query": 64
      },
      "error": null,
-     "seconds": 0.3
+     "seconds": 0.2
     },
     {
      "label": "probe_query_past",
@@ -7058,7 +7058,7 @@
    "printed_json": true,
    "task_py": {
     "exit": 0,
-    "seconds": 51.7
+    "seconds": 35.1
    },
    "task_txt": {
     "sha256": "1a57956cf00aeaf1ed391cc9d49e6cafbb0c7910db17684de23fec0e8316df90",
@@ -7089,10 +7089,10 @@
      "remaining": 64
     },
     "wall_clock_s": {
-     "elapsed": 1.8,
+     "elapsed": 0.7,
      "limit": 3600.0,
      "excluded_compute": 0.0,
-     "remaining": 3598.2
+     "remaining": 3599.3
     },
     "call_timeout_s": 180.0,
     "episode_ended": false
@@ -7123,7 +7123,7 @@
    "problem": "ep476-blackbox",
    "image": "rl-task-shifthunt-r1112",
    "container_exit": 0,
-   "container_seconds": 51.8,
+   "container_seconds": 38.0,
    "episode_id": "ep476-blackbox\n",
    "task_json_public": {
     "access": "blackbox",
@@ -7252,7 +7252,7 @@
       "probe_query": 1
      },
      "error": null,
-     "seconds": 0.3
+     "seconds": 0.2
     },
     {
      "label": "probe_query_over",
@@ -7274,7 +7274,7 @@
       "probe_query": 8
      },
      "error": null,
-     "seconds": 0.2
+     "seconds": 0.1
     },
     {
      "label": "probe_query_past",
@@ -7315,11 +7315,11 @@
    "printed_json": true,
    "task_py": {
     "exit": 0,
-    "seconds": 47.7
+    "seconds": 35.3
    },
    "task_txt": {
-    "sha256": "23fca428030d361b98ad93646700ab06f5d8e087d621b9ce23b4ce4ddc89a312",
-    "chars": 7138,
+    "sha256": "366d738158eb222b8b62a517e798c95528fa9057c9b14a73c651aa138a43fe4f",
+    "chars": 7254,
     "probe_query_numbers": [
      "8"
     ]
@@ -7346,10 +7346,10 @@
      "remaining": 8
     },
     "wall_clock_s": {
-     "elapsed": 2.5,
+     "elapsed": 0.7,
      "limit": 3600.0,
      "excluded_compute": 0.0,
-     "remaining": 3597.5
+     "remaining": 3599.3
     },
     "call_timeout_s": 180.0,
     "episode_ended": false
@@ -7381,7 +7381,7 @@
    "problem": "ep476-blackbox64",
    "image": "rl-task-shifthunt-r1112",
    "container_exit": 0,
-   "container_seconds": 51.8,
+   "container_seconds": 38.1,
    "episode_id": "ep476-blackbox64\n",
    "task_json_public": {
     "access": "blackbox",
@@ -7510,7 +7510,7 @@
       "probe_query": 1
      },
      "error": null,
-     "seconds": 0.3
+     "seconds": 0.2
     },
     {
      "label": "probe_query_over",
@@ -7573,11 +7573,11 @@
    "printed_json": true,
    "task_py": {
     "exit": 0,
-    "seconds": 47.8
+    "seconds": 35.3
    },
    "task_txt": {
-    "sha256": "3718b80f1c8f436220d32abaadaee728b6a486aa8cb0c773dce3aab6a150a8e7",
-    "chars": 7139,
+    "sha256": "3166110be49d981595dacbbea338814126b07f39ce00a116b7720d397f51b991",
+    "chars": 7255,
     "probe_query_numbers": [
      "64"
     ]
@@ -7604,10 +7604,10 @@
      "remaining": 64
     },
     "wall_clock_s": {
-     "elapsed": 2.4,
+     "elapsed": 0.7,
      "limit": 3600.0,
      "excluded_compute": 0.0,
-     "remaining": 3597.6
+     "remaining": 3599.3
     },
     "call_timeout_s": 180.0,
     "episode_ended": false
@@ -7642,7 +7642,7 @@
    "problem": "ep411-open",
    "attack": null,
    "exit": 0,
-   "seconds": 62.2,
+   "seconds": 43.3,
    "result": {
     "problem": "ep411-open",
     "attack": null,
@@ -7702,7 +7702,7 @@
    "problem": "ep411-open",
    "attack": null,
    "exit": 0,
-   "seconds": 62.1,
+   "seconds": 43.3,
    "result": {
     "problem": "ep411-open",
     "attack": null,
@@ -7765,7 +7765,7 @@
    "problem": "ep411-blackbox",
    "attack": null,
    "exit": 0,
-   "seconds": 70.0,
+   "seconds": 40.9,
    "result": {
     "problem": "ep411-blackbox",
     "attack": null,
@@ -7828,7 +7828,7 @@
    "problem": "ep413-open",
    "attack": null,
    "exit": 0,
-   "seconds": 70.6,
+   "seconds": 41.2,
    "result": {
     "problem": "ep413-open",
     "attack": null,
@@ -7888,7 +7888,7 @@
    "problem": "ep413-open",
    "attack": null,
    "exit": 0,
-   "seconds": 65.4,
+   "seconds": 41.5,
    "result": {
     "problem": "ep413-open",
     "attack": null,
@@ -7951,7 +7951,7 @@
    "problem": "ep413-blackbox64",
    "attack": null,
    "exit": 0,
-   "seconds": 64.7,
+   "seconds": 40.0,
    "result": {
     "problem": "ep413-blackbox64",
     "attack": null,
@@ -8014,7 +8014,7 @@
    "problem": "ep415-open",
    "attack": null,
    "exit": 0,
-   "seconds": 75.5,
+   "seconds": 40.6,
    "result": {
     "problem": "ep415-open",
     "attack": null,
@@ -8063,7 +8063,7 @@
      "access": "open",
      "episode": "ep415-open",
      "reward_scheme": "hard_gated_partial",
-     "daemon_stop": "killed"
+     "daemon_stop": "terminated"
     },
     "naming_only_in_feedback": false
    },
@@ -8074,7 +8074,7 @@
    "problem": "ep415-open",
    "attack": null,
    "exit": 0,
-   "seconds": 75.5,
+   "seconds": 39.6,
    "result": {
     "problem": "ep415-open",
     "attack": null,
@@ -8126,7 +8126,7 @@
      "access": "open",
      "episode": "ep415-open",
      "reward_scheme": "hard_gated_partial",
-     "daemon_stop": "killed"
+     "daemon_stop": "terminated"
     },
     "naming_only_in_feedback": false
    },
@@ -8137,7 +8137,7 @@
    "problem": "ep415-blackbox",
    "attack": null,
    "exit": 0,
-   "seconds": 123.2,
+   "seconds": 40.0,
    "result": {
     "problem": "ep415-blackbox",
     "attack": null,
@@ -8189,7 +8189,7 @@
      "access": "blackbox",
      "episode": "ep415-blackbox",
      "reward_scheme": "hard_gated_partial",
-     "daemon_stop": "killed"
+     "daemon_stop": "terminated"
     },
     "naming_only_in_feedback": true
    },
@@ -8200,7 +8200,7 @@
    "problem": "ep472-open",
    "attack": null,
    "exit": 0,
-   "seconds": 126.1,
+   "seconds": 40.1,
    "result": {
     "problem": "ep472-open",
     "attack": null,
@@ -8249,7 +8249,7 @@
      "access": "open",
      "episode": "ep472-open",
      "reward_scheme": "hard_gated_partial",
-     "daemon_stop": "killed"
+     "daemon_stop": "terminated"
     },
     "naming_only_in_feedback": false
    },
@@ -8260,7 +8260,7 @@
    "problem": "ep472-open",
    "attack": null,
    "exit": 0,
-   "seconds": 95.0,
+   "seconds": 39.1,
    "result": {
     "problem": "ep472-open",
     "attack": null,
@@ -8323,7 +8323,7 @@
    "problem": "ep472-blackbox64",
    "attack": null,
    "exit": 0,
-   "seconds": 92.2,
+   "seconds": 38.3,
    "result": {
     "problem": "ep472-blackbox64",
     "attack": null,
@@ -8386,7 +8386,7 @@
    "problem": "ep474-open",
    "attack": null,
    "exit": 0,
-   "seconds": 70.7,
+   "seconds": 43.1,
    "result": {
     "problem": "ep474-open",
     "attack": null,
@@ -8446,7 +8446,7 @@
    "problem": "ep474-open",
    "attack": null,
    "exit": 0,
-   "seconds": 70.6,
+   "seconds": 42.5,
    "result": {
     "problem": "ep474-open",
     "attack": null,
@@ -8509,7 +8509,7 @@
    "problem": "ep474-blackbox",
    "attack": null,
    "exit": 0,
-   "seconds": 71.3,
+   "seconds": 37.2,
    "result": {
     "problem": "ep474-blackbox",
     "attack": null,
@@ -8572,7 +8572,7 @@
    "problem": "ep476-open",
    "attack": null,
    "exit": 0,
-   "seconds": 71.3,
+   "seconds": 37.1,
    "result": {
     "problem": "ep476-open",
     "attack": null,
@@ -8632,7 +8632,7 @@
    "problem": "ep476-open",
    "attack": null,
    "exit": 0,
-   "seconds": 87.1,
+   "seconds": 41.3,
    "result": {
     "problem": "ep476-open",
     "attack": null,
@@ -8684,7 +8684,7 @@
      "access": "open",
      "episode": "ep476-open",
      "reward_scheme": "hard_gated_partial",
-     "daemon_stop": "killed"
+     "daemon_stop": "terminated"
     },
     "naming_only_in_feedback": false
    },
@@ -8695,7 +8695,7 @@
    "problem": "ep476-blackbox64",
    "attack": null,
    "exit": 0,
-   "seconds": 87.1,
+   "seconds": 41.3,
    "result": {
     "problem": "ep476-blackbox64",
     "attack": null,
@@ -8747,7 +8747,7 @@
      "access": "blackbox",
      "episode": "ep476-blackbox64",
      "reward_scheme": "hard_gated_partial",
-     "daemon_stop": "killed"
+     "daemon_stop": "terminated"
     },
     "naming_only_in_feedback": true
    },
@@ -8758,7 +8758,7 @@
    "problem": "ep411-blackbox",
    "attack": "none-all",
    "exit": 0,
-   "seconds": 64.8,
+   "seconds": 38.1,
    "result": {
     "problem": "ep411-blackbox",
     "attack": "none-all",
@@ -8821,7 +8821,7 @@
    "problem": "ep476-open64",
    "attack": "none-all",
    "exit": 0,
-   "seconds": 64.6,
+   "seconds": 38.1,
    "result": {
     "problem": "ep476-open64",
     "attack": "none-all",

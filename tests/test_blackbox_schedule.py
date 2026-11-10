@@ -58,11 +58,13 @@ class StopClock(bs.FakeClock):
 class Env:
     """One block in tmp_path: run order, config, fake launcher, scheduler(s)."""
 
-    def __init__(self, tmp_path, rows, script=None, name="runorder_block1.csv", pilot=False, **cfg):
+    def __init__(self, tmp_path, rows, script=None, name="runorder_block1.csv", pilot=False, subdir=None,
+                 results="results", **cfg):
         self.tmp = tmp_path
-        self.runorder = write_runorder(tmp_path / name, rows)
+        (tmp_path / (subdir or "")).mkdir(parents=True, exist_ok=True)
+        self.runorder = write_runorder(tmp_path / (subdir or "") / name, rows)
         self.jobs = bs.read_runorder(self.runorder)
-        self.cfg = bs.Config(self.runorder, "r1112", tmp_path / "sub" / "tasks" / "shifthunt", tmp_path / "results",
+        self.cfg = bs.Config(self.runorder, "r1112", tmp_path / "sub" / "tasks" / "shifthunt", tmp_path / results,
                              rollouts=tmp_path / "rollouts", pilot=pilot, **cfg)
         self.cfg.results.mkdir(parents=True, exist_ok=True)
         self.clock = StopClock()
@@ -228,6 +230,117 @@ def test_real_launcher_cannot_be_built_in_a_dry_run(tmp_path):
 def test_classify(kw, status, infra, flags):
     out = bs.classify(**kw)
     assert (out.status, out.infra, out.flags) == (status, infra, flags)
+    # Claude Code: the main study's rule, whatever the row's agent_error says
+    for ae in (None, AE_NONE, AE_API, AE_CONTEXT, AE_RECOVERED):
+        out = bs.classify(**kw, engine="claude", agent_error=ae)
+        assert (out.status, out.infra, out.flags) == (status, infra, flags)
+
+
+# agent_error dicts as scripts/collect_rollouts.py codex_agent_error writes them
+def ae(terminal, kind=None, type_=None, message=None, n=1):
+    return {"terminal": terminal, "kind": kind, "type": type_, "message": message, "n_error_events": n}
+
+
+AE_NONE = ae(False, n=0)
+AE_API = ae(True, "api", "turn.failed", "Quota exceeded. Check your plan and billing details.", 2)
+AE_TRAILING = ae(True, "api", "error", "stream disconnected before completion", 3)
+AE_CONTEXT = ae(True, "context", "turn.failed", "Codex ran out of room in the model's context window.", 2)
+AE_REFUSAL = ae(True, "refusal", "turn.failed", "your prompt was flagged as potentially violating our usage policy", 2)
+AE_RECOVERED = ae(False, None, None, "Reconnecting... 2/5", 2)
+CODEX = dict(cid="c", collected=True, engine="codex", harness_status="api_error")
+LOOK = "manual_look"
+
+
+@pytest.mark.parametrize("kw, status, infra, flags", [
+    # an API error ended the agent: turn.failed, or the stream ends with an error event; message is neither
+    (dict(CODEX, has_grade=True, agent_error=AE_API), "infra:api_error", True, []),
+    (dict(CODEX, has_grade=True, agent_error=AE_TRAILING), "infra:api_error", True, ["codex_trailing_error"]),
+    (dict(CODEX, has_grade=False, agent_error=AE_API), "infra:api_error", True, []),
+    # the same status when the hard stop ended the run, with a trace: the stream ends where the killed CLI was
+    (dict(CODEX, has_grade=True, agent_error=AE_API, timeout=True), "infra:api_error", True,
+     ["api_error_at_timeout", LOOK]),
+    (dict(CODEX, has_grade=True, agent_error=AE_TRAILING, timeout=True), "infra:api_error", True,
+     ["codex_trailing_error", "api_error_at_timeout", LOOK]),
+    (dict(CODEX, has_grade=False, agent_error=AE_TRAILING, timeout=True, runner_exit=1), "infra:api_error", True,
+     ["runner_exit_1", "codex_trailing_error", "api_error_at_timeout", LOOK]),
+    # the rule does not read harness_status for Codex
+    (dict(CODEX, has_grade=True, agent_error=AE_API, harness_status="ok"), "infra:api_error", True, []),
+    # the agent's own failures: counted fails
+    (dict(CODEX, has_grade=True, agent_error=AE_CONTEXT), "fail:no_submission", False, ["agent_error_context", LOOK]),
+    (dict(CODEX, has_grade=True, agent_error=AE_REFUSAL), "fail:no_submission", False, ["agent_error_refusal", LOOK]),
+    (dict(CODEX, has_grade=True, agent_error=AE_CONTEXT, timeout=True), "fail:timeout", False,
+     ["agent_error_context", LOOK]),
+    # an error event the CLI recovered from: the remaining rules decide
+    (dict(CODEX, has_grade=True, agent_error=AE_RECOVERED), "fail:no_submission", False, ["codex_error_recovered", LOOK]),
+    (dict(CODEX, has_grade=True, agent_error=AE_RECOVERED, timeout=True), "fail:timeout", False,
+     ["codex_error_recovered", LOOK]),
+    (dict(CODEX, has_grade=True, agent_error=AE_RECOVERED, daemon_died=True), "fail:no_submission", False,
+     ["codex_error_recovered", LOOK, "daemon_died"]),
+    (dict(CODEX, has_grade=False, agent_error=AE_RECOVERED), "infra:no_grade", True, ["codex_error_recovered", LOOK]),
+    (dict(CODEX, has_grade=False, agent_error=AE_CONTEXT), "infra:no_grade", True, ["agent_error_context", LOOK]),
+    (dict(CODEX, has_grade=False, agent_error=AE_REFUSAL, interrupted=True, cut_off=True), "infra:interrupted", True,
+     ["agent_error_refusal", LOOK, "container_cut_off"]),
+    # harness_status says api_error but the stream cannot be read (no row key, no file), or the dict is malformed
+    (dict(CODEX, has_grade=True, agent_error=None), "fail:no_submission", False, ["agent_error_unknown", LOOK]),
+    (dict(CODEX, has_grade=True, agent_error=ae(True, "something")), "fail:no_submission", False,
+     ["agent_error_unknown", LOOK]),
+    (dict(CODEX, has_grade=True, agent_error=ae(False, n=0)), "fail:no_submission", False,
+     ["codex_error_recovered", LOOK]),                      # harness_status saw an error event the dict does not count
+    # only the JSON true the collector writes is terminal: another truthy value never makes a run a re-run
+    (dict(CODEX, has_grade=True, agent_error=ae(1, "api", "turn.failed", "x", 2)), "fail:no_submission", False,
+     ["codex_error_recovered", LOOK]),
+    (dict(CODEX, has_grade=True, agent_error=ae("true", "api", "turn.failed", "x", 2)), "fail:no_submission", False,
+     ["codex_error_recovered", LOOK]),
+    (dict(CODEX, has_grade=True, agent_error=ae(None, "api", "isApiErrorMessage", "overloaded_error", 1),
+          harness_status="ok"), "fail:no_submission", False, ["codex_error_recovered", LOOK]),
+    # no error event at all: as before
+    (dict(CODEX, has_grade=True, agent_error=AE_NONE, harness_status="ok"), "fail:no_submission", False, []),
+    (dict(CODEX, has_grade=True, agent_error=AE_NONE, harness_status="ok", timeout=True), "fail:timeout", False, []),
+    (dict(CODEX, has_grade=False, agent_error=AE_NONE, harness_status="no_grade"), "infra:no_grade", True, []),
+    (dict(CODEX, has_grade=True, agent_error=None, harness_status="ok"), "fail:no_submission", False, []),
+    (dict(CODEX, has_grade=True, agent_error=AE_NONE, harness_status="no_agent_activity"), "fail:no_submission", False,
+     ["no_agent_activity", LOOK]),
+    # an accepted submission: counted on it, never re-run, whatever the stream says
+    (dict(CODEX, submitted=True, has_grade=True, agent_error=AE_API), "ok", False, ["api_error_after_submit"]),
+    (dict(CODEX, submitted=True, has_grade=True, agent_error=AE_TRAILING, timeout=True), "ok", False,
+     ["api_error_after_submit", "timeout_after_submit"]),
+    (dict(CODEX, submitted=True, has_grade=False, agent_error=AE_API), "needs_regrade", False,
+     ["api_error_after_submit", "needs_regrade"]),
+    (dict(CODEX, submitted=True, has_grade=True, agent_error=AE_RECOVERED), "ok", False, ["codex_error_recovered"]),
+    (dict(CODEX, submitted=True, has_grade=True, agent_error=AE_CONTEXT), "ok", False, ["agent_error_context"]),
+    (dict(CODEX, submitted=True, has_grade=True, agent_error=AE_REFUSAL), "ok", False, ["agent_error_refusal"]),
+    (dict(CODEX, submitted=True, has_grade=True, agent_error=AE_NONE, harness_status="ok"), "ok", False, []),
+])
+def test_classify_codex_api_error_rule(kw, status, infra, flags):
+    out = bs.classify(**kw)
+    assert (out.status, out.infra, out.flags) == (status, infra, flags)
+
+
+def test_codex_error_class():
+    assert bs.codex_error_class(AE_API) == "api" and bs.codex_error_class(AE_TRAILING, "api_error") == "api"
+    assert bs.codex_error_class(AE_CONTEXT) == "context" and bs.codex_error_class(AE_REFUSAL) == "refusal"
+    assert bs.codex_error_class(AE_RECOVERED) == "recovered" and bs.codex_error_class(AE_NONE) is None
+    assert bs.codex_error_class(None) is None and bs.codex_error_class(None, "api_error") == "unknown"
+    assert bs.codex_error_class("x", "api_error") == "unknown" and bs.codex_error_class({}, "ok") is None
+    for odd in (1, "true", None, 0, "false", [True]):                      # not the JSON true: never "api"
+        assert bs.codex_error_class(ae(odd, "api", "turn.failed", "x", 2)) == "recovered", odd
+        assert bs.codex_error_class(ae(odd, "api", "turn.failed", "x", 0), "ok") is None, odd
+
+
+def test_agent_error_of_takes_the_rows_dict_only_if_it_is_one(tmp_path):
+    """A row whose agent_error is not a dict with `terminal` (a string, a list, null, another shape) is
+    completed from the run directory, like a row without the key."""
+    d = tmp_path / "run" / "0123456789ab"
+    d.mkdir(parents=True)
+    (d / "codex_events.jsonl").write_text("".join(json.dumps(e) + "\n" for e in STREAMS["failed_context"]))
+    want = bs.CR.codex_agent_error(STREAMS["failed_context"])
+    for bad in ("api", ["terminal"], None, 3, True, {}, {"kind": "api"}):
+        assert bs.agent_error_of(tmp_path / "run", "0123456789ab", {"agent_error": bad}, "codex") == (want, "events_file")
+    assert bs.agent_error_of(tmp_path / "run", "0123456789ab", {"agent_error": AE_API}, "codex") == (AE_API, "row")
+    assert bs.agent_error_of(tmp_path / "run", "nothing", {"agent_error": "api"}, "codex") == (None, None)
+    facts = bs.run_facts(tmp_path / "run", "0123456789ab", {"agent_error": "api", "harness_status": "api_error"}, "codex")
+    assert facts["agent_error"] == want
+    assert set(bs.CODEX_ERROR_FLAGS) == {"recovered", "context", "refusal", "unknown"}
 
 
 def test_a_run_with_an_accepted_submission_is_never_an_infrastructure_failure():
@@ -235,9 +348,12 @@ def test_a_run_with_an_accepted_submission_is_never_an_infrastructure_failure():
         for grade in (True, False):
             for timeout in (True, False):
                 for died in (True, False):
-                    out = bs.classify("c", True, submitted=True, has_grade=grade, timeout=timeout,
-                                      harness_status=hs, daemon_died=died, runner_exit=1)
-                    assert not out.infra and out.status in ("ok", "needs_regrade")
+                    for engine in (None, "claude", "codex"):
+                        for err in (None, AE_NONE, AE_API, AE_TRAILING, AE_CONTEXT, AE_REFUSAL, AE_RECOVERED):
+                            out = bs.classify("c", True, submitted=True, has_grade=grade, timeout=timeout,
+                                              harness_status=hs, daemon_died=died, runner_exit=1, engine=engine,
+                                              agent_error=err)
+                            assert not out.infra and out.status in ("ok", "needs_regrade")
 
 
 # ---------------------------------------------------------------- RUNLOG.md
@@ -474,6 +590,202 @@ def test_a_success_resets_the_providers_streak(tmp_path):
     e = Env(tmp_path, rows, by_order({1: bad, 2: bad, 3: {"minutes": 3}, 4: bad}), max_slots=1)
     e.run()
     assert not e.events("infra_stop") and e.summary["recorded"] == 6 and e.summary["requeued"] == 3
+
+
+# ---------------------------------------------------------------- "an API error ended the agent" (prereg section 7.3)
+
+EV_START = [{"type": "thread.started", "thread_id": "t"}, {"type": "turn.started"}]
+EV_ITEM = {"type": "item.completed", "item": {"type": "command_execution", "command": "ls", "exit_code": 0}}
+EV_DONE = {"type": "turn.completed", "usage": {"input_tokens": 10, "output_tokens": 1}}
+EV_RETRY = {"type": "error", "message": "Reconnecting... 2/5 (stream disconnected before completion)"}
+MSG_QUOTA = "Quota exceeded. Check your plan and billing details."
+MSG_CONTEXT = "Codex ran out of room in the model's context window. Start a new thread."
+MSG_FLAGGED = "Invalid prompt: your prompt was flagged as potentially violating our usage policy."
+MSG_TPM = ("Rate limit reached for gpt-6.1-terra in organization org-Ab12Cd34Ef56Gh78 on tokens per min (TPM): "
+           "Limit 2000000, Used 1998123, Requested 5210. Please try again in 99ms.")
+
+
+def turn_failed(message):
+    return EV_START + [EV_ITEM, {"type": "error", "message": message}, {"type": "turn.failed", "error": {"message": message}}]
+
+
+STREAMS = {  # name -> the events of codex_events.jsonl
+    "failed_api": turn_failed(MSG_QUOTA),
+    "failed_tpm": turn_failed(MSG_TPM),
+    "failed_context": turn_failed(MSG_CONTEXT),
+    "failed_refusal": turn_failed(MSG_FLAGGED),
+    "trailing_error": EV_START + [EV_ITEM, EV_RETRY, EV_ITEM, {"type": "error", "message": MSG_QUOTA}],
+    "recovered": EV_START + [EV_ITEM, EV_RETRY, EV_ITEM, EV_DONE],
+    "recovered_no_end": EV_START + [EV_ITEM, EV_RETRY, EV_ITEM],  # went on after the error, then the hard stop
+    "retry_at_stop": EV_START + [EV_ITEM, EV_RETRY],              # the hard stop came while the CLI was reconnecting
+}
+
+
+def stream(name, outcome="api_error", old_row=False, **kw):
+    """A fake Codex run whose summary row is what the collector writes for that event stream. harness_status is
+    the main study's: api_error for every one of these streams (each has an error event). old_row: the row has
+    no agent_error key (an older collector) and codex_events.jsonl is in the run directory."""
+    text = "".join(json.dumps(e) + "\n" for e in STREAMS[name])
+    spec = {"outcome": outcome, "minutes": 5, "usd": 0.4, "files": {"codex_events.jsonl": text}, **kw}
+    if old_row:
+        return {**spec, "old_row": True}
+    return {**spec, "row": {**kw.get("row", {}), "agent_error": bs.CR.codex_agent_error(STREAMS[name])}}
+
+
+GPT_ROWS = [(G, "bb8", f"ep{411 + 2 * (i % 3)}", i // 3 + 1) for i in range(9)]
+
+
+@pytest.mark.parametrize("old_row", [False, True])
+def test_codex_api_error_rule_end_to_end(tmp_path, old_row):
+    """Every branch of the pre-registered Codex rule through the scheduler, from the collector's own
+    classification of the event stream; with old_row from codex_events.jsonl in the run directory."""
+    ok_after = [{"outcome": "ok"}]
+    spec = {1: [stream("failed_api", old_row=old_row)] + ok_after,
+            2: stream("failed_context", old_row=old_row),
+            3: stream("failed_refusal", old_row=old_row),
+            4: [stream("trailing_error", old_row=old_row)] + ok_after,
+            5: stream("recovered", old_row=old_row),
+            6: stream("recovered_no_end", old_row=old_row, row={"timeout": True}),
+            7: stream("failed_api", "api_error_submitted", old_row=old_row),
+            8: [stream("failed_tpm", old_row=old_row)] + ok_after,
+            9: stream("recovered", "api_error_submitted", old_row=old_row)}
+    e = Env(tmp_path, GPT_ROWS, by_order(spec), max_slots=1, gap=0)
+    e.run()
+    fin = {x["order"]: x for x in e.events("finished")}
+    infra = {x["order"]: x for x in e.events("infra")}
+    assert sorted(infra) == [1, 4, 8] and all(x["reason"] == "api_error" for x in infra.values())
+    assert [x["order"] for x in e.events("requeued")] == [1, 4, 8]
+    assert {o: x["status"] for o, x in fin.items()} == {
+        1: "ok", 2: "fail:no_submission", 3: "fail:no_submission", 4: "ok", 5: "fail:no_submission",
+        6: "fail:timeout", 7: "ok", 8: "ok", 9: "ok"}
+    assert fin[2]["flags"] == ["agent_error_context", "manual_look"]
+    assert fin[3]["flags"] == ["agent_error_refusal", "manual_look"]
+    assert fin[5]["flags"] == fin[6]["flags"] == ["codex_error_recovered", "manual_look"]
+    assert fin[7]["flags"] == ["api_error_after_submit"] and fin[9]["flags"] == ["codex_error_recovered"]
+    # a counted fail and a run with a submission are never run again; each infra job exactly once more
+    assert sorted((x["order"], x["attempt"]) for x in e.events("launched")) == sorted(
+        [(o, 1) for o in range(1, 10)] + [(1, 2), (4, 2), (8, 2)])
+    assert e.summary["recorded"] == 9 and e.summary["infra"] == {"api_error": 3}
+    # the failure message: ledger event and the batch's list of excluded runs
+    assert infra[1]["message"] == MSG_QUOTA and infra[4]["message"] == MSG_QUOTA
+    assert infra[8]["message"] == MSG_TPM.replace("org-Ab12Cd34Ef56Gh78", "org-[removed]")
+    assert infra[1]["agent_error"] == {"terminal": True, "kind": "api", "type": "turn.failed", "n_error_events": 2,
+                                       "source": "events_file" if old_row else "row"}
+    assert infra[4]["agent_error"]["type"] == "error"
+    assert infra[1]["flags"] == [] and infra[4]["flags"] == ["codex_trailing_error"] and infra[8]["flags"] == []
+    assert "excluded: order 4 attempt 1 cid " + infra[4]["cid"] + " api_error (codex_trailing_error): " + MSG_QUOTA \
+        in bs.format_summary(e.summary)
+    assert fin[2]["message"] == MSG_CONTEXT and fin[3]["message"] == MSG_FLAGGED
+    assert fin[5]["message"] == EV_RETRY["message"] and fin[5]["agent_error"]["terminal"] is False
+    assert "message" not in fin[1] and "agent_error" not in fin[1]       # the re-run had no error event
+    listed = [json.loads(l) for l in (e.cfg.rollouts / "r1112_gpt_bb8" / "infra_failures.jsonl").read_text().splitlines()]
+    assert [sorted(r) for r in listed] == [["cid", "message", "reason"]] * 3
+    assert {r["cid"]: r["message"] for r in listed} == {infra[o]["cid"]: infra[o]["message"] for o in (1, 4, 8)}
+    assert all(r["reason"].startswith("api_error: no accepted submission") for r in listed)
+    assert "Ab12Cd34" not in e.cfg.ledger.read_text() + json.dumps(listed) + e.cfg.runlog.read_text() + "".join(e.said)
+    # every infra:api_error paused OpenAI for 15 minutes; the context / refusal / recovered runs did not
+    launched = {(x["order"], x["attempt"]): x["ts"] for x in e.events("launched")}
+    assert all(x["pause_until"] == bs.iso(x["ts"] + bs.PAUSE_S) for x in infra.values())
+    assert launched[(2, 1)] - infra[1]["ts"] >= bs.PAUSE_S and launched[(5, 1)] - infra[4]["ts"] >= bs.PAUSE_S
+    assert launched[(3, 1)] - fin[2]["ts"] < 60 and launched[(4, 1)] - fin[3]["ts"] < 60
+    assert launched[(6, 1)] - fin[5]["ts"] < 60 and launched[(7, 1)] - fin[6]["ts"] < 60
+    assert "excluded: order 1 attempt 1" in bs.format_summary(e.summary) and MSG_QUOTA in bs.format_summary(e.summary)
+    # the scorer excludes the three listed runs and nothing else
+    sn = _load("score_naming")
+    assert sn.infra_cids(e.cfg.rollouts / "r1112_gpt_bb8") == {x["cid"] for x in infra.values()}
+
+
+@pytest.mark.parametrize("old_row", [False, True])
+def test_codex_stream_that_ends_in_an_error_event_at_the_hard_stop_is_rerun_and_flagged(tmp_path, old_row):
+    """The pre-registered rule read literally: the stream ends with an `error` event, so the run is an
+    infrastructure failure and is re-run, also when the 5400 s stop cut the CLI off in a reconnect. The event
+    says so (timeout, trailing error, manual_look), and --summary prints it."""
+    spec = {1: [stream("retry_at_stop", old_row=old_row, row={"timeout": True}), {"outcome": "ok"}]}
+    e = Env(tmp_path, GPT_ROWS[:1], by_order(spec), gap=0)
+    e.run()
+    infra = e.events("infra")
+    assert len(infra) == 1 and infra[0]["reason"] == "api_error" and infra[0]["message"] == EV_RETRY["message"]
+    assert infra[0]["flags"] == ["codex_trailing_error", "api_error_at_timeout", "manual_look"]
+    assert [x["attempt"] for x in e.events("launched")] == [1, 2] and e.events("finished")[0]["status"] == "ok"
+    assert "api_error (codex_trailing_error, api_error_at_timeout, manual_look): " + EV_RETRY["message"] \
+        in bs.format_summary(e.summary)
+    assert "(codex_trailing_error, api_error_at_timeout, manual_look)" in e.cfg.runlog.read_text()
+
+
+def test_three_codex_api_errors_in_a_row_stop_openai_but_agent_failures_do_not(tmp_path):
+    bad = [stream("failed_api")] * 3
+    e = Env(tmp_path, GPT_ROWS[:5] + [(H, "bb8", "ep472", 1)], by_order({1: bad, 2: bad, 3: bad}), gap=0)
+    e.run()
+    stop = e.events("infra_stop")
+    assert len(stop) == 1 and stop[0]["provider"] == "openai" and stop[0]["streak"] == 3
+    assert sorted(x["order"] for x in e.events("finished")) == [6]       # Haiku keeps going
+    assert e.events("end")[0]["stopped"] == {"openai": "infra_stop"}
+    # context-window failures and recovered errors are counted fails: no streak, no stop, no pause, no re-run
+    own = [stream("failed_context"), stream("failed_refusal"), stream("recovered"), stream("failed_context")]
+    f = Env(tmp_path / "b", GPT_ROWS[:5], by_order(dict(enumerate(own, 1))), gap=0)
+    f.run()
+    assert not f.events("infra", "infra_stop", "requeued") and f.summary["recorded"] == 5
+    assert len(f.events("launched")) == 5 and not any("paused" in t for t in f.said)
+    assert not list(f.cfg.rollouts.glob("*/infra_failures.jsonl"))
+
+
+def test_codex_harness_api_error_that_cannot_be_read_is_a_flagged_fail_not_a_rerun(tmp_path):
+    """An old row (no agent_error) and no codex_events.jsonl in the run directory: nothing says an API error
+    ended the agent, so the job is not re-run by itself; a person looks."""
+    e = Env(tmp_path, GPT_ROWS[:2], by_order({1: {"outcome": "api_error", "old_row": True}}))
+    e.run()
+    fin = {x["order"]: x for x in e.events("finished")}
+    assert fin[1]["status"] == "fail:no_submission" and fin[1]["flags"] == ["agent_error_unknown", "manual_look"]
+    assert not e.events("infra") and len(e.events("launched")) == 2
+
+
+def test_claude_api_error_rule_is_the_main_studys_and_its_message_is_the_matched_string(tmp_path):
+    line = json.dumps({"type": "assistant", "isApiErrorMessage": True, "message": {"content": [
+        {"type": "text", "text": "API Error: 529 overloaded_error"}]}}, separators=(",", ":")) + "\n"
+    rows = [(H, "bb8", "ep472", 1), (H, "bb8", "ep474", 1), (H, "open8", "ep472", 1), (H, "bb8", "ep476", 1)]
+    spec = {1: [{"outcome": "api_error", "minutes": 2, "row": {"agent_error": {
+                "terminal": None, "kind": "api", "type": "isApiErrorMessage", "message": "rate_limit_error",
+                "n_error_events": 3}}}, {"outcome": "ok"}],
+            # an older collector's row: the message is read from the transcripts with the collector's function
+            2: [{"outcome": "api_error", "minutes": 2, "old_row": True, "files": {"transcript_a.jsonl": line}},
+                {"outcome": "ok"}],
+            # harness_status decides for Claude Code, not agent_error: a Codex-shaped "recovered" dict changes nothing
+            4: [{"outcome": "api_error", "minutes": 2, "row": {"agent_error": AE_RECOVERED}}, {"outcome": "ok"}],
+            3: {"outcome": "api_error_submitted"}}                       # a success in between: no infra_stop
+    e = Env(tmp_path, rows, by_order(spec), max_slots=1, gap=0)
+    e.run()
+    infra = {x["order"]: x for x in e.events("infra")}
+    assert sorted(infra) == [1, 2, 4] and all(x["reason"] == "api_error" for x in infra.values())
+    assert all(x["pause_until"] == bs.iso(x["ts"] + bs.PAUSE_S) for x in infra.values())
+    assert infra[1]["message"] == "rate_limit_error" and infra[2]["message"] == "overloaded_error"
+    assert infra[2]["agent_error"]["source"] == "transcripts"
+    fin = {x["order"]: x for x in e.events("finished")}
+    assert fin[3]["status"] == "ok" and fin[3]["flags"] == ["api_error_after_submit"]
+    assert fin[3]["message"] == "overloaded_error"                       # the fake collector's default string
+    assert e.summary["recorded"] == 4 and len(e.events("launched")) == 7
+    listed = [json.loads(l) for l in (e.cfg.rollouts / "r1112_haiku_bb8" / "infra_failures.jsonl").read_text().splitlines()]
+    assert [r["message"] for r in listed] == ["rate_limit_error", "overloaded_error", "Reconnecting... 2/5"]
+
+
+def test_no_secret_from_a_failure_message_reaches_the_ledger_or_the_lists(tmp_path):
+    """The scheduler scrubs the message again, whatever wrote the row (here: a row that was not scrubbed)."""
+    raw = (f"unexpected status 401: Incorrect API key provided: {SECRET}. Authorization: Bearer abc.def.ghi "
+           + "and so on " * 60)
+    spec = {1: [{"outcome": "api_error", "row": {"agent_error": ae(True, "api", "turn.failed", raw, 2)}}, {"outcome": "ok"}],
+            2: {"outcome": "no_grade", "row": {"agent_error": ae(False, None, None, raw, 1)}}}
+    e = Env(tmp_path, GPT_ROWS[:2], by_order(spec), gap=0)
+    e.run()
+    infra = {x["order"]: x for x in e.events("infra")}
+    assert infra[1]["message"].startswith("unexpected status 401: Incorrect API key provided: [key removed]")
+    assert len(infra[1]["message"]) == 300 and infra[2]["reason"] == "no_grade" and infra[2]["message"] == infra[1]["message"]
+    everything = (e.cfg.ledger.read_text() + e.cfg.runlog.read_text() + "".join(e.said) + bs.format_summary(e.summary)
+                  + "".join(p.read_text() for p in e.cfg.rollouts.glob("*/infra_failures.jsonl")))
+    assert SECRET not in everything and "sk-" not in everything and "abc.def.ghi" not in everything
+    # an infrastructure failure without any error message says so with a null
+    f = Env(tmp_path / "b", GPT_ROWS[:1], by_order({1: [{"outcome": "no_grade"}, {"outcome": "ok"}]}))
+    f.run()
+    assert f.events("infra")[0]["message"] is None and "agent_error" not in f.events("infra")[0]
+    assert "excluded: order 1 attempt 1" in bs.format_summary(f.summary) and "no error message" in bs.format_summary(f.summary)
 
 
 # ---------------------------------------------------------------- the runner died, the container did not
@@ -1273,8 +1585,25 @@ class FakeHost:
         return self.n
 
 
+SR = bs.STUDY_RESULTS
+CODE = ("scripts/blackbox_schedule.py", "scripts/collect_rollouts.py")   # what a scheduler process runs
+
+
+def write_prereg_hash(e, rels=None, edit=None):
+    """PREREG_HASH as `sha256sum <rels>` run from the repository root (here: tmp_path) prints it."""
+    lines = [f"{bs.sha256_file(e.tmp / rel)}  {rel}\n" for rel in (e.prereg_files if rels is None else rels)]
+    (e.cfg.results / "PREREG_HASH").write_text("".join(edit(lines) if edit else lines))
+
+
 def preflight_env(tmp_path, rows=None, **kw):
-    e = Env(tmp_path, rows or mixed(6), **kw)
+    """A block whose "repository" is tmp_path: results/blackbox_1112/ with prereg.md and both run orders (and
+    the block's own, if it is another), scripts/<the five>. The scheduler and the collector of that repository
+    are copies of the real ones and are "what this process runs" (Config.code), as in a real start."""
+    kw.setdefault("code", {rel: tmp_path / rel for rel in CODE})
+    e = Env(tmp_path, rows or mixed(6), subdir=SR, results=SR, repo=tmp_path, **kw)
+    for n in bs.PREREG_RUNORDERS:
+        if not (e.cfg.results / n).exists():
+            write_runorder(e.cfg.results / n, [(G, "open64", "ep411", 1)])
     task = e.cfg.task_dir
     (task / "scripts").mkdir(parents=True)
     (task.parents[1] / "tools").mkdir()
@@ -1283,8 +1612,15 @@ def preflight_env(tmp_path, rows=None, **kw):
         p.write_text("")
     (task / "problems.txt").write_text("# comment\n" + "".join(f"{j.problem}  # x\n" for j in e.jobs) + "ep481-open\n")
     (e.cfg.results / "prereg.md").write_text("# prereg\n")
-    (e.cfg.results / "PREREG_HASH").write_text(
-        f"{bs.sha256_file(e.cfg.results / 'prereg.md')}  prereg.md\n{bs.sha256_file(e.runorder)}  {e.runorder.name}\n")
+    (tmp_path / "scripts").mkdir()
+    for rel in bs.PREREG_SCRIPTS:
+        (tmp_path / rel).write_text(f"# stand-in for {rel}\n")
+    for rel in CODE:
+        (tmp_path / rel).write_bytes((ROOT / rel).read_bytes())
+    e.prereg_files = [f"{SR}/prereg.md", *(f"{SR}/{n}" for n in bs.PREREG_RUNORDERS),
+                      *([f"{SR}/{e.runorder.name}"] if e.runorder.name not in bs.PREREG_RUNORDERS else []),
+                      *bs.PREREG_SCRIPTS]
+    write_prereg_hash(e)
     e.cfg.runlog.write_text(bs.RUNLOG_HEADER + "| t | exp_e | exp_e | all | - | ok | 0.52 | 0.02 | 0.50 |\n")
     e.host = FakeHost()
     return e
@@ -1303,7 +1639,11 @@ def test_preflight_passes_and_names_no_secret(tmp_path):
                            "prereg", "runlog", "spend:openai", "spend:anthropic"}
     assert "ANTHROPIC_API_KEY" in checks["env"].detail
     assert SECRET not in json.dumps([list(c) for c in checks.values()])
-    assert e.host.asked == [["prereg.md", "PREREG_HASH", e.runorder.name]]
+    assert e.host.asked == [["prereg.md", "runorder_block1.csv", "runorder_block2.csv", "score_naming.py",
+                             "blackbox_analysis.py", "s3_coder.py", "collect_rollouts.py", "blackbox_schedule.py",
+                             "PREREG_HASH"]]
+    assert ("all 8 files listed in PREREG_HASH have its sha256 (prereg.md, 2 run orders, 5 scripts) and this process "
+            "runs the listed scheduler and collector") in checks["prereg"].detail
     assert "0.02 + estimate for 3 remaining jobs = 4.52" in checks["spend:openai"].detail
 
 
@@ -1334,10 +1674,69 @@ def test_preflight_passes_and_names_no_secret(tmp_path):
     ("net_isolation", lambda e: setattr(e.host, "net", (False, "NOT OK: no REJECT rule")), "no REJECT"),
     ("prereg", lambda e: (e.cfg.results / "PREREG_HASH").unlink(), "missing: PREREG_HASH"),
     ("prereg", lambda e: (e.cfg.results / "prereg.md").unlink(), "missing: prereg.md"),
-    ("prereg", lambda e: (e.cfg.results / "prereg.md").write_text("# prereg, edited\n"), "different for: prereg.md"),
-    ("prereg", lambda e: (e.cfg.results / "PREREG_HASH").write_text(
-        f"{bs.sha256_file(e.cfg.results / 'prereg.md')}  prereg.md\n"), "different for: runorder_block1.csv"),
+    ("prereg", lambda e: (e.cfg.results / "prereg.md").write_text("# prereg, edited\n"),
+     f"sha256 differs from PREREG_HASH for: {SR}/prereg.md"),
+    ("prereg", lambda e: e.runorder.write_text(e.runorder.read_text() + "\n"),
+     f"sha256 differs from PREREG_HASH for: {SR}/runorder_block1.csv"),
+    ("prereg", lambda e: write_prereg_hash(e, e.prereg_files[:1]),
+     f"PREREG_HASH has no entry for: {SR}/runorder_block1.csv, {SR}/runorder_block2.csv, scripts/score_naming.py"),
+    ("prereg", lambda e: write_prereg_hash(e, e.prereg_files[1:]), f"PREREG_HASH has no entry for: {SR}/prereg.md"),
+    # BOTH run-order files are pre-registered: Block 1 does not start on a hash without Block 2's order
+    ("prereg", lambda e: write_prereg_hash(e, [r for r in e.prereg_files if "block2" not in r]),
+     f"PREREG_HASH has no entry for: {SR}/runorder_block2.csv"),
+    # CR LF line ends: not what sha256sum writes, and `sha256sum -c` cannot read them
+    ("prereg", lambda e: (e.cfg.results / "PREREG_HASH").write_bytes(
+        (e.cfg.results / "PREREG_HASH").read_bytes().replace(b"\n", b"\r\n")), "carriage returns"),
+    # a listed file that is a symbolic link, also one whose target has the recorded hash
+    ("prereg", lambda e: ((e.tmp / "elsewhere.py").write_bytes((e.tmp / "scripts/s3_coder.py").read_bytes()),
+                          (e.tmp / "scripts/s3_coder.py").unlink(),
+                          (e.tmp / "scripts/s3_coder.py").symlink_to(e.tmp / "elsewhere.py")),
+     "listed in PREREG_HASH but not a file of the repository: scripts/s3_coder.py"),
+    # the scheduler that runs is not the repository's (a copy elsewhere, edited), nor is its collector
+    ("prereg", lambda e: ((e.tmp / "alt").mkdir(), (e.tmp / "alt/blackbox_schedule.py").write_text("STOP_STREAK = 99\n"),
+                          e.cfg.code.update({"scripts/blackbox_schedule.py": e.tmp / "alt/blackbox_schedule.py"})),
+     "this process does not run the code PREREG_HASH lists: scripts/blackbox_schedule.py (running: "),
+    ("prereg", lambda e: e.cfg.code.update({"scripts/collect_rollouts.py": e.tmp / "gone.py"}),
+     "this process does not run the code PREREG_HASH lists: scripts/collect_rollouts.py"),
     ("prereg", lambda e: setattr(e.host, "git", (False, "prereg.md has uncommitted changes")), "uncommitted"),
+    ("prereg", lambda e: setattr(e.host, "git", (False, "blackbox_schedule.py is not committed")), "not committed"),
+    # the old format (written inside the results directory, bare names, no scripts) is refused by name
+    ("prereg", lambda e: (e.cfg.results / "PREREG_HASH").write_text("".join(
+        f"{bs.sha256_file(e.cfg.results / n)}  {n}\n" for n in ("prereg.md", "runorder_block1.csv", "runorder_block2.csv"))),
+     "the old format (bare file names"),
+    ("prereg", lambda e: (e.cfg.results / "PREREG_HASH").write_text(bs.sha256_file(e.cfg.results / "prereg.md") + "\n"),
+     "line 1 is not a `sha256sum` line"),
+    ("prereg", lambda e: write_prereg_hash(e, edit=lambda l: l + ["# D25: scripts/s3_coder.py changed\n"]),
+     "line 9 is not a `sha256sum` line"),
+    ("prereg", lambda e: write_prereg_hash(e, edit=lambda l: l + l[-1:]), "'scripts/blackbox_schedule.py' is listed twice"),
+    ("prereg", lambda e: write_prereg_hash(e, edit=lambda l: [l[0].replace("  results/", f"  {e.tmp}/results/")] + l[1:]),
+     "is not a path relative to the repository root"),
+    ("prereg", lambda e: write_prereg_hash(e, edit=lambda l: [l[0].replace("  results/", "  ./results/")] + l[1:]),
+     "is not a path relative to the repository root"),
+    ("prereg", lambda e: write_prereg_hash(e, edit=lambda l: [l[0].replace("  results/", "  scripts/../results/")] + l[1:]),
+     "is not a path relative to the repository root"),
+    ("prereg", lambda e: write_prereg_hash(e, edit=lambda l: [x.upper() if i == 3 else x for i, x in enumerate(l)]),
+     "line 4 is not a `sha256sum` line"),
+    # every listed file is verified: the other block's run order, and a file the block does not need at all
+    ("prereg", lambda e: (e.cfg.results / "runorder_block2.csv").write_text("y\n"),
+     f"sha256 differs from PREREG_HASH for: {SR}/runorder_block2.csv"),
+    ("prereg", lambda e: (e.cfg.results / "runorder_block2.csv").unlink(),
+     f"listed in PREREG_HASH but not a file of the repository: {SR}/runorder_block2.csv"),
+    ("prereg", lambda e: (e.prereg_files.append("task.py"), (e.tmp / "task.py").write_text("x\n"), write_prereg_hash(e),
+                          (e.tmp / "task.py").write_text("y\n")), "sha256 differs from PREREG_HASH for: task.py"),
+    ("prereg", lambda e: (e.prereg_files.append("task.py"), (e.tmp / "task.py").write_text("x\n"), write_prereg_hash(e),
+                          (e.tmp / "task.py").unlink()), "listed in PREREG_HASH but not a file of the repository: task.py"),
+    # the study's own results directory and a run order that is a file in it: nothing else is this study's state
+    ("runorder", lambda e: setattr(e.cfg, "repo", e.tmp / "elsewhere"), f"is not {SR} of the repository"),
+    ("runorder", lambda e: ((e.tmp / "results/alt").mkdir(), setattr(e.cfg, "results", e.tmp / "results/alt")),
+     f"is not {SR} of the repository"),
+    ("runorder", lambda e: ((e.tmp / "ro").mkdir(), (e.tmp / "ro/runorder_block1.csv").write_bytes(e.runorder.read_bytes()),
+                            setattr(e.cfg, "runorder", e.tmp / "ro/runorder_block1.csv")),
+     f"is a symbolic link or not a file directly in {SR}"),
+    ("runorder", lambda e: ((e.cfg.results / "runorder_block1_link.csv").symlink_to(e.runorder),
+                            setattr(e.cfg, "runorder", e.cfg.results / "runorder_block1_link.csv"),
+                            setattr(e.cfg, "block", "block1_link")),
+     f"is a symbolic link or not a file directly in {SR}"),
     ("runlog", lambda e: e.cfg.runlog.unlink(), "missing"),
     ("spend:anthropic", lambda e: e.cfg.cap.update(anthropic=7.0), "= 8.00 USD, cap 7.00"),
     ("spend:openai", lambda e: e.cfg.runlog.write_text(
@@ -1350,7 +1749,7 @@ def test_preflight_failures(tmp_path, name, breakit, expect):
     checks = run_preflight(e)
     assert not checks[name].ok and expect in checks[name].detail, checks[name]
     assert SECRET not in json.dumps([list(c) for c in checks.values()])
-    others = {"runorder": {"prereg"}, "runlog": {"spend:openai", "spend:anthropic"}}.get(name, set())
+    others = {"runorder": {"prereg", "runlog"}, "runlog": {"spend:openai", "spend:anthropic"}}.get(name, set())
     if "RL_TASK_IMAGE_SUFFIX" not in e.host.environ:
         others = {"env"}  # the unset name is reported there as well
     assert all(c.ok for n, c in checks.items() if n != name and n not in others), checks
@@ -1383,12 +1782,321 @@ def test_preflight_spend_projection_counts_only_jobs_not_yet_recorded(tmp_path):
     assert c.ok and "3.50 + estimate for 0 remaining jobs = 3.50" in c.detail
 
 
-def test_prereg_hashes_formats():
+@pytest.mark.parametrize("script", bs.PREREG_SCRIPTS)
+def test_preflight_needs_every_one_of_the_five_scripts_in_prereg_hash_and_unchanged(tmp_path, script):
+    e = preflight_env(tmp_path)
+    write_prereg_hash(e, [r for r in e.prereg_files if r != script])                 # no entry for it
+    c = run_preflight(e)["prereg"]
+    assert not c.ok and c.detail == f"PREREG_HASH has no entry for: {script}"
+    write_prereg_hash(e)
+    assert run_preflight(e)["prereg"].ok
+    (tmp_path / script).write_text(f"# stand-in for {script}, changed after the hash\n")  # changed after the hash
+    c = run_preflight(e)["prereg"]
+    assert not c.ok and f"sha256 differs from PREREG_HASH for: {script} " in c.detail and "logged deviation" in c.detail
+    write_prereg_hash(e)                                                            # written again (and committed)
+    assert run_preflight(e)["prereg"].ok
+    (tmp_path / script).unlink()
+    c = run_preflight(e)["prereg"]
+    assert not c.ok and f"not a file of the repository: {script}" in c.detail
+
+
+def test_preflight_needs_both_run_orders_in_prereg_hash_for_either_block(tmp_path):
+    """RUNBOOK section 6 writes one PREREG_HASH with both run-order files (prereg.md: "of both run-order
+    files"); either block's preflight needs both entries, so Block 2's order is fixed before Block 1 starts."""
+    e = preflight_env(tmp_path)
+    c = run_preflight(e)["prereg"]
+    assert c.ok and "all 8 files listed" in c.detail and "2 run orders" in c.detail and "more" not in c.detail
+    assert e.host.asked[-1][:3] == ["prereg.md", "runorder_block1.csv", "runorder_block2.csv"]
+    assert bs.prereg_required(e.cfg) == e.prereg_files
+    b2 = preflight_env(tmp_path / "b2", [(G, "open64", "ep411", 1)], name="runorder_block2.csv")
+    assert b2.cfg.block == "block2" and run_preflight(b2)["prereg"].ok and bs.prereg_required(b2.cfg) == e.prereg_files
+    for missing in ("runorder_block1.csv", "runorder_block2.csv"):
+        for env in (e, b2):
+            write_prereg_hash(env, [r for r in env.prereg_files if not r.endswith(missing)])
+            assert run_preflight(env)["prereg"].detail == f"PREREG_HASH has no entry for: {SR}/{missing}"
+            write_prereg_hash(env)
+    # another counted block (a logged deviation would add one) needs its own entry next to the two
+    b3 = preflight_env(tmp_path / "b3", [(G, "bb8", "ep411", 1)], name="runorder_block3.csv")
+    assert bs.prereg_required(b3.cfg)[1:4] == [f"{SR}/runorder_block1.csv", f"{SR}/runorder_block2.csv",
+                                               f"{SR}/runorder_block3.csv"]
+    c = run_preflight(b3)["prereg"]
+    assert c.ok and "all 9 files listed" in c.detail and "3 run orders" in c.detail
+    write_prereg_hash(b3, [r for r in b3.prereg_files if "block3" not in r])
+    assert run_preflight(b3)["prereg"].detail == f"PREREG_HASH has no entry for: {SR}/runorder_block3.csv"
+    # a file listed beyond what is required is verified and counted
+    (tmp_path / "task.py").write_text("x\n")
+    write_prereg_hash(e, e.prereg_files + ["task.py"])
+    c = run_preflight(e)["prereg"]
+    assert c.ok and "all 9 files listed" in c.detail and "5 scripts, 1 more" in c.detail
+
+
+def test_a_symlinked_run_order_or_another_results_directory_never_starts_a_pilot_either(tmp_path):
+    """A pilot has no prereg check, but its run order and results directory are the study's too: a link named
+    like a pilot to a block's order, or a results directory with a RUNLOG of its own, is refused."""
+    e = preflight_env(tmp_path, [(G, "bb8", "ep411", 1)], name="runorder_pilots.csv", pilot=True)
+    assert run_preflight(e)["runorder"].ok
+    link = e.cfg.results / "runorder_pilot_b1.csv"
+    link.symlink_to(e.cfg.results / "runorder_block1.csv")
+    e.cfg.runorder, e.cfg.block = link, bs.block_name(link)
+    c = run_preflight(e)["runorder"]
+    assert not c.ok and "symbolic link" in c.detail
+    f = preflight_env(tmp_path / "f", [(G, "bb8", "ep411", 1)], name="runorder_pilots.csv", pilot=True)
+    (f.tmp / "results/other").mkdir()
+    f.cfg.results = f.tmp / "results/other"
+    c = run_preflight(f)["runorder"]
+    assert not c.ok and f"is not {SR} of the repository" in c.detail
+
+
+def test_check_prereg_alone_refuses_a_linked_run_order_and_another_results_directory(tmp_path):
+    """--check-prereg runs check_prereg without the rest of the preflight: it must say so itself. A link
+    `runorder_block1_link.csv` to the committed order would be a new block `block1_link` of 108 unrecorded jobs;
+    a results directory of its own, committed with its own prereg.md, PREREG_HASH and order, another study."""
+    e = preflight_env(tmp_path)
+    assert bs.check_prereg(e.cfg, e.host)[0]
+    link = e.cfg.results / "runorder_block1_link.csv"
+    link.symlink_to(e.runorder)
+    cfg = bs.Config(link, "r1112", e.cfg.task_dir, e.cfg.results, repo=tmp_path, code=e.cfg.code)
+    assert cfg.block == "block1_link"
+    ok, detail = bs.check_prereg(cfg, e.host)
+    assert not ok and "is a symbolic link or not a file directly in results/blackbox_1112" in detail
+    alt = tmp_path / "results" / "alt"
+    alt.mkdir()
+    for n in ("prereg.md", "runorder_block1.csv", "runorder_block2.csv"):
+        (alt / n).write_bytes((e.cfg.results / n).read_bytes())
+    (alt / "PREREG_HASH").write_text("".join(
+        f"{bs.sha256_file(tmp_path / rel)}  {rel}\n" for rel in
+        ["results/alt/prereg.md", "results/alt/runorder_block1.csv", "results/alt/runorder_block2.csv", *bs.PREREG_SCRIPTS]))
+    cfg = bs.Config(alt / "runorder_block1.csv", "r1112", e.cfg.task_dir, alt, repo=tmp_path, code=e.cfg.code)
+    ok, detail = bs.check_prereg(cfg, e.host)
+    assert not ok and detail == f"--results {alt} is not results/blackbox_1112 of the repository {tmp_path}"
+
+
+def test_the_running_code_is_checked_against_prereg_hash_by_default(tmp_path):
+    """Config.code defaults to the files this process loaded: the real scheduler and the collector next to it.
+    A repository whose listed scheduler is another file than the one that runs fails the check."""
+    cfg = bs.Config(ROOT / SR / "runorder_block1.csv", "r1112", tmp_path, ROOT / SR)
+    assert cfg.code == {"scripts/blackbox_schedule.py": Path(bs.__file__).resolve(),
+                        "scripts/collect_rollouts.py": Path(bs.CR.__file__).resolve()}
+    assert cfg.code == {rel: ROOT / rel for rel in CODE}
+    e = preflight_env(tmp_path / "r")
+    e.cfg.code = dict(cfg.code)                                          # the real files: the copies are equal
+    assert run_preflight(e)["prereg"].ok
+    (e.tmp / "scripts/blackbox_schedule.py").write_text("# the repository's scheduler, changed\n")
+    write_prereg_hash(e)                                                 # hashed and (FakeHost) committed
+    c = run_preflight(e)["prereg"]
+    assert not c.ok and "this process does not run the code PREREG_HASH lists: scripts/blackbox_schedule.py" in c.detail
+
+
+def test_prereg_hashes_format():
     h1, h2 = "a" * 64, "b" * 64
-    assert bs.prereg_hashes(f"{h1}  prereg.md\n{h2} *results/blackbox_1112/runorder_block1.csv\n# note\n") == {
-        "prereg.md": h1, "runorder_block1.csv": h2}
-    assert bs.prereg_hashes(f"{h1}\n") == {"prereg.md": h1}
-    assert bs.prereg_hashes("not a hash  prereg.md\n") == {}
+    text = f"{h1}  results/blackbox_1112/prereg.md\n{h2} *scripts/s3_coder.py\n\n"
+    assert bs.prereg_hashes(text) == ({"results/blackbox_1112/prereg.md": h1, "scripts/s3_coder.py": h2}, [])
+    assert bs.prereg_hashes(f"{h1}  task.py\n") == ({"task.py": h1}, [])       # a file at the root is a path too
+    for bad, why in ((f"{h1}  prereg.md\n", "old format"), (f"{h1}  runorder_block1.csv\n", "old format"),
+                     (f"{h1}\n", "not a `sha256sum` line"), (f"{h1} prereg.md\n", "not a `sha256sum` line"),
+                     ("# note\n", "not a `sha256sum` line"), (f"{'a' * 63}  scripts/x.py\n", "not a `sha256sum` line"),
+                     (f"{h1}  /abs/prereg.md\n", "not a path relative"), (f"{h1}  a/../b\n", "not a path relative"),
+                     (f"{h1}  a//b\n", "not a path relative"),
+                     (f"{h1}  scripts/x.py\n{h2}  scripts/x.py\n", "listed twice"),
+                     (f"{h1}  scripts/x.py\r\n", "carriage returns"), (f"{h1}  scripts/x.py\r", "carriage returns")):
+        entries, problems = bs.prereg_hashes(bad)
+        assert len(problems) >= 1 and why in problems[0], (bad, problems)
+        assert len(problems) == 1 or "\r" in bad
+
+
+def test_prereg_hash_format_is_what_sha256sum_prints_from_the_repository_root(tmp_path):
+    """The RUNBOOK command, run for real in a stand-in repository, gives a file the preflight accepts."""
+    import subprocess
+    e = preflight_env(tmp_path)
+    out = subprocess.run(["sha256sum", *e.prereg_files], cwd=tmp_path, capture_output=True, text=True, check=True).stdout
+    assert out == (e.cfg.results / "PREREG_HASH").read_text()
+    assert bs.prereg_hashes(out) == ({rel: bs.sha256_file(tmp_path / rel) for rel in e.prereg_files}, [])
+    # run inside the results directory (the old command), it gives bare names: refused
+    old = subprocess.run(["sha256sum", "prereg.md", e.runorder.name], cwd=e.cfg.results, capture_output=True, text=True,
+                         check=True).stdout
+    (e.cfg.results / "PREREG_HASH").write_text(old)
+    c = run_preflight(e)["prereg"]
+    assert not c.ok and "old format" in c.detail and "RUNBOOK section 6" in c.detail
+
+
+def test_the_real_prereg_scripts_exist_and_the_default_repository_is_this_one(tmp_path):
+    for rel in bs.PREREG_SCRIPTS:
+        assert (ROOT / rel).is_file(), rel
+    assert bs.PREREG_SCRIPTS == ("scripts/score_naming.py", "scripts/blackbox_analysis.py", "scripts/s3_coder.py",
+                                 "scripts/collect_rollouts.py", "scripts/blackbox_schedule.py")
+    cfg = bs.Config(ROOT / "results" / "blackbox_1112" / "runorder_block1.csv", "r1112", tmp_path, ROOT / "results" / "blackbox_1112")
+    assert bs.STUDY_RESULTS == "results/blackbox_1112" and bs.PREREG_RUNORDERS == ("runorder_block1.csv", "runorder_block2.csv")
+    assert cfg.repo == ROOT and bs.study_paths_problem(cfg) is None and bs.prereg_required(cfg) == [
+        "results/blackbox_1112/prereg.md", "results/blackbox_1112/runorder_block1.csv",
+        "results/blackbox_1112/runorder_block2.csv", *bs.PREREG_SCRIPTS]
+    for n in bs.PREREG_RUNORDERS:
+        assert (ROOT / bs.STUDY_RESULTS / n).is_file() and not (ROOT / bs.STUDY_RESULTS / n).is_symlink()
+    prereg = ROOT / "results" / "blackbox_1112" / "prereg.md"
+    if prereg.exists():                                                  # the scope prereg.md states
+        for rel in bs.PREREG_SCRIPTS:
+            assert f"`{rel}`" in prereg.read_text(), rel
+
+
+def git_repo(tmp_path):
+    """preflight_env in a real git repository with everything committed -> (env, git, paths, host)."""
+    import subprocess
+    git = lambda *a: subprocess.run(["git", "-C", str(tmp_path), "-c", "user.name=t", "-c", "user.email=t@example.invalid",
+                                     *a], capture_output=True, text=True, check=True)
+    e = preflight_env(tmp_path)
+    git("init", "-q")
+    paths = [tmp_path / rel for rel in e.prereg_files] + [e.cfg.results / "PREREG_HASH"]
+    host = bs.Host(e.cfg)
+    e.host.git_committed = host.git_committed                           # the whole check, with real git
+    return e, git, paths, host
+
+
+def test_host_git_committed_needs_every_file_tracked_and_unchanged(tmp_path):
+    """The real Host against a real git repository: committed and clean passes; an untracked file, a change in
+    the work tree and a staged change each fail, naming the file by its path in the repository."""
+    e, git, paths, host = git_repo(tmp_path)
+    assert host.git_committed(paths) == (False, f"{SR}/prereg.md is not committed (HEAD has no such file)")
+    git("add", SR, "scripts")
+    git("commit", "-q", "-m", "prereg")
+    assert host.git_committed(paths) == (True, "each is the file HEAD holds, no uncommitted change")
+    c = run_preflight(e)["prereg"]
+    assert c.ok and c.detail.endswith("each is the file HEAD holds, no uncommitted change")
+    script = tmp_path / "scripts" / "s3_coder.py"
+    script.write_text("# changed after the hash\n")
+    assert "sha256 differs from PREREG_HASH for: scripts/s3_coder.py" in run_preflight(e)["prereg"].detail
+    write_prereg_hash(e)                                                # hash written again, nothing committed yet
+    c = run_preflight(e)["prereg"]
+    assert not c.ok and c.detail == "scripts/s3_coder.py has uncommitted changes (the file is not what HEAD holds)"
+    git("add", "scripts/s3_coder.py")                                   # staged is not committed
+    assert run_preflight(e)["prereg"].detail == "scripts/s3_coder.py has uncommitted changes (the file is not what HEAD holds)"
+    git("commit", "-q", "-m", "script")
+    assert run_preflight(e)["prereg"].detail == f"{SR}/PREREG_HASH has uncommitted changes (the file is not what HEAD holds)"
+    git("commit", "-q", "-am", "hash")
+    assert run_preflight(e)["prereg"].ok
+    # staged, then the work tree put back: the file is HEAD's again, but the index holds another version
+    old = script.read_text()
+    script.write_text("# staged only\n")
+    git("add", "scripts/s3_coder.py")
+    script.write_text(old)
+    c = run_preflight(e)["prereg"]
+    assert not c.ok and c.detail.startswith("scripts/s3_coder.py has uncommitted changes (git status: M")
+    git("reset", "-q")
+    assert run_preflight(e)["prereg"].ok
+    # an untracked file listed in PREREG_HASH
+    (tmp_path / "task.py").write_text("x\n")
+    write_prereg_hash(e, e.prereg_files + ["task.py"])
+    git("commit", "-q", "-am", "hash with task.py")
+    assert run_preflight(e)["prereg"].detail == "task.py is not committed (HEAD has no such file)"
+    # a path outside the repository, and a repository that is not the top level
+    assert host.git_committed([tmp_path.parent / "x"])[1].endswith(f"is not inside the repository {tmp_path}")
+    sub = bs.Host(bs.Config(e.runorder, "r1112", e.cfg.task_dir, e.cfg.results, repo=tmp_path / "scripts"))
+    assert sub.git_committed([script]) == (False, f"{tmp_path / 'scripts'} is not the top level of a git work tree "
+                                           "(git rev-parse failed or names another)")
+    nogit = tmp_path.parent / (tmp_path.name + "_nogit")
+    nogit.mkdir()
+    assert not bs.Host(bs.Config(e.runorder, "r1112", e.cfg.task_dir, e.cfg.results, repo=nogit)).git_committed([])[0]
+
+
+@pytest.mark.parametrize("flag", ["--assume-unchanged", "--skip-worktree"])
+def test_git_index_flags_cannot_hide_an_uncommitted_change(tmp_path, flag):
+    """`git update-index --assume-unchanged / --skip-worktree` make `git status` silent about a changed file;
+    the check compares the file with HEAD's content and does not ask the index."""
+    import subprocess
+    e, git, paths, host = git_repo(tmp_path)
+    git("add", SR, "scripts")
+    git("commit", "-q", "-m", "prereg")
+    (tmp_path / "scripts/s3_coder.py").write_text("# changed after the hash\n")
+    write_prereg_hash(e)
+    git("update-index", flag, "scripts/s3_coder.py", f"{SR}/PREREG_HASH")
+    status = subprocess.run(["git", "-C", str(tmp_path), "status", "--porcelain"], capture_output=True, text=True).stdout
+    assert status.strip() == "" or "s3_coder" not in status              # git status does not show it
+    c = run_preflight(e)["prereg"]
+    assert not c.ok and c.detail == "scripts/s3_coder.py has uncommitted changes (the file is not what HEAD holds)"
+
+
+def test_a_git_that_fails_is_a_failed_check_never_a_pass(tmp_path, monkeypatch):
+    """`git status` exiting non-zero (a broken configuration value), git not runnable at all, and GIT_*
+    variables of the environment: none of them lets an uncommitted change through, or fails a clean tree."""
+    import subprocess
+    e, git, paths, host = git_repo(tmp_path)
+    git("add", SR, "scripts")
+    git("commit", "-q", "-m", "prereg")
+    assert run_preflight(e)["prereg"].ok
+    (tmp_path / "scripts/s3_coder.py").write_text("# changed after the hash\n")
+    write_prereg_hash(e)                                                 # nothing committed
+    git("config", "status.showUntrackedFiles", "bogus")                  # `git status` now exits 128
+    assert subprocess.run(["git", "-C", str(tmp_path), "status", "--porcelain"], capture_output=True).returncode != 0
+    c = run_preflight(e)["prereg"]                                       # (the old check read this as "clean")
+    assert not c.ok and c.detail.startswith(f"`git status` failed for {SR}/prereg.md (exit ")
+    assert host.git_committed([tmp_path / "scripts/s3_coder.py"]) == (
+        False, "scripts/s3_coder.py has uncommitted changes (the file is not what HEAD holds)")
+    git("config", "--unset", "status.showUntrackedFiles")                # (git commit needs a valid value)
+    git("commit", "-q", "-am", "script and hash")
+    git("config", "status.showUntrackedFiles", "bogus")                  # committed: only the failing status is left
+    c = run_preflight(e)["prereg"]
+    assert not c.ok and c.detail.startswith(f"`git status` failed for {SR}/prereg.md (exit ")
+    git("config", "--unset", "status.showUntrackedFiles")
+    assert run_preflight(e)["prereg"].ok
+    # the same breakage through the environment does not reach git, nor does a GIT_DIR of another repository
+    monkeypatch.setenv("GIT_CONFIG_COUNT", "1")
+    monkeypatch.setenv("GIT_CONFIG_KEY_0", "status.showUntrackedFiles")
+    monkeypatch.setenv("GIT_CONFIG_VALUE_0", "bogus")
+    monkeypatch.setenv("GIT_DIR", str(tmp_path / "no_such_git_dir"))
+    assert run_preflight(e)["prereg"].ok
+    for var in ("GIT_CONFIG_COUNT", "GIT_CONFIG_KEY_0", "GIT_CONFIG_VALUE_0", "GIT_DIR"):
+        monkeypatch.delenv(var)
+    # git cannot be run at all
+    real_run = subprocess.run
+    monkeypatch.setattr(bs.subprocess, "run", lambda cmd, *a, **k: (_ for _ in ()).throw(FileNotFoundError("git"))
+                        if cmd[0] == "git" else real_run(cmd, *a, **k))
+    c = run_preflight(e)["prereg"]
+    assert not c.ok and "is not the top level of a git work tree" in c.detail
+    assert host._git("status") == (127, b"")
+
+
+def test_committed_symbolic_links_are_not_files_of_the_pre_registration(tmp_path):
+    """A listed script, or PREREG_HASH itself, committed as a symbolic link to a file outside the repository:
+    git sees no change when the target changes, so a link is refused whatever it points to."""
+    e, git, paths, host = git_repo(tmp_path)
+    outside = tmp_path.parent / (tmp_path.name + "_outside")
+    outside.mkdir()
+    hashfile = e.cfg.results / "PREREG_HASH"
+    (outside / "PREREG_HASH").write_bytes(hashfile.read_bytes())
+    hashfile.unlink()
+    hashfile.symlink_to(outside / "PREREG_HASH")
+    git("add", SR, "scripts")
+    git("commit", "-q", "-m", "prereg, the hash file is a link")
+    c = run_preflight(e)["prereg"]
+    assert not c.ok and c.detail == f"{SR}/PREREG_HASH is a symbolic link or not a regular file"
+    assert host.git_committed([tmp_path / "scripts"])[1] == "scripts is a symbolic link or not a regular file"
+
+
+def test_start_event_records_the_prereg_hash_and_says_when_it_changed(tmp_path):
+    e = preflight_env(tmp_path, mixed(4))
+    hashfile = e.cfg.results / "PREREG_HASH"
+    first = bs.sha256_file(hashfile)
+    e.run(stop_after=60)                                                 # an interrupted start
+    e.run(stop_after=60)                                                 # the same PREREG_HASH: nothing to say
+    starts = e.events("start")
+    assert [x["prereg_hash_sha256"] for x in starts] == [first, first]
+    assert not any("prereg_hash_previous" in x for x in starts) and not any("PREREG_HASH" in t for t in e.said)
+    assert bs.summarize_ledger(e.events(), "block1")["prereg_hashes"] == [first]
+    assert "CHANGED" not in bs.format_summary(bs.summarize_ledger(e.events(), "block1"))
+    (tmp_path / "scripts/s3_coder.py").write_text("# changed after the hash: a logged deviation\n")
+    write_prereg_hash(e)                                                 # written again (and committed)
+    second = bs.sha256_file(hashfile)
+    assert second != first and run_preflight(e)["prereg"].ok
+    e.run()
+    last = e.events("start")[-1]
+    assert last["prereg_hash_sha256"] == second and last["prereg_hash_previous"] == first
+    said = [t for t in e.said if t.startswith("# PREREG_HASH is not the file of this block's last start")]
+    assert len(said) == 1 and first[:16] in said[0] and second[:16] in said[0] and "DECISIONS" in said[0]
+    text = bs.format_summary(e.summary)
+    assert e.summary["prereg_hashes"] == [first, second] and "CHANGED between starts" in text
+    assert f"{first[:16]}, {second[:16]}" in text
+    # a block without the file (a pilot) records null and prints no line
+    f = Env(tmp_path / "p", [(G, "bb8", "ep411", 1)], name="runorder_pilots.csv", pilot=True)
+    f.run()
+    assert f.events("start")[0]["prereg_hash_sha256"] is None and "PREREG_HASH" not in bs.format_summary(f.summary)
 
 
 # ---------------------------------------------------------------- command line
@@ -1401,6 +2109,7 @@ def cli_args(e, *extra):
 def test_main_aborts_on_a_preflight_failure_and_starts_nothing(tmp_path, monkeypatch, capsys):
     e = preflight_env(tmp_path)
     e.host.net = (False, "NOT OK: no REJECT rule")
+    monkeypatch.setattr(bs, "ROOT", tmp_path)  # main() builds its Config with this file's repository
     monkeypatch.setattr(bs, "Host", lambda cfg: e.host)
     built = []
     monkeypatch.setattr(bs, "RealLauncher", lambda cfg: built.append(cfg))
@@ -1410,9 +2119,32 @@ def test_main_aborts_on_a_preflight_failure_and_starts_nothing(tmp_path, monkeyp
     assert not built and not e.cfg.ledger.exists() and SECRET not in out.out + out.err
 
 
+def test_main_check_prereg_runs_only_that_check_and_starts_nothing(tmp_path, monkeypatch, capsys):
+    """RUNBOOK section 8 runs it before the hashed scoring and analysis scripts are used."""
+    e = preflight_env(tmp_path)
+    e.host.net = (False, "NOT OK: no REJECT rule")                      # no other check is run
+    monkeypatch.setattr(bs, "ROOT", tmp_path)  # main() builds its Config with this file's repository
+    monkeypatch.setattr(bs, "Host", lambda cfg: e.host)
+    monkeypatch.setattr(bs, "RealLauncher", lambda cfg: pytest.fail("--check-prereg must start nothing"))
+    assert bs.main(cli_args(e, "--check-prereg")) == 0
+    out = capsys.readouterr().out
+    assert out.startswith("  ok   prereg: all 8 files listed in PREREG_HASH") and "net_isolation" not in out
+    (tmp_path / "scripts/score_naming.py").write_text("# edited after Block 1 ended\n")
+    assert bs.main(cli_args(e, "--check-prereg")) == 1
+    assert "FAIL prereg: sha256 differs from PREREG_HASH for: scripts/score_naming.py" in capsys.readouterr().out
+    write_prereg_hash(e)
+    e.host.git = (False, "scripts/score_naming.py has uncommitted changes (the file is not what HEAD holds)")
+    assert bs.main(cli_args(e, "--check-prereg")) == 1
+    assert "FAIL prereg: scripts/score_naming.py has uncommitted changes" in capsys.readouterr().out
+    assert not e.cfg.ledger.exists() and not (e.cfg.task_dir / "results").exists()
+    assert bs.main(cli_args(e, "--check-prereg", "--dry-run", "--dry-run-dir", str(tmp_path / "dry"))) == 1
+    assert not (tmp_path / "dry" / "ledger.jsonl").exists()
+
+
 def test_main_dry_run_runs_the_whole_block_and_writes_no_real_state(tmp_path, monkeypatch, capsys):
     e = preflight_env(tmp_path, mixed(12))
     e.host.sync = (False, "DIFFERS scripts/collect_rollouts.py")  # a dry run reports it and goes on
+    monkeypatch.setattr(bs, "ROOT", tmp_path)  # main() builds its Config with this file's repository
     monkeypatch.setattr(bs, "Host", lambda cfg: e.host)
     monkeypatch.setattr(bs, "RealLauncher", lambda cfg: pytest.fail("a dry run must not build the real launcher"))
     before = e.cfg.runlog.read_text()
@@ -1437,6 +2169,7 @@ def test_main_dry_run_runs_the_whole_block_and_writes_no_real_state(tmp_path, mo
 
 def test_dry_run_preflight_reads_the_real_ledger_and_runlog_every_time(tmp_path, monkeypatch, capsys):
     e = preflight_env(tmp_path, mixed(12))
+    monkeypatch.setattr(bs, "ROOT", tmp_path)  # main() builds its Config with this file's repository
     monkeypatch.setattr(bs, "Host", lambda cfg: e.host)
     monkeypatch.setattr(bs, "RealLauncher", lambda cfg: pytest.fail("a dry run must not build the real launcher"))
     args = cli_args(e)
@@ -1514,7 +2247,7 @@ if problem == "ep472-blackbox":
 cid = hashlib.sha256(f"{problem}{os.getpid()}".encode()).hexdigest()[:12]
 d = a.out / cid
 d.mkdir()
-(d / "grade.json").write_text("{}")
+(d / "grade.json").write_text(json.dumps({"details": {"probes": [{}]}, "hard_slots": [0]}))
 (d / "submission.json").write_text("{}")
 with open(a.out / "summary.jsonl", "a") as f:
     f.write(json.dumps({"cid": cid, "usd": 0.25, "usd_source": "stand-in", "harness_status": "ok", "submitted": True,
@@ -1606,7 +2339,7 @@ def test_real_launcher_path_when_the_runner_died_after_starting_a_container(tmp_
     def recollect(cid, run_dir):  # the collector's part: the container held an accepted submission
         d = Path(run_dir) / cid
         d.mkdir(exist_ok=True)
-        (d / "grade.json").write_text("{}")
+        (d / "grade.json").write_text(json.dumps({"details": {"probes": [{}]}, "hard_slots": [0]}))
         (d / "submission.json").write_text("{}")
         with open(Path(run_dir) / "summary.jsonl", "a") as f:
             f.write(json.dumps({"cid": cid, "usd": 1.1, "usd_source": "stand-in", "harness_status": "ok"}) + "\n")
@@ -1629,3 +2362,28 @@ def test_real_launcher_alive_needs_a_launcher_process_of_that_problem(tmp_path):
     launcher = bs.RealLauncher(e.cfg)
     assert not launcher.alive({"pid": os.getpid(), "problem": "ep411-open"})  # this process is not a launcher
     assert not launcher.alive({"pid": 2 ** 22 + 12345, "problem": "ep411-open"}) and not launcher.alive({})
+
+
+@pytest.mark.parametrize("grade,want", [
+    (None, False),                                                     # no grade.json
+    ({"score": 0.0, "timeout": True}, False),                         # the entrypoint's timeout stub
+    ({"details": {"probes": []}, "hard_slots": [0]}, False),          # no per-probe records
+    ({"details": {"probes": [{"kind": "planted"}]}}, False),          # no hard_slots
+    ({"details": {"probes": [{"kind": "planted"}]}, "hard_slots": [0]}, True),
+])
+def test_a_stub_grade_next_to_an_accepted_submission_is_not_a_grade(tmp_path, grade, want):
+    """prereg section 7: a submission the grader did not grade (no grade.json, or one without per-probe records)
+    is needs_regrade, never ok and never re-run; without a submission any grade.json is the run's grade."""
+    d = tmp_path / "c1"
+    d.mkdir()
+    if grade is not None:
+        (d / "grade.json").write_text(json.dumps(grade))
+    row = {"cid": "c1", "harness_status": "ok"}
+    if grade is not None:  # no submission: the grader's "no accepted submission" grade counts as written
+        assert bs.run_facts(tmp_path, "c1", row, "codex")["has_grade"] is True
+    (d / "submission.json").write_text("{}")
+    facts = bs.run_facts(tmp_path, "c1", row, "codex")
+    assert facts["submitted"] is True and facts["has_grade"] is want
+    out = bs.classify("c1", True, **{k: facts[k] for k in ("submitted", "has_grade", "timeout", "harness_status",
+                                                             "daemon_died", "engine", "agent_error")})
+    assert out.status == ("ok" if want else "needs_regrade") and out.infra is False

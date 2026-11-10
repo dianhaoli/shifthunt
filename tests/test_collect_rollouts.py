@@ -424,6 +424,330 @@ def test_a_run_with_no_usage_data_has_no_cost_and_says_so(tmp_path):
     assert json.loads((out / "summary_public.jsonl").read_text())["usd"] is None
 
 
+# ---------------------------------------------------------------- agent_error (prereg section 7, item 3)
+
+START = [{"type": "thread.started", "thread_id": "t"}, {"type": "turn.started"}]
+ITEM = {"type": "item.completed", "item": {"type": "command_execution", "command": "ls", "exit_code": 0}}
+DONE = {"type": "turn.completed", "usage": USAGE}
+RETRY = {"type": "error", "message": "Reconnecting... 2/5 (stream disconnected before completion: idle timeout)"}
+QUOTA = "Quota exceeded. Check your plan and billing details."
+CONTEXT = "Codex ran out of room in the model's context window. Start a new thread or clear earlier history."
+FLAGGED = "Invalid prompt: your prompt was flagged as potentially violating our usage policy."
+# OpenAI's 429 texts: both mention "tokens per min" and a "Limit", neither is a context-window failure
+TPM = ("Rate limit reached for gpt-6.1-terra in organization org-Ab12Cd34Ef56Gh78 on tokens per min (TPM): Limit "
+       "2000000, Used 1998123, Requested 5210. Please try again in 99ms.")
+TPM_TOO_LARGE = ("Request too large for gpt-6.1-terra in organization org-Ab12Cd34Ef56Gh78 on tokens per min (TPM): "
+                 "Limit 2000000, Requested 2400000. The input or output tokens must be reduced in order to run "
+                 "successfully.")
+
+
+def failed(message):
+    """What Codex CLI 0.166 prints when a turn fails: an `error` event, then `turn.failed` with the same text."""
+    return [{"type": "error", "message": message}, {"type": "turn.failed", "error": {"message": message}}]
+
+
+def test_the_main_studys_harness_status_is_unchanged():
+    """harness_status and its six API error strings are the main study's rule (prereg section 7: "the main
+    study's rule"); the black-box study adds agent_error next to it and must not touch it."""
+    import hashlib
+    import inspect
+    assert hashlib.sha256(inspect.getsource(cr.harness_status).encode()).hexdigest() == \
+        "20d2f4fdb8ad801e9b2f5902a909692e1d702a01340a5a721da4620b0e52dc86"
+    assert cr.API_ERR == ("Credit balance is too low", "rate_limit_error", "overloaded_error", "invalid x-api-key",
+                          "authentication_error", "insufficient_quota")
+
+
+def test_the_pre_registered_pattern_lists():
+    """The lists are pre-registered with the file's hash; this test makes a change to them a visible one."""
+    assert cr.AGENT_ERROR_RATE_LIMIT_PATTERNS == (
+        r"rate[ _-]?limit", r"(?<![A-Za-z])per[ _-]?(?:min|day)", r"\b[TR]P[MD]\b", r"\bdaily\b", r"quota",
+        r"usage[ _-]?limit", r"billing")
+    assert cr.AGENT_ERROR_CONTEXT_PATTERNS == (
+        r"context[ _-]?window", r"context[ _-]?length", r"maximum context", r"token[ _-]?limit", r"token[ _-]?budget",
+        r"too many tokens", r"max(?:imum)?[ _-]?tokens exceeded", r"max(?:imum)?[ _-]?(?:output|completion)[ _-]?tokens")
+    assert cr.AGENT_ERROR_REFUSAL_PATTERNS == (
+        r"content[ _-]?policy", r"content[ _-]?filter", r"policy[ _-]?violation", r"flagged", r"invalid[ _-]?prompt",
+        r"safety[ _-]?(?:reasons|system)", r"refus")
+    assert cr.AGENT_ERROR_TRANSPORT_REFUSED_PATTERNS == (
+        r"connection[ _-]?(?:\w+ ){0,2}refused", r"econnrefused", r"refused[ _-]stream",
+        r"refused (?:the |to )?connect\w*", r"query refused",
+        r"(?:server|upstream|gateway|proxy|host|peer|remote)\s+refused",
+        r"refused by (?:the )?(?:server|upstream|gateway|proxy|host|peer|remote)", r"refusing\b")
+    assert cr.AGENT_ERROR_KINDS == ("api", "context", "refusal") and cr.AGENT_ERROR_MESSAGE_CHARS == 300
+
+
+@pytest.mark.parametrize("message, kind", [
+    (CONTEXT, "context"),
+    ("context window exceeded", "context"),
+    ("This model's maximum context length is 400000 tokens. However, your messages resulted in 401220 tokens.",
+     "context"),
+    ('{"error": {"message": "Input too long", "code": "context_length_exceeded"}}', "context"),
+    ("Your input exceeds the Context Window of this model", "context"),
+    ("the request exceeds the maximum context of the model", "context"),
+    ("input exceeds the token limit of 400000", "context"),
+    ("Too many tokens in the request", "context"),
+    ("max tokens exceeded", "context"), ("maximum tokens exceeded for this request", "context"),
+    # Codex 0.166 (strings of the binary): a response cut at the output-token limit, and its token budget
+    ("stream disconnected before completion: Incomplete response returned, reason: max_output_tokens", "context"),
+    ("Incomplete response returned, reason: max_completion_tokens", "context"),
+    ("maximum output tokens reached", "context"),
+    ("shared rollout token budget exhausted", "context"), ("token_budget exceeded", "context"),
+    (FLAGGED, "refusal"),
+    ("stream disconnected before completion: Incomplete response returned, reason: content_filter", "refusal"),
+    ("Invalid prompt: we've limited access to this content for safety reasons.", "refusal"),
+    ("This request has been flagged for possible cybersecurity risk.", "refusal"),
+    ("This content was flagged for possible biological risk.", "refusal"),
+    ("Your request was rejected as a result of our safety system.", "refusal"),
+    ('{"code": "invalid_prompt"}', "refusal"),
+    ("content_filter", "refusal"), ("The response was blocked by the content filter", "refusal"),
+    ("This request violates our content policy", "refusal"),
+    ("This request was blocked due to a misalignment policy violation.", "refusal"),
+    ("The model refused the request", "refusal"), ("Refusal: I can't help with that", "refusal"),
+    (QUOTA, "api"), ("insufficient_quota", "api"), ("server overloaded", "api"), ("rate limit exceeded", "api"),
+    (TPM, "api"), (TPM_TOO_LARGE, "api"),
+    ("exceeded retry limit, last status: 429 Too Many Requests", "api"),
+    ("stream disconnected before completion: idle timeout waiting for SSE", "api"),
+    ("unexpected status 401 Unauthorized: Incorrect API key provided", "api"),
+    ("policy-restricted capacity unavailable", "api"),
+    # a refused CONNECTION is a transport failure, not a refusal on content grounds
+    ("error sending request for url (https://api.openai.com/v1/responses): Connection refused (os error 111)", "api"),
+    ("stream error: ConnectionRefused", "api"), ("connect ECONNREFUSED 172.66.0.243:443", "api"),
+    ("stream error received: refused stream before processing any application logic", "api"),
+    ("the server refused to connect", "api"), ("No connection could be made: the connection was refused", "api"),
+    ("connection was forcibly refused by peer", "api"), ("tcp connect error: CONNECTION_REFUSED", "api"),
+    ("api.openai.com refused the connection", "api"), ("172.66.0.243 refused to connect", "api"),
+    ("refused connection from 172.66.0.243", "api"),
+    # ... nor is a server that refuses a request (HTTP, DNS), or Codex refusing a local action of its own
+    ("upstream refused the request: 503", "api"), ("server refused to accept the request", "api"),
+    ("HTTP 403: access refused by gateway", "api"), ("dns error: Query Refused", "api"),
+    ("refusing to overwrite existing file /workdir/x", "api"), ("Refusing to open files larger than 10 MB", "api"),
+    ("failed to read OAuth tokens; refusing file fallback", "api"),
+    ("incomplete response", "api"),                    # no reason given: a broken stream
+    # ... but a content refusal that also mentions one of these is still a refusal
+    ("Connection refused; then: your prompt was flagged", "refusal"),
+    ("the server refused the request: content policy", "refusal"),
+    ("upstream refused; the model's refusal follows", "refusal"),
+    # a rate limit or a quota is the provider's, also when the text speaks of a token limit
+    ("rate limit: token limit per minute reached, retry in 3s", "api"),
+    ("Rate limit exceeded: token-limit bucket empty (TPM)", "api"),
+    ("Your organization's daily token limit has been reached", "api"),
+    ("tokens_per_min limit: token limit 30000", "api"), ("token limit of 90000 TPD reached", "api"),
+    ("Usage limit reached. You've reached your usage limit; token limit resets at 5pm", "api"),
+    ("You exceeded your current quota (token limit)", "api"),
+    ("rate_limit_exceeded: the token limit of this key was reached", "api"), ("Rate-limit hit (token limit)", "api"),
+    ("Organization flagged for unusual billing activity", "api"),
+    ("Your account is not active, please check your billing details; requests are refused", "api"),
+    # ... and words that only contain "per min" or "TPM" as part of another word are not a rate limit
+    ("gpt-supermini: input exceeds the token limit", "context"), ("HTTPMethod: context window exceeded", "context"),
+    ("", "api"), (None, "api"),
+])
+def test_agent_error_kind(message, kind):
+    assert cr.agent_error_kind(message) == kind
+    if message:
+        assert cr.agent_error_kind(message.upper()) == kind  # case-insensitive
+
+
+def test_codex_agent_error_without_error_events():
+    assert cr.codex_agent_error(CODEX_EVENTS) == {"terminal": False, "kind": None, "type": None, "message": None,
+                                                 "n_error_events": 0}
+    assert cr.codex_agent_error([])["terminal"] is False
+
+
+@pytest.mark.parametrize("message, kind", [(QUOTA, "api"), (CONTEXT, "context"), (FLAGGED, "refusal"), (TPM, "api")])
+def test_codex_agent_error_turn_failed(message, kind):
+    ae = cr.codex_agent_error(START + [ITEM] + failed(message))
+    assert (ae["terminal"], ae["kind"], ae["type"], ae["n_error_events"]) == (True, kind, "turn.failed", 2)
+    assert ae["message"] == cr.scrub_message(message)
+    # a turn.failed event is terminal wherever it is in the stream
+    ae = cr.codex_agent_error(START + failed(message) + [ITEM, DONE])
+    assert (ae["terminal"], ae["kind"], ae["type"]) == (True, kind, "turn.failed")
+
+
+@pytest.mark.parametrize("message, kind", [(QUOTA, "api"), (CONTEXT, "context"), (FLAGGED, "refusal")])
+def test_codex_agent_error_stream_that_ends_with_an_error_event(message, kind):
+    ae = cr.codex_agent_error(START + [ITEM, RETRY, ITEM, {"type": "error", "message": message}])
+    assert (ae["terminal"], ae["kind"], ae["type"], ae["n_error_events"]) == (True, kind, "error", 2)
+    assert ae["message"] == cr.scrub_message(message)
+
+
+def test_codex_agent_error_recovered_error_is_not_terminal():
+    """An `error` event followed by further agent activity (a retry that succeeded) is not a failure."""
+    for tail in ([ITEM, DONE], [DONE], [ITEM], [{"type": "item.started", "item": {"type": "command_execution"}}]):
+        ae = cr.codex_agent_error(START + [ITEM, RETRY, RETRY] + tail)
+        assert ae == {"terminal": False, "kind": None, "type": None, "message": cr.scrub_message(RETRY["message"]),
+                      "n_error_events": 2}, tail
+    # the message of a recovered error is not classified, whatever it says
+    assert cr.codex_agent_error(START + [{"type": "error", "message": CONTEXT}, DONE])["kind"] is None
+
+
+def test_codex_agent_error_message_shapes():
+    """turn.failed carries {"error": {"message": ...}} and error carries {"message": ...} in CLI 0.166; a
+    string and an object are read in either place, and an object's other fields are kept for the patterns."""
+    f = lambda *evs: cr.codex_agent_error(START + list(evs))
+    assert f({"type": "turn.failed", "error": {"message": QUOTA}})["message"] == QUOTA
+    assert f({"type": "turn.failed", "error": QUOTA})["message"] == QUOTA
+    assert f({"type": "turn.failed", "message": QUOTA})["message"] == QUOTA
+    assert f({"type": "error", "message": {"message": QUOTA}})["message"] == QUOTA
+    assert f({"type": "error", "error": {"message": QUOTA}})["message"] == QUOTA
+    # of two turn.failed events the LAST one's message is used; of two fields of one event, "error" before "message"
+    ae = f({"type": "turn.failed", "error": {"message": CONTEXT}}, ITEM, {"type": "turn.failed", "error": {"message": QUOTA}})
+    assert (ae["kind"], ae["message"], ae["n_error_events"]) == ("api", QUOTA, 2)
+    ae = f({"type": "turn.failed", "error": {"message": QUOTA}}, ITEM, {"type": "turn.failed", "error": {"message": CONTEXT}})
+    assert (ae["kind"], ae["message"]) == ("context", CONTEXT)
+    ae = f({"type": "turn.failed", "error": {"message": CONTEXT}, "message": QUOTA})
+    assert (ae["kind"], ae["message"]) == ("context", CONTEXT)
+    ae = f({"type": "error", "error": {"message": QUOTA}, "message": CONTEXT})
+    assert (ae["kind"], ae["message"]) == ("api", QUOTA)
+    # the turn.failed message wins over an earlier error event's; without one the last error event's is used
+    ae = f({"type": "error", "message": CONTEXT}, {"type": "turn.failed", "error": {"message": QUOTA}})
+    assert (ae["kind"], ae["message"]) == ("api", QUOTA)
+    ae = f({"type": "error", "message": "first"}, {"type": "error", "message": CONTEXT}, {"type": "turn.failed"})
+    assert (ae["terminal"], ae["type"], ae["kind"], ae["message"]) == (True, "turn.failed", "context", CONTEXT)
+    for empty in ({"error": {}}, {"error": {"message": None}}, {"error": None, "message": ""}, {}):
+        ae = f({"type": "turn.failed", **empty})                      # no message anywhere: an API error
+        assert (ae["terminal"], ae["kind"], ae["message"]) == (True, "api", None), empty
+        ae = f({"type": "error", "message": CONTEXT}, {"type": "turn.failed", **empty})
+        assert (ae["kind"], ae["message"]) == ("context", CONTEXT), empty
+    # an error code next to the message decides too
+    ae = f({"type": "turn.failed", "error": {"message": "Input too long", "code": "context_length_exceeded"}})
+    assert ae["kind"] == "context" and ae["message"].startswith("Input too long")
+    ae = f({"type": "error", "message": {"code": "content_filter"}})
+    assert (ae["kind"], ae["message"]) == ("refusal", '{"code": "content_filter"}')
+    # an item of type "error" inside an item event is not an event of type "error"
+    ae = f({"type": "item.completed", "item": {"type": "error", "message": QUOTA}})
+    assert (ae["terminal"], ae["n_error_events"]) == (False, 0)
+
+
+def test_codex_agent_error_last_event_is_the_last_json_object(tmp_path):
+    """Lines that are not JSON objects (a torn last line of a killed CLI, stray text, a bare number) are
+    skipped: they neither end the stream nor count as activity after an error."""
+    p = tmp_path / "0123456789ab"
+    p.mkdir()
+    lines = [json.dumps(e) for e in START + [ITEM, {"type": "error", "message": QUOTA}]]
+    (p / "codex_events.jsonl").write_text("\n".join(lines + ['{"type": "item.started", "item": {"ty', "", "Killed", "17"]) + "\n")
+    ae = cr.codex_agent_error_of(p)
+    assert (ae["terminal"], ae["type"], ae["kind"], ae["n_error_events"]) == (True, "error", "api", 1)
+    (p / "codex_events.jsonl").write_text("\n".join(lines + [json.dumps(ITEM), "not json"]) + "\n")
+    assert cr.codex_agent_error_of(p)["terminal"] is False            # a parsed event after the error: recovered
+    assert cr.codex_agent_error_of(tmp_path / "nothing") is None      # no codex_events.jsonl
+    assert cr.codex_agent_error([17, "x", None, [1]]) == cr.codex_agent_error([])
+
+
+def test_agent_error_message_is_cut_and_holds_no_secret():
+    key, bearer = "sk-proj-AbCdEf0123456789abcdefXYZ", "Bearer eyJhbGciOiJIUzI1NiJ9.e30.abc"
+    message = (f"unexpected status 401 Unauthorized: Incorrect API key provided: {key}. Authorization: {bearer}; "
+               f"organization org-Ab12Cd34Ef56Gh78; api_key=abc123; x-api-key: zzz999; "
+               f"blob {'A1b2' * 12}; " + "and so on " * 40 + "maximum context length")
+    ae = cr.codex_agent_error(START + failed(message))
+    assert ae["kind"] == "context"                                    # decided on the WHOLE message, not the kept part
+    m = ae["message"]
+    assert len(m) == 300 and "\n" not in m
+    for secret in (key, "sk-", "eyJ", "Ab12Cd34", "abc123", "zzz999", "A1b2A1b2"):
+        assert secret not in m, secret
+    assert m.startswith("unexpected status 401 Unauthorized: Incorrect API key provided: [key removed]")
+    assert "org-[removed]" in m and "Bearer [removed]" not in m and "Authorization: [removed]" in m
+    assert cr.scrub_message(None) is None and cr.scrub_message("a\n b\t c") == "a b c"
+    assert cr.scrub_message(TPM) == TPM.replace("org-Ab12Cd34Ef56Gh78", "org-[removed]")
+    # a key that the cut would have split is removed whole
+    assert cr.scrub_message("word " * 59 + "sk-abcdefghijklmnop") == "word " * 59 + "[key "
+    # ordinary words that only look like the patterns stay
+    assert cr.scrub_message("user_configured risk-free ask-me tokens: 5") == "user_configured risk-free ask-me tokens: 5"
+    for plain in ("stream_disconnected_before_completion", "Incomplete response returned, reason: max_output_tokens",
+                  "context_length_exceeded", "shared rollout token budget exhausted", "exit status 12345678901234567890123456",
+                  "workspace_owner_usage_limit_reached", *cr.API_ERR, QUOTA, CONTEXT, FLAGGED):
+        assert cr.scrub_message(plain) == plain, plain
+
+
+@pytest.mark.parametrize("secret", [
+    "hf_" + "AbCdEfGhIjKlMnOpQrStUvWxYzAbCdEfGh",                       # 37 characters, no digit
+    "hf_" + "aB3dE6gH9jK2mN5pQ8sT1vW4yZ7bC0eF3h",
+    "0123456789abcdef0123456789abcdef",                                 # a 32-hex key
+    "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIn0.c2lnbmF0dXJl",                # a JSON Web Token, every part short
+    "ghp_" + "a1B2c3D4e5F6g7H8i9J0k1L2m3N4o5P6q7R8",
+    "AKIA" + "ABCDEFGHIJKLMNOP",
+    "9f8e7d6c-5b4a-4321-8fed-cba987654321",                             # a UUID
+    "Zm9vYmFyYmF6cXV4Zm9vYmFyYmF6cXV4Zm9vYmFyYmF6cXV4+/==",             # base64, 40 or more
+    "abcdEFGH+ijklMNOP/qrstUVWX+yzabCDEF/ghijKLMN==",                   # base64 without a digit: the 40+ rule alone
+])
+def test_scrub_message_removes_what_looks_like_a_credential_wherever_it_stands(secret):
+    templates = ("Incorrect API key provided: {}.", "401 {}", "token {} rejected", "key={}", '{{"k": "{}"}}',
+                 "auth failed ({})", "x {} y", "Authorization: Bearer {}", "api key provided: {}", "{}")
+    for t in templates:
+        out = cr.scrub_message(t.format(secret))
+        assert secret not in out and secret[:12] not in out and secret[-12:] not in out, (t, out)
+        assert cr.scrub_message(out) == out and len(out) <= 300        # idempotent: the scheduler scrubs again
+    # an OpenAI key written with a separator after its prefix
+    for split in ("sk- " + "proj1234abcd5678efgh9012", "sk-:" + "proj1234abcd5678efgh9012", "sk-proj-\n" + "a1" * 20):
+        out = cr.scrub_message(f"Incorrect API key provided: {split}")
+        assert "proj1234" not in out and "a1a1a1" not in out, out
+
+
+def test_summary_row_of_a_codex_run_has_agent_error_next_to_the_unchanged_status(tmp_path):
+    grade = {"score": 0.0, "feedback": "no accepted submission"}
+    ok = status(tmp_path / "ok", engine="codex")
+    assert ok["harness_status"] == "ok" and ok["agent_error"] == {
+        "terminal": False, "kind": None, "type": None, "message": None, "n_error_events": 0}
+    cases = {"api": (failed(QUOTA), True, "api"), "context": (failed(CONTEXT), True, "context"),
+             "refusal": (failed(FLAGGED), True, "refusal"), "tpm": (failed(TPM), True, "api"),
+             "trailing": ([ITEM, {"type": "error", "message": QUOTA}], True, "api"),
+             "recovered": ([RETRY, ITEM, DONE], False, None)}
+    for name, (tail, terminal, kind) in cases.items():
+        d = run_dir(tmp_path / name, engine="codex", submitted=False, grade=grade)
+        (d / "codex_events.jsonl").write_text("".join(json.dumps(e) + "\n" for e in START + tail))
+        r = cr.summarize(d, d.name, PRICES)
+        assert r["harness_status"] == "api_error", name             # the main study's status: ANY error event
+        assert (r["agent_error"]["terminal"], r["agent_error"]["kind"]) == (terminal, kind), name
+        assert r["agent_error"] == cr.codex_agent_error_of(d)
+    # the tracked row carries it, with the account id of the rate-limit text removed
+    out = tmp_path / "tpm"
+    cr.collect("0123456789ab", out, fetch_files=False)
+    public = (out / "summary_public.jsonl").read_text()
+    assert json.loads(public)["agent_error"]["kind"] == "api" and "Ab12Cd34" not in public
+    assert "tokens per min (TPM)" in public
+
+
+def test_summary_row_of_a_claude_run_names_the_matched_api_error_string(tmp_path):
+    none = {"terminal": None, "kind": None, "type": None, "message": None, "n_error_events": 0}
+    assert status(tmp_path / "ok")["agent_error"] == none
+    line = json.dumps(API_ERROR_LINE, separators=(",", ":")) + "\n"
+    r = status(tmp_path / "a", extra={"transcript_err.jsonl": line}, submitted=False,
+               grade={"score": 0.0, "feedback": "no accepted submission"})
+    assert r["harness_status"] == "api_error" and r["agent_error"] == {
+        "terminal": None, "kind": "api", "type": "isApiErrorMessage", "message": "overloaded_error",
+        "n_error_events": 1}
+    # every one of the six strings, and the first in the main study's order when a file has two
+    for k in cr.API_ERR:
+        one = json.dumps({**API_ERROR_LINE, "message": {"content": [{"type": "text", "text": f"API Error: {k}"}]}},
+                         separators=(",", ":")) + "\n"
+        d = run_dir(tmp_path / k.replace(" ", "_"), extra={"transcript_err.jsonl": one + line})
+        r = cr.summarize(d, d.name, PRICES)
+        assert r["harness_status"] == "api_error"
+        assert r["agent_error"]["message"] == min((k, "overloaded_error"), key=cr.API_ERR.index)
+        assert r["agent_error"]["n_error_events"] == 2
+    # the string of the FLAGGED line is named, not one the agent quoted earlier in the same file, although
+    # that one comes first in the main study's order
+    earlier = json.dumps({"type": "user", "message": {"role": "user", "content": "grep rate_limit_error log"}}) + "\n"
+    d = run_dir(tmp_path / "flagged_line", extra={"transcript_err.jsonl": earlier + line})
+    r = cr.summarize(d, d.name, PRICES)
+    assert r["harness_status"] == "api_error" and r["agent_error"]["message"] == "overloaded_error"
+    # the main study's rule is per file: a flagged line without one of the six, and one of the six elsewhere
+    # in that file, is an API error for harness_status; the message is then the string found in the file
+    flag_only = json.dumps({**API_ERROR_LINE, "message": {"content": [{"type": "text", "text": "API Error: 529"}]}},
+                           separators=(",", ":")) + "\n"
+    d = run_dir(tmp_path / "per_file", extra={"transcript_err.jsonl": earlier + flag_only})
+    r = cr.summarize(d, d.name, PRICES)
+    assert r["harness_status"] == "api_error" and r["agent_error"]["message"] == "rate_limit_error"
+    # the same test as harness_status: an error text the agent only quotes (no isApiErrorMessage line) is none
+    quoted = json.dumps({"type": "assistant", "message": {"role": "assistant", "content": "overloaded_error"}})
+    r = status(tmp_path / "q", extra={"transcript_q.jsonl": quoted + "\n"})
+    assert r["harness_status"] == "ok" and r["agent_error"] == none
+    # a flagged line with a text that is none of the six is not an API error for either
+    other = json.dumps({**API_ERROR_LINE, "message": {"content": [{"type": "text", "text": "API Error: 529"}]}},
+                       separators=(",", ":")) + "\n"
+    r = status(tmp_path / "o", extra={"transcript_o.jsonl": other})
+    assert r["harness_status"] == "ok" and r["agent_error"]["message"] is None and r["agent_error"]["n_error_events"] == 1
+
+
 # ---------------------------------------------------------------- public probe records
 
 TAU = 0.294498

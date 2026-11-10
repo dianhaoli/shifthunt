@@ -13,8 +13,9 @@ summary row per container goes to <out>/summary.jsonl (gitignored: it names each
 access, probe_query (the budget override of the problem id `<episode>-<access>[<n>]`, else null),
 probe_query_limit, arm, model, engine, pass, partial, name, per-probe buckets, tool-call counts by tool,
 forward/probe_query used, agent-written texts sent to SAE tools, wall minutes, turns, tokens, USD with its
-source, submitted, timeout and harness_status. Tracked: <out>/summary_public.jsonl (one row per rollout, no
-probes, episode id, partial score or timestamps, sorted by cid) and <out>/probes_public.jsonl (all probe
+source, submitted, timeout, harness_status (the main study's rule, unchanged) and agent_error (below).
+Tracked: <out>/summary_public.jsonl (one row per rollout, no probes, episode id, partial score or timestamps,
+sorted by cid; it has agent_error with its scrubbed message) and <out>/probes_public.jsonl (all probe
 records of the run pooled and sorted, no rollout id, no cue, margin instead of removal/tau; no margin where it
 would be a threshold itself, and the naming grade only for a naming-only run: see public_probe). Answers
 (cues, kinds) come from the episode bank, never from the container.
@@ -32,6 +33,17 @@ USD (`usd`, `usd_source`):
 - A run for which no usage was found at all (no `result` cost and no assistant message with a usage record;
   no `turn.completed` and no `token_count`) has `usd` null and the source "no usage data": the agent never
   made a request, or the files that hold the usage were not copied. It is never reported as a measured 0.
+
+agent_error (black-box study, prereg section 7 item 3; the scheduler's API-error rule reads it, harness_status
+stays the main study's): {"terminal", "kind", "type", "message", "n_error_events"}.
+- OpenAI agents (codex_agent_error): terminal = codex_events.jsonl has a `turn.failed` event or its last event
+  is an `error` event; kind = api | context | refusal from the failure message (agent_error_kind and the
+  AGENT_ERROR_*_PATTERNS, pre-registered) when terminal, else null; type = turn.failed | error | null; message =
+  the failure message, credentials removed, first 300 characters. An `error` event that is followed by another
+  event is not terminal (the CLI recovered), though harness_status still says api_error for it.
+- Claude agents (claude_api_error): message = the one of the six API error strings (API_ERR) that
+  harness_status matched in a transcript (the one in the flagged message itself when there is one), null if
+  none; terminal is null (the main study's rule does not ask).
 """
 import argparse
 import fcntl
@@ -329,6 +341,201 @@ def harness_status(d, grade, calls):
     return "ok"
 
 
+# ---------------------------------------------------------------- agent error (black-box study)
+#
+# PRE-REGISTERED: results/blackbox_1112/prereg.md section 7, item 3 (DECISIONS D24.2). This file is one of the
+# scripts whose SHA-256 is in PREREG_HASH; the constants below ARE the operational definition of "the failure
+# message does not say that the context window or a token limit was exceeded or that the request was refused
+# on content grounds". Changing one after the hash is a logged deviation (RUNBOOK section 6).
+# Every pattern is a regular expression searched case-insensitively in the whole failure message (before it is
+# shortened). The order of the rule (agent_error_kind):
+#   1. a message that names a rate limit, a quota or billing is "api", whatever else it says;
+#   2. else a message that matches a context pattern is "context";
+#   3. else a message that matches a refusal pattern, after the transport phrases are removed, is "refusal";
+#   4. every other message, and a failure without a message, is "api".
+# Wordings marked "Codex 0.166" are strings of the codex binary in the study's image.
+#
+# 1. The provider throttled or billed: not the agent's failure, though such a message may speak of tokens
+#    ("Rate limit reached ... on tokens per min (TPM): Limit 30000", "daily token limit").
+AGENT_ERROR_RATE_LIMIT_PATTERNS = (
+    r"rate[ _-]?limit",                # "Rate limit reached for ...", rate_limit_exceeded
+    r"(?<![A-Za-z])per[ _-]?(?:min|day)",   # "tokens per min (TPM)", "requests per day"
+    r"\b[TR]P[MD]\b",                  # TPM, RPM, TPD, RPD
+    r"\bdaily\b",
+    r"quota",                          # insufficient_quota, "Quota exceeded. Check your plan and billing details."
+    r"usage[ _-]?limit",               # Codex 0.166: "Usage limit reached."
+    r"billing",                        # an account matter, also when it says the account was "flagged"
+)
+# 2. The context window or a token limit was exceeded: the agent's own failure, a counted fail.
+AGENT_ERROR_CONTEXT_PATTERNS = (
+    r"context[ _-]?window",            # "ran out of room in the model's context window", "context window exceeded"
+    r"context[ _-]?length",            # "maximum context length is N tokens", code context_length_exceeded
+    r"maximum context",
+    r"token[ _-]?limit",
+    r"token[ _-]?budget",              # Codex 0.166: "shared rollout token budget exhausted"
+    r"too many tokens",
+    r"max(?:imum)?[ _-]?tokens exceeded",
+    # Codex 0.166: "stream disconnected before completion: Incomplete response returned, reason: max_output_tokens"
+    r"max(?:imum)?[ _-]?(?:output|completion)[ _-]?tokens",
+)
+# 3. The request was refused on content grounds: the agent's own failure, a counted fail.
+AGENT_ERROR_REFUSAL_PATTERNS = (
+    r"content[ _-]?policy",
+    r"content[ _-]?filter",            # Codex 0.166: "Incomplete response returned, reason: content_filter"
+    r"policy[ _-]?violation",          # Codex 0.166: "blocked due to a misalignment policy violation"
+    r"flagged",                        # "your prompt was flagged as potentially violating our usage policy";
+                                       # Codex 0.166: "This request has been flagged for possible cybersecurity risk."
+    # Codex 0.166: "Invalid prompt: we've limited access to this content for safety reasons."; the API's
+    # "Your request was rejected as a result of our safety system."
+    r"invalid[ _-]?prompt",
+    r"safety[ _-]?(?:reasons|system)",
+    r"refus",                         # refused, refusal (after AGENT_ERROR_TRANSPORT_REFUSED_PATTERNS are removed)
+)
+# A refused CONNECTION, a server that refuses a request (an HTTP or DNS failure) and Codex's own "refusing to
+# <do something on the local file system or sandbox>" are not refusals on content grounds: these phrases are
+# removed from the message before the refusal patterns are tried (the patterns of 1 and 2 see the whole
+# message). "Connection refused" is what the study's own firewall REJECT rule gives a blocked address, and Codex
+# 0.166 prints io::ErrorKind names (ConnectionRefused), HTTP/2 reset reasons ("refused stream before processing
+# ..."), DNS answers ("Query Refused") and "refusing to overwrite existing file ...". A message that also
+# matches another refusal pattern (content policy, flagged, ...) is still a refusal.
+AGENT_ERROR_TRANSPORT_REFUSED_PATTERNS = (
+    r"connection[ _-]?(?:\w+ ){0,2}refused",   # "Connection refused", "connection was forcibly refused", CONNECTION_REFUSED
+    r"econnrefused",
+    r"refused[ _-]stream",
+    r"refused (?:the |to )?connect\w*",
+    r"query refused",
+    r"(?:server|upstream|gateway|proxy|host|peer|remote)\s+refused",   # "upstream refused the request: 503"
+    r"refused by (?:the )?(?:server|upstream|gateway|proxy|host|peer|remote)",
+    r"refusing\b",
+)
+AGENT_ERROR_KINDS = ("api", "context", "refusal")
+AGENT_ERROR_MESSAGE_CHARS = 300        # what is kept of a failure message in the row, the ledger and the lists
+CLAUDE_API_ERROR_FLAG = '"isApiErrorMessage":true'   # the text harness_status looks for in a transcript file
+# Anything in a failure message that looks like a credential or an account id is replaced before the message
+# is stored anywhere (summary rows are copied to tracked files). The kind is decided on the message as it was,
+# so nothing here changes a classification. The last two rules are deliberately wide: a request id or a UUID
+# goes too (the raw event stream stays in the private run directory).
+SECRET_SUBS = (
+    (re.compile(r"\bBearer\s+[^\s\"',;]+", re.I), "Bearer [removed]"),
+    (re.compile(r"\bsk-[\s:=]{0,3}[^\s\"',;:)\]}]+"), "[key removed]"),
+    (re.compile(r"\b(?:hf|ghp|gho|ghu|ghs|ghr|github_pat|glpat|xox[abeprs]|AKIA|ASIA|AIza)[A-Za-z0-9_-]{10,}"),
+     "[key removed]"),
+    (re.compile(r"\beyJ[A-Za-z0-9_-]{8,}(?:\.[A-Za-z0-9_-]+){0,2}"), "[token removed]"),   # a JSON Web Token
+    (re.compile(r"\b(org|proj|user|acct)[-_](?=[A-Za-z0-9]*\d)[A-Za-z0-9]{8,}"), r"\1-[removed]"),
+    (re.compile(r"(?i)\b((?:x-)?api[ _-]?key(?:\s+provided)?|authorization|token|secret|password)(\"?\s*[:=]\s*\"?)"
+                r"(?!\[)[^\s\"',;]+"), r"\1\2[removed]"),
+    # a run of 24 or more token characters with both a letter and a digit (a 32-hex key, a UUID), then any
+    # run of 40 or more (base64 too)
+    (re.compile(r"(?<![A-Za-z0-9_-])(?=[A-Za-z0-9_-]*\d)(?=[A-Za-z0-9_-]*[A-Za-z])[A-Za-z0-9_-]{24,}"),
+     "[long token removed]"),
+    (re.compile(r"[A-Za-z0-9_\-+/=]{40,}"), "[long token removed]"),
+)
+
+
+def scrub_message(text, limit=AGENT_ERROR_MESSAGE_CHARS):
+    """A failure message as it may be stored: one line, credentials and account ids removed (SECRET_SUBS),
+    then cut to `limit` characters. None stays None. Removing comes before cutting, so no part of a key is
+    left at the cut."""
+    if text is None:
+        return None
+    text = " ".join(str(text).split())
+    for rx, repl in SECRET_SUBS:
+        text = rx.sub(repl, text)
+    return text[:limit]
+
+
+def _error_text(value):
+    """The message of a Codex `error` / `turn.failed` payload: a string as it is; an object's "message" (a
+    nested object is read the same way) followed by its other fields as JSON, so that an error code next to
+    the message (context_length_exceeded) is seen by the patterns; None if there is nothing."""
+    if isinstance(value, str):
+        return value or None
+    if isinstance(value, dict):
+        msg = _error_text(value.get("message"))
+        rest = {k: v for k, v in value.items() if k != "message"}
+        return " ".join(x for x in (msg, json.dumps(rest, sort_keys=True) if rest else None) if x) or None
+    return None if value is None else json.dumps(value)
+
+
+def codex_event_message(event):
+    """Failure message of one event of `codex exec --json` (CLI 0.166: {"type": "turn.failed", "error":
+    {"message": ...}} and {"type": "error", "message": ...}); either field may be a string or an object."""
+    for key in ("error", "message"):
+        text = _error_text(event.get(key))
+        if text:
+            return text
+    return None
+
+
+def agent_error_kind(message):
+    """api | context | refusal for the full message of a failure that ended the agent (pre-registered rule:
+    see the constants and their order). No message -> api."""
+    text = message or ""
+    if any(re.search(p, text, re.I) for p in AGENT_ERROR_RATE_LIMIT_PATTERNS):
+        return "api"
+    if any(re.search(p, text, re.I) for p in AGENT_ERROR_CONTEXT_PATTERNS):
+        return "context"
+    for p in AGENT_ERROR_TRANSPORT_REFUSED_PATTERNS:
+        text = re.sub(p, " ", text, flags=re.I)
+    if any(re.search(p, text, re.I) for p in AGENT_ERROR_REFUSAL_PATTERNS):
+        return "refusal"
+    return "api"
+
+
+def codex_agent_error(events):
+    """Pure. The rows of codex_events.jsonl (jsonl(...)) -> the row's `agent_error`:
+      terminal        True iff some event has type "turn.failed", or the LAST event of the stream has type
+                      "error". An `error` event followed by any other event (the CLI went on: a retry that
+                      worked, further items, turn.completed) is not terminal.
+      type            "turn.failed" | "error" (what made it terminal; turn.failed wins) | None
+      kind            agent_error_kind of the full message when terminal, else None
+      message         the last turn.failed event's message if it has one, else the last `error` event's;
+                      scrubbed and cut to AGENT_ERROR_MESSAGE_CHARS (scrub_message); None if there is none.
+                      A stream that recovered keeps its last error's message (kind None).
+      n_error_events  events of type "error" or "turn.failed" (those harness_status looks at)
+    "Last event" is the last line of the file that parses as a JSON object: lines that are not JSON (a torn
+    last line of a killed CLI, stray text) and JSON values that are not objects are skipped, here and
+    everywhere, so they neither end the stream nor count as activity after an error. An `item.*` event whose
+    item is of type "error" is not an event of type "error"."""
+    evs = [e for e in events if isinstance(e, dict)]
+    errors = [e for e in evs if e.get("type") == "error"]
+    failed = [e for e in evs if e.get("type") == "turn.failed"]
+    terminal = bool(failed) or (bool(evs) and evs[-1].get("type") == "error")
+    text = codex_event_message(failed[-1]) if failed else None
+    if text is None and errors:
+        text = codex_event_message(errors[-1])
+    return {"terminal": terminal, "kind": agent_error_kind(text) if terminal else None,
+            "type": ("turn.failed" if failed else "error") if terminal else None,
+            "message": scrub_message(text), "n_error_events": len(errors) + len(failed)}
+
+
+def codex_agent_error_of(d):
+    """codex_agent_error of a fetched run directory; None if it has no codex_events.jsonl (the scheduler's
+    fallback for a summary row written before the row had `agent_error`)."""
+    p = Path(d) / "codex_events.jsonl"
+    try:
+        return codex_agent_error(jsonl(p.read_bytes()))
+    except OSError:
+        return None
+
+
+def claude_api_error(d):
+    """Pure read of a fetched Claude Code run directory -> the row's `agent_error`. `message` is the API error
+    string the main study's rule matched. The rule (harness_status) is per transcript FILE: the file has an
+    `isApiErrorMessage` line and one of API_ERR somewhere. So message is not None exactly when harness_status
+    finds an API error in the transcripts, and it is the first of API_ERR (in that order) found in a flagged
+    line of such a file; only if no flagged line holds one (the string is elsewhere in the file), the first
+    found anywhere in such a file. `terminal` is None: the main study's rule does not ask whether the error
+    ended the agent, and it is kept as it is (prereg section 7)."""
+    texts = [p.read_text(errors="replace") for p in sorted(Path(d).glob("transcript_*.jsonl"))]
+    hit = [t for t in texts if CLAUDE_API_ERROR_FLAG in t and any(k in t for k in API_ERR)]
+    flagged = [line for t in hit for line in t.splitlines() if CLAUDE_API_ERROR_FLAG in line]
+    match = next((k for k in API_ERR if any(k in line for line in flagged)), None) \
+        or next((k for k in API_ERR if any(k in t for t in hit)), None)
+    return {"terminal": None, "kind": "api" if match else None, "type": "isApiErrorMessage" if match else None,
+            "message": match, "n_error_events": sum(t.count(CLAUDE_API_ERROR_FLAG) for t in texts)}
+
+
 def timed_out(entrypoint_log):
     """True iff the entrypoint ended the agent at the container's hard time limit."""
     return TIMEOUT_MARK in (entrypoint_log or "")
@@ -404,13 +611,15 @@ def summarize(d, cid, prices=None):
     ids = episode_fields(ep_id, probe_query_limit(d, ep_id, budget))
     if (d / "codex_events.jsonl").exists() or (d / "codex_meta.txt").exists():
         engine = "codex"
-        cost = codex_cost(jsonl((d / "codex_events.jsonl").read_bytes()) if (d / "codex_events.jsonl").exists()
-                          else [], [jsonl(p.read_bytes()) for p in sorted(d.glob("codex_session_*.jsonl"))],
+        events = jsonl((d / "codex_events.jsonl").read_bytes()) if (d / "codex_events.jsonl").exists() else []
+        cost = codex_cost(events, [jsonl(p.read_bytes()) for p in sorted(d.glob("codex_session_*.jsonl"))],
                           _text(d / "codex_meta.txt"), prices)
+        agent_error = codex_agent_error(events)
     else:
         engine = "claude"
         rows = [r for p in sorted(d.glob("transcript_*.jsonl")) for r in jsonl(p.read_bytes())]
         cost = claude_cost(_text(d / "engine.log"), rows)
+        agent_error = claude_api_error(d)
     timing = _json(d / "timing.json")
     start = grade.get("agent_start_time") or timing.get("agent_start_time")
     end = grade.get("agent_end_time") or timing.get("agent_end_time")
@@ -431,7 +640,7 @@ def summarize(d, cid, prices=None):
             "errors": sum(1 for r in calls if r.get("status") not in ("ok", None)),
             "own_text_sae_calls": own_texts, "budget": budget,
             "agent_start": start, "agent_end": end, "wall_min": wall_minutes(start, end), **cost,
-            "harness_status": harness_status(d, grade, calls)}
+            "harness_status": harness_status(d, grade, calls), "agent_error": agent_error}
 
 
 def collect(cid, out, fetch_files=True):
@@ -453,7 +662,7 @@ def public_probe(p, naming_only=False):
     and tau are left out because tau recurs with its pool artifact), kept, best BA.
     The margin is left out when a removal is exactly 0 (no latent was ablated for that cue): min(removal - tau)
     would then be -tau itself.
-    naming_only (a blackbox run: no SAE tools, the submission's latent lists are empty, so every removal is 0):
+    naming_only (a blackbox run: no SAE tools; any latents listed are ignored by the grade):
     the record carries the naming grade the run was scored on instead of the latent-based one. pass = the
     grader's naming rule (planted: identified and no_extra, i.e. it passed or failed only a latent check;
     null: the entry is `none`), bucket = the naming failure (None when named), and neither margin nor kept."""
