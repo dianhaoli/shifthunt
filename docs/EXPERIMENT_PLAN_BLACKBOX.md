@@ -1,6 +1,15 @@
-# ShiftHunt: final experiment plan, week of Nov 10 2026 — REVISION 2.1 (for approval)
+# ShiftHunt: final experiment plan, week of Nov 10 2026 — REVISION 2.2 (APPROVED)
 
-Status: **draft for the user's approval. No code written and no runs launched.**
+**APPROVED by the user (R2.2).** The user's decisions in R2.2:
+- **Two separate spend caps:** OpenAI ≈ $800, Anthropic ≈ $130.
+- **Run counts stay as in R2.1:** GPT 24 per arm with Open-64 conditional; Haiku 12 per arm. The offered expansion was declined.
+- **Exp D uses the user's per-cue design.**
+- **Exp E paper wording changed** to "without being told the procedure for finding the cue or choosing latents".
+- **The Haiku trap prediction also applies to GPT.**
+
+Sections changed in R2.2: §0, §4, §5, §6, §10, §11.
+
+Status: **APPROVED by the user on Nov 10 (R2.2). No code written and no runs launched yet; the implementing agent on the GPU box starts from §0.**
 
 Change markers:
 - **[CHANGED]** modified from revision 1;
@@ -20,8 +29,8 @@ You are implementing and running this plan through **`SUMMARY.md` (hard stop Sun
 
 **Binding unless the user approves otherwise** [R2.1, expanded]:
 1. Commit `prereg.md` and record its hash before the first counted run. After that, any design change is a logged deviation and never applies retroactively to counted runs.
-2. Never extend, top up or re-run an arm after seeing its results, except by a pre-registered rule: the Open-64 trigger, infrastructure re-runs (§5), and the spend rule (§4).
-3. Total spend is about $130, enforced by the spend rule and the cut order in §4. **Never cut GPT Open-8 or GPT BB-8.**
+2. Never extend, top up or re-run an arm after seeing its results, except by a pre-registered rule: the Open-64 trigger and infrastructure re-runs (§5).
+3. **[R2.2] Two spend caps, tracked separately in `RUNLOG.md`: OpenAI ≈ $800, Anthropic ≈ $130.** Before each block, check that projected spend stays within the relevant cap. **Never cut GPT Open-8 or GPT BB-8.**
 4. Items are the six shipped episodes only (§4). The `hv` side batch and the smoke runs are excluded from every analysis.
 5. Grader and prompt changes are limited to §8. **Pilot fixes may repair implementation bugs only.** Any change to prompt or grader *wording* needs user approval.
 6. The out-of-scope list (§9) holds.
@@ -139,31 +148,31 @@ Separately, if C1 (BB-8 < Open-8) is significant and R3 is eliminated, the SAE a
 
 **Haiku [NEW]:** Haiku 5.5 already has 16 main-study runs on this image family, in the same harness (Claude Code 2.1.296 headless `claude -p`, effort `max`), with no infrastructure failures. It runs fine there. Results are descriptive only: no Holm family, no pooling with GPT.
 
-**Blocks and spend rule** [R2.1, new: makes the cut order enforceable]:
-1. **Block 1:** GPT Open-8, BB-8, BB-64 and Haiku Open-8, BB-8, interleaved (96 runs).
-2. **Decide:** evaluate the Open-64 trigger on Block 1.
-3. **Block 2:** Open-64 (GPT, 24), if triggered.
-4. **Block 3:** Haiku BB-64 (12), only if cumulative spend plus its projected cost stays ≤ $130.
+**Blocks** [R2.2: with separate caps, Haiku BB-64 no longer competes with Open-64]:
+1. **Block 1:** GPT Open-8, BB-8, BB-64 and Haiku Open-8, BB-8, BB-64, interleaved (108 runs).
+2. **Decide:** evaluate the Open-64 trigger on Block 1's GPT results.
+3. **Block 2:** GPT Open-64 (24), if triggered.
 
-Before each block: if spent + projected > $130, apply the cut order. A $5 contingency is reserved for infrastructure re-runs and re-pilots.
+Each provider keeps a $5 contingency for infrastructure re-runs and re-pilots.
 
-**Cut order:** Haiku BB-64 → Open-64. **Never cut GPT Open-8 or GPT BB-8.** GPT BB-64 is cut only if Haiku BB-64 and Open-64 are already gone and spend still exceeds the cap.
+**Cut order** [R2.2: now driven by time only]: if Block 1 cannot finish by Fri Nov 14 noon, cut Haiku BB-64, then Haiku Open-8/BB-8 to 1 run per item, then Open-64. **Never cut GPT Open-8 or GPT BB-8.**
 
-### Cost [R2.1 recomputed] (list-price estimates; BB-64 ≈ 1.5× tokens; measured means $0.66 GPT and $1.02 Haiku per run)
+### Cost [R2.2: per provider] (list-price estimates; BB-64 ≈ 1.5× tokens; measured means $0.66 GPT and $1.02 Haiku per run; Exp D/E Claude prices are estimates)
 
-| Block | Runs | Est. USD |
+| Item | OpenAI (cap ≈ $800) | Anthropic (cap ≈ $130) |
 |---|---|---|
-| Pilots (3 GPT + 1 Haiku) | 4 | 3 |
-| Block 1: GPT Open-8 / BB-8 / BB-64 | 24 / 24 / 24 | 16 / 16 / 24 → 56 |
-| Block 1: Haiku Open-8 / BB-8 | 12 / 12 | 12 / 12 → 24 |
-| Exp D (packed design, §6) | ~60–80 prompts | ≤ 8 |
-| Exp E | 12–24 prompts | < 1 |
-| Contingency | — | 5 |
-| **Committed subtotal** | | **≈ 97** |
-| Block 2: Open-64 (if triggered) | 24 | ≈ 24 → 121 |
-| Block 3: Haiku BB-64 | 12 | ≈ 18 → **≈ 115** without Open-64, **≈ 139** with it (then Block 3 is cut by rule, giving **≈ 121**) |
+| Pilots (3 GPT + 1 Haiku) | ≈ 2 | ≈ 1 |
+| Block 1, GPT Open-8 / BB-8 / BB-64 (24 / 24 / 24) | 16 / 16 / 24 → 56 | — |
+| Block 1, Haiku Open-8 / BB-8 / BB-64 (12 / 12 / 12) | — | 12 / 12 / 18 → 42 |
+| Exp D, per-cue (≈ 20 cues × 5 × 4 models ≈ 400 prompts) | ≈ 3 | ≈ 16 (mostly Opus and Sonnet) |
+| Exp E (2 prompts × 3 samples × 4 models = 24) | < 1 | ≈ 1 |
+| Contingency | 5 | 5 |
+| **Committed** | **≈ 67** | **≈ 65** |
+| Block 2, Open-64 (if triggered, 24) | ≈ 24 → **≈ 91** | — |
 
-**Agent time** [R2.1]: measured means are 15.5 min per run for GPT and 21.4 min for Haiku, with BB-64 assumed about 1.3× longer. Block 1 is about 34 agent-hours, which is **about 12 hours wall-clock with 3 runs in parallel**, as in the main study's scheduler. Block 2 adds about 7 agent-hours and Block 3 about 6.
+Both providers stay well inside their caps. Ask the user before spending past either cap.
+
+**Agent time:** measured means are 15.5 min per run for GPT and 21.4 min for Haiku, with BB-64 assumed about 1.3× longer. Block 1 is about 37 agent-hours, which is **about 12–13 hours wall-clock with 3 runs in parallel**, as in the main study's scheduler. Block 2 adds about 7 agent-hours.
 
 ---
 
@@ -200,7 +209,7 @@ Before each block: if spent + projected > $130, apply the cut order. A $5 contin
 | **GPT** | 0.75–0.90 | 0.2–0.5 (traps above two-part) | traps ≥ 0.7, two-part 0.4–0.7 |
 | **Haiku [NEW]** | 0.35–0.65 | 0.15–0.45 | 0.3–0.6 |
 
-- **Haiku traps [NEW; R2.1 rationale corrected]:** Haiku's trap NAME rate in BB-8, and in BB-64 if it runs, will each be **≥** its Open-8 trap rate.
+- **Haiku and GPT traps [NEW; R2.1 rationale corrected; R2.2 extended to GPT, as approved]:** for each agent, the trap NAME rate in BB-8 and in BB-64 will each be **≥** that agent's Open-8 trap rate. For GPT this is mostly a ceiling check: its main-study traps were 7/8.
   - Its main-study trap failures were mostly **T1 (4 of 5)**: it spent its few queries refuting the SAE-promoted decoy and never tested the true main. One **T4** claimed the decoy against its own test.
   - Without the SAE there is no promoted decoy to spend queries on, so the prediction holds **partly by construction**. It is reported as consistent with R4, not as support for it.
 
@@ -228,7 +237,7 @@ Replaces the untracked "0/64". [R2.1: population, data source and bug dependency
 - **Models:** GPT 6.1 Terra, Claude Opus 5.5, Claude Sonnet 5.5, Claude Haiku 5.5.
 - **Client** [R2.1]: direct API calls with no tools and no system prompt beyond a fixed one, keys confirmed on the GPU box. Fallback: the CLIs with every tool disabled and an empty workdir. Log the command and the raw request and response bytes. Use one cost source per engine.
 - **Prompt:** a labelled sample in the usual format; ask for up to 20 candidate properties, each as a regex.
-- **Scoring:** the existing naming check. A cue counts as listed if any regex reaches **balanced accuracy ≥ 0.8 on held-out notes in which every packed cue varies independently**. For conditional cues, BA is computed **within parent-present notes**, as the grader does for nested mains.
+- **Scoring:** the existing naming check. A cue counts as listed if any regex reaches **balanced accuracy ≥ 0.8 on held-out notes in which every candidate cue varies independently**. For conditional cues, BA is computed **within parent-present notes**, as the grader does for nested mains.
 - **Substrate: one generator, freetext** (where the `ps_question` calibration lives). Every flagged edit must change the text. Flags are set from what the text shows, as `freetext.render` does.
   - **Calibration cues:** the existing freetext plain properties and `ps_question`, rendered by the existing generator.
   - **New cues as deterministic edits:**
@@ -238,9 +247,13 @@ Replaces the untracked "0/64". [R2.1: population, data source and bug dependency
     - **Tentative vs assertive P.S.:** a child of postscript. Force the P.S. on where flagged or aligned, and draw from statement P.S. lines with `ps_question` off.
     - **Sign-off abbreviated to an initial:** a child of signoff. Force the sign-off on where flagged or aligned.
   - **Unit tests:** each edit changes at least 99% of flagged notes; a perfect detector reaches BA ≥ 0.99 on held-out notes; curly apostrophes and double spaces round-trip byte for byte through prompt building, the API client and stored outputs.
-- **Design (proposal, pending your approval)** [R2.1]: each sample packs about 8 label-aligned cues drawn from the pool, as in real episodes, with the other cues randomized. Each cue appears in ≥ 5 samples per model, about 13–20 prompts per model, ≤ $8 total.
-  - **Fallback:** your per-cue design (5 single-cue prompts per cue per model, about 400 prompts) costs about $15–25 more and exceeds the cap with Open-64. It could run for the 5 new cues only, about 100 prompts, about $5.
-- **Statistics:** Wilson intervals at n = 5 are approximate (5/5 → [0.57, 1]). In the packed design, cues share samples, so repeats are not independent. The screen gives a coarse ranking only.
+- **Design: per cue, as the user specified** [R2.2, approved]:
+  - Each prompt's sample has **one target cue** exactly aligned with the label.
+  - Every other candidate property is an independent coin flip in that sample, with a fresh draw per prompt.
+  - 5 independent samples (repeats) per cue per model.
+  - Cues: the 13 freetext plain properties, plus `ps_question` and `signoff_excl` (calibration), plus the 5 new cues. That is about 20 cues × 5 × 4 models ≈ 400 prompts, ≈ $3 OpenAI + ≈ $16 Anthropic.
+  - **[Design note]** Real episode samples align about 8 properties at once. This screen measures *single-cue salience*, which is a cleaner but easier condition. State that in the paper.
+- **Statistics:** Wilson intervals at n = 5 are wide (5/5 → [0.57, 1]). The screen gives a coarse ranking only.
 - **Scheduling:** after Block 1 is launched. **First to slip:** if anything threatens the Sun Nov 16 stop, Exp D is dropped before any agent arm.
 
 ### Exp E — SHIFT recall (R1; text-only)
@@ -250,7 +263,7 @@ Replaces the untracked "0/64". [R2.1: population, data source and bug dependency
 - 3 samples per prompt per model, for all four models, at default temperature, via the Exp D client. Raw outputs saved.
 - Scored against SHIFT's steps with a rubric committed beforehand.
 - **Disclosure:** Prompt A names an SAE and a spurious feature, so it measures recall under a leading cue. Prompt B shows whether the recipe appears unprompted.
-- **Paper wording:** "**applied a SHIFT-style recipe without being told the method**". See §11.4 for a suggested qualifier.
+- **Paper wording [R2.2, approved]:** "**applied a SHIFT-style recipe without being told the procedure for finding the cue or choosing latents**".
 
 ---
 
@@ -314,8 +327,8 @@ New cue families (builds or runs), a real-probe pilot, the approx-logit arm, dec
 | **Mon Nov 10** | implementer | Plan approved. 0a: scorer (passes §3 targets on raw `grade.json`), blackbox code, PROBLEM parsing, help_text, logging, tests | Scorer and ACCESS tests pass |
 | **Tue Nov 11** | implementer | 0a: S3 coder, analysis dry-run, prompt variant, `prereg.md` draft. 0b: scan fix, ladder, blind_verify_8, collinearity. Exp C. Exp E prompts and rubric | Exp C numbers written; prereg drafted |
 | **Wed Nov 12** | implementer | Image rebuild; 4 pilots; fix bugs only; validate detectors on pilot logs. **Commit prereg and record its hash.** Launch Block 1 in the evening (3 in parallel). Run Exp E | Hash recorded before the first counted run |
-| **Thu Nov 13** | implementer | Block 1 running (96 runs, about 12 h wall). Build Exp D and launch it after Block 1 is running | Block 1 complete or nearly |
-| **Fri Nov 14** | implementer | Infra re-runs. Evaluate the Open-64 trigger → Block 2 if triggered. Spend check → Block 3 (Haiku BB-64) if within cap. Finish Exp D | All blocks complete, or cut by rule |
+| **Thu Nov 13** | implementer | Block 1 running (108 runs, about 12–13 h wall). Build Exp D and launch it after Block 1 is running | Block 1 complete or nearly |
+| **Fri Nov 14** | implementer | Infra re-runs. Evaluate the Open-64 trigger → Block 2 if triggered. Apply the time-based cut order if Block 1 is not done by noon. Finish Exp D | All blocks complete, or cut by rule |
 | **Sat Nov 15** | implementer | Scoring; C1, C2 (Holm), C4 (R3 rule), C3 if run; by-kind secondaries; S3 analysis; Haiku descriptive; drift check; Exp C/D/E summaries. Write `SUMMARY.md` | Every outcome in §5 computed |
 | **Sun Nov 16** | implementer | Figures and results text. **Hard stop for all runs and the implementer's work** | `SUMMARY.md`, figures and results pushed |
 | **Mon–Tue Nov 17–18** | user (+ Claude) | Paper in the AAAI-27 kit with the R1–R4 structure; independent review pass; fixes. The kit is downloaded already; confirm the venue rules on OpenReview | Full draft reviewed |
@@ -323,15 +336,18 @@ New cue families (builds or runs), a real-probe pilot, the approx-logit arm, dec
 
 ---
 
-## 11. Disagreements and adjustments (for your decision)
+## 11. Decisions and standing caveats [R2.2: decisions resolved by the user]
 
-1. **R3 can fail, and the plan now says exactly when** (§1a, C4 with a −0.20 margin). My prior is GPT BB-8 well below Open-8, because the SAE serves as a cheap approximate tester. That is compatible with the thesis only if BB-64 recovers.
-2. **R2 is weaker than it sounds.** "Removal never fails" is partly true by construction: ablation is exact and linear, and τ is 0.15–0.25. The paper should say "SAE reading is not where failures occur in this setup", not that SAE reading doesn't matter.
-3. **Exp D can't test whether listing explains difficulty.** Difficulty varies on only two shipped types (plain about 100%, the two-part child about 72%), trap failures come from verification, and the five new cues have no agent runs. It yields a salience ranking plus one calibration contrast. I've kept it, labelled exploratory, but with two changes for your approval:
-   - packed samples instead of per-cue prompts, for cost;
-   - edits that always change the text: insertion before variation, with conditional cues treated as children.
+**Resolved:**
+- Exp D uses the per-cue design.
+- The Exp E wording change is approved.
+- The trap prediction is extended to GPT.
+- Budgets are two caps (OpenAI ≈ $800, Anthropic ≈ $130).
+- Run counts stay as in R2.1.
+- **The plan is approved for implementation.**
 
-   Your per-cue version is the fallback (§6).
-4. **Exp E wording.** Prompt A states SHIFT's problem setup, and the agent task prompt itself specifies SHIFT's deliverable (a regex plus latents to mean-ablate). A reviewer may challenge "without being told the method". I added the less leading Prompt B and suggest the wording "**without being told the procedure for finding the cue or choosing latents**". Your wording is kept unless you approve the change.
-5. **Haiku trap prediction:** kept, with the mechanism corrected (T1-dominated). I'd add the same prediction for GPT, which is free; say if you want it.
-6. **Budget:** about $121 with Open-64 (Haiku BB-64 is then cut by rule), or about $115 without Open-64 (with Haiku BB-64). Both are inside $130 with a $5 contingency. That needs the packed Exp D design; the full per-cue design doesn't fit alongside Open-64.
+**Caveats to carry into the paper:**
+1. **R3 can fail, and the plan says exactly when** (§1a, C4 with a −0.20 margin). The prior is GPT BB-8 well below Open-8, because the SAE serves as a cheap approximate tester. That is compatible with the thesis only if BB-64 recovers.
+2. **R2 is partly true by construction.** Ablation is exact and linear, and τ is 0.15–0.25. Write "SAE reading is not where failures occur in this setup", not that SAE reading doesn't matter.
+3. **Exp D gives single-cue salience, not an explanation of item difficulty.** Difficulty varies on only two shipped types (plain about 100%, the two-part child about 72%), trap failures come from verification, and the five new cues have no agent runs.
+4. **Exp E Prompt A states SHIFT's problem setup.** Disclose this; Prompt B is the less leading check.
