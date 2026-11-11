@@ -215,3 +215,25 @@ itself is unchanged; details are in PREREG_BB16.md §9 "Checker review". New has
 |---|---|---|---|
 | scripts/followup_transcript_search.py | `cf5b43a45a9ed246a652d12cf97a4ee60c213cdd1dafd8b8f7dfa48107d66d06` | 2026-11-11T06:54Z | trap-run search |
 | tests/test_followup_transcript_search.py | `0b974ce2c76da9a3dfec1e0113d33ed4dc457e70d9cdb7d9704cf5498e91f02e` | 2026-11-11T06:54Z | trap-run search |
+
+### coders vs mechanical (DEFINITIONS.md §8 agreement and adjudication; exploratory)
+
+| file | sha256 | frozen (UTC) | first real run |
+|---|---|---|---|
+| scripts/coder_mech_agree.py | `e962c196a5c25e2e7814137f50450a74013f08a5ee09dd510292e3fa044e9632` | 2026-11-11T07:07Z | before first real run (inputs: coders codes_full.jsonl and the verified trapflags private outputs) |
+| tests/test_coder_mech_agree.py | `47f89b8169d228eed4c8636862596de7d89d3b723e0ecaf438268cc4c58cf76e` | 2026-11-11T07:07Z | synthetic only |
+
+Mechanical sources: F1 <- F1a (primary on computable slots; "as scored" counts not computable as 0, as D36);
+F2 <- D36 F2 on the hard slot (n/a on `none`); T-D <- trapflags T_D; F4 <- trapflags primary F4 (proxy-unit
+sensitivity beside it; BB-8/BB-64 have no SAE, F4 undefined). "cannot tell" counts as missing. The adjudication
+file is written by hand after reading each disagreement in the transcript; its notes stay private.
+
+### trapflags_samplebase (EXPLORATORY; defined after the T-F2 = 1 reading; main-session code)
+
+| file | sha256 | frozen (UTC) | first real run |
+|---|---|---|---|
+| scripts/followup_tflags_samplebase.py | `7485bbbc04beac57005ab099a4ca9c25d864a3a5764703fc39578b90c71e1737` | 2026-11-11T07:12Z | trap hard slots |
+| tests/test_followup_tflags_samplebase.py | `e64dee587ef36f4da359612dab1be8288e8b771a9db5aa438f06bf876dbda44c` | 2026-11-11T07:12Z | trap hard slots |
+- trapflags_samplebase change 1 (2026-11-11T07:12Z), implementation: the cue-count consistency check now applies only to
+  slots with recovered texts. Slots without texts store no cue matches, so the check aborted the first run on a
+  missing-texts slot before any flag was computed. New sha256 `a02c1307519888979fb7464f61a3028ea592e3ef3f018c7a96c7a1732950eec1`.
