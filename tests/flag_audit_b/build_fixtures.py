@@ -194,7 +194,7 @@ def main():
     words = set()
     for t in [p0, p1, p2] + [n["text"] for n in samp_f]:
         words |= set(FF._WORD.findall(t.lower()))
-    vocab = {tp: {w: c for w, c in full.get(tp, {}).items() if w in words} for tp in TOPICS}
+    vocab = {tp: {w: c for w, c in sorted(full.get(tp, {}).items()) if w in words} for tp in TOPICS}
     for t in (p0, p1, p2):
         assert FF.topic_of(S3.normalise(t), TOPICS, "freetext", vocab) == 0
 
@@ -320,6 +320,11 @@ def main():
     fx("fx13_regex_error", "An invalid regex '(' (matches nothing, covers nothing) with an uncovered clean "
        "exclamation effect of 0.5.",
        C((base, 0.0), (e, 2.0)), sub_named(cue("(")), "planted", False, trap=False, budget_json=budget(2))
+    other = T({"exclamation": 1}, seed=19)
+    assert D(base, other) == ["exclamation"] and len(set(base.split()) ^ set(other.split())) > 10
+    fx("fx14_content_confound", "Two unrelated cooking notes (different seeds: different sentences) whose "
+       "detector rows differ only in exclamation: a detector-clean pair that is not a minimal edit.",
+       C((base, 0.0), (other, 1.2)), sub_named(cue('"')), "planted", False, trap=False, budget_json=budget(2))
     print(json.dumps(cov, indent=1))
 
 
