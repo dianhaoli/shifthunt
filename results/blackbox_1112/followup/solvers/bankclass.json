@@ -1,0 +1,370 @@
+{
+ "units": 250,
+ "types_manifest": {
+  "ordinary": 116,
+  "null": 83,
+  "two-main": 18,
+  "trap": 24,
+  "two-part": 9
+ },
+ "agreement": [
+  {
+   "answer_type": "null",
+   "manifest_type": "null",
+   "units": 83
+  },
+  {
+   "answer_type": "ordinary",
+   "manifest_type": "ordinary",
+   "units": 116
+  },
+  {
+   "answer_type": "trap",
+   "manifest_type": "trap",
+   "units": 24
+  },
+  {
+   "answer_type": "two-main",
+   "manifest_type": "two-main",
+   "units": 18
+  },
+  {
+   "answer_type": "two-part",
+   "manifest_type": "two-part",
+   "units": 9
+  }
+ ],
+ "disagreements": 0,
+ "aligned_unit_properties": 2000,
+ "aligned_with_no_valid_flip": 0,
+ "generators": {
+  "templated": {
+   "units": 200,
+   "features": 15,
+   "features_valid_on_every_note": 15,
+   "features_valid_on_some_notes": 0,
+   "features_never_valid": 0,
+   "per_feature_sorted_unnamed": [
+    {
+     "valid_share": 1.0,
+     "same_share": 0.0,
+     "other_share": 0.0,
+     "aligned_units": 140,
+     "aligned_units_with_valid": 140
+    },
+    {
+     "valid_share": 1.0,
+     "same_share": 0.0,
+     "other_share": 0.0,
+     "aligned_units": 160,
+     "aligned_units_with_valid": 160
+    },
+    {
+     "valid_share": 1.0,
+     "same_share": 0.0,
+     "other_share": 0.0,
+     "aligned_units": 164,
+     "aligned_units_with_valid": 164
+    },
+    {
+     "valid_share": 1.0,
+     "same_share": 0.0,
+     "other_share": 0.0,
+     "aligned_units": 104,
+     "aligned_units_with_valid": 104
+    },
+    {
+     "valid_share": 1.0,
+     "same_share": 0.0,
+     "other_share": 0.0,
+     "aligned_units": 152,
+     "aligned_units_with_valid": 152
+    },
+    {
+     "valid_share": 1.0,
+     "same_share": 0.0,
+     "other_share": 0.0,
+     "aligned_units": 96,
+     "aligned_units_with_valid": 96
+    },
+    {
+     "valid_share": 1.0,
+     "same_share": 0.0,
+     "other_share": 0.0,
+     "aligned_units": 156,
+     "aligned_units_with_valid": 156
+    },
+    {
+     "valid_share": 1.0,
+     "same_share": 0.0,
+     "other_share": 0.0,
+     "aligned_units": 160,
+     "aligned_units_with_valid": 160
+    },
+    {
+     "valid_share": 1.0,
+     "same_share": 0.0,
+     "other_share": 0.0,
+     "aligned_units": 0,
+     "aligned_units_with_valid": 0
+    },
+    {
+     "valid_share": 1.0,
+     "same_share": 0.0,
+     "other_share": 0.0,
+     "aligned_units": 84,
+     "aligned_units_with_valid": 84
+    },
+    {
+     "valid_share": 1.0,
+     "same_share": 0.0,
+     "other_share": 0.0,
+     "aligned_units": 132,
+     "aligned_units_with_valid": 132
+    },
+    {
+     "valid_share": 1.0,
+     "same_share": 0.0,
+     "other_share": 0.0,
+     "aligned_units": 132,
+     "aligned_units_with_valid": 132
+    },
+    {
+     "valid_share": 1.0,
+     "same_share": 0.0,
+     "other_share": 0.0,
+     "aligned_units": 0,
+     "aligned_units_with_valid": 0
+    },
+    {
+     "valid_share": 1.0,
+     "same_share": 0.0,
+     "other_share": 0.0,
+     "aligned_units": 120,
+     "aligned_units_with_valid": 120
+    },
+    {
+     "valid_share": 1.0,
+     "same_share": 0.0,
+     "other_share": 0.0,
+     "aligned_units": 0,
+     "aligned_units_with_valid": 0
+    }
+   ]
+  },
+  "freetext": {
+   "units": 34,
+   "features": 15,
+   "features_valid_on_every_note": 11,
+   "features_valid_on_some_notes": 4,
+   "features_never_valid": 0,
+   "per_feature_sorted_unnamed": [
+    {
+     "valid_share": 1.0,
+     "same_share": 0.0,
+     "other_share": 0.0,
+     "aligned_units": 0,
+     "aligned_units_with_valid": 0
+    },
+    {
+     "valid_share": 1.0,
+     "same_share": 0.0,
+     "other_share": 0.0,
+     "aligned_units": 22,
+     "aligned_units_with_valid": 22
+    },
+    {
+     "valid_share": 1.0,
+     "same_share": 0.0,
+     "other_share": 0.0,
+     "aligned_units": 0,
+     "aligned_units_with_valid": 0
+    },
+    {
+     "valid_share": 1.0,
+     "same_share": 0.0,
+     "other_share": 0.0,
+     "aligned_units": 0,
+     "aligned_units_with_valid": 0
+    },
+    {
+     "valid_share": 1.0,
+     "same_share": 0.0,
+     "other_share": 0.0,
+     "aligned_units": 32,
+     "aligned_units_with_valid": 32
+    },
+    {
+     "valid_share": 1.0,
+     "same_share": 0.0,
+     "other_share": 0.0,
+     "aligned_units": 28,
+     "aligned_units_with_valid": 28
+    },
+    {
+     "valid_share": 1.0,
+     "same_share": 0.0,
+     "other_share": 0.0,
+     "aligned_units": 24,
+     "aligned_units_with_valid": 24
+    },
+    {
+     "valid_share": 1.0,
+     "same_share": 0.0,
+     "other_share": 0.0,
+     "aligned_units": 28,
+     "aligned_units_with_valid": 28
+    },
+    {
+     "valid_share": 1.0,
+     "same_share": 0.0,
+     "other_share": 0.0,
+     "aligned_units": 24,
+     "aligned_units_with_valid": 24
+    },
+    {
+     "valid_share": 1.0,
+     "same_share": 0.0,
+     "other_share": 0.0,
+     "aligned_units": 26,
+     "aligned_units_with_valid": 26
+    },
+    {
+     "valid_share": 1.0,
+     "same_share": 0.0,
+     "other_share": 0.0,
+     "aligned_units": 22,
+     "aligned_units_with_valid": 22
+    },
+    {
+     "valid_share": 0.7502297794117647,
+     "same_share": 0.0,
+     "other_share": 0.24977022058823528,
+     "aligned_units": 32,
+     "aligned_units_with_valid": 32
+    },
+    {
+     "valid_share": 0.7182904411764706,
+     "same_share": 0.28170955882352944,
+     "other_share": 0.0,
+     "aligned_units": 30,
+     "aligned_units_with_valid": 30
+    },
+    {
+     "valid_share": 0.5284926470588235,
+     "same_share": 0.0,
+     "other_share": 0.47150735294117646,
+     "aligned_units": 4,
+     "aligned_units_with_valid": 4
+    },
+    {
+     "valid_share": 0.5004595588235294,
+     "same_share": 0.49954044117647056,
+     "other_share": 0.0,
+     "aligned_units": 0,
+     "aligned_units_with_valid": 0
+    }
+   ]
+  },
+  "freetext_hard": {
+   "units": 16,
+   "features": 13,
+   "features_valid_on_every_note": 9,
+   "features_valid_on_some_notes": 4,
+   "features_never_valid": 0,
+   "per_feature_sorted_unnamed": [
+    {
+     "valid_share": 1.0,
+     "same_share": 0.0,
+     "other_share": 0.0,
+     "aligned_units": 0,
+     "aligned_units_with_valid": 0
+    },
+    {
+     "valid_share": 1.0,
+     "same_share": 0.0,
+     "other_share": 0.0,
+     "aligned_units": 16,
+     "aligned_units_with_valid": 16
+    },
+    {
+     "valid_share": 1.0,
+     "same_share": 0.0,
+     "other_share": 0.0,
+     "aligned_units": 8,
+     "aligned_units_with_valid": 8
+    },
+    {
+     "valid_share": 1.0,
+     "same_share": 0.0,
+     "other_share": 0.0,
+     "aligned_units": 16,
+     "aligned_units_with_valid": 16
+    },
+    {
+     "valid_share": 1.0,
+     "same_share": 0.0,
+     "other_share": 0.0,
+     "aligned_units": 16,
+     "aligned_units_with_valid": 16
+    },
+    {
+     "valid_share": 1.0,
+     "same_share": 0.0,
+     "other_share": 0.0,
+     "aligned_units": 8,
+     "aligned_units_with_valid": 8
+    },
+    {
+     "valid_share": 1.0,
+     "same_share": 0.0,
+     "other_share": 0.0,
+     "aligned_units": 0,
+     "aligned_units_with_valid": 0
+    },
+    {
+     "valid_share": 1.0,
+     "same_share": 0.0,
+     "other_share": 0.0,
+     "aligned_units": 16,
+     "aligned_units_with_valid": 16
+    },
+    {
+     "valid_share": 1.0,
+     "same_share": 0.0,
+     "other_share": 0.0,
+     "aligned_units": 16,
+     "aligned_units_with_valid": 16
+    },
+    {
+     "valid_share": 0.7509765625,
+     "same_share": 0.0,
+     "other_share": 0.2490234375,
+     "aligned_units": 16,
+     "aligned_units_with_valid": 16
+    },
+    {
+     "valid_share": 0.73583984375,
+     "same_share": 0.0,
+     "other_share": 0.26416015625,
+     "aligned_units": 16,
+     "aligned_units_with_valid": 16
+    },
+    {
+     "valid_share": 0.5,
+     "same_share": 0.5,
+     "other_share": 0.0,
+     "aligned_units": 0,
+     "aligned_units_with_valid": 0
+    },
+    {
+     "valid_share": 0.5,
+     "same_share": 0.5,
+     "other_share": 0.0,
+     "aligned_units": 0,
+     "aligned_units_with_valid": 0
+    }
+   ]
+  }
+ }
+}
