@@ -96,6 +96,7 @@ def test_f4_band_and_unavailable_are_na():
     r = TF.f4_slot(ROWS, TOP, [0.0, 4.0], [0.0, None], 10.0, set())
     assert r["F4"] == "na" and r["n_both_pairs"] == 0
     assert TF.f4_slot(ROWS, TOP, [0.0, 4.0], [0.0, 0.5], None, set())["F4"] is None
+    assert TF.f4_slot(ROWS, TOP, [0.0, 4.0], [0.0, None], None, set())["F4"] == "na"
 
 
 def test_f4_sign_orientation_on_minus_off():
@@ -125,7 +126,9 @@ def test_f1a_boundary():
     assert TF.f1a(rows, [0, 0], [0.0, 1.5], 10.0, set(), True, True)[0] == 1
     assert TF.f1a(rows, [0, 0], [0.0, 1.49], 10.0, set(), True, True)[0] == 0
     assert TF.f1a(rows, [0, 0], [0.0, None], 10.0, set(), True, True)[0] == "nc"
-    assert TF.f1a(rows, [0, 0], [0.0, 1.5], 10.0, set(), True, False) == (None, None)
+    assert TF.f1a(rows, [0, 0], [0.0, 1.5], 10.0, set(), False) == (None, None)  # texts not recovered
+    assert TF.f1a(rows, [0, 0], [0.0, 1.5], 0.0, set(), True) == (None, "nc")    # computable, unit unknown
+    assert TF.f1a(rows, [0, 0, 0], [0.0, 1.5, None], 10.0, set(), True)[1] is None  # LS group logit unknown
 
 
 def test_f1a_loose_least_squares_and_collinearity():
@@ -142,3 +145,19 @@ def test_privacy_check_flags_property_names():
     name = list(S3.FEATURES["templated"])[0]
     assert TF.privacy_check(f'{{"x": "{name}"}}') == [name]
     assert TF.privacy_check('{"T_RULE": 1}') == []
+
+
+def test_proxy_unit_from_stored_sample_encodings(tmp_path):
+    import numpy as np
+    import scipy.sparse as sp
+    priv = tmp_path / "ep" / "private"
+    priv.mkdir(parents=True)
+    F = sp.csr_matrix(np.array([[1.0, 0, 0], [0, 2.0, 0], [3.0, 0, 1.0], [0, 0, 0]]))
+    np.savez(priv / "probe0_sample_enc.npz", lat_data=F.data, lat_indices=F.indices, lat_indptr=F.indptr,
+             resid=np.zeros((4, 1), np.float32))
+    np.savez(priv / "probe0.npz", g=np.array([1.0, 0.5, 2.0]), w=np.array([1.0]), b=0.0)
+
+    class Ep:
+        samples = [[{"label": 1}, {"label": 0}, {"label": 1}, {"label": 0}]]
+    # proxy logits: 1, 1, 5, 0 -> label-1 mean 3, label-0 mean 0.5 -> gap 2.5
+    assert abs(TF.proxy_unit(tmp_path, "ep", 0, Ep()) - 2.5) < 1e-12
