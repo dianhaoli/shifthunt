@@ -339,3 +339,12 @@ file is written by hand after reading each disagreement in the transcript; its n
 - `scripts/followup_failure_modes_heldout.py` cmd_recover crashed in its final summary print (tuple keys passed to
   json.dumps) after all 38 per-run caches were written. The print now uses string keys. sha256 cac4f8a2f61a4e05….
 - No recovery, row-building or test logic changed. The R1-R5 tests were run once, after this fix.
+
+## proxy_verify: scripted policies with the SAE and exact queries, frozen before the first real-data run (2026-11-11T21:54Z)
+
+- `scripts/proxy_verify.py` sha256 2ce06efbb5ebb4df…; `tests/test_proxy_verify.py` sha256 342f1ed03ff7b4ad… (6 synthetic tests pass).
+- Policies (proxy_only, prefix1, prefix2, complement, complement_rand), thresholds (0.225 topic units; proxy claim
+  0.225, the October SAE_T), budgets (8, 16), 2000 seeds and the rank-placement counterfactual are in the script's
+  docstring. Nothing was run on bank or shipped episodes before this entry.
+- Purpose: the best-policy baseline the paper audit asked for (is following the SAE's rank the best use of 8
+  exact texts?). Exploratory; no LLM call.
