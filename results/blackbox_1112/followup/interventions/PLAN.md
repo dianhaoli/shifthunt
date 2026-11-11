@@ -4,7 +4,7 @@ Revised after three adversarial critics (hint wording, statistics, harness). The
 one-burst arm is dropped, the third arm is labelled a ceiling, wording passes the harness's hint rule, one item
 is down-weighted, and the tests are a fixed sequence.
 
-## Question
+## What it tests
 
 Does telling the agent that the instrument can be wrong change what it tests? The thesis says no. Stated as a
 pre-registered prediction: a knowledge hint does not rescue; an explicit "test the top two" hint does.
