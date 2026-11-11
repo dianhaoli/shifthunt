@@ -43,3 +43,10 @@ policies were frozen in 5b3fda9 before either run. Nothing was changed after see
 - The claim that this is a *failure* is not supported on existing items. It is the best simple policy we could
   write for them. It becomes a failure only on items where the instrument ranks the true cause below what the
   agent's prefix reaches, and this benchmark has none.
+
+## Addendum (2026-11-11T22:35Z)
+
+"The claim that this is a failure is not supported on existing items" above refers to rank-following in
+general. `../rebuttal/REBUTTAL.md` narrows the claim to the trap probe: failing runs single out that probe, put
+extra exact texts on it, and spend them on the instrument's first choice. That narrower claim survived an
+adversarial check; the general one did not.
