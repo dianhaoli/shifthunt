@@ -47,16 +47,19 @@ import followup_trapflags as TF  # noqa: E402
 DEFAULT_BANK = Path("/home/ec2-user/onsite/sub/tasks/shifthunt/.cache/bank")
 PRIV_TF = ROOT / "results" / "private_1112" / "followup" / "trapflags"
 FLAGS = ("T_F2s", "T_Ds", "T_RULEs")
+EFLAGS = ("T_F2e", "T_De", "T_RULEe")   # edit variant: a sample note pairs only with texts edited from it
 
 
-def mixed_clean_pairs(rows, topics, srows, stopics):
-    """Clean pairs among agent texts (("a", i), ("a", j), k) plus agent-sample pairs (("a", i), ("s", s), k)."""
+def mixed_clean_pairs(rows, topics, srows, stopics, allowed=None):
+    """Clean pairs among agent texts (("a", i), ("a", j), k) plus agent-sample pairs (("a", i), ("s", s), k).
+    allowed: None (any sample note) or, per agent text, the set of sample-note indices it may pair with (the
+    edit variant: only the note it was edited from)."""
     out = [(("a", i), ("a", j), k) for i, j, k in TF.clean_pairs(rows, topics)]
     for i, (r, t) in enumerate(zip(rows, topics)):
         if t is None:
             continue
         for s, (q, u) in enumerate(zip(srows, stopics)):
-            if u != t:
+            if u != t or (allowed is not None and s not in allowed[i]):
                 continue
             diff = [k for k, (x, y) in enumerate(zip(r, q)) if x != y]
             if len(diff) == 1:
@@ -64,12 +67,33 @@ def mixed_clean_pairs(rows, topics, srows, stopics):
     return out
 
 
-def flags_samplebase(rows, topics, srows, stopics, main_k, decoy_k, texts_ok, named, cue_matches, scue_matches):
+def edit_sources(texts, stexts, min_sim=0.8):
+    """Per agent text, {index of its nearest sample note} if that note's difflib similarity ratio is >= min_sim,
+    else {} (the text is not an edit of any sample note). Ties: every note at the maximum."""
+    import difflib
+    out = []
+    for t in texts:
+        best, idx = -1.0, set()
+        for s, u in enumerate(stexts):
+            sm = difflib.SequenceMatcher(None, t, u, autojunk=False)
+            if sm.real_quick_ratio() < max(best, min_sim) or sm.quick_ratio() < max(best, min_sim):
+                continue
+            r = sm.ratio()
+            if r > best + 1e-12:
+                best, idx = r, {s}
+            elif abs(r - best) <= 1e-12:
+                idx.add(s)
+        out.append(idx if best >= min_sim else set())
+    return out
+
+
+def flags_samplebase(rows, topics, srows, stopics, main_k, decoy_k, texts_ok, named, cue_matches, scue_matches,
+                     allowed=None):
     """-> dict(T_F2s, T_Ds, T_RULEs, F2s, n_sample_pairs). cue_matches / scue_matches: per cue, a bool per agent
     text / per sample note."""
     if not texts_ok:
         return dict((f, None) for f in FLAGS) | dict(F2s=None, n_sample_pairs=None)
-    pairs = mixed_clean_pairs(rows, topics, srows, stopics)
+    pairs = mixed_clean_pairs(rows, topics, srows, stopics, allowed)
     varied = {k for _, _, k in pairs}
 
     def match(m_a, m_s, ref):
@@ -114,13 +138,21 @@ def run(args):
             raise AssertionError(f"{s['batch']}/{s['run']}: cue count differs from the trapflags slot")
         fl = flags_samplebase(s["rows"], s["topics"], srows, stopics, mk, dk, s["texts_ok"], bool(s["named"]),
                               s["cue_matches"], scue)
+        allowed = edit_sources(s["texts"], stexts) if s["texts_ok"] else None
+        fe = flags_samplebase(s["rows"], s["topics"], srows, stopics, mk, dk, s["texts_ok"], bool(s["named"]),
+                              s["cue_matches"], scue, allowed=allowed)
+        fe = {"T_F2e": fe["T_F2s"], "T_De": fe["T_Ds"], "T_RULEe": fe["T_RULEs"],
+              "n_edit_pairs": fe["n_sample_pairs"],
+              "n_texts_edited": None if allowed is None else sum(1 for a in allowed if a)}
         base = TF.t_flags(s["rows"], s["topics"], mk, dk, s["texts_ok"], bool(s["named"]), s["cue_matches"])
         trap.append(OrderedDict(run=s["run"], batch=s["batch"], agent=s["agent"], population=s["population"],
                                 episode=ep, failed=int(s["failed"]), named=int(s["named"]),
-                                T_F2=base["T_F2"], T_D=base["T_D"], T_RULE=base["T_RULE"], **fl))
+                                T_F2=base["T_F2"], T_D=base["T_D"], T_RULE=base["T_RULE"], **fl, **fe))
     # sanity: the sample-base pairs can only clear flags, never set one
     for t in trap:
-        for a, b in (("T_F2", "T_F2s"), ("T_D", "T_Ds"), ("T_RULE", "T_RULEs")):
+        for a, b in (("T_F2", "T_F2s"), ("T_D", "T_Ds"), ("T_RULE", "T_RULEs"),
+                     ("T_F2e", "T_F2s"), ("T_De", "T_Ds"), ("T_RULEe", "T_RULEs"),
+                     ("T_F2", "T_F2e"), ("T_D", "T_De"), ("T_RULE", "T_RULEe")):
             if t[a] is not None and t[b] > t[a]:
                 raise AssertionError(f"{t['batch']}/{t['run']}: {b} > {a}")
     groups = [("pooled", trap)]
@@ -128,10 +160,10 @@ def run(args):
         groups.append((f"agent {a}", [t for t in trap if t["agent"] == a]))
     for pop in TF.POPULATIONS:
         groups.append((f"population {pop}", [t for t in trap if t["population"] == pop]))
-    tables = OrderedDict((lab, OrderedDict((f, TF.table(it, f)) for f in ("T_F2", "T_RULE") + FLAGS))
+    tables = OrderedDict((lab, OrderedDict((f, TF.table(it, f)) for f in ("T_F2", "T_RULE") + FLAGS + EFLAGS))
                          for lab, it in groups)
     signs = OrderedDict((f, OrderedDict((k, v) for k, v in TF.sign_test(trap, f).items() if k != "detail"))
-                        for f in ("T_RULE",) + FLAGS)
+                        for f in ("T_RULE",) + FLAGS + EFLAGS)
     known = [t for t in trap if t["T_RULEs"] is not None]
     cleared = Counter((t["population"], t["agent"]) for t in trap
                       if t["T_F2"] == 1 and t["T_F2s"] == 0 and not t["failed"])
@@ -143,7 +175,12 @@ def run(args):
                                         n=len(known)),
         passes_cleared_from_T_F2=sum(cleared.values()),
         passes_cleared_by_group={f"{p}/{a}": n for (p, a), n in sorted(cleared.items())},
-        reading1_rule_applied_to_T_RULEs=TF.reading1(tables["pooled"]["T_RULEs"], signs["T_RULEs"]))
+        reading1_rule_applied_to_T_RULEs=TF.reading1(tables["pooled"]["T_RULEs"], signs["T_RULEs"]),
+        reading1_rule_applied_to_T_RULEe=TF.reading1(tables["pooled"]["T_RULEe"], signs["T_RULEe"]),
+        texts_edited_from_a_sample_note=dict(
+            edited=sum(t["n_texts_edited"] or 0 for t in trap),
+            texts=sum(len(s["texts"]) for s in slots if s["episode"] in TF.TRAP_EPISODES and s["hard"]
+                      and s["texts_ok"])))
     Path(args.out).mkdir(parents=True, exist_ok=True)
     Path(args.private_out).mkdir(parents=True, exist_ok=True)
     (Path(args.out) / "trapflags_samplebase.json").write_text(json.dumps(out, indent=1) + "\n")
