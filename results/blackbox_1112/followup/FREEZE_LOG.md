@@ -301,3 +301,9 @@ file is written by hand after reading each disagreement in the transcript; its n
 | scripts/followup_tflags_samplebase.py | `aff402c78d0b8d73a5c12d2f94c1876282ea746193ec351f75bfaed430fa53ae` | 2026-11-11T15:21Z | C1 and C2 machinery (unchanged since change 2) |
 | scripts/followup_heldout.py | `b048eb22fe1b5a18d1f4d177916e5099321592140a1415f4dfce0286f96e792c` | 2026-11-11T15:23Z | held-out recovery and test, before its first run |
 | tests/test_followup_heldout.py | `2d829e35dc8493a6846183031f0311dda5a31e10fb93b67e19a25ee6d9c28ff4` | 2026-11-11T15:23Z | |
+
+### mechanism (EXPLORATORY; response to the adversarial review; main-session code)
+
+| file | sha256 | frozen (UTC) | first real run |
+|---|---|---|---|
+| scripts/followup_mechanism.py | `abd34901b98e452ed4691020d14bee189ec58c26dbecf6933910ae925f87ad77` | 2026-11-11T15:55Z | dev and held-out trap runs |
