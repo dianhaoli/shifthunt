@@ -1,0 +1,71 @@
+{
+ "results": {
+  "control_1_over_length": {
+   "hard_main_ranks_sorted": [
+    1,
+    2,
+    5,
+    7,
+    7,
+    8
+   ],
+   "planted": 18,
+   "planted_main_ranks_sorted": [
+    1,
+    1,
+    1,
+    1,
+    2,
+    2,
+    2,
+    4,
+    4,
+    4,
+    5,
+    6,
+    6,
+    7,
+    7,
+    7,
+    7,
+    8
+   ],
+   "top1": 4,
+   "top2": 7
+  },
+  "no_control": {
+   "hard_main_ranks_sorted": [
+    1,
+    2,
+    5,
+    6,
+    7,
+    8
+   ],
+   "planted": 18,
+   "planted_main_ranks_sorted": [
+    1,
+    1,
+    1,
+    1,
+    2,
+    2,
+    2,
+    4,
+    4,
+    4,
+    5,
+    6,
+    6,
+    6,
+    7,
+    7,
+    7,
+    8
+   ],
+   "top1": 4,
+   "top2": 7
+  }
+ },
+ "script": "bb8_ranker"
+}

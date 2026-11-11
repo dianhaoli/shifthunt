@@ -1,0 +1,20 @@
+{
+ "by_episode_type": {
+  "trap": {
+   "max": 119,
+   "mean": 80.88,
+   "min": 47,
+   "notes": 1536,
+   "over_window": 0
+  },
+  "twopart": {
+   "max": 116,
+   "mean": 84.24,
+   "min": 50,
+   "notes": 1536,
+   "over_window": 0
+  }
+ },
+ "script": "bb8_tok",
+ "window": 128
+}

@@ -1,0 +1,24 @@
+{
+ "by_batch": {
+  "r1112_gpt_open8": {
+   "NAME": 23,
+   "hard_bucket_None": 23,
+   "hard_bucket_planted_none": 1,
+   "mean_probe_query_texts": 8.0,
+   "probe_query_texts": 192,
+   "runs": 24,
+   "runs_with_own_sae_forwards": 24
+  },
+  "r1112_haiku_open8": {
+   "NAME": 5,
+   "hard_bucket_None": 5,
+   "hard_bucket_cue_not_identified": 1,
+   "hard_bucket_planted_none": 6,
+   "mean_probe_query_texts": 7.333,
+   "probe_query_texts": 88,
+   "runs": 12,
+   "runs_with_own_sae_forwards": 12
+  }
+ },
+ "script": "open8_runs"
+}

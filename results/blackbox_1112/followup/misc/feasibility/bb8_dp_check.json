@@ -1,0 +1,8 @@
+{
+ "budget": 8,
+ "dp_NAME": 0.7031,
+ "monte_carlo_NAME": 0.7033,
+ "n": 40000,
+ "script": "bb8_dp_check",
+ "seed": 1
+}
