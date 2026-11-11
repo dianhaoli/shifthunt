@@ -291,3 +291,11 @@ file is written by hand after reading each disagreement in the transcript; its n
 | file | sha256 | frozen (UTC) | first real run |
 |---|---|---|---|
 | scripts/followup_thesis2_kept_proxy.py | `672dc0415f46e48e891f9c9fd9adf4cec700c57498abed9bb31de254e9f51221` | 2026-11-11T15:17Z | trap hard slots |
+
+### heldout (thesis tests on held-out runs; main-session code)
+
+| file | sha256 | frozen (UTC) | note |
+|---|---|---|---|
+| results/blackbox_1112/followup/heldout/PREREG_HELDOUT.md | `dba84990ceff1023233a4f14fbd4f37513a5b83b02869e9e67356db481b6efcd` | 2026-11-11T15:21Z | rules and predictions, before any held-out flag |
+| scripts/followup_c3_band.py | `91d078bd73816ea5c69eacde84a2661f3553fc1c2a4f6954fb3c5e5acdd44bea` | 2026-11-11T15:21Z | C3; dev run on the 86 development runs only |
+| scripts/followup_tflags_samplebase.py | `aff402c78d0b8d73a5c12d2f94c1876282ea746193ec351f75bfaed430fa53ae` | 2026-11-11T15:21Z | C1 and C2 machinery (unchanged since change 2) |

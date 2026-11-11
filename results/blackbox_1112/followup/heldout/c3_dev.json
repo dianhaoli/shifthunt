@@ -1,0 +1,86 @@
+{
+ "n": 86,
+ "table_C3_vs_failure": {
+  "flag_failed": 4,
+  "flag_passed": 8,
+  "noflag_failed": 27,
+  "noflag_passed": 47,
+  "n_failed": 31,
+  "n_passed": 55,
+  "rate_failed": 0.12903225806451613,
+  "rate_passed": 0.14545454545454545,
+  "diff": -0.016422287390029322,
+  "fisher_p": 1.0,
+  "n": 86,
+  "missing": 0,
+  "missing_failed": 0
+ },
+ "reading_overlap": {
+  "n": 36,
+  "band_coded": 3,
+  "band_coded_and_C3": 3,
+  "not_band_coded_but_C3": 3
+ },
+ "by_agent": {
+  "gpt": {
+   "flag_failed": 0,
+   "flag_passed": 0,
+   "noflag_failed": 12,
+   "noflag_passed": 32,
+   "n_failed": 12,
+   "n_passed": 32,
+   "rate_failed": 0.0,
+   "rate_passed": 0.0,
+   "diff": 0.0,
+   "fisher_p": 1.0,
+   "n": 44,
+   "missing": 0,
+   "missing_failed": 0
+  },
+  "haiku": {
+   "flag_failed": 4,
+   "flag_passed": 6,
+   "noflag_failed": 11,
+   "noflag_passed": 5,
+   "n_failed": 15,
+   "n_passed": 11,
+   "rate_failed": 0.26666666666666666,
+   "rate_passed": 0.5454545454545454,
+   "diff": -0.27878787878787875,
+   "fisher_p": 0.22797146318481626,
+   "n": 26,
+   "missing": 0,
+   "missing_failed": 0
+  },
+  "opus": {
+   "flag_failed": 0,
+   "flag_passed": 2,
+   "noflag_failed": 2,
+   "noflag_passed": 4,
+   "n_failed": 2,
+   "n_passed": 6,
+   "rate_failed": 0.0,
+   "rate_passed": 0.3333333333333333,
+   "diff": -0.3333333333333333,
+   "fisher_p": 1.0,
+   "n": 8,
+   "missing": 0,
+   "missing_failed": 0
+  },
+  "sonnet": {
+   "flag_failed": 0,
+   "flag_passed": 0,
+   "noflag_failed": 2,
+   "noflag_passed": 6,
+   "n_failed": 2,
+   "n_passed": 6,
+   "rate_failed": 0.0,
+   "rate_passed": 0.0,
+   "diff": 0.0,
+   "fisher_p": 1.0,
+   "n": 8,
+   "missing": 0,
+   "missing_failed": 0
+  }
+ }
+}
