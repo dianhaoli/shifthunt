@@ -325,3 +325,11 @@ file is written by hand after reading each disagreement in the transcript; its n
   proxy_fallible_mentioned_before, timing). The frozen version guessed field names before the reading files
   existed. The mechanical measures (`mech`) are unchanged and were computed before the readers reported. New
   sha256 `3e21fc29f665873885eba969787ffd2998b2f3ac3085b792ed4a9add74b473f1`.
+
+### failure_modes_heldout (pre-registered replication of the allocation policy; main-session code)
+
+| file | sha256 | frozen (UTC) | note |
+|---|---|---|---|
+| results/blackbox_1112/followup/failure_modes_heldout/PREREG.md | `2905ccee11b8b32517d94d52b4cf37b0cadc57d0b21a992098c932486a2c9138` | 2026-11-11T21:28Z | predictions R1-R5, before any held-out non-trap probe was recovered |
+| scripts/followup_failure_modes_heldout.py | `f35d6be7782a7a53c9cb806399bee3a171055948bfb0cc0891c737d456a7f266` | 2026-11-11T21:28Z | before its first run |
+| scripts/followup_failure_modes.py | `08c69f0763a47ebd6b8182719050a2b3d9bc24d344d0decdd4d0e52860d1094f` | 2026-11-11T21:28Z | definitions reused unchanged |
