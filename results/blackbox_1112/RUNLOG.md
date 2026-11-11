@@ -102,3 +102,15 @@ Run id = first 12 characters of the container id (agent runs) or the request bat
 | 2026-11-10T22:51Z | exp_f roundtrip (4 calls) | exp_f | gpt-6.1-terra ×1, claude-opus-5-5 ×1, claude-sonnet-5-5 ×1, claude-haiku-5-5 ×1 | - | ok 4/4 (openai 0.000543, anthropic 0.010737) | 0.011 | 42.714 | 48.437 |
 | 2026-11-10T22:53Z | exp_f pilot (20 calls) | exp_f | gpt-6.1-terra ×5, claude-opus-5-5 ×5, claude-sonnet-5-5 ×5, claude-haiku-5-5 ×5 | - | ok 20/20 (openai 0.111778, anthropic 0.949502) | 1.061 | 42.826 | 49.387 |
 | 2026-11-10T22:56Z | exp_f manual round trip (4 calls, results/private_1112/exp_f_roundtrip) | exp_f | gpt-6.1-terra ×1, claude-opus-5-5 ×1, claude-sonnet-5-5 ×1, claude-haiku-5-5 ×1 | - | ok 4/4 (openai 0.0006, anthropic 0.0119; sent 21:4xZ, logged late) | 0.012 | 42.827 | 49.399 |
+| 2026-11-10T22:58Z | 3989045eba3e | bb64 | gpt | ep411 | ok | 0.295 | 43.122 | 49.399 |
+| 2026-11-10T23:07Z | f35851679ee4 | open8 | haiku | ep474 | ok | 1.238 | 43.122 | 50.637 |
+| 2026-11-10T23:14Z | 8349c713359b | bb8 | haiku | ep474 | ok | 1.545 | 43.122 | 52.182 |
+| 2026-11-10T23:16Z | 123f6463f065 | bb8 | gpt | ep411 | ok | 0.581 | 43.703 | 52.182 |
+| 2026-11-10T23:22Z | 543d2b1f9971 | bb64 | gpt | ep415 | ok | 0.239 | 43.942 | 52.182 |
+| 2026-11-10T23:30Z | 3b966026b482 | bb64 | gpt | ep415 | ok | 0.426 | 44.368 | 52.182 |
+| 2026-11-10T23:32Z | 64d3c125c0f6 | bb8 | gpt | ep472 | ok | 0.947 | 45.315 | 52.182 |
+| 2026-11-10T23:47Z | f35702cc1aab | bb64 | haiku | ep415 | ok | 1.104 | 45.315 | 53.286 |
+| 2026-11-10T23:51Z | a468b55a4fd0 | bb8 | gpt | ep411 | ok | 0.666 | 45.981 | 53.286 |
+| 2026-11-10T23:52Z | b74ca474a35d | open8 | haiku | ep411 | ok | 0.926 | 45.981 | 54.212 |
+| 2026-11-10T23:55Z | exp_f (400 calls) | exp_f | gpt-6.1-terra ×100, claude-opus-5-5 ×100, claude-sonnet-5-5 ×100, claude-haiku-5-5 ×100 | - | ok 400/400 (openai 2.736619, anthropic 20.575487) | 23.312 | 48.718 | 74.787 |
+| 2026-11-10T23:59Z | 3da4a92a3de9 | bb64 | gpt | ep411 | ok | 0.214 | 48.932 | 74.787 |

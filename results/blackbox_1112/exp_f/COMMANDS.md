@@ -37,3 +37,10 @@ $PY scripts/exp_f_listing.py runlog-sync          # only if a run died before it
   - DESIGN.md sha256=8b1e4e1cf3278d366cca6c0d99b39536b6ca14817cd9c61ac89fbb3e5fdc562e commit=None
   - calls.jsonl sha256=3681533ec6399d157d11112b6d8ebef9cd6ecc2e0de03670b085398fa4cdc54d (420 built, 20 selected, 20 to send)
 - 2026-11-10T22:53:43Z cwd=`/home/ec2-user/shifthunt-public`: `/home/ec2-user/onsite/grader-wt/.venv/bin/python scripts/exp_f_listing.py score`
+- 2026-11-10T22:56:44Z cwd=`/home/ec2-user/shifthunt-public`: `/home/ec2-user/onsite/grader-wt/.venv/bin/python scripts/exp_f_listing.py run --budget-usd anthropic=25 --budget-usd openai=5 --workers 2`
+  - prompt_template.txt sha256=fa25f12bd920692451c392460be3e9b66a47e9add0b6f691472d507f44c4faad commit=ccdb1b1e7944ab3123875c24573009b14a62ef4c
+  - DESIGN.md sha256=c691875366ed56e09acbb9bcbbf7a6b9b33d120d7d09ff67c6772a51ca433bc3 commit=ccdb1b1e7944ab3123875c24573009b14a62ef4c
+  - calls.jsonl sha256=3681533ec6399d157d11112b6d8ebef9cd6ecc2e0de03670b085398fa4cdc54d (420 built, 420 selected, 400 to send)
+- 2026-11-10T23:19:29Z cwd=`/home/ec2-user/shifthunt-public`: `/home/ec2-user/onsite/grader-wt/.venv/bin/python scripts/exp_f_listing.py score`
+- 2026-11-10T23:55:50Z cwd=`/home/ec2-user/shifthunt-public`: `/home/ec2-user/onsite/grader-wt/.venv/bin/python scripts/exp_f_listing.py score`
+- 2026-11-11T00:00:12Z cwd=`/home/ec2-user/shifthunt-public`: `/home/ec2-user/onsite/grader-wt/.venv/bin/python scripts/exp_f_listing.py table --main-plain 128/128 --main-nested 23/32 --main-trap 22/32 --main-source 'scripts/score_naming.py --main-study (main study, commit c80c82f)'`

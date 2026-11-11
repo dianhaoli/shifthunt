@@ -373,3 +373,6 @@ sent to the user; the design is committed before the full run.
   rule is unchanged. The pilot calls are part of the calibration calls and are not re-sent.
 - Budget: estimate USD 23.55 for everything (both providers), under the USD 30 limit, so every stress cue runs
   on all four models; the D31 fallback (stress cues on GPT only) is not needed.
+
+**D33 (23:05Z). Second interim look at Block 1, at the user's request** (87 of 108 runs; descriptive counts into a
+scratch file, as in D28). Nothing in the design depends on it.

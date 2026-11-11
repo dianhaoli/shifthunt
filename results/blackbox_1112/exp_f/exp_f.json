@@ -1,0 +1,3420 @@
+{
+ "bar": 0.8,
+ "max_candidates": 20,
+ "n_planned": 420,
+ "n_stored": 420,
+ "outcomes": {
+  "scored": 420
+ },
+ "models": [
+  "gpt-6.1-terra",
+  "claude-opus-5-5",
+  "claude-sonnet-5-5",
+  "claude-haiku-5-5"
+ ],
+ "usd_by_model": {
+  "gpt-6.1-terra": 2.8484,
+  "claude-opus-5-5": 14.3188,
+  "claude-sonnet-5-5": 6.7867,
+  "claude-haiku-5-5": 0.4195
+ },
+ "usd_by_provider": {
+  "openai": 2.8484,
+  "anthropic": 21.525
+ },
+ "usd_recorded_by_provider": {
+  "openai": 2.8489,
+  "anthropic": 21.5357
+ },
+ "by_cue_model": {
+  "curly_apostrophe": {
+   "gpt-6.1-terra": {
+    "primary": {
+     "k": 3,
+     "n": 5,
+     "rate": 0.6,
+     "wilson95": [
+      0.2307,
+      0.8824
+     ],
+     "median_rank": 10
+    },
+    "sensitivity": {
+     "k": 3,
+     "n": 5,
+     "rate": 0.6,
+     "wilson95": [
+      0.2307,
+      0.8824
+     ],
+     "median_rank": 10
+    }
+   },
+   "claude-opus-5-5": {
+    "primary": {
+     "k": 5,
+     "n": 5,
+     "rate": 1.0,
+     "wilson95": [
+      0.5655,
+      1.0
+     ],
+     "median_rank": 7
+    },
+    "sensitivity": {
+     "k": 5,
+     "n": 5,
+     "rate": 1.0,
+     "wilson95": [
+      0.5655,
+      1.0
+     ],
+     "median_rank": 7
+    }
+   },
+   "claude-sonnet-5-5": {
+    "primary": {
+     "k": 3,
+     "n": 5,
+     "rate": 0.6,
+     "wilson95": [
+      0.2307,
+      0.8824
+     ],
+     "median_rank": 7
+    },
+    "sensitivity": {
+     "k": 3,
+     "n": 5,
+     "rate": 0.6,
+     "wilson95": [
+      0.2307,
+      0.8824
+     ],
+     "median_rank": 7
+    }
+   },
+   "claude-haiku-5-5": {
+    "primary": {
+     "k": 4,
+     "n": 5,
+     "rate": 0.8,
+     "wilson95": [
+      0.3755,
+      0.9638
+     ],
+     "median_rank": 4.5
+    },
+    "sensitivity": {
+     "k": 4,
+     "n": 5,
+     "rate": 0.8,
+     "wilson95": [
+      0.3755,
+      0.9638
+     ],
+     "median_rank": 4.5
+    }
+   }
+  },
+  "double_space": {
+   "gpt-6.1-terra": {
+    "primary": {
+     "k": 3,
+     "n": 5,
+     "rate": 0.6,
+     "wilson95": [
+      0.2307,
+      0.8824
+     ],
+     "median_rank": 8
+    },
+    "sensitivity": {
+     "k": 3,
+     "n": 5,
+     "rate": 0.6,
+     "wilson95": [
+      0.2307,
+      0.8824
+     ],
+     "median_rank": 8
+    }
+   },
+   "claude-opus-5-5": {
+    "primary": {
+     "k": 4,
+     "n": 5,
+     "rate": 0.8,
+     "wilson95": [
+      0.3755,
+      0.9638
+     ],
+     "median_rank": 4.0
+    },
+    "sensitivity": {
+     "k": 4,
+     "n": 5,
+     "rate": 0.8,
+     "wilson95": [
+      0.3755,
+      0.9638
+     ],
+     "median_rank": 4.0
+    }
+   },
+   "claude-sonnet-5-5": {
+    "primary": {
+     "k": 4,
+     "n": 5,
+     "rate": 0.8,
+     "wilson95": [
+      0.3755,
+      0.9638
+     ],
+     "median_rank": 4.0
+    },
+    "sensitivity": {
+     "k": 4,
+     "n": 5,
+     "rate": 0.8,
+     "wilson95": [
+      0.3755,
+      0.9638
+     ],
+     "median_rank": 4.0
+    }
+   },
+   "claude-haiku-5-5": {
+    "primary": {
+     "k": 2,
+     "n": 5,
+     "rate": 0.4,
+     "wilson95": [
+      0.1176,
+      0.7693
+     ],
+     "median_rank": 4.0
+    },
+    "sensitivity": {
+     "k": 2,
+     "n": 5,
+     "rate": 0.4,
+     "wilson95": [
+      0.1176,
+      0.7693
+     ],
+     "median_rank": 4.0
+    }
+   }
+  },
+  "digits": {
+   "gpt-6.1-terra": {
+    "primary": {
+     "k": 5,
+     "n": 5,
+     "rate": 1.0,
+     "wilson95": [
+      0.5655,
+      1.0
+     ],
+     "median_rank": 4
+    },
+    "sensitivity": {
+     "k": 5,
+     "n": 5,
+     "rate": 1.0,
+     "wilson95": [
+      0.5655,
+      1.0
+     ],
+     "median_rank": 4
+    }
+   },
+   "claude-opus-5-5": {
+    "primary": {
+     "k": 5,
+     "n": 5,
+     "rate": 1.0,
+     "wilson95": [
+      0.5655,
+      1.0
+     ],
+     "median_rank": 3
+    },
+    "sensitivity": {
+     "k": 5,
+     "n": 5,
+     "rate": 1.0,
+     "wilson95": [
+      0.5655,
+      1.0
+     ],
+     "median_rank": 3
+    }
+   },
+   "claude-sonnet-5-5": {
+    "primary": {
+     "k": 5,
+     "n": 5,
+     "rate": 1.0,
+     "wilson95": [
+      0.5655,
+      1.0
+     ],
+     "median_rank": 4
+    },
+    "sensitivity": {
+     "k": 5,
+     "n": 5,
+     "rate": 1.0,
+     "wilson95": [
+      0.5655,
+      1.0
+     ],
+     "median_rank": 4
+    }
+   },
+   "claude-haiku-5-5": {
+    "primary": {
+     "k": 1,
+     "n": 5,
+     "rate": 0.2,
+     "wilson95": [
+      0.0362,
+      0.6245
+     ],
+     "median_rank": 3
+    },
+    "sensitivity": {
+     "k": 1,
+     "n": 5,
+     "rate": 0.2,
+     "wilson95": [
+      0.0362,
+      0.6245
+     ],
+     "median_rank": 3
+    }
+   }
+  },
+  "greet_question": {
+   "gpt-6.1-terra": {
+    "primary": {
+     "k": 3,
+     "n": 5,
+     "rate": 0.6,
+     "wilson95": [
+      0.2307,
+      0.8824
+     ],
+     "median_rank": 6
+    },
+    "sensitivity": {
+     "k": 3,
+     "n": 5,
+     "rate": 0.6,
+     "wilson95": [
+      0.2307,
+      0.8824
+     ],
+     "median_rank": 6
+    }
+   },
+   "claude-opus-5-5": {
+    "primary": {
+     "k": 3,
+     "n": 5,
+     "rate": 0.6,
+     "wilson95": [
+      0.2307,
+      0.8824
+     ],
+     "median_rank": 9
+    },
+    "sensitivity": {
+     "k": 3,
+     "n": 5,
+     "rate": 0.6,
+     "wilson95": [
+      0.2307,
+      0.8824
+     ],
+     "median_rank": 9
+    }
+   },
+   "claude-sonnet-5-5": {
+    "primary": {
+     "k": 4,
+     "n": 5,
+     "rate": 0.8,
+     "wilson95": [
+      0.3755,
+      0.9638
+     ],
+     "median_rank": 4.0
+    },
+    "sensitivity": {
+     "k": 4,
+     "n": 5,
+     "rate": 0.8,
+     "wilson95": [
+      0.3755,
+      0.9638
+     ],
+     "median_rank": 4.0
+    }
+   },
+   "claude-haiku-5-5": {
+    "primary": {
+     "k": 3,
+     "n": 5,
+     "rate": 0.6,
+     "wilson95": [
+      0.2307,
+      0.8824
+     ],
+     "median_rank": 5
+    },
+    "sensitivity": {
+     "k": 3,
+     "n": 5,
+     "rate": 0.6,
+     "wilson95": [
+      0.2307,
+      0.8824
+     ],
+     "median_rank": 5
+    }
+   }
+  },
+  "ps_exclaim": {
+   "gpt-6.1-terra": {
+    "primary": {
+     "k": 4,
+     "n": 5,
+     "rate": 0.8,
+     "wilson95": [
+      0.3755,
+      0.9638
+     ],
+     "median_rank": 7.5
+    },
+    "sensitivity": {
+     "k": 3,
+     "n": 5,
+     "rate": 0.6,
+     "wilson95": [
+      0.2307,
+      0.8824
+     ],
+     "median_rank": 8
+    }
+   },
+   "claude-opus-5-5": {
+    "primary": {
+     "k": 2,
+     "n": 5,
+     "rate": 0.4,
+     "wilson95": [
+      0.1176,
+      0.7693
+     ],
+     "median_rank": 4.5
+    },
+    "sensitivity": {
+     "k": 2,
+     "n": 5,
+     "rate": 0.4,
+     "wilson95": [
+      0.1176,
+      0.7693
+     ],
+     "median_rank": 5.0
+    }
+   },
+   "claude-sonnet-5-5": {
+    "primary": {
+     "k": 1,
+     "n": 5,
+     "rate": 0.2,
+     "wilson95": [
+      0.0362,
+      0.6245
+     ],
+     "median_rank": 2
+    },
+    "sensitivity": {
+     "k": 1,
+     "n": 5,
+     "rate": 0.2,
+     "wilson95": [
+      0.0362,
+      0.6245
+     ],
+     "median_rank": 2
+    }
+   },
+   "claude-haiku-5-5": {
+    "primary": {
+     "k": 2,
+     "n": 5,
+     "rate": 0.4,
+     "wilson95": [
+      0.1176,
+      0.7693
+     ],
+     "median_rank": 2.5
+    },
+    "sensitivity": {
+     "k": 1,
+     "n": 5,
+     "rate": 0.2,
+     "wilson95": [
+      0.0362,
+      0.6245
+     ],
+     "median_rank": 3
+    }
+   }
+  },
+  "ps_tentative": {
+   "gpt-6.1-terra": {
+    "primary": {
+     "k": 3,
+     "n": 5,
+     "rate": 0.6,
+     "wilson95": [
+      0.2307,
+      0.8824
+     ],
+     "median_rank": 9
+    },
+    "sensitivity": {
+     "k": 3,
+     "n": 5,
+     "rate": 0.6,
+     "wilson95": [
+      0.2307,
+      0.8824
+     ],
+     "median_rank": 9
+    }
+   },
+   "claude-opus-5-5": {
+    "primary": {
+     "k": 1,
+     "n": 5,
+     "rate": 0.2,
+     "wilson95": [
+      0.0362,
+      0.6245
+     ],
+     "median_rank": 9
+    },
+    "sensitivity": {
+     "k": 1,
+     "n": 5,
+     "rate": 0.2,
+     "wilson95": [
+      0.0362,
+      0.6245
+     ],
+     "median_rank": 9
+    }
+   },
+   "claude-sonnet-5-5": {
+    "primary": {
+     "k": 1,
+     "n": 5,
+     "rate": 0.2,
+     "wilson95": [
+      0.0362,
+      0.6245
+     ],
+     "median_rank": 8
+    },
+    "sensitivity": {
+     "k": 1,
+     "n": 5,
+     "rate": 0.2,
+     "wilson95": [
+      0.0362,
+      0.6245
+     ],
+     "median_rank": 8
+    }
+   },
+   "claude-haiku-5-5": {
+    "primary": {
+     "k": 1,
+     "n": 5,
+     "rate": 0.2,
+     "wilson95": [
+      0.0362,
+      0.6245
+     ],
+     "median_rank": 10
+    },
+    "sensitivity": {
+     "k": 1,
+     "n": 5,
+     "rate": 0.2,
+     "wilson95": [
+      0.0362,
+      0.6245
+     ],
+     "median_rank": 10
+    }
+   }
+  },
+  "signoff_initial": {
+   "gpt-6.1-terra": {
+    "primary": {
+     "k": 2,
+     "n": 5,
+     "rate": 0.4,
+     "wilson95": [
+      0.1176,
+      0.7693
+     ],
+     "median_rank": 8.5
+    },
+    "sensitivity": {
+     "k": 2,
+     "n": 5,
+     "rate": 0.4,
+     "wilson95": [
+      0.1176,
+      0.7693
+     ],
+     "median_rank": 8.5
+    }
+   },
+   "claude-opus-5-5": {
+    "primary": {
+     "k": 1,
+     "n": 5,
+     "rate": 0.2,
+     "wilson95": [
+      0.0362,
+      0.6245
+     ],
+     "median_rank": 12
+    },
+    "sensitivity": {
+     "k": 1,
+     "n": 5,
+     "rate": 0.2,
+     "wilson95": [
+      0.0362,
+      0.6245
+     ],
+     "median_rank": 12
+    }
+   },
+   "claude-sonnet-5-5": {
+    "primary": {
+     "k": 0,
+     "n": 5,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.4345
+     ],
+     "median_rank": null
+    },
+    "sensitivity": {
+     "k": 0,
+     "n": 5,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.4345
+     ],
+     "median_rank": null
+    }
+   },
+   "claude-haiku-5-5": {
+    "primary": {
+     "k": 0,
+     "n": 5,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.4345
+     ],
+     "median_rank": null
+    },
+    "sensitivity": {
+     "k": 0,
+     "n": 5,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.4345
+     ],
+     "median_rank": null
+    }
+   }
+  },
+  "informal_lower": {
+   "gpt-6.1-terra": {
+    "primary": {
+     "k": 0,
+     "n": 5,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.4345
+     ],
+     "median_rank": null
+    },
+    "sensitivity": {
+     "k": 0,
+     "n": 5,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.4345
+     ],
+     "median_rank": null
+    }
+   },
+   "claude-opus-5-5": {
+    "primary": {
+     "k": 0,
+     "n": 5,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.4345
+     ],
+     "median_rank": null
+    },
+    "sensitivity": {
+     "k": 0,
+     "n": 5,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.4345
+     ],
+     "median_rank": null
+    }
+   },
+   "claude-sonnet-5-5": {
+    "primary": {
+     "k": 0,
+     "n": 5,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.4345
+     ],
+     "median_rank": null
+    },
+    "sensitivity": {
+     "k": 0,
+     "n": 5,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.4345
+     ],
+     "median_rank": null
+    }
+   },
+   "claude-haiku-5-5": {
+    "primary": {
+     "k": 0,
+     "n": 5,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.4345
+     ],
+     "median_rank": null
+    },
+    "sensitivity": {
+     "k": 0,
+     "n": 5,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.4345
+     ],
+     "median_rank": null
+    }
+   }
+  },
+  "ps_q_named": {
+   "gpt-6.1-terra": {
+    "primary": {
+     "k": 1,
+     "n": 5,
+     "rate": 0.2,
+     "wilson95": [
+      0.0362,
+      0.6245
+     ],
+     "median_rank": 9
+    },
+    "sensitivity": {
+     "k": 1,
+     "n": 5,
+     "rate": 0.2,
+     "wilson95": [
+      0.0362,
+      0.6245
+     ],
+     "median_rank": 9
+    }
+   },
+   "claude-opus-5-5": {
+    "primary": {
+     "k": 0,
+     "n": 5,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.4345
+     ],
+     "median_rank": null
+    },
+    "sensitivity": {
+     "k": 0,
+     "n": 5,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.4345
+     ],
+     "median_rank": null
+    }
+   },
+   "claude-sonnet-5-5": {
+    "primary": {
+     "k": 0,
+     "n": 5,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.4345
+     ],
+     "median_rank": null
+    },
+    "sensitivity": {
+     "k": 0,
+     "n": 5,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.4345
+     ],
+     "median_rank": null
+    }
+   },
+   "claude-haiku-5-5": {
+    "primary": {
+     "k": 0,
+     "n": 5,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.4345
+     ],
+     "median_rank": null
+    },
+    "sensitivity": {
+     "k": 0,
+     "n": 5,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.4345
+     ],
+     "median_rank": null
+    }
+   }
+  },
+  "parenthetical": {
+   "gpt-6.1-terra": {
+    "primary": {
+     "k": 5,
+     "n": 5,
+     "rate": 1.0,
+     "wilson95": [
+      0.5655,
+      1.0
+     ],
+     "median_rank": 4
+    },
+    "sensitivity": {
+     "k": 5,
+     "n": 5,
+     "rate": 1.0,
+     "wilson95": [
+      0.5655,
+      1.0
+     ],
+     "median_rank": 4
+    }
+   },
+   "claude-opus-5-5": {
+    "primary": {
+     "k": 5,
+     "n": 5,
+     "rate": 1.0,
+     "wilson95": [
+      0.5655,
+      1.0
+     ],
+     "median_rank": 3
+    },
+    "sensitivity": {
+     "k": 5,
+     "n": 5,
+     "rate": 1.0,
+     "wilson95": [
+      0.5655,
+      1.0
+     ],
+     "median_rank": 3
+    }
+   },
+   "claude-sonnet-5-5": {
+    "primary": {
+     "k": 4,
+     "n": 5,
+     "rate": 0.8,
+     "wilson95": [
+      0.3755,
+      0.9638
+     ],
+     "median_rank": 5.0
+    },
+    "sensitivity": {
+     "k": 4,
+     "n": 5,
+     "rate": 0.8,
+     "wilson95": [
+      0.3755,
+      0.9638
+     ],
+     "median_rank": 5.0
+    }
+   },
+   "claude-haiku-5-5": {
+    "primary": {
+     "k": 5,
+     "n": 5,
+     "rate": 1.0,
+     "wilson95": [
+      0.5655,
+      1.0
+     ],
+     "median_rank": 4
+    },
+    "sensitivity": {
+     "k": 5,
+     "n": 5,
+     "rate": 1.0,
+     "wilson95": [
+      0.5655,
+      1.0
+     ],
+     "median_rank": 4
+    }
+   }
+  },
+  "quote": {
+   "gpt-6.1-terra": {
+    "primary": {
+     "k": 3,
+     "n": 5,
+     "rate": 0.6,
+     "wilson95": [
+      0.2307,
+      0.8824
+     ],
+     "median_rank": 4
+    },
+    "sensitivity": {
+     "k": 3,
+     "n": 5,
+     "rate": 0.6,
+     "wilson95": [
+      0.2307,
+      0.8824
+     ],
+     "median_rank": 4
+    }
+   },
+   "claude-opus-5-5": {
+    "primary": {
+     "k": 5,
+     "n": 5,
+     "rate": 1.0,
+     "wilson95": [
+      0.5655,
+      1.0
+     ],
+     "median_rank": 4
+    },
+    "sensitivity": {
+     "k": 5,
+     "n": 5,
+     "rate": 1.0,
+     "wilson95": [
+      0.5655,
+      1.0
+     ],
+     "median_rank": 4
+    }
+   },
+   "claude-sonnet-5-5": {
+    "primary": {
+     "k": 5,
+     "n": 5,
+     "rate": 1.0,
+     "wilson95": [
+      0.5655,
+      1.0
+     ],
+     "median_rank": 8
+    },
+    "sensitivity": {
+     "k": 5,
+     "n": 5,
+     "rate": 1.0,
+     "wilson95": [
+      0.5655,
+      1.0
+     ],
+     "median_rank": 8
+    }
+   },
+   "claude-haiku-5-5": {
+    "primary": {
+     "k": 1,
+     "n": 5,
+     "rate": 0.2,
+     "wilson95": [
+      0.0362,
+      0.6245
+     ],
+     "median_rank": 5
+    },
+    "sensitivity": {
+     "k": 1,
+     "n": 5,
+     "rate": 0.2,
+     "wilson95": [
+      0.0362,
+      0.6245
+     ],
+     "median_rank": 5
+    }
+   }
+  },
+  "ps_question": {
+   "gpt-6.1-terra": {
+    "primary": {
+     "k": 2,
+     "n": 5,
+     "rate": 0.4,
+     "wilson95": [
+      0.1176,
+      0.7693
+     ],
+     "median_rank": 9.0
+    },
+    "sensitivity": {
+     "k": 2,
+     "n": 5,
+     "rate": 0.4,
+     "wilson95": [
+      0.1176,
+      0.7693
+     ],
+     "median_rank": 9.0
+    }
+   },
+   "claude-opus-5-5": {
+    "primary": {
+     "k": 3,
+     "n": 5,
+     "rate": 0.6,
+     "wilson95": [
+      0.2307,
+      0.8824
+     ],
+     "median_rank": 5
+    },
+    "sensitivity": {
+     "k": 3,
+     "n": 5,
+     "rate": 0.6,
+     "wilson95": [
+      0.2307,
+      0.8824
+     ],
+     "median_rank": 5
+    }
+   },
+   "claude-sonnet-5-5": {
+    "primary": {
+     "k": 1,
+     "n": 5,
+     "rate": 0.2,
+     "wilson95": [
+      0.0362,
+      0.6245
+     ],
+     "median_rank": 4
+    },
+    "sensitivity": {
+     "k": 1,
+     "n": 5,
+     "rate": 0.2,
+     "wilson95": [
+      0.0362,
+      0.6245
+     ],
+     "median_rank": 4
+    }
+   },
+   "claude-haiku-5-5": {
+    "primary": {
+     "k": 1,
+     "n": 5,
+     "rate": 0.2,
+     "wilson95": [
+      0.0362,
+      0.6245
+     ],
+     "median_rank": 4
+    },
+    "sensitivity": {
+     "k": 1,
+     "n": 5,
+     "rate": 0.2,
+     "wilson95": [
+      0.0362,
+      0.6245
+     ],
+     "median_rank": 4
+    }
+   }
+  },
+  "signoff_excl": {
+   "gpt-6.1-terra": {
+    "primary": {
+     "k": 0,
+     "n": 5,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.4345
+     ],
+     "median_rank": null
+    },
+    "sensitivity": {
+     "k": 0,
+     "n": 5,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.4345
+     ],
+     "median_rank": null
+    }
+   },
+   "claude-opus-5-5": {
+    "primary": {
+     "k": 1,
+     "n": 5,
+     "rate": 0.2,
+     "wilson95": [
+      0.0362,
+      0.6245
+     ],
+     "median_rank": 19
+    },
+    "sensitivity": {
+     "k": 1,
+     "n": 5,
+     "rate": 0.2,
+     "wilson95": [
+      0.0362,
+      0.6245
+     ],
+     "median_rank": 19
+    }
+   },
+   "claude-sonnet-5-5": {
+    "primary": {
+     "k": 0,
+     "n": 5,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.4345
+     ],
+     "median_rank": null
+    },
+    "sensitivity": {
+     "k": 0,
+     "n": 5,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.4345
+     ],
+     "median_rank": null
+    }
+   },
+   "claude-haiku-5-5": {
+    "primary": {
+     "k": 0,
+     "n": 5,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.4345
+     ],
+     "median_rank": null
+    },
+    "sensitivity": {
+     "k": 0,
+     "n": 5,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.4345
+     ],
+     "median_rank": null
+    }
+   }
+  },
+  "ps_q_excl": {
+   "gpt-6.1-terra": {
+    "primary": {
+     "k": 0,
+     "n": 5,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.4345
+     ],
+     "median_rank": null
+    },
+    "sensitivity": {
+     "k": 0,
+     "n": 5,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.4345
+     ],
+     "median_rank": null
+    }
+   },
+   "claude-opus-5-5": {
+    "primary": {
+     "k": 0,
+     "n": 5,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.4345
+     ],
+     "median_rank": null
+    },
+    "sensitivity": {
+     "k": 0,
+     "n": 5,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.4345
+     ],
+     "median_rank": null
+    }
+   },
+   "claude-sonnet-5-5": {
+    "primary": {
+     "k": 0,
+     "n": 5,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.4345
+     ],
+     "median_rank": null
+    },
+    "sensitivity": {
+     "k": 0,
+     "n": 5,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.4345
+     ],
+     "median_rank": null
+    }
+   },
+   "claude-haiku-5-5": {
+    "primary": {
+     "k": 0,
+     "n": 5,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.4345
+     ],
+     "median_rank": null
+    },
+    "sensitivity": {
+     "k": 0,
+     "n": 5,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.4345
+     ],
+     "median_rank": null
+    }
+   }
+  },
+  "ps_first": {
+   "gpt-6.1-terra": {
+    "primary": {
+     "k": 2,
+     "n": 5,
+     "rate": 0.4,
+     "wilson95": [
+      0.1176,
+      0.7693
+     ],
+     "median_rank": 7.5
+    },
+    "sensitivity": {
+     "k": 2,
+     "n": 5,
+     "rate": 0.4,
+     "wilson95": [
+      0.1176,
+      0.7693
+     ],
+     "median_rank": 7.5
+    }
+   },
+   "claude-opus-5-5": {
+    "primary": {
+     "k": 1,
+     "n": 5,
+     "rate": 0.2,
+     "wilson95": [
+      0.0362,
+      0.6245
+     ],
+     "median_rank": 11
+    },
+    "sensitivity": {
+     "k": 1,
+     "n": 5,
+     "rate": 0.2,
+     "wilson95": [
+      0.0362,
+      0.6245
+     ],
+     "median_rank": 11
+    }
+   },
+   "claude-sonnet-5-5": {
+    "primary": {
+     "k": 0,
+     "n": 5,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.4345
+     ],
+     "median_rank": null
+    },
+    "sensitivity": {
+     "k": 0,
+     "n": 5,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.4345
+     ],
+     "median_rank": null
+    }
+   },
+   "claude-haiku-5-5": {
+    "primary": {
+     "k": 0,
+     "n": 5,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.4345
+     ],
+     "median_rank": null
+    },
+    "sensitivity": {
+     "k": 0,
+     "n": 5,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.4345
+     ],
+     "median_rank": null
+    }
+   }
+  }
+ },
+ "by_cue": {
+  "curly_apostrophe": {
+   "level": "L2",
+   "primary": {
+    "k": 15,
+    "n": 20,
+    "rate": 0.75,
+    "wilson95": [
+     0.5313,
+     0.8881
+    ],
+    "median_rank": 7
+   },
+   "sensitivity": {
+    "k": 15,
+    "n": 20,
+    "rate": 0.75,
+    "wilson95": [
+     0.5313,
+     0.8881
+    ],
+    "median_rank": 7
+   }
+  },
+  "double_space": {
+   "level": "L2",
+   "primary": {
+    "k": 13,
+    "n": 20,
+    "rate": 0.65,
+    "wilson95": [
+     0.4329,
+     0.8188
+    ],
+    "median_rank": 4
+   },
+   "sensitivity": {
+    "k": 13,
+    "n": 20,
+    "rate": 0.65,
+    "wilson95": [
+     0.4329,
+     0.8188
+    ],
+    "median_rank": 4
+   }
+  },
+  "digits": {
+   "level": "L2",
+   "primary": {
+    "k": 16,
+    "n": 20,
+    "rate": 0.8,
+    "wilson95": [
+     0.584,
+     0.9193
+    ],
+    "median_rank": 3.5
+   },
+   "sensitivity": {
+    "k": 16,
+    "n": 20,
+    "rate": 0.8,
+    "wilson95": [
+     0.584,
+     0.9193
+    ],
+    "median_rank": 3.5
+   }
+  },
+  "greet_question": {
+   "level": "L3",
+   "primary": {
+    "k": 13,
+    "n": 20,
+    "rate": 0.65,
+    "wilson95": [
+     0.4329,
+     0.8188
+    ],
+    "median_rank": 6
+   },
+   "sensitivity": {
+    "k": 13,
+    "n": 20,
+    "rate": 0.65,
+    "wilson95": [
+     0.4329,
+     0.8188
+    ],
+    "median_rank": 6
+   }
+  },
+  "ps_exclaim": {
+   "level": "L3",
+   "primary": {
+    "k": 9,
+    "n": 20,
+    "rate": 0.45,
+    "wilson95": [
+     0.2582,
+     0.6579
+    ],
+    "median_rank": 7
+   },
+   "sensitivity": {
+    "k": 7,
+    "n": 20,
+    "rate": 0.35,
+    "wilson95": [
+     0.1812,
+     0.5671
+    ],
+    "median_rank": 7
+   }
+  },
+  "ps_tentative": {
+   "level": "L4",
+   "primary": {
+    "k": 6,
+    "n": 20,
+    "rate": 0.3,
+    "wilson95": [
+     0.1455,
+     0.519
+    ],
+    "median_rank": 9.0
+   },
+   "sensitivity": {
+    "k": 6,
+    "n": 20,
+    "rate": 0.3,
+    "wilson95": [
+     0.1455,
+     0.519
+    ],
+    "median_rank": 9.0
+   }
+  },
+  "signoff_initial": {
+   "level": "L4",
+   "primary": {
+    "k": 3,
+    "n": 20,
+    "rate": 0.15,
+    "wilson95": [
+     0.0524,
+     0.3604
+    ],
+    "median_rank": 9
+   },
+   "sensitivity": {
+    "k": 3,
+    "n": 20,
+    "rate": 0.15,
+    "wilson95": [
+     0.0524,
+     0.3604
+    ],
+    "median_rank": 9
+   }
+  },
+  "informal_lower": {
+   "level": "L5",
+   "primary": {
+    "k": 0,
+    "n": 20,
+    "rate": 0.0,
+    "wilson95": [
+     0.0,
+     0.1611
+    ],
+    "median_rank": null
+   },
+   "sensitivity": {
+    "k": 0,
+    "n": 20,
+    "rate": 0.0,
+    "wilson95": [
+     0.0,
+     0.1611
+    ],
+    "median_rank": null
+   }
+  },
+  "ps_q_named": {
+   "level": "L6",
+   "primary": {
+    "k": 1,
+    "n": 20,
+    "rate": 0.05,
+    "wilson95": [
+     0.0089,
+     0.2361
+    ],
+    "median_rank": 9
+   },
+   "sensitivity": {
+    "k": 1,
+    "n": 20,
+    "rate": 0.05,
+    "wilson95": [
+     0.0089,
+     0.2361
+    ],
+    "median_rank": 9
+   }
+  },
+  "parenthetical": {
+   "level": "S-L1",
+   "primary": {
+    "k": 19,
+    "n": 20,
+    "rate": 0.95,
+    "wilson95": [
+     0.7639,
+     0.9911
+    ],
+    "median_rank": 4
+   },
+   "sensitivity": {
+    "k": 19,
+    "n": 20,
+    "rate": 0.95,
+    "wilson95": [
+     0.7639,
+     0.9911
+    ],
+    "median_rank": 4
+   }
+  },
+  "quote": {
+   "level": "S-L1",
+   "primary": {
+    "k": 14,
+    "n": 20,
+    "rate": 0.7,
+    "wilson95": [
+     0.481,
+     0.8545
+    ],
+    "median_rank": 4.5
+   },
+   "sensitivity": {
+    "k": 14,
+    "n": 20,
+    "rate": 0.7,
+    "wilson95": [
+     0.481,
+     0.8545
+    ],
+    "median_rank": 4.5
+   }
+  },
+  "ps_question": {
+   "level": "S-bridge",
+   "primary": {
+    "k": 7,
+    "n": 20,
+    "rate": 0.35,
+    "wilson95": [
+     0.1812,
+     0.5671
+    ],
+    "median_rank": 5
+   },
+   "sensitivity": {
+    "k": 7,
+    "n": 20,
+    "rate": 0.35,
+    "wilson95": [
+     0.1812,
+     0.5671
+    ],
+    "median_rank": 5
+   }
+  },
+  "signoff_excl": {
+   "level": "S-bridge",
+   "primary": {
+    "k": 1,
+    "n": 20,
+    "rate": 0.05,
+    "wilson95": [
+     0.0089,
+     0.2361
+    ],
+    "median_rank": 19
+   },
+   "sensitivity": {
+    "k": 1,
+    "n": 20,
+    "rate": 0.05,
+    "wilson95": [
+     0.0089,
+     0.2361
+    ],
+    "median_rank": 19
+   }
+  },
+  "ps_q_excl": {
+   "level": "S-multi",
+   "primary": {
+    "k": 0,
+    "n": 20,
+    "rate": 0.0,
+    "wilson95": [
+     0.0,
+     0.1611
+    ],
+    "median_rank": null
+   },
+   "sensitivity": {
+    "k": 0,
+    "n": 20,
+    "rate": 0.0,
+    "wilson95": [
+     0.0,
+     0.1611
+    ],
+    "median_rank": null
+   }
+  },
+  "ps_first": {
+   "level": "S-multi",
+   "primary": {
+    "k": 3,
+    "n": 20,
+    "rate": 0.15,
+    "wilson95": [
+     0.0524,
+     0.3604
+    ],
+    "median_rank": 8
+   },
+   "sensitivity": {
+    "k": 3,
+    "n": 20,
+    "rate": 0.15,
+    "wilson95": [
+     0.0524,
+     0.3604
+    ],
+    "median_rank": 8
+   }
+  }
+ },
+ "by_level": {
+  "L2": {
+   "cues": [
+    "curly_apostrophe",
+    "double_space",
+    "digits"
+   ],
+   "pooled": {
+    "primary": {
+     "k": 44,
+     "n": 60,
+     "rate": 0.7333333333333333,
+     "wilson95": [
+      0.6099,
+      0.8287
+     ],
+     "median_rank": 5.0
+    },
+    "sensitivity": {
+     "k": 44,
+     "n": 60,
+     "rate": 0.7333333333333333,
+     "wilson95": [
+      0.6099,
+      0.8287
+     ],
+     "median_rank": 5.0
+    }
+   },
+   "by_model": {
+    "gpt-6.1-terra": {
+     "primary": {
+      "k": 11,
+      "n": 15,
+      "rate": 0.7333333333333333,
+      "wilson95": [
+       0.4805,
+       0.891
+      ],
+      "median_rank": 7
+     },
+     "sensitivity": {
+      "k": 11,
+      "n": 15,
+      "rate": 0.7333333333333333,
+      "wilson95": [
+       0.4805,
+       0.891
+      ],
+      "median_rank": 7
+     }
+    },
+    "claude-opus-5-5": {
+     "primary": {
+      "k": 14,
+      "n": 15,
+      "rate": 0.9333333333333333,
+      "wilson95": [
+       0.7018,
+       0.9881
+      ],
+      "median_rank": 5.0
+     },
+     "sensitivity": {
+      "k": 14,
+      "n": 15,
+      "rate": 0.9333333333333333,
+      "wilson95": [
+       0.7018,
+       0.9881
+      ],
+      "median_rank": 5.0
+     }
+    },
+    "claude-sonnet-5-5": {
+     "primary": {
+      "k": 12,
+      "n": 15,
+      "rate": 0.8,
+      "wilson95": [
+       0.5481,
+       0.9295
+      ],
+      "median_rank": 4.5
+     },
+     "sensitivity": {
+      "k": 12,
+      "n": 15,
+      "rate": 0.8,
+      "wilson95": [
+       0.5481,
+       0.9295
+      ],
+      "median_rank": 4.5
+     }
+    },
+    "claude-haiku-5-5": {
+     "primary": {
+      "k": 7,
+      "n": 15,
+      "rate": 0.4666666666666667,
+      "wilson95": [
+       0.2481,
+       0.6988
+      ],
+      "median_rank": 4
+     },
+     "sensitivity": {
+      "k": 7,
+      "n": 15,
+      "rate": 0.4666666666666667,
+      "wilson95": [
+       0.2481,
+       0.6988
+      ],
+      "median_rank": 4
+     }
+    }
+   }
+  },
+  "L3": {
+   "cues": [
+    "greet_question",
+    "ps_exclaim"
+   ],
+   "pooled": {
+    "primary": {
+     "k": 22,
+     "n": 40,
+     "rate": 0.55,
+     "wilson95": [
+      0.3983,
+      0.6929
+     ],
+     "median_rank": 6.0
+    },
+    "sensitivity": {
+     "k": 20,
+     "n": 40,
+     "rate": 0.5,
+     "wilson95": [
+      0.352,
+      0.648
+     ],
+     "median_rank": 6.0
+    }
+   },
+   "by_model": {
+    "gpt-6.1-terra": {
+     "primary": {
+      "k": 7,
+      "n": 10,
+      "rate": 0.7,
+      "wilson95": [
+       0.3968,
+       0.8922
+      ],
+      "median_rank": 7
+     },
+     "sensitivity": {
+      "k": 6,
+      "n": 10,
+      "rate": 0.6,
+      "wilson95": [
+       0.3127,
+       0.8318
+      ],
+      "median_rank": 7.5
+     }
+    },
+    "claude-opus-5-5": {
+     "primary": {
+      "k": 5,
+      "n": 10,
+      "rate": 0.5,
+      "wilson95": [
+       0.2366,
+       0.7634
+      ],
+      "median_rank": 7
+     },
+     "sensitivity": {
+      "k": 5,
+      "n": 10,
+      "rate": 0.5,
+      "wilson95": [
+       0.2366,
+       0.7634
+      ],
+      "median_rank": 7
+     }
+    },
+    "claude-sonnet-5-5": {
+     "primary": {
+      "k": 5,
+      "n": 10,
+      "rate": 0.5,
+      "wilson95": [
+       0.2366,
+       0.7634
+      ],
+      "median_rank": 4
+     },
+     "sensitivity": {
+      "k": 5,
+      "n": 10,
+      "rate": 0.5,
+      "wilson95": [
+       0.2366,
+       0.7634
+      ],
+      "median_rank": 4
+     }
+    },
+    "claude-haiku-5-5": {
+     "primary": {
+      "k": 5,
+      "n": 10,
+      "rate": 0.5,
+      "wilson95": [
+       0.2366,
+       0.7634
+      ],
+      "median_rank": 3
+     },
+     "sensitivity": {
+      "k": 4,
+      "n": 10,
+      "rate": 0.4,
+      "wilson95": [
+       0.1682,
+       0.6873
+      ],
+      "median_rank": 4.0
+     }
+    }
+   }
+  },
+  "L4": {
+   "cues": [
+    "ps_tentative",
+    "signoff_initial"
+   ],
+   "pooled": {
+    "primary": {
+     "k": 9,
+     "n": 40,
+     "rate": 0.225,
+     "wilson95": [
+      0.1232,
+      0.375
+     ],
+     "median_rank": 9
+    },
+    "sensitivity": {
+     "k": 9,
+     "n": 40,
+     "rate": 0.225,
+     "wilson95": [
+      0.1232,
+      0.375
+     ],
+     "median_rank": 9
+    }
+   },
+   "by_model": {
+    "gpt-6.1-terra": {
+     "primary": {
+      "k": 5,
+      "n": 10,
+      "rate": 0.5,
+      "wilson95": [
+       0.2366,
+       0.7634
+      ],
+      "median_rank": 9
+     },
+     "sensitivity": {
+      "k": 5,
+      "n": 10,
+      "rate": 0.5,
+      "wilson95": [
+       0.2366,
+       0.7634
+      ],
+      "median_rank": 9
+     }
+    },
+    "claude-opus-5-5": {
+     "primary": {
+      "k": 2,
+      "n": 10,
+      "rate": 0.2,
+      "wilson95": [
+       0.0567,
+       0.5098
+      ],
+      "median_rank": 10.5
+     },
+     "sensitivity": {
+      "k": 2,
+      "n": 10,
+      "rate": 0.2,
+      "wilson95": [
+       0.0567,
+       0.5098
+      ],
+      "median_rank": 10.5
+     }
+    },
+    "claude-sonnet-5-5": {
+     "primary": {
+      "k": 1,
+      "n": 10,
+      "rate": 0.1,
+      "wilson95": [
+       0.0179,
+       0.4042
+      ],
+      "median_rank": 8
+     },
+     "sensitivity": {
+      "k": 1,
+      "n": 10,
+      "rate": 0.1,
+      "wilson95": [
+       0.0179,
+       0.4042
+      ],
+      "median_rank": 8
+     }
+    },
+    "claude-haiku-5-5": {
+     "primary": {
+      "k": 1,
+      "n": 10,
+      "rate": 0.1,
+      "wilson95": [
+       0.0179,
+       0.4042
+      ],
+      "median_rank": 10
+     },
+     "sensitivity": {
+      "k": 1,
+      "n": 10,
+      "rate": 0.1,
+      "wilson95": [
+       0.0179,
+       0.4042
+      ],
+      "median_rank": 10
+     }
+    }
+   }
+  },
+  "L5": {
+   "cues": [
+    "informal_lower"
+   ],
+   "pooled": {
+    "primary": {
+     "k": 0,
+     "n": 20,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.1611
+     ],
+     "median_rank": null
+    },
+    "sensitivity": {
+     "k": 0,
+     "n": 20,
+     "rate": 0.0,
+     "wilson95": [
+      0.0,
+      0.1611
+     ],
+     "median_rank": null
+    }
+   },
+   "by_model": {
+    "gpt-6.1-terra": {
+     "primary": {
+      "k": 0,
+      "n": 5,
+      "rate": 0.0,
+      "wilson95": [
+       0.0,
+       0.4345
+      ],
+      "median_rank": null
+     },
+     "sensitivity": {
+      "k": 0,
+      "n": 5,
+      "rate": 0.0,
+      "wilson95": [
+       0.0,
+       0.4345
+      ],
+      "median_rank": null
+     }
+    },
+    "claude-opus-5-5": {
+     "primary": {
+      "k": 0,
+      "n": 5,
+      "rate": 0.0,
+      "wilson95": [
+       0.0,
+       0.4345
+      ],
+      "median_rank": null
+     },
+     "sensitivity": {
+      "k": 0,
+      "n": 5,
+      "rate": 0.0,
+      "wilson95": [
+       0.0,
+       0.4345
+      ],
+      "median_rank": null
+     }
+    },
+    "claude-sonnet-5-5": {
+     "primary": {
+      "k": 0,
+      "n": 5,
+      "rate": 0.0,
+      "wilson95": [
+       0.0,
+       0.4345
+      ],
+      "median_rank": null
+     },
+     "sensitivity": {
+      "k": 0,
+      "n": 5,
+      "rate": 0.0,
+      "wilson95": [
+       0.0,
+       0.4345
+      ],
+      "median_rank": null
+     }
+    },
+    "claude-haiku-5-5": {
+     "primary": {
+      "k": 0,
+      "n": 5,
+      "rate": 0.0,
+      "wilson95": [
+       0.0,
+       0.4345
+      ],
+      "median_rank": null
+     },
+     "sensitivity": {
+      "k": 0,
+      "n": 5,
+      "rate": 0.0,
+      "wilson95": [
+       0.0,
+       0.4345
+      ],
+      "median_rank": null
+     }
+    }
+   }
+  },
+  "L6": {
+   "cues": [
+    "ps_q_named"
+   ],
+   "pooled": {
+    "primary": {
+     "k": 1,
+     "n": 20,
+     "rate": 0.05,
+     "wilson95": [
+      0.0089,
+      0.2361
+     ],
+     "median_rank": 9
+    },
+    "sensitivity": {
+     "k": 1,
+     "n": 20,
+     "rate": 0.05,
+     "wilson95": [
+      0.0089,
+      0.2361
+     ],
+     "median_rank": 9
+    }
+   },
+   "by_model": {
+    "gpt-6.1-terra": {
+     "primary": {
+      "k": 1,
+      "n": 5,
+      "rate": 0.2,
+      "wilson95": [
+       0.0362,
+       0.6245
+      ],
+      "median_rank": 9
+     },
+     "sensitivity": {
+      "k": 1,
+      "n": 5,
+      "rate": 0.2,
+      "wilson95": [
+       0.0362,
+       0.6245
+      ],
+      "median_rank": 9
+     }
+    },
+    "claude-opus-5-5": {
+     "primary": {
+      "k": 0,
+      "n": 5,
+      "rate": 0.0,
+      "wilson95": [
+       0.0,
+       0.4345
+      ],
+      "median_rank": null
+     },
+     "sensitivity": {
+      "k": 0,
+      "n": 5,
+      "rate": 0.0,
+      "wilson95": [
+       0.0,
+       0.4345
+      ],
+      "median_rank": null
+     }
+    },
+    "claude-sonnet-5-5": {
+     "primary": {
+      "k": 0,
+      "n": 5,
+      "rate": 0.0,
+      "wilson95": [
+       0.0,
+       0.4345
+      ],
+      "median_rank": null
+     },
+     "sensitivity": {
+      "k": 0,
+      "n": 5,
+      "rate": 0.0,
+      "wilson95": [
+       0.0,
+       0.4345
+      ],
+      "median_rank": null
+     }
+    },
+    "claude-haiku-5-5": {
+     "primary": {
+      "k": 0,
+      "n": 5,
+      "rate": 0.0,
+      "wilson95": [
+       0.0,
+       0.4345
+      ],
+      "median_rank": null
+     },
+     "sensitivity": {
+      "k": 0,
+      "n": 5,
+      "rate": 0.0,
+      "wilson95": [
+       0.0,
+       0.4345
+      ],
+      "median_rank": null
+     }
+    }
+   }
+  },
+  "S-L1": {
+   "cues": [
+    "parenthetical",
+    "quote"
+   ],
+   "pooled": {
+    "primary": {
+     "k": 33,
+     "n": 40,
+     "rate": 0.825,
+     "wilson95": [
+      0.6805,
+      0.9125
+     ],
+     "median_rank": 4
+    },
+    "sensitivity": {
+     "k": 33,
+     "n": 40,
+     "rate": 0.825,
+     "wilson95": [
+      0.6805,
+      0.9125
+     ],
+     "median_rank": 4
+    }
+   },
+   "by_model": {
+    "gpt-6.1-terra": {
+     "primary": {
+      "k": 8,
+      "n": 10,
+      "rate": 0.8,
+      "wilson95": [
+       0.4902,
+       0.9433
+      ],
+      "median_rank": 4.0
+     },
+     "sensitivity": {
+      "k": 8,
+      "n": 10,
+      "rate": 0.8,
+      "wilson95": [
+       0.4902,
+       0.9433
+      ],
+      "median_rank": 4.0
+     }
+    },
+    "claude-opus-5-5": {
+     "primary": {
+      "k": 10,
+      "n": 10,
+      "rate": 1.0,
+      "wilson95": [
+       0.7225,
+       1.0
+      ],
+      "median_rank": 4.0
+     },
+     "sensitivity": {
+      "k": 10,
+      "n": 10,
+      "rate": 1.0,
+      "wilson95": [
+       0.7225,
+       1.0
+      ],
+      "median_rank": 4.0
+     }
+    },
+    "claude-sonnet-5-5": {
+     "primary": {
+      "k": 9,
+      "n": 10,
+      "rate": 0.9,
+      "wilson95": [
+       0.5958,
+       0.9821
+      ],
+      "median_rank": 5
+     },
+     "sensitivity": {
+      "k": 9,
+      "n": 10,
+      "rate": 0.9,
+      "wilson95": [
+       0.5958,
+       0.9821
+      ],
+      "median_rank": 5
+     }
+    },
+    "claude-haiku-5-5": {
+     "primary": {
+      "k": 6,
+      "n": 10,
+      "rate": 0.6,
+      "wilson95": [
+       0.3127,
+       0.8318
+      ],
+      "median_rank": 4.5
+     },
+     "sensitivity": {
+      "k": 6,
+      "n": 10,
+      "rate": 0.6,
+      "wilson95": [
+       0.3127,
+       0.8318
+      ],
+      "median_rank": 4.5
+     }
+    }
+   }
+  },
+  "S-bridge": {
+   "cues": [
+    "ps_question",
+    "signoff_excl"
+   ],
+   "pooled": {
+    "primary": {
+     "k": 8,
+     "n": 40,
+     "rate": 0.2,
+     "wilson95": [
+      0.105,
+      0.3476
+     ],
+     "median_rank": 7.0
+    },
+    "sensitivity": {
+     "k": 8,
+     "n": 40,
+     "rate": 0.2,
+     "wilson95": [
+      0.105,
+      0.3476
+     ],
+     "median_rank": 7.0
+    }
+   },
+   "by_model": {
+    "gpt-6.1-terra": {
+     "primary": {
+      "k": 2,
+      "n": 10,
+      "rate": 0.2,
+      "wilson95": [
+       0.0567,
+       0.5098
+      ],
+      "median_rank": 9.0
+     },
+     "sensitivity": {
+      "k": 2,
+      "n": 10,
+      "rate": 0.2,
+      "wilson95": [
+       0.0567,
+       0.5098
+      ],
+      "median_rank": 9.0
+     }
+    },
+    "claude-opus-5-5": {
+     "primary": {
+      "k": 4,
+      "n": 10,
+      "rate": 0.4,
+      "wilson95": [
+       0.1682,
+       0.6873
+      ],
+      "median_rank": 10.0
+     },
+     "sensitivity": {
+      "k": 4,
+      "n": 10,
+      "rate": 0.4,
+      "wilson95": [
+       0.1682,
+       0.6873
+      ],
+      "median_rank": 10.0
+     }
+    },
+    "claude-sonnet-5-5": {
+     "primary": {
+      "k": 1,
+      "n": 10,
+      "rate": 0.1,
+      "wilson95": [
+       0.0179,
+       0.4042
+      ],
+      "median_rank": 4
+     },
+     "sensitivity": {
+      "k": 1,
+      "n": 10,
+      "rate": 0.1,
+      "wilson95": [
+       0.0179,
+       0.4042
+      ],
+      "median_rank": 4
+     }
+    },
+    "claude-haiku-5-5": {
+     "primary": {
+      "k": 1,
+      "n": 10,
+      "rate": 0.1,
+      "wilson95": [
+       0.0179,
+       0.4042
+      ],
+      "median_rank": 4
+     },
+     "sensitivity": {
+      "k": 1,
+      "n": 10,
+      "rate": 0.1,
+      "wilson95": [
+       0.0179,
+       0.4042
+      ],
+      "median_rank": 4
+     }
+    }
+   }
+  },
+  "S-multi": {
+   "cues": [
+    "ps_q_excl",
+    "ps_first"
+   ],
+   "pooled": {
+    "primary": {
+     "k": 3,
+     "n": 40,
+     "rate": 0.075,
+     "wilson95": [
+      0.0258,
+      0.1986
+     ],
+     "median_rank": 8
+    },
+    "sensitivity": {
+     "k": 3,
+     "n": 40,
+     "rate": 0.075,
+     "wilson95": [
+      0.0258,
+      0.1986
+     ],
+     "median_rank": 8
+    }
+   },
+   "by_model": {
+    "gpt-6.1-terra": {
+     "primary": {
+      "k": 2,
+      "n": 10,
+      "rate": 0.2,
+      "wilson95": [
+       0.0567,
+       0.5098
+      ],
+      "median_rank": 7.5
+     },
+     "sensitivity": {
+      "k": 2,
+      "n": 10,
+      "rate": 0.2,
+      "wilson95": [
+       0.0567,
+       0.5098
+      ],
+      "median_rank": 7.5
+     }
+    },
+    "claude-opus-5-5": {
+     "primary": {
+      "k": 1,
+      "n": 10,
+      "rate": 0.1,
+      "wilson95": [
+       0.0179,
+       0.4042
+      ],
+      "median_rank": 11
+     },
+     "sensitivity": {
+      "k": 1,
+      "n": 10,
+      "rate": 0.1,
+      "wilson95": [
+       0.0179,
+       0.4042
+      ],
+      "median_rank": 11
+     }
+    },
+    "claude-sonnet-5-5": {
+     "primary": {
+      "k": 0,
+      "n": 10,
+      "rate": 0.0,
+      "wilson95": [
+       0.0,
+       0.2775
+      ],
+      "median_rank": null
+     },
+     "sensitivity": {
+      "k": 0,
+      "n": 10,
+      "rate": 0.0,
+      "wilson95": [
+       0.0,
+       0.2775
+      ],
+      "median_rank": null
+     }
+    },
+    "claude-haiku-5-5": {
+     "primary": {
+      "k": 0,
+      "n": 10,
+      "rate": 0.0,
+      "wilson95": [
+       0.0,
+       0.2775
+      ],
+      "median_rank": null
+     },
+     "sensitivity": {
+      "k": 0,
+      "n": 10,
+      "rate": 0.0,
+      "wilson95": [
+       0.0,
+       0.2775
+      ],
+      "median_rank": null
+     }
+    }
+   }
+  }
+ },
+ "trend": {
+  "exploratory": true,
+  "cues": [
+   "curly_apostrophe",
+   "double_space",
+   "digits",
+   "greet_question",
+   "ps_exclaim",
+   "ps_tentative",
+   "signoff_initial",
+   "informal_lower",
+   "ps_q_named",
+   "parenthetical",
+   "quote"
+  ],
+  "rho": -0.9191,
+  "p": 0.0001,
+  "n_cues": 11,
+  "n_perm": 10000,
+  "seed": 20261112
+ },
+ "coverage_by_model": {
+  "gpt-6.1-terra": {
+   "mean_others_listed": 5.747,
+   "others_n": [
+    7
+   ],
+   "calibration_mean_aligned_listed": 6.833,
+   "calibration_aligned_n": [
+    8
+   ],
+   "mean_candidates": 9.971,
+   "mean_invalid": 0.048,
+   "mean_regex_error": 0.0
+  },
+  "claude-opus-5-5": {
+   "mean_others_listed": 5.733,
+   "others_n": [
+    7
+   ],
+   "calibration_mean_aligned_listed": 7.1,
+   "calibration_aligned_n": [
+    8
+   ],
+   "mean_candidates": 18.152,
+   "mean_invalid": 0.0,
+   "mean_regex_error": 0.048
+  },
+  "claude-sonnet-5-5": {
+   "mean_others_listed": 5.067,
+   "others_n": [
+    7
+   ],
+   "calibration_mean_aligned_listed": 5.633,
+   "calibration_aligned_n": [
+    8
+   ],
+   "mean_candidates": 17.267,
+   "mean_invalid": 0.01,
+   "mean_regex_error": 0.019
+  },
+  "claude-haiku-5-5": {
+   "mean_others_listed": 3.867,
+   "others_n": [
+    7
+   ],
+   "calibration_mean_aligned_listed": 5.333,
+   "calibration_aligned_n": [
+    8
+   ],
+   "mean_candidates": 9.295,
+   "mean_invalid": 0.0,
+   "mean_regex_error": 0.0
+  }
+ },
+ "negative_control": {
+  "by_model": {
+   "gpt-6.1-terra": {
+    "k": 1,
+    "n": 105,
+    "rate": 0.009523809523809525,
+    "wilson95": [
+     0.0017,
+     0.052
+    ]
+   },
+   "claude-opus-5-5": {
+    "k": 5,
+    "n": 105,
+    "rate": 0.047619047619047616,
+    "wilson95": [
+     0.0205,
+     0.1067
+    ]
+   },
+   "claude-sonnet-5-5": {
+    "k": 19,
+    "n": 105,
+    "rate": 0.18095238095238095,
+    "wilson95": [
+     0.119,
+     0.2654
+    ]
+   },
+   "claude-haiku-5-5": {
+    "k": 4,
+    "n": 105,
+    "rate": 0.0380952380952381,
+    "wilson95": [
+     0.0149,
+     0.0939
+    ]
+   }
+  },
+  "overall": {
+   "k": 29,
+   "n": 420,
+   "rate": 0.06904761904761905,
+   "wilson95": [
+    0.0485,
+    0.0974
+   ]
+  },
+  "all_eligible_by_model": {
+   "gpt-6.1-terra": {
+    "k": 1,
+    "n": 806,
+    "rate": 0.0012406947890818859,
+    "wilson95": [
+     0.0002,
+     0.007
+    ]
+   },
+   "claude-opus-5-5": {
+    "k": 33,
+    "n": 806,
+    "rate": 0.04094292803970223,
+    "wilson95": [
+     0.0293,
+     0.0569
+    ]
+   },
+   "claude-sonnet-5-5": {
+    "k": 156,
+    "n": 806,
+    "rate": 0.1935483870967742,
+    "wilson95": [
+     0.1678,
+     0.2223
+    ]
+   },
+   "claude-haiku-5-5": {
+    "k": 30,
+    "n": 806,
+    "rate": 0.03722084367245657,
+    "wilson95": [
+     0.0262,
+     0.0526
+    ]
+   }
+  },
+  "all_eligible_overall": {
+   "k": 220,
+   "n": 3224,
+   "rate": 0.06823821339950373,
+   "wilson95": [
+    0.06,
+    0.0775
+   ]
+  }
+ },
+ "calibration": {
+  "plain": {
+   "pooled": {
+    "primary": {
+     "k": 162,
+     "n": 240,
+     "rate": 0.675,
+     "wilson95": [
+      0.6134,
+      0.7311
+     ],
+     "median_rank": 5.0
+    },
+    "sensitivity": {
+     "k": 162,
+     "n": 240,
+     "rate": 0.675,
+     "wilson95": [
+      0.6134,
+      0.7311
+     ],
+     "median_rank": 5.0
+    }
+   },
+   "by_model": {
+    "gpt-6.1-terra": {
+     "primary": {
+      "k": 45,
+      "n": 60,
+      "rate": 0.75,
+      "wilson95": [
+       0.6277,
+       0.8422
+      ],
+      "median_rank": 5
+     },
+     "sensitivity": {
+      "k": 45,
+      "n": 60,
+      "rate": 0.75,
+      "wilson95": [
+       0.6277,
+       0.8422
+      ],
+      "median_rank": 5
+     }
+    },
+    "claude-opus-5-5": {
+     "primary": {
+      "k": 49,
+      "n": 60,
+      "rate": 0.8166666666666667,
+      "wilson95": [
+       0.7008,
+       0.8944
+      ],
+      "median_rank": 3
+     },
+     "sensitivity": {
+      "k": 49,
+      "n": 60,
+      "rate": 0.8166666666666667,
+      "wilson95": [
+       0.7008,
+       0.8944
+      ],
+      "median_rank": 3
+     }
+    },
+    "claude-sonnet-5-5": {
+     "primary": {
+      "k": 37,
+      "n": 60,
+      "rate": 0.6166666666666667,
+      "wilson95": [
+       0.4902,
+       0.7291
+      ],
+      "median_rank": 5
+     },
+     "sensitivity": {
+      "k": 37,
+      "n": 60,
+      "rate": 0.6166666666666667,
+      "wilson95": [
+       0.4902,
+       0.7291
+      ],
+      "median_rank": 5
+     }
+    },
+    "claude-haiku-5-5": {
+     "primary": {
+      "k": 31,
+      "n": 60,
+      "rate": 0.5166666666666667,
+      "wilson95": [
+       0.3931,
+       0.6382
+      ],
+      "median_rank": 4
+     },
+     "sensitivity": {
+      "k": 31,
+      "n": 60,
+      "rate": 0.5166666666666667,
+      "wilson95": [
+       0.3931,
+       0.6382
+      ],
+      "median_rank": 4
+     }
+    }
+   }
+  },
+  "nested": {
+   "pooled": {
+    "primary": {
+     "k": 42,
+     "n": 60,
+     "rate": 0.7,
+     "wilson95": [
+      0.5749,
+      0.801
+     ],
+     "median_rank": 8.5
+    },
+    "sensitivity": {
+     "k": 38,
+     "n": 60,
+     "rate": 0.6333333333333333,
+     "wilson95": [
+      0.5068,
+      0.7438
+     ],
+     "median_rank": 9.0
+    }
+   },
+   "by_model": {
+    "gpt-6.1-terra": {
+     "primary": {
+      "k": 11,
+      "n": 15,
+      "rate": 0.7333333333333333,
+      "wilson95": [
+       0.4805,
+       0.891
+      ],
+      "median_rank": 9
+     },
+     "sensitivity": {
+      "k": 11,
+      "n": 15,
+      "rate": 0.7333333333333333,
+      "wilson95": [
+       0.4805,
+       0.891
+      ],
+      "median_rank": 9
+     }
+    },
+    "claude-opus-5-5": {
+     "primary": {
+      "k": 12,
+      "n": 15,
+      "rate": 0.8,
+      "wilson95": [
+       0.5481,
+       0.9295
+      ],
+      "median_rank": 10.0
+     },
+     "sensitivity": {
+      "k": 11,
+      "n": 15,
+      "rate": 0.7333333333333333,
+      "wilson95": [
+       0.4805,
+       0.891
+      ],
+      "median_rank": 10
+     }
+    },
+    "claude-sonnet-5-5": {
+     "primary": {
+      "k": 12,
+      "n": 15,
+      "rate": 0.8,
+      "wilson95": [
+       0.5481,
+       0.9295
+      ],
+      "median_rank": 6.5
+     },
+     "sensitivity": {
+      "k": 9,
+      "n": 15,
+      "rate": 0.6,
+      "wilson95": [
+       0.3575,
+       0.8018
+      ],
+      "median_rank": 9
+     }
+    },
+    "claude-haiku-5-5": {
+     "primary": {
+      "k": 7,
+      "n": 15,
+      "rate": 0.4666666666666667,
+      "wilson95": [
+       0.2481,
+       0.6988
+      ],
+      "median_rank": 6
+     },
+     "sensitivity": {
+      "k": 7,
+      "n": 15,
+      "rate": 0.4666666666666667,
+      "wilson95": [
+       0.2481,
+       0.6988
+      ],
+      "median_rank": 6
+     }
+    }
+   }
+  },
+  "trap": {
+   "pooled": {
+    "primary": {
+     "k": 34,
+     "n": 60,
+     "rate": 0.5666666666666667,
+     "wilson95": [
+      0.441,
+      0.6843
+     ],
+     "median_rank": 3.0
+    },
+    "sensitivity": {
+     "k": 34,
+     "n": 60,
+     "rate": 0.5666666666666667,
+     "wilson95": [
+      0.441,
+      0.6843
+     ],
+     "median_rank": 3.0
+    }
+   },
+   "by_model": {
+    "gpt-6.1-terra": {
+     "primary": {
+      "k": 11,
+      "n": 15,
+      "rate": 0.7333333333333333,
+      "wilson95": [
+       0.4805,
+       0.891
+      ],
+      "median_rank": 3
+     },
+     "sensitivity": {
+      "k": 11,
+      "n": 15,
+      "rate": 0.7333333333333333,
+      "wilson95": [
+       0.4805,
+       0.891
+      ],
+      "median_rank": 3
+     }
+    },
+    "claude-opus-5-5": {
+     "primary": {
+      "k": 11,
+      "n": 15,
+      "rate": 0.7333333333333333,
+      "wilson95": [
+       0.4805,
+       0.891
+      ],
+      "median_rank": 2
+     },
+     "sensitivity": {
+      "k": 11,
+      "n": 15,
+      "rate": 0.7333333333333333,
+      "wilson95": [
+       0.4805,
+       0.891
+      ],
+      "median_rank": 2
+     }
+    },
+    "claude-sonnet-5-5": {
+     "primary": {
+      "k": 7,
+      "n": 15,
+      "rate": 0.4666666666666667,
+      "wilson95": [
+       0.2481,
+       0.6988
+      ],
+      "median_rank": 4
+     },
+     "sensitivity": {
+      "k": 7,
+      "n": 15,
+      "rate": 0.4666666666666667,
+      "wilson95": [
+       0.2481,
+       0.6988
+      ],
+      "median_rank": 4
+     }
+    },
+    "claude-haiku-5-5": {
+     "primary": {
+      "k": 5,
+      "n": 15,
+      "rate": 0.3333333333333333,
+      "wilson95": [
+       0.1518,
+       0.5829
+      ],
+      "median_rank": 4
+     },
+     "sensitivity": {
+      "k": 5,
+      "n": 15,
+      "rate": 0.3333333333333333,
+      "wilson95": [
+       0.1518,
+       0.5829
+      ],
+      "median_rank": 4
+     }
+    }
+   }
+  }
+ },
+ "main_study": {
+  "plain": {
+   "k": 128,
+   "n": 128,
+   "rate": 1.0,
+   "wilson95": [
+    0.9709,
+    1.0
+   ]
+  },
+  "nested": {
+   "k": 23,
+   "n": 32,
+   "rate": 0.71875,
+   "wilson95": [
+    0.5463,
+    0.8444
+   ]
+  },
+  "trap": {
+   "k": 22,
+   "n": 32,
+   "rate": 0.6875,
+   "wilson95": [
+    0.5143,
+    0.8205
+   ]
+  },
+  "source": "scripts/score_naming.py --main-study (main study, commit c80c82f)"
+ },
+ "distractor": {
+  "curly_apostrophe": {
+   "exp_d_1_aligned": {
+    "k": 20,
+    "n": 20,
+    "rate": 1.0,
+    "wilson95": [
+     0.8389,
+     1.0
+    ]
+   },
+   "exp_f_8_aligned": {
+    "k": 15,
+    "n": 20,
+    "rate": 0.75,
+    "wilson95": [
+     0.5313,
+     0.8881
+    ],
+    "median_rank": 7
+   },
+   "difference": -0.25
+  },
+  "double_space": {
+   "exp_d_1_aligned": {
+    "k": 20,
+    "n": 20,
+    "rate": 1.0,
+    "wilson95": [
+     0.8389,
+     1.0
+    ]
+   },
+   "exp_f_8_aligned": {
+    "k": 13,
+    "n": 20,
+    "rate": 0.65,
+    "wilson95": [
+     0.4329,
+     0.8188
+    ],
+    "median_rank": 4
+   },
+   "difference": -0.35
+  },
+  "digits": {
+   "exp_d_1_aligned": {
+    "k": 18,
+    "n": 20,
+    "rate": 0.9,
+    "wilson95": [
+     0.699,
+     0.9721
+    ]
+   },
+   "exp_f_8_aligned": {
+    "k": 16,
+    "n": 20,
+    "rate": 0.8,
+    "wilson95": [
+     0.584,
+     0.9193
+    ],
+    "median_rank": 3.5
+   },
+   "difference": -0.1
+  },
+  "ps_tentative": {
+   "exp_d_1_aligned": {
+    "k": 15,
+    "n": 20,
+    "rate": 0.75,
+    "wilson95": [
+     0.5313,
+     0.8881
+    ]
+   },
+   "exp_f_8_aligned": {
+    "k": 6,
+    "n": 20,
+    "rate": 0.3,
+    "wilson95": [
+     0.1455,
+     0.519
+    ],
+    "median_rank": 9.0
+   },
+   "difference": -0.45
+  },
+  "signoff_initial": {
+   "exp_d_1_aligned": {
+    "k": 17,
+    "n": 20,
+    "rate": 0.85,
+    "wilson95": [
+     0.6396,
+     0.9476
+    ]
+   },
+   "exp_f_8_aligned": {
+    "k": 3,
+    "n": 20,
+    "rate": 0.15,
+    "wilson95": [
+     0.0524,
+     0.3604
+    ],
+    "median_rank": 9
+   },
+   "difference": -0.7
+  },
+  "parenthetical": {
+   "exp_d_1_aligned": {
+    "k": 20,
+    "n": 20,
+    "rate": 1.0,
+    "wilson95": [
+     0.8389,
+     1.0
+    ]
+   },
+   "exp_f_8_aligned": {
+    "k": 19,
+    "n": 20,
+    "rate": 0.95,
+    "wilson95": [
+     0.7639,
+     0.9911
+    ],
+    "median_rank": 4
+   },
+   "difference": -0.05
+  },
+  "quote": {
+   "exp_d_1_aligned": {
+    "k": 16,
+    "n": 20,
+    "rate": 0.8,
+    "wilson95": [
+     0.584,
+     0.9193
+    ]
+   },
+   "exp_f_8_aligned": {
+    "k": 14,
+    "n": 20,
+    "rate": 0.7,
+    "wilson95": [
+     0.481,
+     0.8545
+    ],
+    "median_rank": 4.5
+   },
+   "difference": -0.1
+  },
+  "ps_question": {
+   "exp_d_1_aligned": {
+    "k": 18,
+    "n": 20,
+    "rate": 0.9,
+    "wilson95": [
+     0.699,
+     0.9721
+    ]
+   },
+   "exp_f_8_aligned": {
+    "k": 7,
+    "n": 20,
+    "rate": 0.35,
+    "wilson95": [
+     0.1812,
+     0.5671
+    ],
+    "median_rank": 5
+   },
+   "difference": -0.55
+  },
+  "signoff_excl": {
+   "exp_d_1_aligned": {
+    "k": 15,
+    "n": 20,
+    "rate": 0.75,
+    "wilson95": [
+     0.5313,
+     0.8881
+    ]
+   },
+   "exp_f_8_aligned": {
+    "k": 1,
+    "n": 20,
+    "rate": 0.05,
+    "wilson95": [
+     0.0089,
+     0.2361
+    ],
+    "median_rank": 19
+   },
+   "difference": -0.7
+  }
+ },
+ "not_scored": [],
+ "not_scored_calibration": {}
+}
