@@ -269,3 +269,10 @@ file is written by hand after reading each disagreement in the transcript; its n
 - hardercue, 2026-11-11T07:30Z: stopped with no accepted probe (README "Results"). scripts/hc_heldout.py and
   scripts/hc_solver.py were never run on real data and are unchanged from the hashes above. Stage D was extended
   to 18 jobs at 07:02Z and stopped after 14; stage C was stopped after 1 job (README choices 11-12).
+
+### topicunit_flags (EXPLORATORY; defined after the solvers' unit finding; main-session code)
+
+| file | sha256 | frozen (UTC) | first real run |
+|---|---|---|---|
+| scripts/followup_topicunit_flags.py | `d19daab3f2885115a84886b47232b9b7b27ed4995815bcf0dea645152e81ec22` | 2026-11-11T07:33Z | F1a and F4 with the topic unit |
+| tests/test_followup_topicunit_flags.py | `c65724c1bef3844556d28831b0be3c47f2dc499d126049dc57a922d50105e082` | 2026-11-11T07:33Z | F1a and F4 with the topic unit |

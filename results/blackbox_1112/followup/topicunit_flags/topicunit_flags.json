@@ -1,0 +1,585 @@
+{
+ "label": "EXPLORATORY: unit = topic coefficient (followup/solvers topic swaps), not the frozen class-mean gap",
+ "probes_with_T": 250,
+ "slots_without_T": 0,
+ "f1a": {
+  "main": {
+   "all slots": {
+    "answered": 256,
+    "computable_frozen": 14,
+    "computable_T": 14,
+    "F1a_frozen": {
+     "flag_failed": 0,
+     "flag_passed": 0,
+     "noflag_failed": 7,
+     "noflag_passed": 7,
+     "n_failed": 7,
+     "n_passed": 7,
+     "rate_failed": 0.0,
+     "rate_passed": 0.0,
+     "diff": 0.0,
+     "fisher_p": 1.0,
+     "n": 14,
+     "missing": 0,
+     "missing_failed": 0
+    },
+    "F1aT": {
+     "flag_failed": 0,
+     "flag_passed": 0,
+     "noflag_failed": 7,
+     "noflag_passed": 7,
+     "n_failed": 7,
+     "n_passed": 7,
+     "rate_failed": 0.0,
+     "rate_passed": 0.0,
+     "diff": 0.0,
+     "fisher_p": 1.0,
+     "n": 14,
+     "missing": 0,
+     "missing_failed": 0
+    }
+   },
+   "hard slots": {
+    "answered": 64,
+    "computable_frozen": 13,
+    "computable_T": 13,
+    "F1a_frozen": {
+     "flag_failed": 0,
+     "flag_passed": 0,
+     "noflag_failed": 7,
+     "noflag_passed": 6,
+     "n_failed": 7,
+     "n_passed": 6,
+     "rate_failed": 0.0,
+     "rate_passed": 0.0,
+     "diff": 0.0,
+     "fisher_p": 1.0,
+     "n": 13,
+     "missing": 0,
+     "missing_failed": 0
+    },
+    "F1aT": {
+     "flag_failed": 0,
+     "flag_passed": 0,
+     "noflag_failed": 7,
+     "noflag_passed": 6,
+     "n_failed": 7,
+     "n_passed": 6,
+     "rate_failed": 0.0,
+     "rate_passed": 0.0,
+     "diff": 0.0,
+     "fisher_p": 1.0,
+     "n": 13,
+     "missing": 0,
+     "missing_failed": 0
+    }
+   }
+  },
+  "open8": {
+   "all slots": {
+    "answered": 144,
+    "computable_frozen": 15,
+    "computable_T": 15,
+    "F1a_frozen": {
+     "flag_failed": 1,
+     "flag_passed": 1,
+     "noflag_failed": 4,
+     "noflag_passed": 9,
+     "n_failed": 5,
+     "n_passed": 10,
+     "rate_failed": 0.2,
+     "rate_passed": 0.1,
+     "diff": 0.1,
+     "fisher_p": 1.0,
+     "n": 15,
+     "missing": 0,
+     "missing_failed": 0
+    },
+    "F1aT": {
+     "flag_failed": 2,
+     "flag_passed": 1,
+     "noflag_failed": 3,
+     "noflag_passed": 9,
+     "n_failed": 5,
+     "n_passed": 10,
+     "rate_failed": 0.4,
+     "rate_passed": 0.1,
+     "diff": 0.30000000000000004,
+     "fisher_p": 0.24175824175824176,
+     "n": 15,
+     "missing": 0,
+     "missing_failed": 0
+    }
+   },
+   "hard slots": {
+    "answered": 36,
+    "computable_frozen": 12,
+    "computable_T": 12,
+    "F1a_frozen": {
+     "flag_failed": 1,
+     "flag_passed": 1,
+     "noflag_failed": 4,
+     "noflag_passed": 6,
+     "n_failed": 5,
+     "n_passed": 7,
+     "rate_failed": 0.2,
+     "rate_passed": 0.14285714285714285,
+     "diff": 0.05714285714285716,
+     "fisher_p": 1.0,
+     "n": 12,
+     "missing": 0,
+     "missing_failed": 0
+    },
+    "F1aT": {
+     "flag_failed": 2,
+     "flag_passed": 1,
+     "noflag_failed": 3,
+     "noflag_passed": 6,
+     "n_failed": 5,
+     "n_passed": 7,
+     "rate_failed": 0.4,
+     "rate_passed": 0.14285714285714285,
+     "diff": 0.2571428571428572,
+     "fisher_p": 0.5227272727272727,
+     "n": 12,
+     "missing": 0,
+     "missing_failed": 0
+    }
+   }
+  },
+  "bb8": {
+   "all slots": {
+    "answered": 144,
+    "computable_frozen": 4,
+    "computable_T": 4,
+    "F1a_frozen": {
+     "flag_failed": 0,
+     "flag_passed": 1,
+     "noflag_failed": 0,
+     "noflag_passed": 3,
+     "n_failed": 0,
+     "n_passed": 4,
+     "rate_failed": null,
+     "rate_passed": 0.25,
+     "diff": null,
+     "fisher_p": null,
+     "n": 4,
+     "missing": 0,
+     "missing_failed": 0
+    },
+    "F1aT": {
+     "flag_failed": 0,
+     "flag_passed": 2,
+     "noflag_failed": 0,
+     "noflag_passed": 2,
+     "n_failed": 0,
+     "n_passed": 4,
+     "rate_failed": null,
+     "rate_passed": 0.5,
+     "diff": null,
+     "fisher_p": null,
+     "n": 4,
+     "missing": 0,
+     "missing_failed": 0
+    }
+   },
+   "hard slots": {
+    "answered": 36,
+    "computable_frozen": 1,
+    "computable_T": 1,
+    "F1a_frozen": {
+     "flag_failed": 0,
+     "flag_passed": 0,
+     "noflag_failed": 0,
+     "noflag_passed": 1,
+     "n_failed": 0,
+     "n_passed": 1,
+     "rate_failed": null,
+     "rate_passed": 0.0,
+     "diff": null,
+     "fisher_p": null,
+     "n": 1,
+     "missing": 0,
+     "missing_failed": 0
+    },
+    "F1aT": {
+     "flag_failed": 0,
+     "flag_passed": 1,
+     "noflag_failed": 0,
+     "noflag_passed": 0,
+     "n_failed": 0,
+     "n_passed": 1,
+     "rate_failed": null,
+     "rate_passed": 1.0,
+     "diff": null,
+     "fisher_p": null,
+     "n": 1,
+     "missing": 0,
+     "missing_failed": 0
+    }
+   }
+  },
+  "bb64": {
+   "all slots": {
+    "answered": 144,
+    "computable_frozen": 55,
+    "computable_T": 55,
+    "F1a_frozen": {
+     "flag_failed": 2,
+     "flag_passed": 9,
+     "noflag_failed": 3,
+     "noflag_passed": 41,
+     "n_failed": 5,
+     "n_passed": 50,
+     "rate_failed": 0.4,
+     "rate_passed": 0.18,
+     "diff": 0.22000000000000003,
+     "fisher_p": 0.25856677133036726,
+     "n": 55,
+     "missing": 0,
+     "missing_failed": 0
+    },
+    "F1aT": {
+     "flag_failed": 2,
+     "flag_passed": 18,
+     "noflag_failed": 3,
+     "noflag_passed": 32,
+     "n_failed": 5,
+     "n_passed": 50,
+     "rate_failed": 0.4,
+     "rate_passed": 0.36,
+     "diff": 0.040000000000000036,
+     "fisher_p": 1.0,
+     "n": 55,
+     "missing": 0,
+     "missing_failed": 0
+    }
+   },
+   "hard slots": {
+    "answered": 36,
+    "computable_frozen": 16,
+    "computable_T": 16,
+    "F1a_frozen": {
+     "flag_failed": 2,
+     "flag_passed": 3,
+     "noflag_failed": 1,
+     "noflag_passed": 10,
+     "n_failed": 3,
+     "n_passed": 13,
+     "rate_failed": 0.6666666666666666,
+     "rate_passed": 0.23076923076923078,
+     "diff": 0.43589743589743585,
+     "fisher_p": 0.21428571428571427,
+     "n": 16,
+     "missing": 0,
+     "missing_failed": 0
+    },
+    "F1aT": {
+     "flag_failed": 2,
+     "flag_passed": 8,
+     "noflag_failed": 1,
+     "noflag_passed": 5,
+     "n_failed": 3,
+     "n_passed": 13,
+     "rate_failed": 0.6666666666666666,
+     "rate_passed": 0.6153846153846154,
+     "diff": 0.05128205128205121,
+     "fisher_p": 1.0,
+     "n": 16,
+     "missing": 0,
+     "missing_failed": 0
+    }
+   }
+  },
+  "pooled": {
+   "all slots": {
+    "answered": 688,
+    "computable_frozen": 88,
+    "computable_T": 88,
+    "F1a_frozen": {
+     "flag_failed": 3,
+     "flag_passed": 11,
+     "noflag_failed": 14,
+     "noflag_passed": 60,
+     "n_failed": 17,
+     "n_passed": 71,
+     "rate_failed": 0.17647058823529413,
+     "rate_passed": 0.15492957746478872,
+     "diff": 0.02154101077050541,
+     "fisher_p": 1.0,
+     "n": 88,
+     "missing": 0,
+     "missing_failed": 0
+    },
+    "F1aT": {
+     "flag_failed": 4,
+     "flag_passed": 21,
+     "noflag_failed": 13,
+     "noflag_passed": 50,
+     "n_failed": 17,
+     "n_passed": 71,
+     "rate_failed": 0.23529411764705882,
+     "rate_passed": 0.29577464788732394,
+     "diff": -0.06048053024026512,
+     "fisher_p": 0.7687810885556553,
+     "n": 88,
+     "missing": 0,
+     "missing_failed": 0
+    }
+   },
+   "hard slots": {
+    "answered": 172,
+    "computable_frozen": 42,
+    "computable_T": 42,
+    "F1a_frozen": {
+     "flag_failed": 3,
+     "flag_passed": 4,
+     "noflag_failed": 12,
+     "noflag_passed": 23,
+     "n_failed": 15,
+     "n_passed": 27,
+     "rate_failed": 0.2,
+     "rate_passed": 0.14814814814814814,
+     "diff": 0.05185185185185187,
+     "fisher_p": 0.685797800367762,
+     "n": 42,
+     "missing": 0,
+     "missing_failed": 0
+    },
+    "F1aT": {
+     "flag_failed": 4,
+     "flag_passed": 10,
+     "noflag_failed": 11,
+     "noflag_passed": 17,
+     "n_failed": 15,
+     "n_passed": 27,
+     "rate_failed": 0.26666666666666666,
+     "rate_passed": 0.37037037037037035,
+     "diff": -0.10370370370370369,
+     "fisher_p": 0.7337405508837419,
+     "n": 42,
+     "missing": 0,
+     "missing_failed": 0
+    }
+   }
+  }
+ },
+ "f4": {
+  "all slots": {
+   "all": {
+    "slots": 357,
+    "with_both_pairs": 76,
+    "applicable_T": 11,
+    "F4T_1": 0,
+    "F4T_0": 11,
+    "F4T_1_failed": 0,
+    "F4T_1_passed": 0,
+    "applicable_frozen": 0
+   },
+   "gpt": {
+    "slots": 138,
+    "with_both_pairs": 42,
+    "applicable_T": 7,
+    "F4T_1": 0,
+    "F4T_0": 7,
+    "F4T_1_failed": 0,
+    "F4T_1_passed": 0,
+    "applicable_frozen": 0
+   },
+   "opus": {
+    "slots": 53,
+    "with_both_pairs": 10,
+    "applicable_T": 3,
+    "F4T_1": 0,
+    "F4T_0": 3,
+    "F4T_1_failed": 0,
+    "F4T_1_passed": 0,
+    "applicable_frozen": 0
+   },
+   "sonnet": {
+    "slots": 57,
+    "with_both_pairs": 8,
+    "applicable_T": 0,
+    "F4T_1": 0,
+    "F4T_0": 0,
+    "F4T_1_failed": 0,
+    "F4T_1_passed": 0,
+    "applicable_frozen": 0
+   },
+   "haiku": {
+    "slots": 109,
+    "with_both_pairs": 16,
+    "applicable_T": 1,
+    "F4T_1": 0,
+    "F4T_0": 1,
+    "F4T_1_failed": 0,
+    "F4T_1_passed": 0,
+    "applicable_frozen": 0
+   }
+  },
+  "hard slots": {
+   "all": {
+    "slots": 89,
+    "with_both_pairs": 28,
+    "applicable_T": 8,
+    "F4T_1": 0,
+    "F4T_0": 8,
+    "F4T_1_failed": 0,
+    "F4T_1_passed": 0,
+    "applicable_frozen": 0
+   },
+   "gpt": {
+    "slots": 34,
+    "with_both_pairs": 14,
+    "applicable_T": 6,
+    "F4T_1": 0,
+    "F4T_0": 6,
+    "F4T_1_failed": 0,
+    "F4T_1_passed": 0,
+    "applicable_frozen": 0
+   },
+   "opus": {
+    "slots": 14,
+    "with_both_pairs": 3,
+    "applicable_T": 2,
+    "F4T_1": 0,
+    "F4T_0": 2,
+    "F4T_1_failed": 0,
+    "F4T_1_passed": 0,
+    "applicable_frozen": 0
+   },
+   "sonnet": {
+    "slots": 14,
+    "with_both_pairs": 3,
+    "applicable_T": 0,
+    "F4T_1": 0,
+    "F4T_0": 0,
+    "F4T_1_failed": 0,
+    "F4T_1_passed": 0,
+    "applicable_frozen": 0
+   },
+   "haiku": {
+    "slots": 27,
+    "with_both_pairs": 8,
+    "applicable_T": 0,
+    "F4T_1": 0,
+    "F4T_0": 0,
+    "F4T_1_failed": 0,
+    "F4T_1_passed": 0,
+    "applicable_frozen": 0
+   }
+  },
+  "trap hard slots": {
+   "all": {
+    "slots": 44,
+    "with_both_pairs": 19,
+    "applicable_T": 8,
+    "F4T_1": 0,
+    "F4T_0": 8,
+    "F4T_1_failed": 0,
+    "F4T_1_passed": 0,
+    "applicable_frozen": 0
+   },
+   "gpt": {
+    "slots": 17,
+    "with_both_pairs": 7,
+    "applicable_T": 6,
+    "F4T_1": 0,
+    "F4T_0": 6,
+    "F4T_1_failed": 0,
+    "F4T_1_passed": 0,
+    "applicable_frozen": 0
+   },
+   "opus": {
+    "slots": 6,
+    "with_both_pairs": 3,
+    "applicable_T": 2,
+    "F4T_1": 0,
+    "F4T_0": 2,
+    "F4T_1_failed": 0,
+    "F4T_1_passed": 0,
+    "applicable_frozen": 0
+   },
+   "sonnet": {
+    "slots": 8,
+    "with_both_pairs": 3,
+    "applicable_T": 0,
+    "F4T_1": 0,
+    "F4T_0": 0,
+    "F4T_1_failed": 0,
+    "F4T_1_passed": 0,
+    "applicable_frozen": 0
+   },
+   "haiku": {
+    "slots": 13,
+    "with_both_pairs": 6,
+    "applicable_T": 0,
+    "F4T_1": 0,
+    "F4T_0": 0,
+    "F4T_1_failed": 0,
+    "F4T_1_passed": 0,
+    "applicable_frozen": 0
+   }
+  },
+  "two-part hard slots": {
+   "all": {
+    "slots": 45,
+    "with_both_pairs": 9,
+    "applicable_T": 0,
+    "F4T_1": 0,
+    "F4T_0": 0,
+    "F4T_1_failed": 0,
+    "F4T_1_passed": 0,
+    "applicable_frozen": 0
+   },
+   "gpt": {
+    "slots": 17,
+    "with_both_pairs": 7,
+    "applicable_T": 0,
+    "F4T_1": 0,
+    "F4T_0": 0,
+    "F4T_1_failed": 0,
+    "F4T_1_passed": 0,
+    "applicable_frozen": 0
+   },
+   "opus": {
+    "slots": 8,
+    "with_both_pairs": 0,
+    "applicable_T": 0,
+    "F4T_1": 0,
+    "F4T_0": 0,
+    "F4T_1_failed": 0,
+    "F4T_1_passed": 0,
+    "applicable_frozen": 0
+   },
+   "sonnet": {
+    "slots": 6,
+    "with_both_pairs": 0,
+    "applicable_T": 0,
+    "F4T_1": 0,
+    "F4T_0": 0,
+    "F4T_1_failed": 0,
+    "F4T_1_passed": 0,
+    "applicable_frozen": 0
+   },
+   "haiku": {
+    "slots": 14,
+    "with_both_pairs": 2,
+    "applicable_T": 0,
+    "F4T_1": 0,
+    "F4T_0": 0,
+    "F4T_1_failed": 0,
+    "F4T_1_passed": 0,
+    "applicable_frozen": 0
+   }
+  }
+ },
+ "reading2_T": {
+  "haiku_applicable": 1,
+  "haiku_rate": 0.0,
+  "larger_applicable": 10,
+  "larger_rate": 0.0,
+  "reading": "untestable (dead)",
+  "note": "the SAE-vs-no-SAE half is taken as met (trapflags \u00a74: 3/14 vs 8/12)"
+ }
+}
