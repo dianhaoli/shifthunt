@@ -25,6 +25,7 @@ Needs TeX Live with `texlive-fonts-extra` (the kit loads `newtxtext`). The kit f
 and page-layout commands, and requires no page numbers; do not add them. Check the page count after any edit:
 `pdftotext main.pdf - | grep -n '^References'` (the body must be 6–8 pages for a full paper).
 
-Status 11-11: builds with no errors, no undefined citations, no overfull boxes; 7 pages in total, of which the
-body is about 5.3 pages. The body is short of the 6-page minimum until the pending results (Tables 2–3, §3.3, §4.2)
-are filled in.
+Status 11-11 (after the GPU follow-up results): builds with no errors, no undefined citations and no overfull
+boxes; 8 pages in total, the body about 5.6 pages (References start in the right column of page 6). Still pending
+(`\pending{}`): band and gap tells, privileged vs non-privileged and brute-force solvers, and trap-seed solvability
+(Table 2, §3.3). The body is still a little short of the 6-page minimum for a full paper.
