@@ -382,3 +382,10 @@ all first attempts, no infrastructure failure, no cut. The pre-registration chec
 (`--check-prereg`, `sha256sum -c PREREG_HASH`, clean tree). GPT BB-64 24/24 = 1.00 against GPT Open-8
 23/24 = 0.96: the trigger needs BB-64 ≤ 0.76, so Block 2 (GPT Open-64) is not run, as pre-registered.
 Spend at the end of Block 1: OpenAI 55.30, Anthropic 78.40 (Exp F included).
+
+**D35 (03:17Z, retrospective). A third look at counted runs during Block 1.** Between about 19:52Z and 20:13Z on
+Nov 10, two offline feasibility analyses requested by the user (is BB-8 solvable at all; is Open-8 solvable
+with perfect play) read the logs, submissions and grades of the counted BB-8 and Open-8 runs collected by then
+(Open-8: 26 runs). It was not logged at the time. Nothing in the design, the run order, the counts or the
+analysis depended on it; the scheduler ran unchanged and the Open-64 trigger was evaluated once, on the full
+block, by the pre-registered rule.

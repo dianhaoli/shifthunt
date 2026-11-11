@@ -1,0 +1,84 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='800' height='420' viewBox='0 0 800 420' font-family='-apple-system,Segoe UI,Helvetica,Arial,sans-serif' role='img'>
+<title>Distractor effect per shared cue, Exp D vs Exp F</title><desc>Pooled listing rate over four models, k/20, Wilson 95% intervals; Exp D one aligned property, Exp F eight.</desc>
+<rect x='0' y='0' width='800' height='420' fill='#ffffff'/>
+<text x='20.0' y='22.0' font-size='14' fill='#0b0b0b' text-anchor='start' font-weight='bold'>Listing rate with 1 aligned property (Exp D) vs 8 (Exp F), pooled over 4 models</text>
+<line x1='200.0' y1='50.0' x2='200.0' y2='330.0' stroke='#52514e' stroke-width='1'/>
+<text x='200.0' y='346.0' font-size='11' fill='#52514e' text-anchor='middle' font-weight='normal'>0.00</text>
+<line x1='305.0' y1='50.0' x2='305.0' y2='330.0' stroke='#e4e3df' stroke-width='1'/>
+<text x='305.0' y='346.0' font-size='11' fill='#52514e' text-anchor='middle' font-weight='normal'>0.25</text>
+<line x1='410.0' y1='50.0' x2='410.0' y2='330.0' stroke='#e4e3df' stroke-width='1'/>
+<text x='410.0' y='346.0' font-size='11' fill='#52514e' text-anchor='middle' font-weight='normal'>0.50</text>
+<line x1='515.0' y1='50.0' x2='515.0' y2='330.0' stroke='#e4e3df' stroke-width='1'/>
+<text x='515.0' y='346.0' font-size='11' fill='#52514e' text-anchor='middle' font-weight='normal'>0.75</text>
+<line x1='620.0' y1='50.0' x2='620.0' y2='330.0' stroke='#e4e3df' stroke-width='1'/>
+<text x='620.0' y='346.0' font-size='11' fill='#52514e' text-anchor='middle' font-weight='normal'>1.00</text>
+<text x='410.0' y='364.0' font-size='12' fill='#52514e' text-anchor='middle' font-weight='normal'>listing rate (primary rule), k/20 per experiment</text>
+<text x='188.0' y='79.0' font-size='12' fill='#0b0b0b' text-anchor='end' font-weight='normal'>signoff_initial</text>
+<line x1='263.0' y1='75.0' x2='557.0' y2='75.0' stroke='#8a8984' stroke-width='2'/>
+<line x1='468.6' y1='69.0' x2='598.0' y2='69.0' stroke='#2a78d6' stroke-width='1'/>
+<line x1='222.0' y1='81.0' x2='351.4' y2='81.0' stroke='#eb6834' stroke-width='1'/>
+<circle cx='557.0' cy='75.0' r='5' fill='#2a78d6' stroke='#2a78d6' stroke-width='2'><title>signoff_initial Exp D: 17/20</title></circle>
+<rect x='258.0' y='70.0' width='10' height='10' fill='#eb6834' stroke='#eb6834' stroke-width='2'><title>signoff_initial Exp F: 3/20</title></rect>
+<text x='634.0' y='79.0' font-size='11' fill='#52514e' text-anchor='start' font-weight='normal'>17/20 -&gt; 3/20 (-0.70)</text>
+<text x='188.0' y='109.0' font-size='12' fill='#0b0b0b' text-anchor='end' font-weight='normal'>signoff_excl</text>
+<line x1='221.0' y1='105.0' x2='515.0' y2='105.0' stroke='#8a8984' stroke-width='2'/>
+<line x1='423.1' y1='99.0' x2='573.0' y2='99.0' stroke='#2a78d6' stroke-width='1'/>
+<line x1='203.7' y1='111.0' x2='299.2' y2='111.0' stroke='#eb6834' stroke-width='1'/>
+<circle cx='515.0' cy='105.0' r='5' fill='#2a78d6' stroke='#2a78d6' stroke-width='2'><title>signoff_excl Exp D: 15/20</title></circle>
+<rect x='216.0' y='100.0' width='10' height='10' fill='#eb6834' stroke='#eb6834' stroke-width='2'><title>signoff_excl Exp F: 1/20</title></rect>
+<text x='634.0' y='109.0' font-size='11' fill='#52514e' text-anchor='start' font-weight='normal'>15/20 -&gt; 1/20 (-0.70)</text>
+<text x='188.0' y='139.0' font-size='12' fill='#0b0b0b' text-anchor='end' font-weight='normal'>ps_question</text>
+<line x1='347.0' y1='135.0' x2='578.0' y2='135.0' stroke='#8a8984' stroke-width='2'/>
+<line x1='493.6' y1='129.0' x2='608.3' y2='129.0' stroke='#2a78d6' stroke-width='1'/>
+<line x1='276.1' y1='141.0' x2='438.2' y2='141.0' stroke='#eb6834' stroke-width='1'/>
+<circle cx='578.0' cy='135.0' r='5' fill='#2a78d6' stroke='#2a78d6' stroke-width='2'><title>ps_question Exp D: 18/20</title></circle>
+<rect x='342.0' y='130.0' width='10' height='10' fill='#eb6834' stroke='#eb6834' stroke-width='2'><title>ps_question Exp F: 7/20</title></rect>
+<text x='634.0' y='139.0' font-size='11' fill='#52514e' text-anchor='start' font-weight='normal'>18/20 -&gt; 7/20 (-0.55)</text>
+<text x='188.0' y='169.0' font-size='12' fill='#0b0b0b' text-anchor='end' font-weight='normal'>ps_tentative</text>
+<line x1='326.0' y1='165.0' x2='515.0' y2='165.0' stroke='#8a8984' stroke-width='2'/>
+<line x1='423.1' y1='159.0' x2='573.0' y2='159.0' stroke='#2a78d6' stroke-width='1'/>
+<line x1='261.1' y1='171.0' x2='418.0' y2='171.0' stroke='#eb6834' stroke-width='1'/>
+<circle cx='515.0' cy='165.0' r='5' fill='#2a78d6' stroke='#2a78d6' stroke-width='2'><title>ps_tentative Exp D: 15/20</title></circle>
+<rect x='321.0' y='160.0' width='10' height='10' fill='#eb6834' stroke='#eb6834' stroke-width='2'><title>ps_tentative Exp F: 6/20</title></rect>
+<text x='634.0' y='169.0' font-size='11' fill='#52514e' text-anchor='start' font-weight='normal'>15/20 -&gt; 6/20 (-0.45)</text>
+<text x='188.0' y='199.0' font-size='12' fill='#0b0b0b' text-anchor='end' font-weight='normal'>double_space</text>
+<line x1='473.0' y1='195.0' x2='620.0' y2='195.0' stroke='#8a8984' stroke-width='2'/>
+<line x1='552.3' y1='189.0' x2='620.0' y2='189.0' stroke='#2a78d6' stroke-width='1'/>
+<line x1='381.8' y1='201.0' x2='543.9' y2='201.0' stroke='#eb6834' stroke-width='1'/>
+<circle cx='620.0' cy='195.0' r='5' fill='#2a78d6' stroke='#2a78d6' stroke-width='2'><title>double_space Exp D: 20/20</title></circle>
+<rect x='468.0' y='190.0' width='10' height='10' fill='#eb6834' stroke='#eb6834' stroke-width='2'><title>double_space Exp F: 13/20</title></rect>
+<text x='634.0' y='199.0' font-size='11' fill='#52514e' text-anchor='start' font-weight='normal'>20/20 -&gt; 13/20 (-0.35)</text>
+<text x='188.0' y='229.0' font-size='12' fill='#0b0b0b' text-anchor='end' font-weight='normal'>curly_apostrophe</text>
+<line x1='515.0' y1='225.0' x2='620.0' y2='225.0' stroke='#8a8984' stroke-width='2'/>
+<line x1='552.3' y1='219.0' x2='620.0' y2='219.0' stroke='#2a78d6' stroke-width='1'/>
+<line x1='423.1' y1='231.0' x2='573.0' y2='231.0' stroke='#eb6834' stroke-width='1'/>
+<circle cx='620.0' cy='225.0' r='5' fill='#2a78d6' stroke='#2a78d6' stroke-width='2'><title>curly_apostrophe Exp D: 20/20</title></circle>
+<rect x='510.0' y='220.0' width='10' height='10' fill='#eb6834' stroke='#eb6834' stroke-width='2'><title>curly_apostrophe Exp F: 15/20</title></rect>
+<text x='634.0' y='229.0' font-size='11' fill='#52514e' text-anchor='start' font-weight='normal'>20/20 -&gt; 15/20 (-0.25)</text>
+<text x='188.0' y='259.0' font-size='12' fill='#0b0b0b' text-anchor='end' font-weight='normal'>quote</text>
+<line x1='494.0' y1='255.0' x2='536.0' y2='255.0' stroke='#8a8984' stroke-width='2'/>
+<line x1='445.3' y1='249.0' x2='586.1' y2='249.0' stroke='#2a78d6' stroke-width='1'/>
+<line x1='402.0' y1='261.0' x2='558.9' y2='261.0' stroke='#eb6834' stroke-width='1'/>
+<circle cx='536.0' cy='255.0' r='5' fill='#2a78d6' stroke='#2a78d6' stroke-width='2'><title>quote Exp D: 16/20</title></circle>
+<rect x='489.0' y='250.0' width='10' height='10' fill='#eb6834' stroke='#eb6834' stroke-width='2'><title>quote Exp F: 14/20</title></rect>
+<text x='634.0' y='259.0' font-size='11' fill='#52514e' text-anchor='start' font-weight='normal'>16/20 -&gt; 14/20 (-0.10)</text>
+<text x='188.0' y='289.0' font-size='12' fill='#0b0b0b' text-anchor='end' font-weight='normal'>digits</text>
+<line x1='536.0' y1='285.0' x2='578.0' y2='285.0' stroke='#8a8984' stroke-width='2'/>
+<line x1='493.6' y1='279.0' x2='608.3' y2='279.0' stroke='#2a78d6' stroke-width='1'/>
+<line x1='445.3' y1='291.0' x2='586.1' y2='291.0' stroke='#eb6834' stroke-width='1'/>
+<circle cx='578.0' cy='285.0' r='5' fill='#2a78d6' stroke='#2a78d6' stroke-width='2'><title>digits Exp D: 18/20</title></circle>
+<rect x='531.0' y='280.0' width='10' height='10' fill='#eb6834' stroke='#eb6834' stroke-width='2'><title>digits Exp F: 16/20</title></rect>
+<text x='634.0' y='289.0' font-size='11' fill='#52514e' text-anchor='start' font-weight='normal'>18/20 -&gt; 16/20 (-0.10)</text>
+<text x='188.0' y='319.0' font-size='12' fill='#0b0b0b' text-anchor='end' font-weight='normal'>parenthetical</text>
+<line x1='599.0' y1='315.0' x2='620.0' y2='315.0' stroke='#8a8984' stroke-width='2'/>
+<line x1='552.3' y1='309.0' x2='620.0' y2='309.0' stroke='#2a78d6' stroke-width='1'/>
+<line x1='520.8' y1='321.0' x2='616.3' y2='321.0' stroke='#eb6834' stroke-width='1'/>
+<circle cx='620.0' cy='315.0' r='5' fill='#2a78d6' stroke='#2a78d6' stroke-width='2'><title>parenthetical Exp D: 20/20</title></circle>
+<rect x='594.0' y='310.0' width='10' height='10' fill='#eb6834' stroke='#eb6834' stroke-width='2'><title>parenthetical Exp F: 19/20</title></rect>
+<text x='634.0' y='319.0' font-size='11' fill='#52514e' text-anchor='start' font-weight='normal'>20/20 -&gt; 19/20 (-0.05)</text>
+<circle cx='206.0' cy='384.0' r='5' fill='#2a78d6' stroke='#2a78d6' stroke-width='2'></circle>
+<text x='218.0' y='388.0' font-size='12' fill='#0b0b0b' text-anchor='start' font-weight='normal'>Exp D: 1 aligned property</text>
+<rect x='401.0' y='379.0' width='10' height='10' fill='#eb6834' stroke='#eb6834' stroke-width='2'></rect>
+<text x='418.0' y='388.0' font-size='12' fill='#0b0b0b' text-anchor='start' font-weight='normal'>Exp F: 8 aligned properties</text>
+<text x='20.0' y='408.0' font-size='10' fill='#52514e' text-anchor='start' font-weight='normal'>Thin lines above/below each row: Wilson 95% intervals. Same cue definitions; Exp F samples also differ in framing.</text>
+</svg>
