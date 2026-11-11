@@ -201,6 +201,14 @@ at 06:17Z with the same hash (outputs in session scratch, identical default chec
 | results/blackbox_1112/bb16/runorder_bb16_pilot.csv | `a9c51e310c9c9179efef8773c3a51da86b8981b0e85db3528ffae2bd5966d2fa` | 2026-11-11T06:37Z | the pilot |
 | results/blackbox_1112/bb16/run_order.json | `62ef792c3e17435d3aa74510d8042c47e6a4e4c68adfcc119a27316c7b753776` | 2026-11-11T06:37Z | - |
 
+Change 1 (2026-11-11T07:03Z, checker; implementation fix, after the pilot and before the bb16 hash; no counted run yet).
+What: a GPT run held back only by the $1.61 counted per run in flight now waits instead of stopping the arm
+(`cap_stop`). The `start` event also records `bb16_prereg_hash_sha256`. Why: the stop rule of PREREG_BB16.md §7 is
+spent + 1.61 > 25. The old code could stop the arm earlier (3 slots, $1.00 per run: 23 of 24 started). The rule
+itself is unchanged; details are in PREREG_BB16.md §9 "Checker review". New hashes: scripts/bb16_schedule.py
+`8c02abd35a6bb8c86213e51fbf4f03ed54e0b35ee321e76abde36343e092f5d2`, tests/test_bb16_schedule.py
+`28469b6ae404386a4cfcbd70466633081d26cc47a35b8d5611a70e6c713f284d`. The run orders are unchanged.
+
 ### transcripts (DEFINITIONS.md §5 transcript search; written by the main session)
 
 | file | sha256 | frozen (UTC) | first real run |
