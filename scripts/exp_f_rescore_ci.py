@@ -38,7 +38,6 @@ import json
 import os
 import re
 import shlex
-import statistics
 import sys
 from collections import Counter, OrderedDict
 from pathlib import Path
@@ -219,8 +218,8 @@ def markdown(s, command=None):
     if command:
         L += [f"Command: `{command}`", ""]
     L += [f"Calls: {s['n_planned']} planned, {s['n_stored']} stored. Frozen scoring recomputed here vs the stored "
-          f"scores: " + (f"{rep.get('mismatches')} disagreement(s) over {rep.get('compared')} (call, target, rule) "
-                         "cells." if rep.get("stored") else "no stored scores to compare.")
+          f"scores: " + (f"{rep.get('mismatches')} disagreement(s) over {rep.get('compared')} (call, target, "
+                         "primary or sensitivity) cells." if rep.get("stored") else "no stored scores to compare.")
           + f" Regex errors: frozen {s['regex_errors']['frozen']}, CI {s['regex_errors']['ci']}.", "",
           "Change columns: +a / -b = answers (call, target) that go from not listed to listed / from listed to "
           "not listed under CI.", "",
