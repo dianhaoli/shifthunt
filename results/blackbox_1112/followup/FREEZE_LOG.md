@@ -307,3 +307,9 @@ file is written by hand after reading each disagreement in the transcript; its n
 | file | sha256 | frozen (UTC) | first real run |
 |---|---|---|---|
 | scripts/followup_mechanism.py | `abd34901b98e452ed4691020d14bee189ec58c26dbecf6933910ae925f87ad77` | 2026-11-11T15:55Z | dev and held-out trap runs |
+
+### bb16 analysis (main-session code; frozen before any counted BB-16 run finished)
+
+| file | sha256 | frozen (UTC) | note |
+|---|---|---|---|
+| scripts/bb16_analysis.py | `fec2ebfe4aae734a436db25efab1380b10ad67fddd45995b3fd1143f5a1bcfff` | 2026-11-11T16:04Z | PREREG_BB16 §4-5 implemented; smoke-tested on the uncounted pilot only |
