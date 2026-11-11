@@ -494,3 +494,14 @@ AstaBench is Bragg et al., ICLR 2026, not an AI2 tech report. The "ICML 2026 key
 identified as PRISM (Mehta, MechInterp Workshop at ICML 2026); the identification needs the user's confirmation.
 New citations for the two gaps: tau-bench and Hardy et al. 2026 (ranking stability), and Cemri et al. and Jhaveri
 et al. 2026 (premature termination and confirmation bias).
+
+**D42 (11-11, cloud). Second implementation of the trap flags, F4 and F1a (task 2).** `scripts/trap_flags.py` with
+`tests/test_trap_flags.py` (17 synthetic checks) implements DEFINITIONS.md §1–§3 without reading the GPU-box
+implementation, as a cross-check to compare on aggregates. It imports the D36 machinery unchanged. Choices where the
+definitions are silent: with several mains, T-F2 requires every main to be varied; the F2 part of T-RULE is 0 for a
+`none` answer; F1a-loose fits least squares per topic group (>= 3 texts, intercept, rank check) and averages over
+estimable groups. F4 for the main study is reported as missing, because without a full-text log the texts sent to SAE
+tools are unknown (the §3 fallback). An upper bound that counts every text as available is reported apart.
+Proxy = f·g. The constant c_j is dropped because only differences enter. Sources: `--proxy gpu` (re-encode the logged
+texts with RealBackend; the real path), `logged` (saved tool_out arrays, not collected so far), `none`. Decoy:
+`--decoy meta` (the trap artifact's knob.decoy), falling back to the SAE-top aligned candidate from the bank scan.
