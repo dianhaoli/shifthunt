@@ -313,3 +313,10 @@ file is written by hand after reading each disagreement in the transcript; its n
 | file | sha256 | frozen (UTC) | note |
 |---|---|---|---|
 | scripts/bb16_analysis.py | `fec2ebfe4aae734a436db25efab1380b10ad67fddd45995b3fd1143f5a1bcfff` | 2026-11-11T16:04Z | PREREG_BB16 §4-5 implemented; smoke-tested on the uncounted pilot only |
+
+### failure_modes (EXPLORATORY; allocation curve, error types, routes; main-session code)
+
+| file | sha256 | frozen (UTC) | first real run |
+|---|---|---|---|
+| scripts/followup_failure_modes.py | `08c69f0763a47ebd6b8182719050a2b3d9bc24d344d0decdd4d0e52860d1094f` | 2026-11-11T19:11Z | all development slots and BB-16 |
+| scripts/followup_failure_modes_mech.py | `5d417075339a33afc0cdd6396801cd41af88ebe4a6b7b7fcf2e61eb459d90f17` | 2026-11-11T19:21Z | mechanical counterparts of the reading codes; frozen before the readers reported |
