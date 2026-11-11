@@ -1,0 +1,15 @@
+{
+ "batches": [
+  "r1112_gpt_bb8",
+  "r1112_haiku_bb8"
+ ],
+ "counts": {
+  "queries_null": 56,
+  "queries_plain": 158,
+  "queries_trap_hard": 41,
+  "queries_twopart_hard": 33,
+  "runs": 36,
+  "runs_with_submission": 36
+ },
+ "script": "bb8_runs"
+}

@@ -1,0 +1,34 @@
+{
+ "batches": [
+  "r1112_gpt_bb8",
+  "r1112_haiku_bb8"
+ ],
+ "clean_similarity": 0.85,
+ "counts": {
+  "first_single_flip_hit_main_all": 16,
+  "first_single_flip_hit_main_plain": 14,
+  "first_single_flip_hit_main_trap_hard": 0,
+  "first_single_flip_hit_main_twopart_hard": 2,
+  "first_single_flip_n_all": 67,
+  "first_single_flip_n_plain": 45,
+  "first_single_flip_n_trap_hard": 9,
+  "first_single_flip_n_twopart_hard": 13,
+  "main_still_standing_plain": 64,
+  "main_still_standing_trap_hard": 15,
+  "main_still_standing_twopart_hard": 15,
+  "planted_probes_plain": 72,
+  "planted_probes_trap_hard": 18,
+  "planted_probes_twopart_hard": 18,
+  "runs": 36,
+  "single_clean_flips_all": 109,
+  "single_clean_flips_hit_main_all": 29,
+  "single_clean_flips_hit_main_plain": 24,
+  "single_clean_flips_hit_main_trap_hard": 0,
+  "single_clean_flips_hit_main_twopart_hard": 5,
+  "single_clean_flips_plain": 70,
+  "single_clean_flips_trap_hard": 16,
+  "single_clean_flips_twopart_hard": 23
+ },
+ "positive_logits": 1.84,
+ "script": "bb8_summ"
+}

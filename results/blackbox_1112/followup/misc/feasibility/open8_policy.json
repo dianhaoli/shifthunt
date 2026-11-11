@@ -1,0 +1,1026 @@
+{
+ "configs": {
+  "B=64 ALL 32 cells (no SAE: lat>=0) thr .225 unit T, base free  [BB-64-like]": {
+   "trap": {
+    "NAME": {
+     "max": 1.0,
+     "mean": 0.9967,
+     "min": 0.99,
+     "n": 3
+    },
+    "cells": {
+     "max": 32.0,
+     "mean": 32.0,
+     "min": 32.0,
+     "n": 3
+    },
+    "queries_used": {
+     "max": 64.0,
+     "mean": 64.0,
+     "min": 64.0,
+     "n": 3
+    },
+    "share_extra": {
+     "max": 0.01,
+     "mean": 0.0033,
+     "min": 0.0,
+     "n": 3
+    },
+    "share_named": {
+     "max": 1.0,
+     "mean": 0.9967,
+     "min": 0.99,
+     "n": 3
+    },
+    "share_none": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0,
+     "n": 3
+    },
+    "share_null_claim": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0,
+     "n": 3
+    },
+    "share_wrong": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0,
+     "n": 3
+    }
+   },
+   "twopart": {
+    "NAME": {
+     "max": 1.0,
+     "mean": 1.0,
+     "min": 1.0,
+     "n": 3
+    },
+    "cells": {
+     "max": 32.0,
+     "mean": 32.0,
+     "min": 32.0,
+     "n": 3
+    },
+    "queries_used": {
+     "max": 64.0,
+     "mean": 64.0,
+     "min": 64.0,
+     "n": 3
+    },
+    "share_extra": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0,
+     "n": 3
+    },
+    "share_named": {
+     "max": 1.0,
+     "mean": 1.0,
+     "min": 1.0,
+     "n": 3
+    },
+    "share_none": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0,
+     "n": 3
+    },
+    "share_null_claim": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0,
+     "n": 3
+    },
+    "share_wrong": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0,
+     "n": 3
+    }
+   }
+  },
+  "B=64 ALL 32 cells thr .225 T, PAY for base (32 readings) [BB-64 own-text bases]": {
+   "trap": {
+    "NAME": {
+     "max": 0.936,
+     "mean": 0.8333,
+     "min": 0.734,
+     "n": 3
+    },
+    "cells": {
+     "max": 32.0,
+     "mean": 32.0,
+     "min": 32.0,
+     "n": 3
+    },
+    "queries_used": {
+     "max": 64.0,
+     "mean": 64.0,
+     "min": 64.0,
+     "n": 3
+    },
+    "share_extra": {
+     "max": 0.23,
+     "mean": 0.1333,
+     "min": 0.0,
+     "n": 3
+    },
+    "share_named": {
+     "max": 0.936,
+     "mean": 0.8333,
+     "min": 0.734,
+     "n": 3
+    },
+    "share_none": {
+     "max": 0.064,
+     "mean": 0.0273,
+     "min": 0.0,
+     "n": 3
+    },
+    "share_null_claim": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0,
+     "n": 3
+    },
+    "share_wrong": {
+     "max": 0.018,
+     "mean": 0.006,
+     "min": 0.0,
+     "n": 3
+    }
+   },
+   "twopart": {
+    "NAME": {
+     "max": 0.866,
+     "mean": 0.8407,
+     "min": 0.792,
+     "n": 3
+    },
+    "cells": {
+     "max": 32.0,
+     "mean": 32.0,
+     "min": 32.0,
+     "n": 3
+    },
+    "queries_used": {
+     "max": 64.0,
+     "mean": 64.0,
+     "min": 64.0,
+     "n": 3
+    },
+    "share_extra": {
+     "max": 0.136,
+     "mean": 0.062,
+     "min": 0.0,
+     "n": 3
+    },
+    "share_named": {
+     "max": 0.866,
+     "mean": 0.8407,
+     "min": 0.792,
+     "n": 3
+    },
+    "share_none": {
+     "max": 0.134,
+     "mean": 0.066,
+     "min": 0.0,
+     "n": 3
+    },
+    "share_null_claim": {
+     "max": 0.09,
+     "mean": 0.03,
+     "min": 0.0,
+     "n": 3
+    },
+    "share_wrong": {
+     "max": 0.004,
+     "mean": 0.0013,
+     "min": 0.0,
+     "n": 3
+    }
+   }
+  },
+  "B=64 ALL 32 cells thr 1.84 logits, base free [BB-64-like]": {
+   "trap": {
+    "NAME": {
+     "max": 1.0,
+     "mean": 1.0,
+     "min": 1.0,
+     "n": 3
+    },
+    "cells": {
+     "max": 32.0,
+     "mean": 32.0,
+     "min": 32.0,
+     "n": 3
+    },
+    "queries_used": {
+     "max": 64.0,
+     "mean": 64.0,
+     "min": 64.0,
+     "n": 3
+    },
+    "share_extra": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0,
+     "n": 3
+    },
+    "share_named": {
+     "max": 1.0,
+     "mean": 1.0,
+     "min": 1.0,
+     "n": 3
+    },
+    "share_none": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0,
+     "n": 3
+    },
+    "share_null_claim": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0,
+     "n": 3
+    },
+    "share_wrong": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0,
+     "n": 3
+    }
+   },
+   "twopart": {
+    "NAME": {
+     "max": 1.0,
+     "mean": 1.0,
+     "min": 1.0,
+     "n": 3
+    },
+    "cells": {
+     "max": 32.0,
+     "mean": 32.0,
+     "min": 32.0,
+     "n": 3
+    },
+    "queries_used": {
+     "max": 64.0,
+     "mean": 64.0,
+     "min": 64.0,
+     "n": 3
+    },
+    "share_extra": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0,
+     "n": 3
+    },
+    "share_named": {
+     "max": 1.0,
+     "mean": 1.0,
+     "min": 1.0,
+     "n": 3
+    },
+    "share_none": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0,
+     "n": 3
+    },
+    "share_null_claim": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0,
+     "n": 3
+    },
+    "share_wrong": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0,
+     "n": 3
+    }
+   }
+  },
+  "B=64 lat>=0.05 thr .225 unit T, base free": {
+   "trap": {
+    "NAME": {
+     "max": 1.0,
+     "mean": 1.0,
+     "min": 1.0,
+     "n": 3
+    },
+    "cells": {
+     "max": 15.0,
+     "mean": 11.0,
+     "min": 8.0,
+     "n": 3
+    },
+    "queries_used": {
+     "max": 64.0,
+     "mean": 64.0,
+     "min": 64.0,
+     "n": 3
+    },
+    "share_extra": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0,
+     "n": 3
+    },
+    "share_named": {
+     "max": 1.0,
+     "mean": 1.0,
+     "min": 1.0,
+     "n": 3
+    },
+    "share_none": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0,
+     "n": 3
+    },
+    "share_null_claim": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0,
+     "n": 3
+    },
+    "share_wrong": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0,
+     "n": 3
+    }
+   },
+   "twopart": {
+    "NAME": {
+     "max": 1.0,
+     "mean": 1.0,
+     "min": 1.0,
+     "n": 3
+    },
+    "cells": {
+     "max": 16.0,
+     "mean": 14.0,
+     "min": 13.0,
+     "n": 3
+    },
+    "queries_used": {
+     "max": 64.0,
+     "mean": 64.0,
+     "min": 64.0,
+     "n": 3
+    },
+    "share_extra": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0,
+     "n": 3
+    },
+    "share_named": {
+     "max": 1.0,
+     "mean": 1.0,
+     "min": 1.0,
+     "n": 3
+    },
+    "share_none": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0,
+     "n": 3
+    },
+    "share_null_claim": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0,
+     "n": 3
+    },
+    "share_wrong": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0,
+     "n": 3
+    }
+   }
+  },
+  "B=8 lat>=0.10 thr .225 unit T, base free": {
+   "trap": {
+    "NAME": {
+     "max": 1.0,
+     "mean": 0.9716,
+     "min": 0.9147,
+     "n": 3
+    },
+    "cells": {
+     "max": 7.0,
+     "mean": 5.6667,
+     "min": 5.0,
+     "n": 3
+    },
+    "queries_used": {
+     "max": 8.0,
+     "mean": 8.0,
+     "min": 8.0,
+     "n": 3
+    },
+    "share_extra": {
+     "max": 0.0853,
+     "mean": 0.0284,
+     "min": 0.0,
+     "n": 3
+    },
+    "share_named": {
+     "max": 1.0,
+     "mean": 0.9716,
+     "min": 0.9147,
+     "n": 3
+    },
+    "share_none": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0,
+     "n": 3
+    },
+    "share_null_claim": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0,
+     "n": 3
+    },
+    "share_wrong": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0,
+     "n": 3
+    }
+   },
+   "twopart": {
+    "NAME": {
+     "max": 1.0,
+     "mean": 0.981,
+     "min": 0.9713,
+     "n": 3
+    },
+    "cells": {
+     "max": 7.0,
+     "mean": 6.3333,
+     "min": 5.0,
+     "n": 3
+    },
+    "queries_used": {
+     "max": 8.0,
+     "mean": 8.0,
+     "min": 8.0,
+     "n": 3
+    },
+    "share_extra": {
+     "max": 0.0283,
+     "mean": 0.0094,
+     "min": 0.0,
+     "n": 3
+    },
+    "share_named": {
+     "max": 1.0,
+     "mean": 0.981,
+     "min": 0.9713,
+     "n": 3
+    },
+    "share_none": {
+     "max": 0.0287,
+     "mean": 0.0096,
+     "min": 0.0,
+     "n": 3
+    },
+    "share_null_claim": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0,
+     "n": 3
+    },
+    "share_wrong": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0,
+     "n": 3
+    }
+   }
+  },
+  "B=8 lat>=0.10 thr 0.30 unit T (rigid prompt threshold)": {
+   "trap": {
+    "NAME": {
+     "max": 0.989,
+     "mean": 0.9383,
+     "min": 0.86,
+     "n": 3
+    },
+    "cells": {
+     "max": 7.0,
+     "mean": 5.6667,
+     "min": 5.0,
+     "n": 3
+    },
+    "queries_used": {
+     "max": 8.0,
+     "mean": 8.0,
+     "min": 8.0,
+     "n": 3
+    },
+    "share_extra": {
+     "max": 0.034,
+     "mean": 0.0113,
+     "min": 0.0,
+     "n": 3
+    },
+    "share_named": {
+     "max": 0.989,
+     "mean": 0.9383,
+     "min": 0.86,
+     "n": 3
+    },
+    "share_none": {
+     "max": 0.14,
+     "mean": 0.0503,
+     "min": 0.0,
+     "n": 3
+    },
+    "share_null_claim": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0,
+     "n": 3
+    },
+    "share_wrong": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0,
+     "n": 3
+    }
+   },
+   "twopart": {
+    "NAME": {
+     "max": 0.977,
+     "mean": 0.8889,
+     "min": 0.725,
+     "n": 3
+    },
+    "cells": {
+     "max": 7.0,
+     "mean": 6.3333,
+     "min": 5.0,
+     "n": 3
+    },
+    "queries_used": {
+     "max": 8.0,
+     "mean": 8.0,
+     "min": 8.0,
+     "n": 3
+    },
+    "share_extra": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0,
+     "n": 3
+    },
+    "share_named": {
+     "max": 0.977,
+     "mean": 0.8889,
+     "min": 0.725,
+     "n": 3
+    },
+    "share_none": {
+     "max": 0.275,
+     "mean": 0.1111,
+     "min": 0.023,
+     "n": 3
+    },
+    "share_null_claim": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0,
+     "n": 3
+    },
+    "share_wrong": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0,
+     "n": 3
+    }
+   }
+  },
+  "B=8 lat>=0.10 thr 1.84 logits, base free": {
+   "trap": {
+    "NAME": {
+     "max": 0.9997,
+     "mean": 0.9911,
+     "min": 0.9763,
+     "n": 3
+    },
+    "cells": {
+     "max": 7.0,
+     "mean": 5.6667,
+     "min": 5.0,
+     "n": 3
+    },
+    "queries_used": {
+     "max": 8.0,
+     "mean": 8.0,
+     "min": 8.0,
+     "n": 3
+    },
+    "share_extra": {
+     "max": 0.0237,
+     "mean": 0.0079,
+     "min": 0.0,
+     "n": 3
+    },
+    "share_named": {
+     "max": 0.9997,
+     "mean": 0.9911,
+     "min": 0.9763,
+     "n": 3
+    },
+    "share_none": {
+     "max": 0.0027,
+     "mean": 0.001,
+     "min": 0.0,
+     "n": 3
+    },
+    "share_null_claim": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0,
+     "n": 3
+    },
+    "share_wrong": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0,
+     "n": 3
+    }
+   },
+   "twopart": {
+    "NAME": {
+     "max": 0.9953,
+     "mean": 0.9676,
+     "min": 0.9217,
+     "n": 3
+    },
+    "cells": {
+     "max": 7.0,
+     "mean": 6.3333,
+     "min": 5.0,
+     "n": 3
+    },
+    "queries_used": {
+     "max": 8.0,
+     "mean": 8.0,
+     "min": 8.0,
+     "n": 3
+    },
+    "share_extra": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0,
+     "n": 3
+    },
+    "share_named": {
+     "max": 0.9953,
+     "mean": 0.9676,
+     "min": 0.9217,
+     "n": 3
+    },
+    "share_none": {
+     "max": 0.0783,
+     "mean": 0.0324,
+     "min": 0.0047,
+     "n": 3
+    },
+    "share_null_claim": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0,
+     "n": 3
+    },
+    "share_wrong": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0,
+     "n": 3
+    }
+   }
+  },
+  "B=8 lat>=0.15 thr .225 T, PAY for base (4 readings), untested->SAE>.225": {
+   "trap": {
+    "NAME": {
+     "max": 1.0,
+     "mean": 0.9684,
+     "min": 0.939,
+     "n": 3
+    },
+    "cells": {
+     "max": 5.0,
+     "mean": 4.3333,
+     "min": 4.0,
+     "n": 3
+    },
+    "queries_used": {
+     "max": 8.0,
+     "mean": 8.0,
+     "min": 8.0,
+     "n": 3
+    },
+    "share_extra": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0,
+     "n": 3
+    },
+    "share_named": {
+     "max": 1.0,
+     "mean": 0.9684,
+     "min": 0.939,
+     "n": 3
+    },
+    "share_none": {
+     "max": 0.061,
+     "mean": 0.0316,
+     "min": 0.0,
+     "n": 3
+    },
+    "share_null_claim": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0,
+     "n": 3
+    },
+    "share_wrong": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0,
+     "n": 3
+    }
+   },
+   "twopart": {
+    "NAME": {
+     "max": 1.0,
+     "mean": 0.9584,
+     "min": 0.8753,
+     "n": 3
+    },
+    "cells": {
+     "max": 4.0,
+     "mean": 3.3333,
+     "min": 3.0,
+     "n": 3
+    },
+    "queries_used": {
+     "max": 8.0,
+     "mean": 8.0,
+     "min": 8.0,
+     "n": 3
+    },
+    "share_extra": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0,
+     "n": 3
+    },
+    "share_named": {
+     "max": 1.0,
+     "mean": 0.9584,
+     "min": 0.8753,
+     "n": 3
+    },
+    "share_none": {
+     "max": 0.1247,
+     "mean": 0.0416,
+     "min": 0.0,
+     "n": 3
+    },
+    "share_null_claim": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0,
+     "n": 3
+    },
+    "share_wrong": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0,
+     "n": 3
+    }
+   }
+  },
+  "B=8 lat>=0.15 thr .225 unit T, base free": {
+   "trap": {
+    "NAME": {
+     "max": 1.0,
+     "mean": 1.0,
+     "min": 1.0,
+     "n": 3
+    },
+    "cells": {
+     "max": 5.0,
+     "mean": 4.3333,
+     "min": 4.0,
+     "n": 3
+    },
+    "queries_used": {
+     "max": 8.0,
+     "mean": 8.0,
+     "min": 8.0,
+     "n": 3
+    },
+    "share_extra": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0,
+     "n": 3
+    },
+    "share_named": {
+     "max": 1.0,
+     "mean": 1.0,
+     "min": 1.0,
+     "n": 3
+    },
+    "share_none": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0,
+     "n": 3
+    },
+    "share_null_claim": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0,
+     "n": 3
+    },
+    "share_wrong": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0,
+     "n": 3
+    }
+   },
+   "twopart": {
+    "NAME": {
+     "max": 1.0,
+     "mean": 1.0,
+     "min": 1.0,
+     "n": 3
+    },
+    "cells": {
+     "max": 4.0,
+     "mean": 3.3333,
+     "min": 3.0,
+     "n": 3
+    },
+    "queries_used": {
+     "max": 8.0,
+     "mean": 8.0,
+     "min": 8.0,
+     "n": 3
+    },
+    "share_extra": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0,
+     "n": 3
+    },
+    "share_named": {
+     "max": 1.0,
+     "mean": 1.0,
+     "min": 1.0,
+     "n": 3
+    },
+    "share_none": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0,
+     "n": 3
+    },
+    "share_null_claim": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0,
+     "n": 3
+    },
+    "share_wrong": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0,
+     "n": 3
+    }
+   }
+  },
+  "B=8 lat>=0.15 thr 1.84 logits, base free": {
+   "trap": {
+    "NAME": {
+     "max": 1.0,
+     "mean": 0.9998,
+     "min": 0.9993,
+     "n": 3
+    },
+    "cells": {
+     "max": 5.0,
+     "mean": 4.3333,
+     "min": 4.0,
+     "n": 3
+    },
+    "queries_used": {
+     "max": 8.0,
+     "mean": 8.0,
+     "min": 8.0,
+     "n": 3
+    },
+    "share_extra": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0,
+     "n": 3
+    },
+    "share_named": {
+     "max": 1.0,
+     "mean": 0.9998,
+     "min": 0.9993,
+     "n": 3
+    },
+    "share_none": {
+     "max": 0.0007,
+     "mean": 0.0002,
+     "min": 0.0,
+     "n": 3
+    },
+    "share_null_claim": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0,
+     "n": 3
+    },
+    "share_wrong": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0,
+     "n": 3
+    }
+   },
+   "twopart": {
+    "NAME": {
+     "max": 0.9997,
+     "mean": 0.9989,
+     "min": 0.9973,
+     "n": 3
+    },
+    "cells": {
+     "max": 4.0,
+     "mean": 3.3333,
+     "min": 3.0,
+     "n": 3
+    },
+    "queries_used": {
+     "max": 8.0,
+     "mean": 8.0,
+     "min": 8.0,
+     "n": 3
+    },
+    "share_extra": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0,
+     "n": 3
+    },
+    "share_named": {
+     "max": 0.9997,
+     "mean": 0.9989,
+     "min": 0.9973,
+     "n": 3
+    },
+    "share_none": {
+     "max": 0.0027,
+     "mean": 0.0011,
+     "min": 0.0003,
+     "n": 3
+    },
+    "share_null_claim": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0,
+     "n": 3
+    },
+    "share_wrong": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0,
+     "n": 3
+    }
+   }
+  }
+ },
+ "n_default": 3000,
+ "script": "open8_policy"
+}

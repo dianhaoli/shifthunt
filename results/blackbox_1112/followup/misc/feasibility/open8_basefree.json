@@ -1,0 +1,8 @@
+{
+ "max_abs_logit_diff": 0.05539,
+ "median_abs_logit_diff": 0.00857,
+ "probe_query_texts": 2958,
+ "runs": 112,
+ "script": "open8_basefree",
+ "verbatim_sample_notes_of_same_probe": 40
+}

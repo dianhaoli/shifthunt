@@ -1,0 +1,115 @@
+{
+ "T_logits": 1.84,
+ "dp": {
+  "cons": {
+   "10": 0.819,
+   "11": 0.938,
+   "12": 0.995,
+   "13": 1.0,
+   "14": 1.0,
+   "16": 1.0,
+   "4": 0.323,
+   "6": 0.456,
+   "8": 0.678
+  },
+  "known1": {
+   "10": 0.833,
+   "11": 0.958,
+   "12": 1.0,
+   "13": 1.0,
+   "14": 1.0,
+   "16": 1.0,
+   "4": 0.354,
+   "6": 0.5,
+   "8": 0.703
+  }
+ },
+ "n_per_episode": 2000,
+ "script": "bb8_dp2",
+ "simulated": {
+  "cons|B=12|noiseless": {
+   "episode_max": 0.996,
+   "episode_min": 0.9935,
+   "pooled": 0.995,
+   "trap": 0.9958,
+   "twopart": 0.9942
+  },
+  "cons|B=12|stored_additive": {
+   "episode_max": 0.871,
+   "episode_min": 0.645,
+   "pooled": 0.7274,
+   "trap": 0.7253,
+   "twopart": 0.7295
+  },
+  "cons|B=16|noiseless": {
+   "episode_max": 1.0,
+   "episode_min": 1.0,
+   "pooled": 1.0,
+   "trap": 1.0,
+   "twopart": 1.0
+  },
+  "cons|B=16|stored_additive": {
+   "episode_max": 0.89,
+   "episode_min": 0.713,
+   "pooled": 0.7914,
+   "trap": 0.7987,
+   "twopart": 0.7842
+  },
+  "cons|B=8|noiseless": {
+   "episode_max": 0.6985,
+   "episode_min": 0.664,
+   "pooled": 0.6789,
+   "trap": 0.6843,
+   "twopart": 0.6735
+  },
+  "cons|B=8|stored_additive": {
+   "episode_max": 0.587,
+   "episode_min": 0.4085,
+   "pooled": 0.4829,
+   "trap": 0.4687,
+   "twopart": 0.4972
+  },
+  "known1|B=12|noiseless": {
+   "episode_max": 1.0,
+   "episode_min": 1.0,
+   "pooled": 1.0,
+   "trap": 1.0,
+   "twopart": 1.0
+  },
+  "known1|B=12|stored_additive": {
+   "episode_max": 0.82,
+   "episode_min": 0.6255,
+   "pooled": 0.6992,
+   "trap": 0.6918,
+   "twopart": 0.7065
+  },
+  "known1|B=16|noiseless": {
+   "episode_max": 1.0,
+   "episode_min": 1.0,
+   "pooled": 1.0,
+   "trap": 1.0,
+   "twopart": 1.0
+  },
+  "known1|B=16|stored_additive": {
+   "episode_max": 0.836,
+   "episode_min": 0.703,
+   "pooled": 0.7627,
+   "trap": 0.7855,
+   "twopart": 0.7398
+  },
+  "known1|B=8|noiseless": {
+   "episode_max": 0.72,
+   "episode_min": 0.69,
+   "pooled": 0.7018,
+   "trap": 0.7083,
+   "twopart": 0.6953
+  },
+  "known1|B=8|stored_additive": {
+   "episode_max": 0.5985,
+   "episode_min": 0.404,
+   "pooled": 0.4972,
+   "trap": 0.4802,
+   "twopart": 0.5142
+  }
+ }
+}
