@@ -52,3 +52,29 @@ def test_glmm_detects_item_variance():
     assert f["s_item"] > 1.0
     pred = ils.new_item_prediction(f["beta"][0], f["s_item"], f["s_item_agent"])
     assert pred["q2.5"] < 0.2 and pred["q97.5"] > 0.8
+
+
+def test_marginal_likelihood_matches_monte_carlo():
+    """The grid-convolution likelihood against brute-force Monte Carlo, including large variances."""
+    rng = np.random.default_rng(7)
+    cells = [(0, 3, 4), (1, 1, 4), (0, 0, 2)]
+    beta = np.array([1.0, -0.5])
+    for su, sv in ((0.0, 0.0), (0.5, 0.3), (2.0, 1.0), (5.0, 4.0)):
+        u = rng.normal(0, su, 200_000)
+        tot = np.zeros_like(u)
+        lik = np.ones_like(u)
+        for a, k, n in cells:
+            v = rng.normal(0, sv, u.shape)
+            p = ils.expit(beta[a] + u + v)
+            lik *= p ** k * (1 - p) ** (n - k)
+        mc = math.log(lik.mean())
+        q = ils._item_loglik(beta, su, sv, cells)
+        assert abs(q - mc) < 0.02, (su, sv, q, mc)
+
+
+def test_stratified_exact_matches_fisher_for_one_item():
+    from scipy import stats
+    se = ils.stratified_exact({"i": (6, 6)}, {"i": (0, 6)})
+    assert math.isclose(se["p_two"], stats.fisher_exact([[6, 0], [0, 6]])[1], rel_tol=1e-9)
+    se2 = ils.stratified_exact({"a": (2, 2), "b": (2, 2)}, {"a": (0, 2), "b": (0, 2)})
+    assert se2["p_one_greater"] < 0.05

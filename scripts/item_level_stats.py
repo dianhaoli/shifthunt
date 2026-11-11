@@ -17,8 +17,8 @@ What is computed
   2. Run-level Fisher exact tests for the same contrasts. These treat runs as independent and
      therefore CONDITION ON THE ITEMS: they speak about these six items only.
   3. A logistic mixed model, logit P(pass) = beta_agent + u_item + v_item:agent with
-     u ~ N(0, s_u^2), v ~ N(0, s_v^2), fitted by maximum likelihood with nested Gauss-Hermite
-     quadrature (exact up to quadrature error; no Laplace step). From it we report the predicted
+     u ~ N(0, s_u^2), v ~ N(0, s_v^2), fitted by maximum likelihood with the marginal
+     likelihood computed by convolution on a fine logit grid (step 0.05; checked against Monte Carlo; no Laplace step). From it we report the predicted
      distribution of an agent's pass rate on a NEW item: expit(beta_a + z), z ~ N(0, s_u^2 + s_v^2).
      With six items the variance components are weakly identified; a parametric bootstrap gives
      their spread. Agents at ceiling make beta_a run to large values; the fit caps |beta| at 8.
@@ -117,6 +117,27 @@ def fisher_runs(ca, cb):
     return {"a": f"{ka}/{na}", "b": f"{kb}/{nb}", "p_two": float(p_two), "p_one_greater": float(p_g)}
 
 
+def stratified_exact(ca, cb):
+    """Exact conditional test of no association within items (exact Cochran-Mantel-Haenszel): given each item's
+    margins, the A-pass count is hypergeometric per item; the null distribution of their sum is the convolution.
+    Two-sided p sums the probabilities no larger than the observed one; one-sided is P(sum >= observed)."""
+    dist = np.array([1.0])
+    lo = 0
+    obs = 0
+    for i in ca:
+        ka, na = ca[i]
+        kb, nb = cb[i]
+        K, N = ka + kb, na + nb
+        xs = np.arange(max(0, K - nb), min(K, na) + 1)
+        pmf = stats.hypergeom.pmf(xs, N, K, na)
+        dist = np.convolve(dist, pmf)
+        lo += xs[0]
+        obs += ka
+    idx = obs - lo
+    p_obs = dist[idx]
+    return {"p_two": float(min(1.0, dist[dist <= p_obs * (1 + 1e-9)].sum())), "p_one_greater": float(dist[idx:].sum())}
+
+
 def contrast(name, rows_a, agent_a, arm_a, rows_b, agent_b, arm_b, items, note=""):
     ca = cell_counts(rows_a, agent_a, arm_a, items)
     cb = cell_counts(rows_b, agent_b, arm_b, items)
@@ -126,30 +147,57 @@ def contrast(name, rows_a, agent_a, arm_a, rows_b, agent_b, arm_b, items, note="
            "per_item": {i: {"a": f"{ca[i][0]}/{ca[i][1]}", "b": f"{cb[i][0]}/{cb[i][1]}",
                             "d": round(ca[i][0] / ca[i][1] - cb[i][0] / cb[i][1], 4)} for i in use},
            "sign_flip": sign_flip(d),
-           "fisher_runs": fisher_runs({i: ca[i] for i in use}, {i: cb[i] for i in use})}
+           "fisher_runs": fisher_runs({i: ca[i] for i in use}, {i: cb[i] for i in use}),
+           "stratified_exact": stratified_exact({i: ca[i] for i in use}, {i: cb[i] for i in use})}
+    sf = out["sign_flip"]
+    auto = f"{sf['n_nonzero']} of {sf['n_items']} items differ, so the smallest attainable two-sided sign-flip p is {sf['min_p_two']:.3g}"
+    out["note"] = f"{note}; {auto}" if note else auto
     return out
 
 
 # ----------------------------------------------------------------------------- mixed model
 
-GH_X, GH_W = np.polynomial.hermite.hermgauss(20)  # for exp(-x^2)
-Z = GH_X * math.sqrt(2.0)
-W = GH_W / math.sqrt(math.pi)  # standard-normal weights
+# Marginal likelihood by convolution on a fixed logit grid (replaces fixed Gauss-Hermite quadrature, which the
+# 11-11 verification showed is inaccurate at the large variances the bootstrap reaches). For a cell (agent a,
+# k of n) the binomial likelihood L(eta) is tabulated on the grid; integrating over v ~ N(0, sv^2) is a Gaussian
+# convolution, and integrating over u ~ N(0, su^2) is a sum over the same grid. Below one grid step a variance
+# is treated as 0 (exact limit). Accuracy is checked against Monte Carlo in tests/test_item_level_stats.py.
+GRID = np.linspace(-16.0, 16.0, 641)  # step 0.05
+STEP = float(GRID[1] - GRID[0])
+Z = np.polynomial.hermite.hermgauss(40)[0] * math.sqrt(2.0)          # kept for new_item_prediction's mean
+W = np.polynomial.hermite.hermgauss(40)[1] / math.sqrt(math.pi)
+
+
+def _log_binom_lik(k, n, eta):
+    from scipy.special import log_expit
+    return k * log_expit(eta) + (n - k) * log_expit(-eta)
+
+
+def _gauss_kernel(s):
+    """K[x, g] = N(GRID[g]; GRID[x], s^2) * STEP, rows renormalised (mass lost at the edges is negligible)."""
+    d = GRID[:, None] - GRID[None, :]
+    K = np.exp(-0.5 * (d / s) ** 2)
+    return K / K.sum(axis=1, keepdims=True)
 
 
 def _item_loglik(beta, su, sv, cells):
-    """cells: list of (agent_index, k, n) for one item. Marginal log-lik of the item."""
-    # inner: for each agent cell, integrate over v; outer: integrate over u
-    tot = np.zeros(len(Z))  # log of product over agent cells, per outer node
+    """Marginal log-likelihood of one item. cells: list of (agent_index, k, n)."""
+    tot = np.zeros(len(GRID))  # log prod over cells of I_c(beta_a + u), as a function of u on GRID
+    Kv = _gauss_kernel(sv) if sv > STEP else None
     for a, k, n in cells:
-        eta = beta[a] + su * Z[:, None] + sv * Z[None, :]  # outer x inner
-        p = np.clip(expit(eta), 1e-300, 1 - 1e-16)
-        ll = k * np.log(p) + (n - k) * np.log1p(-p)
-        m = ll.max(axis=1, keepdims=True)
-        inner = m[:, 0] + np.log(np.exp(ll - m) @ W)
-        tot += inner
-    m = tot.max()
-    return m + math.log(float(np.exp(tot - m) @ W))
+        ll = _log_binom_lik(k, n, GRID)  # log L(eta) on GRID
+        if Kv is not None:
+            m = ll.max()
+            ic = np.log(Kv @ np.exp(ll - m)) + m  # log I_c(x) on GRID
+        else:
+            ic = ll
+        tot += np.interp(beta[a] + GRID, GRID, ic)  # x = beta_a + u
+    if su > STEP:
+        w = np.exp(-0.5 * (GRID / su) ** 2)
+        w /= w.sum()
+        m = tot.max()
+        return float(m + np.log(np.exp(tot - m) @ w))
+    return float(np.interp(0.0, GRID, tot))
 
 
 def fit_glmm(rows, agents, items, arm_of=None):
@@ -172,7 +220,7 @@ def fit_glmm(rows, agents, items, arm_of=None):
     best = None
     for s0 in (-2.0, 0.0):
         x0 = np.concatenate([np.zeros(len(agents)), [s0, s0]])
-        bounds = [(-8, 8)] * len(agents) + [(-7, 2.5), (-7, 2.5)]
+        bounds = [(-8, 8)] * len(agents) + [(-7, math.log(6.0)), (-7, math.log(6.0))]
         res = optimize.minimize(nll, x0, method="L-BFGS-B", bounds=bounds)
         if best is None or res.fun < best.fun:
             best = res
@@ -234,9 +282,9 @@ def compute(n_boot=200):
     C.append(contrast("GPT vs Haiku, fresh BB-64 (NAME)", fresh, "gpt", "bb64", fresh, "haiku", "bb64", ITEMS))
     C.append(contrast("GPT vs Haiku, main study (hard pass)", main, "gpt", "main_open8", main, "haiku", "main_open8", ITEMS))
     C.append(contrast("Haiku traps: BB-64 (no SAE) vs Open-8 (SAE)", fresh, "haiku", "bb64", fresh, "haiku", "open8", TRAPS,
-                      "3 items: smallest attainable two-sided sign-flip p is 0.25"))
+                      ""))
     C.append(contrast("Haiku traps: BB-8 (no SAE) vs Open-8 (SAE)", fresh, "haiku", "bb8", fresh, "haiku", "open8", TRAPS,
-                      "3 items: smallest attainable two-sided sign-flip p is 0.25; budget differs from BB-64"))
+                      "budget differs from BB-64"))
     C.append(contrast("Haiku traps, main study vs fresh Open-8 (drift check)", main, "haiku", "main_open8", fresh, "haiku", "open8", TRAPS))
     C.append(contrast("Haiku two-part: BB-64 vs Open-8", fresh, "haiku", "bb64", fresh, "haiku", "open8", TWOPART))
     main_agents = ["gpt", "opus", "sonnet", "haiku"]
@@ -258,22 +306,24 @@ def render(res):
          "(`results/blackbox_1112/rows_r1112.csv`, `results/cross_model_1103/rollouts.csv`). Exploratory: none of "
          "these tests was pre-registered. The pre-registered C1 test (run-level, Holm) stands as reported in "
          "`analysis.md`; the sign-flip version below re-asks the question with the item as the unit.", "",
-         "**How to read the two kinds of p.** The *sign-flip* p treats the six (or three) items as a sample of items "
-         "and is the honest test for a claim about the task family; it cannot go below 2/2^n. The *run-level Fisher* p "
-         "treats runs as independent and so **conditions on these items**: it supports a claim about these six "
-         "episodes only.", "",
+         "**How to read the p values.** The *sign-flip* p treats the items as a sample of items and is the honest "
+         "test for a claim about the task family; it cannot go below 2/2^n (n = items that differ). The "
+         "*item-stratified exact* p (exact CMH) **conditions on these items**: it supports a claim about these "
+         "episodes only. The pooled run-level Fisher p is shown for comparison; it equals a conditional test only when "
+         "both arms spread their runs over items in the same proportions (true here except the drift check).", "",
          "## Contrasts", "",
-         "| Contrast | Per item (A vs B) | Mean item diff | Sign-flip p two-sided (min attainable) | one-sided A>B | Run-level Fisher A vs B, p two-sided / one-sided (conditions on items) |",
-         "|---|---|---|---|---|---|"]
+         "| Contrast | Per item (A vs B) | Mean item diff | Sign-flip p two-sided (min attainable) | one-sided A>B | Run-level Fisher A vs B, p two-sided / one-sided (pooled) | Item-stratified exact (CMH), p two-sided / one-sided (conditions on items) |",
+         "|---|---|---|---|---|---|---|"]
     for c in res["contrasts"]:
         pi = "; ".join(f"{i} {v['a']} vs {v['b']}" for i, v in c["per_item"].items())
         s, fr = c["sign_flip"], c["fisher_runs"]
         L.append(f"| {c['name']} | {pi} | {s['mean_diff']:+.3f} | {_f(s['p_two'])} ({_f(s['min_p_two'])}) | "
-                 f"{_f(s['p_one_greater'])} | {fr['a']} vs {fr['b']}: {_f(fr['p_two'])} / {_f(fr['p_one_greater'])} |")
+                 f"{_f(s['p_one_greater'])} | {fr['a']} vs {fr['b']}: {_f(fr['p_two'])} / {_f(fr['p_one_greater'])} | "
+                 f"{_f(c['stratified_exact']['p_two'])} / {_f(c['stratified_exact']['p_one_greater'])} |")
     L += ["", "Notes: " + " ".join(f"*{c['name']}*: {c['note']}." for c in res["contrasts"] if c["note"]), "",
           "## Mixed model: predicted pass rate on a new item", "",
           "logit P(pass) = beta_agent + u_item + v_item×agent, u ~ N(0, s_item²), v ~ N(0, s_item×agent²); ML fit by "
-          "nested 20-point Gauss–Hermite quadrature. The predicted rate on a new item for agent a is "
+          "convolution on a fine logit grid (step 0.05; standard deviations bounded at 6). The predicted rate on a new item for agent a is "
           "expit(beta_a + z), z ~ N(0, s_item² + s_item×agent²). Six items identify the variance components poorly: "
           "the bootstrap columns show how far the predictive bounds move under a parametric bootstrap. |beta| is "
           "capped at 8, which binds for agents at ceiling.", ""]
@@ -281,7 +331,11 @@ def render(res):
         f = g["fit"]
         b = g["bootstrap"]
         L += [f"### {g['label']}", "",
-              f"s_item = {f['s_item']:.2f}, s_item×agent = {f['s_item_agent']:.2f} (total {math.hypot(f['s_item'], f['s_item_agent']):.2f}); "
+              (f"total s = {math.hypot(f['s_item'], f['s_item_agent']):.2f} (the split between item and item×agent "
+               f"variance is not identified: an agent is at the beta cap, i.e. at ceiling, so only one agent's cells "
+               f"vary; new-item predictions depend on the total only); "
+               if max(abs(b) for b in f["beta"]) >= 7.99 else
+               f"s_item = {f['s_item']:.2f}, s_item×agent = {f['s_item_agent']:.2f} (total {math.hypot(f['s_item'], f['s_item_agent']):.2f}); ") +
               f"bootstrap total s 5/50/95%: {', '.join(f'{x:.2f}' for x in b['s_total_q05_q50_q95'])}; "
               f"share of bootstrap fits with total s < 0.1: {b['share_s_total_below_0.1']:.2f}.", "",
               "| Agent | beta | Mean rate on new item | 95% predictive range (2.5%–97.5%) | 80% range | Bootstrap 5–95% of lower / upper bound |",

@@ -161,3 +161,33 @@ def test_proxy_unit_from_stored_sample_encodings(tmp_path):
         samples = [[{"label": 1}, {"label": 0}, {"label": 1}, {"label": 0}]]
     # proxy logits: 1, 1, 5, 0 -> label-1 mean 3, label-0 mean 0.5 -> gap 2.5
     assert abs(TF.proxy_unit(tmp_path, "ep", 0, Ep()) - 2.5) < 1e-12
+
+
+def test_accepted_submit_is_the_last_ok_submit(tmp_path):
+    import json
+    recs = [{"seq": 3, "tool": "submit", "status": "ok"}, {"seq": 5, "tool": "latent_means", "status": "ok"},
+            {"seq": 7, "tool": "submit", "status": "ok"}, {"seq": 8, "tool": "submit", "status": "error"}]
+    (tmp_path / "log.jsonl").write_text("".join(json.dumps(r) + "\n" for r in recs))
+    assert TF.accepted_submit_seq(tmp_path) == 7
+
+
+def test_loose_f2_counts_pairs_with_identical_detector_rows():
+    # the regex moves between two same-topic texts whose detector rows are identical: tested under the loose rule
+    entry = {"none": False, "cues": [{"regex": "zz"}]}
+    out = TF.t_flags(entry, ["a", "a zz", "b MAIN"], [(0, 0, 0), (0, 0, 0), (1, 0, 0)], [0, 0, 0], [0], 1, True, mf)
+    assert out["T_RULEL"] == 1 and TF.untested_cues(entry, ["a", "a zz"], [(0,), (0,)], [0, 0], True, mf) == 0
+
+
+def test_decoy_from_manifest_and_missing_is_an_error(tmp_path):
+    import json
+    import pytest
+    bank = tmp_path / "bank"
+    (bank / "ep1" / "private").mkdir(parents=True)
+    (bank / "ep1" / "private" / "answer.json").write_text(json.dumps(
+        {"probes": [{"cue": "exclamation", "source": "knob_x/planted_001"}]}))
+    art = tmp_path / "art"
+    (art / "knob_x").mkdir(parents=True)
+    (art / "knob_x" / "manifest.json").write_text(json.dumps([{"name": "planted_001", "knob": {"decoy": "weekday"}}]))
+    assert TF.main_and_decoy(bank, "ep1", 0, "meta", art) == (["exclamation"], "weekday", "meta")
+    with pytest.raises(SystemExit):
+        TF.main_and_decoy(bank, "ep1", 0, "meta", tmp_path / "nowhere")
