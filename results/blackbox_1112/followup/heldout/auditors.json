@@ -1,0 +1,102 @@
+{
+ "n_runs": 26,
+ "thesis1": {
+  "A_vs_mech": {
+   "n": 26,
+   "kappa": 1.0,
+   "agree": 26
+  },
+  "A_thesis_test": {
+   "n": 26,
+   "in group 1": "10/12",
+   "in group 2": "2/14",
+   "diff": 0.69,
+   "p_one_sided": 0.000639386189258312,
+   "verdict": "supported"
+  },
+  "B_vs_mech": {
+   "n": 26,
+   "kappa": 1.0,
+   "agree": 26
+  },
+  "B_thesis_test": {
+   "n": 26,
+   "in group 1": "10/12",
+   "in group 2": "2/14",
+   "diff": 0.69,
+   "p_one_sided": 0.000639386189258312,
+   "verdict": "supported"
+  },
+  "A_vs_B": {
+   "n": 26,
+   "kappa": 1.0,
+   "agree": 26
+  }
+ },
+ "thesis2": {
+  "A_vs_mech": {
+   "n": 20,
+   "kappa": 0.7647058823529412,
+   "agree": 18
+  },
+  "A_thesis_test": {
+   "n": 20,
+   "in group 1": "6/7",
+   "in group 2": "1/13",
+   "diff": 0.78,
+   "p_one_sided": 0.0011867905056759547,
+   "verdict": "supported"
+  },
+  "B_vs_mech": {
+   "n": 21,
+   "kappa": 0.7692307692307692,
+   "agree": 19
+  },
+  "B_thesis_test": {
+   "n": 21,
+   "in group 1": "6/8",
+   "in group 2": "1/13",
+   "diff": 0.673,
+   "p_one_sided": 0.0031991744066047468,
+   "verdict": "supported"
+  },
+  "A_vs_B": {
+   "n": 20,
+   "kappa": 1.0,
+   "agree": 20
+  }
+ },
+ "thesis3": {
+  "A_vs_mech": {
+   "n": 26,
+   "kappa": 0.6119402985074627,
+   "agree": 22
+  },
+  "A_thesis_test": {
+   "n": 26,
+   "in group 1": "1/14",
+   "in group 2": "5/12",
+   "diff": -0.345,
+   "p_one_sided": 0.9959866220735786,
+   "verdict": "dead"
+  },
+  "B_vs_mech": {
+   "n": 26,
+   "kappa": 0.6119402985074627,
+   "agree": 22
+  },
+  "B_thesis_test": {
+   "n": 26,
+   "in group 1": "1/14",
+   "in group 2": "5/12",
+   "diff": -0.345,
+   "p_one_sided": 0.9959866220735786,
+   "verdict": "dead"
+  },
+  "A_vs_B": {
+   "n": 26,
+   "kappa": 0.5666666666666667,
+   "agree": 22
+  }
+ }
+}
