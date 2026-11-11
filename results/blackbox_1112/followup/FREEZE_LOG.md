@@ -276,3 +276,12 @@ file is written by hand after reading each disagreement in the transcript; its n
 |---|---|---|---|
 | scripts/followup_topicunit_flags.py | `d19daab3f2885115a84886b47232b9b7b27ed4995815bcf0dea645152e81ec22` | 2026-11-11T07:33Z | F1a and F4 with the topic unit |
 | tests/test_followup_topicunit_flags.py | `c65724c1bef3844556d28831b0be3c47f2dc499d126049dc57a922d50105e082` | 2026-11-11T07:33Z | F1a and F4 with the topic unit |
+
+- hardercue verifier, 2026-11-11T07:45Z (no code under scripts/ changed; hashes above still match): (1) README and
+  hardercue.json medians were upper medians; replaced by ordinary medians (0.082 / 0.143 / 0.779 / 0.342 for
+  jobs 0-5 of D). (2) Stage C claim "sign-off line 0.6 to 1.4 times the main in every fit" corrected to 0.22-1.79
+  (above 0.15 in all 54 fits). (3) Stage D jobs 6-13 per-fit rows (overwritten by the build's resume) recovered
+  by a verifier replay of the same tag in a separate scratch root (harness code unchanged; a scratch wrapper only
+  skips refitting jobs 0-5 while advancing the same rng): per-job fits and last failures identical to the build
+  log. Stage D now reported over all 404 fits: 0 accepted, 0 gate runs, best near-miss worst-other 0.154 (was
+  0.211 over jobs 0-5). Verdict unchanged (FAIL).
