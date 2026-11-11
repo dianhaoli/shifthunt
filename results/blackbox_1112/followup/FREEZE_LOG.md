@@ -285,3 +285,9 @@ file is written by hand after reading each disagreement in the transcript; its n
   skips refitting jobs 0-5 while advancing the same rng): per-job fits and last failures identical to the build
   log. Stage D now reported over all 404 fits: 0 accepted, 0 gate runs, best near-miss worst-other 0.154 (was
   0.211 over jobs 0-5). Verdict unchanged (FAIL).
+
+### thesis2 (EXPLORATORY; restated thesis (2), defined after the reading; main-session code)
+
+| file | sha256 | frozen (UTC) | first real run |
+|---|---|---|---|
+| scripts/followup_thesis2_kept_proxy.py | `672dc0415f46e48e891f9c9fd9adf4cec700c57498abed9bb31de254e9f51221` | 2026-11-11T15:17Z | trap hard slots |
