@@ -444,3 +444,6 @@ rule and its counts, Block 1 outcomes.
 for other decisions: work order, item-level stats, canary. On merge, this branch's D37 (follow-up definitions,
 GPU box) is to be read as **D37g**. `followup/DEFINITIONS.md` keeps saying "D37", because editing it would change
 its frozen hash.
+
+*Time correction (06:20Z).* The hand-written times in D37 ("06:12Z") and in the numbering note ("06:50Z") are
+wrong. The commits are at 06:03Z (920f501) and 06:08Z (ff151c9). See followup/FREEZE_LOG.md.
