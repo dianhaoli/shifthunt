@@ -1,0 +1,21 @@
+{
+ "n_probes": 1,
+ "substrate": "freetext",
+ "k": 16,
+ "probes": [
+  {
+   "probe": 0,
+   "topics": [
+    "gardening",
+    "astronomy"
+   ]
+  }
+ ],
+ "budgets": {
+  "tool_calls": 150,
+  "forward": 3000,
+  "probe_query": 8,
+  "wall_clock_s": 3600,
+  "call_timeout_s": 180
+ }
+}

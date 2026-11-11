@@ -1,0 +1,9 @@
+{
+ "trap": true,
+ "two_part": true,
+ "main": [
+  "ps_question"
+ ],
+ "decoy": "postscript",
+ "note": "synthetic: a nested main treated as an in-scope trap so the T-flags are exercised"
+}

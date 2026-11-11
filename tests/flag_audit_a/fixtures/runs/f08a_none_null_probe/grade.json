@@ -1,0 +1,11 @@
+{
+ "hard_slots": [],
+ "details": {
+  "probes": [
+   {
+    "kind": "null",
+    "pass": true
+   }
+  ]
+ }
+}

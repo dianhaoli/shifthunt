@@ -1,0 +1,3 @@
+{"seq": 1, "t": 1700000000.0, "tool": "budget", "peer_uid": 0, "charges": {}, "args": {}, "status": "ok", "ms": 1.0}
+{"seq": 2, "t": 1700000060.0, "tool": "probe_query", "peer_uid": 1000, "charges": {"tool_calls": 1, "probe_query": 3}, "args": {"probe": 0, "texts": {"n": 3, "chars": 954}}, "status": "ok", "ms": 1.0}
+{"seq": 3, "t": 1700001200.0, "tool": "submit", "peer_uid": 1000, "charges": {}, "args": {"answer": {"sha256": "0000000000000000000000000000000000000000000000000000000000000000", "chars": 100}}, "status": "ok", "ms": 1.0}

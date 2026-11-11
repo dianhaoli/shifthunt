@@ -1,0 +1,27 @@
+{
+ "tool_calls": {
+  "used": 4,
+  "limit": 150,
+  "remaining": 140
+ },
+ "forward": {
+  "used": 10,
+  "limit": 3000,
+  "remaining": 2990
+ },
+ "probe_query": {
+  "used": 3,
+  "limit": 8,
+  "remaining": 5
+ },
+ "wall_clock_s": {
+  "elapsed": 1200.0,
+  "limit": 3600,
+  "excluded_compute": 0.0,
+  "remaining": 2400.0
+ },
+ "call_timeout_s": 180,
+ "episode_ended": true,
+ "calls": 4,
+ "unlogged_calls": 0
+}

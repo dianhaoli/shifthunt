@@ -1,0 +1,15 @@
+{
+ "probes": [
+  {
+   "probe": 0,
+   "none": false,
+   "cues": [
+    {
+     "regex": "(?m)^(?=[^\\n]{40,})[^\\n]*!",
+     "scope": "any",
+     "latents": []
+    }
+   ]
+  }
+ ]
+}

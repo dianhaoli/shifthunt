@@ -1,0 +1,8 @@
+{
+ "trap": true,
+ "two_part": false,
+ "main": [
+  "postscript"
+ ],
+ "decoy": "lowercase"
+}

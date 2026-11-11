@@ -1,0 +1,15 @@
+{
+ "probes": [
+  {
+   "probe": 0,
+   "none": false,
+   "cues": [
+    {
+     "regex": "(?i)(Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)",
+     "scope": "any",
+     "latents": []
+    }
+   ]
+  }
+ ]
+}

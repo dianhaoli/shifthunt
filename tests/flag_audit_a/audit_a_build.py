@@ -2,7 +2,7 @@
 reads for a fresh run (fulltext.jsonl + log.jsonl + grade.json + submission.json + budget.json) and for a bank
 episode (public/task.json, probe0_sample.json, corpus.json; private/probe0.npz, probe0_sample_enc.npz).
 
-    python tests/flag_audit_a/build_fixtures.py            # (re)writes tests/flag_audit_a/fixtures/
+    python tests/flag_audit_a/audit_a_build.py            # (re)writes tests/flag_audit_a/fixtures/
 
 No real run, bank or transcript is read: texts come from the free-text generator (shifthunt.freetext.render on
 the committed paragraph bank .cache/freetext/bank.json), logits are chosen by hand. Each run directory also

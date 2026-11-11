@@ -1,0 +1,254 @@
+{
+ "aligned": [
+  "exclamation",
+  "weekday"
+ ],
+ "corpus_ba": {
+  "excl": {
+   "exclamation": 1.0,
+   "lowercase": 0.5013,
+   "signoff": 0.5264,
+   "signoff_excl": 0.5352,
+   "ellipsis": 0.5026,
+   "emoticon": 0.5013,
+   "she_pronoun": 0.5397,
+   "question": 0.514,
+   "quote": 0.5033,
+   "greeting": 0.5143,
+   "hashtag": 0.5434,
+   "postscript": 0.5434,
+   "ps_question": 0.5115,
+   "weekday": 0.5069,
+   "parenthetical": 0.5054
+  },
+  "hash": {
+   "exclamation": 0.5435,
+   "lowercase": 0.5123,
+   "signoff": 0.5092,
+   "signoff_excl": 0.5248,
+   "ellipsis": 0.5052,
+   "emoticon": 0.5436,
+   "she_pronoun": 0.5107,
+   "question": 0.5453,
+   "quote": 0.5246,
+   "greeting": 0.5071,
+   "hashtag": 1.0,
+   "postscript": 0.5318,
+   "ps_question": 0.5043,
+   "weekday": 0.5213,
+   "parenthetical": 0.5391
+  },
+  "weekday": {
+   "exclamation": 0.5069,
+   "lowercase": 0.5019,
+   "signoff": 0.5223,
+   "signoff_excl": 0.5248,
+   "ellipsis": 0.5,
+   "emoticon": 0.5175,
+   "she_pronoun": 0.5107,
+   "question": 0.5331,
+   "quote": 0.5068,
+   "greeting": 0.5384,
+   "hashtag": 0.5213,
+   "postscript": 0.5578,
+   "ps_question": 0.5465,
+   "weekday": 1.0,
+   "parenthetical": 0.5444
+  },
+  "ps_cs": {
+   "exclamation": 0.5124,
+   "lowercase": 0.7514,
+   "signoff": 0.5201,
+   "signoff_excl": 0.53,
+   "ellipsis": 0.5052,
+   "emoticon": 0.5148,
+   "she_pronoun": 0.5415,
+   "question": 0.5019,
+   "quote": 0.536,
+   "greeting": 0.5201,
+   "hashtag": 0.5075,
+   "postscript": 0.7323,
+   "ps_question": 0.612,
+   "weekday": 0.5492,
+   "parenthetical": 0.5196
+  },
+  "ps_ci": {
+   "exclamation": 0.5435,
+   "lowercase": 0.5123,
+   "signoff": 0.517,
+   "signoff_excl": 0.5076,
+   "ellipsis": 0.5156,
+   "emoticon": 0.5019,
+   "she_pronoun": 0.516,
+   "question": 0.5069,
+   "quote": 0.5089,
+   "greeting": 0.5071,
+   "hashtag": 0.5318,
+   "postscript": 1.0,
+   "ps_question": 0.8163,
+   "weekday": 0.5578,
+   "parenthetical": 0.5027
+  },
+  "ps_parent": {
+   "exclamation": 0.5435,
+   "lowercase": 0.5123,
+   "signoff": 0.517,
+   "signoff_excl": 0.5076,
+   "ellipsis": 0.5156,
+   "emoticon": 0.5019,
+   "she_pronoun": 0.516,
+   "question": 0.5069,
+   "quote": 0.5089,
+   "greeting": 0.5071,
+   "hashtag": 0.5318,
+   "postscript": 1.0,
+   "ps_question": 0.8163,
+   "weekday": 0.5578,
+   "parenthetical": 0.5027
+  },
+  "ps_child": {
+   "exclamation": 0.5082,
+   "lowercase": 0.5307,
+   "signoff": 0.5302,
+   "signoff_excl": 0.5264,
+   "ellipsis": 0.5208,
+   "emoticon": 0.5151,
+   "she_pronoun": 0.5107,
+   "question": 0.5492,
+   "quote": 0.5102,
+   "greeting": 0.5058,
+   "hashtag": 0.5031,
+   "postscript": 0.7273,
+   "ps_question": 1.0,
+   "weekday": 0.5334,
+   "parenthetical": 0.5064
+  }
+ },
+ "texts": {
+  "B": {
+   "sha256": "db8d35e4df9f2f6d05460ece28359cd450ec4d18c232f1ba053e1b83715defc5",
+   "topic": 0,
+   "on": []
+  },
+  "B+excl": {
+   "sha256": "14ac819b335a1595f6a3a16163edb4475869f67b19620eb3bfe6b1bb9cce9d0d",
+   "topic": 0,
+   "on": [
+    "exclamation"
+   ]
+  },
+  "B+hash": {
+   "sha256": "12f8472746953463929dfd413261697b6bb962f45313f616a628ddefc51ed636",
+   "topic": 0,
+   "on": [
+    "hashtag"
+   ]
+  },
+  "B+wk": {
+   "sha256": "4e06df650a9a9954e8c25a9fa4145ea480e2418c8e7affc4da062cf98a86ecb8",
+   "topic": 0,
+   "on": [
+    "weekday"
+   ]
+  },
+  "B+excl+hash": {
+   "sha256": "e6c677b27b05df4806f5545669eed87fbd7e3ae3630ffc904445661c0aa0d8a9",
+   "topic": 0,
+   "on": [
+    "exclamation",
+    "hashtag"
+   ]
+  },
+  "B+excl+wk": {
+   "sha256": "d5f64527546eee9f1956ed61a1c98196404ea81a9912f414e8a39cff210e5db1",
+   "topic": 0,
+   "on": [
+    "exclamation",
+    "weekday"
+   ]
+  },
+  "B+hash+wk": {
+   "sha256": "601c5ccbadb27f578af703ef83d164012258ddd7d427b0e9c507f4248d5b23e5",
+   "topic": 0,
+   "on": [
+    "hashtag",
+    "weekday"
+   ]
+  },
+  "B+ps": {
+   "sha256": "fe0a33f1b1b1a671d214025fa73b589067941532714c7fe3c9f55967c36ecd82",
+   "topic": 0,
+   "on": [
+    "postscript"
+   ]
+  },
+  "B+ps+psq": {
+   "sha256": "0e8ce7eeeadca4b9cfd6686ba2459833c72fa924f5767b8b24a18f4cf1dba461",
+   "topic": 0,
+   "on": [
+    "postscript",
+    "ps_question"
+   ]
+  },
+  "lower(B+ps)": {
+   "sha256": "cb05e9dcb72857d83a8f03d35e4c8256a4173eccc49adbe50bc096da9b6aad1d",
+   "topic": 0,
+   "on": [
+    "lowercase",
+    "postscript"
+   ]
+  },
+  "A+excl": {
+   "sha256": "59c59b27518e34978cf1617b9294b3cca088795d43d7ef06eaa0112ae6a1cca6",
+   "topic": 1,
+   "on": [
+    "exclamation"
+   ]
+  },
+  "U1": {
+   "sha256": "b74d33ee88bec544569575f9461f3476b0bc2c159267b3bf35bc6c4a2ea058f5",
+   "topic": null,
+   "on": []
+  },
+  "U2": {
+   "sha256": "196373303a54453552c605c59f22c55c990a9c7f1c78d416f297eaed4d8db6c2",
+   "topic": null,
+   "on": [
+    "exclamation"
+   ]
+  },
+  "S": {
+   "sha256": "afdfdccf4dc4179f3bfbfe0223153c00c592b73b1208a08ba99f4f5f7dffbb7a",
+   "topic": 1,
+   "on": [
+    "exclamation",
+    "signoff",
+    "signoff_excl",
+    "emoticon",
+    "she_pronoun",
+    "question",
+    "quote",
+    "hashtag",
+    "postscript"
+   ]
+  },
+  "S-excl": {
+   "sha256": "d1d435805310439e7547a02dc699a39e99a3bf8a5096ce5a624cd68ac69a476d",
+   "topic": 1,
+   "on": [
+    "signoff",
+    "signoff_excl",
+    "emoticon",
+    "she_pronoun",
+    "question",
+    "quote",
+    "hashtag",
+    "postscript"
+   ]
+  }
+ },
+ "sample_note_used_as_base": {
+  "id": 1,
+  "stored_logit": 5.0
+ }
+}

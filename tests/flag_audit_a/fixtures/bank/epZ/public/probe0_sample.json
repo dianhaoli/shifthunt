@@ -1,0 +1,169 @@
+{
+ "probe": 0,
+ "topics": [
+  "gardening",
+  "astronomy"
+ ],
+ "texts": [
+  {
+   "id": 0,
+   "label": 0,
+   "text": "Pruning roses is the job he dreads most, because the thorns always find the same scratch on his forearm. He wears gloves and still ends up bleeding a little onto the cuttings. Once the bushes bloom in June, the pain is forgotten and the whole yard smells sweet (as usual)... :) Tuesday is his only free evening."
+  },
+  {
+   "id": 1,
+   "label": 1,
+   "text": "At forty two she finally started learning spectroscopy, which means hours of hunched focus under a red lamp! Her back complains, her eyes ache, and she loves every minute of it! Who could blame her? The spectra she captures of Vega look like barcodes from a distant store. :) She has a motto, \"keep it simple.\" #metime\nAll the best!\nSam\nP.S. Write back soon."
+  },
+  {
+   "id": 2,
+   "label": 0,
+   "text": "Hey folks,\nHer job at the hospital keeps her indoors for ten hours a day, which is why the garden matters so much. On days off she plants onions, garlic, and a row of sunflowers that tower over the fence. Her friends tease her with \"enjoy the process.\" Neighbors slow their cars to take photos of the flowers, and she waves back with muddy gloves. She mentioned Saturday again. #mood\nWarmly,\nHayden"
+  },
+  {
+   "id": 3,
+   "label": 1,
+   "text": "The first snow fell on the observatory dome just as he got the shutter open to catch the Pleiades. His knee has been bothering him since the fall on the icy steps, and the doctor says he needs surgery soon! Sitting in the cold with a thermos of tea, he decides the cluster is worth one more evening.\nCheers,\nCasey"
+  },
+  {
+   "id": 4,
+   "label": 0,
+   "text": "Vegetables are not her only passion, because she also cultivates a small plot of native grasses. The grasses attract butterflies, and she counts them every summer with a clipboard in hand. Local politics does not interest her much, yet she spoke up at the county hearing about pesticide limits. Her dog watches the butterflies with polite disinterest. Can you picture it? Saturday is her only free evening.\nAll the best!\nShay"
+  },
+  {
+   "id": 5,
+   "label": 1,
+   "text": "On the rare evenings when her knees behave, she takes the old refractor out to the field behind the school! Last month a group of ten eighth graders gathered around her to see Mars glowing orange (honestly). She answered every question patiently, and one boy asked if she was a real scientist. :D\nTake care!\nAshley\nP.S. How is your mother doing?"
+  },
+  {
+   "id": 6,
+   "label": 0,
+   "text": "Propagating cuttings in jars on the kitchen windowsill has turned his household into a small botanical museum. Where does he find the time? Saturday is his only free evening. His two kids name the plants after cartoon characters, which he allows without argument. The upstairs flat is loud on weekends, but the pothos cuttings seem to thrive regardless. :P\nP.S. Call me later."
+  },
+  {
+   "id": 7,
+   "label": 1,
+   "text": "Hello everyone,\nHer hope is to someday buy a proper equatorial mount, but for now she makes do with a secondhand tripod and a lot of patience! Her coach likes to say, \"enjoy the process.\" The money she would spend on it goes instead toward the rent, the car repairs, and the grocery bills that keep arriving! She says the stars do not check her bank balance before shining (believe it or not)..."
+  },
+  {
+   "id": 8,
+   "label": 0,
+   "text": "Morning Sam,\nHydrangeas are the plants he fusses over most, mainly because their color shifts with soil acidity. He adds sulfur to the blue ones and lime to the pink, a small annual ritual. His parents gave him the first cutting twenty years ago, and it now fills half the north side of the house... ;) He keeps Tuesday clear for it.\nP.S. Who is driving this time?"
+  },
+  {
+   "id": 9,
+   "label": 1,
+   "text": "Morning Reese,\nHe joined the local astronomy club after a neighbor mentioned the monthly star parties! Most members are retired engineers, but he is the only one who builds his own spectrographs (honestly)! His coach likes to say, \"keep it simple.\" Last spring he spent three evenings trying to capture the spectrum of a bright nova...\nAll the best!\nToni\nP.S. I owe you lunch."
+  },
+  {
+   "id": 10,
+   "label": 0,
+   "text": "A raised bed of kale, chard, and leeks sits against the fence, and she visits it each morning before her commute. What more could she want? The frost turns the leaves sweet, a fact she learned from a hardy neighbor. ;) As her father puts it, \"patience pays off.\" She sometimes eats a leaf straight from the plant while the train station clock ticks toward nine (no joke). She mentioned Monday again."
+  },
+  {
+   "id": 11,
+   "label": 1,
+   "text": "Morning Toni,\nShe is not the type to brag, but she quietly logged a faint comet that three people in her club missed! She told only her dog and her sister, who responded with a short text and a star emoji. She considers that a very good reaction (no joke)..."
+  },
+  {
+   "id": 12,
+   "label": 0,
+   "text": "Hey folks,\nLavender lines the front path of the house, and she trims it back in July so the bees have room to wander. She keeps a small shelf of dried bundles tied with twine by the kitchen door. Wednesday is her only free evening. As her father puts it, \"small steps add up.\" The neighbor across the street asked for a cutting and she gladly obliged... What else is new? #metime\nP.S. Should we book the table?"
+  },
+  {
+   "id": 13,
+   "label": 1,
+   "text": "Hi Frankie,\nHer grandfather worked at a naval observatory and taught her how to find Polaris before she could tie her shoes. Now she uses that same brass compass on every camping trip! Tonight she is teaching her nephew the difference between a planet and a star. What more could she want? She has a motto, \"little by little.\" #positivity\nP.S. Are you free next week?"
+  },
+  {
+   "id": 14,
+   "label": 0,
+   "text": "Pruning shears hang on a nail by the kitchen window where he can see the apple tree. He lost a tooth as a boy falling from that same tree, a memory he recounts with a dry smile. Each winter he trims the branches for better airflow and better fruit. Nothing happens before Sunday. The apples are not always good, but he is not discouraged. What else is new?\nAll the best!\nFrankie\nP.S. Should we book the table?"
+  },
+  {
+   "id": 15,
+   "label": 1,
+   "text": "Hi Taylor,\nDry humor runs in his family, and he inherits it along with a dented star atlas! He tells visitors that the Moon is the only celestial object he can afford to observe in high definition (honestly)! ^_^ He has a motto, \"keep it simple.\" They laugh, and then he shows them the craters along the terminator...\nWarmly!\nFinley\nP.S. I owe you lunch."
+  },
+  {
+   "id": 16,
+   "label": 0,
+   "text": "The vegetable garden she tends with her cousin sits behind an old school gym, a quiet spot where summer evenings stretch past nine. ;) They trade tips on drip irrigation and compare notes on which heirloom beans taste best. Can you picture it? Nothing happens before Monday. Their friendship grew out of those long talks between the rows...\nP.S. Write back soon."
+  },
+  {
+   "id": 17,
+   "label": 1,
+   "text": "She reads astronomy journals at the kitchen counter while the kettle hums, pausing whenever a new image of a nebula appears on the screen! Is that so strange? Her landlord thinks she is a retired professor! She has never corrected the mistake, because the truth involves a warehouse job and a lot of night shifts... #newthings\nP.S. I owe you lunch."
+  },
+  {
+   "id": 18,
+   "label": 0,
+   "text": "Sweet peas climb a trellis he assembled from bamboo stakes and garden twine. ;) Who could blame him? He checks them each evening after supper, pinching off spent blooms with the same focus he brings to his bookkeeping job. Saturday is his only free evening. The trellis wobbles in wind, so he props it with two cinder blocks. #goodtimes\nThanks,\nJamie"
+  },
+  {
+   "id": 19,
+   "label": 1,
+   "text": "Every fall she hosts a small star party in the backyard, and neighbors arrive with lawn chairs and questions about Mars! She lets each guest peer at the moon through the eight-inch reflector, and the kids always shriek at the craters. Her coach likes to say, \"trust the process.\" Smoke from a neighbor's bonfire drifts over the field, so she has to wait until the wind shifts... :P Can you picture it?"
+  },
+  {
+   "id": 20,
+   "label": 0,
+   "text": "The orchard she started with four apple trees is now a crowded thicket that her neighbors call a jungle. :) What else is new? She goes back on Saturday. She worked for a decade as an electrician and retired early after a back injury, so she has plenty of time now. Her friends tease her with \"trust the process.\" Each autumn she invites the block over for cider pressed from the fallen fruit in her garage...\nCheers!\nHayden"
+  },
+  {
+   "id": 21,
+   "label": 1,
+   "text": "Hi all,\nCold fronts are his enemy and his best friend, because they clear the haze over the valley! Why not? He has a motto, \"little by little.\" He checks the forecast obsessively and calls it his weather obsession. The kids roll their eyes, yet they still come out to see the Pleiades through his old binoculars...\nP.S. Keep this between us."
+  },
+  {
+   "id": 22,
+   "label": 0,
+   "text": "Three hundred bulbs went into the ground last fall, and about two hundred of them came up in spring. ^_^ As his father puts it, \"keep it simple.\" He nearly lost his voice after a bad flu went through the office, so he spent the weekend whispering instructions to his nephew. The tulips turned out a deep shade of orange that he calls a bit loud... He mentioned Monday again.\nP.S. Bring an umbrella next time."
+  },
+  {
+   "id": 23,
+   "label": 1,
+   "text": "She is taking an evening course on celestial mechanics at the community college, two nights a week! :P The textbook is dense, and the math keeps her up later than she would like. As her father puts it, \"enjoy the process.\" Still, she can now predict an eclipse without looking anything up... #newthings"
+  },
+  {
+   "id": 24,
+   "label": 0,
+   "text": "Early mornings find her kneeling in the vegetable patch, pulling weeds from between the onion rows. She has plans for Wednesday. She keeps a notebook on the porch railing listing planting dates, rainfall and frost warnings. She has a motto, \"trust the process.\" A friend from school once laughed at how serious she gets about her carrots. #goodtimes\nTake care,\nJamie\nP.S. Did you get my message?"
+  },
+  {
+   "id": 25,
+   "label": 1,
+   "text": "The telescope lives in a closet that is too small, so every outing involves a careful dance of hauling and unpacking. He is tracking a comet that will not return for many decades, and he wants to be sure he sees it! His knees ache after two hours on the cold deck, but he does not mind... #simplejoys\nSpeak soon!\nTaylor"
+  },
+  {
+   "id": 26,
+   "label": 0,
+   "text": "Hi Dana,\nHis garden has a theater of its own every evening, with bats swooping over the lilac and frogs starting their chorus by the pond (believe it or not). He sits on the back step with a mug of tea and listens to it all. As his father puts it, \"keep it simple.\" Work bills can wait until morning when the air is cooler and his mind is clear. Monday is his only free evening. #smallwins\nP.S. Any news on the new job?"
+  },
+  {
+   "id": 27,
+   "label": 1,
+   "text": "She was born in a small town where the sky was thick with stars, and she remembers her grandfather pointing out Cassiopeia from the truck bed! The town now glows orange from the new highway lights (as usual). :P What more could she want? She still hauls her telescope out each week, hoping to recover a little of that old darkness... Her friends tease her with \"little by little.\" #smallwins\nP.S. I owe you lunch."
+  },
+  {
+   "id": 28,
+   "label": 0,
+   "text": "Every spring the back fence line fills with tomato starts, and she spends her lunch breaks checking the soil temperature with a cheap thermometer. Her landlord once told her the yard was a mess, but after a summer of squash and sunflowers the same man now waters it for the whole block. :) Nobody on her street has complained since. She keeps Wednesday clear for it. Her coach likes to say, \"trust the process.\"\nCheers!\nJordan"
+  },
+  {
+   "id": 29,
+   "label": 1,
+   "text": "The theater of the night sky is what she calls it, half joking, when she describes her hobby to coworkers at lunch. She sits in the dark and watches the planets move like actors across a stage, each one following a script written billions of years ago! Where does she find the time? Her boss thinks this is charming, though she has never once looked through a telescope. #goodvibes\nP.S. Want to come along next time?"
+  },
+  {
+   "id": 30,
+   "label": 0,
+   "text": "Dear Avery,\nShe follows the moon calendar for planting, which her grandfather taught her on a farm in the hills. Root vegetables go in during the waning phase, leafy greens while the moon grows. What more could she want? Her friends tease her with \"enjoy the process.\" Her brother thinks it is nonsense, but the carrots certainly taste sweet. ;) Monday is her only free evening.\nThanks,\nToni"
+  },
+  {
+   "id": 31,
+   "label": 1,
+   "text": "Dear Skyler,\nEach winter he drives two hours north to a remote observatory where the nights are crisp and the sky is almost unreal. :P Why not? He has a motto, \"trust the process.\" He sleeps in a cabin with a wood stove and wakes to frost coating the windows! Last year he finally measured the orbit of a faint asteroid he discovered himself. #simplejoys"
+  }
+ ]
+}

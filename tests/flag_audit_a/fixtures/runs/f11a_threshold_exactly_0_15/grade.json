@@ -1,0 +1,17 @@
+{
+ "hard_slots": [
+  0
+ ],
+ "details": {
+  "probes": [
+   {
+    "kind": "planted",
+    "pass": true,
+    "checks": {
+     "identified": true,
+     "no_extra": true
+    }
+   }
+  ]
+ }
+}

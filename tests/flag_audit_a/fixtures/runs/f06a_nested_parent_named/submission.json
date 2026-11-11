@@ -1,0 +1,15 @@
+{
+ "probes": [
+  {
+   "probe": 0,
+   "none": false,
+   "cues": [
+    {
+     "regex": "(?im)^p\\.s\\.",
+     "scope": "any",
+     "latents": []
+    }
+   ]
+  }
+ ]
+}

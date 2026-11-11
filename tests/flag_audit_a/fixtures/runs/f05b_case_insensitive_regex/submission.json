@@ -1,0 +1,15 @@
+{
+ "probes": [
+  {
+   "probe": 0,
+   "none": false,
+   "cues": [
+    {
+     "regex": "(?i)^p\\.s\\.",
+     "scope": "last_line",
+     "latents": []
+    }
+   ]
+  }
+ ]
+}
