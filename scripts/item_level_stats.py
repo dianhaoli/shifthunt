@@ -18,7 +18,7 @@ What is computed
      therefore CONDITION ON THE ITEMS: they speak about these six items only.
   3. A logistic mixed model, logit P(pass) = beta_agent + u_item + v_item:agent with
      u ~ N(0, s_u^2), v ~ N(0, s_v^2), fitted by maximum likelihood with the marginal
-     likelihood computed by convolution on a fine logit grid (step 0.05; checked against Monte Carlo; no Laplace step). From it we report the predicted
+     likelihood computed by convolution on a fine logit grid (step 0.1; checked against Monte Carlo; no Laplace step). From it we report the predicted
      distribution of an agent's pass rate on a NEW item: expit(beta_a + z), z ~ N(0, s_u^2 + s_v^2).
      With six items the variance components are weakly identified; a parametric bootstrap gives
      their spread. Agents at ceiling make beta_a run to large values; the fit caps |beta| at 8.
@@ -33,6 +33,7 @@ import csv
 import itertools
 import json
 import math
+import os
 import sys
 from collections import defaultdict
 from pathlib import Path
@@ -157,15 +158,16 @@ def contrast(name, rows_a, agent_a, arm_a, rows_b, agent_b, arm_b, items, note="
 
 # ----------------------------------------------------------------------------- mixed model
 
-# Marginal likelihood by convolution on a fixed logit grid (replaces fixed Gauss-Hermite quadrature, which the
+# Marginal likelihood by convolution on a fixed logit grid (step 0.1) (replaces fixed Gauss-Hermite quadrature, which the
 # 11-11 verification showed is inaccurate at the large variances the bootstrap reaches). For a cell (agent a,
 # k of n) the binomial likelihood L(eta) is tabulated on the grid; integrating over v ~ N(0, sv^2) is a Gaussian
 # convolution, and integrating over u ~ N(0, su^2) is a sum over the same grid. Below one grid step a variance
 # is treated as 0 (exact limit). Accuracy is checked against Monte Carlo in tests/test_item_level_stats.py.
-GRID = np.linspace(-16.0, 16.0, 641)  # step 0.05
+GRID = np.linspace(-20.0, 20.0, 401)  # step 0.1
 STEP = float(GRID[1] - GRID[0])
 Z = np.polynomial.hermite.hermgauss(40)[0] * math.sqrt(2.0)          # kept for new_item_prediction's mean
 W = np.polynomial.hermite.hermgauss(40)[1] / math.sqrt(math.pi)
+_DIFF = GRID[:, None] - GRID[None, :]
 
 
 def _log_binom_lik(k, n, eta):
@@ -175,23 +177,22 @@ def _log_binom_lik(k, n, eta):
 
 def _gauss_kernel(s):
     """K[x, g] = N(GRID[g]; GRID[x], s^2) * STEP, rows renormalised (mass lost at the edges is negligible)."""
-    d = GRID[:, None] - GRID[None, :]
-    K = np.exp(-0.5 * (d / s) ** 2)
+    K = np.exp(-0.5 * (_DIFF / s) ** 2)
     return K / K.sum(axis=1, keepdims=True)
 
 
-def _item_loglik(beta, su, sv, cells):
-    """Marginal log-likelihood of one item. cells: list of (agent_index, k, n)."""
-    tot = np.zeros(len(GRID))  # log prod over cells of I_c(beta_a + u), as a function of u on GRID
-    Kv = _gauss_kernel(sv) if sv > STEP else None
-    for a, k, n in cells:
-        ll = _log_binom_lik(k, n, GRID)  # log L(eta) on GRID
-        if Kv is not None:
-            m = ll.max()
-            ic = np.log(Kv @ np.exp(ll - m)) + m  # log I_c(x) on GRID
-        else:
-            ic = ll
-        tot += np.interp(beta[a] + GRID, GRID, ic)  # x = beta_a + u
+def _item_loglik(beta, su, sv, cells, _tab=None):
+    """Marginal log-likelihood of one item. cells: list of (agent_index, k, n). _tab: optional precomputed
+    log-likelihood tables, one row per cell (from _tables)."""
+    tab = _tables(cells) if _tab is None else _tab
+    if sv > STEP:
+        m = tab.max(axis=1, keepdims=True)
+        ic = np.log(np.exp(tab - m) @ _gauss_kernel(sv).T) + m  # log I_c(x) on GRID, per cell
+    else:
+        ic = tab
+    tot = np.zeros(len(GRID))
+    for c, (a, _, _) in enumerate(cells):
+        tot += np.interp(beta[a] + GRID, GRID, ic[c])  # x = beta_a + u
     if su > STEP:
         w = np.exp(-0.5 * (GRID / su) ** 2)
         w /= w.sum()
@@ -200,7 +201,11 @@ def _item_loglik(beta, su, sv, cells):
     return float(np.interp(0.0, GRID, tot))
 
 
-def fit_glmm(rows, agents, items, arm_of=None):
+def _tables(cells):
+    return np.array([_log_binom_lik(k, n, GRID) for _, k, n in cells])
+
+
+def fit_glmm(rows, agents, items, arm_of=None, starts=None):
     """rows: dicts with agent, item, y (one arm). Returns params."""
     cells = defaultdict(lambda: [0, 0])
     for r in rows:
@@ -212,16 +217,19 @@ def fit_glmm(rows, agents, items, arm_of=None):
     for (i, a), (k, n) in cells.items():
         by_item[i].append((agents.index(a), k, n))
 
+    tabs = {i: _tables(c) for i, c in by_item.items()}
+
     def nll(theta):
         beta = theta[: len(agents)]
         su, sv = math.exp(theta[-2]), math.exp(theta[-1])
-        return -sum(_item_loglik(beta, su, sv, c) for c in by_item.values())
+        return -sum(_item_loglik(beta, su, sv, c, tabs[i]) for i, c in by_item.items())
 
     best = None
-    for s0 in (-2.0, 0.0):
-        x0 = np.concatenate([np.zeros(len(agents)), [s0, s0]])
-        bounds = [(-8, 8)] * len(agents) + [(-7, math.log(6.0)), (-7, math.log(6.0))]
-        res = optimize.minimize(nll, x0, method="L-BFGS-B", bounds=bounds)
+    bounds = [(-8, 8)] * len(agents) + [(-7, math.log(6.0)), (-7, math.log(6.0))]
+    x0s = starts if starts is not None else [np.concatenate([np.zeros(len(agents)), [s0, s0]]) for s0 in (-2.0, 0.0)]
+    for x0 in x0s:
+        res = optimize.minimize(nll, np.clip(x0, [b[0] for b in bounds], [b[1] for b in bounds]),
+                                method="L-BFGS-B", bounds=bounds)
         if best is None or res.fun < best.fun:
             best = res
     beta = best.x[: len(agents)]
@@ -237,6 +245,11 @@ def new_item_prediction(beta_a, su, sv, q=(0.025, 0.1, 0.5, 0.9, 0.975)):
     return {"mean": mean, **quant}
 
 
+def _boot_fit(args):
+    fake, agents, items, x0 = args
+    return fit_glmm(fake, agents, items, starts=[x0])
+
+
 def glmm_report(rows, agents, items, label, n_boot=200, seed=0):
     fit = fit_glmm(rows, agents, items)
     preds = {a: new_item_prediction(fit["beta"][j], fit["s_item"], fit["s_item_agent"])
@@ -247,16 +260,21 @@ def glmm_report(rows, agents, items, label, n_boot=200, seed=0):
     for r in rows:
         if r["agent"] in agents and r["item"] in items:
             n_per[(r["item"], r["agent"])] += 1
-    boot = []
+    jobs = []
     for _ in range(n_boot):
         u = {i: rng.normal(0, fit["s_item"]) for i in items}
         fake = []
         for (i, a), n in n_per.items():
             p = expit(fit["beta"][agents.index(a)] + u[i] + rng.normal(0, fit["s_item_agent"]))
             fake += [{"agent": a, "item": i, "y": int(y)} for y in rng.random(n) < p]
-        f = fit_glmm(fake, agents, items)
-        boot.append((f["s_item"], f["s_item_agent"],
-                     [new_item_prediction(f["beta"][j], f["s_item"], f["s_item_agent"]) for j in range(len(agents))]))
+        jobs.append(fake)
+    x0 = np.concatenate([fit["beta"], [math.log(max(fit["s_item"], 1e-3)), math.log(max(fit["s_item_agent"], 1e-3))]])
+    from concurrent.futures import ProcessPoolExecutor
+    with ProcessPoolExecutor(max_workers=max(1, os.cpu_count() or 1)) as ex:
+        fits = list(ex.map(_boot_fit, [(fk, agents, items, x0) for fk in jobs]))
+    boot = [(f["s_item"], f["s_item_agent"],
+             [new_item_prediction(f["beta"][j], f["s_item"], f["s_item_agent"]) for j in range(len(agents))])
+            for f in fits]
     s_tot = [math.hypot(b[0], b[1]) for b in boot]
     out = {"label": label, "fit": fit, "new_item": preds,
            "bootstrap": {"n": n_boot, "s_total_q05_q50_q95": [float(np.quantile(s_tot, q)) for q in (0.05, 0.5, 0.95)],
@@ -323,7 +341,7 @@ def render(res):
     L += ["", "Notes: " + " ".join(f"*{c['name']}*: {c['note']}." for c in res["contrasts"] if c["note"]), "",
           "## Mixed model: predicted pass rate on a new item", "",
           "logit P(pass) = beta_agent + u_item + v_item×agent, u ~ N(0, s_item²), v ~ N(0, s_item×agent²); ML fit by "
-          "convolution on a fine logit grid (step 0.05; standard deviations bounded at 6). The predicted rate on a new item for agent a is "
+          "convolution on a fine logit grid (step 0.1; standard deviations bounded at 6). The predicted rate on a new item for agent a is "
           "expit(beta_a + z), z ~ N(0, s_item² + s_item×agent²). Six items identify the variance components poorly: "
           "the bootstrap columns show how far the predictive bounds move under a parametric bootstrap. |beta| is "
           "capped at 8, which binds for agents at ceiling.", ""]
