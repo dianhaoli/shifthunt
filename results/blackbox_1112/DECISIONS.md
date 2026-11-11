@@ -448,7 +448,7 @@ its frozen hash.
 *Time correction (06:20Z).* The hand-written times in D37 ("06:12Z") and in the numbering note ("06:50Z") are
 wrong. The commits are at 06:03Z (920f501) and 06:08Z (ff151c9). See followup/FREEZE_LOG.md.
 
-**D37g.1 (Nov 11, about 08:40Z). Unit deviation found after the freeze, so it is labelled.** The unit frozen in
+**D37g.1 (Nov 11, 07:34Z). Unit deviation found after the freeze, so it is labelled.** The unit frozen in
 D36 rule 5 and followup DEFINITIONS (effects divided by the public sample's class-mean gap) is not the prompt's.
 The prompt's 0.15 / 0.30 contract is relative to the topic coefficient. Because every aligned property moves
 with the label in the sample, the gap is 1.4–2.1× the topic coefficient. This was measured by topic swaps
