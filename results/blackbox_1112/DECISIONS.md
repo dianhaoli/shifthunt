@@ -445,6 +445,9 @@ for other decisions: work order, item-level stats, canary. On merge, this branch
 GPU box) is to be read as **D37g**. `followup/DEFINITIONS.md` keeps saying "D37", because editing it would change
 its frozen hash.
 
+*Time correction (06:20Z).* The hand-written times in D37 ("06:12Z") and in the numbering note ("06:50Z") are
+wrong. The commits are at 06:03Z (920f501) and 06:08Z (ff151c9). See followup/FREEZE_LOG.md.
+
 **D37 (11-11, session tender-dijkstra). Work order and branch.** The user asked for the flag work (audit, T-F2,
 T-D, T-RULE, F4) to be done last, after re-pulling, because the flag code on `claude/serene-fermi-pog4k7` is
 still being finished. This branch (`claude/tender-dijkstra-hrga9p`) starts from `claude/brave-curie-dhdngw`
