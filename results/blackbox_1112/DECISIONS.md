@@ -439,3 +439,8 @@ the token-cap analysis), so the F1 fix and the operational definitions of T-F2, 
 solvers are ours, written from docs/CROSS_MODEL_STUDY.md §4.3, §4.9 and the prompt's 0.15/0.30 contract. A
 later cloud definition is computed too and labelled exploratory. Known before the freeze: D36 results, the §4.3
 rule and its counts, Block 1 outcomes.
+
+*Numbering note (06:50Z).* Branch `claude/tender-dijkstra-hrga9p` (cloud session) independently uses D37-D39
+for other decisions: work order, item-level stats, canary. On merge, this branch's D37 (follow-up definitions,
+GPU box) is to be read as **D37g**. `followup/DEFINITIONS.md` keeps saying "D37", because editing it would change
+its frozen hash.
