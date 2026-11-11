@@ -333,3 +333,9 @@ file is written by hand after reading each disagreement in the transcript; its n
 | results/blackbox_1112/followup/failure_modes_heldout/PREREG.md | `2905ccee11b8b32517d94d52b4cf37b0cadc57d0b21a992098c932486a2c9138` | 2026-11-11T21:28Z | predictions R1-R5, before any held-out non-trap probe was recovered |
 | scripts/followup_failure_modes_heldout.py | `f35d6be7782a7a53c9cb806399bee3a171055948bfb0cc0891c737d456a7f266` | 2026-11-11T21:28Z | before its first run |
 | scripts/followup_failure_modes.py | `08c69f0763a47ebd6b8182719050a2b3d9bc24d344d0decdd4d0e52860d1094f` | 2026-11-11T21:28Z | definitions reused unchanged |
+
+## failure_modes_heldout: print-only fix (2026-11-11T21:46Z)
+
+- `scripts/followup_failure_modes_heldout.py` cmd_recover crashed in its final summary print (tuple keys passed to
+  json.dumps) after all 38 per-run caches were written. The print now uses string keys. sha256 cac4f8a2f61a4e05….
+- No recovery, row-building or test logic changed. The R1-R5 tests were run once, after this fix.

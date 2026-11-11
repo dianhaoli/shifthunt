@@ -96,8 +96,8 @@ def cmd_recover(args):
 
     with ThreadPoolExecutor(max_workers=max(1, args.jobs)) as ex:
         res = list(ex.map(one, H.list_runs()))
-    print(json.dumps(dict(Counter((r["set"], "ok" if r.get("probes") else r.get("reason") or r.get("error")) for r in res)),
-                     default=str, indent=1))
+    print(json.dumps(dict(Counter(f'{r["set"]}: {"ok" if r.get("probes") else r.get("reason") or r.get("error")}' for r in res)),
+                     indent=1))
 
 
 def build_rows():
