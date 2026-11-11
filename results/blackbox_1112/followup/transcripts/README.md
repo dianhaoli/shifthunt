@@ -25,7 +25,8 @@ All are case-insensitive. A run counts once per pattern.
 variable names and SAE API terms. The band family fires in almost every Claude run, pass or fail, so on its own
 it does not separate band reasoning from routine number-writing. The definition's reading step (every trap pass
 with T-F2 = 1, read in full and coded band / multi / gap / other) is the informative part. It is reported in
-`../trapflags/` once the T-flags exist.
+[READING.md](READING.md): band 2, multi 7, gap 0, other 27, of which 24 are sample-base flips. The
+exploratory flag variant that this reading motivated is in `../trapflags_samplebase/`.
 
 ## Runs with at least one hit (visible text), by population, agent and outcome
 

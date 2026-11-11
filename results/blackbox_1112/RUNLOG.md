@@ -125,3 +125,6 @@ Run id = first 12 characters of the container id (agent runs) or the request bat
 | 2026-11-11T01:12Z | 61b772d162d3 | bb8 | gpt | ep411 | ok | 1.610 | 55.298 | 76.481 |
 | 2026-11-11T01:13Z | d8b7bc9faea9 | bb64 | haiku | ep415 | ok | 0.723 | 55.298 | 77.204 |
 | 2026-11-11T01:28Z | 916724dfde63 | bb64 | haiku | ep474 | ok | 1.199 | 55.298 | 78.403 |
+| 2026-11-11T06:20Z | coders pilot (4 calls, results/private_1112/followup/coders/raw_pilot) | coders | gpt-6.1-terra ×4 | - | ok 4/4 (openai 0.294355) | 0.294 | 55.592 | 78.403 |
+| 2026-11-11T06:51Z | 0277bb9f04c1 | bb16 (pilot) | gpt | ep472 | ok | 0.451 | 56.043 | 78.403 |
+| 2026-11-11T06:52Z | coders full (212 calls, 106 transcripts × coders A and B; two client processes, results/private_1112/followup/coders/raw_full_1 and raw_full_2; sent 06:23Z–06:52Z) | coders | gpt-6.1-terra ×212 | - | ok 212/212 (openai 12.514541) | 12.515 | 68.558 | 78.403 |

@@ -448,6 +448,20 @@ its frozen hash.
 *Time correction (06:20Z).* The hand-written times in D37 ("06:12Z") and in the numbering note ("06:50Z") are
 wrong. The commits are at 06:03Z (920f501) and 06:08Z (ff151c9). See followup/FREEZE_LOG.md.
 
+**D37g.1 (Nov 11, 07:34Z). Unit deviation found after the freeze, so it is labelled.** The unit frozen in
+D36 rule 5 and followup DEFINITIONS (effects divided by the public sample's class-mean gap) is not the prompt's.
+The prompt's 0.15 / 0.30 contract is relative to the topic coefficient. Because every aligned property moves
+with the label in the sample, the gap is 1.4–2.1× the topic coefficient. This was measured by topic swaps
+(followup/solvers) and confirmed against the build manifests' coef / topic_coef.
+
+Frozen results stay primary. Unit-dependent results are recomputed in the topic unit as **exploratory**:
+- brute-force BB-64 and the band solvers (followup/solvers);
+- F1a and F4 (followup/topicunit_flags).
+
+The T-flags, the sample-base flags and the blind_verify ceilings, which already use a topic-swap unit, are not
+affected. The D36 F1 result ("never fires") is partly a unit artefact: its bar is effectively 0.22–0.3 topic
+units. Even in the topic unit, F1a does not fire on a main-study slot.
+
 **D37 (11-11, session tender-dijkstra). Work order and branch.** The user asked for the flag work (audit, T-F2,
 T-D, T-RULE, F4) to be done last, after re-pulling, because the flag code on `claude/serene-fermi-pog4k7` is
 still being finished. This branch (`claude/tender-dijkstra-hrga9p`) starts from `claude/brave-curie-dhdngw`
