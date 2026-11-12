@@ -348,3 +348,8 @@ file is written by hand after reading each disagreement in the transcript; its n
   docstring. Nothing was run on bank or shipped episodes before this entry.
 - Purpose: the best-policy baseline the paper audit asked for (is following the SAE's rank the best use of 8
   exact texts?). Exploratory; no LLM call.
+
+## judge_vs_grade: frozen before any judge call (2026-11-12T06:00Z)
+
+- `scripts/judge_vs_grade.py` sha256 64df97b626df206b…; pre-registration `results/blackbox_1112/judge/PREREG_JUDGE.md`;
+  inputs (214 runs) hashed in `results/blackbox_1112/judge/inputs.json`. OpenAI budget $4.
