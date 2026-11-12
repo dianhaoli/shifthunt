@@ -33,3 +33,9 @@ certified grade on the same runs?
 
 Reported in `judge.json` and README.md whatever the result. No threshold, prompt or run set is changed after
 the first call. This is a measurement of one judge prompt and one judge model; it is not a claim about all judges.
+
+## Deviation log
+
+- 2026-11-12T06:02Z: the user raised this prompt's OpenAI allowance to $100. The judge's budget guard was raised from $4 to
+  $10 (expected spend about $2-3). The first run was stopped by the user's interruption after 1 completed call
+  and 1 call in flight; the resumed run sends the rest. Nothing about the design, prompt or run set changed.
