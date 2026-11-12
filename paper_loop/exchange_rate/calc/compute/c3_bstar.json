@@ -1,0 +1,232 @@
+{
+ "envelopes": {
+  "noisy robust blind, single": {
+   "4": 0.182,
+   "8": 0.3547,
+   "12": 0.5067,
+   "16": 0.6653,
+   "20": 0.7987,
+   "24": 0.8887,
+   "28": 0.916,
+   "32": 0.9227,
+   "40": 0.9227,
+   "48": 0.9507,
+   "56": 0.9867,
+   "64": 0.9927
+  },
+  "noisy robust blind, group": {
+   "4": 0.2667,
+   "8": 0.4647,
+   "12": 0.598,
+   "16": 0.7653,
+   "20": 0.7653,
+   "24": 0.7813,
+   "28": 0.7813,
+   "32": 0.862,
+   "40": 0.862,
+   "48": 0.9167,
+   "56": 0.9167,
+   "64": 0.9467
+  },
+  "noisy robust blind, best of both": {
+   "4": 0.2667,
+   "8": 0.4647,
+   "12": 0.598,
+   "16": 0.7653,
+   "20": 0.7987,
+   "24": 0.8887,
+   "28": 0.916,
+   "32": 0.9227,
+   "40": 0.9227,
+   "48": 0.9507,
+   "56": 0.9867,
+   "64": 0.9927
+  },
+  "noisy robust proxy Bayes shipped (best of both)": {
+   "4": 0.8657,
+   "8": 0.97,
+   "12": 0.9953,
+   "16": 0.9987,
+   "20": 0.9997,
+   "24": 0.9997,
+   "28": 0.9997,
+   "32": 1.0,
+   "40": 1.0,
+   "48": 1.0,
+   "56": 1.0,
+   "64": 1.0
+  }
+ },
+ "B_star": {
+  "shipped: top-1 / believer 'proxy right' (any B)": {
+   "target": 0.5,
+   "ideal group, known counts": 6.0,
+   "ideal group, unknown counts": 6.3,
+   "ideal single, known counts": 11.4,
+   "ideal single, unknown counts": 11.8,
+   "noisy robust ideal (best of both)": 9.1,
+   "scripted (ii-c), noisy sim": 10.0,
+   "Terra logistic": 12.1
+  },
+  "shipped: top-2 (noiseless)": {
+   "target": 1.0,
+   "ideal group, known counts": 12.0,
+   "ideal group, unknown counts": 16.0,
+   "ideal single, known counts": 31.0,
+   "ideal single, unknown counts": 32.0,
+   "noisy robust ideal (best of both)": Infinity,
+   "scripted (ii-c), noisy sim": Infinity,
+   "Terra logistic": Infinity
+  },
+  "shipped: calibrated Bayes, noiseless (reaches 1.0 at B=5)": {
+   "target": 1.0,
+   "ideal group, known counts": 12.0,
+   "ideal group, unknown counts": 16.0,
+   "ideal single, known counts": 31.0,
+   "ideal single, unknown counts": 32.0,
+   "noisy robust ideal (best of both)": Infinity,
+   "scripted (ii-c), noisy sim": Infinity,
+   "Terra logistic": Infinity
+  },
+  "shipped: top-2, noisy sim": {
+   "target": 0.9722,
+   "ideal group, known counts": 11.3,
+   "ideal group, unknown counts": 12.7,
+   "ideal single, known counts": 24.7,
+   "ideal single, unknown counts": 26.9,
+   "noisy robust ideal (best of both)": 52.8,
+   "scripted (ii-c), noisy sim": Infinity,
+   "Terra logistic": 41.4
+  },
+  "shipped: robust Bayes, noisy sim": {
+   "target": 0.97,
+   "ideal group, known counts": 11.3,
+   "ideal group, unknown counts": 12.6,
+   "ideal single, known counts": 24.6,
+   "ideal single, unknown counts": 26.7,
+   "noisy robust ideal (best of both)": 52.3,
+   "scripted (ii-c), noisy sim": Infinity,
+   "Terra logistic": 40.3
+  },
+  "shipped: Terra Open-8 23/24": {
+   "target": 0.9583,
+   "ideal group, known counts": 11.0,
+   "ideal group, unknown counts": 12.3,
+   "ideal single, known counts": 23.8,
+   "ideal single, unknown counts": 25.8,
+   "noisy robust ideal (best of both)": 49.7,
+   "scripted (ii-c), noisy sim": 59.0,
+   "Terra logistic": 35.8
+  },
+  "bank: top-1": {
+   "target": 0.7292,
+   "ideal group, known counts": 8.6,
+   "ideal group, unknown counts": 9.1,
+   "ideal single, known counts": 16.4,
+   "ideal single, unknown counts": 17.3,
+   "noisy robust ideal (best of both)": 15.1,
+   "scripted (ii-c), noisy sim": 14.5,
+   "Terra logistic": 17.1
+  },
+  "bank: top-2 / shipped-believer": {
+   "target": 0.9375,
+   "ideal group, known counts": 10.8,
+   "ideal group, unknown counts": 11.9,
+   "ideal single, known counts": 22.7,
+   "ideal single, unknown counts": 24.5,
+   "noisy robust ideal (best of both)": 44.2,
+   "scripted (ii-c), noisy sim": 43.7,
+   "Terra logistic": 30.9
+  },
+  "bank: calibrated Bayes (1.0 at B=6-8)": {
+   "target": 1.0,
+   "ideal group, known counts": 12.0,
+   "ideal group, unknown counts": 16.0,
+   "ideal single, known counts": 31.0,
+   "ideal single, unknown counts": 32.0,
+   "noisy robust ideal (best of both)": Infinity,
+   "scripted (ii-c), noisy sim": Infinity,
+   "Terra logistic": Infinity
+  },
+  "bank: top-2, noisy sim": {
+   "target": 0.9103,
+   "ideal group, known counts": 10.6,
+   "ideal group, unknown counts": 11.4,
+   "ideal single, known counts": 21.6,
+   "ideal single, unknown counts": 23.1,
+   "noisy robust ideal (best of both)": 27.2,
+   "scripted (ii-c), noisy sim": 31.8,
+   "Terra logistic": 27.0
+  },
+  "adv r6: top-2 / shipped-believer": {
+   "target": 0.5,
+   "ideal group, known counts": 6.0,
+   "ideal group, unknown counts": 6.3,
+   "ideal single, known counts": 11.4,
+   "ideal single, unknown counts": 11.8,
+   "noisy robust ideal (best of both)": 9.1,
+   "scripted (ii-c), noisy sim": 10.0,
+   "Terra logistic": 12.1
+  },
+  "adv r6: calibrated Bayes (knows r6)": {
+   "target": 1.0,
+   "ideal group, known counts": 12.0,
+   "ideal group, unknown counts": 16.0,
+   "ideal single, known counts": 31.0,
+   "ideal single, unknown counts": 32.0,
+   "noisy robust ideal (best of both)": Infinity,
+   "scripted (ii-c), noisy sim": Infinity,
+   "Terra logistic": Infinity
+  },
+  "adv u2..8: top-2 / shipped-believer": {
+   "target": 0.5714,
+   "ideal group, known counts": 6.7,
+   "ideal group, unknown counts": 7.1,
+   "ideal single, known counts": 13.0,
+   "ideal single, unknown counts": 13.4,
+   "noisy robust ideal (best of both)": 11.2,
+   "scripted (ii-c), noisy sim": 11.4,
+   "Terra logistic": 13.4
+  },
+  "adv u2..8: calibrated Bayes, single isolations": {
+   "target": 0.7262,
+   "ideal group, known counts": 8.5,
+   "ideal group, unknown counts": 9.1,
+   "ideal single, known counts": 16.4,
+   "ideal single, unknown counts": 17.3,
+   "noisy robust ideal (best of both)": 15.1,
+   "scripted (ii-c), noisy sim": 14.5,
+   "Terra logistic": 17.0
+  },
+  "adv u2..8: calibrated Bayes, group tests": {
+   "target": 1.0,
+   "ideal group, known counts": 12.0,
+   "ideal group, unknown counts": 16.0,
+   "ideal single, known counts": 31.0,
+   "ideal single, unknown counts": 32.0,
+   "noisy robust ideal (best of both)": Infinity,
+   "scripted (ii-c), noisy sim": Infinity,
+   "Terra logistic": Infinity
+  },
+  "proxy no info on traps (u1..8): Bayes single": {
+   "target": 0.7604,
+   "ideal group, known counts": 9.1,
+   "ideal group, unknown counts": 9.5,
+   "ideal single, known counts": 17.2,
+   "ideal single, unknown counts": 18.2,
+   "noisy robust ideal (best of both)": 15.9,
+   "scripted (ii-c), noisy sim": 15.2,
+   "Terra logistic": 18.1
+  },
+  "proxy no info on traps (u1..8): Bayes group": {
+   "target": 1.0,
+   "ideal group, known counts": 12.0,
+   "ideal group, unknown counts": 16.0,
+   "ideal single, known counts": 31.0,
+   "ideal single, unknown counts": 32.0,
+   "noisy robust ideal (best of both)": Infinity,
+   "scripted (ii-c), noisy sim": Infinity,
+   "Terra logistic": Infinity
+  }
+ }
+}

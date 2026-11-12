@@ -1,0 +1,6 @@
+shipped group 0 0.1667 0.0
+shipped group 1 0.2917 0.0
+shipped group 2 0.5417 0.0
+shipped group 3 0.75 0.1
+shipped group 4 0.9167 0.1
+shipped group 5 1.0 0.2

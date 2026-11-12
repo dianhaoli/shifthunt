@@ -1,0 +1,7 @@
+bank group 0 0.2431 0.0
+bank group 1 0.4253 0.0
+bank group 2 0.6597 0.3
+bank group 3 0.849 1.3
+bank group 4 0.934 3.3
+bank group 5 0.9948 6.1
+bank group 6 1.0 8.7

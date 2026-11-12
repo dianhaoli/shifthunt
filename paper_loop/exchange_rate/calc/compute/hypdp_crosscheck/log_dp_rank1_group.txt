@@ -1,0 +1,4 @@
+rank1 group 0 0.3333 0.0
+rank1 group 1 0.5833 0.0
+rank1 group 2 0.8333 0.0
+rank1 group 3 1.0 0.0

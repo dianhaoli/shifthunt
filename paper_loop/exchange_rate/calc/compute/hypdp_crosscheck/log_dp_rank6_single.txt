@@ -1,0 +1,6 @@
+rank6 single 0 0.1667 0.0
+rank6 single 1 0.2917 0.0
+rank6 single 2 0.5417 0.0
+rank6 single 3 0.75 0.1
+rank6 single 4 0.875 0.1
+rank6 single 5 1.0 0.1

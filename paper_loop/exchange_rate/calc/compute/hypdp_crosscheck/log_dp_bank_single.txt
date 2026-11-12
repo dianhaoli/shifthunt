@@ -1,0 +1,8 @@
+bank single 0 0.2431 0.0
+bank single 1 0.4253 0.0
+bank single 2 0.6597 0.1
+bank single 3 0.8333 0.3
+bank single 4 0.8906 0.6
+bank single 5 0.9583 1.1
+bank single 6 0.9844 1.7
+bank single 7 1.0 2.2

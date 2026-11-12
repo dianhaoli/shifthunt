@@ -1,0 +1,124 @@
+{
+ "fisher_haiku_trap_0of6_vs_2of6": 0.4545454545454546,
+ "fisher_luna_trap_slot_1of18_vs_2of12": 0.547783251231527,
+ "fisher_luna_trap_NAME_1of18_vs_1of12": 1.0,
+ "fisher_pooled_topone_agents_1of24_vs_4of18": 0.14636967653655714,
+ "one_batch_signal": {
+  "d'=0.0": {
+   "B=4": {
+    "cover_only": 0.5,
+    "elimination": 0.75
+   },
+   "B=5": {
+    "cover_only": 0.6244,
+    "elimination": 0.8747
+   },
+   "B=6": {
+    "cover_only": 0.7494,
+    "elimination": 0.9583
+   },
+   "B=7": {
+    "cover_only": 0.8743,
+    "elimination": 1.0
+   },
+   "B=8": {
+    "cover_only": 1.0,
+    "elimination": 1.0
+   }
+  },
+  "d'=1.02": {
+   "B=4": {
+    "cover_only": 0.5,
+    "elimination": 0.75
+   },
+   "B=5": {
+    "cover_only": 0.7784,
+    "elimination": 0.9261
+   },
+   "B=6": {
+    "cover_only": 0.9004,
+    "elimination": 0.9835
+   },
+   "B=7": {
+    "cover_only": 0.967,
+    "elimination": 1.0
+   },
+   "B=8": {
+    "cover_only": 1.0,
+    "elimination": 1.0
+   }
+  },
+  "d'=1.4": {
+   "B=4": {
+    "cover_only": 0.5,
+    "elimination": 0.75
+   },
+   "B=5": {
+    "cover_only": 0.8374,
+    "elimination": 0.946
+   },
+   "B=6": {
+    "cover_only": 0.9389,
+    "elimination": 0.9897
+   },
+   "B=7": {
+    "cover_only": 0.9826,
+    "elimination": 1.0
+   },
+   "B=8": {
+    "cover_only": 1.0,
+    "elimination": 1.0
+   }
+  },
+  "d'=2.5": {
+   "B=4": {
+    "cover_only": 0.5,
+    "elimination": 0.75
+   },
+   "B=5": {
+    "cover_only": 0.9535,
+    "elimination": 0.9846
+   },
+   "B=6": {
+    "cover_only": 0.9908,
+    "elimination": 0.9985
+   },
+   "B=7": {
+    "cover_only": 0.9984,
+    "elimination": 1.0
+   },
+   "B=8": {
+    "cover_only": 1.0,
+    "elimination": 1.0
+   }
+  },
+  "d'=99.0": {
+   "B=4": {
+    "cover_only": 0.5,
+    "elimination": 0.75
+   },
+   "B=5": {
+    "cover_only": 1.0,
+    "elimination": 1.0
+   },
+   "B=6": {
+    "cover_only": 1.0,
+    "elimination": 1.0
+   },
+   "B=7": {
+    "cover_only": 1.0,
+    "elimination": 1.0
+   },
+   "B=8": {
+    "cover_only": 1.0,
+    "elimination": 1.0
+   }
+  }
+ },
+ "marginal_value": {
+  "proxy_B2to4_per_query": 0.17,
+  "blind_B2to4_per_query": 0.11,
+  "proxy_B5to8_per_query": 0.0,
+  "blind_B5to8_per_query": 0.093
+ }
+}

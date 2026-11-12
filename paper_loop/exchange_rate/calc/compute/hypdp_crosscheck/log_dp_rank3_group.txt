@@ -1,0 +1,6 @@
+rank3 group 0 0.1667 0.0
+rank3 group 1 0.2917 0.0
+rank3 group 2 0.5417 0.1
+rank3 group 3 0.75 0.2
+rank3 group 4 0.9167 0.2
+rank3 group 5 1.0 0.3

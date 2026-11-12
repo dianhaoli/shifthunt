@@ -1,0 +1,44 @@
+[    20s] blind known group 0.7031
+[    23s] blind known single 0.3634
+[    60s] blind unknown group 0.6504
+[    67s] blind unknown single 0.3505
+[    68s] shipped (trap at r2) group 1.0
+[    68s] shipped (trap at r2) single 1.0
+[    73s] bank (r1/r2/r6 = 11/10/3) group 1.0
+[    75s] bank (r1/r2/r6 = 11/10/3) single 1.0
+[   145s] adv: uniform r2..r8 group 1.0
+[   149s] adv: uniform r2..r8 single 0.7262
+[   222s] adv: uniform r1..r8 (no info on traps) group 1.0
+[   226s] adv: uniform r1..r8 (no info on traps) single 0.7604
+[   226s] adv: fixed r3 group 1.0
+[   226s] adv: fixed r3 single 1.0
+[   227s] adv: fixed r6 group 1.0
+[   227s] adv: fixed r6 single 1.0
+[   227s] proxy always right (r1) group 1.0
+[   227s] proxy always right (r1) single 1.0
+[   227s] shipped (trap at r2) unknown group 1.0
+[   228s] shipped (trap at r2) unknown single 1.0
+[   240s] bank (r1/r2/r6 = 11/10/3) unknown group 1.0
+[   245s] bank (r1/r2/r6 = 11/10/3) unknown single 0.989
+[   245s] mis believes proxy always right (r1) group
+[   245s] mis believes shipped (r2) group
+[   250s] mis believes bank law group
+[   321s] mis believes only 'not r1' (u2..8) group
+[   395s] mis open-minded: 0.9 r1 + 0.1 u2..8 group
+[  1389s] mis open-minded: 0.5 r2 + 0.5 u1..8 group
+[  1390s] mis believes proxy always right (r1) single
+[  1390s] mis believes shipped (r2) single
+[  1391s] mis believes bank law single
+[  1392s] mis believes only 'not r1' (u2..8) single
+[  1393s] mis open-minded: 0.9 r1 + 0.1 u2..8 single
+[  1401s] mis open-minded: 0.5 r2 + 0.5 u1..8 single
+[  1452s] unknown-counts blind replay group
+[  1515s] unknown-counts blind replay single
+[  1525s] alloc done
+[  1528s] noisy scripted done
+[  1553s] robust blind ideal known group
+[  1585s] robust blind ideal known single
+[  1611s] robust proxy Bayes shipped group
+[  1634s] robust proxy Bayes shipped single
+[  1668s] robust proxy Bayes bank single
+[  1668s] done
