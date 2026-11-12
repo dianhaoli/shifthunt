@@ -6,7 +6,10 @@
   "open8",
   "bb8"
  ],
- "runs_per_item": 4,
+ "runs_per_item": {
+  "open8": 6,
+  "bb8": 4
+ },
  "items": [
   "ep411",
   "ep413",
@@ -19,7 +22,7 @@
  "seed_int": "95347885906537974182559210169783944568058144779288873390309670775570696414898",
  "seed_rule": "int.from_bytes(sha256(seed_text).digest(), 'big'); rows in the fixed order (agent, arm, item, rep), then numpy.random.default_rng(seed_int).permutation (blackbox_runorder.run_order)",
  "csv": "runorder_luna.csv",
- "csv_sha256": "f93f089e8e352d202e7008d095d756fafb89640dcc2ca1b00989dade70d7b5b4",
+ "csv_sha256": "56abbfa12aeb527b7a7cc97c4c996b45326f4d392d71cb29f152bf56ac7fcbb2",
  "pilot_csv": "runorder_luna_pilot.csv",
  "pilot_csv_sha256": "bca70b8abb1dccabbc53d100e05f6723aa2cc11bb1ad5b2645149013eec520eb",
  "rows": [
@@ -27,9 +30,9 @@
    "agent": "luna",
    "model": "gpt-6-luna",
    "engine": "codex",
-   "arm": "bb8",
-   "item": "ep411",
-   "problem": "ep411-blackbox",
+   "arm": "open8",
+   "item": "ep474",
+   "problem": "ep474-open",
    "rep": 4,
    "order": 1
   },
@@ -37,9 +40,9 @@
    "agent": "luna",
    "model": "gpt-6-luna",
    "engine": "codex",
-   "arm": "bb8",
-   "item": "ep413",
-   "problem": "ep413-blackbox",
+   "arm": "open8",
+   "item": "ep411",
+   "problem": "ep411-open",
    "rep": 1,
    "order": 2
   },
@@ -47,101 +50,11 @@
    "agent": "luna",
    "model": "gpt-6-luna",
    "engine": "codex",
-   "arm": "open8",
-   "item": "ep413",
-   "problem": "ep413-open",
-   "rep": 4,
-   "order": 3
-  },
-  {
-   "agent": "luna",
-   "model": "gpt-6-luna",
-   "engine": "codex",
    "arm": "bb8",
-   "item": "ep415",
-   "problem": "ep415-blackbox",
-   "rep": 1,
-   "order": 4
-  },
-  {
-   "agent": "luna",
-   "model": "gpt-6-luna",
-   "engine": "codex",
-   "arm": "bb8",
-   "item": "ep476",
-   "problem": "ep476-blackbox",
-   "rep": 3,
-   "order": 5
-  },
-  {
-   "agent": "luna",
-   "model": "gpt-6-luna",
-   "engine": "codex",
-   "arm": "bb8",
-   "item": "ep411",
-   "problem": "ep411-blackbox",
-   "rep": 3,
-   "order": 6
-  },
-  {
-   "agent": "luna",
-   "model": "gpt-6-luna",
-   "engine": "codex",
-   "arm": "open8",
-   "item": "ep411",
-   "problem": "ep411-open",
-   "rep": 4,
-   "order": 7
-  },
-  {
-   "agent": "luna",
-   "model": "gpt-6-luna",
-   "engine": "codex",
-   "arm": "bb8",
-   "item": "ep472",
-   "problem": "ep472-blackbox",
-   "rep": 3,
-   "order": 8
-  },
-  {
-   "agent": "luna",
-   "model": "gpt-6-luna",
-   "engine": "codex",
-   "arm": "bb8",
-   "item": "ep415",
-   "problem": "ep415-blackbox",
-   "rep": 2,
-   "order": 9
-  },
-  {
-   "agent": "luna",
-   "model": "gpt-6-luna",
-   "engine": "codex",
-   "arm": "bb8",
-   "item": "ep476",
-   "problem": "ep476-blackbox",
-   "rep": 4,
-   "order": 10
-  },
-  {
-   "agent": "luna",
-   "model": "gpt-6-luna",
-   "engine": "codex",
-   "arm": "open8",
-   "item": "ep411",
-   "problem": "ep411-open",
-   "rep": 1,
-   "order": 11
-  },
-  {
-   "agent": "luna",
-   "model": "gpt-6-luna",
-   "engine": "codex",
-   "arm": "open8",
    "item": "ep474",
-   "problem": "ep474-open",
+   "problem": "ep474-blackbox",
    "rep": 3,
-   "order": 12
+   "order": 3
   },
   {
    "agent": "luna",
@@ -151,17 +64,67 @@
    "item": "ep474",
    "problem": "ep474-blackbox",
    "rep": 4,
-   "order": 13
+   "order": 4
+  },
+  {
+   "agent": "luna",
+   "model": "gpt-6-luna",
+   "engine": "codex",
+   "arm": "bb8",
+   "item": "ep472",
+   "problem": "ep472-blackbox",
+   "rep": 3,
+   "order": 5
+  },
+  {
+   "agent": "luna",
+   "model": "gpt-6-luna",
+   "engine": "codex",
+   "arm": "bb8",
+   "item": "ep413",
+   "problem": "ep413-blackbox",
+   "rep": 1,
+   "order": 6
   },
   {
    "agent": "luna",
    "model": "gpt-6-luna",
    "engine": "codex",
    "arm": "open8",
-   "item": "ep472",
-   "problem": "ep472-open",
+   "item": "ep476",
+   "problem": "ep476-open",
+   "rep": 5,
+   "order": 7
+  },
+  {
+   "agent": "luna",
+   "model": "gpt-6-luna",
+   "engine": "codex",
+   "arm": "open8",
+   "item": "ep413",
+   "problem": "ep413-open",
+   "rep": 6,
+   "order": 8
+  },
+  {
+   "agent": "luna",
+   "model": "gpt-6-luna",
+   "engine": "codex",
+   "arm": "bb8",
+   "item": "ep413",
+   "problem": "ep413-blackbox",
    "rep": 3,
-   "order": 14
+   "order": 9
+  },
+  {
+   "agent": "luna",
+   "model": "gpt-6-luna",
+   "engine": "codex",
+   "arm": "open8",
+   "item": "ep476",
+   "problem": "ep476-open",
+   "rep": 3,
+   "order": 10
   },
   {
    "agent": "luna",
@@ -171,6 +134,46 @@
    "item": "ep415",
    "problem": "ep415-blackbox",
    "rep": 4,
+   "order": 11
+  },
+  {
+   "agent": "luna",
+   "model": "gpt-6-luna",
+   "engine": "codex",
+   "arm": "open8",
+   "item": "ep411",
+   "problem": "ep411-open",
+   "rep": 4,
+   "order": 12
+  },
+  {
+   "agent": "luna",
+   "model": "gpt-6-luna",
+   "engine": "codex",
+   "arm": "open8",
+   "item": "ep472",
+   "problem": "ep472-open",
+   "rep": 6,
+   "order": 13
+  },
+  {
+   "agent": "luna",
+   "model": "gpt-6-luna",
+   "engine": "codex",
+   "arm": "open8",
+   "item": "ep413",
+   "problem": "ep413-open",
+   "rep": 2,
+   "order": 14
+  },
+  {
+   "agent": "luna",
+   "model": "gpt-6-luna",
+   "engine": "codex",
+   "arm": "open8",
+   "item": "ep415",
+   "problem": "ep415-open",
+   "rep": 3,
    "order": 15
   },
   {
@@ -188,20 +191,30 @@
    "model": "gpt-6-luna",
    "engine": "codex",
    "arm": "bb8",
-   "item": "ep413",
-   "problem": "ep413-blackbox",
-   "rep": 2,
+   "item": "ep411",
+   "problem": "ep411-blackbox",
+   "rep": 3,
    "order": 17
   },
   {
    "agent": "luna",
    "model": "gpt-6-luna",
    "engine": "codex",
-   "arm": "open8",
-   "item": "ep411",
-   "problem": "ep411-open",
-   "rep": 2,
+   "arm": "bb8",
+   "item": "ep476",
+   "problem": "ep476-blackbox",
+   "rep": 4,
    "order": 18
+  },
+  {
+   "agent": "luna",
+   "model": "gpt-6-luna",
+   "engine": "codex",
+   "arm": "open8",
+   "item": "ep474",
+   "problem": "ep474-open",
+   "rep": 5,
+   "order": 19
   },
   {
    "agent": "luna",
@@ -211,57 +224,7 @@
    "item": "ep472",
    "problem": "ep472-blackbox",
    "rep": 1,
-   "order": 19
-  },
-  {
-   "agent": "luna",
-   "model": "gpt-6-luna",
-   "engine": "codex",
-   "arm": "open8",
-   "item": "ep474",
-   "problem": "ep474-open",
-   "rep": 2,
    "order": 20
-  },
-  {
-   "agent": "luna",
-   "model": "gpt-6-luna",
-   "engine": "codex",
-   "arm": "open8",
-   "item": "ep476",
-   "problem": "ep476-open",
-   "rep": 4,
-   "order": 21
-  },
-  {
-   "agent": "luna",
-   "model": "gpt-6-luna",
-   "engine": "codex",
-   "arm": "bb8",
-   "item": "ep474",
-   "problem": "ep474-blackbox",
-   "rep": 2,
-   "order": 22
-  },
-  {
-   "agent": "luna",
-   "model": "gpt-6-luna",
-   "engine": "codex",
-   "arm": "open8",
-   "item": "ep472",
-   "problem": "ep472-open",
-   "rep": 2,
-   "order": 23
-  },
-  {
-   "agent": "luna",
-   "model": "gpt-6-luna",
-   "engine": "codex",
-   "arm": "open8",
-   "item": "ep472",
-   "problem": "ep472-open",
-   "rep": 1,
-   "order": 24
   },
   {
    "agent": "luna",
@@ -271,7 +234,7 @@
    "item": "ep413",
    "problem": "ep413-blackbox",
    "rep": 4,
-   "order": 25
+   "order": 21
   },
   {
    "agent": "luna",
@@ -280,7 +243,47 @@
    "arm": "open8",
    "item": "ep476",
    "problem": "ep476-open",
+   "rep": 4,
+   "order": 22
+  },
+  {
+   "agent": "luna",
+   "model": "gpt-6-luna",
+   "engine": "codex",
+   "arm": "bb8",
+   "item": "ep411",
+   "problem": "ep411-blackbox",
+   "rep": 4,
+   "order": 23
+  },
+  {
+   "agent": "luna",
+   "model": "gpt-6-luna",
+   "engine": "codex",
+   "arm": "open8",
+   "item": "ep411",
+   "problem": "ep411-open",
+   "rep": 2,
+   "order": 24
+  },
+  {
+   "agent": "luna",
+   "model": "gpt-6-luna",
+   "engine": "codex",
+   "arm": "open8",
+   "item": "ep472",
+   "problem": "ep472-open",
    "rep": 1,
+   "order": 25
+  },
+  {
+   "agent": "luna",
+   "model": "gpt-6-luna",
+   "engine": "codex",
+   "arm": "bb8",
+   "item": "ep415",
+   "problem": "ep415-blackbox",
+   "rep": 2,
    "order": 26
   },
   {
@@ -290,58 +293,8 @@
    "arm": "open8",
    "item": "ep415",
    "problem": "ep415-open",
-   "rep": 4,
+   "rep": 6,
    "order": 27
-  },
-  {
-   "agent": "luna",
-   "model": "gpt-6-luna",
-   "engine": "codex",
-   "arm": "bb8",
-   "item": "ep474",
-   "problem": "ep474-blackbox",
-   "rep": 3,
-   "order": 28
-  },
-  {
-   "agent": "luna",
-   "model": "gpt-6-luna",
-   "engine": "codex",
-   "arm": "bb8",
-   "item": "ep472",
-   "problem": "ep472-blackbox",
-   "rep": 4,
-   "order": 29
-  },
-  {
-   "agent": "luna",
-   "model": "gpt-6-luna",
-   "engine": "codex",
-   "arm": "open8",
-   "item": "ep415",
-   "problem": "ep415-open",
-   "rep": 2,
-   "order": 30
-  },
-  {
-   "agent": "luna",
-   "model": "gpt-6-luna",
-   "engine": "codex",
-   "arm": "open8",
-   "item": "ep415",
-   "problem": "ep415-open",
-   "rep": 1,
-   "order": 31
-  },
-  {
-   "agent": "luna",
-   "model": "gpt-6-luna",
-   "engine": "codex",
-   "arm": "open8",
-   "item": "ep413",
-   "problem": "ep413-open",
-   "rep": 2,
-   "order": 32
   },
   {
    "agent": "luna",
@@ -351,7 +304,147 @@
    "item": "ep476",
    "problem": "ep476-open",
    "rep": 2,
+   "order": 28
+  },
+  {
+   "agent": "luna",
+   "model": "gpt-6-luna",
+   "engine": "codex",
+   "arm": "bb8",
+   "item": "ep474",
+   "problem": "ep474-blackbox",
+   "rep": 2,
+   "order": 29
+  },
+  {
+   "agent": "luna",
+   "model": "gpt-6-luna",
+   "engine": "codex",
+   "arm": "open8",
+   "item": "ep474",
+   "problem": "ep474-open",
+   "rep": 3,
+   "order": 30
+  },
+  {
+   "agent": "luna",
+   "model": "gpt-6-luna",
+   "engine": "codex",
+   "arm": "open8",
+   "item": "ep476",
+   "problem": "ep476-open",
+   "rep": 6,
+   "order": 31
+  },
+  {
+   "agent": "luna",
+   "model": "gpt-6-luna",
+   "engine": "codex",
+   "arm": "open8",
+   "item": "ep474",
+   "problem": "ep474-open",
+   "rep": 6,
+   "order": 32
+  },
+  {
+   "agent": "luna",
+   "model": "gpt-6-luna",
+   "engine": "codex",
+   "arm": "bb8",
+   "item": "ep476",
+   "problem": "ep476-blackbox",
+   "rep": 3,
    "order": 33
+  },
+  {
+   "agent": "luna",
+   "model": "gpt-6-luna",
+   "engine": "codex",
+   "arm": "bb8",
+   "item": "ep472",
+   "problem": "ep472-blackbox",
+   "rep": 4,
+   "order": 34
+  },
+  {
+   "agent": "luna",
+   "model": "gpt-6-luna",
+   "engine": "codex",
+   "arm": "open8",
+   "item": "ep415",
+   "problem": "ep415-open",
+   "rep": 2,
+   "order": 35
+  },
+  {
+   "agent": "luna",
+   "model": "gpt-6-luna",
+   "engine": "codex",
+   "arm": "open8",
+   "item": "ep415",
+   "problem": "ep415-open",
+   "rep": 1,
+   "order": 36
+  },
+  {
+   "agent": "luna",
+   "model": "gpt-6-luna",
+   "engine": "codex",
+   "arm": "bb8",
+   "item": "ep413",
+   "problem": "ep413-blackbox",
+   "rep": 2,
+   "order": 37
+  },
+  {
+   "agent": "luna",
+   "model": "gpt-6-luna",
+   "engine": "codex",
+   "arm": "open8",
+   "item": "ep472",
+   "problem": "ep472-open",
+   "rep": 3,
+   "order": 38
+  },
+  {
+   "agent": "luna",
+   "model": "gpt-6-luna",
+   "engine": "codex",
+   "arm": "bb8",
+   "item": "ep472",
+   "problem": "ep472-blackbox",
+   "rep": 2,
+   "order": 39
+  },
+  {
+   "agent": "luna",
+   "model": "gpt-6-luna",
+   "engine": "codex",
+   "arm": "open8",
+   "item": "ep413",
+   "problem": "ep413-open",
+   "rep": 4,
+   "order": 40
+  },
+  {
+   "agent": "luna",
+   "model": "gpt-6-luna",
+   "engine": "codex",
+   "arm": "open8",
+   "item": "ep413",
+   "problem": "ep413-open",
+   "rep": 3,
+   "order": 41
+  },
+  {
+   "agent": "luna",
+   "model": "gpt-6-luna",
+   "engine": "codex",
+   "arm": "open8",
+   "item": "ep411",
+   "problem": "ep411-open",
+   "rep": 6,
+   "order": 42
   },
   {
    "agent": "luna",
@@ -361,87 +454,7 @@
    "item": "ep472",
    "problem": "ep472-open",
    "rep": 4,
-   "order": 34
-  },
-  {
-   "agent": "luna",
-   "model": "gpt-6-luna",
-   "engine": "codex",
-   "arm": "bb8",
-   "item": "ep476",
-   "problem": "ep476-blackbox",
-   "rep": 2,
-   "order": 35
-  },
-  {
-   "agent": "luna",
-   "model": "gpt-6-luna",
-   "engine": "codex",
-   "arm": "open8",
-   "item": "ep476",
-   "problem": "ep476-open",
-   "rep": 3,
-   "order": 36
-  },
-  {
-   "agent": "luna",
-   "model": "gpt-6-luna",
-   "engine": "codex",
-   "arm": "bb8",
-   "item": "ep411",
-   "problem": "ep411-blackbox",
-   "rep": 1,
-   "order": 37
-  },
-  {
-   "agent": "luna",
-   "model": "gpt-6-luna",
-   "engine": "codex",
-   "arm": "open8",
-   "item": "ep413",
-   "problem": "ep413-open",
-   "rep": 3,
-   "order": 38
-  },
-  {
-   "agent": "luna",
-   "model": "gpt-6-luna",
-   "engine": "codex",
-   "arm": "open8",
-   "item": "ep474",
-   "problem": "ep474-open",
-   "rep": 4,
-   "order": 39
-  },
-  {
-   "agent": "luna",
-   "model": "gpt-6-luna",
-   "engine": "codex",
-   "arm": "bb8",
-   "item": "ep474",
-   "problem": "ep474-blackbox",
-   "rep": 1,
-   "order": 40
-  },
-  {
-   "agent": "luna",
-   "model": "gpt-6-luna",
-   "engine": "codex",
-   "arm": "bb8",
-   "item": "ep472",
-   "problem": "ep472-blackbox",
-   "rep": 2,
-   "order": 41
-  },
-  {
-   "agent": "luna",
-   "model": "gpt-6-luna",
-   "engine": "codex",
-   "arm": "bb8",
-   "item": "ep411",
-   "problem": "ep411-blackbox",
-   "rep": 2,
-   "order": 42
+   "order": 43
   },
   {
    "agent": "luna",
@@ -450,17 +463,7 @@
    "arm": "open8",
    "item": "ep415",
    "problem": "ep415-open",
-   "rep": 3,
-   "order": 43
-  },
-  {
-   "agent": "luna",
-   "model": "gpt-6-luna",
-   "engine": "codex",
-   "arm": "open8",
-   "item": "ep411",
-   "problem": "ep411-open",
-   "rep": 3,
+   "rep": 4,
    "order": 44
   },
   {
@@ -470,16 +473,16 @@
    "arm": "bb8",
    "item": "ep476",
    "problem": "ep476-blackbox",
-   "rep": 1,
+   "rep": 2,
    "order": 45
   },
   {
    "agent": "luna",
    "model": "gpt-6-luna",
    "engine": "codex",
-   "arm": "open8",
-   "item": "ep413",
-   "problem": "ep413-open",
+   "arm": "bb8",
+   "item": "ep411",
+   "problem": "ep411-blackbox",
    "rep": 1,
    "order": 46
   },
@@ -488,10 +491,20 @@
    "model": "gpt-6-luna",
    "engine": "codex",
    "arm": "bb8",
-   "item": "ep413",
-   "problem": "ep413-blackbox",
-   "rep": 3,
+   "item": "ep476",
+   "problem": "ep476-blackbox",
+   "rep": 1,
    "order": 47
+  },
+  {
+   "agent": "luna",
+   "model": "gpt-6-luna",
+   "engine": "codex",
+   "arm": "open8",
+   "item": "ep472",
+   "problem": "ep472-open",
+   "rep": 5,
+   "order": 48
   },
   {
    "agent": "luna",
@@ -501,7 +514,117 @@
    "item": "ep474",
    "problem": "ep474-open",
    "rep": 1,
-   "order": 48
+   "order": 49
+  },
+  {
+   "agent": "luna",
+   "model": "gpt-6-luna",
+   "engine": "codex",
+   "arm": "open8",
+   "item": "ep413",
+   "problem": "ep413-open",
+   "rep": 1,
+   "order": 50
+  },
+  {
+   "agent": "luna",
+   "model": "gpt-6-luna",
+   "engine": "codex",
+   "arm": "open8",
+   "item": "ep472",
+   "problem": "ep472-open",
+   "rep": 2,
+   "order": 51
+  },
+  {
+   "agent": "luna",
+   "model": "gpt-6-luna",
+   "engine": "codex",
+   "arm": "bb8",
+   "item": "ep474",
+   "problem": "ep474-blackbox",
+   "rep": 1,
+   "order": 52
+  },
+  {
+   "agent": "luna",
+   "model": "gpt-6-luna",
+   "engine": "codex",
+   "arm": "bb8",
+   "item": "ep411",
+   "problem": "ep411-blackbox",
+   "rep": 2,
+   "order": 53
+  },
+  {
+   "agent": "luna",
+   "model": "gpt-6-luna",
+   "engine": "codex",
+   "arm": "open8",
+   "item": "ep474",
+   "problem": "ep474-open",
+   "rep": 2,
+   "order": 54
+  },
+  {
+   "agent": "luna",
+   "model": "gpt-6-luna",
+   "engine": "codex",
+   "arm": "open8",
+   "item": "ep413",
+   "problem": "ep413-open",
+   "rep": 5,
+   "order": 55
+  },
+  {
+   "agent": "luna",
+   "model": "gpt-6-luna",
+   "engine": "codex",
+   "arm": "open8",
+   "item": "ep411",
+   "problem": "ep411-open",
+   "rep": 3,
+   "order": 56
+  },
+  {
+   "agent": "luna",
+   "model": "gpt-6-luna",
+   "engine": "codex",
+   "arm": "bb8",
+   "item": "ep415",
+   "problem": "ep415-blackbox",
+   "rep": 1,
+   "order": 57
+  },
+  {
+   "agent": "luna",
+   "model": "gpt-6-luna",
+   "engine": "codex",
+   "arm": "open8",
+   "item": "ep411",
+   "problem": "ep411-open",
+   "rep": 5,
+   "order": 58
+  },
+  {
+   "agent": "luna",
+   "model": "gpt-6-luna",
+   "engine": "codex",
+   "arm": "open8",
+   "item": "ep476",
+   "problem": "ep476-open",
+   "rep": 1,
+   "order": 59
+  },
+  {
+   "agent": "luna",
+   "model": "gpt-6-luna",
+   "engine": "codex",
+   "arm": "open8",
+   "item": "ep415",
+   "problem": "ep415-open",
+   "rep": 5,
+   "order": 60
   }
  ],
  "pilot_rows": [

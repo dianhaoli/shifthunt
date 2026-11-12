@@ -152,3 +152,4 @@ Run id = first 12 characters of the container id (agent runs) or the request bat
 | 2026-11-11T18:33Z | 19480c0694e9 | bb16 | gpt | ep472 | ok | 0.734 | 80.728 | 78.403 |
 | 2026-11-11T18:50Z | accf0206823a | bb16 | gpt | ep476 | ok | 0.644 | 81.372 | 78.403 |
 | 2026-11-11T19:03Z | 2cbf3801f213 | bb16 | gpt | ep476 | ok | 1.375 | 82.747 | 78.403 |
+| 2026-11-12T06:16Z | 1a2e60748088 | open8 (pilot) | luna | ep472 | ok | 0.136 | 82.883 | 78.403 |

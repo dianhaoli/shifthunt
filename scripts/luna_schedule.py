@@ -13,8 +13,8 @@ changes only these things, in this process (the pattern of scripts/bb16_schedule
                   engine (Codex CLI, CODEX_EFFORT=max), image, launcher settings, tools and budgets as Terra's
                   Block 1 runs; only the model differs. Run directories: r1112_luna_open8, r1112_luna_bb8 (pilot
                   r1112_pilot_luna_open8).
-  run orders      in results/blackbox_1112/luna/: runorder_luna.csv (48 counted jobs: Luna x {open8, bb8} x the
-                  six items x 4, Block 1's method, seed "luna-1112") and runorder_luna_pilot.csv (one pilot, Luna
+  run orders      in results/blackbox_1112/luna/: runorder_luna.csv (60 counted jobs: Luna x open8 x the six items x 6
+                  and Luna x bb8 x the six items x 4, Block 1's method, seed "luna-1112") and runorder_luna_pilot.csv (one pilot, Luna
                   open8 ep472). --results stays results/blackbox_1112 (ledger and RUNLOG shared, block key "luna").
   prices          OPENAI_PRICES must be LUNA_PRICES (the preflight refuses any other value). The collector turns
                   Codex token counts into USD with them.
@@ -39,12 +39,12 @@ import blackbox_schedule as BS  # noqa: E402
 AGENT, MODEL, ENGINE = "luna", "gpt-6-luna", "codex"
 ARMS = ("open8", "bb8")
 BLOCK = "luna"
-RUNS_PER_ITEM = 4
+RUNS_PER_ITEM = {"open8": 6, "bb8": 4}
 SEED_TEXT = "luna-1112"
 SEED = int.from_bytes(hashlib.sha256(SEED_TEXT.encode()).digest(), "big")
 PILOT = ("open8", "ep472")
 LUNA_PRICES = (0.10, 0.01, 0.125, 0.50)  # input, cache read, cache write, output; USD per 1M tokens (list price)
-ARM_CAP_USD = 8.0
+ARM_CAP_USD = 20.0
 ARM_EST_USD = 0.50   # fixed in PREREG_LUNA.md section 6 after the pilot
 LUNA_DIR = f"{BS.STUDY_RESULTS}/luna"
 RUNORDER, PILOT_RUNORDER, RUNORDER_JSON, HASHFILE = ("runorder_luna.csv", "runorder_luna_pilot.csv",
@@ -54,7 +54,7 @@ HASH_REQUIRED = (f"{LUNA_DIR}/PREREG_LUNA.md", f"{LUNA_DIR}/{RUNORDER}", f"{LUNA
 
 for mod in (R, BS):
     mod.AGENTS[AGENT] = (MODEL, ENGINE)
-R.BLOCKS[BLOCK] = [(AGENT, ARMS, RUNS_PER_ITEM)]
+R.BLOCKS[BLOCK] = [(AGENT, (arm,), RUNS_PER_ITEM[arm]) for arm in ARMS]
 BS.STUDY_OPENAI_PRICES = LUNA_PRICES
 STUDY_CONTINGENCY = BS.CONTINGENCY
 BS.CONTINGENCY = 0.0
