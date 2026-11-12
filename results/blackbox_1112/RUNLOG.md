@@ -169,3 +169,11 @@ Run id = first 12 characters of the container id (agent runs) or the request bat
 | 2026-11-12T07:42Z | fbdc8b2802d9 | open8 | luna | ep472 | ok | 0.113 | 84.173 | 78.403 |
 | 2026-11-12T07:44Z | d811befcd40f | open8 | luna | ep415 | ok | 0.103 | 84.276 | 78.403 |
 | 2026-11-12T07:50Z | judge (214 calls; results/private_1112/judge/raw) | judge | gpt-6.1-terra x214 | - | ok 214/214 | 1.970 | 86.246 | 78.403 |
+| 2026-11-12T07:51Z | f9de33387f54 | bb8 | luna | ep415 | ok | 0.040 | 86.286 | 78.403 |
+| 2026-11-12T07:57Z | a0ba410d8d79 | bb8 | luna | ep411 | ok | 0.062 | 86.348 | 78.403 |
+| 2026-11-12T08:03Z | 058c5dfce786 | bb8 | luna | ep476 | ok | 0.097 | 86.445 | 78.403 |
+| 2026-11-12T08:04Z | cdff161c3af5 | open8 | luna | ep474 | ok | 0.072 | 86.517 | 78.403 |
+| 2026-11-12T08:10Z | 747a7939118c | bb8 | luna | ep472 | ok | 0.057 | 86.574 | 78.403 |
+| 2026-11-12T08:18Z | 183f5b9aac7a | bb8 | luna | ep411 | ok | 0.036 | 86.610 | 78.403 |
+| 2026-11-12T08:20Z | 04f09e6c9989 | bb8 | luna | ep413 | ok | 0.080 | 86.690 | 78.403 |
+| 2026-11-12T08:23Z | 5f0611b69ae3 | open8 | luna | ep476 | ok | 0.111 | 86.801 | 78.403 |
