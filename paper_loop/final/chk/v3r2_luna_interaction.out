@@ -1,0 +1,6 @@
+scale by rank-1 isolation: ratio 0.423, expected Luna trap widening 0.388 -> 7.0 of 18; P(0)=1.45e-04
+targeting ratio Terra 11.0; expected Luna trap widening 0.306 -> 5.5 of 18; P(0)=1.41e-03
+Terra trap vs ordinary widening (11, 12) (4, 48) Fisher two-sided p=4.4e-08
+Luna trap vs ordinary widening (0, 18) (2, 72) Fisher two-sided p=1
+trapname Terra 0.92 Luna 0.06 deficit 0.86
+two Terra 1.00 Luna 0.22 deficit 0.78

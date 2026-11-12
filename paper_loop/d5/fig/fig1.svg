@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="300" viewBox="0 0 760 300" font-family="Helvetica, Arial, sans-serif" font-size="12">
+<rect width="760" height="300" fill="#ffffff"/>
+<text x="20" y="22" font-size="13" font-weight="bold" fill="#222">A. Verdicts at matched 8 exact queries (GPT + Haiku, 144 per arm)</text>
+<text x="20" y="64" fill="#222" font-weight="bold">Open-8 (proxy)</text>
+<text x="182" y="64" text-anchor="end" fill="#444">named</text>
+<rect x="190" y="50" width="2.6" height="20" fill="#d1495b"/>
+<rect x="192.6" y="50" width="252.2" height="20" fill="#c9ced6"/>
+<text x="450.8" y="64" fill="#222">1/98 wrong</text>
+<text x="182" y="92" text-anchor="end" fill="#444">none</text>
+<rect x="190" y="78" width="26.0" height="20" fill="#2e86ab"/>
+<rect x="216.0" y="78" width="93.6" height="20" fill="#c9ced6"/>
+<text x="315.6" y="92" fill="#222">10/46 wrong</text>
+<text x="20" y="136" fill="#222" font-weight="bold">BB-8 (no proxy)</text>
+<text x="182" y="136" text-anchor="end" fill="#444">named</text>
+<rect x="190" y="122" width="70.2" height="20" fill="#d1495b"/>
+<rect x="260.2" y="122" width="132.6" height="20" fill="#c9ced6"/>
+<text x="398.8" y="136" fill="#222">27/78 wrong</text>
+<text x="182" y="164" text-anchor="end" fill="#444">none</text>
+<rect x="190" y="150" width="85.8" height="20" fill="#2e86ab"/>
+<rect x="275.8" y="150" width="85.8" height="20" fill="#c9ced6"/>
+<text x="367.6" y="164" fill="#222">33/66 wrong</text>
+<rect x="20" y="196" width="12" height="12" fill="#d1495b"/><text x="37" y="206" fill="#333">commission (named, wrong)</text>
+<rect x="190" y="196" width="12" height="12" fill="#2e86ab"/><text x="207" y="206" fill="#333">omission (none, wrong)</text>
+<rect x="360" y="196" width="12" height="12" fill="#c9ced6"/><text x="377" y="206" fill="#333">correct</text>
+<text x="540" y="22" font-size="13" font-weight="bold" fill="#222">B. Recheck `none` first</text>
+<rect x="560" y="50" width="170" height="170" fill="none" stroke="#888"/>
+<line x1="560" y1="220" x2="730" y2="50" stroke="#aaa" stroke-dasharray="4 3"/>
+<polyline points="560.0,220.0 614.4,65.3 730.0,50.0" fill="none" stroke="#2e86ab" stroke-width="2.2"/>
+<circle cx="614.4" cy="65.3" r="3.5" fill="#2e86ab"/>
+<text x="620.4" y="69.3" fill="#2e86ab">Open-8: 32% → 91%</text>
+<polyline points="560.0,220.0 638.2,126.5 730.0,50.0" fill="none" stroke="#7a7a7a" stroke-width="2.2"/>
+<circle cx="638.2" cy="126.5" r="3.5" fill="#7a7a7a"/>
+<text x="644.2" y="140.5" fill="#7a7a7a">BB-8: 46% → 55%</text>
+<text x="645.0" y="238" text-anchor="middle" fill="#444">share of verdicts rechecked</text>
+<text x="550" y="135.0" text-anchor="middle" fill="#444" transform="rotate(-90 550 135.0)">share of errors caught</text>
+<text x="696.0" y="104.4" fill="#999" font-size="10">random</text>
+</svg>
