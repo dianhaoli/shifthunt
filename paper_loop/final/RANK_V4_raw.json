@@ -1,0 +1,225 @@
+{
+  "summary": "Blind 5-reviewer panel scores the user rewrite against the previous best versions",
+  "agentCount": 5,
+  "logs": [],
+  "result": {
+    "agg": [
+      {
+        "label": "X",
+        "version": "V3_r2 (previous best)",
+        "score": 0,
+        "scores": [],
+        "rigor": 0,
+        "cfp": 0,
+        "clarity": 0,
+        "motivation": 0,
+        "headline": [],
+        "firsts": 0,
+        "avg_rank": 0
+      },
+      {
+        "label": "Y",
+        "version": "USER REWRITE",
+        "score": 0,
+        "scores": [],
+        "rigor": 0,
+        "cfp": 0,
+        "clarity": 0,
+        "motivation": 0,
+        "headline": [],
+        "firsts": 0,
+        "avg_rank": 0
+      },
+      {
+        "label": "Z",
+        "version": "PAPER_BEST (grand-tournament winner)",
+        "score": 0,
+        "scores": [],
+        "rigor": 0,
+        "cfp": 0,
+        "clarity": 0,
+        "motivation": 0,
+        "headline": [],
+        "firsts": 0,
+        "avg_rank": 0
+      }
+    ],
+    "y_vs_x": [
+      "Y keeps X's evidence and claims but turns the dense prose into readable sentences, lists and a numbered recipe. It also adds a clear 'why an interpretability task' paragraph that links automated auditing, oversight and the judge's blindness to omissions, so its motivation and clarity are clearly stronger. On the downside, Y is noticeably longer and risks breaking the 8-page limit. Its motivation leans toward interpretability oversight rather than the CFP's broader 'evaluating AI scientists' framing, and it adds no new evidence, so X's density is the price of fitting more into the page budget.",
+      "Y has the same evidence, numbers and inference wording as X, but it is much easier to read. It splits run populations and the recipe into lists, breaks up long sentences, and adds a motivation paragraph that ties the interpretability substrate to a measured result: confident 'nothing found' answers are the most common surviving error and the one the judge most often credits. Y is worse in three ways: it is about 12% longer, which puts the 8-page limit at risk; its abstract runs to two paragraphs; and it adds one claim the data do not test ('worse than no auditor at all'). Rigor does not change.",
+      "Y runs the same experiments and states the same claims as X. It adds a 'Why an interpretability task' paragraph and a closing passage on oversight, arguing that automated auditors' confident 'nothing found' reads as assurance. It ties that argument to its own data: 18.7% of `none` answers are wrong, and the judge credits 41/44 omissions. That makes the stakes much more convincing, and the shorter sentences, bulleted terms and numbered recipe make it easier to follow. On the downside, Y is about 800 words longer (likely over 8 pages), repeats its claims in the abstract, intro and §5, and its claim that agents can 'keep pace' with the models they audit is a stretch given a synthetic rank-2 trap on a linear probe over three items.",
+      "Y has the same evidence and claims as X but says why they matter much better. A new 'Why an interpretability task' paragraph links the work to scalable oversight and to the 'nothing found' failure that the judge cannot catch, and the conclusion closes on that point. Y is also easier to read: sentences are split, the terms, runs and recipe steps are bulleted lists, and the Limitations section is broken into paragraphs. Its weaknesses are length and some rhetoric. The expansion probably pushes the paper past the 8-page AAAI limit, the oversight framing claims a bit more urgency than six toy items can support, and none of the density problems with shifting denominators in §4–§5.3 are fixed.",
+      "Y has the same evidence as X but adds a clear reason for why it matters: agents auditing models for oversight, where a confident 'nothing found' reads as assurance and is exactly what the report-reading judge credits. Y carries that through §5.2 and the conclusion. It also breaks X's dense sentences into shorter ones and turns the terms, runs and recipe into lists, so it is easier to follow in one read. On the downside, Y is noticeably longer and probably over the page limit, its abstract grows to two paragraphs, and the safety-oversight framing slightly dilutes the 'autonomous scientific discovery' focus the call asks for. It adds no new results."
+    ],
+    "fixes": [
+      [
+        "Break the item bottleneck. Run the agents on fresh generator items and on the existing rank-3 to rank-6 traps in the bank. This turns 'widening by one step on three items' into a depth-of-search measurement with real item-level power, and it is the paper's own stated decisive next run.",
+        "Instantiate the proxy-and-gold recipe in a second domain that research-agent builders care about, even at small scale. For example, use an MLE-bench-style task where the validation score is the proxy and test submissions are rationed, with matched budgets. This would support the claim about AI scientists in general, which is currently only argued.",
+        "Bring back Z's per-agent table of certified vs judge-implied rates showing that the judge reorders the agents, and add the pre-announced judge arm that also sees the exact-query log. That makes Claim 2 the paper's most actionable result for the many benchmarks that grade with LLM judges.",
+        "Cut to 8 AAAI pages. Move the evidence-tag system, overlapping denominators and Haiku descriptive arms to the appendix, and keep the AI-scientist framing first, with the interpretability-oversight paragraph as the reason for the test bed rather than the thesis.",
+        "Add arms that make the process claims causal and cost-normalized. A forced-allocation arm and a surrogate-only arm (approximate logits without latents) would separate the value of the ranking from the value of interpretability. A noisy-gold variant would stress evidence use. Also plot cost per pass against exact budget, so the cost-normalized reporting the CFP asks for is a figure rather than one $0.006 break-even number."
+      ],
+      [
+        "Get item-level evidence for Claim 3. Run the three bank traps that put the [main] at proxy rank 6, plus fresh generator items, for Terra and Luna, so the widening and model-dependence results can rise above the 0.25 item-level floor. Until then, say 'run-level, conditional on three rank-2 items' in the abstract next to 11/12 vs 0/18, not only in Section 5.3.",
+        "Fit to 8 pages. Cut the abstract to one paragraph of about 200 words, remove the repeated denominator explanations (11/12 vs 23/24 vs 17/18) from Sections 1 and 4, and move the multi-denominator note and the Haiku descriptive arms to the appendix.",
+        "Bring in Z's two robustness analyses. The conditional route test (among runs that isolated the [main], wide first batch 25/26 vs 2/5; agent-stratified p=2e-4) answers the 'true by definition' objection to Figure 1. The token-cap sensitivity analysis (C1 >= +0.71 at any cap >= 86k, +0.46 at the Open-8 median) answers the unmatched-token concern with numbers instead of a single median.",
+        "Fix weak inference points. Report the judge kappa with an item-clustered interval or per-item kappas instead of the bootstrap the paper admits is too narrow. Drop or clearly label the three-point logistic fit ('match near 36 queries'). Either commit a script for the Luna '[decoy] after its own clean exact pair' count (now a README count) and report the per-run readings, or remove it from Table 4.",
+        "Unbundle the proxy and tighten the rhetoric. Add, or at least pre-register, a surrogate-only arm (approximate logits without latent ids) and a judge that sees the exact-query log, so it is clear whether the gain comes from interpretability or just a cheap ranking. Replace 'can be worse than no auditor at all' with the measured statement (18.7% of 'none' answers wrong vs 2.5% of named claims; 41/53 judge false credits were omissions)."
+      ],
+      [
+        "Get under 8 pages. Shorten the two-paragraph abstract to one, state each Claim once rather than three times (intro, §5 header, §5 lead sentence), and move the Luna capability-scaling paragraph and Table 4 to the appendix. Then soften the oversight sentence to say what the evidence supports: an omission-heavy error profile that report-reading judges miss.",
+        "Run the agents on fresh generator items and on the existing rank-6 bank traps, or at least one rank-3 trap. This raises the item-level n above 3 (floor 0.25) and tests how far agents search, not just whether they widen by one step. As it stands, Claim 3 and 'verification without search' describe three items.",
+        "Make removal count or drop the 'remove it' framing. Report agent results at the setting where removal binds (f=0.9, k=8). Add an automated SHIFT or Karvonen-style latent-reading baseline at matched budget so §7 is a real comparison rather than a description. Say in the body that on traps a passing removal (threshold 0.15-0.22) leaves most of the reliance in place.",
+        "Make the judge study harder to dismiss. Add a judge arm that sees the exact-query log, add a judge model other than Terra, and restore Z's disclosure that agents' messages were not written as reports, so Claim 2 does not read as a strawman of report-based grading.",
+        "Tighten provenance and causal evidence. Commit a script for the Luna 'decoy submitted after its own clean exact test' count (currently a README count). Resolve or remove the [oct-check] material. Say prominently that the L1/L2 pre-registration followed Terra's results. Add a forced-allocation arm, where the runner-up is required in the first batch, to test causally that first-batch width drives trap outcomes."
+      ],
+      [
+        "Raise the item-level n. Run fresh generator items and the existing rank-6 traps from the bank with at least one agent. Every trap claim currently has an item-level floor of p = 0.25, and 'widening' is only tested one step deep, which is the main reason for a toy-task-overreach critique.",
+        "Add a forced-allocation arm or a B=4 arm. This would turn targeted versus blanket widening into a score difference rather than a trace-based, partly near-definitional route association (wide first batch passes 25/26). It would also give Claim 3 a causal test.",
+        "Strengthen Claim 2. Add a judge that sees the exact-query log, use a judge model different from the main agent (Terra currently judges Terra), and bring in Z's per-agent judge-implied table showing that the agents would be reordered. That table makes the consequence concrete in a way the hedged range from -0.21 to +0.38 does not.",
+        "Cut to the 8-page limit and reduce denominator churn. Report one canonical population per claim in a single table, move Haiku-specific details and the multiple widening denominators to the appendix, and add the budget-curve figure (NAME vs B with the proxy point) so that Claim 1 can be read at a glance.",
+        "Address the Luna confound and the proxy bundling. Note that the Luna pre-registration was written after Terra's results and that Luna is weaker in general; if possible, add a second same-harness model pair. Add a surrogate-only arm (a ranking without latents) so that the value of interpretability tools is separated from the value of any free ranking. This is also what would let the recipe generalize to 'autonomous scientific discovery' beyond SAEs."
+      ],
+      [
+        "Cut Y to the 8-page limit. Merge §6 (failure/success modes) into §5.3, since it largely repeats it. Move most of §7 (SHIFT comparison) and the denominator-reconciliation paragraph in §4 to the appendix, and shorten the two-paragraph abstract back to one.",
+        "Make Claim 2 more vivid by bringing in Z's per-agent table. Graded by the judge, Haiku would tie Terra, Opus would rank first, and most of the budget effect would vanish. This is easier to grasp and to discuss than the '+0.67 to between −0.21 and +0.38' range.",
+        "Run at least one deeper trap from the bank (the true cue at proxy rank 3 or 6) and one fresh generated item, or a forced-allocation arm. Then 'verification without search' becomes a test of search depth rather than of one-step widening. If that is not possible, soften the title and Claim 3.",
+        "Add a main-text budget-curve figure: Terra's success against the exact budget without the proxy, with the scripted reference policies and the with-proxy point at 8 queries. Readers then see the 'proxy worth more than 8 and up to 64 exact queries' result at a glance instead of decoding Table 2.",
+        "Tidy the evidence hygiene. Either commit a script for the Luna 'submitted the decoy after its own clean exact test' count or drop it from Table 4 (it currently rests on a README count with no committed script). Pick one canonical denominator per behaviour in the main text, and cut the per-sentence tags down to the confirmatory/exploratory distinction."
+      ]
+    ],
+    "weaknesses": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "best_features": [
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  "workflowProgress": [
+    {
+      "type": "workflow_phase",
+      "index": 1,
+      "title": "Judge"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 1,
+      "label": "judge-1",
+      "phaseIndex": 1,
+      "phaseTitle": "Judge",
+      "agentId": "a1ecba0184a5d6047",
+      "model": "claude-opus-5-5",
+      "state": "done",
+      "startedAt": 1794504264634,
+      "queuedAt": 1794504264601,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "Y keeps X's evidence and claims but turns the dense prose i…",
+      "promptPreview": "Workshop: \"Effective and Efficient Evaluation for AI Scientists\" (AAAI-27). Full papers 6-8 AAAI two-column pages excluding references; appendix allowed. Calibrated 1-10 scale (5 borderline reject, 6 weak accept, 7 accept, 8 strong accept). Topics: construct validity, ground truth stronger than reviewer opinion, process-level evaluation from traces, benchmarks for research agents, LLM-as-judge rel…",
+      "promptFramed": true,
+      "lastProgressAt": 1794504302906,
+      "tokens": 139904,
+      "toolCalls": 4,
+      "durationMs": 38271,
+      "resultPreview": "{\"scores\":[{\"label\":\"X (PAPER_V3_r2)\",\"score\":7,\"rigor\":8,\"cfp_fit\":8,\"clarity\":6,\"motivation\":6,\"headline_supported\":\"partly\",\"decisive_weakness\":\"All agent evidence rests on six fixed, public items. The trap claims rest on three, all with the truth at proxy rank 2, so the paper shows one-step widening on one constructed interpretability task, not how AI scientists search in general. The prose is…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 2,
+      "label": "judge-2",
+      "phaseIndex": 1,
+      "phaseTitle": "Judge",
+      "agentId": "ad0cad344dc0cfd1c",
+      "model": "claude-opus-5-5",
+      "state": "done",
+      "startedAt": 1794504264634,
+      "queuedAt": 1794504264601,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "Y has the same evidence, numbers and inference wording as X…",
+      "promptPreview": "Workshop: \"Effective and Efficient Evaluation for AI Scientists\" (AAAI-27). Full papers 6-8 AAAI two-column pages excluding references; appendix allowed. Calibrated 1-10 scale (5 borderline reject, 6 weak accept, 7 accept, 8 strong accept). Topics: construct validity, ground truth stronger than reviewer opinion, process-level evaluation from traces, benchmarks for research agents, LLM-as-judge rel…",
+      "promptFramed": true,
+      "lastProgressAt": 1794504332362,
+      "tokens": 142062,
+      "toolCalls": 5,
+      "durationMs": 66899,
+      "resultPreview": "{\"scores\":[{\"label\":\"X (PAPER_V3_r2)\",\"score\":7,\"rigor\":7,\"cfp_fit\":8,\"clarity\":6,\"motivation\":6,\"headline_supported\":\"yes\",\"decisive_weakness\":\"The process-level claim (Claim 3, that widening depends on the model) rests on three trap items, all with the truth at proxy rank 2. The Terra-vs-Luna L1/L2 tests are run-level only (item-level floor 0.25) and are confounded with Luna's general weakness, …"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 3,
+      "label": "judge-3",
+      "phaseIndex": 1,
+      "phaseTitle": "Judge",
+      "agentId": "a9d41590b8b5d23da",
+      "model": "claude-opus-5-5",
+      "state": "done",
+      "startedAt": 1794504302911,
+      "queuedAt": 1794504264601,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "Y runs the same experiments and states the same claims as X…",
+      "promptPreview": "Workshop: \"Effective and Efficient Evaluation for AI Scientists\" (AAAI-27). Full papers 6-8 AAAI two-column pages excluding references; appendix allowed. Calibrated 1-10 scale (5 borderline reject, 6 weak accept, 7 accept, 8 strong accept). Topics: construct validity, ground truth stronger than reviewer opinion, process-level evaluation from traces, benchmarks for research agents, LLM-as-judge rel…",
+      "promptFramed": true,
+      "lastProgressAt": 1794504369776,
+      "tokens": 150453,
+      "toolCalls": 7,
+      "durationMs": 66865,
+      "resultPreview": "{\"scores\":[{\"label\":\"X (PAPER_V3_r2)\",\"score\":6.5,\"rigor\":7.5,\"cfp_fit\":8,\"clarity\":7,\"motivation\":6,\"headline_supported\":\"partly\",\"decisive_weakness\":\"The behavioural claim (Claim 3: agents verify the proxy's top pick but don't search past it) rests on three hand-built traps, all with the true cue at proxy rank 2. So the paper shows widening by one step only, with an item-level p-value floor of 0…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 4,
+      "label": "judge-4",
+      "phaseIndex": 1,
+      "phaseTitle": "Judge",
+      "agentId": "ab61d09052f4273b8",
+      "model": "claude-opus-5-5",
+      "state": "done",
+      "startedAt": 1794504332366,
+      "queuedAt": 1794504264601,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "Y has the same evidence and claims as X but says why they m…",
+      "promptPreview": "Workshop: \"Effective and Efficient Evaluation for AI Scientists\" (AAAI-27). Full papers 6-8 AAAI two-column pages excluding references; appendix allowed. Calibrated 1-10 scale (5 borderline reject, 6 weak accept, 7 accept, 8 strong accept). Topics: construct validity, ground truth stronger than reviewer opinion, process-level evaluation from traces, benchmarks for research agents, LLM-as-judge rel…",
+      "promptFramed": true,
+      "lastProgressAt": 1794504373688,
+      "tokens": 139861,
+      "toolCalls": 4,
+      "durationMs": 41322,
+      "resultPreview": "{\"scores\":[{\"label\":\"X (PAPER_V3_r2)\",\"score\":6,\"rigor\":7,\"cfp_fit\":8,\"clarity\":5,\"motivation\":6,\"headline_supported\":\"partly\",\"decisive_weakness\":\"The trap claims rest on three items, all with the truth at proxy rank 2. The central behavioural finding, that a wide first batch passes 25/26, is close to true by definition. 'Widening' therefore means testing one extra candidate on a toy task with ei…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 5,
+      "label": "judge-5",
+      "phaseIndex": 1,
+      "phaseTitle": "Judge",
+      "agentId": "a30cbbece2785cb1b",
+      "model": "claude-opus-5-5",
+      "state": "done",
+      "startedAt": 1794504369835,
+      "queuedAt": 1794504264601,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "Y has the same evidence as X but adds a clear reason for wh…",
+      "promptPreview": "Workshop: \"Effective and Efficient Evaluation for AI Scientists\" (AAAI-27). Full papers 6-8 AAAI two-column pages excluding references; appendix allowed. Calibrated 1-10 scale (5 borderline reject, 6 weak accept, 7 accept, 8 strong accept). Topics: construct validity, ground truth stronger than reviewer opinion, process-level evaluation from traces, benchmarks for research agents, LLM-as-judge rel…",
+      "promptFramed": true,
+      "lastProgressAt": 1794504404472,
+      "tokens": 139871,
+      "toolCalls": 4,
+      "durationMs": 34636,
+      "resultPreview": "{\"scores\":[{\"label\":\"X (PAPER_V3_r2)\",\"score\":6,\"rigor\":7,\"cfp_fit\":8,\"clarity\":6,\"motivation\":6,\"headline_supported\":\"partly\",\"decisive_weakness\":\"The trap claims rest on three fixed public items, each with the truth at proxy rank 2. Claim 3 can therefore only show widening by one step, which undercuts the 'without search' title. The prose is very compressed, with tags on most sentences and sever…"
+    }
+  ],
+  "totalTokens": 712151,
+  "totalToolCalls": 24
+}
