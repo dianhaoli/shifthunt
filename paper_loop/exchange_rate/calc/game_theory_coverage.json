@@ -1,0 +1,473 @@
+{
+ "A_minimax_one_batch_single_isolation": {
+  "shipped {1,2}": {
+   "B=4": {
+    "cells": 8,
+    "value_mw": 0.5062,
+    "closed_form": 0.5
+   },
+   "B=8": {
+    "cells": 8,
+    "value_mw": 1.0,
+    "closed_form": 1.0
+   },
+   "B=16": {
+    "cells": 8,
+    "value_mw": 1.0,
+    "closed_form": 1.0
+   }
+  },
+  "bank {1,2,6}": {
+   "B=4": {
+    "cells": 12,
+    "value_mw": 0.3389,
+    "closed_form": 0.3333
+   },
+   "B=8": {
+    "cells": 12,
+    "value_mw": 0.6722,
+    "closed_form": 0.6667
+   },
+   "B=16": {
+    "cells": 12,
+    "value_mw": 1.0,
+    "closed_form": 1.0
+   }
+  },
+  "any rank {1..8}": {
+   "B=4": {
+    "cells": 32,
+    "value_mw": 0.1277,
+    "closed_form": 0.125
+   },
+   "B=8": {
+    "cells": 32,
+    "value_mw": 0.2547,
+    "closed_form": 0.25
+   },
+   "B=16": {
+    "cells": 32,
+    "value_mw": 0.5062,
+    "closed_form": 0.5
+   }
+  }
+ },
+ "B_bayes_value_width_k_clean_reads": {
+  "shipped": {
+   "width-1 (B=4)": 0.5,
+   "width-2 (B=8)": 1.0,
+   "width-3 (B=12)": 1.0,
+   "width-6 (B=24)": 1.0
+  },
+  "bank": {
+   "width-1 (B=4)": 0.7292,
+   "width-2 (B=8)": 0.9375,
+   "width-3 (B=12)": 0.9375,
+   "width-6 (B=24)": 1.0
+  },
+  "trap at rank 3": {
+   "width-1 (B=4)": 0.5,
+   "width-2 (B=8)": 0.5,
+   "width-3 (B=12)": 1.0,
+   "width-6 (B=24)": 1.0
+  },
+  "trap at rank 6": {
+   "width-1 (B=4)": 0.5,
+   "width-2 (B=8)": 0.5,
+   "width-3 (B=12)": 0.5,
+   "width-6 (B=24)": 1.0
+  }
+ },
+ "B_adversary_vs_width_k": {
+  "width-1": "trap at rank 2 -> trap success 0, episode value 0.5 if half are two-part, 0 if all are traps",
+  "width-2": "trap at rank 3 -> trap success 0, episode value 0.5 if half are two-part, 0 if all are traps",
+  "width-3": "trap at rank 4 -> trap success 0, episode value 0.5 if half are two-part, 0 if all are traps"
+ },
+ "C_two_stage_adaptive_minimax": {
+  "shipped {2}": {
+   "B=6": 1.0,
+   "B=8": 1.0,
+   "B=12": 1.0,
+   "B=16": 1.0
+  },
+  "bank {2,6}": {
+   "B=6": 0.5,
+   "B=8": 1.0,
+   "B=12": 1.0,
+   "B=16": 1.0
+  },
+  "any {2..8}": {
+   "B=6": 0.1429,
+   "B=8": 0.2857,
+   "B=12": 0.5714,
+   "B=16": 0.8571
+  }
+ },
+ "D_trap_success_by_depth_with_free_detection_B8": {
+  "no signal (tpr=fpr=0)": {
+   "trap rank 2": 1.0,
+   "trap rank 3": 0.0,
+   "trap rank 4": 0.0,
+   "trap rank 5": 0.0,
+   "trap rank 6": 0.0
+  },
+  "Terra's widening pattern as a detector (23/24, 5/88)": {
+   "trap rank 2": 0.993,
+   "trap rank 3": 0.95,
+   "trap rank 4": 0.805,
+   "trap rank 5": 0.805,
+   "trap rank 6": 0.0
+  },
+  "G error-term tell at the all-shipped-caught threshold (1.0, 0.62)": {
+   "trap rank 2": 1.0,
+   "trap rank 3": 0.324,
+   "trap rank 4": 0.056,
+   "trap rank 5": 0.055,
+   "trap rank 6": 0.0
+  },
+  "perfect detector": {
+   "trap rank 2": 1.0,
+   "trap rank 3": 1.0,
+   "trap rank 4": 1.0,
+   "trap rank 5": 1.0,
+   "trap rank 6": 0.0
+  }
+ },
+ "E_robust_bayes_eps_contamination_of_bank_prior_B8": {
+  "bank support {1,2,6}": {
+   "eps=0.0": {
+    "robust_value": 0.9375,
+    "bayes_part": 0.9375,
+    "worst_rank_coverage": 0.0,
+    "coverage_x_r": {
+     "1": 1.0,
+     "2": 1.0,
+     "6": 0.0
+    }
+   },
+   "eps=0.1": {
+    "robust_value": 0.8438,
+    "bayes_part": 0.9375,
+    "worst_rank_coverage": 0.0,
+    "coverage_x_r": {
+     "1": 1.0,
+     "2": 1.0,
+     "6": 0.0
+    }
+   },
+   "eps=0.2": {
+    "robust_value": 0.7917,
+    "bayes_part": 0.8646,
+    "worst_rank_coverage": 0.5,
+    "coverage_x_r": {
+     "1": 1.0,
+     "2": 0.5,
+     "6": 0.5
+    }
+   },
+   "eps=0.3": {
+    "robust_value": 0.7552,
+    "bayes_part": 0.8646,
+    "worst_rank_coverage": 0.5,
+    "coverage_x_r": {
+     "1": 1.0,
+     "2": 0.5,
+     "6": 0.5
+    }
+   },
+   "eps=0.5": {
+    "robust_value": 0.6823,
+    "bayes_part": 0.8646,
+    "worst_rank_coverage": 0.5,
+    "coverage_x_r": {
+     "1": 1.0,
+     "2": 0.5,
+     "6": 0.5
+    }
+   },
+   "eps=0.7": {
+    "robust_value": 0.6644,
+    "bayes_part": 0.6746,
+    "worst_rank_coverage": 0.66,
+    "coverage_x_r": {
+     "1": 0.68,
+     "2": 0.66,
+     "6": 0.66
+    }
+   },
+   "eps=1.0": {
+    "robust_value": 0.66,
+    "bayes_part": 0.6613,
+    "worst_rank_coverage": 0.66,
+    "coverage_x_r": {
+     "1": 0.66,
+     "2": 0.66,
+     "6": 0.68
+    }
+   }
+  },
+  "any rank {1..8}": {
+   "eps=0.0": {
+    "robust_value": 0.9375,
+    "bayes_part": 0.9375,
+    "worst_rank_coverage": 0.0,
+    "coverage_x_r": {
+     "1": 1.0,
+     "2": 1.0,
+     "3": 0.0,
+     "4": 0.0,
+     "5": 0.0,
+     "6": 0.0,
+     "7": 0.0,
+     "8": 0.0
+    }
+   },
+   "eps=0.1": {
+    "robust_value": 0.8438,
+    "bayes_part": 0.9375,
+    "worst_rank_coverage": 0.0,
+    "coverage_x_r": {
+     "1": 1.0,
+     "2": 1.0,
+     "3": 0.0,
+     "4": 0.0,
+     "5": 0.0,
+     "6": 0.0,
+     "7": 0.0,
+     "8": 0.0
+    }
+   },
+   "eps=0.2": {
+    "robust_value": 0.75,
+    "bayes_part": 0.9375,
+    "worst_rank_coverage": 0.0,
+    "coverage_x_r": {
+     "1": 1.0,
+     "2": 1.0,
+     "3": 0.0,
+     "4": 0.0,
+     "5": 0.0,
+     "6": 0.0,
+     "7": 0.0,
+     "8": 0.0
+    }
+   },
+   "eps=0.3": {
+    "robust_value": 0.6562,
+    "bayes_part": 0.9375,
+    "worst_rank_coverage": 0.0,
+    "coverage_x_r": {
+     "1": 1.0,
+     "2": 1.0,
+     "3": 0.0,
+     "4": 0.0,
+     "5": 0.0,
+     "6": 0.0,
+     "7": 0.0,
+     "8": 0.0
+    }
+   },
+   "eps=0.5": {
+    "robust_value": 0.4688,
+    "bayes_part": 0.9375,
+    "worst_rank_coverage": 0.0,
+    "coverage_x_r": {
+     "1": 1.0,
+     "2": 1.0,
+     "3": 0.0,
+     "4": 0.0,
+     "5": 0.0,
+     "6": 0.0,
+     "7": 0.0,
+     "8": 0.0
+    }
+   },
+   "eps=0.7": {
+    "robust_value": 0.3294,
+    "bayes_part": 0.7712,
+    "worst_rank_coverage": 0.14,
+    "coverage_x_r": {
+     "1": 1.0,
+     "2": 0.16,
+     "3": 0.14,
+     "4": 0.14,
+     "5": 0.14,
+     "6": 0.14,
+     "7": 0.14,
+     "8": 0.14
+    }
+   },
+   "eps=1.0": {
+    "robust_value": 0.25,
+    "bayes_part": 0.25,
+    "worst_rank_coverage": 0.25,
+    "coverage_x_r": {
+     "1": 0.25,
+     "2": 0.25,
+     "3": 0.25,
+     "4": 0.25,
+     "5": 0.25,
+     "6": 0.25,
+     "7": 0.25,
+     "8": 0.25
+    }
+   }
+  }
+ },
+ "F_exchange_rate_by_designer": {
+  "top-one [priv]": {
+   "shipped (trap rank 2)": {
+    "V": 0.5,
+    "X_vs_scripted_blind": 9.5,
+    "X_vs_Terra_blind": 12.0
+   },
+   "bank prior (1/2/6)": {
+    "V": 0.729,
+    "X_vs_scripted_blind": 14.2,
+    "X_vs_Terra_blind": 17.4
+   },
+   "trap rank 3": {
+    "V": 0.5,
+    "X_vs_scripted_blind": 9.5,
+    "X_vs_Terra_blind": 12.0
+   },
+   "trap rank 6": {
+    "V": 0.5,
+    "X_vs_scripted_blind": 9.5,
+    "X_vs_Terra_blind": 12.0
+   },
+   "all traps, rank 6 (worst case for these policies)": {
+    "V": 0.0,
+    "X_vs_scripted_blind": 0.0,
+    "X_vs_Terra_blind": 0.0
+   }
+  },
+  "top-two [priv]": {
+   "shipped (trap rank 2)": {
+    "V": 0.96,
+    "X_vs_scripted_blind": ">64",
+    "X_vs_Terra_blind": 42.2
+   },
+   "bank prior (1/2/6)": {
+    "V": 0.9,
+    "X_vs_scripted_blind": 46.5,
+    "X_vs_Terra_blind": 26.4
+   },
+   "trap rank 3": {
+    "V": 0.48,
+    "X_vs_scripted_blind": 9.2,
+    "X_vs_Terra_blind": 11.7
+   },
+   "trap rank 6": {
+    "V": 0.48,
+    "X_vs_scripted_blind": 9.2,
+    "X_vs_Terra_blind": 11.7
+   },
+   "all traps, rank 6 (worst case for these policies)": {
+    "V": 0.0,
+    "X_vs_scripted_blind": 0.0,
+    "X_vs_Terra_blind": 0.0
+   }
+  },
+  "hedge [priv]": {
+   "shipped (trap rank 2)": {
+    "V": 0.675,
+    "X_vs_scripted_blind": 12.9,
+    "X_vs_Terra_blind": 15.6
+   },
+   "bank prior (1/2/6)": {
+    "V": 0.735,
+    "X_vs_scripted_blind": 14.3,
+    "X_vs_Terra_blind": 17.6
+   },
+   "trap rank 3": {
+    "V": 0.66,
+    "X_vs_scripted_blind": 12.6,
+    "X_vs_Terra_blind": 15.3
+   },
+   "trap rank 6": {
+    "V": 0.66,
+    "X_vs_scripted_blind": 12.6,
+    "X_vs_Terra_blind": 15.3
+   },
+   "all traps, rank 6 (worst case for these policies)": {
+    "V": 0.51,
+    "X_vs_scripted_blind": 9.7,
+    "X_vs_Terra_blind": 12.2
+   }
+  },
+  "Terra, low (rank-3 = F1 isolation 0.125, rank 6 = 0.006)": {
+   "shipped (trap rank 2)": {
+    "V": 0.958,
+    "X_vs_scripted_blind": ">64",
+    "X_vs_Terra_blind": 41.3
+   },
+   "bank prior (1/2/6)": {
+    "V": 0.921,
+    "X_vs_scripted_blind": 57.8,
+    "X_vs_Terra_blind": 29.1
+   },
+   "trap rank 3": {
+    "V": 0.562,
+    "X_vs_scripted_blind": 10.6,
+    "X_vs_Terra_blind": 13.2
+   },
+   "trap rank 6": {
+    "V": 0.503,
+    "X_vs_scripted_blind": 9.6,
+    "X_vs_Terra_blind": 12.1
+   },
+   "all traps, rank 6 (worst case for these policies)": {
+    "V": 0.006,
+    "X_vs_scripted_blind": 0.1,
+    "X_vs_Terra_blind": 0.2
+   }
+  },
+  "Terra, high (rank-3 = 0.5, rank 6 = 0.006)": {
+   "shipped (trap rank 2)": {
+    "V": 0.958,
+    "X_vs_scripted_blind": ">64",
+    "X_vs_Terra_blind": 41.3
+   },
+   "bank prior (1/2/6)": {
+    "V": 0.921,
+    "X_vs_scripted_blind": 57.8,
+    "X_vs_Terra_blind": 29.1
+   },
+   "trap rank 3": {
+    "V": 0.75,
+    "X_vs_scripted_blind": 14.7,
+    "X_vs_Terra_blind": 18.2
+   },
+   "trap rank 6": {
+    "V": 0.503,
+    "X_vs_scripted_blind": 9.6,
+    "X_vs_Terra_blind": 12.1
+   },
+   "all traps, rank 6 (worst case for these policies)": {
+    "V": 0.006,
+    "X_vs_scripted_blind": 0.1,
+    "X_vs_Terra_blind": 0.2
+   }
+  }
+ },
+ "F_note": "X = blind budget matching V; 'proxy worth' = X - 8 (can be negative). Values below the blind curve's B=8 point are extrapolated linearly to (0,0) and are crude. Blind policies are rank-invariant (they never see rank), so the blind curve is the same under every designer.",
+ "G_mixture_topk_vs_uniform": {
+  "q=1.0": {
+   "V_shipped": 1.0,
+   "V_worst(any rank)": 0.0
+  },
+  "q=0.75": {
+   "V_shipped": 0.812,
+   "V_worst(any rank)": 0.062
+  },
+  "q=0.5": {
+   "V_shipped": 0.625,
+   "V_worst(any rank)": 0.125
+  },
+  "q=0.0": {
+   "V_shipped": 0.25,
+   "V_worst(any rank)": 0.25
+  }
+ }
+}

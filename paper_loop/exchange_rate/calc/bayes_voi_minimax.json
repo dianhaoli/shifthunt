@@ -1,0 +1,35 @@
+{
+ "note": "Noiseless adaptive exact DP, calibrated agent, adversary scatters the trap's main uniformly over proxy ranks 2..8. Values for B=0..7 recorded from the first full run of bayes_voi_minimax.py (437 s to B=7); the rerun was stopped at B=4 under CPU contention and matched B=0..4 exactly. Upper bound on the minimax value (single-candidate tests only).",
+ "B": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7
+ ],
+ "P_NAME": [
+  0.1667,
+  0.2917,
+  0.4345,
+  0.5476,
+  0.5833,
+  0.619,
+  0.6548,
+  0.6905
+ ],
+ "bits": {
+  "blind": 11.0,
+  "proxy shipped": 3.79,
+  "proxy bank": 3.48,
+  "proxy uniform 2..8": 5.2,
+  "proxy uniform 1..8": 4.91,
+  "proxy no traps": 2.0
+ },
+ "bits_per_single_test": {
+  "blind 1-of-8": 0.544,
+  "proxy rank-1, calibrated shipped": 0.954
+ }
+}
