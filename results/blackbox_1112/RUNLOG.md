@@ -300,3 +300,20 @@ Run id = first 12 characters of the container id (agent runs) or the request bat
 | 2026-11-13T20:29Z | gpuplan C6b: L2 set A 130 / Luna 60 / main 64, L2r set A open 36 / main 64 (results/private_1112/judge_ladder2/raw_c6b; gpuplan/c6b) | judge | gpt-6.1-terra x354 | - | ok 354/354 | 29.246 | 163.362 | 79.500 |
 | 2026-11-13T20:29Z | gpuplan C6c: L3 answer key on L1 190 / L2 254 / L0 harder 18 (results/private_1112/judge_ladder2/raw_c6c; gpuplan/c6c) | judge | gpt-6.1-terra x462 | - | ok 462/462 | 24.411 | 187.773 | 79.500 |
 | 2026-11-13T20:29Z | gpuplan C6b-H: Haiku H2 130 / H2r 36 on set A + its dry run 5 (results/private_1112/judge_ladder2/raw_haiku; gpuplan/c6bh); Anthropic 0.478 dry run + 3.695 counted in cum_anthropic | judge | claude-haiku-5-5 x171 | - | ok 170/171 (1 H2r unparsed) | 0.000 | 187.773 | 83.673 |
+| 2026-11-13T20:34Z | da553188f289 | open8 | gpt | ep803 | ok (codex_error_recovered) | 0.853 | 188.626 | 83.673 |
+| 2026-11-13T20:41Z | ffde34e5ae38 | open8 | gpt | ep803 | ok | 0.985 | 189.611 | 83.673 |
+| 2026-11-13T20:44Z | f2fa65511d82 | open8 | gpt | ep803 | ok | 1.191 | 190.802 | 83.673 |
+| 2026-11-13T20:57Z | f66704337977 | open8 | luna | ep803 | ok | 0.075 | 190.877 | 83.673 |
+| 2026-11-13T21:05Z | 9eb3fe020422 | open8 | luna | ep803 | ok | 0.124 | 191.001 | 83.673 |
+| 2026-11-13T21:07Z | 81ba8ed5b26a | open8 | luna | ep803 | ok | 0.109 | 191.110 | 83.673 |
+| 2026-11-13T21:18Z | 2aded45ab0d4 | open8 | luna | ep803 | ok | 0.124 | 191.234 | 83.673 |
+| 2026-11-13T21:21Z | 81a35962a717 | open8 | luna | ep803 | ok | 0.081 | 191.315 | 83.673 |
+| 2026-11-13T21:30Z | d80fa1b11e04 | open8 | luna | ep803 | ok | 0.157 | 191.472 | 83.673 |
+| 2026-11-13T21:35Z | deb5bbdaf401 | open8 | luna | ep803 | ok | 0.124 | 191.596 | 83.673 |
+| 2026-11-13T21:54Z | 98adf31a3acf | open8 | luna | ep801 | ok | 0.131 | 191.727 | 83.673 |
+| 2026-11-13T21:55Z | cd1addef1e5f | open8 | luna | ep801 | ok | 0.097 | 191.824 | 83.673 |
+| 2026-11-13T21:59Z | e8ee8c526e51 | open8 | luna | ep802 | ok | 0.140 | 191.964 | 83.673 |
+| 2026-11-13T22:10Z | 9d8c312c599e | open8 | luna | ep802 | ok | 0.097 | 192.061 | 83.673 |
+| 2026-11-13T22:29Z | gpuplan C14b: F2-c (ep803) Terra 7 counted (+2 rate-limit infra re-runs, $0.979) + Luna 7 counted on image r1114d (spend in the run rows above; gpuplan/c14b) | gpuplan | runs | - | ok | 0.000 | 192.061 | 83.673 |
+| 2026-11-13T22:29Z | gpuplan C14L: Luna +2 on F2-a and +2 on F2-b, r1114d (spend in the run rows above; gpuplan/c14l) | gpuplan | runs | - | ok | 0.000 | 192.061 | 83.673 |
+| 2026-11-13T22:29Z | gpuplan C14b H5c: frozen L0 judge on the 14 C14b + 4 C14L runs (results/private_1112/judge_c14b/raw; gpuplan/c14b/judge.json) | judge | gpt-6.1-terra x18 | - | ok 18/18 | 0.145 | 192.206 | 83.673 |
