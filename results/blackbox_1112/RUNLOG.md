@@ -222,3 +222,6 @@ Run id = first 12 characters of the container id (agent runs) or the request bat
 | 2026-11-13T07:26Z | gpuplan C21: audit-order curves and PPI line (gpuplan/c21_audit.json; scripts/c21_audit.py) | gpuplan | cpu/gpu only | - | ok | 0.000 | 90.755 | 78.403 |
 | 2026-11-13T07:43Z | 07975ccc1081 | open4 (pilot) | gpt | ep472 | ok | 0.686 | 91.441 | 78.403 |
 | 2026-11-13T08:00Z | gpuplan C8: frozen L0 judge on Luna 60 + Terra 24 re-sent (84 calls; results/private_1112/judge_luna/raw; gpuplan/c8) | judge | gpt-6.1-terra x84 | - | ok 84/84 | 0.665 | 92.106 | 78.403 |
+| 2026-11-13T08:15Z | 0fd2915bdbfc | open4 (pilot) | luna | ep472 | ok | 0.193 | 92.299 | 78.403 |
+| 2026-11-13T08:25Z | 9ddc6d011d4c | open8 (pilot) | luna | ep801 | ok | 0.049 | 92.348 | 78.403 |
+| 2026-11-13T08:36Z | 1e558a7628c9 | open8 (pilot) | luna | ep802 | ok | 0.139 | 92.487 | 78.403 |
