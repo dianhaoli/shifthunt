@@ -220,3 +220,5 @@ Run id = first 12 characters of the container id (agent runs) or the request bat
 | 2026-11-13T07:26Z | gpuplan X4: one-burst and allocation from logs, 13 agent x arm cells (gpuplan/xr_alloc.json; scripts/xr_alloc.py) | gpuplan | cpu/gpu only | - | ok | 0.000 | 90.755 | 78.403 |
 | 2026-11-13T07:26Z | gpuplan C19: judge vs certified leaderboard, L9 tau_b 0.23 (gpuplan/c19_reorder.json; scripts/c19_leaderboard.py) | gpuplan | cpu/gpu only | - | ok | 0.000 | 90.755 | 78.403 |
 | 2026-11-13T07:26Z | gpuplan C21: audit-order curves and PPI line (gpuplan/c21_audit.json; scripts/c21_audit.py) | gpuplan | cpu/gpu only | - | ok | 0.000 | 90.755 | 78.403 |
+| 2026-11-13T07:43Z | 07975ccc1081 | open4 (pilot) | gpt | ep472 | ok | 0.686 | 91.441 | 78.403 |
+| 2026-11-13T08:00Z | gpuplan C8: frozen L0 judge on Luna 60 + Terra 24 re-sent (84 calls; results/private_1112/judge_luna/raw; gpuplan/c8) | judge | gpt-6.1-terra x84 | - | ok 84/84 | 0.665 | 92.106 | 78.403 |
