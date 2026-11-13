@@ -291,3 +291,12 @@ Run id = first 12 characters of the container id (agent runs) or the request bat
 | 2026-11-13T19:19Z | gpuplan C7 slim: Terra TK 274, Luna LF/LK 548, Haiku HF 142 (+C6's H0) / HK 274 (results/private_1112/judge_panel/raw_*; gpuplan/c7); Haiku 0.390 in cum_anthropic | judge | gpt-6.1-terra x274, gpt-6-luna x548, claude-haiku-5-5 x416 | - | ok 1236/1238 (2 http_503) | 2.965 | 125.456 | 79.500 |
 | 2026-11-13T19:19Z | gpuplan C17 R2: the 214 frozen L0 calls re-sent byte-identical (results/private_1112/judge_panel/raw_terra TF2; gpuplan/c17) | judge | gpt-6.1-terra x214 | - | ok 214/214 | 2.023 | 127.479 | 79.500 |
 | 2026-11-13T19:19Z | gpuplan C6b/C6c dry runs (5 + 5 longest prompts, responses quarantined unread) and one cache test (results/private_1112/judge_ladder2/dryrun_*) | judge | gpt-6.1-terra x11 | - | ok 11/11 | 3.111 | 130.590 | 79.500 |
+| 2026-11-13T19:35Z | 7c9bd6f66c00 | open8 | gpt | ep803 | infra:api_error | 0.392 | 130.982 | 79.500 |
+| 2026-11-13T19:38Z | b970df841700 | open8 | gpt | ep803 | infra:api_error | 0.587 | 131.569 | 79.500 |
+| 2026-11-13T19:41Z | b35ef57685d8 | open8 | gpt | ep803 | ok (codex_error_recovered) | 0.754 | 132.323 | 79.500 |
+| 2026-11-13T20:11Z | 1fb67c2c0a9c | open8 | gpt | ep803 | ok (codex_error_recovered) | 0.603 | 132.926 | 79.500 |
+| 2026-11-13T20:17Z | 061fe4c54e1d | open8 | gpt | ep803 | ok (codex_error_recovered) | 0.525 | 133.451 | 79.500 |
+| 2026-11-13T20:19Z | 9e7c8d4a0352 | open8 | gpt | ep803 | ok (codex_error_recovered) | 0.665 | 134.116 | 79.500 |
+| 2026-11-13T20:29Z | gpuplan C6b: L2 set A 130 / Luna 60 / main 64, L2r set A open 36 / main 64 (results/private_1112/judge_ladder2/raw_c6b; gpuplan/c6b) | judge | gpt-6.1-terra x354 | - | ok 354/354 | 29.246 | 163.362 | 79.500 |
+| 2026-11-13T20:29Z | gpuplan C6c: L3 answer key on L1 190 / L2 254 / L0 harder 18 (results/private_1112/judge_ladder2/raw_c6c; gpuplan/c6c) | judge | gpt-6.1-terra x462 | - | ok 462/462 | 24.411 | 187.773 | 79.500 |
+| 2026-11-13T20:29Z | gpuplan C6b-H: Haiku H2 130 / H2r 36 on set A + its dry run 5 (results/private_1112/judge_ladder2/raw_haiku; gpuplan/c6bh); Anthropic 0.478 dry run + 3.695 counted in cum_anthropic | judge | claude-haiku-5-5 x171 | - | ok 170/171 (1 H2r unparsed) | 0.000 | 187.773 | 83.673 |
