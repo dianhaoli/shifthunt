@@ -1,0 +1,5 @@
+order,agent,model,engine,arm,item,problem,rep
+1,gpt,gpt-6.1-terra,codex,open8,ep802,ep802-open,6
+2,gpt,gpt-6.1-terra,codex,open8,ep801,ep801-open,6
+3,gpt,gpt-6.1-terra,codex,open8,ep802,ep802-open,7
+4,gpt,gpt-6.1-terra,codex,open8,ep801,ep801-open,7
