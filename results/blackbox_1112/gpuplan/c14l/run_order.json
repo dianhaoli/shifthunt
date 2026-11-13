@@ -1,0 +1,58 @@
+{
+ "item": "c14l",
+ "arm": "open8",
+ "tag": "r1114d",
+ "agents": {
+  "luna": {
+   "model": "gpt-6-luna",
+   "engine": "codex",
+   "cap_usd": 1.0,
+   "est_usd": 0.2,
+   "csv": "runorder_c14l_luna.csv",
+   "csv_sha256": "e758047f7d2c1ca8b5173016146d52e992674b93e9beb9ed01287aab290aadf9",
+   "rows": [
+    {
+     "agent": "luna",
+     "model": "gpt-6-luna",
+     "engine": "codex",
+     "arm": "open8",
+     "item": "ep801",
+     "problem": "ep801-open",
+     "rep": 6,
+     "order": 1
+    },
+    {
+     "agent": "luna",
+     "model": "gpt-6-luna",
+     "engine": "codex",
+     "arm": "open8",
+     "item": "ep802",
+     "problem": "ep802-open",
+     "rep": 6,
+     "order": 2
+    },
+    {
+     "agent": "luna",
+     "model": "gpt-6-luna",
+     "engine": "codex",
+     "arm": "open8",
+     "item": "ep801",
+     "problem": "ep801-open",
+     "rep": 7,
+     "order": 3
+    },
+    {
+     "agent": "luna",
+     "model": "gpt-6-luna",
+     "engine": "codex",
+     "arm": "open8",
+     "item": "ep802",
+     "problem": "ep802-open",
+     "rep": 7,
+     "order": 4
+    }
+   ]
+  }
+ },
+ "seed_rule": "replicate-major; per replicate the (agent, item) cells in numpy.random.default_rng(int.from_bytes(sha256(seed_text).digest(), 'big')).permutation order; seed_text 'c14x-1114-<item>-<agent>'"
+}
