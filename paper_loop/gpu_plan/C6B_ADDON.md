@@ -68,3 +68,11 @@ Run these in this order, each pre-registered before any counted call or run:
 
 If C14b's F2-c fails the build gates by 16 Nov 12:00 UTC, drop it and report two items. Everything must finish by
 17 Nov 23:59 UTC.
+
+**Addition to C6b: main-study runs at L2 (secondary).**
+- L2 is the transcript itself, so it does not need the replay join that kept the main study out of L1.
+- Also run L2 and L2r on the main study's 64 runs. These have no appended exact-query log; any D36-replay lines are
+  marked as recovered.
+- Report them separately from set A as secondary. This adds the Opus and Sonnet agents to the judge comparison.
+- The harder variant (18 runs) stays out.
+- Guard: +$5, within the $70 total.
