@@ -1,0 +1,306 @@
+{
+ "arm": "open4",
+ "problem_suffix": "-open4",
+ "runs_per_item": 2,
+ "items": [
+  "ep411",
+  "ep413",
+  "ep415",
+  "ep472",
+  "ep474",
+  "ep476"
+ ],
+ "seed_rule": "int.from_bytes(sha256(seed_text).digest(), 'big'); rows in the fixed order (agent, arm, item, rep), then numpy.random.default_rng(seed_int).permutation (blackbox_runorder.run_order)",
+ "agents": {
+  "gpt": {
+   "model": "gpt-6.1-terra",
+   "engine": "codex",
+   "seed_text": "open4-1113",
+   "cap_usd": 10.0,
+   "est_usd": 0.9,
+   "csv": "runorder_open4_gpt.csv",
+   "csv_sha256": "e525441a04abef6e618565b0be1a8d4379c8a65edc66c8466a8890634ef3020c",
+   "pilot_csv": "runorder_open4_gpt_pilot.csv",
+   "pilot_csv_sha256": "ac050d39c32d87ab0713e16a649323bfb56b3d7f649ffe32e637eae2226f7c48",
+   "rows": [
+    {
+     "agent": "gpt",
+     "model": "gpt-6.1-terra",
+     "engine": "codex",
+     "arm": "open4",
+     "item": "ep474",
+     "problem": "ep474-open4",
+     "rep": 2,
+     "order": 1
+    },
+    {
+     "agent": "gpt",
+     "model": "gpt-6.1-terra",
+     "engine": "codex",
+     "arm": "open4",
+     "item": "ep474",
+     "problem": "ep474-open4",
+     "rep": 1,
+     "order": 2
+    },
+    {
+     "agent": "gpt",
+     "model": "gpt-6.1-terra",
+     "engine": "codex",
+     "arm": "open4",
+     "item": "ep472",
+     "problem": "ep472-open4",
+     "rep": 1,
+     "order": 3
+    },
+    {
+     "agent": "gpt",
+     "model": "gpt-6.1-terra",
+     "engine": "codex",
+     "arm": "open4",
+     "item": "ep413",
+     "problem": "ep413-open4",
+     "rep": 1,
+     "order": 4
+    },
+    {
+     "agent": "gpt",
+     "model": "gpt-6.1-terra",
+     "engine": "codex",
+     "arm": "open4",
+     "item": "ep411",
+     "problem": "ep411-open4",
+     "rep": 2,
+     "order": 5
+    },
+    {
+     "agent": "gpt",
+     "model": "gpt-6.1-terra",
+     "engine": "codex",
+     "arm": "open4",
+     "item": "ep476",
+     "problem": "ep476-open4",
+     "rep": 2,
+     "order": 6
+    },
+    {
+     "agent": "gpt",
+     "model": "gpt-6.1-terra",
+     "engine": "codex",
+     "arm": "open4",
+     "item": "ep415",
+     "problem": "ep415-open4",
+     "rep": 1,
+     "order": 7
+    },
+    {
+     "agent": "gpt",
+     "model": "gpt-6.1-terra",
+     "engine": "codex",
+     "arm": "open4",
+     "item": "ep415",
+     "problem": "ep415-open4",
+     "rep": 2,
+     "order": 8
+    },
+    {
+     "agent": "gpt",
+     "model": "gpt-6.1-terra",
+     "engine": "codex",
+     "arm": "open4",
+     "item": "ep472",
+     "problem": "ep472-open4",
+     "rep": 2,
+     "order": 9
+    },
+    {
+     "agent": "gpt",
+     "model": "gpt-6.1-terra",
+     "engine": "codex",
+     "arm": "open4",
+     "item": "ep413",
+     "problem": "ep413-open4",
+     "rep": 2,
+     "order": 10
+    },
+    {
+     "agent": "gpt",
+     "model": "gpt-6.1-terra",
+     "engine": "codex",
+     "arm": "open4",
+     "item": "ep411",
+     "problem": "ep411-open4",
+     "rep": 1,
+     "order": 11
+    },
+    {
+     "agent": "gpt",
+     "model": "gpt-6.1-terra",
+     "engine": "codex",
+     "arm": "open4",
+     "item": "ep476",
+     "problem": "ep476-open4",
+     "rep": 1,
+     "order": 12
+    }
+   ],
+   "pilot_rows": [
+    {
+     "agent": "gpt",
+     "model": "gpt-6.1-terra",
+     "engine": "codex",
+     "arm": "open4",
+     "item": "ep472",
+     "problem": "ep472-open4",
+     "rep": 1,
+     "order": 1
+    }
+   ]
+  },
+  "luna": {
+   "model": "gpt-6-luna",
+   "engine": "codex",
+   "seed_text": "open4-1113-luna",
+   "cap_usd": 2.0,
+   "est_usd": 0.2,
+   "csv": "runorder_open4_luna.csv",
+   "csv_sha256": "b57990e1f91c8ec356d672cc593db7a121a4e56b34ebfdd4eba750e46f343ee8",
+   "pilot_csv": "runorder_open4_luna_pilot.csv",
+   "pilot_csv_sha256": "67a4dccaa23aab30f68996be23a241c0baa0a5db5ea3b7cb4b87acecc13ca38b",
+   "rows": [
+    {
+     "agent": "luna",
+     "model": "gpt-6-luna",
+     "engine": "codex",
+     "arm": "open4",
+     "item": "ep474",
+     "problem": "ep474-open4",
+     "rep": 1,
+     "order": 1
+    },
+    {
+     "agent": "luna",
+     "model": "gpt-6-luna",
+     "engine": "codex",
+     "arm": "open4",
+     "item": "ep413",
+     "problem": "ep413-open4",
+     "rep": 1,
+     "order": 2
+    },
+    {
+     "agent": "luna",
+     "model": "gpt-6-luna",
+     "engine": "codex",
+     "arm": "open4",
+     "item": "ep472",
+     "problem": "ep472-open4",
+     "rep": 2,
+     "order": 3
+    },
+    {
+     "agent": "luna",
+     "model": "gpt-6-luna",
+     "engine": "codex",
+     "arm": "open4",
+     "item": "ep415",
+     "problem": "ep415-open4",
+     "rep": 2,
+     "order": 4
+    },
+    {
+     "agent": "luna",
+     "model": "gpt-6-luna",
+     "engine": "codex",
+     "arm": "open4",
+     "item": "ep476",
+     "problem": "ep476-open4",
+     "rep": 2,
+     "order": 5
+    },
+    {
+     "agent": "luna",
+     "model": "gpt-6-luna",
+     "engine": "codex",
+     "arm": "open4",
+     "item": "ep411",
+     "problem": "ep411-open4",
+     "rep": 2,
+     "order": 6
+    },
+    {
+     "agent": "luna",
+     "model": "gpt-6-luna",
+     "engine": "codex",
+     "arm": "open4",
+     "item": "ep413",
+     "problem": "ep413-open4",
+     "rep": 2,
+     "order": 7
+    },
+    {
+     "agent": "luna",
+     "model": "gpt-6-luna",
+     "engine": "codex",
+     "arm": "open4",
+     "item": "ep476",
+     "problem": "ep476-open4",
+     "rep": 1,
+     "order": 8
+    },
+    {
+     "agent": "luna",
+     "model": "gpt-6-luna",
+     "engine": "codex",
+     "arm": "open4",
+     "item": "ep415",
+     "problem": "ep415-open4",
+     "rep": 1,
+     "order": 9
+    },
+    {
+     "agent": "luna",
+     "model": "gpt-6-luna",
+     "engine": "codex",
+     "arm": "open4",
+     "item": "ep411",
+     "problem": "ep411-open4",
+     "rep": 1,
+     "order": 10
+    },
+    {
+     "agent": "luna",
+     "model": "gpt-6-luna",
+     "engine": "codex",
+     "arm": "open4",
+     "item": "ep474",
+     "problem": "ep474-open4",
+     "rep": 2,
+     "order": 11
+    },
+    {
+     "agent": "luna",
+     "model": "gpt-6-luna",
+     "engine": "codex",
+     "arm": "open4",
+     "item": "ep472",
+     "problem": "ep472-open4",
+     "rep": 1,
+     "order": 12
+    }
+   ],
+   "pilot_rows": [
+    {
+     "agent": "luna",
+     "model": "gpt-6-luna",
+     "engine": "codex",
+     "arm": "open4",
+     "item": "ep472",
+     "problem": "ep472-open4",
+     "rep": 1,
+     "order": 1
+    }
+   ]
+  }
+ }
+}

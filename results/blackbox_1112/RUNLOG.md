@@ -214,3 +214,9 @@ Run id = first 12 characters of the container id (agent runs) or the request bat
 | 2026-11-12T12:03Z | e9e42c0b00e8 | open8 | luna | ep411 | ok | 0.088 | 90.564 | 78.403 |
 | 2026-11-12T12:07Z | 6ab46ca3cf7c | open8 | luna | ep476 | ok | 0.104 | 90.668 | 78.403 |
 | 2026-11-12T12:14Z | ef28174a51b0 | open8 | luna | ep415 | ok | 0.087 | 90.755 | 78.403 |
+| 2026-11-13T07:26Z | gpuplan S0: Step 0 gate (gpuplan/STEP0.md; image check 101/101, substrate gate pass; R6 cancelled: 1 source, checker not clean) | gpuplan | cpu/gpu only | - | ok | 0.000 | 90.755 | 78.403 |
+| 2026-11-13T07:26Z | gpuplan X1: scripted policies x budgets x trap ranks (gpuplan/xr_curves.json; scripts/xr_scripted_curves.py) | gpuplan | cpu/gpu only | - | ok | 0.000 | 90.755 | 78.403 |
+| 2026-11-13T07:26Z | gpuplan X2: edit-effect SD across base notes (gpuplan/xr_noise.json; scripts/xr_edit_noise.py) | gpuplan | cpu/gpu only | - | ok | 0.000 | 90.755 | 78.403 |
+| 2026-11-13T07:26Z | gpuplan X4: one-burst and allocation from logs, 13 agent x arm cells (gpuplan/xr_alloc.json; scripts/xr_alloc.py) | gpuplan | cpu/gpu only | - | ok | 0.000 | 90.755 | 78.403 |
+| 2026-11-13T07:26Z | gpuplan C19: judge vs certified leaderboard, L9 tau_b 0.23 (gpuplan/c19_reorder.json; scripts/c19_leaderboard.py) | gpuplan | cpu/gpu only | - | ok | 0.000 | 90.755 | 78.403 |
+| 2026-11-13T07:26Z | gpuplan C21: audit-order curves and PPI line (gpuplan/c21_audit.json; scripts/c21_audit.py) | gpuplan | cpu/gpu only | - | ok | 0.000 | 90.755 | 78.403 |
