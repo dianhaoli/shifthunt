@@ -1,0 +1,16 @@
+{
+ "runs": 274,
+ "c6_h0_reused": 132,
+ "calls": {
+  "TK": 274,
+  "TF2": 214,
+  "LK": 274,
+  "HK": 274,
+  "HF": 142,
+  "LF": 274
+ },
+ "k_text_sha256": "431326e0b788acb6c279eeadf10adb67ec36fb692368c2b836976347d03ade1b",
+ "f_template_sha256": "83afac63c0de88c7d95494bc4122098cfeb3ed039f37d482767de9f08e94f255",
+ "calls_terra_sha256": "73afc9e20275f27c4b3722a8eea122d5af9c412ac4fc500750e357efb94cc638",
+ "calls_small_sha256": "ee344ca66c53331f77b70d2edb573f5547bbdd9b994f2f6eac690c81e6d7d318"
+}
