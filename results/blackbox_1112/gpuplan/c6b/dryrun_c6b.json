@@ -1,0 +1,18 @@
+{
+ "item": "c6b",
+ "dryrun_calls": 5,
+ "statuses": [
+  "ok",
+  "ok",
+  "ok",
+  "ok",
+  "ok"
+ ],
+ "dryrun_usd": 1.5723,
+ "chars": 3418700,
+ "input_tokens": 1216276,
+ "chars_per_token": 2.811,
+ "total_chars": 80899960,
+ "n_calls": 448,
+ "projected_usd": 40.63
+}
