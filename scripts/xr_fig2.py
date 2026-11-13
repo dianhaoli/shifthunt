@@ -108,7 +108,7 @@ k, n = 5, 36
 p, lo, hi = wilson(k, n)
 ax.errorbar(8 * 1.12, p, yerr=[[lo], [hi]], fmt="D", color=MUTED, ms=5.5, capsize=2.5, lw=1.1, zorder=8)
 agent_h.append(Line2D([], [], marker="D", color=MUTED, ls="none", ms=5.5))
-agent_l.append("Luna with SAE, B = 8 [pre-reg]")
+agent_l.append("Luna with SAE, B = 8, all six [pre-reg]")
 ax.set_xscale("log", base=2)
 ax.set_xlim(1.8, 72)
 ax.set_xticks([2, 3, 4, 5, 6, 8, 12, 16, 32, 64])
@@ -128,7 +128,7 @@ for key, lab, c, m, ls in POL[:4] + [("bayes_law", "calibrated Bayes that knows 
     bx.plot(ranks, ys, color=c, marker=m, ms=5, ls=ls, label=f"{lab} [expl X1]", zorder=4)
 bb = XR["curves"]["shipped_traps"]["best_blind"]["8"]["name"]
 bx.axhline(bb, color=BLUE, lw=1.4, ls="-", label=f"best blind policy, rank-free ({bb:.2f}) [expl X1]")
-pts = [("Terra, Open-8 [pre-reg]", 11, 12, INK, "o", 2), ("Luna, Open-8 [pre-reg]", 1, 18, MUTED, "D", 2)]
+pts = [("Terra, Open-8, shipped traps [pre-reg]", 11, 12, INK, "o", 2), ("Luna, Open-8, shipped traps [pre-reg]", 1, 18, MUTED, "D", 2)]
 if C14 and "terra" in C14 and "fresh" in C14["terra"]:
     k, n = kn(C14["terra"]["fresh"]["NAME_trap"])
     pts.append(("Terra, fresh held-out traps [pre-reg C14]", k, n, INK, "*", 2))
@@ -157,7 +157,7 @@ fig.legend(H, L, loc="lower center", bbox_to_anchor=(0.5, -0.02), ncol=3, frameo
            columnspacing=1.2)
 
 fig.suptitle("One proxy, many exchange rates (measured)", x=0.01, ha="left", fontsize=11, fontweight="bold")
-fig.tight_layout(rect=(0, 0.2, 1, 0.97))
+fig.tight_layout(rect=(0, 0.17, 1, 0.97))
 for ext in ("png", "pdf"):
     fig.savefig(os.path.join(G, f"fig2_measured.{ext}"), dpi=200, bbox_inches="tight")
 print("wrote", os.path.join(G, "fig2_measured.png"))

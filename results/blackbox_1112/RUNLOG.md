@@ -225,3 +225,18 @@ Run id = first 12 characters of the container id (agent runs) or the request bat
 | 2026-11-13T08:15Z | 0fd2915bdbfc | open4 (pilot) | luna | ep472 | ok | 0.193 | 92.299 | 78.403 |
 | 2026-11-13T08:25Z | 9ddc6d011d4c | open8 (pilot) | luna | ep801 | ok | 0.049 | 92.348 | 78.403 |
 | 2026-11-13T08:36Z | 1e558a7628c9 | open8 (pilot) | luna | ep802 | ok | 0.139 | 92.487 | 78.403 |
+| 2026-11-13T08:52Z | 72facb01d194 | open8 | gpt | ep415 | ok | 0.560 | 93.047 | 78.403 |
+| 2026-11-13T08:58Z | 7016eb8b7478 | open8 | gpt | ep801 | ok | 0.757 | 93.804 | 78.403 |
+| 2026-11-13T09:01Z | 654f3fc3a899 | open8 | gpt | ep802 | ok | 0.775 | 94.579 | 78.403 |
+| 2026-11-13T09:13Z | 251a1c557786 | open8 | gpt | ep411 | ok | 0.537 | 95.116 | 78.403 |
+| 2026-11-13T09:18Z | dfd59fcba69f | open8 | gpt | ep413 | ok | 1.037 | 96.153 | 78.403 |
+| 2026-11-13T09:23Z | 66cf5c41f212 | open8 | gpt | ep802 | ok | 0.835 | 96.988 | 78.403 |
+| 2026-11-13T09:30Z | 181d5cfa1ac3 | open8 | gpt | ep801 | ok | 0.659 | 97.647 | 78.403 |
+| 2026-11-13T09:33Z | 689047b5cca9 | open8 | gpt | ep801 | ok | 0.581 | 98.228 | 78.403 |
+| 2026-11-13T09:47Z | d843fd21ca63 | open8 | gpt | ep802 | ok | 0.944 | 99.172 | 78.403 |
+| 2026-11-13T09:48Z | 2eec974c6d05 | open8 | gpt | ep802 | ok | 0.585 | 99.757 | 78.403 |
+| 2026-11-13T09:49Z | none-c14_gpt-o12a1 | open8 | gpt | ep801 | infra:no_container (runner_exit_1) | 0.000 | 99.757 | 78.403 |
+| 2026-11-13T09:50Z | 2705d5f46142 | open8 | gpt | ep801 | ok | 0.716 | 100.473 | 78.403 |
+| 2026-11-13T10:04Z | bebb41a44543 | open8 | gpt | ep802 | ok | 0.520 | 100.993 | 78.403 |
+| 2026-11-13T10:21Z | b7f67a91ca91 | open8 | gpt | ep801 | ok | 1.247 | 102.240 | 78.403 |
+| 2026-11-13T10:22Z | none-open4_gpt-o1a1 | open4 | gpt | ep474 | infra:no_container (runner_exit_1) | 0.000 | 102.240 | 78.403 |
