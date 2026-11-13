@@ -13,12 +13,13 @@ The paper-ready numbers are collected in `RESULTS_FOR_PAPER.md`.
 | X4 one-burst and allocation | `xr_alloc.json` (`scripts/xr_alloc.py`) | done |
 | C19 judge-reordered leaderboard | `c19_reorder.json` (`scripts/c19_leaderboard.py`) | done |
 | C21 audit order and PPI | `c21_audit.json` (`scripts/c21_audit.py`) | done |
-| X5 Figure 2, measured | `fig2_measured.{png,pdf}` (`scripts/xr_fig2.py`, inputs in `fig2_inputs/`) | re-rendered as agent points arrive |
+| X5 Figure 2, measured | `fig2_measured.{png,pdf}` (`scripts/xr_fig2.py`, inputs in `fig2_inputs/`) | done (with X3 and C14 points) |
 | C8 judge on Luna | `c8/` | done (pre-reg) |
-| C6 judge evidence ladder | `c6/` | calls running |
-| C14 held-out traps | `c14/` | gates passed; pilots, then counted runs |
-| X3 / X3b Open-4 | `open4/` | pre-registered; runs after C14 |
-| C12 lean, C7 slim, C17 R2 | `c12/`, `c7/`, `c17/` | pre-registered; calls after C6 |
+| C6 judge evidence ladder | `c6/` | done (pre-reg): J5′, J6 not confirmed; J8 confirmed |
+| C14 held-out traps | `c14/` | done (pre-reg): H1 confirm 13/14, H2 partial, H5 confirm |
+| X3 / X3b Open-4 | `open4/` | done (pre-reg): X3-H1 supported 12/12 |
+| C12 lean | `c12/` | done (pre-reg): P7 credited 31/39 vs P0 1/39 (Terra) |
+| C7 slim, C17 R2 | `c7/`, `c17/` | pre-registered; Terra calls running |
 
 ## $0 items: short results
 
