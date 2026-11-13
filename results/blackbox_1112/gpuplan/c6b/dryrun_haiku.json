@@ -1,0 +1,18 @@
+{
+ "item": "haiku",
+ "dryrun_calls": 5,
+ "statuses": [
+  "ok",
+  "ok",
+  "ok",
+  "ok",
+  "ok"
+ ],
+ "dryrun_usd": 0.478,
+ "chars": 1750037,
+ "input_tokens": 829345,
+ "chars_per_token": 2.11,
+ "total_chars": 29121886,
+ "n_calls": 166,
+ "projected_usd": 8.16
+}
