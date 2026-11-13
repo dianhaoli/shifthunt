@@ -286,3 +286,4 @@ Run id = first 12 characters of the container id (agent runs) or the request bat
 | 2026-11-13T17:07Z | gpuplan X3b: Luna Open-4, 12 counted runs (spend in the run rows above; gpuplan/open4) | gpuplan | runs | - | ok | 0.000 | 121.595 | 79.048 |
 | 2026-11-13T17:07Z | gpuplan C14: Terra 13 + stage 2 4 runs, Luna 10 runs on image r1114c (spend in the run rows above; gpuplan/c14) | gpuplan | runs | - | ok | 0.000 | 121.595 | 79.048 |
 | 2026-11-13T17:20Z | gpuplan C14 H5: frozen L0 judge on the 27 counted C14 runs (results/private_1112/judge_c14/raw; gpuplan/c14/judge.json) | judge | gpt-6.1-terra x27 | - | ok 27/27 | 0.239 | 121.834 | 79.048 |
+| 2026-11-13T17:32Z | gpuplan C12 lean: frozen judge on scripted answers with no report, P0/P7/P1/P6, shipped x2 + 27 bank episodes (204 calls; results/private_1112/judge_cheaters/raw; gpuplan/c12); Haiku 0.062 in cum_anthropic | judge | gpt-6.1-terra x102, claude-haiku-5-5 x102 | - | ok 204/204 | 0.546 | 122.380 | 79.110 |
