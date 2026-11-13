@@ -1,0 +1,2976 @@
+{
+ "noiseless_curves": {
+  "blind ideal | known counts | group": {
+   "0": 0.0417,
+   "1": 0.0729,
+   "2": 0.1302,
+   "3": 0.25,
+   "4": 0.3542,
+   "5": 0.4167,
+   "6": 0.5,
+   "7": 0.6029,
+   "8": 0.7031,
+   "9": 0.75,
+   "10": 0.8333,
+   "11": 0.9583,
+   "12": 1.0,
+   "13": 1.0,
+   "14": 1.0,
+   "15": 1.0,
+   "16": 1.0
+  },
+  "blind ideal | known counts | single": {
+   "0": 0.0417,
+   "1": 0.0703,
+   "2": 0.1016,
+   "3": 0.1356,
+   "4": 0.1725,
+   "5": 0.2152,
+   "6": 0.2611,
+   "7": 0.3104,
+   "8": 0.3634,
+   "9": 0.4019,
+   "10": 0.4417,
+   "11": 0.4832,
+   "12": 0.5265,
+   "13": 0.5718,
+   "14": 0.6191,
+   "15": 0.6688,
+   "16": 0.7116,
+   "17": 0.7511,
+   "18": 0.79,
+   "19": 0.8275,
+   "20": 0.8626,
+   "21": 0.8947,
+   "22": 0.9229,
+   "23": 0.9451,
+   "24": 0.9624,
+   "25": 0.9756,
+   "26": 0.9854,
+   "27": 0.9922,
+   "28": 0.9966,
+   "29": 0.999,
+   "30": 0.9998,
+   "31": 1.0,
+   "32": 1.0
+  },
+  "blind ideal | unknown counts | group": {
+   "0": 0.043,
+   "1": 0.0707,
+   "2": 0.1278,
+   "3": 0.25,
+   "4": 0.3324,
+   "5": 0.3827,
+   "6": 0.4665,
+   "7": 0.5641,
+   "8": 0.6504,
+   "9": 0.7184,
+   "10": 0.8025,
+   "11": 0.8811,
+   "12": 0.9474,
+   "13": 0.9851,
+   "14": 0.9976,
+   "15": 0.9998,
+   "16": 1.0
+  },
+  "blind ideal | unknown counts | single": {
+   "0": 0.043,
+   "1": 0.0707,
+   "2": 0.1018,
+   "3": 0.1359,
+   "4": 0.1731,
+   "5": 0.216,
+   "6": 0.2628,
+   "7": 0.3135,
+   "8": 0.3505,
+   "9": 0.3883,
+   "10": 0.4274,
+   "11": 0.4679,
+   "12": 0.5098,
+   "13": 0.5531,
+   "14": 0.5972,
+   "15": 0.6415,
+   "16": 0.68,
+   "17": 0.717,
+   "18": 0.7532,
+   "19": 0.7882,
+   "20": 0.8216,
+   "21": 0.8529,
+   "22": 0.8817,
+   "23": 0.9078,
+   "24": 0.9287,
+   "25": 0.9466,
+   "26": 0.9613,
+   "27": 0.9731,
+   "28": 0.9825,
+   "29": 0.9897,
+   "30": 0.9951,
+   "31": 0.9989,
+   "32": 1.0
+  },
+  "proxy Bayes | shipped (trap at r2) | known counts | group": {
+   "0": 0.1667,
+   "1": 0.2917,
+   "2": 0.5417,
+   "3": 0.75,
+   "4": 0.9167,
+   "5": 1.0,
+   "6": 1.0,
+   "7": 1.0,
+   "8": 1.0,
+   "9": 1.0,
+   "10": 1.0,
+   "11": 1.0,
+   "12": 1.0
+  },
+  "proxy Bayes | shipped (trap at r2) | known counts | single": {
+   "0": 0.1667,
+   "1": 0.2917,
+   "2": 0.5417,
+   "3": 0.75,
+   "4": 0.875,
+   "5": 1.0,
+   "6": 1.0,
+   "7": 1.0,
+   "8": 1.0,
+   "9": 1.0,
+   "10": 1.0,
+   "11": 1.0,
+   "12": 1.0,
+   "13": 1.0,
+   "14": 1.0,
+   "15": 1.0,
+   "16": 1.0
+  },
+  "proxy Bayes | bank (r1/r2/r6 = 11/10/3) | known counts | group": {
+   "0": 0.2431,
+   "1": 0.4253,
+   "2": 0.6597,
+   "3": 0.849,
+   "4": 0.934,
+   "5": 0.9948,
+   "6": 1.0,
+   "7": 1.0,
+   "8": 1.0,
+   "9": 1.0,
+   "10": 1.0,
+   "11": 1.0,
+   "12": 1.0
+  },
+  "proxy Bayes | bank (r1/r2/r6 = 11/10/3) | known counts | single": {
+   "0": 0.2431,
+   "1": 0.4253,
+   "2": 0.6597,
+   "3": 0.8333,
+   "4": 0.8906,
+   "5": 0.9583,
+   "6": 0.9844,
+   "7": 1.0,
+   "8": 1.0,
+   "9": 1.0,
+   "10": 1.0,
+   "11": 1.0,
+   "12": 1.0,
+   "13": 1.0,
+   "14": 1.0,
+   "15": 1.0,
+   "16": 1.0
+  },
+  "proxy Bayes | adv: uniform r2..r8 | known counts | group": {
+   "0": 0.1667,
+   "1": 0.2917,
+   "2": 0.4345,
+   "3": 0.5655,
+   "4": 0.6905,
+   "5": 0.8155,
+   "6": 0.9345,
+   "7": 1.0,
+   "8": 1.0,
+   "9": 1.0,
+   "10": 1.0,
+   "11": 1.0,
+   "12": 1.0
+  },
+  "proxy Bayes | adv: uniform r2..r8 | known counts | single": {
+   "0": 0.1667,
+   "1": 0.2917,
+   "2": 0.4345,
+   "3": 0.5476,
+   "4": 0.5833,
+   "5": 0.619,
+   "6": 0.6548,
+   "7": 0.6905,
+   "8": 0.7262,
+   "9": 0.75,
+   "10": 0.7738,
+   "11": 0.8095,
+   "12": 0.8452,
+   "13": 0.881,
+   "14": 0.9167,
+   "15": 0.9524,
+   "16": 0.9821
+  },
+  "proxy Bayes | adv: uniform r1..r8 (no info on traps) | known counts | group": {
+   "0": 0.1875,
+   "1": 0.3281,
+   "2": 0.4844,
+   "3": 0.6198,
+   "4": 0.7292,
+   "5": 0.8385,
+   "6": 0.9427,
+   "7": 1.0,
+   "8": 1.0,
+   "9": 1.0,
+   "10": 1.0,
+   "11": 1.0,
+   "12": 1.0
+  },
+  "proxy Bayes | adv: uniform r1..r8 (no info on traps) | known counts | single": {
+   "0": 0.1875,
+   "1": 0.3281,
+   "2": 0.4844,
+   "3": 0.6042,
+   "4": 0.6354,
+   "5": 0.6667,
+   "6": 0.6979,
+   "7": 0.7292,
+   "8": 0.7604,
+   "9": 0.7812,
+   "10": 0.8021,
+   "11": 0.8333,
+   "12": 0.8646,
+   "13": 0.8958,
+   "14": 0.9271,
+   "15": 0.9583,
+   "16": 0.9844
+  },
+  "proxy Bayes | adv: fixed r3 | known counts | group": {
+   "0": 0.1667,
+   "1": 0.2917,
+   "2": 0.5417,
+   "3": 0.75,
+   "4": 0.9167,
+   "5": 1.0,
+   "6": 1.0,
+   "7": 1.0,
+   "8": 1.0,
+   "9": 1.0,
+   "10": 1.0,
+   "11": 1.0,
+   "12": 1.0
+  },
+  "proxy Bayes | adv: fixed r3 | known counts | single": {
+   "0": 0.1667,
+   "1": 0.2917,
+   "2": 0.5417,
+   "3": 0.75,
+   "4": 0.875,
+   "5": 1.0,
+   "6": 1.0,
+   "7": 1.0,
+   "8": 1.0,
+   "9": 1.0,
+   "10": 1.0,
+   "11": 1.0,
+   "12": 1.0,
+   "13": 1.0,
+   "14": 1.0,
+   "15": 1.0,
+   "16": 1.0
+  },
+  "proxy Bayes | adv: fixed r6 | known counts | group": {
+   "0": 0.1667,
+   "1": 0.2917,
+   "2": 0.5417,
+   "3": 0.75,
+   "4": 0.9167,
+   "5": 1.0,
+   "6": 1.0,
+   "7": 1.0,
+   "8": 1.0,
+   "9": 1.0,
+   "10": 1.0,
+   "11": 1.0,
+   "12": 1.0
+  },
+  "proxy Bayes | adv: fixed r6 | known counts | single": {
+   "0": 0.1667,
+   "1": 0.2917,
+   "2": 0.5417,
+   "3": 0.75,
+   "4": 0.875,
+   "5": 1.0,
+   "6": 1.0,
+   "7": 1.0,
+   "8": 1.0,
+   "9": 1.0,
+   "10": 1.0,
+   "11": 1.0,
+   "12": 1.0,
+   "13": 1.0,
+   "14": 1.0,
+   "15": 1.0,
+   "16": 1.0
+  },
+  "proxy Bayes | proxy always right (r1) | known counts | group": {
+   "0": 0.3333,
+   "1": 0.5833,
+   "2": 0.8333,
+   "3": 1.0,
+   "4": 1.0,
+   "5": 1.0,
+   "6": 1.0,
+   "7": 1.0,
+   "8": 1.0,
+   "9": 1.0,
+   "10": 1.0,
+   "11": 1.0,
+   "12": 1.0
+  },
+  "proxy Bayes | proxy always right (r1) | known counts | single": {
+   "0": 0.3333,
+   "1": 0.5833,
+   "2": 0.8333,
+   "3": 1.0,
+   "4": 1.0,
+   "5": 1.0,
+   "6": 1.0,
+   "7": 1.0,
+   "8": 1.0,
+   "9": 1.0,
+   "10": 1.0,
+   "11": 1.0,
+   "12": 1.0,
+   "13": 1.0,
+   "14": 1.0,
+   "15": 1.0,
+   "16": 1.0
+  },
+  "proxy Bayes | shipped (trap at r2) | unknown counts | group": {
+   "0": 0.1721,
+   "1": 0.2971,
+   "2": 0.4338,
+   "3": 0.5853,
+   "4": 0.7485,
+   "5": 0.8912,
+   "6": 0.9765,
+   "7": 1.0,
+   "8": 1.0,
+   "9": 1.0,
+   "10": 1.0,
+   "11": 1.0,
+   "12": 1.0
+  },
+  "proxy Bayes | shipped (trap at r2) | unknown counts | single": {
+   "0": 0.1721,
+   "1": 0.2971,
+   "2": 0.4338,
+   "3": 0.5853,
+   "4": 0.7485,
+   "5": 0.8912,
+   "6": 0.9765,
+   "7": 1.0,
+   "8": 1.0,
+   "9": 1.0,
+   "10": 1.0,
+   "11": 1.0,
+   "12": 1.0,
+   "13": 1.0,
+   "14": 1.0,
+   "15": 1.0,
+   "16": 1.0
+  },
+  "proxy Bayes | bank (r1/r2/r6 = 11/10/3) | unknown counts | group": {
+   "0": 0.2509,
+   "1": 0.3281,
+   "2": 0.4574,
+   "3": 0.6109,
+   "4": 0.7737,
+   "5": 0.9135,
+   "6": 0.9806,
+   "7": 0.9993,
+   "8": 1.0,
+   "9": 1.0,
+   "10": 1.0,
+   "11": 1.0,
+   "12": 1.0
+  },
+  "proxy Bayes | bank (r1/r2/r6 = 11/10/3) | unknown counts | single": {
+   "0": 0.2509,
+   "1": 0.3281,
+   "2": 0.4574,
+   "3": 0.5953,
+   "4": 0.7512,
+   "5": 0.8701,
+   "6": 0.9439,
+   "7": 0.9706,
+   "8": 0.989,
+   "9": 0.9941,
+   "10": 0.9993,
+   "11": 1.0,
+   "12": 1.0,
+   "13": 1.0,
+   "14": 1.0,
+   "15": 1.0,
+   "16": 1.0
+  },
+  "top-1 prefix (B=4) | shipped (trap at r2) | noiseless": 0.5,
+  "top-2 prefix (B=8) | shipped (trap at r2) | noiseless": 1.0,
+  "top-3 prefix (B=12) | shipped (trap at r2) | noiseless": 1.0,
+  "top-1 prefix (B=4) | bank (r1/r2/r6 = 11/10/3) | noiseless": 0.7292,
+  "top-2 prefix (B=8) | bank (r1/r2/r6 = 11/10/3) | noiseless": 0.9375,
+  "top-3 prefix (B=12) | bank (r1/r2/r6 = 11/10/3) | noiseless": 0.9375,
+  "top-1 prefix (B=4) | adv: uniform r2..r8 | noiseless": 0.5,
+  "top-2 prefix (B=8) | adv: uniform r2..r8 | noiseless": 0.5714,
+  "top-3 prefix (B=12) | adv: uniform r2..r8 | noiseless": 0.6429,
+  "top-1 prefix (B=4) | adv: uniform r1..r8 (no info on traps) | noiseless": 0.5625,
+  "top-2 prefix (B=8) | adv: uniform r1..r8 (no info on traps) | noiseless": 0.625,
+  "top-3 prefix (B=12) | adv: uniform r1..r8 (no info on traps) | noiseless": 0.6875,
+  "top-1 prefix (B=4) | adv: fixed r3 | noiseless": 0.5,
+  "top-2 prefix (B=8) | adv: fixed r3 | noiseless": 0.5,
+  "top-3 prefix (B=12) | adv: fixed r3 | noiseless": 1.0,
+  "top-1 prefix (B=4) | adv: fixed r6 | noiseless": 0.5,
+  "top-2 prefix (B=8) | adv: fixed r6 | noiseless": 0.5,
+  "top-3 prefix (B=12) | adv: fixed r6 | noiseless": 0.5,
+  "top-1 prefix (B=4) | proxy always right (r1) | noiseless": 1.0,
+  "top-2 prefix (B=8) | proxy always right (r1) | noiseless": 1.0,
+  "top-3 prefix (B=12) | proxy always right (r1) | noiseless": 1.0
+ },
+ "misspecification": {
+  "believes proxy always right (r1) | group | B=5": {
+   "proxy always right (r1)": {
+    "success": 1.0,
+    "tests_hard": 0.5,
+    "tests_total": 2.25,
+    "surprise": 0.0
+   },
+   "shipped (trap at r2)": {
+    "success": 0.5,
+    "tests_hard": 0.5,
+    "tests_total": 1.9583,
+    "surprise": 0.0
+   },
+   "bank (r1/r2/r6 = 11/10/3)": {
+    "success": 0.7292,
+    "tests_hard": 0.5,
+    "tests_total": 2.092,
+    "surprise": 0.0
+   },
+   "adv: fixed r3": {
+    "success": 0.5,
+    "tests_hard": 0.5,
+    "tests_total": 1.9583,
+    "surprise": 0.0
+   },
+   "adv: fixed r6": {
+    "success": 0.5,
+    "tests_hard": 0.5,
+    "tests_total": 1.9583,
+    "surprise": 0.0
+   },
+   "adv: uniform r2..r8": {
+    "success": 0.5,
+    "tests_hard": 0.5,
+    "tests_total": 1.9583,
+    "surprise": 0.0
+   }
+  },
+  "believes proxy always right (r1) | group | B=8": {
+   "proxy always right (r1)": {
+    "success": 1.0,
+    "tests_hard": 0.5,
+    "tests_total": 2.25,
+    "surprise": 0.0
+   },
+   "shipped (trap at r2)": {
+    "success": 0.5,
+    "tests_hard": 0.5,
+    "tests_total": 1.9583,
+    "surprise": 0.0
+   },
+   "bank (r1/r2/r6 = 11/10/3)": {
+    "success": 0.7292,
+    "tests_hard": 0.5,
+    "tests_total": 2.092,
+    "surprise": 0.0
+   },
+   "adv: fixed r3": {
+    "success": 0.5,
+    "tests_hard": 0.5,
+    "tests_total": 1.9583,
+    "surprise": 0.0
+   },
+   "adv: fixed r6": {
+    "success": 0.5,
+    "tests_hard": 0.5,
+    "tests_total": 1.9583,
+    "surprise": 0.0
+   },
+   "adv: uniform r2..r8": {
+    "success": 0.5,
+    "tests_hard": 0.5,
+    "tests_total": 1.9583,
+    "surprise": 0.0
+   }
+  },
+  "believes proxy always right (r1) | group | B=12": {
+   "proxy always right (r1)": {
+    "success": 1.0,
+    "tests_hard": 0.5,
+    "tests_total": 2.25,
+    "surprise": 0.0
+   },
+   "shipped (trap at r2)": {
+    "success": 0.5,
+    "tests_hard": 0.5,
+    "tests_total": 1.9583,
+    "surprise": 0.0
+   },
+   "bank (r1/r2/r6 = 11/10/3)": {
+    "success": 0.7292,
+    "tests_hard": 0.5,
+    "tests_total": 2.092,
+    "surprise": 0.0
+   },
+   "adv: fixed r3": {
+    "success": 0.5,
+    "tests_hard": 0.5,
+    "tests_total": 1.9583,
+    "surprise": 0.0
+   },
+   "adv: fixed r6": {
+    "success": 0.5,
+    "tests_hard": 0.5,
+    "tests_total": 1.9583,
+    "surprise": 0.0
+   },
+   "adv: uniform r2..r8": {
+    "success": 0.5,
+    "tests_hard": 0.5,
+    "tests_total": 1.9583,
+    "surprise": 0.0
+   }
+  },
+  "believes shipped (r2) | group | B=5": {
+   "proxy always right (r1)": {
+    "success": 1.0,
+    "tests_hard": 1.0833,
+    "tests_total": 5.0,
+    "surprise": 0.0
+   },
+   "shipped (trap at r2)": {
+    "success": 1.0,
+    "tests_hard": 1.25,
+    "tests_total": 4.0,
+    "surprise": 0.0
+   },
+   "bank (r1/r2/r6 = 11/10/3)": {
+    "success": 0.9375,
+    "tests_hard": 1.1788,
+    "tests_total": 4.5833,
+    "surprise": 0.0
+   },
+   "adv: fixed r3": {
+    "success": 0.5,
+    "tests_hard": 1.2917,
+    "tests_total": 5.0,
+    "surprise": 0.0
+   },
+   "adv: fixed r6": {
+    "success": 0.5,
+    "tests_hard": 1.2917,
+    "tests_total": 5.0,
+    "surprise": 0.0
+   },
+   "adv: uniform r2..r8": {
+    "success": 0.5714,
+    "tests_hard": 1.2857,
+    "tests_total": 4.8571,
+    "surprise": 0.0
+   }
+  },
+  "believes shipped (r2) | group | B=8": {
+   "proxy always right (r1)": {
+    "success": 1.0,
+    "tests_hard": 1.5,
+    "tests_total": 6.0,
+    "surprise": 0.0
+   },
+   "shipped (trap at r2)": {
+    "success": 1.0,
+    "tests_hard": 1.25,
+    "tests_total": 4.8333,
+    "surprise": 0.0
+   },
+   "bank (r1/r2/r6 = 11/10/3)": {
+    "success": 0.9375,
+    "tests_hard": 1.3958,
+    "tests_total": 5.4931,
+    "surprise": 0.0
+   },
+   "adv: fixed r3": {
+    "success": 0.5,
+    "tests_hard": 1.5,
+    "tests_total": 5.8333,
+    "surprise": 0.0
+   },
+   "adv: fixed r6": {
+    "success": 0.5,
+    "tests_hard": 1.5,
+    "tests_total": 5.8333,
+    "surprise": 0.0
+   },
+   "adv: uniform r2..r8": {
+    "success": 0.5714,
+    "tests_hard": 1.4643,
+    "tests_total": 5.6905,
+    "surprise": 0.0
+   }
+  },
+  "believes shipped (r2) | group | B=12": {
+   "proxy always right (r1)": {
+    "success": 1.0,
+    "tests_hard": 1.5,
+    "tests_total": 6.0,
+    "surprise": 0.0
+   },
+   "shipped (trap at r2)": {
+    "success": 1.0,
+    "tests_hard": 1.25,
+    "tests_total": 4.8333,
+    "surprise": 0.0
+   },
+   "bank (r1/r2/r6 = 11/10/3)": {
+    "success": 0.9375,
+    "tests_hard": 1.3958,
+    "tests_total": 5.4931,
+    "surprise": 0.0
+   },
+   "adv: fixed r3": {
+    "success": 0.5,
+    "tests_hard": 1.5,
+    "tests_total": 5.8333,
+    "surprise": 0.0
+   },
+   "adv: fixed r6": {
+    "success": 0.5,
+    "tests_hard": 1.5,
+    "tests_total": 5.8333,
+    "surprise": 0.0
+   },
+   "adv: uniform r2..r8": {
+    "success": 0.5714,
+    "tests_hard": 1.4643,
+    "tests_total": 5.6905,
+    "surprise": 0.0
+   }
+  },
+  "believes bank law | group | B=5": {
+   "proxy always right (r1)": {
+    "success": 1.0,
+    "tests_hard": 1.25,
+    "tests_total": 5.0,
+    "surprise": 0.0
+   },
+   "shipped (trap at r2)": {
+    "success": 1.0,
+    "tests_hard": 1.75,
+    "tests_total": 4.6667,
+    "surprise": 0.0
+   },
+   "bank (r1/r2/r6 = 11/10/3)": {
+    "success": 0.9948,
+    "tests_hard": 1.5208,
+    "tests_total": 4.8194,
+    "surprise": 0.0
+   },
+   "adv: fixed r3": {
+    "success": 0.5,
+    "tests_hard": 1.3333,
+    "tests_total": 5.0,
+    "surprise": 0.0
+   },
+   "adv: fixed r6": {
+    "success": 0.9583,
+    "tests_hard": 1.75,
+    "tests_total": 4.6667,
+    "surprise": 0.0
+   },
+   "adv: uniform r2..r8": {
+    "success": 0.6369,
+    "tests_hard": 1.4524,
+    "tests_total": 4.9048,
+    "surprise": 0.0
+   }
+  },
+  "believes bank law | group | B=8": {
+   "proxy always right (r1)": {
+    "success": 1.0,
+    "tests_hard": 1.9167,
+    "tests_total": 8.0,
+    "surprise": 0.0
+   },
+   "shipped (trap at r2)": {
+    "success": 1.0,
+    "tests_hard": 2.0417,
+    "tests_total": 7.0417,
+    "surprise": 0.0
+   },
+   "bank (r1/r2/r6 = 11/10/3)": {
+    "success": 1.0,
+    "tests_hard": 1.9375,
+    "tests_total": 7.408,
+    "surprise": 0.0
+   },
+   "adv: fixed r3": {
+    "success": 0.5,
+    "tests_hard": 2.0,
+    "tests_total": 8.0,
+    "surprise": 0.0
+   },
+   "adv: fixed r6": {
+    "success": 1.0,
+    "tests_hard": 1.6667,
+    "tests_total": 6.4583,
+    "surprise": 0.0
+   },
+   "adv: uniform r2..r8": {
+    "success": 0.6429,
+    "tests_hard": 1.9583,
+    "tests_total": 7.6429,
+    "surprise": 0.0
+   }
+  },
+  "believes bank law | group | B=12": {
+   "proxy always right (r1)": {
+    "success": 1.0,
+    "tests_hard": 2.5,
+    "tests_total": 9.75,
+    "surprise": 0.0
+   },
+   "shipped (trap at r2)": {
+    "success": 1.0,
+    "tests_hard": 2.25,
+    "tests_total": 7.9583,
+    "surprise": 0.0
+   },
+   "bank (r1/r2/r6 = 11/10/3)": {
+    "success": 1.0,
+    "tests_hard": 2.3021,
+    "tests_total": 8.717,
+    "surprise": 0.0
+   },
+   "adv: fixed r3": {
+    "success": 0.5,
+    "tests_hard": 2.5,
+    "tests_total": 9.7083,
+    "surprise": 0.0
+   },
+   "adv: fixed r6": {
+    "success": 1.0,
+    "tests_hard": 1.75,
+    "tests_total": 7.4583,
+    "surprise": 0.0
+   },
+   "adv: uniform r2..r8": {
+    "success": 0.6429,
+    "tests_hard": 2.3571,
+    "tests_total": 9.1369,
+    "surprise": 0.0
+   }
+  },
+  "believes only 'not r1' (u2..8) | group | B=5": {
+   "proxy always right (r1)": {
+    "success": 1.0,
+    "tests_hard": 1.0,
+    "tests_total": 5.0,
+    "surprise": 0.0
+   },
+   "shipped (trap at r2)": {
+    "success": 0.9583,
+    "tests_hard": 1.6667,
+    "tests_total": 4.5,
+    "surprise": 0.0
+   },
+   "bank (r1/r2/r6 = 11/10/3)": {
+    "success": 0.9514,
+    "tests_hard": 1.4236,
+    "tests_total": 4.7917,
+    "surprise": 0.0
+   },
+   "adv: fixed r3": {
+    "success": 0.875,
+    "tests_hard": 2.0417,
+    "tests_total": 4.875,
+    "surprise": 0.0
+   },
+   "adv: fixed r6": {
+    "success": 0.75,
+    "tests_hard": 2.1667,
+    "tests_total": 5.0,
+    "surprise": 0.0
+   },
+   "adv: uniform r2..r8": {
+    "success": 0.8155,
+    "tests_hard": 2.0595,
+    "tests_total": 4.8929,
+    "surprise": 0.0
+   }
+  },
+  "believes only 'not r1' (u2..8) | group | B=8": {
+   "proxy always right (r1)": {
+    "success": 1.0,
+    "tests_hard": 1.75,
+    "tests_total": 7.75,
+    "surprise": 0.0
+   },
+   "shipped (trap at r2)": {
+    "success": 1.0,
+    "tests_hard": 1.875,
+    "tests_total": 6.0,
+    "surprise": 0.0
+   },
+   "bank (r1/r2/r6 = 11/10/3)": {
+    "success": 1.0,
+    "tests_hard": 2.0052,
+    "tests_total": 7.0365,
+    "surprise": 0.0
+   },
+   "adv: fixed r3": {
+    "success": 1.0,
+    "tests_hard": 2.625,
+    "tests_total": 6.75,
+    "surprise": 0.0
+   },
+   "adv: fixed r6": {
+    "success": 1.0,
+    "tests_hard": 3.375,
+    "tests_total": 7.875,
+    "surprise": 0.0
+   },
+   "adv: uniform r2..r8": {
+    "success": 1.0,
+    "tests_hard": 2.9643,
+    "tests_total": 7.25,
+    "surprise": 0.0
+   }
+  },
+  "believes only 'not r1' (u2..8) | group | B=12": {
+   "proxy always right (r1)": {
+    "success": 1.0,
+    "tests_hard": 2.8333,
+    "tests_total": 12.0,
+    "surprise": 0.0
+   },
+   "shipped (trap at r2)": {
+    "success": 1.0,
+    "tests_hard": 2.4167,
+    "tests_total": 9.625,
+    "surprise": 0.0
+   },
+   "bank (r1/r2/r6 = 11/10/3)": {
+    "success": 1.0,
+    "tests_hard": 2.7795,
+    "tests_total": 10.8854,
+    "surprise": 0.0
+   },
+   "adv: fixed r3": {
+    "success": 1.0,
+    "tests_hard": 3.0417,
+    "tests_total": 10.25,
+    "surprise": 0.0
+   },
+   "adv: fixed r6": {
+    "success": 1.0,
+    "tests_hard": 3.7917,
+    "tests_total": 11.0,
+    "surprise": 0.0
+   },
+   "adv: uniform r2..r8": {
+    "success": 1.0,
+    "tests_hard": 3.4286,
+    "tests_total": 10.7857,
+    "surprise": 0.0
+   }
+  },
+  "open-minded: 0.9 r1 + 0.1 u2..8 | group | B=5": {
+   "proxy always right (r1)": {
+    "success": 1.0,
+    "tests_hard": 1.0,
+    "tests_total": 5.0,
+    "surprise": 0.0
+   },
+   "shipped (trap at r2)": {
+    "success": 0.9583,
+    "tests_hard": 1.6667,
+    "tests_total": 4.5,
+    "surprise": 0.0
+   },
+   "bank (r1/r2/r6 = 11/10/3)": {
+    "success": 0.9514,
+    "tests_hard": 1.4236,
+    "tests_total": 4.7917,
+    "surprise": 0.0
+   },
+   "adv: fixed r3": {
+    "success": 0.875,
+    "tests_hard": 2.0417,
+    "tests_total": 4.875,
+    "surprise": 0.0
+   },
+   "adv: fixed r6": {
+    "success": 0.75,
+    "tests_hard": 2.1667,
+    "tests_total": 5.0,
+    "surprise": 0.0
+   },
+   "adv: uniform r2..r8": {
+    "success": 0.8155,
+    "tests_hard": 2.0595,
+    "tests_total": 4.8929,
+    "surprise": 0.0
+   }
+  },
+  "open-minded: 0.9 r1 + 0.1 u2..8 | group | B=8": {
+   "proxy always right (r1)": {
+    "success": 1.0,
+    "tests_hard": 1.75,
+    "tests_total": 7.75,
+    "surprise": 0.0
+   },
+   "shipped (trap at r2)": {
+    "success": 1.0,
+    "tests_hard": 1.875,
+    "tests_total": 6.0,
+    "surprise": 0.0
+   },
+   "bank (r1/r2/r6 = 11/10/3)": {
+    "success": 1.0,
+    "tests_hard": 2.0052,
+    "tests_total": 7.0365,
+    "surprise": 0.0
+   },
+   "adv: fixed r3": {
+    "success": 1.0,
+    "tests_hard": 2.625,
+    "tests_total": 6.75,
+    "surprise": 0.0
+   },
+   "adv: fixed r6": {
+    "success": 1.0,
+    "tests_hard": 3.375,
+    "tests_total": 7.875,
+    "surprise": 0.0
+   },
+   "adv: uniform r2..r8": {
+    "success": 1.0,
+    "tests_hard": 2.9643,
+    "tests_total": 7.25,
+    "surprise": 0.0
+   }
+  },
+  "open-minded: 0.9 r1 + 0.1 u2..8 | group | B=12": {
+   "proxy always right (r1)": {
+    "success": 1.0,
+    "tests_hard": 2.8333,
+    "tests_total": 12.0,
+    "surprise": 0.0
+   },
+   "shipped (trap at r2)": {
+    "success": 1.0,
+    "tests_hard": 2.4167,
+    "tests_total": 9.625,
+    "surprise": 0.0
+   },
+   "bank (r1/r2/r6 = 11/10/3)": {
+    "success": 1.0,
+    "tests_hard": 2.7795,
+    "tests_total": 10.8854,
+    "surprise": 0.0
+   },
+   "adv: fixed r3": {
+    "success": 1.0,
+    "tests_hard": 3.0417,
+    "tests_total": 10.25,
+    "surprise": 0.0
+   },
+   "adv: fixed r6": {
+    "success": 1.0,
+    "tests_hard": 3.7917,
+    "tests_total": 11.0,
+    "surprise": 0.0
+   },
+   "adv: uniform r2..r8": {
+    "success": 1.0,
+    "tests_hard": 3.4286,
+    "tests_total": 10.7857,
+    "surprise": 0.0
+   }
+  },
+  "open-minded: 0.5 r2 + 0.5 u1..8 | group | B=5": {
+   "proxy always right (r1)": {
+    "success": 1.0,
+    "tests_hard": 1.0833,
+    "tests_total": 5.0,
+    "surprise": 0.0
+   },
+   "shipped (trap at r2)": {
+    "success": 1.0,
+    "tests_hard": 2.1667,
+    "tests_total": 5.0,
+    "surprise": 0.0
+   },
+   "bank (r1/r2/r6 = 11/10/3)": {
+    "success": 0.9635,
+    "tests_hard": 1.6337,
+    "tests_total": 5.0,
+    "surprise": 0.0
+   },
+   "adv: fixed r3": {
+    "success": 0.875,
+    "tests_hard": 1.9583,
+    "tests_total": 4.7917,
+    "surprise": 0.0
+   },
+   "adv: fixed r6": {
+    "success": 0.7083,
+    "tests_hard": 1.875,
+    "tests_total": 5.0,
+    "surprise": 0.0
+   },
+   "adv: uniform r2..r8": {
+    "success": 0.8095,
+    "tests_hard": 2.0,
+    "tests_total": 4.9702,
+    "surprise": 0.0
+   }
+  },
+  "open-minded: 0.5 r2 + 0.5 u1..8 | group | B=8": {
+   "proxy always right (r1)": {
+    "success": 1.0,
+    "tests_hard": 1.75,
+    "tests_total": 7.75,
+    "surprise": 0.0
+   },
+   "shipped (trap at r2)": {
+    "success": 1.0,
+    "tests_hard": 3.375,
+    "tests_total": 7.875,
+    "surprise": 0.0
+   },
+   "bank (r1/r2/r6 = 11/10/3)": {
+    "success": 1.0,
+    "tests_hard": 2.6146,
+    "tests_total": 7.7552,
+    "surprise": 0.0
+   },
+   "adv: fixed r3": {
+    "success": 1.0,
+    "tests_hard": 1.875,
+    "tests_total": 6.0,
+    "surprise": 0.0
+   },
+   "adv: fixed r6": {
+    "success": 1.0,
+    "tests_hard": 3.25,
+    "tests_total": 7.375,
+    "surprise": 0.0
+   },
+   "adv: uniform r2..r8": {
+    "success": 1.0,
+    "tests_hard": 2.9643,
+    "tests_total": 7.25,
+    "surprise": 0.0
+   }
+  },
+  "open-minded: 0.5 r2 + 0.5 u1..8 | group | B=12": {
+   "proxy always right (r1)": {
+    "success": 1.0,
+    "tests_hard": 2.8333,
+    "tests_total": 12.0,
+    "surprise": 0.0
+   },
+   "shipped (trap at r2)": {
+    "success": 1.0,
+    "tests_hard": 4.0,
+    "tests_total": 12.0,
+    "surprise": 0.0
+   },
+   "bank (r1/r2/r6 = 11/10/3)": {
+    "success": 1.0,
+    "tests_hard": 3.4236,
+    "tests_total": 11.8594,
+    "surprise": 0.0
+   },
+   "adv: fixed r3": {
+    "success": 1.0,
+    "tests_hard": 2.4167,
+    "tests_total": 9.625,
+    "surprise": 0.0
+   },
+   "adv: fixed r6": {
+    "success": 1.0,
+    "tests_hard": 3.6667,
+    "tests_total": 10.875,
+    "surprise": 0.0
+   },
+   "adv: uniform r2..r8": {
+    "success": 1.0,
+    "tests_hard": 3.4286,
+    "tests_total": 10.7857,
+    "surprise": 0.0
+   }
+  },
+  "believes proxy always right (r1) | single | B=5": {
+   "proxy always right (r1)": {
+    "success": 1.0,
+    "tests_hard": 0.5,
+    "tests_total": 2.25,
+    "surprise": 0.0
+   },
+   "shipped (trap at r2)": {
+    "success": 0.5,
+    "tests_hard": 0.5,
+    "tests_total": 1.9583,
+    "surprise": 0.0
+   },
+   "bank (r1/r2/r6 = 11/10/3)": {
+    "success": 0.7292,
+    "tests_hard": 0.5,
+    "tests_total": 2.092,
+    "surprise": 0.0
+   },
+   "adv: fixed r3": {
+    "success": 0.5,
+    "tests_hard": 0.5,
+    "tests_total": 1.9583,
+    "surprise": 0.0
+   },
+   "adv: fixed r6": {
+    "success": 0.5,
+    "tests_hard": 0.5,
+    "tests_total": 1.9583,
+    "surprise": 0.0
+   },
+   "adv: uniform r2..r8": {
+    "success": 0.5,
+    "tests_hard": 0.5,
+    "tests_total": 1.9583,
+    "surprise": 0.0
+   }
+  },
+  "believes proxy always right (r1) | single | B=8": {
+   "proxy always right (r1)": {
+    "success": 1.0,
+    "tests_hard": 0.5,
+    "tests_total": 2.25,
+    "surprise": 0.0
+   },
+   "shipped (trap at r2)": {
+    "success": 0.5,
+    "tests_hard": 0.5,
+    "tests_total": 1.9583,
+    "surprise": 0.0
+   },
+   "bank (r1/r2/r6 = 11/10/3)": {
+    "success": 0.7292,
+    "tests_hard": 0.5,
+    "tests_total": 2.092,
+    "surprise": 0.0
+   },
+   "adv: fixed r3": {
+    "success": 0.5,
+    "tests_hard": 0.5,
+    "tests_total": 1.9583,
+    "surprise": 0.0
+   },
+   "adv: fixed r6": {
+    "success": 0.5,
+    "tests_hard": 0.5,
+    "tests_total": 1.9583,
+    "surprise": 0.0
+   },
+   "adv: uniform r2..r8": {
+    "success": 0.5,
+    "tests_hard": 0.5,
+    "tests_total": 1.9583,
+    "surprise": 0.0
+   }
+  },
+  "believes proxy always right (r1) | single | B=12": {
+   "proxy always right (r1)": {
+    "success": 1.0,
+    "tests_hard": 0.5,
+    "tests_total": 2.25,
+    "surprise": 0.0
+   },
+   "shipped (trap at r2)": {
+    "success": 0.5,
+    "tests_hard": 0.5,
+    "tests_total": 1.9583,
+    "surprise": 0.0
+   },
+   "bank (r1/r2/r6 = 11/10/3)": {
+    "success": 0.7292,
+    "tests_hard": 0.5,
+    "tests_total": 2.092,
+    "surprise": 0.0
+   },
+   "adv: fixed r3": {
+    "success": 0.5,
+    "tests_hard": 0.5,
+    "tests_total": 1.9583,
+    "surprise": 0.0
+   },
+   "adv: fixed r6": {
+    "success": 0.5,
+    "tests_hard": 0.5,
+    "tests_total": 1.9583,
+    "surprise": 0.0
+   },
+   "adv: uniform r2..r8": {
+    "success": 0.5,
+    "tests_hard": 0.5,
+    "tests_total": 1.9583,
+    "surprise": 0.0
+   }
+  },
+  "believes shipped (r2) | single | B=5": {
+   "proxy always right (r1)": {
+    "success": 1.0,
+    "tests_hard": 1.0,
+    "tests_total": 4.5,
+    "surprise": 0.0
+   },
+   "shipped (trap at r2)": {
+    "success": 1.0,
+    "tests_hard": 1.25,
+    "tests_total": 4.0,
+    "surprise": 0.0
+   },
+   "bank (r1/r2/r6 = 11/10/3)": {
+    "success": 0.9375,
+    "tests_hard": 1.1354,
+    "tests_total": 4.2813,
+    "surprise": 0.0
+   },
+   "adv: fixed r3": {
+    "success": 0.5,
+    "tests_hard": 1.25,
+    "tests_total": 4.4167,
+    "surprise": 0.0
+   },
+   "adv: fixed r6": {
+    "success": 0.5,
+    "tests_hard": 1.25,
+    "tests_total": 4.4167,
+    "surprise": 0.0
+   },
+   "adv: uniform r2..r8": {
+    "success": 0.5714,
+    "tests_hard": 1.25,
+    "tests_total": 4.3571,
+    "surprise": 0.0
+   }
+  },
+  "believes shipped (r2) | single | B=8": {
+   "proxy always right (r1)": {
+    "success": 1.0,
+    "tests_hard": 1.0,
+    "tests_total": 4.5,
+    "surprise": 0.0
+   },
+   "shipped (trap at r2)": {
+    "success": 1.0,
+    "tests_hard": 1.25,
+    "tests_total": 4.0,
+    "surprise": 0.0
+   },
+   "bank (r1/r2/r6 = 11/10/3)": {
+    "success": 0.9375,
+    "tests_hard": 1.1354,
+    "tests_total": 4.2813,
+    "surprise": 0.0
+   },
+   "adv: fixed r3": {
+    "success": 0.5,
+    "tests_hard": 1.25,
+    "tests_total": 4.4167,
+    "surprise": 0.0
+   },
+   "adv: fixed r6": {
+    "success": 0.5,
+    "tests_hard": 1.25,
+    "tests_total": 4.4167,
+    "surprise": 0.0
+   },
+   "adv: uniform r2..r8": {
+    "success": 0.5714,
+    "tests_hard": 1.25,
+    "tests_total": 4.3571,
+    "surprise": 0.0
+   }
+  },
+  "believes shipped (r2) | single | B=12": {
+   "proxy always right (r1)": {
+    "success": 1.0,
+    "tests_hard": 1.0,
+    "tests_total": 4.5,
+    "surprise": 0.0
+   },
+   "shipped (trap at r2)": {
+    "success": 1.0,
+    "tests_hard": 1.25,
+    "tests_total": 4.0,
+    "surprise": 0.0
+   },
+   "bank (r1/r2/r6 = 11/10/3)": {
+    "success": 0.9375,
+    "tests_hard": 1.1354,
+    "tests_total": 4.2813,
+    "surprise": 0.0
+   },
+   "adv: fixed r3": {
+    "success": 0.5,
+    "tests_hard": 1.25,
+    "tests_total": 4.4167,
+    "surprise": 0.0
+   },
+   "adv: fixed r6": {
+    "success": 0.5,
+    "tests_hard": 1.25,
+    "tests_total": 4.4167,
+    "surprise": 0.0
+   },
+   "adv: uniform r2..r8": {
+    "success": 0.5714,
+    "tests_hard": 1.25,
+    "tests_total": 4.3571,
+    "surprise": 0.0
+   }
+  },
+  "believes bank law | single | B=5": {
+   "proxy always right (r1)": {
+    "success": 1.0,
+    "tests_hard": 1.0,
+    "tests_total": 4.5,
+    "surprise": 0.0
+   },
+   "shipped (trap at r2)": {
+    "success": 1.0,
+    "tests_hard": 1.2917,
+    "tests_total": 4.1667,
+    "surprise": 0.0
+   },
+   "bank (r1/r2/r6 = 11/10/3)": {
+    "success": 0.9583,
+    "tests_hard": 1.1736,
+    "tests_total": 4.3872,
+    "surprise": 0.0
+   },
+   "adv: fixed r3": {
+    "success": 0.5,
+    "tests_hard": 1.4167,
+    "tests_total": 4.75,
+    "surprise": 0.0
+   },
+   "adv: fixed r6": {
+    "success": 0.6667,
+    "tests_hard": 1.4167,
+    "tests_total": 4.7083,
+    "surprise": 0.0
+   },
+   "adv: uniform r2..r8": {
+    "success": 0.5952,
+    "tests_hard": 1.3988,
+    "tests_total": 4.6607,
+    "surprise": 0.0
+   }
+  },
+  "believes bank law | single | B=8": {
+   "proxy always right (r1)": {
+    "success": 1.0,
+    "tests_hard": 1.0,
+    "tests_total": 5.25,
+    "surprise": 0.0
+   },
+   "shipped (trap at r2)": {
+    "success": 1.0,
+    "tests_hard": 1.5,
+    "tests_total": 4.875,
+    "surprise": 0.0
+   },
+   "bank (r1/r2/r6 = 11/10/3)": {
+    "success": 1.0,
+    "tests_hard": 1.3021,
+    "tests_total": 5.0781,
+    "surprise": 0.0
+   },
+   "adv: fixed r3": {
+    "success": 0.5,
+    "tests_hard": 1.75,
+    "tests_total": 5.7917,
+    "surprise": 0.0
+   },
+   "adv: fixed r6": {
+    "success": 1.0,
+    "tests_hard": 1.75,
+    "tests_total": 5.125,
+    "surprise": 0.0
+   },
+   "adv: uniform r2..r8": {
+    "success": 0.6429,
+    "tests_hard": 1.7143,
+    "tests_total": 5.5655,
+    "surprise": 0.0
+   }
+  },
+  "believes bank law | single | B=12": {
+   "proxy always right (r1)": {
+    "success": 1.0,
+    "tests_hard": 1.0,
+    "tests_total": 5.25,
+    "surprise": 0.0
+   },
+   "shipped (trap at r2)": {
+    "success": 1.0,
+    "tests_hard": 1.5,
+    "tests_total": 4.875,
+    "surprise": 0.0
+   },
+   "bank (r1/r2/r6 = 11/10/3)": {
+    "success": 1.0,
+    "tests_hard": 1.3021,
+    "tests_total": 5.0781,
+    "surprise": 0.0
+   },
+   "adv: fixed r3": {
+    "success": 0.5,
+    "tests_hard": 1.75,
+    "tests_total": 5.7917,
+    "surprise": 0.0
+   },
+   "adv: fixed r6": {
+    "success": 1.0,
+    "tests_hard": 1.75,
+    "tests_total": 5.125,
+    "surprise": 0.0
+   },
+   "adv: uniform r2..r8": {
+    "success": 0.6429,
+    "tests_hard": 1.7143,
+    "tests_total": 5.5655,
+    "surprise": 0.0
+   }
+  },
+  "believes only 'not r1' (u2..8) | single | B=5": {
+   "proxy always right (r1)": {
+    "success": 1.0,
+    "tests_hard": 0.5,
+    "tests_total": 4.5,
+    "surprise": 0.0
+   },
+   "shipped (trap at r2)": {
+    "success": 0.75,
+    "tests_hard": 0.75,
+    "tests_total": 4.1667,
+    "surprise": 0.0
+   },
+   "bank (r1/r2/r6 = 11/10/3)": {
+    "success": 0.8333,
+    "tests_hard": 0.7083,
+    "tests_total": 4.3924,
+    "surprise": 0.0
+   },
+   "adv: fixed r3": {
+    "success": 0.75,
+    "tests_hard": 1.0,
+    "tests_total": 4.4167,
+    "surprise": 0.0
+   },
+   "adv: fixed r6": {
+    "success": 0.5,
+    "tests_hard": 1.3333,
+    "tests_total": 4.75,
+    "surprise": 0.0
+   },
+   "adv: uniform r2..r8": {
+    "success": 0.619,
+    "tests_hard": 1.1845,
+    "tests_total": 4.6012,
+    "surprise": 0.0
+   }
+  },
+  "believes only 'not r1' (u2..8) | single | B=8": {
+   "proxy always right (r1)": {
+    "success": 1.0,
+    "tests_hard": 0.5,
+    "tests_total": 6.75,
+    "surprise": 0.0
+   },
+   "shipped (trap at r2)": {
+    "success": 0.75,
+    "tests_hard": 0.75,
+    "tests_total": 6.0417,
+    "surprise": 0.0
+   },
+   "bank (r1/r2/r6 = 11/10/3)": {
+    "success": 0.8646,
+    "tests_hard": 0.7604,
+    "tests_total": 6.4913,
+    "surprise": 0.0
+   },
+   "adv: fixed r3": {
+    "success": 0.75,
+    "tests_hard": 1.0,
+    "tests_total": 6.2917,
+    "surprise": 0.0
+   },
+   "adv: fixed r6": {
+    "success": 0.75,
+    "tests_hard": 1.75,
+    "tests_total": 7.0417,
+    "surprise": 0.0
+   },
+   "adv: uniform r2..r8": {
+    "success": 0.7262,
+    "tests_hard": 1.4702,
+    "tests_total": 6.7619,
+    "surprise": 0.0
+   }
+  },
+  "believes only 'not r1' (u2..8) | single | B=12": {
+   "proxy always right (r1)": {
+    "success": 1.0,
+    "tests_hard": 1.0,
+    "tests_total": 9.0,
+    "surprise": 0.0
+   },
+   "shipped (trap at r2)": {
+    "success": 1.0,
+    "tests_hard": 1.5,
+    "tests_total": 8.0,
+    "surprise": 0.0
+   },
+   "bank (r1/r2/r6 = 11/10/3)": {
+    "success": 0.9687,
+    "tests_hard": 1.4167,
+    "tests_total": 8.6042,
+    "surprise": 0.0
+   },
+   "adv: fixed r3": {
+    "success": 1.0,
+    "tests_hard": 1.875,
+    "tests_total": 8.375,
+    "surprise": 0.0
+   },
+   "adv: fixed r6": {
+    "success": 0.75,
+    "tests_hard": 2.6667,
+    "tests_total": 9.1667,
+    "surprise": 0.0
+   },
+   "adv: uniform r2..r8": {
+    "success": 0.8452,
+    "tests_hard": 2.3869,
+    "tests_total": 8.8869,
+    "surprise": 0.0
+   }
+  },
+  "open-minded: 0.9 r1 + 0.1 u2..8 | single | B=5": {
+   "proxy always right (r1)": {
+    "success": 1.0,
+    "tests_hard": 0.5,
+    "tests_total": 4.5,
+    "surprise": 0.0
+   },
+   "shipped (trap at r2)": {
+    "success": 0.75,
+    "tests_hard": 0.75,
+    "tests_total": 4.1667,
+    "surprise": 0.0
+   },
+   "bank (r1/r2/r6 = 11/10/3)": {
+    "success": 0.8333,
+    "tests_hard": 0.7083,
+    "tests_total": 4.3924,
+    "surprise": 0.0
+   },
+   "adv: fixed r3": {
+    "success": 0.75,
+    "tests_hard": 1.0,
+    "tests_total": 4.4167,
+    "surprise": 0.0
+   },
+   "adv: fixed r6": {
+    "success": 0.5,
+    "tests_hard": 1.3333,
+    "tests_total": 4.75,
+    "surprise": 0.0
+   },
+   "adv: uniform r2..r8": {
+    "success": 0.619,
+    "tests_hard": 1.1845,
+    "tests_total": 4.6012,
+    "surprise": 0.0
+   }
+  },
+  "open-minded: 0.9 r1 + 0.1 u2..8 | single | B=8": {
+   "proxy always right (r1)": {
+    "success": 1.0,
+    "tests_hard": 0.5,
+    "tests_total": 6.75,
+    "surprise": 0.0
+   },
+   "shipped (trap at r2)": {
+    "success": 0.75,
+    "tests_hard": 0.75,
+    "tests_total": 6.0417,
+    "surprise": 0.0
+   },
+   "bank (r1/r2/r6 = 11/10/3)": {
+    "success": 0.8646,
+    "tests_hard": 0.7604,
+    "tests_total": 6.4913,
+    "surprise": 0.0
+   },
+   "adv: fixed r3": {
+    "success": 0.75,
+    "tests_hard": 1.0,
+    "tests_total": 6.2917,
+    "surprise": 0.0
+   },
+   "adv: fixed r6": {
+    "success": 0.75,
+    "tests_hard": 1.75,
+    "tests_total": 7.0417,
+    "surprise": 0.0
+   },
+   "adv: uniform r2..r8": {
+    "success": 0.7262,
+    "tests_hard": 1.4702,
+    "tests_total": 6.7619,
+    "surprise": 0.0
+   }
+  },
+  "open-minded: 0.9 r1 + 0.1 u2..8 | single | B=12": {
+   "proxy always right (r1)": {
+    "success": 1.0,
+    "tests_hard": 1.0,
+    "tests_total": 9.0,
+    "surprise": 0.0
+   },
+   "shipped (trap at r2)": {
+    "success": 1.0,
+    "tests_hard": 1.5,
+    "tests_total": 8.0,
+    "surprise": 0.0
+   },
+   "bank (r1/r2/r6 = 11/10/3)": {
+    "success": 0.9687,
+    "tests_hard": 1.4167,
+    "tests_total": 8.6042,
+    "surprise": 0.0
+   },
+   "adv: fixed r3": {
+    "success": 1.0,
+    "tests_hard": 1.875,
+    "tests_total": 8.375,
+    "surprise": 0.0
+   },
+   "adv: fixed r6": {
+    "success": 0.75,
+    "tests_hard": 2.6667,
+    "tests_total": 9.1667,
+    "surprise": 0.0
+   },
+   "adv: uniform r2..r8": {
+    "success": 0.8452,
+    "tests_hard": 2.3869,
+    "tests_total": 8.8869,
+    "surprise": 0.0
+   }
+  },
+  "open-minded: 0.5 r2 + 0.5 u1..8 | single | B=5": {
+   "proxy always right (r1)": {
+    "success": 1.0,
+    "tests_hard": 1.0,
+    "tests_total": 4.5,
+    "surprise": 0.0
+   },
+   "shipped (trap at r2)": {
+    "success": 1.0,
+    "tests_hard": 1.25,
+    "tests_total": 4.1667,
+    "surprise": 0.0
+   },
+   "bank (r1/r2/r6 = 11/10/3)": {
+    "success": 0.9375,
+    "tests_hard": 1.1562,
+    "tests_total": 4.3924,
+    "surprise": 0.0
+   },
+   "adv: fixed r3": {
+    "success": 0.625,
+    "tests_hard": 1.375,
+    "tests_total": 4.7083,
+    "surprise": 0.0
+   },
+   "adv: fixed r6": {
+    "success": 0.5,
+    "tests_hard": 1.4167,
+    "tests_total": 4.75,
+    "surprise": 0.0
+   },
+   "adv: uniform r2..r8": {
+    "success": 0.5952,
+    "tests_hard": 1.3869,
+    "tests_total": 4.6607,
+    "surprise": 0.0
+   }
+  },
+  "open-minded: 0.5 r2 + 0.5 u1..8 | single | B=8": {
+   "proxy always right (r1)": {
+    "success": 1.0,
+    "tests_hard": 1.0,
+    "tests_total": 6.75,
+    "surprise": 0.0
+   },
+   "shipped (trap at r2)": {
+    "success": 1.0,
+    "tests_hard": 1.25,
+    "tests_total": 6.0417,
+    "surprise": 0.0
+   },
+   "bank (r1/r2/r6 = 11/10/3)": {
+    "success": 0.9531,
+    "tests_hard": 1.2448,
+    "tests_total": 6.5278,
+    "surprise": 0.0
+   },
+   "adv: fixed r3": {
+    "success": 0.75,
+    "tests_hard": 1.5,
+    "tests_total": 6.2917,
+    "surprise": 0.0
+   },
+   "adv: fixed r6": {
+    "success": 0.625,
+    "tests_hard": 2.125,
+    "tests_total": 7.3333,
+    "surprise": 0.0
+   },
+   "adv: uniform r2..r8": {
+    "success": 0.7024,
+    "tests_hard": 1.8512,
+    "tests_total": 6.8214,
+    "surprise": 0.0
+   }
+  },
+  "open-minded: 0.5 r2 + 0.5 u1..8 | single | B=12": {
+   "proxy always right (r1)": {
+    "success": 1.0,
+    "tests_hard": 1.0,
+    "tests_total": 9.0,
+    "surprise": 0.0
+   },
+   "shipped (trap at r2)": {
+    "success": 1.0,
+    "tests_hard": 1.5,
+    "tests_total": 8.0,
+    "surprise": 0.0
+   },
+   "bank (r1/r2/r6 = 11/10/3)": {
+    "success": 0.9687,
+    "tests_hard": 1.4167,
+    "tests_total": 8.6042,
+    "surprise": 0.0
+   },
+   "adv: fixed r3": {
+    "success": 1.0,
+    "tests_hard": 1.875,
+    "tests_total": 8.375,
+    "surprise": 0.0
+   },
+   "adv: fixed r6": {
+    "success": 0.75,
+    "tests_hard": 2.6667,
+    "tests_total": 9.1667,
+    "surprise": 0.0
+   },
+   "adv: uniform r2..r8": {
+    "success": 0.8452,
+    "tests_hard": 2.3869,
+    "tests_total": 8.8869,
+    "surprise": 0.0
+   }
+  },
+  "unknown-counts Bayes for shipped (trap at r2) | group | played in true world": {
+   "4": {
+    "success": 0.75,
+    "tests_hard": 1.0417,
+    "tests_total": 3.6667,
+    "surprise": 0.0
+   },
+   "5": {
+    "success": 0.875,
+    "tests_hard": 1.375,
+    "tests_total": 4.3333,
+    "surprise": 0.0
+   },
+   "6": {
+    "success": 1.0,
+    "tests_hard": 1.5,
+    "tests_total": 4.75,
+    "surprise": 0.0
+   },
+   "8": {
+    "success": 1.0,
+    "tests_hard": 1.5,
+    "tests_total": 6.0,
+    "surprise": 0.0
+   },
+   "10": {
+    "success": 1.0,
+    "tests_hard": 1.5,
+    "tests_total": 6.0,
+    "surprise": 0.0
+   },
+   "12": {
+    "success": 1.0,
+    "tests_hard": 1.5,
+    "tests_total": 6.0,
+    "surprise": 0.0
+   }
+  },
+  "unknown-counts Bayes for shipped (trap at r2) | single | played in true world": {
+   "4": {
+    "success": 0.75,
+    "tests_hard": 1.0417,
+    "tests_total": 3.6667,
+    "surprise": 0.0
+   },
+   "5": {
+    "success": 0.875,
+    "tests_hard": 1.375,
+    "tests_total": 4.375,
+    "surprise": 0.0
+   },
+   "6": {
+    "success": 1.0,
+    "tests_hard": 1.5,
+    "tests_total": 4.5,
+    "surprise": 0.0
+   },
+   "8": {
+    "success": 1.0,
+    "tests_hard": 1.5,
+    "tests_total": 4.5,
+    "surprise": 0.0
+   },
+   "10": {
+    "success": 1.0,
+    "tests_hard": 1.5,
+    "tests_total": 4.5,
+    "surprise": 0.0
+   },
+   "12": {
+    "success": 1.0,
+    "tests_hard": 1.5,
+    "tests_total": 4.5,
+    "surprise": 0.0
+   }
+  },
+  "unknown-counts Bayes for bank (r1/r2/r6 = 11/10/3) | group | played in true world": {
+   "4": {
+    "success": 0.7378,
+    "tests_hard": 1.0816,
+    "tests_total": 3.9323,
+    "surprise": 0.0
+   },
+   "5": {
+    "success": 0.9219,
+    "tests_hard": 1.3611,
+    "tests_total": 4.8194,
+    "surprise": 0.0
+   },
+   "6": {
+    "success": 1.0,
+    "tests_hard": 1.6944,
+    "tests_total": 5.6389,
+    "surprise": 0.0
+   },
+   "8": {
+    "success": 1.0,
+    "tests_hard": 1.9983,
+    "tests_total": 7.3628,
+    "surprise": 0.0
+   },
+   "10": {
+    "success": 1.0,
+    "tests_hard": 2.3333,
+    "tests_total": 8.9531,
+    "surprise": 0.0
+   },
+   "12": {
+    "success": 1.0,
+    "tests_hard": 2.6667,
+    "tests_total": 10.4479,
+    "surprise": 0.0
+   }
+  },
+  "unknown-counts Bayes for bank (r1/r2/r6 = 11/10/3) | single | played in true world": {
+   "4": {
+    "success": 0.7986,
+    "tests_hard": 1.0903,
+    "tests_total": 3.9826,
+    "surprise": 0.0
+   },
+   "5": {
+    "success": 0.8854,
+    "tests_hard": 1.2031,
+    "tests_total": 4.7396,
+    "surprise": 0.0
+   },
+   "6": {
+    "success": 0.9375,
+    "tests_hard": 1.2708,
+    "tests_total": 5.5833,
+    "surprise": 0.0
+   },
+   "8": {
+    "success": 1.0,
+    "tests_hard": 1.3333,
+    "tests_total": 5.6771,
+    "surprise": 0.0
+   },
+   "10": {
+    "success": 1.0,
+    "tests_hard": 1.3333,
+    "tests_total": 5.6562,
+    "surprise": 0.0
+   },
+   "12": {
+    "success": 1.0,
+    "tests_hard": 1.3333,
+    "tests_total": 5.6562,
+    "surprise": 0.0
+   }
+  },
+  "unknown-counts blind ideal | group | played in true world": {
+   "4": {
+    "success": 0.3333,
+    "tests_hard": 1.25,
+    "tests_total": 4.0,
+    "surprise": 0.0
+   },
+   "8": {
+    "success": 0.6536,
+    "tests_hard": 2.5,
+    "tests_total": 8.0,
+    "surprise": 0.0
+   },
+   "12": {
+    "success": 0.984,
+    "tests_hard": 3.2881,
+    "tests_total": 12.0,
+    "surprise": 0.0
+   },
+   "16": {
+    "success": 1.0,
+    "tests_hard": 3.6895,
+    "tests_total": 15.4971,
+    "surprise": 0.0
+   }
+  },
+  "unknown-counts blind ideal | single | played in true world": {
+   "4": {
+    "success": 0.1725,
+    "tests_hard": 0.9321,
+    "tests_total": 4.0,
+    "surprise": 0.0
+   },
+   "8": {
+    "success": 0.3529,
+    "tests_hard": 1.624,
+    "tests_total": 8.0,
+    "surprise": 0.0
+   },
+   "12": {
+    "success": 0.4941,
+    "tests_hard": 2.4194,
+    "tests_total": 11.998,
+    "surprise": 0.0
+   },
+   "16": {
+    "success": 0.6641,
+    "tests_hard": 3.1934,
+    "tests_total": 15.8633,
+    "surprise": 0.0
+   }
+  }
+ },
+ "allocation_noiseless": {
+  "proxy Bayes shipped group | B=8": {
+   "success": 1.0,
+   "tests_hard": 1.25,
+   "tests_total": 4.833,
+   "surprise": 0.0
+  },
+  "proxy Bayes shipped single | B=8": {
+   "success": 1.0,
+   "tests_hard": 1.25,
+   "tests_total": 4.0,
+   "surprise": 0.0
+  },
+  "proxy Bayes bank single | B=8": {
+   "success": 1.0,
+   "tests_hard": 1.302,
+   "tests_total": 5.078,
+   "surprise": 0.0
+  },
+  "blind ideal known group | B=8": {
+   "success": 0.703,
+   "tests_hard": 2.318,
+   "tests_total": 8.0,
+   "surprise": 0.0
+  },
+  "blind ideal known single | B=8": {
+   "success": 0.363,
+   "tests_hard": 1.624,
+   "tests_total": 7.966,
+   "surprise": 0.0
+  }
+ },
+ "noise_params": {
+  "mu0": 0.02,
+  "sig1": 0.075,
+  "sigG": 0.14,
+  "theta": 0.225
+ },
+ "noisy_scripted": {
+  "top1 prefix | shipped (trap at r2)": {
+   "4": 0.4888,
+   "8": 0.4975,
+   "12": 0.502,
+   "16": 0.5011,
+   "20": 0.5011,
+   "24": 0.5019,
+   "32": 0.5016,
+   "48": 0.5013,
+   "64": 0.5
+  },
+  "top2 prefix | shipped (trap at r2)": {
+   "8": 0.9722,
+   "12": 0.9717,
+   "16": 0.9976,
+   "20": 0.9985,
+   "24": 0.9993,
+   "32": 0.9999,
+   "48": 1.0,
+   "64": 1.0
+  },
+  "top3 prefix | shipped (trap at r2)": {
+   "12": 0.965,
+   "16": 0.9646,
+   "20": 0.9653,
+   "24": 0.9982,
+   "32": 0.997,
+   "48": 0.9999,
+   "64": 1.0
+  },
+  "top4 prefix | shipped (trap at r2)": {
+   "16": 0.9553,
+   "20": 0.956,
+   "24": 0.9553,
+   "32": 0.9967,
+   "48": 0.999,
+   "64": 0.9999
+  },
+  "top1 prefix | bank (r1/r2/r6 = 11/10/3)": {
+   "4": 0.7194,
+   "8": 0.7265,
+   "12": 0.7238,
+   "16": 0.7258,
+   "20": 0.7267,
+   "24": 0.7309,
+   "32": 0.7342,
+   "48": 0.7275,
+   "64": 0.7309
+  },
+  "top2 prefix | bank (r1/r2/r6 = 11/10/3)": {
+   "8": 0.9103,
+   "12": 0.9101,
+   "16": 0.9353,
+   "20": 0.9357,
+   "24": 0.938,
+   "32": 0.9382,
+   "48": 0.9377,
+   "64": 0.9392
+  },
+  "top3 prefix | bank (r1/r2/r6 = 11/10/3)": {
+   "12": 0.9032,
+   "16": 0.9045,
+   "20": 0.9042,
+   "24": 0.9365,
+   "32": 0.9352,
+   "48": 0.9375,
+   "64": 0.9392
+  },
+  "top4 prefix | bank (r1/r2/r6 = 11/10/3)": {
+   "16": 0.8958,
+   "20": 0.8961,
+   "24": 0.8964,
+   "32": 0.9349,
+   "48": 0.9368,
+   "64": 0.9391
+  },
+  "top1 prefix | adv: uniform r2..r8": {
+   "4": 0.4888,
+   "8": 0.4975,
+   "12": 0.502,
+   "16": 0.5011,
+   "20": 0.5011,
+   "24": 0.5019,
+   "32": 0.5016,
+   "48": 0.5013,
+   "64": 0.5
+  },
+  "top2 prefix | adv: uniform r2..r8": {
+   "8": 0.5552,
+   "12": 0.5488,
+   "16": 0.5703,
+   "20": 0.5709,
+   "24": 0.5741,
+   "32": 0.5736,
+   "48": 0.5726,
+   "64": 0.5733
+  },
+  "top3 prefix | adv: uniform r2..r8": {
+   "12": 0.6123,
+   "16": 0.6151,
+   "20": 0.6192,
+   "24": 0.6415,
+   "32": 0.6436,
+   "48": 0.6449,
+   "64": 0.6451
+  },
+  "top4 prefix | adv: uniform r2..r8": {
+   "16": 0.6773,
+   "20": 0.681,
+   "24": 0.6836,
+   "32": 0.7164,
+   "48": 0.7127,
+   "64": 0.7155
+  },
+  "top1 prefix | adv: fixed r6": {
+   "4": 0.4888,
+   "8": 0.4975,
+   "12": 0.502,
+   "16": 0.5011,
+   "20": 0.5011,
+   "24": 0.5019,
+   "32": 0.5016,
+   "48": 0.5013,
+   "64": 0.5
+  },
+  "top2 prefix | adv: fixed r6": {
+   "8": 0.4826,
+   "12": 0.4872,
+   "16": 0.5002,
+   "20": 0.5003,
+   "24": 0.5014,
+   "32": 0.5016,
+   "48": 0.5013,
+   "64": 0.5
+  },
+  "top3 prefix | adv: fixed r6": {
+   "12": 0.4849,
+   "16": 0.4823,
+   "20": 0.4829,
+   "24": 0.5009,
+   "32": 0.4999,
+   "48": 0.5012,
+   "64": 0.5
+  },
+  "top4 prefix | adv: fixed r6": {
+   "16": 0.478,
+   "20": 0.4785,
+   "24": 0.4789,
+   "32": 0.5,
+   "48": 0.5009,
+   "64": 0.5
+  },
+  "blind scripted (ii-c) | any mix": {
+   "4": 0.1972,
+   "8": 0.4021,
+   "12": 0.6003,
+   "16": 0.8031,
+   "20": 0.8004,
+   "24": 0.7992,
+   "32": 0.9131,
+   "48": 0.9466,
+   "64": 0.9637
+  }
+ },
+ "noisy_replay_of_ideal": {
+  "blind ideal known group": {
+   "4x1": 0.2667,
+   "4x2": 0.3047,
+   "4x3": 0.3327,
+   "4x4": 0.3213,
+   "4x6": 0.324,
+   "4x8": 0.3353,
+   "5x1": 0.3033,
+   "5x2": 0.3513,
+   "5x3": 0.368,
+   "5x4": 0.3773,
+   "5x6": 0.3827,
+   "5x8": 0.3693,
+   "6x1": 0.3613,
+   "6x2": 0.436,
+   "6x3": 0.4507,
+   "6x4": 0.4807,
+   "6x6": 0.4887,
+   "6x8": 0.4733,
+   "8x1": 0.4647,
+   "8x2": 0.5687,
+   "8x3": 0.612,
+   "8x4": 0.6173,
+   "8x6": 0.648,
+   "8x8": 0.6353,
+   "10x1": 0.522,
+   "10x2": 0.6627,
+   "10x3": 0.7147,
+   "10x4": 0.7287,
+   "10x6": 0.7673,
+   "12x1": 0.598,
+   "12x2": 0.7813,
+   "12x3": 0.8393,
+   "12x4": 0.9007,
+   "16x1": 0.7653,
+   "16x2": 0.862,
+   "16x3": 0.9167,
+   "16x4": 0.9467
+  },
+  "blind ideal known single": {
+   "4x1": 0.182,
+   "4x2": 0.1733,
+   "4x3": 0.168,
+   "4x4": 0.164,
+   "4x6": 0.1613,
+   "4x8": 0.1747,
+   "5x1": 0.2113,
+   "5x2": 0.2153,
+   "5x3": 0.2167,
+   "5x4": 0.222,
+   "5x6": 0.198,
+   "5x8": 0.1987,
+   "6x1": 0.2633,
+   "6x2": 0.284,
+   "6x3": 0.2567,
+   "6x4": 0.2647,
+   "6x6": 0.266,
+   "6x8": 0.256,
+   "8x1": 0.3547,
+   "8x2": 0.3913,
+   "8x3": 0.3773,
+   "8x4": 0.3487,
+   "8x6": 0.3793,
+   "8x8": 0.3513,
+   "10x1": 0.4453,
+   "10x2": 0.428,
+   "10x3": 0.4553,
+   "10x4": 0.4333,
+   "10x6": 0.4353,
+   "12x1": 0.5067,
+   "12x2": 0.5153,
+   "12x3": 0.5327,
+   "12x4": 0.546,
+   "16x1": 0.6653,
+   "16x2": 0.704,
+   "16x3": 0.6953,
+   "16x4": 0.71
+  },
+  "proxy Bayes shipped group": {
+   "3x1": 0.7267,
+   "3x2": 0.7537,
+   "3x3": 0.7567,
+   "3x4": 0.749,
+   "3x6": 0.751,
+   "3x8": 0.754,
+   "4x1": 0.8657,
+   "4x2": 0.899,
+   "4x3": 0.9107,
+   "4x4": 0.9097,
+   "4x6": 0.9153,
+   "4x8": 0.915,
+   "5x1": 0.97,
+   "5x2": 0.9953,
+   "5x3": 0.9987,
+   "5x4": 0.9997,
+   "5x6": 1.0,
+   "5x8": 1.0,
+   "6x1": 0.9413,
+   "6x2": 0.985,
+   "6x3": 0.9947,
+   "6x4": 0.999,
+   "6x6": 0.999,
+   "6x8": 0.9997,
+   "8x1": 0.9663,
+   "8x2": 0.9963,
+   "8x3": 0.9983,
+   "8x4": 0.9997,
+   "8x6": 1.0,
+   "8x8": 1.0
+  },
+  "proxy Bayes shipped single": {
+   "3x1": 0.7263,
+   "3x2": 0.753,
+   "3x3": 0.7567,
+   "3x4": 0.7487,
+   "3x6": 0.751,
+   "3x8": 0.754,
+   "4x1": 0.8377,
+   "4x2": 0.8627,
+   "4x3": 0.869,
+   "4x4": 0.8677,
+   "4x6": 0.8733,
+   "4x8": 0.873,
+   "5x1": 0.9587,
+   "5x2": 0.9887,
+   "5x3": 0.9947,
+   "5x4": 0.999,
+   "5x6": 0.9993,
+   "5x8": 1.0,
+   "6x1": 0.9597,
+   "6x2": 0.9917,
+   "6x3": 0.9947,
+   "6x4": 0.998,
+   "6x6": 0.9993,
+   "6x8": 0.9997,
+   "8x1": 0.9563,
+   "8x2": 0.9903,
+   "8x3": 0.9993,
+   "8x4": 0.9983,
+   "8x6": 0.9993,
+   "8x8": 1.0
+  },
+  "proxy Bayes bank single": {
+   "3x1": 0.7993,
+   "3x2": 0.8383,
+   "3x3": 0.836,
+   "3x4": 0.8273,
+   "3x6": 0.8323,
+   "3x8": 0.8367,
+   "4x1": 0.8623,
+   "4x2": 0.8813,
+   "4x3": 0.883,
+   "4x4": 0.8883,
+   "4x6": 0.892,
+   "4x8": 0.8927,
+   "5x1": 0.9207,
+   "5x2": 0.944,
+   "5x3": 0.951,
+   "5x4": 0.959,
+   "5x6": 0.961,
+   "5x8": 0.9633,
+   "6x1": 0.9357,
+   "6x2": 0.9717,
+   "6x3": 0.9803,
+   "6x4": 0.976,
+   "6x6": 0.987,
+   "6x8": 0.9893,
+   "8x1": 0.944,
+   "8x2": 0.9897,
+   "8x3": 0.9937,
+   "8x4": 0.996,
+   "8x6": 0.9997,
+   "8x8": 1.0
+  }
+ },
+ "noisy_robust_envelope": {
+  "blind ideal known group": {
+   "4": 0.2667,
+   "8": 0.4647,
+   "12": 0.598,
+   "16": 0.7653,
+   "20": 0.7653,
+   "24": 0.7813,
+   "32": 0.862,
+   "48": 0.9167,
+   "64": 0.9467
+  },
+  "blind ideal known single": {
+   "4": 0.182,
+   "8": 0.3547,
+   "12": 0.5067,
+   "16": 0.6653,
+   "20": 0.6653,
+   "24": 0.6653,
+   "32": 0.704,
+   "48": 0.704,
+   "64": 0.71
+  },
+  "proxy Bayes shipped group": {
+   "4": 0.8657,
+   "8": 0.97,
+   "12": 0.9953,
+   "16": 0.9987,
+   "20": 0.9997,
+   "24": 0.9997,
+   "32": 1.0,
+   "48": 1.0,
+   "64": 1.0
+  },
+  "proxy Bayes shipped single": {
+   "4": 0.8377,
+   "8": 0.9597,
+   "12": 0.9917,
+   "16": 0.9947,
+   "20": 0.999,
+   "24": 0.9993,
+   "32": 0.9993,
+   "48": 1.0,
+   "64": 1.0
+  },
+  "proxy Bayes bank single": {
+   "4": 0.8623,
+   "8": 0.944,
+   "12": 0.9717,
+   "16": 0.9897,
+   "20": 0.9897,
+   "24": 0.9937,
+   "32": 0.996,
+   "48": 0.9997,
+   "64": 1.0
+  }
+ },
+ "terra_logistic": {
+  "a": -7.234,
+  "c_per_doubling": 2.008,
+  "check": {
+   "8": 0.23,
+   "16": 0.69,
+   "24": 0.878,
+   "32": 0.943,
+   "36": 0.959,
+   "64": 0.992
+  }
+ },
+ "B_star": {
+  "top-1 @8 noiseless | shipped (trap at r2)": {
+   "target": 0.5,
+   "ideal blind, group, known counts (noiseless)": 6.0,
+   "ideal blind, group, unknown counts (noiseless)": 6.3,
+   "ideal blind, single only, known counts (noiseless)": 11.4,
+   "ideal blind, single only, unknown counts (noiseless)": 11.8,
+   "noisy robust ideal blind, group": 9.1,
+   "noisy robust ideal blind, single": 11.8,
+   "scripted blind (ii-c), noisy sim": 10.0,
+   "repo scripted blind (exact back-end)": 10.0,
+   "Terra no-proxy logistic": 12.1
+  },
+  "top-2 @8 noiseless | shipped (trap at r2)": {
+   "target": 1.0,
+   "ideal blind, group, known counts (noiseless)": 12.0,
+   "ideal blind, group, unknown counts (noiseless)": 16.0,
+   "ideal blind, single only, known counts (noiseless)": 31.0,
+   "ideal blind, single only, unknown counts (noiseless)": 32.0,
+   "noisy robust ideal blind, group": Infinity,
+   "noisy robust ideal blind, single": Infinity,
+   "scripted blind (ii-c), noisy sim": Infinity,
+   "repo scripted blind (exact back-end)": Infinity,
+   "Terra no-proxy logistic": Infinity
+  },
+  "Bayes(calibrated) group @8 noiseless | shipped (trap at r2)": {
+   "target": 1.0,
+   "ideal blind, group, known counts (noiseless)": 12.0,
+   "ideal blind, group, unknown counts (noiseless)": 16.0,
+   "ideal blind, single only, known counts (noiseless)": 31.0,
+   "ideal blind, single only, unknown counts (noiseless)": 32.0,
+   "noisy robust ideal blind, group": Infinity,
+   "noisy robust ideal blind, single": Infinity,
+   "scripted blind (ii-c), noisy sim": Infinity,
+   "repo scripted blind (exact back-end)": Infinity,
+   "Terra no-proxy logistic": Infinity
+  },
+  "Bayes(calibrated) single @8 noiseless | shipped (trap at r2)": {
+   "target": 1.0,
+   "ideal blind, group, known counts (noiseless)": 12.0,
+   "ideal blind, group, unknown counts (noiseless)": 16.0,
+   "ideal blind, single only, known counts (noiseless)": 31.0,
+   "ideal blind, single only, unknown counts (noiseless)": 32.0,
+   "noisy robust ideal blind, group": Infinity,
+   "noisy robust ideal blind, single": Infinity,
+   "scripted blind (ii-c), noisy sim": Infinity,
+   "repo scripted blind (exact back-end)": Infinity,
+   "Terra no-proxy logistic": Infinity
+  },
+  "top-2 @8 noisy | shipped (trap at r2)": {
+   "target": 0.9722,
+   "ideal blind, group, known counts (noiseless)": 11.3,
+   "ideal blind, group, unknown counts (noiseless)": 12.7,
+   "ideal blind, single only, known counts (noiseless)": 24.7,
+   "ideal blind, single only, unknown counts (noiseless)": 26.9,
+   "noisy robust ideal blind, group": Infinity,
+   "noisy robust ideal blind, single": Infinity,
+   "scripted blind (ii-c), noisy sim": Infinity,
+   "repo scripted blind (exact back-end)": Infinity,
+   "Terra no-proxy logistic": 41.4
+  },
+  "top-1 @8 noisy | shipped (trap at r2)": {
+   "target": 0.4975,
+   "ideal blind, group, known counts (noiseless)": 6.0,
+   "ideal blind, group, unknown counts (noiseless)": 6.3,
+   "ideal blind, single only, known counts (noiseless)": 11.3,
+   "ideal blind, single only, unknown counts (noiseless)": 11.7,
+   "noisy robust ideal blind, group": 9.0,
+   "noisy robust ideal blind, single": 11.8,
+   "scripted blind (ii-c), noisy sim": 9.9,
+   "repo scripted blind (exact back-end)": 9.9,
+   "Terra no-proxy logistic": 12.1
+  },
+  "top-1 @8 noiseless | bank (r1/r2/r6 = 11/10/3)": {
+   "target": 0.7292,
+   "ideal blind, group, known counts (noiseless)": 8.6,
+   "ideal blind, group, unknown counts (noiseless)": 9.1,
+   "ideal blind, single only, known counts (noiseless)": 16.4,
+   "ideal blind, single only, unknown counts (noiseless)": 17.3,
+   "noisy robust ideal blind, group": 15.1,
+   "noisy robust ideal blind, single": Infinity,
+   "scripted blind (ii-c), noisy sim": 14.5,
+   "repo scripted blind (exact back-end)": 14.6,
+   "Terra no-proxy logistic": 17.1
+  },
+  "top-2 @8 noiseless | bank (r1/r2/r6 = 11/10/3)": {
+   "target": 0.9375,
+   "ideal blind, group, known counts (noiseless)": 10.8,
+   "ideal blind, group, unknown counts (noiseless)": 11.9,
+   "ideal blind, single only, known counts (noiseless)": 22.7,
+   "ideal blind, single only, unknown counts (noiseless)": 24.5,
+   "noisy robust ideal blind, group": 59.1,
+   "noisy robust ideal blind, single": Infinity,
+   "scripted blind (ii-c), noisy sim": 43.7,
+   "repo scripted blind (exact back-end)": Infinity,
+   "Terra no-proxy logistic": 30.9
+  },
+  "Bayes(calibrated) group @8 noiseless | bank (r1/r2/r6 = 11/10/3)": {
+   "target": 1.0,
+   "ideal blind, group, known counts (noiseless)": 12.0,
+   "ideal blind, group, unknown counts (noiseless)": 16.0,
+   "ideal blind, single only, known counts (noiseless)": 31.0,
+   "ideal blind, single only, unknown counts (noiseless)": 32.0,
+   "noisy robust ideal blind, group": Infinity,
+   "noisy robust ideal blind, single": Infinity,
+   "scripted blind (ii-c), noisy sim": Infinity,
+   "repo scripted blind (exact back-end)": Infinity,
+   "Terra no-proxy logistic": Infinity
+  },
+  "Bayes(calibrated) single @8 noiseless | bank (r1/r2/r6 = 11/10/3)": {
+   "target": 1.0,
+   "ideal blind, group, known counts (noiseless)": 12.0,
+   "ideal blind, group, unknown counts (noiseless)": 16.0,
+   "ideal blind, single only, known counts (noiseless)": 31.0,
+   "ideal blind, single only, unknown counts (noiseless)": 32.0,
+   "noisy robust ideal blind, group": Infinity,
+   "noisy robust ideal blind, single": Infinity,
+   "scripted blind (ii-c), noisy sim": Infinity,
+   "repo scripted blind (exact back-end)": Infinity,
+   "Terra no-proxy logistic": Infinity
+  },
+  "top-2 @8 noisy | bank (r1/r2/r6 = 11/10/3)": {
+   "target": 0.9103,
+   "ideal blind, group, known counts (noiseless)": 10.6,
+   "ideal blind, group, unknown counts (noiseless)": 11.4,
+   "ideal blind, single only, known counts (noiseless)": 21.6,
+   "ideal blind, single only, unknown counts (noiseless)": 23.1,
+   "noisy robust ideal blind, group": 46.1,
+   "noisy robust ideal blind, single": Infinity,
+   "scripted blind (ii-c), noisy sim": 31.8,
+   "repo scripted blind (exact back-end)": 48.2,
+   "Terra no-proxy logistic": 27.0
+  },
+  "top-1 @8 noisy | bank (r1/r2/r6 = 11/10/3)": {
+   "target": 0.7265,
+   "ideal blind, group, known counts (noiseless)": 8.5,
+   "ideal blind, group, unknown counts (noiseless)": 9.1,
+   "ideal blind, single only, known counts (noiseless)": 16.4,
+   "ideal blind, single only, unknown counts (noiseless)": 17.3,
+   "noisy robust ideal blind, group": 15.1,
+   "noisy robust ideal blind, single": Infinity,
+   "scripted blind (ii-c), noisy sim": 14.5,
+   "repo scripted blind (exact back-end)": 14.5,
+   "Terra no-proxy logistic": 17.0
+  },
+  "top-1 @8 noiseless | adv: uniform r2..r8": {
+   "target": 0.5,
+   "ideal blind, group, known counts (noiseless)": 6.0,
+   "ideal blind, group, unknown counts (noiseless)": 6.3,
+   "ideal blind, single only, known counts (noiseless)": 11.4,
+   "ideal blind, single only, unknown counts (noiseless)": 11.8,
+   "noisy robust ideal blind, group": 9.1,
+   "noisy robust ideal blind, single": 11.8,
+   "scripted blind (ii-c), noisy sim": 10.0,
+   "repo scripted blind (exact back-end)": 10.0,
+   "Terra no-proxy logistic": 12.1
+  },
+  "top-2 @8 noiseless | adv: uniform r2..r8": {
+   "target": 0.5714,
+   "ideal blind, group, known counts (noiseless)": 6.7,
+   "ideal blind, group, unknown counts (noiseless)": 7.1,
+   "ideal blind, single only, known counts (noiseless)": 13.0,
+   "ideal blind, single only, unknown counts (noiseless)": 13.4,
+   "noisy robust ideal blind, group": 11.2,
+   "noisy robust ideal blind, single": 13.6,
+   "scripted blind (ii-c), noisy sim": 11.4,
+   "repo scripted blind (exact back-end)": 11.4,
+   "Terra no-proxy logistic": 13.4
+  },
+  "Bayes(calibrated) group @8 noiseless | adv: uniform r2..r8": {
+   "target": 1.0,
+   "ideal blind, group, known counts (noiseless)": 12.0,
+   "ideal blind, group, unknown counts (noiseless)": 16.0,
+   "ideal blind, single only, known counts (noiseless)": 31.0,
+   "ideal blind, single only, unknown counts (noiseless)": 32.0,
+   "noisy robust ideal blind, group": Infinity,
+   "noisy robust ideal blind, single": Infinity,
+   "scripted blind (ii-c), noisy sim": Infinity,
+   "repo scripted blind (exact back-end)": Infinity,
+   "Terra no-proxy logistic": Infinity
+  },
+  "Bayes(calibrated) single @8 noiseless | adv: uniform r2..r8": {
+   "target": 0.7262,
+   "ideal blind, group, known counts (noiseless)": 8.5,
+   "ideal blind, group, unknown counts (noiseless)": 9.1,
+   "ideal blind, single only, known counts (noiseless)": 16.4,
+   "ideal blind, single only, unknown counts (noiseless)": 17.3,
+   "noisy robust ideal blind, group": 15.1,
+   "noisy robust ideal blind, single": Infinity,
+   "scripted blind (ii-c), noisy sim": 14.5,
+   "repo scripted blind (exact back-end)": 14.5,
+   "Terra no-proxy logistic": 17.0
+  },
+  "top-2 @8 noisy | adv: uniform r2..r8": {
+   "target": 0.5552,
+   "ideal blind, group, known counts (noiseless)": 6.5,
+   "ideal blind, group, unknown counts (noiseless)": 6.9,
+   "ideal blind, single only, known counts (noiseless)": 12.6,
+   "ideal blind, single only, unknown counts (noiseless)": 13.0,
+   "noisy robust ideal blind, group": 10.7,
+   "noisy robust ideal blind, single": 13.2,
+   "scripted blind (ii-c), noisy sim": 11.1,
+   "repo scripted blind (exact back-end)": 11.1,
+   "Terra no-proxy logistic": 13.1
+  },
+  "top-1 @8 noisy | adv: uniform r2..r8": {
+   "target": 0.4975,
+   "ideal blind, group, known counts (noiseless)": 6.0,
+   "ideal blind, group, unknown counts (noiseless)": 6.3,
+   "ideal blind, single only, known counts (noiseless)": 11.3,
+   "ideal blind, single only, unknown counts (noiseless)": 11.7,
+   "noisy robust ideal blind, group": 9.0,
+   "noisy robust ideal blind, single": 11.8,
+   "scripted blind (ii-c), noisy sim": 9.9,
+   "repo scripted blind (exact back-end)": 9.9,
+   "Terra no-proxy logistic": 12.1
+  },
+  "top-1 @8 noiseless | adv: fixed r6": {
+   "target": 0.5,
+   "ideal blind, group, known counts (noiseless)": 6.0,
+   "ideal blind, group, unknown counts (noiseless)": 6.3,
+   "ideal blind, single only, known counts (noiseless)": 11.4,
+   "ideal blind, single only, unknown counts (noiseless)": 11.8,
+   "noisy robust ideal blind, group": 9.1,
+   "noisy robust ideal blind, single": 11.8,
+   "scripted blind (ii-c), noisy sim": 10.0,
+   "repo scripted blind (exact back-end)": 10.0,
+   "Terra no-proxy logistic": 12.1
+  },
+  "top-2 @8 noiseless | adv: fixed r6": {
+   "target": 0.5,
+   "ideal blind, group, known counts (noiseless)": 6.0,
+   "ideal blind, group, unknown counts (noiseless)": 6.3,
+   "ideal blind, single only, known counts (noiseless)": 11.4,
+   "ideal blind, single only, unknown counts (noiseless)": 11.8,
+   "noisy robust ideal blind, group": 9.1,
+   "noisy robust ideal blind, single": 11.8,
+   "scripted blind (ii-c), noisy sim": 10.0,
+   "repo scripted blind (exact back-end)": 10.0,
+   "Terra no-proxy logistic": 12.1
+  },
+  "Bayes(calibrated) group @8 noiseless | adv: fixed r6": {
+   "target": 1.0,
+   "ideal blind, group, known counts (noiseless)": 12.0,
+   "ideal blind, group, unknown counts (noiseless)": 16.0,
+   "ideal blind, single only, known counts (noiseless)": 31.0,
+   "ideal blind, single only, unknown counts (noiseless)": 32.0,
+   "noisy robust ideal blind, group": Infinity,
+   "noisy robust ideal blind, single": Infinity,
+   "scripted blind (ii-c), noisy sim": Infinity,
+   "repo scripted blind (exact back-end)": Infinity,
+   "Terra no-proxy logistic": Infinity
+  },
+  "Bayes(calibrated) single @8 noiseless | adv: fixed r6": {
+   "target": 1.0,
+   "ideal blind, group, known counts (noiseless)": 12.0,
+   "ideal blind, group, unknown counts (noiseless)": 16.0,
+   "ideal blind, single only, known counts (noiseless)": 31.0,
+   "ideal blind, single only, unknown counts (noiseless)": 32.0,
+   "noisy robust ideal blind, group": Infinity,
+   "noisy robust ideal blind, single": Infinity,
+   "scripted blind (ii-c), noisy sim": Infinity,
+   "repo scripted blind (exact back-end)": Infinity,
+   "Terra no-proxy logistic": Infinity
+  },
+  "top-2 @8 noisy | adv: fixed r6": {
+   "target": 0.4826,
+   "ideal blind, group, known counts (noiseless)": 5.8,
+   "ideal blind, group, unknown counts (noiseless)": 6.2,
+   "ideal blind, single only, known counts (noiseless)": 11.0,
+   "ideal blind, single only, unknown counts (noiseless)": 11.4,
+   "noisy robust ideal blind, group": 8.5,
+   "noisy robust ideal blind, single": 11.4,
+   "scripted blind (ii-c), noisy sim": 9.6,
+   "repo scripted blind (exact back-end)": 9.7,
+   "Terra no-proxy logistic": 11.9
+  },
+  "top-1 @8 noisy | adv: fixed r6": {
+   "target": 0.4975,
+   "ideal blind, group, known counts (noiseless)": 6.0,
+   "ideal blind, group, unknown counts (noiseless)": 6.3,
+   "ideal blind, single only, known counts (noiseless)": 11.3,
+   "ideal blind, single only, unknown counts (noiseless)": 11.7,
+   "noisy robust ideal blind, group": 9.0,
+   "noisy robust ideal blind, single": 11.8,
+   "scripted blind (ii-c), noisy sim": 9.9,
+   "repo scripted blind (exact back-end)": 9.9,
+   "Terra no-proxy logistic": 12.1
+  },
+  "Bayes for shipped, played in shipped (trap at r2) @8 single": {
+   "target": 1.0,
+   "ideal blind, group, known counts (noiseless)": 12.0,
+   "ideal blind, group, unknown counts (noiseless)": 16.0,
+   "ideal blind, single only, known counts (noiseless)": 31.0,
+   "ideal blind, single only, unknown counts (noiseless)": 32.0,
+   "noisy robust ideal blind, group": Infinity,
+   "noisy robust ideal blind, single": Infinity,
+   "scripted blind (ii-c), noisy sim": Infinity,
+   "repo scripted blind (exact back-end)": Infinity,
+   "Terra no-proxy logistic": Infinity
+  },
+  "Bayes for 'proxy right', played in shipped (trap at r2) @8 single": {
+   "target": 0.5,
+   "ideal blind, group, known counts (noiseless)": 6.0,
+   "ideal blind, group, unknown counts (noiseless)": 6.3,
+   "ideal blind, single only, known counts (noiseless)": 11.4,
+   "ideal blind, single only, unknown counts (noiseless)": 11.8,
+   "noisy robust ideal blind, group": 9.1,
+   "noisy robust ideal blind, single": 11.8,
+   "scripted blind (ii-c), noisy sim": 10.0,
+   "repo scripted blind (exact back-end)": 10.0,
+   "Terra no-proxy logistic": 12.1
+  },
+  "Bayes for shipped, played in bank (r1/r2/r6 = 11/10/3) @8 single": {
+   "target": 0.9375,
+   "ideal blind, group, known counts (noiseless)": 10.8,
+   "ideal blind, group, unknown counts (noiseless)": 11.9,
+   "ideal blind, single only, known counts (noiseless)": 22.7,
+   "ideal blind, single only, unknown counts (noiseless)": 24.5,
+   "noisy robust ideal blind, group": 59.1,
+   "noisy robust ideal blind, single": Infinity,
+   "scripted blind (ii-c), noisy sim": 43.7,
+   "repo scripted blind (exact back-end)": Infinity,
+   "Terra no-proxy logistic": 30.9
+  },
+  "Bayes for 'proxy right', played in bank (r1/r2/r6 = 11/10/3) @8 single": {
+   "target": 0.7292,
+   "ideal blind, group, known counts (noiseless)": 8.6,
+   "ideal blind, group, unknown counts (noiseless)": 9.1,
+   "ideal blind, single only, known counts (noiseless)": 16.4,
+   "ideal blind, single only, unknown counts (noiseless)": 17.3,
+   "noisy robust ideal blind, group": 15.1,
+   "noisy robust ideal blind, single": Infinity,
+   "scripted blind (ii-c), noisy sim": 14.5,
+   "repo scripted blind (exact back-end)": 14.6,
+   "Terra no-proxy logistic": 17.1
+  },
+  "Bayes for shipped, played in adv: fixed r6 @8 single": {
+   "target": 0.5,
+   "ideal blind, group, known counts (noiseless)": 6.0,
+   "ideal blind, group, unknown counts (noiseless)": 6.3,
+   "ideal blind, single only, known counts (noiseless)": 11.4,
+   "ideal blind, single only, unknown counts (noiseless)": 11.8,
+   "noisy robust ideal blind, group": 9.1,
+   "noisy robust ideal blind, single": 11.8,
+   "scripted blind (ii-c), noisy sim": 10.0,
+   "repo scripted blind (exact back-end)": 10.0,
+   "Terra no-proxy logistic": 12.1
+  },
+  "Bayes for 'proxy right', played in adv: fixed r6 @8 single": {
+   "target": 0.5,
+   "ideal blind, group, known counts (noiseless)": 6.0,
+   "ideal blind, group, unknown counts (noiseless)": 6.3,
+   "ideal blind, single only, known counts (noiseless)": 11.4,
+   "ideal blind, single only, unknown counts (noiseless)": 11.8,
+   "noisy robust ideal blind, group": 9.1,
+   "noisy robust ideal blind, single": 11.8,
+   "scripted blind (ii-c), noisy sim": 10.0,
+   "repo scripted blind (exact back-end)": 10.0,
+   "Terra no-proxy logistic": 12.1
+  },
+  "Bayes for shipped, played in adv: uniform r2..r8 @8 single": {
+   "target": 0.5714,
+   "ideal blind, group, known counts (noiseless)": 6.7,
+   "ideal blind, group, unknown counts (noiseless)": 7.1,
+   "ideal blind, single only, known counts (noiseless)": 13.0,
+   "ideal blind, single only, unknown counts (noiseless)": 13.4,
+   "noisy robust ideal blind, group": 11.2,
+   "noisy robust ideal blind, single": 13.6,
+   "scripted blind (ii-c), noisy sim": 11.4,
+   "repo scripted blind (exact back-end)": 11.4,
+   "Terra no-proxy logistic": 13.4
+  },
+  "Bayes for 'proxy right', played in adv: uniform r2..r8 @8 single": {
+   "target": 0.5,
+   "ideal blind, group, known counts (noiseless)": 6.0,
+   "ideal blind, group, unknown counts (noiseless)": 6.3,
+   "ideal blind, single only, known counts (noiseless)": 11.4,
+   "ideal blind, single only, unknown counts (noiseless)": 11.8,
+   "noisy robust ideal blind, group": 9.1,
+   "noisy robust ideal blind, single": 11.8,
+   "scripted blind (ii-c), noisy sim": 10.0,
+   "repo scripted blind (exact back-end)": 10.0,
+   "Terra no-proxy logistic": 12.1
+  },
+  "noisy robust Bayes shipped single @8": {
+   "target": 0.9597,
+   "ideal blind, group, known counts (noiseless)": 11.0,
+   "ideal blind, group, unknown counts (noiseless)": 12.3,
+   "ideal blind, single only, known counts (noiseless)": 23.8,
+   "ideal blind, single only, unknown counts (noiseless)": 25.9,
+   "noisy robust ideal blind, group": Infinity,
+   "noisy robust ideal blind, single": Infinity,
+   "scripted blind (ii-c), noisy sim": 60.3,
+   "repo scripted blind (exact back-end)": Infinity,
+   "Terra no-proxy logistic": 36.3
+  },
+  "noisy robust Bayes shipped group @8": {
+   "target": 0.97,
+   "ideal blind, group, known counts (noiseless)": 11.3,
+   "ideal blind, group, unknown counts (noiseless)": 12.6,
+   "ideal blind, single only, known counts (noiseless)": 24.6,
+   "ideal blind, single only, unknown counts (noiseless)": 26.7,
+   "noisy robust ideal blind, group": Infinity,
+   "noisy robust ideal blind, single": Infinity,
+   "scripted blind (ii-c), noisy sim": Infinity,
+   "repo scripted blind (exact back-end)": Infinity,
+   "Terra no-proxy logistic": 40.3
+  },
+  "Terra Open-8 (23/24)": {
+   "target": 0.9583,
+   "ideal blind, group, known counts (noiseless)": 11.0,
+   "ideal blind, group, unknown counts (noiseless)": 12.3,
+   "ideal blind, single only, known counts (noiseless)": 23.8,
+   "ideal blind, single only, unknown counts (noiseless)": 25.8,
+   "noisy robust ideal blind, group": Infinity,
+   "noisy robust ideal blind, single": Infinity,
+   "scripted blind (ii-c), noisy sim": 59.0,
+   "repo scripted blind (exact back-end)": Infinity,
+   "Terra no-proxy logistic": 35.8
+  }
+ },
+ "decomposition": {
+  "noiseless, group tests, known counts": {
+   "I_proxy": 1.0,
+   "I_blind": 0.703,
+   "proxy_info_at_ideal": 0.297,
+   "Terra_blind_shortfall": 0.453,
+   "Terra_proxy_shortfall": 0.042,
+   "check_sum": 0.708,
+   "C1": 0.708
+  },
+  "noiseless, group tests, unknown counts": {
+   "I_proxy": 1.0,
+   "I_blind": 0.654,
+   "proxy_info_at_ideal": 0.346,
+   "Terra_blind_shortfall": 0.404,
+   "Terra_proxy_shortfall": 0.042,
+   "check_sum": 0.708,
+   "C1": 0.708
+  },
+  "noiseless, single isolations, known counts": {
+   "I_proxy": 1.0,
+   "I_blind": 0.363,
+   "proxy_info_at_ideal": 0.637,
+   "Terra_blind_shortfall": 0.113,
+   "Terra_proxy_shortfall": 0.042,
+   "check_sum": 0.708,
+   "C1": 0.708
+  },
+  "noiseless, single isolations, unknown counts": {
+   "I_proxy": 1.0,
+   "I_blind": 0.353,
+   "proxy_info_at_ideal": 0.647,
+   "Terra_blind_shortfall": 0.103,
+   "Terra_proxy_shortfall": 0.042,
+   "check_sum": 0.708,
+   "C1": 0.708
+  },
+  "noisy sim, best of robust ideal (group/single)": {
+   "I_proxy": 0.97,
+   "I_blind": 0.465,
+   "proxy_info_at_ideal": 0.505,
+   "Terra_blind_shortfall": 0.215,
+   "Terra_proxy_shortfall": 0.012,
+   "check_sum": 0.708,
+   "C1": 0.708
+  },
+  "repo scripted (top-two vs best blind, exact back-end)": {
+   "I_proxy": 0.96,
+   "I_blind": 0.4,
+   "proxy_info_at_ideal": 0.56,
+   "Terra_blind_shortfall": 0.15,
+   "Terra_proxy_shortfall": 0.002,
+   "check_sum": 0.708,
+   "C1": 0.708
+  }
+ },
+ "one_batch_with_trap_signal": {
+  "d'=0.0": {
+   "B=4": 0.5,
+   "B=5": 0.6253,
+   "B=6": 0.7507,
+   "B=7": 0.8755,
+   "B=8": 1.0
+  },
+  "d'=1.02": {
+   "B=4": 0.5,
+   "B=5": 0.7796,
+   "B=6": 0.9011,
+   "B=7": 0.9669,
+   "B=8": 1.0
+  },
+  "d'=1.4": {
+   "B=4": 0.5,
+   "B=5": 0.8367,
+   "B=6": 0.9393,
+   "B=7": 0.9828,
+   "B=8": 1.0
+  },
+  "d'=2.5": {
+   "B=4": 0.5,
+   "B=5": 0.9529,
+   "B=6": 0.9904,
+   "B=7": 0.9984,
+   "B=8": 1.0
+  },
+  "d'=99.0": {
+   "B=4": 0.5,
+   "B=5": 1.0,
+   "B=6": 1.0,
+   "B=7": 1.0,
+   "B=8": 1.0
+  }
+ }
+}
