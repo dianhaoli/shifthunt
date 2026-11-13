@@ -152,4 +152,5 @@ Anthropic = Haiku judge calls. $0 items (Step 0, X1, X2, X4, X5, C19, C21, the C
 | C14L | Luna 4 | 0.47 | — | $1.0 |
 | **total** | | **101.45** | **5.27** | OpenAI ≈ $105 approved |
 
-RUNLOG cumulative: OpenAI 90.755 → 192.206, Anthropic 78.403 → 83.673.
+RUNLOG cumulative: OpenAI 90.755 → 192.206, Anthropic 78.403 → 83.673. Rows are rounded to the cent; the totals
+are the unrounded sums (the rounded OpenAI rows add to 101.48).
