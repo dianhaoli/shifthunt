@@ -56,12 +56,12 @@ Costs are estimated from `results/blackbox_1112/SUMMARY.md`:
 | C19 | What the judge does to established orderings | 0 | runs now |
 | C21 | Audit-the-negatives-first curve plus a PPI line | 0 | runs now |
 | X5 | Regenerate Figure 2 with measured series | 0 | runs now |
-| C8 | Frozen judge on Luna's 60 runs, plus re-sending Terra's 24 calls interleaved (drift check) | ≈ 0.8 (cap 1.5) | [ ] approved |
-| C6 | Judge evidence ladder: L0r, L1 (with the query log), L1-redacted, Haiku judge | ≈ 7–9 OpenAI + < 1 Claude (cap 10 + 1.5) | [ ] approved |
-| C14 | Fresh rank-2 traps (F2) and rank-6 bank traps (R6), Terra and Luna, with a 3-run shipped anchor | core ≈ 12.5 (cap 17.5 with stage 2) | [ ] approved |
-| X3 | Terra Open-4 arm (proxy arm at B = 4), 2 runs per item (12 runs) | ≈ 8 (cap 10) | [ ] approved |
-| X3b | Luna Open-4, 2 runs per item (12 runs) | ≈ 1.5 (cap 2) | [ ] approved |
-| — | If time: C12 lean (≈ 1), C17 R2 re-send (1.97), C7 slim (2–4) | see portfolio §3 | [ ] approved |
+| C8 | Frozen judge on Luna's 60 runs, plus re-sending Terra's 24 calls interleaved (drift check) | ≈ 0.8 (cap 1.5) | [x] approved by author 13 Nov |
+| C6 | Judge evidence ladder: L0r, L1 (with the query log), L1-redacted, Haiku judge | ≈ 7–9 OpenAI + < 1 Claude (cap 10 + 1.5) | [x] approved by author 13 Nov |
+| C14 | Fresh rank-2 traps (F2) and rank-6 bank traps (R6), Terra and Luna, with a 3-run shipped anchor | core ≈ 12.5 (cap 17.5 with stage 2) | [x] approved by author 13 Nov |
+| X3 | Terra Open-4 arm (proxy arm at B = 4), 2 runs per item (12 runs) | ≈ 8 (cap 10) | [x] approved by author 13 Nov |
+| X3b | Luna Open-4, 2 runs per item (12 runs) | ≈ 1.5 (cap 2) | [x] approved by author 13 Nov |
+| — | If time: C12 lean (≈ 1), C17 R2 re-send (1.97), C7 slim (2–4) | see portfolio §3 | [x] approved by author 13 Nov |
 
 - **Totals.** The core API items (C8 + C6 + C14 + X3) come to ≈ $29–37 against caps of $39. With X3b, add ≈ $1.5 (cap
   $2). The author decides which boxes to tick.
