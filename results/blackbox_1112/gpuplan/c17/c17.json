@@ -1,0 +1,19 @@
+{
+ "prereg": "results/blackbox_1112/gpuplan/c17/PREREG_C17.md",
+ "three_replicates": {
+  "runs": 132,
+  "slots": 528,
+  "fleiss_kappa": 0.444,
+  "all_agree": 0.68,
+  "hard_fleiss_kappa": 0.388,
+  "hard_all_agree": 0.598
+ },
+ "two_replicates_214": {
+  "runs": 214,
+  "slots": 856,
+  "agreement": 0.843,
+  "pabak": 0.687,
+  "cohen_kappa": 0.47
+ },
+ "validity_reference": "certified-vs-judge hard-slot kappa 0.002 (J1): reliable-but-invalid reads as replicate kappa well above 0.002"
+}
