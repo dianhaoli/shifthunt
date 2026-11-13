@@ -240,3 +240,48 @@ Run id = first 12 characters of the container id (agent runs) or the request bat
 | 2026-11-13T10:04Z | bebb41a44543 | open8 | gpt | ep802 | ok | 0.520 | 100.993 | 78.403 |
 | 2026-11-13T10:21Z | b7f67a91ca91 | open8 | gpt | ep801 | ok | 1.247 | 102.240 | 78.403 |
 | 2026-11-13T10:22Z | none-open4_gpt-o1a1 | open4 | gpt | ep474 | infra:no_container (runner_exit_1) | 0.000 | 102.240 | 78.403 |
+| 2026-11-13T10:23Z | none-open4_gpt-o2a1 | open4 | gpt | ep474 | infra:no_container (runner_exit_1) | 0.000 | 102.240 | 78.403 |
+| 2026-11-13T10:39Z | f7de6c21160b | open4 | gpt | ep472 | ok | 0.590 | 102.830 | 78.403 |
+| 2026-11-13T10:45Z | b139d663a0d0 | open4 | gpt | ep411 | ok | 0.733 | 103.563 | 78.403 |
+| 2026-11-13T10:46Z | 0314870c2fa3 | open4 | gpt | ep413 | ok | 0.832 | 104.395 | 78.403 |
+| 2026-11-13T10:55Z | f35d436707ae | open4 | gpt | ep476 | ok | 0.598 | 104.993 | 78.403 |
+| 2026-11-13T11:05Z | 464971dfe65c | open4 | gpt | ep415 | ok | 0.749 | 105.742 | 78.403 |
+| 2026-11-13T11:07Z | 14d394b5ee82 | open4 | gpt | ep415 | ok | 0.749 | 106.491 | 78.403 |
+| 2026-11-13T11:09Z | b39873953a68 | open4 | gpt | ep472 | ok | 0.544 | 107.035 | 78.403 |
+| 2026-11-13T11:23Z | a1941090735f | open4 | gpt | ep411 | ok | 0.498 | 107.533 | 78.403 |
+| 2026-11-13T11:23Z | ace726fc7bcd | open4 | gpt | ep413 | ok | 0.670 | 108.203 | 78.403 |
+| 2026-11-13T11:27Z | 767e0d44346d | open4 | gpt | ep476 | ok | 0.589 | 108.792 | 78.403 |
+| 2026-11-13T11:38Z | ebc8e4da6935 | open4 | gpt | ep474 | ok | 0.592 | 109.384 | 78.403 |
+| 2026-11-13T11:44Z | 5cdcc8496b2e | open4 | gpt | ep474 | ok | 0.774 | 110.158 | 78.403 |
+| 2026-11-13T12:02Z | 8e74c5c9ad63 | open8 | luna | ep801 | ok | 0.103 | 110.261 | 78.403 |
+| 2026-11-13T12:04Z | 98bf684a7817 | open8 | luna | ep802 | ok | 0.105 | 110.366 | 78.403 |
+| 2026-11-13T12:07Z | 4e6af31e71ca | open8 | luna | ep801 | ok | 0.116 | 110.482 | 78.403 |
+| 2026-11-13T12:23Z | 8584927c01cd | open8 | luna | ep802 | ok | 0.096 | 110.578 | 78.403 |
+| 2026-11-13T12:28Z | 7491783aac79 | open8 | luna | ep802 | ok | 0.133 | 110.711 | 78.403 |
+| 2026-11-13T12:28Z | 9f43162c766c | open8 | luna | ep801 | ok | 0.127 | 110.838 | 78.403 |
+| 2026-11-13T12:38Z | ca34c0141593 | open8 | luna | ep802 | ok | 0.098 | 110.936 | 78.403 |
+| 2026-11-13T12:42Z | ebd4fa982c94 | open8 | luna | ep801 | ok | 0.091 | 111.027 | 78.403 |
+| 2026-11-13T12:50Z | 5c70d307e1c7 | open8 | luna | ep801 | ok | 0.137 | 111.164 | 78.403 |
+| 2026-11-13T12:51Z | cfd11cf81b47 | open8 | luna | ep802 | ok | 0.083 | 111.247 | 78.403 |
+| 2026-11-13T12:53Z | none-open4_luna-o1a1 | open4 | luna | ep474 | infra:no_container (runner_exit_1) | 0.000 | 111.247 | 78.403 |
+| 2026-11-13T12:54Z | none-open4_luna-o2a1 | open4 | luna | ep413 | infra:no_container (runner_exit_1) | 0.000 | 111.247 | 78.403 |
+| 2026-11-13T13:11Z | f393714787da | open4 | luna | ep415 | ok | 0.081 | 111.328 | 78.403 |
+| 2026-11-13T13:16Z | 12470244ec90 | open4 | luna | ep472 | ok | 0.154 | 111.482 | 78.403 |
+| 2026-11-13T13:23Z | eb737fb3f128 | open4 | luna | ep411 | ok | 0.063 | 111.545 | 78.403 |
+| 2026-11-13T13:27Z | 4eddcb3c1db5 | open4 | luna | ep413 | ok | 0.056 | 111.601 | 78.403 |
+| 2026-11-13T13:32Z | 6ff7c0bb19cf | open4 | luna | ep476 | ok | 0.234 | 111.835 | 78.403 |
+| 2026-11-13T13:51Z | 9a9b628e690f | open4 | luna | ep411 | ok | 0.104 | 111.939 | 78.403 |
+| 2026-11-13T13:52Z | e2d438a51c68 | open4 | luna | ep415 | ok | 0.138 | 112.077 | 78.403 |
+| 2026-11-13T14:06Z | b3d100b3d3f2 | open4 | luna | ep474 | ok | 0.078 | 112.155 | 78.403 |
+| 2026-11-13T14:07Z | 4cfa91e9e0db | open4 | luna | ep476 | ok | 0.256 | 112.411 | 78.403 |
+| 2026-11-13T14:07Z | f0045a8b10c0 | open4 | luna | ep472 | ok | 0.080 | 112.491 | 78.403 |
+| 2026-11-13T14:25Z | 56fc0a4dcaf4 | open4 | luna | ep413 | ok | 0.107 | 112.598 | 78.403 |
+| 2026-11-13T14:27Z | d176c1b44788 | open4 | luna | ep474 | ok | 0.152 | 112.750 | 78.403 |
+| 2026-11-13T14:46Z | 618a19daaaa0 | open8 | gpt | ep801 | ok | 0.566 | 113.316 | 78.403 |
+| 2026-11-13T14:50Z | 5883255492d1 | open8 | gpt | ep802 | ok | 0.851 | 114.167 | 78.403 |
+| 2026-11-13T14:50Z | 98c9b0fc641a | open8 | gpt | ep802 | ok | 0.746 | 114.913 | 78.403 |
+| 2026-11-13T15:02Z | 5a7684990f1a | open8 | gpt | ep801 | ok | 0.545 | 115.458 | 78.403 |
+| 2026-11-13T17:07Z | gpuplan C6: judge evidence ladder, set A 132 runs x L0r/L1/L1r (Terra) + H0/H1/H1r (Haiku), Luna L1 (852 calls, 850 ok, 2 http_503 not re-sent; results/private_1112/judge_ladder/raw; gpuplan/c6); Haiku spend 0.645 in cum_anthropic | judge | gpt-6.1-terra x456, claude-haiku-5-5 x396 | - | ok 850/852 | 6.137 | 121.595 | 79.048 |
+| 2026-11-13T17:07Z | gpuplan X3: Terra Open-4, 12 counted runs (spend in the run rows above; gpuplan/open4) | gpuplan | runs | - | ok | 0.000 | 121.595 | 79.048 |
+| 2026-11-13T17:07Z | gpuplan X3b: Luna Open-4, 12 counted runs (spend in the run rows above; gpuplan/open4) | gpuplan | runs | - | ok | 0.000 | 121.595 | 79.048 |
+| 2026-11-13T17:07Z | gpuplan C14: Terra 13 + stage 2 4 runs, Luna 10 runs on image r1114c (spend in the run rows above; gpuplan/c14) | gpuplan | runs | - | ok | 0.000 | 121.595 | 79.048 |

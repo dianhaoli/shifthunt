@@ -1,0 +1,54 @@
+{
+ "set_A_runs": 130,
+ "items": {
+  "ep413": {
+   "hard_failures": 8,
+   "credited_L0r": 5,
+   "credited_L1": 5,
+   "credited_L1r": 4,
+   "sign_L1_minus_L0r": "0"
+  },
+  "ep472": {
+   "hard_failures": 5,
+   "credited_L0r": 3,
+   "credited_L1": 3,
+   "credited_L1r": 3,
+   "sign_L1_minus_L0r": "0"
+  },
+  "ep415": {
+   "hard_failures": 8,
+   "credited_L0r": 6,
+   "credited_L1": 5,
+   "credited_L1r": 4,
+   "sign_L1_minus_L0r": "-"
+  },
+  "ep476": {
+   "hard_failures": 7,
+   "credited_L0r": 5,
+   "credited_L1": 5,
+   "credited_L1r": 6,
+   "sign_L1_minus_L0r": "0"
+  },
+  "ep411": {
+   "hard_failures": 8,
+   "credited_L0r": 5,
+   "credited_L1": 5,
+   "credited_L1r": 6,
+   "sign_L1_minus_L0r": "0"
+  },
+  "ep474": {
+   "hard_failures": 7,
+   "credited_L0r": 3,
+   "credited_L1": 5,
+   "credited_L1r": 3,
+   "sign_L1_minus_L0r": "+"
+  }
+ },
+ "summary": {
+  "fewer_credited_at_L1": 1,
+  "more_credited_at_L1": 1,
+  "unchanged": 4,
+  "sign_test_one_sided": 0.75,
+  "note": "sign-test floor with 6 items is 1/64 = 0.016 one-sided (0.031 two-sided)"
+ }
+}

@@ -1,0 +1,108 @@
+{
+ "prereg": "results/blackbox_1112/gpuplan/c14/PREREG_C14.md",
+ "stage2": true,
+ "terra": {
+  "fresh": {
+   "runs": 14,
+   "NAME_trap": "13/14",
+   "iso_main": "13/14",
+   "iso_head": "13/14",
+   "run_NAME": "13/14",
+   "one_burst": "13/14",
+   "breadth_mean": 3.0,
+   "texts_on_trap_mean": 3.86,
+   "texts_per_other_mean": 1.38,
+   "answers": {
+    "main": 13,
+    "none": 1
+   },
+   "texts_unrecovered": 0
+  },
+  "fresh_by_item": {
+   "ep801": {
+    "NAME_trap": "7/7",
+    "iso_main": "6/7",
+    "main_rank_sign_aware": 2,
+    "main_rank_abs": 3
+   },
+   "ep802": {
+    "NAME_trap": "6/7",
+    "iso_main": "7/7",
+    "main_rank_sign_aware": 2,
+    "main_rank_abs": 2
+   }
+  },
+  "anchor_shipped": {
+   "runs": 3,
+   "NAME_trap": "2/3",
+   "iso_main": "2/3",
+   "iso_head": "3/3",
+   "run_NAME": "2/3",
+   "one_burst": "2/3",
+   "breadth_mean": 2.0,
+   "texts_on_trap_mean": 4.0,
+   "texts_per_other_mean": 1.33,
+   "answers": {
+    "main": 2,
+    "other_wrong": 1
+   },
+   "texts_unrecovered": 0
+  }
+ },
+ "luna": {
+  "fresh": {
+   "runs": 10,
+   "NAME_trap": "2/10",
+   "iso_main": "3/10",
+   "iso_head": "4/10",
+   "run_NAME": "2/10",
+   "one_burst": "10/10",
+   "breadth_mean": 1.1,
+   "texts_on_trap_mean": 3.6,
+   "texts_per_other_mean": 1.47,
+   "answers": {
+    "other_wrong": 2,
+    "head": 4,
+    "main": 2,
+    "none": 2
+   },
+   "texts_unrecovered": 0
+  },
+  "fresh_by_item": {
+   "ep801": {
+    "NAME_trap": "1/5",
+    "iso_main": "1/5",
+    "main_rank_sign_aware": 2,
+    "main_rank_abs": 3
+   },
+   "ep802": {
+    "NAME_trap": "1/5",
+    "iso_main": "2/5",
+    "main_rank_sign_aware": 2,
+    "main_rank_abs": 2
+   }
+  }
+ },
+ "H1": {
+  "terra_NAME_trap_fresh": "13/14",
+  "shipped_reference": "11/12",
+  "per_item_pass": true,
+  "label": "confirm",
+  "fisher_shipped_vs_fresh_one_sided": 0.796923076923077
+ },
+ "H1b": {
+  "terra_iso_main_fresh": "13/14",
+  "label": "confirm"
+ },
+ "H2": {
+  "luna_iso_main_fresh": "3/10",
+  "terra_iso_main_fresh": "13/14",
+  "gap": 0.629,
+  "fisher_one_sided": 0.00234543578196829,
+  "label": "partial"
+ },
+ "anchor_drift_check": {
+  "terra_shipped_NAME_trap_now": "2/3",
+  "block1_reference": "11/12"
+ }
+}
