@@ -317,3 +317,7 @@ Run id = first 12 characters of the container id (agent runs) or the request bat
 | 2026-11-13T22:29Z | gpuplan C14b: F2-c (ep803) Terra 7 counted (+2 rate-limit infra re-runs, $0.979) + Luna 7 counted on image r1114d (spend in the run rows above; gpuplan/c14b) | gpuplan | runs | - | ok | 0.000 | 192.061 | 83.673 |
 | 2026-11-13T22:29Z | gpuplan C14L: Luna +2 on F2-a and +2 on F2-b, r1114d (spend in the run rows above; gpuplan/c14l) | gpuplan | runs | - | ok | 0.000 | 192.061 | 83.673 |
 | 2026-11-13T22:29Z | gpuplan C14b H5c: frozen L0 judge on the 14 C14b + 4 C14L runs (results/private_1112/judge_c14b/raw; gpuplan/c14b/judge.json) | judge | gpt-6.1-terra x18 | - | ok 18/18 | 0.145 | 192.206 | 83.673 |
+| 2026-11-14T21:04Z | gpuplan round 3 V: keyless scripted verifier on set A 130 / Luna 60 / main 64 (gpuplan/v; scripts/keyless_verifier.py) | gpuplan | cpu only | - | ok | 0.000 | 192.206 | 83.673 |
+| 2026-11-14T21:04Z | gpuplan round 3 A: item- and run-bootstrap intervals, balanced accuracy, all-slot ladder (gpuplan/a; scripts/ladder_intervals.py) | gpuplan | cpu only | - | ok | 0.000 | 192.206 | 83.673 |
+| 2026-11-14T21:04Z | gpuplan round 3 B: reconciliation, 196-run J1-J3 and C17, body-number scripts (gpuplan/b, RECONCILE.md; scripts/reconcile.py, scripts/body_numbers.py) | gpuplan | cpu only | - | ok | 0.000 | 192.206 | 83.673 |
+| 2026-11-14T21:04Z | gpuplan round 3 T: band-plus-closeness scripted policy (gpuplan/t; scripts/t_bandclose.py, t_bandclose_posthoc.py) | gpuplan | cpu only | - | ok | 0.000 | 192.206 | 83.673 |
