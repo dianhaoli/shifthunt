@@ -1,0 +1,62 @@
+{
+ "prereg": "results/blackbox_1112/gpuplan/c14b/PREREG_C14B.md",
+ "F2c": {
+  "terra": {
+   "runs": 7,
+   "NAME_trap": "7/7",
+   "iso_main": "7/7",
+   "iso_head": "7/7",
+   "run_NAME": "7/7",
+   "one_burst": "5/7",
+   "breadth_mean": 2.43,
+   "texts_on_trap_mean": 3.29,
+   "texts_per_other_mean": 1.57,
+   "answers": {
+    "main": 7
+   },
+   "texts_unrecovered": 0
+  },
+  "luna": {
+   "runs": 7,
+   "NAME_trap": "0/7",
+   "iso_main": "0/7",
+   "iso_head": "2/7",
+   "run_NAME": "0/7",
+   "one_burst": "7/7",
+   "breadth_mean": 0.29,
+   "texts_on_trap_mean": 2.29,
+   "texts_per_other_mean": 1.9,
+   "answers": {
+    "none": 2,
+    "head": 5
+   },
+   "texts_unrecovered": 0
+  },
+  "main_rank_sign_aware": 2,
+  "main_rank_abs": 2
+ },
+ "H1c": {
+  "terra_NAME_trap_F2c": "7/7",
+  "label": "confirm"
+ },
+ "H1c_iso": {
+  "terra_iso_main_F2c": "7/7",
+  "label": "confirm"
+ },
+ "H1_pooled_three": {
+  "terra_NAME_trap": "20/21",
+  "per_item": {
+   "ep801": "7/7",
+   "ep802": "6/7",
+   "ep803": "7/7"
+  },
+  "label": "confirm"
+ },
+ "F2c_gap_iso_main": {
+  "terra": "7/7",
+  "luna": "0/7",
+  "gap": 1.0,
+  "fisher_one_sided": 0.0002913752913752914,
+  "note": "descriptive (H2 stays on C14's original runs)"
+ }
+}
