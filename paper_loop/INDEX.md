@@ -3,6 +3,8 @@
 Every paper version, review, analysis and plan, with links. Branch `claude/nifty-wozniak-vunb6z`.
 
 ## Start here
+- [MASTER_DOC.md](https://github.com/dianhaoli/shifthunt/blob/claude/nifty-wozniak-vunb6z/paper_loop/MASTER_DOC.md): everything in one file (2.3 MB; GitHub may show it raw).
+- [MASTER_DOC_CORE.md](https://github.com/dianhaoli/shifthunt/blob/claude/nifty-wozniak-vunb6z/paper_loop/MASTER_DOC_CORE.md): facts, inventories, debate, outside read, review summaries and V7, in one file that renders on GitHub.
 - [MASTER_FACTS.md](https://github.com/dianhaoli/shifthunt/blob/claude/nifty-wozniak-vunb6z/paper_loop/synthesis/MASTER_FACTS.md): every result, with its status and safe wording.
 - [PAPER_V7.md](https://github.com/dianhaoli/shifthunt/blob/claude/nifty-wozniak-vunb6z/paper_loop/final/PAPER_V7.md): the best-scoring paper. It scored 6.67 on the comparable panel.
 - [PAPER_V8.md](https://github.com/dianhaoli/shifthunt/blob/claude/nifty-wozniak-vunb6z/paper_loop/final/PAPER_V8.md): the latest paper. It scored 5.67, and the held-out panel judged it a poster.
