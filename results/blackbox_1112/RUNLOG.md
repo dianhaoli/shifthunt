@@ -322,3 +322,6 @@ Run id = first 12 characters of the container id (agent runs) or the request bat
 | 2026-11-14T21:04Z | gpuplan round 3 B: reconciliation, 196-run J1-J3 and C17, body-number scripts (gpuplan/b, RECONCILE.md; scripts/reconcile.py, scripts/body_numbers.py) | gpuplan | cpu only | - | ok | 0.000 | 192.206 | 83.673 |
 | 2026-11-14T21:04Z | gpuplan round 3 T: band-plus-closeness scripted policy (gpuplan/t; scripts/t_bandclose.py, t_bandclose_posthoc.py) | gpuplan | cpu only | - | ok | 0.000 | 192.206 | 83.673 |
 | 2026-11-14T21:34Z | gpuplan round 3 K: report + answer key, set A 130 + Luna 60 (results/private_1112/judge_ladder2/raw_k; gpuplan/k) + its dry run 5 | judge | gpt-6.1-terra x195 | - | ok 195/195 | 1.184 | 193.390 | 83.673 |
+| 2026-11-16T06:57Z | gpuplan round 4 D: judge on slots the agent's log decides, post hoc, prereg 04be402 (gpuplan/d; scripts/decidable_slots.py) | gpuplan | cpu only | - | ok | 0.000 | 193.390 | 83.673 |
+| 2026-11-16T06:57Z | gpuplan round 4 E: per-item counts and exact paired ladder tests (gpuplan/e; scripts/ladder_tests.py) | gpuplan | cpu only | - | ok | 0.000 | 193.390 | 83.673 |
+| 2026-11-16T08:08Z | gpuplan round 4 F: abstaining candidate-aware judge, set A L1 130 + L2 48 (results/private_1112/judge_ladder2/raw_f; gpuplan/f) + its dry run 4 ($0.622) | judge | gpt-6.1-terra x182 | - | ok 178/178 | 6.805 | 200.195 | 83.673 |

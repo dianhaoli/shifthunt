@@ -30,6 +30,9 @@ The paper-ready numbers are collected in `RESULTS_FOR_PAPER.md`.
 | B reconciliation | `b/`, `RECONCILE.md` | done: 196-run J1-J3 and C17; set A 130/132; credit baselines; a script for every body number |
 | T contract-band tell | `t/` | done (pre-reg): band-plus-closeness does not reproduce Terra (0.66 at B = 4; trigger on 1 of 3 shipped traps) |
 | K key-on-report (round 3, optional) | `k/` | done (pre-reg, descriptive): κ 0.81 set A, 0.91 Luna; no failure credited; 12/87 passes blamed |
+| D judge on log-decidable slots (round 4) | `d/` | done (post hoc, pre-reg): 110/254 decidable; L2 bal. acc. 0.75 vs script 0.97 ("in between"); 72/77 wrong `none` undecidable |
+| E per-item counts, exact paired tests (round 4) | `e/` | done (desc): log adds nothing; transcript +0.2-0.3 κ (significant over runs on Luna only); key significant on every set |
+| F abstaining candidate-aware judge (round 4, optional) | `f/` | done (pre-reg, $6.80): 0/43 failures credited but "cannot tell" on 114/130 hard slots, never "fail" ("in between") |
 
 ## $0 items: short results
 
