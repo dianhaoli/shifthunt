@@ -239,10 +239,10 @@
      0.0626
     ],
     "kappa_change": 0.0836,
-    "balanced_accuracy_change": 0.0407,
+    "balanced_accuracy_change": 0.0408,
     "mcnemar_runs": {
-     "a_right_b_wrong": 19,
-     "a_wrong_b_right": 16,
+     "later_right_earlier_wrong": 19,
+     "earlier_right_later_wrong": 16,
      "p": 0.736
     },
     "items": {
@@ -271,7 +271,9 @@
       -0.0515,
       0.131
      ],
-     "clusters": 130
+     "clusters": 130,
+     "undefined_draws_kappa": 0,
+     "undefined_draws_balanced_accuracy": 0
     },
     "boot95_item": {
      "kappa_change": [
@@ -282,7 +284,9 @@
       -0.0045,
       0.0909
      ],
-     "clusters": 6
+     "clusters": 6,
+     "undefined_draws_kappa": 0,
+     "undefined_draws_balanced_accuracy": 0
     }
    },
    "log vs transcript (L1 -> L2)": {
@@ -291,10 +295,10 @@
      0.2405
     ],
     "kappa_change": 0.1779,
-    "balanced_accuracy_change": 0.0931,
+    "balanced_accuracy_change": 0.093,
     "mcnemar_runs": {
-     "a_right_b_wrong": 25,
-     "a_wrong_b_right": 17,
+     "later_right_earlier_wrong": 25,
+     "earlier_right_later_wrong": 17,
      "p": 0.28
     },
     "items": {
@@ -323,7 +327,9 @@
       0.0018,
       0.1864
      ],
-     "clusters": 130
+     "clusters": 130,
+     "undefined_draws_kappa": 0,
+     "undefined_draws_balanced_accuracy": 0
     },
     "boot95_item": {
      "kappa_change": [
@@ -334,7 +340,9 @@
       0.012,
       0.177
      ],
-     "clusters": 6
+     "clusters": 6,
+     "undefined_draws_kappa": 0,
+     "undefined_draws_balanced_accuracy": 0
     }
    },
    "transcript vs transcript + key (L2 -> L3_2)": {
@@ -345,8 +353,8 @@
     "kappa_change": 0.7595,
     "balanced_accuracy_change": 0.3762,
     "mcnemar_runs": {
-     "a_right_b_wrong": 45,
-     "a_wrong_b_right": 0,
+     "later_right_earlier_wrong": 45,
+     "earlier_right_later_wrong": 0,
      "p": 5.68e-14
     },
     "items": {
@@ -375,7 +383,9 @@
       0.2889,
       0.4661
      ],
-     "clusters": 130
+     "clusters": 130,
+     "undefined_draws_kappa": 0,
+     "undefined_draws_balanced_accuracy": 0
     },
     "boot95_item": {
      "kappa_change": [
@@ -386,7 +396,9 @@
       0.3123,
       0.4393
      ],
-     "clusters": 6
+     "clusters": 6,
+     "undefined_draws_kappa": 0,
+     "undefined_draws_balanced_accuracy": 0
     }
    },
    "script vs transcript judge (V1 -> L2)": {
@@ -395,10 +407,10 @@
      0.2405
     ],
     "kappa_change": -0.2831,
-    "balanced_accuracy_change": -0.1626,
+    "balanced_accuracy_change": -0.1627,
     "mcnemar_runs": {
-     "a_right_b_wrong": 19,
-     "a_wrong_b_right": 34,
+     "later_right_earlier_wrong": 19,
+     "earlier_right_later_wrong": 34,
      "p": 0.0534
     },
     "items": {
@@ -427,7 +439,9 @@
       -0.2693,
       -0.055
      ],
-     "clusters": 130
+     "clusters": 130,
+     "undefined_draws_kappa": 0,
+     "undefined_draws_balanced_accuracy": 0
     },
     "boot95_item": {
      "kappa_change": [
@@ -438,7 +452,65 @@
       -0.264,
       -0.0496
      ],
-     "clusters": 6
+     "clusters": 6,
+     "undefined_draws_kappa": 0,
+     "undefined_draws_balanced_accuracy": 0
+    }
+   },
+   "report vs transcript (added after the plan) (L0 -> L2)": {
+    "kappa": [
+     -0.021,
+     0.2405
+    ],
+    "kappa_change": 0.2615,
+    "balanced_accuracy_change": 0.1338,
+    "mcnemar_runs": {
+     "later_right_earlier_wrong": 26,
+     "earlier_right_later_wrong": 15,
+     "p": 0.117
+    },
+    "items": {
+     "items": 6,
+     "per_item_diff": [
+      0.0,
+      -0.0455,
+      0.1429,
+      0.1818,
+      0.1905,
+      0.0455
+     ],
+     "p_signflip": 0.188,
+     "sign_test": {
+      "positive": 4,
+      "negative": 1,
+      "p": 0.375
+     }
+    },
+    "boot95_run": {
+     "kappa_change": [
+      0.0747,
+      0.4443
+     ],
+     "balanced_accuracy_change": [
+      0.0431,
+      0.226
+     ],
+     "clusters": 130,
+     "undefined_draws_kappa": 0,
+     "undefined_draws_balanced_accuracy": 0
+    },
+    "boot95_item": {
+     "kappa_change": [
+      0.094,
+      0.4073
+     ],
+     "balanced_accuracy_change": [
+      0.0483,
+      0.2093
+     ],
+     "clusters": 6,
+     "undefined_draws_kappa": 0,
+     "undefined_draws_balanced_accuracy": 0
     }
    }
   }
@@ -674,8 +746,8 @@
     "kappa_change": -0.051,
     "balanced_accuracy_change": -0.0674,
     "mcnemar_runs": {
-     "a_right_b_wrong": 9,
-     "a_wrong_b_right": 3,
+     "later_right_earlier_wrong": 9,
+     "earlier_right_later_wrong": 3,
      "p": 0.146
     },
     "items": {
@@ -704,7 +776,9 @@
       -0.2722,
       0.0982
      ],
-     "clusters": 60
+     "clusters": 60,
+     "undefined_draws_kappa": 0,
+     "undefined_draws_balanced_accuracy": 7
     },
     "boot95_item": {
      "kappa_change": [
@@ -715,7 +789,9 @@
       -0.1786,
       0.1273
      ],
-     "clusters": 6
+     "clusters": 6,
+     "undefined_draws_kappa": 0,
+     "undefined_draws_balanced_accuracy": 8
     }
    },
    "log vs transcript (L1 -> L2)": {
@@ -726,8 +802,8 @@
     "kappa_change": 0.2914,
     "balanced_accuracy_change": 0.2655,
     "mcnemar_runs": {
-     "a_right_b_wrong": 20,
-     "a_wrong_b_right": 5,
+     "later_right_earlier_wrong": 20,
+     "earlier_right_later_wrong": 5,
      "p": 0.00408
     },
     "items": {
@@ -754,9 +830,11 @@
      ],
      "balanced_accuracy_change": [
       -0.0278,
-      0.5454
+      0.5455
      ],
-     "clusters": 60
+     "clusters": 60,
+     "undefined_draws_kappa": 0,
+     "undefined_draws_balanced_accuracy": 7
     },
     "boot95_item": {
      "kappa_change": [
@@ -767,7 +845,9 @@
       0.0263,
       0.4933
      ],
-     "clusters": 6
+     "clusters": 6,
+     "undefined_draws_kappa": 0,
+     "undefined_draws_balanced_accuracy": 8
     }
    },
    "transcript vs transcript + key (L2 -> L3_2)": {
@@ -778,8 +858,8 @@
     "kappa_change": 0.7419,
     "balanced_accuracy_change": 0.2749,
     "mcnemar_runs": {
-     "a_right_b_wrong": 16,
-     "a_wrong_b_right": 0,
+     "later_right_earlier_wrong": 16,
+     "earlier_right_later_wrong": 0,
      "p": 3.05e-05
     },
     "items": {
@@ -808,7 +888,9 @@
       0.1071,
       0.4825
      ],
-     "clusters": 60
+     "clusters": 60,
+     "undefined_draws_kappa": 7,
+     "undefined_draws_balanced_accuracy": 7
     },
     "boot95_item": {
      "kappa_change": [
@@ -819,7 +901,9 @@
       0.0727,
       0.5686
      ],
-     "clusters": 6
+     "clusters": 6,
+     "undefined_draws_kappa": 8,
+     "undefined_draws_balanced_accuracy": 8
     }
    },
    "script vs transcript judge (V1 -> L2)": {
@@ -830,8 +914,8 @@
     "kappa_change": 0.4172,
     "balanced_accuracy_change": 0.3194,
     "mcnemar_runs": {
-     "a_right_b_wrong": 15,
-     "a_wrong_b_right": 14,
+     "later_right_earlier_wrong": 15,
+     "earlier_right_later_wrong": 14,
      "p": 1.0
     },
     "items": {
@@ -860,7 +944,9 @@
       0.1,
       0.5
      ],
-     "clusters": 60
+     "clusters": 60,
+     "undefined_draws_kappa": 0,
+     "undefined_draws_balanced_accuracy": 7
     },
     "boot95_item": {
      "kappa_change": [
@@ -871,7 +957,65 @@
       0.0364,
       0.5185
      ],
-     "clusters": 6
+     "clusters": 6,
+     "undefined_draws_kappa": 0,
+     "undefined_draws_balanced_accuracy": 8
+    }
+   },
+   "report vs transcript (added after the plan) (L0 -> L2)": {
+    "kappa": [
+     0.0177,
+     0.2581
+    ],
+    "kappa_change": 0.2404,
+    "balanced_accuracy_change": 0.1981,
+    "mcnemar_runs": {
+     "later_right_earlier_wrong": 23,
+     "earlier_right_later_wrong": 2,
+     "p": 1.94e-05
+    },
+    "items": {
+     "items": 6,
+     "per_item_diff": [
+      0.0,
+      0.4,
+      0.3,
+      0.4,
+      0.4,
+      0.6
+     ],
+     "p_signflip": 0.0625,
+     "sign_test": {
+      "positive": 5,
+      "negative": 0,
+      "p": 0.0625
+     }
+    },
+    "boot95_run": {
+     "kappa_change": [
+      0.0122,
+      0.4815
+     ],
+     "balanced_accuracy_change": [
+      -0.024,
+      0.4286
+     ],
+     "clusters": 60,
+     "undefined_draws_kappa": 0,
+     "undefined_draws_balanced_accuracy": 7
+    },
+    "boot95_item": {
+     "kappa_change": [
+      -0.0194,
+      0.5751
+     ],
+     "balanced_accuracy_change": [
+      -0.0687,
+      0.3704
+     ],
+     "clusters": 6,
+     "undefined_draws_kappa": 0,
+     "undefined_draws_balanced_accuracy": 8
     }
    }
   }
@@ -1071,8 +1215,8 @@
     "kappa_change": 0.2067,
     "balanced_accuracy_change": 0.0901,
     "mcnemar_runs": {
-     "a_right_b_wrong": 8,
-     "a_wrong_b_right": 4,
+     "later_right_earlier_wrong": 8,
+     "earlier_right_later_wrong": 4,
      "p": 0.388
     },
     "items": {
@@ -1099,9 +1243,11 @@
      ],
      "balanced_accuracy_change": [
       -0.0556,
-      0.2323
+      0.2322
      ],
-     "clusters": 64
+     "clusters": 64,
+     "undefined_draws_kappa": 0,
+     "undefined_draws_balanced_accuracy": 0
     },
     "boot95_item": {
      "kappa_change": [
@@ -1112,7 +1258,9 @@
       -0.0697,
       0.2556
      ],
-     "clusters": 6
+     "clusters": 6,
+     "undefined_draws_kappa": 0,
+     "undefined_draws_balanced_accuracy": 0
     }
    },
    "transcript vs transcript + key (L2 -> L3_2)": {
@@ -1123,8 +1271,8 @@
     "kappa_change": 0.6991,
     "balanced_accuracy_change": 0.3602,
     "mcnemar_runs": {
-     "a_right_b_wrong": 16,
-     "a_wrong_b_right": 0,
+     "later_right_earlier_wrong": 16,
+     "earlier_right_later_wrong": 0,
      "p": 3.05e-05
     },
     "items": {
@@ -1153,7 +1301,9 @@
       0.2432,
       0.4731
      ],
-     "clusters": 64
+     "clusters": 64,
+     "undefined_draws_kappa": 0,
+     "undefined_draws_balanced_accuracy": 0
     },
     "boot95_item": {
      "kappa_change": [
@@ -1161,10 +1311,12 @@
       1.0113
      ],
      "balanced_accuracy_change": [
-      0.2369,
+      0.2368,
       0.5
      ],
-     "clusters": 6
+     "clusters": 6,
+     "undefined_draws_kappa": 0,
+     "undefined_draws_balanced_accuracy": 0
     }
    },
    "script vs transcript judge (V1 -> L2)": {
@@ -1175,8 +1327,8 @@
     "kappa_change": -0.1631,
     "balanced_accuracy_change": -0.1643,
     "mcnemar_runs": {
-     "a_right_b_wrong": 18,
-     "a_wrong_b_right": 15,
+     "later_right_earlier_wrong": 18,
+     "earlier_right_later_wrong": 15,
      "p": 0.728
     },
     "items": {
@@ -1205,7 +1357,9 @@
       -0.2996,
       -0.0292
      ],
-     "clusters": 64
+     "clusters": 64,
+     "undefined_draws_kappa": 0,
+     "undefined_draws_balanced_accuracy": 0
     },
     "boot95_item": {
      "kappa_change": [
@@ -1216,7 +1370,9 @@
       -0.3292,
       -0.0142
      ],
-     "clusters": 6
+     "clusters": 6,
+     "undefined_draws_kappa": 0,
+     "undefined_draws_balanced_accuracy": 0
     }
    }
   }
@@ -1344,8 +1500,8 @@
     "kappa_change": 0.6692,
     "balanced_accuracy_change": 0.375,
     "mcnemar_runs": {
-     "a_right_b_wrong": 6,
-     "a_wrong_b_right": 2,
+     "later_right_earlier_wrong": 6,
+     "earlier_right_later_wrong": 2,
      "p": 0.289
     },
     "items": {
@@ -1371,10 +1527,12 @@
       1.1111
      ],
      "balanced_accuracy_change": [
-      0.1493,
+      0.1494,
       0.5667
      ],
-     "clusters": 18
+     "clusters": 18,
+     "undefined_draws_kappa": 2,
+     "undefined_draws_balanced_accuracy": 9
     },
     "boot95_item": {
      "kappa_change": [
@@ -1385,7 +1543,9 @@
       0.1212,
       0.6
      ],
-     "clusters": 6
+     "clusters": 6,
+     "undefined_draws_kappa": 14,
+     "undefined_draws_balanced_accuracy": 14
     }
    }
   }

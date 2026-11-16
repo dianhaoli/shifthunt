@@ -31,9 +31,11 @@ N_BOOT, SEED = 10000, 1116
 RUNGS = {"set_A": ("L0", "L1", "L2", "L3_2", "V1"), "luna": ("L0", "L1", "L2", "L3_2", "V1"),
          "main_study": ("L0", "L2", "L3_2", "V1"), "harder_variant": ("L0", "L3_0")}
 STEPS = {"set_A": (("report vs log", "L0", "L1"), ("log vs transcript", "L1", "L2"),
-                   ("transcript vs transcript + key", "L2", "L3_2"), ("script vs transcript judge", "V1", "L2")),
+                   ("transcript vs transcript + key", "L2", "L3_2"), ("script vs transcript judge", "V1", "L2"),
+                   ("report vs transcript (added after the plan)", "L0", "L2")),
          "luna": (("report vs log", "L0", "L1"), ("log vs transcript", "L1", "L2"),
-                  ("transcript vs transcript + key", "L2", "L3_2"), ("script vs transcript judge", "V1", "L2")),
+                  ("transcript vs transcript + key", "L2", "L3_2"), ("script vs transcript judge", "V1", "L2"),
+                  ("report vs transcript (added after the plan)", "L0", "L2")),
          "main_study": (("report vs transcript (no log rung)", "L0", "L2"),
                         ("transcript vs transcript + key", "L2", "L3_2"), ("script vs transcript judge", "V1", "L2")),
          "harder_variant": (("report vs report + key", "L0", "L3_0"),)}
@@ -41,11 +43,17 @@ NAME = {"L0": "report", "L1": "report + log", "L2": "transcript", "L3_2": "trans
         "L3_0": "report + key", "V1": "script V1"}
 
 
+def bal_acc_exact(pairs):
+    pos = [j for c, j in pairs if c]
+    neg = [j for c, j in pairs if not c]
+    return None if not pos or not neg else 0.5 * (sum(pos) / len(pos) + sum(1 - j for j in neg) / len(neg))
+
+
 def stat_pair(S, a, b):
     pa = [(s["cert"], s[a]) for s in S]
     pb = [(s["cert"], s[b]) for s in S]
     ka, kb = JV.kappa(pa), JV.kappa(pb)
-    ba, bb = KV.bal_acc(pa), KV.bal_acc(pb)
+    ba, bb = bal_acc_exact(pa), bal_acc_exact(pb)
     return (None if ka is None or kb is None else kb - ka), (None if ba is None or bb is None else bb - ba)
 
 
@@ -67,7 +75,8 @@ def boot_pair(S, a, b, by):
     def ci(v):
         v = sorted(v)
         return [round(v[int(0.025 * len(v))], 4), round(v[min(len(v) - 1, int(0.975 * len(v)))], 4)] if v else None
-    return OrderedDict(kappa_change=ci(dk), balanced_accuracy_change=ci(db), clusters=len(keys))
+    return OrderedDict(kappa_change=ci(dk), balanced_accuracy_change=ci(db), clusters=len(keys),
+                       undefined_draws_kappa=N_BOOT - len(dk), undefined_draws_balanced_accuracy=N_BOOT - len(db))
 
 
 def main():
@@ -118,7 +127,10 @@ def main():
             steps[f"{lab} ({a} -> {b})"] = OrderedDict(
                 kappa=[DS._r(JV.kappa([(s["cert"], s[a]) for s in S])), DS._r(JV.kappa([(s["cert"], s[b]) for s in S]))],
                 kappa_change=DS._r(dk), balanced_accuracy_change=DS._r(db),
-                mcnemar_runs=DS.mcnemar(S, b, a), items=DS.signflip(S, b, a),
+                mcnemar_runs=(lambda m: OrderedDict(later_right_earlier_wrong=m["a_right_b_wrong"],
+                                                    earlier_right_later_wrong=m["a_wrong_b_right"], p=m["p"]))(
+                    DS.mcnemar(S, b, a)),
+                items=DS.signflip(S, b, a),
                 boot95_run=boot_pair(S, a, b, "cid"), boot95_item=boot_pair(S, a, b, "item"))
         res["steps"] = steps
         out[name] = res
