@@ -45,6 +45,11 @@ def _r(x):
     return None if x is None else round(x, 4)
 
 
+def _p(x):
+    """p values to three significant digits (output format only; changed after the freeze, see README)."""
+    return None if x is None else float(f"{x:.3g}")
+
+
 def frac(k, n):
     return f"{k}/{n}"
 
@@ -96,7 +101,7 @@ def mcnemar(S, a, b):
     """Exact McNemar on correctness of a vs b over slots."""
     ab = sum(1 for s in S if s[a] == s["cert"] and s[b] != s["cert"])
     ba = sum(1 for s in S if s[a] != s["cert"] and s[b] == s["cert"])
-    return OrderedDict(a_right_b_wrong=ab, a_wrong_b_right=ba, p=_r(binom_two_sided(ab, ab + ba)))
+    return OrderedDict(a_right_b_wrong=ab, a_wrong_b_right=ba, p=_p(binom_two_sided(ab, ab + ba)))
 
 
 def signflip(S, a, b):
@@ -109,8 +114,8 @@ def signflip(S, a, b):
     obs = abs(sum(d))
     hits = sum(1 for sg in itertools.product((1, -1), repeat=len(d)) if abs(sum(x * y for x, y in zip(sg, d))) >= obs - 1e-12)
     pos, neg = sum(1 for x in d if x > 1e-12), sum(1 for x in d if x < -1e-12)
-    return OrderedDict(items=len(d), per_item_diff=[round(x, 4) for x in d], p_signflip=_r(hits / 2 ** len(d)),
-                       sign_test=OrderedDict(positive=pos, negative=neg, p=_r(binom_two_sided(pos, pos + neg))))
+    return OrderedDict(items=len(d), per_item_diff=[round(x, 4) for x in d], p_signflip=_p(hits / 2 ** len(d)),
+                       sign_test=OrderedDict(positive=pos, negative=neg, p=_p(binom_two_sided(pos, pos + neg))))
 
 
 def fisher_two_sided(a, b, c, d):
@@ -151,7 +156,7 @@ def stratified_perm(S, key):
     X = sum(s[key] for s in S if s["dec"])
     obs = stat(X)
     p = sum(px for x, px in dist.items() if abs(stat(x)) >= abs(obs) - 1e-12)
-    return OrderedDict(diff=_r(obs), p=_r(min(1.0, p)))
+    return OrderedDict(diff=_r(obs), p=_p(min(1.0, p)))
 
 
 def within_class(S, key):
@@ -162,7 +167,7 @@ def within_class(S, key):
         a, b = sum(s[key] for s in dc), len(dc) - sum(s[key] for s in dc)
         c, d = sum(s[key] for s in uc), len(uc) - sum(s[key] for s in uc)
         out[cls] = OrderedDict(credited_decidable=frac(a, a + b), credited_undecidable=frac(c, c + d),
-                               fisher_runs_p=_r(fisher_two_sided(a, b, c, d)),
+                               fisher_runs_p=_p(fisher_two_sided(a, b, c, d)),
                                stratified_items=stratified_perm(sub, key))
     return out
 

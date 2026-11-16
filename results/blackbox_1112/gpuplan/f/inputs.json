@@ -1,0 +1,29 @@
+{
+ "calls": 178,
+ "F1_runs": 130,
+ "F2_runs": 48,
+ "F2_runs_per_item": {
+  "ep411": 8,
+  "ep413": 8,
+  "ep415": 8,
+  "ep472": 8,
+  "ep474": 8,
+  "ep476": 8
+ },
+ "chars": {
+  "F1": {
+   "total": 3747032,
+   "max": 74292,
+   "median": 21752
+  },
+  "F2": {
+   "total": 9307830,
+   "max": 443821,
+   "median": 180641
+  }
+ },
+ "calls_sha256": "81daffb9896ec535aadc12149094d12501157b3c7949bfabf1f474f865c12164",
+ "f2_subset_sha256": "afe9bf2f91dec5e188fe76080c15f5058e6d57c64078d4ec088e16159a10e73a",
+ "order_seed": "f-1116",
+ "subset_seed": "f-subset-1116"
+}
