@@ -1,0 +1,209 @@
+\begin{thebibliography}{24}
+\providecommand{\natexlab}[1]{#1}
+
+\bibitem[{Bowyer, Aitchison, and Ivanova(2025)}]{bowyer2025}
+Bowyer, S.; Aitchison, L.; and Ivanova, D.~R. 2025.
+\newblock Position: Don't Use the {CLT} in {LLM} Evals With Fewer Than a Few
+  Hundred Datapoints.
+\newblock In \emph{Proceedings of the 42nd International Conference on Machine
+  Learning (Position Paper Track)}, volume 267 of \emph{Proceedings of Machine
+  Learning Research}.
+
+\bibitem[{Bragg et~al.(2026)Bragg, D'Arcy, Balepur, Bareket, Dalvi, Feldman,
+  Haddad, Hwang, Jansen, Kishore, Majumder, Naik, Rahamimov, Richardson, Singh,
+  Surana, Tiktinsky, Vasu, Wiener, Anastasiades, Candra, Dunkelberger, Emery,
+  Evans, Hamada, Huff, Kinney, Latzke, Lochner, Lozano-Aguilera, Nguyen, Rao,
+  Tanaka, Vlahos, Clark, Downey, Goldberg, Sabharwal, and Weld}]{bragg2026}
+Bragg, J.; D'Arcy, M.; Balepur, N.; Bareket, D.; Dalvi, B.; Feldman, S.;
+  Haddad, D.; Hwang, J.~D.; Jansen, P.; Kishore, V.; Majumder, B.~P.; Naik, A.;
+  Rahamimov, S.; Richardson, K.; Singh, A.; Surana, H.; Tiktinsky, A.; Vasu,
+  R.; Wiener, G.; Anastasiades, C.; Candra, S.; Dunkelberger, J.; Emery, D.;
+  Evans, R.; Hamada, M.; Huff, R.; Kinney, R.; Latzke, M.; Lochner, J.;
+  Lozano-Aguilera, R.; Nguyen, C.; Rao, S.; Tanaka, A.; Vlahos, B.; Clark, P.;
+  Downey, D.; Goldberg, Y.; Sabharwal, A.; and Weld, D.~S. 2026.
+\newblock {AstaBench}: Rigorous Benchmarking of {AI} Agents with a Scientific
+  Research Suite.
+\newblock In \emph{International Conference on Learning Representations
+  (ICLR)}.
+
+\bibitem[{Chen et~al.(2026)Chen, Weerasinghe, Biswal, Rajkumar, Boz,
+  Berg-Kirkpatrick, and Yu}]{chen2026}
+Chen, Y.; Weerasinghe, A.; Biswal, S.; Rajkumar, U.; Boz, O.; Berg-Kirkpatrick,
+  T.; and Yu, R. 2026.
+\newblock {ACED-Bench}: Evaluating How {LLM} Agents Acquire and Act on Causal
+  Evidence.
+\newblock \emph{arXiv preprint arXiv:2610.14381}.
+
+\bibitem[{Chow(1970)}]{chow1970optimum}
+Chow, C.-K. 1970.
+\newblock On Optimum Recognition Error and Reject Tradeoff.
+\newblock \emph{IEEE Transactions on Information Theory}, 16: 41--46.
+
+\bibitem[{Engels, Smith, and Tegmark(2025)}]{engels2025}
+Engels, J.; Smith, L.; and Tegmark, M. 2025.
+\newblock Decomposing The Dark Matter of Sparse Autoencoders.
+\newblock \emph{Transactions on Machine Learning Research}.
+
+\bibitem[{Geifman and El-Yaniv(2017)}]{geifman2017selective}
+Geifman, Y.; and El-Yaniv, R. 2017.
+\newblock Selective Classification for Deep Neural Networks.
+\newblock In \emph{Advances in Neural Information Processing Systems 30
+  (NeurIPS 2017)}.
+
+\bibitem[{Jung, Brahman, and Choi(2025)}]{jung2025trust}
+Jung, J.; Brahman, F.; and Choi, Y. 2025.
+\newblock Trust or Escalate: {LLM} Judges with Provable Guarantees for Human
+  Agreement.
+\newblock In \emph{International Conference on Learning Representations
+  (ICLR)}.
+
+\bibitem[{Kabir et~al.(2026)Kabir, Tan, Agrawal, Chereddy, and
+  Balasubramanian}]{kabir2026}
+Kabir, S.; Tan, H.~K.; Agrawal, S.; Chereddy, S. V.~R.; and Balasubramanian, S.
+  2026.
+\newblock Circuit Oracle: Automating Attribution Graph Analysis via
+  Natural-Language Queries.
+\newblock \emph{arXiv preprint arXiv:2611.00420}.
+
+\bibitem[{Khalifa et~al.(2026)Khalifa, Logeswaran, Kim, Sohn, Zhang, Lee, Peng,
+  Wang, and Lee}]{khalifa2026gaming}
+Khalifa, M.; Logeswaran, L.; Kim, J.; Sohn, S.; Zhang, Y.; Lee, M.; Peng, H.;
+  Wang, L.; and Lee, H. 2026.
+\newblock Gaming the Judge: Unfaithful Chain-of-Thought Can Undermine Agent
+  Evaluation.
+\newblock \emph{arXiv preprint arXiv:2601.14691}.
+
+\bibitem[{Krumdick et~al.(2026)Krumdick, Lovering, Reddy, Ebner, and
+  Tanner}]{krumdick2026nofreelabels}
+Krumdick, M.; Lovering, C.; Reddy, V.; Ebner, S.; and Tanner, C. 2026.
+\newblock No Free Labels: Limitations of {LLM}-as-a-Judge Without Human
+  Grounding.
+\newblock In \emph{Conference on Language Modeling (COLM)}.
+
+\bibitem[{Lieberum et~al.(2024)Lieberum, Rajamanoharan, Conmy, Smith, Sonnerat,
+  Varma, Kram{\'a}r, Dragan, Shah, and Nanda}]{lieberum2024}
+Lieberum, T.; Rajamanoharan, S.; Conmy, A.; Smith, L.; Sonnerat, N.; Varma, V.;
+  Kram{\'a}r, J.; Dragan, A.; Shah, R.; and Nanda, N. 2024.
+\newblock Gemma Scope: Open Sparse Autoencoders Everywhere All At Once on Gemma
+  2.
+\newblock In \emph{Proceedings of the 7th BlackboxNLP Workshop: Analyzing and
+  Interpreting Neural Networks for NLP}, 278--300.
+
+\bibitem[{Marks et~al.(2025{\natexlab{a}})Marks, Rager, Michaud, Belinkov, Bau,
+  and Mueller}]{marks2025a}
+Marks, S.; Rager, C.; Michaud, E.~J.; Belinkov, Y.; Bau, D.; and Mueller, A.
+  2025{\natexlab{a}}.
+\newblock Sparse Feature Circuits: Discovering and Editing Interpretable Causal
+  Graphs in Language Models.
+\newblock In \emph{International Conference on Learning Representations
+  (ICLR)}.
+
+\bibitem[{Marks et~al.(2025{\natexlab{b}})Marks, Treutlein, Bricken, Lindsey,
+  Marcus, Mishra-Sharma, Ziegler, Ameisen, Batson, Belonax, Bowman, Carter,
+  Chen, Cunningham, Denison, Dietz, Golechha, Khan, Kirchner, Leike, Meek,
+  Nishimura-Gasparian, Ong, Olah, Pearce, Roger, Salle, Shih, Tong, Thomas,
+  Rivoire, Jermyn, MacDiarmid, Henighan, and Hubinger}]{marks2025b}
+Marks, S.; Treutlein, J.; Bricken, T.; Lindsey, J.; Marcus, J.; Mishra-Sharma,
+  S.; Ziegler, D.; Ameisen, E.; Batson, J.; Belonax, T.; Bowman, S.~R.; Carter,
+  S.; Chen, B.; Cunningham, H.; Denison, C.; Dietz, F.; Golechha, S.; Khan, A.;
+  Kirchner, J.; Leike, J.; Meek, A.; Nishimura-Gasparian, K.; Ong, E.; Olah,
+  C.; Pearce, A.; Roger, F.; Salle, J.; Shih, A.; Tong, M.; Thomas, D.;
+  Rivoire, K.; Jermyn, A.; MacDiarmid, M.; Henighan, T.; and Hubinger, E.
+  2025{\natexlab{b}}.
+\newblock Auditing Language Models for Hidden Objectives.
+\newblock \emph{arXiv preprint arXiv:2503.10965}.
+
+\bibitem[{Rosu and Wang(2026)}]{rosu2026auditorsrl}
+Rosu, P.; and Wang, R. 2026.
+\newblock Training Alignment Auditors via Reinforcement Learning.
+\newblock \emph{arXiv preprint arXiv:2608.25460}.
+
+\bibitem[{Rott~Shaham et~al.(2024)Rott~Shaham, Schwettmann, Wang, Rajaram,
+  Hernandez, Andreas, and Torralba}]{rottshaham2024maia}
+Rott~Shaham, T.; Schwettmann, S.; Wang, F.; Rajaram, A.; Hernandez, E.;
+  Andreas, J.; and Torralba, A. 2024.
+\newblock A Multimodal Automated Interpretability Agent.
+\newblock In \emph{Proceedings of the 41st International Conference on Machine
+  Learning (ICML)}.
+
+\bibitem[{Schwettmann et~al.(2023)Schwettmann, Rott~Shaham, Materzynska,
+  Chowdhury, Li, Andreas, Bau, and Torralba}]{schwettmann2023find}
+Schwettmann, S.; Rott~Shaham, T.; Materzynska, J.; Chowdhury, N.; Li, S.;
+  Andreas, J.; Bau, D.; and Torralba, A. 2023.
+\newblock {FIND}: A Function Description Benchmark for Evaluating
+  Interpretability Methods.
+\newblock In \emph{Advances in Neural Information Processing Systems 36
+  (NeurIPS 2023), Datasets and Benchmarks Track}.
+
+\bibitem[{Sheshadri et~al.(2026)Sheshadri, Ewart, Kempf, Fronsdal, Gupta,
+  Schrodi, Conmy, Bowman, Price, Marks, and Wang}]{sheshadri2026}
+Sheshadri, A.; Ewart, A.; Kempf, E.; Fronsdal, K.; Gupta, I.; Schrodi, S.;
+  Conmy, A.; Bowman, S.~R.; Price, S.; Marks, S.; and Wang, R. 2026.
+\newblock {AuditBench}: Evaluating Alignment Auditing Techniques on Models with
+  Hidden Behaviors.
+\newblock \emph{arXiv preprint arXiv:2602.22755}.
+
+\bibitem[{Starace et~al.(2025)Starace, Jaffe, Sherburn, Aung, Chan, Maksin,
+  Dias, Mays, Kinsella, Thompson, Heidecke, Glaese, and
+  Patwardhan}]{starace2025}
+Starace, G.; Jaffe, O.; Sherburn, D.; Aung, J.; Chan, J.~S.; Maksin, L.; Dias,
+  R.; Mays, E.; Kinsella, B.; Thompson, W.; Heidecke, J.; Glaese, A.; and
+  Patwardhan, T. 2025.
+\newblock {PaperBench}: Evaluating {AI}'s Ability to Replicate {AI} Research.
+\newblock In \emph{Proceedings of the 42nd International Conference on Machine
+  Learning}, volume 267 of \emph{Proceedings of Machine Learning Research},
+  56843--56873.
+
+\bibitem[{Sternlicht et~al.(2026)Sternlicht, Shahid, Jansen, Weld, Siangliulue,
+  and Hope}]{sternlicht2026oldideas}
+Sternlicht, N.; Shahid, S.; Jansen, P.; Weld, D.~S.; Siangliulue, P.; and Hope,
+  T. 2026.
+\newblock Old Ideas, Novel Problems: The Instability of {LLM}-Based Novelty
+  Evaluation.
+\newblock \emph{arXiv preprint arXiv:2610.02022}.
+
+\bibitem[{Tiwari et~al.(2026)Tiwari, Davis, Sinha, Weaver, Shah, and
+  Chaudhary}]{tiwari2026decodability}
+Tiwari, D.; Davis, C.; Sinha, S.; Weaver, T.; Shah, A.; and Chaudhary, M. 2026.
+\newblock Decodability is Not Causality: Dissociating Probe Readouts from
+  Behavioral Drivers via {SAE} Decomposition.
+\newblock \emph{arXiv preprint arXiv:2609.18080}.
+\newblock COLM 2026 Workshop on Agent Behavior.
+
+\bibitem[{Yamada et~al.(2026)Yamada, Lange, Lu, Lu, Hu, Foerster, Ha, and
+  Clune}]{lu2026endtoend}
+Yamada, Y.; Lange, R.~T.; Lu, C.; Lu, C.; Hu, S.; Foerster, J.; Ha, D.; and
+  Clune, J. 2026.
+\newblock Towards End-to-End Automation of {AI} Research.
+\newblock \emph{arXiv preprint arXiv:2606.15497v1}.
+\newblock Also in \emph{Nature} 651:914--919.
+
+\bibitem[{Zheng et~al.(2023)Zheng, Chiang, Sheng, Zhuang, Wu, Zhuang, Lin, Li,
+  Li, Xing, Zhang, Gonzalez, and Stoica}]{zheng2023judging}
+Zheng, L.; Chiang, W.-L.; Sheng, Y.; Zhuang, S.; Wu, Z.; Zhuang, Y.; Lin, Z.;
+  Li, Z.; Li, D.; Xing, E.~P.; Zhang, H.; Gonzalez, J.~E.; and Stoica, I. 2023.
+\newblock Judging {LLM}-as-a-Judge with {MT-Bench} and {Chatbot Arena}.
+\newblock In \emph{Advances in Neural Information Processing Systems 36
+  (NeurIPS 2023), Datasets and Benchmarks Track}.
+
+\bibitem[{Zhong et~al.(2026)Zhong, Muhamed, Diab, Smith, and
+  Raghunathan}]{zhong2026pando}
+Zhong, Z.; Muhamed, A.; Diab, M.~T.; Smith, V.; and Raghunathan, A. 2026.
+\newblock Pando: Do Interpretability Methods Work When Models Won't Explain
+  Themselves?
+\newblock \emph{arXiv preprint arXiv:2604.11061}.
+
+\bibitem[{Zhu et~al.(2025)Zhu, Jin, Pruksachatkun, Zhang, Liu, Cui, Kapoor,
+  Longpre, Meng, Weiss, Barez, Gupta, Dhamala, Merizian, Giulianelli, Coppock,
+  Ududec, Sekhon, Steinhardt, Kellermann, Schwettmann, Zaharia, Stoica, Liang,
+  and Kang}]{zhu2025abc}
+Zhu, Y.; Jin, T.; Pruksachatkun, Y.; Zhang, A.; Liu, S.; Cui, S.; Kapoor, S.;
+  Longpre, S.; Meng, K.; Weiss, R.; Barez, F.; Gupta, R.; Dhamala, J.;
+  Merizian, J.; Giulianelli, M.; Coppock, H.; Ududec, C.; Sekhon, J.;
+  Steinhardt, J.; Kellermann, A.; Schwettmann, S.; Zaharia, M.; Stoica, I.;
+  Liang, P.; and Kang, D. 2025.
+\newblock Establishing Best Practices in Building Rigorous Agentic Benchmarks.
+\newblock In \emph{Advances in Neural Information Processing Systems (NeurIPS),
+  Datasets and Benchmarks Track}.
+
+\end{thebibliography}
