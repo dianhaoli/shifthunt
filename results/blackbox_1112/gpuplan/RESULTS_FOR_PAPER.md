@@ -300,3 +300,90 @@ read on those slots.
   accuracy 0.98. Instructions remove the false credit but not the gap to a script."
 - Spend: $6.18 run + $0.62 dry run = $6.80 OpenAI, within the $8 cap (guard $7.30). RUNLOG cumulative OpenAI
   193.390 → 200.195; D and E were $0.
+
+## Round 6 (17 Nov; analysis only, $0)
+
+Sources: `u/`, `v6/`, `w6/` (each with a README). Answers `paper_loop/final/REVIEW_V9.md` issues 1, 3 and 5, and its
+single-rubric fixes. U is **post hoc**; its units, the judge-visible rule and the outcome rule were written in
+`u/PLAN_U.md` before any agent-visible decidable-slot number was computed. An independent read-only recheck
+reproduced every number in U, V and W. It also found a matching bug in U's judge-visible rule, fixed before this
+commit (see U).
+
+### U. Decidable slots in the agent-visible unit [post hoc]
+- **The unit.** The topic unit divides each reading by the probe's topic coefficient, which only the grader has.
+  The agent-visible unit divides by the public sample's class-mean gap. Because every aligned property agrees with
+  the label on the sample, that gap is a median 1.5 times the topic coefficient (24 probes, range 0.98 to 2.62),
+  so a true cue's pair reading shrinks by about a third.
+- **What is decidable** (D's rule unchanged, pooled over the three sets):
+  - agent-visible unit: 109 of 254 hard slots (95 passes, 12 wrong cues, 2 wrong `none`); topic unit: 110;
+  - 75 of 77 wrong `none` answers are undecidable (topic unit: 72);
+  - judge-visible (the deciding logits and the unit both printed in the transcript the judge saw): 34.
+- **Judge (transcript level) vs script on decidable slots** (balanced accuracy, item-bootstrap 95%):
+  - topic unit: 0.75 [0.68, 0.85] vs **0.97** [0.95, 0.99];
+  - agent-visible unit: **0.74** [0.63, 0.91] vs **0.72** [0.59, 0.78];
+  - judge-visible: 0.78 [0.64, 0.94] vs 0.71 [0.60, 0.84].
+- **Why the script falls in the agent-visible unit.** It still credits no wrong cue (0 of 12), but it blames 47 of
+  95 passes (6 of 95 in the topic unit). The judge blames 22 of 95 in both.
+- **Tests.** Item level is primary; run level is secondary.
+  - Topic unit: the judge is below the script on all 6 items (sign-flip p = 0.031).
+  - Agent-visible unit: in raw correctness the judge is ahead, on 4 of 6 items (p = 0.16) and over the 14
+    (set, item) clusters (p = 0.031). Runs where only one is right: 36 for the judge vs 14 for the script, exact
+    McNemar p = 0.003.
+  - Judge-visible: 9 vs 4 runs (p = 0.27).
+- **Outcome by the pre-set rule:** topic unit "still trails"; agent-visible unit **"similar"**; judge-visible
+  "similar".
+- Sentence for the paper: "The script's advantage depends on a scale the judge never sees (post hoc). In the
+  agent-visible unit, the public sample's class-mean gap, the log decides 109 of 254 hard slots. There the
+  transcript-level judge reaches balanced accuracy 0.74 and the script 0.72, and the judge is right more often (36
+  vs 14 runs where only one is right, exact McNemar p = 0.003). The script still credits no wrong cue, but it
+  rejects 47 of 95 correct answers, because the sample gap overstates the topic coefficient by a median factor of
+  1.5. Its 0.97 needs the grader's topic coefficient. In every unit, 72 to 75 of the 77 wrong `none` answers cannot
+  be decided from the log."
+- Replaces the claim "Where the log decides, the judge stays well below a script". Correct form: "Where the log
+  decides, a script on the grader's scale beats the judge (0.97 vs 0.75); on the agent's own scale they are
+  similar (0.72 vs 0.74)."
+
+### V. The abstaining judge as selective prediction [desc]
+- **Coverage and accuracy.** At the log level (F1), the judge gives a verdict on 16 of 130 hard slots, at selective
+  accuracy 1.00 (all credited passes). Over all slots: 75 of 520, at 0.99. At the transcript level (F2): 10 of 48,
+  at 1.00.
+- **The frozen judge at the same coverage.** Kept to its most confident verdicts, it is right on 3 of 23 (0.13):
+  its most confident hard-slot verdicts are mostly rejections of passes.
+- **The script as a selective reader.** Topic unit: 71 of 130 at 0.97. Agent-visible unit: 70 of 130 at 0.56.
+- **Abstentions by slot type** (F1, hard slots):
+  - wrong `none`: 26 of 26;
+  - wrong cues: 17 of 17;
+  - passes the script confirms: 50 of 64. Where every other candidate was also isolated, it abstains on 3 and
+    credits 11 of 14; where not, it abstains on 47 and credits 3 of 50;
+  - other passes: 21 of 23;
+  - over all slots, right `none`: 110 of 125. It credits 14 of the 19 where every candidate was isolated and
+    clean, and 1 of the other 106.
+- **What the five sampled reasons say.** Verbatim, property named as [main]. Four of the five say the material shows
+  an effect but neither its size relative to the topic (the contract's unit, which the material does not print)
+  nor that a second main cue is ruled out. Both are true of the material.
+- Sentence for the paper: "Read as selective prediction, the abstaining judge is precise and low-coverage. It gives
+  a verdict on 16 of 130 hard slots, every one right, where the frozen judge's 23 most confident verdicts are right
+  on 3. Its abstentions are mostly justified by what the log shows. On passes the log confirms, it abstains on 47
+  of the 50 where other candidates were left untested, rightly noting that a second main cue is not ruled out, and
+  credits 11 of the 14 where every candidate was tested. What it does not do is reject: it never answers 'fail',
+  not even on the 5 failures the agent's own log refutes."
+- Replaces the claim "Allowed to abstain, the judge stops crediting failures". Correct form: "Allowed to abstain,
+  the judge credits no failure but rejects none either: it trades coverage for precision."
+
+### W. Small fixes [from the box]
+- **Figure 1.**
+  - The main-study hollow star is **0.18**: V1 in the agent-visible unit, κ 0.178, item 95% [0.11, 0.25]. The
+    caption is right; the figure omitted the point.
+  - Intervals for every hollow star, which the figure did not have: set A 0.164 [−0.04, 0.38]; Luna −0.166
+    [−0.24, −0.06].
+  - Caption sentence: "Stars: the log-reading script in the grader-side (filled) and agent-visible (hollow) unit,
+    for set A (0.52, 0.16) and the main study (0.43, 0.18); on Luna's set it is −0.16 and −0.17."
+- **p = 0.004** is Luna's set, log → transcript: exact McNemar over runs, 20 vs 5, p = 0.0041. It is the only step
+  in the ladder tests at that value. Sentence: "the gain is significant over runs only on Luna's set (log →
+  transcript, exact McNemar 20 vs 5 runs, p = 0.004)."
+- **Footnote, 9/17 vs 7/17.** "The original report-level call credits 9 of the 17 wrong cues on set A; re-sending the
+  byte-identical prompt (L0r, the registered J6 baseline) credits 7 of 17. Both are correct; the difference is the
+  judge's send-to-send noise."
+- **Footnote, 196 vs 214.** "The report-level test was registered on 214 runs; we report the 196 whose outcome
+  records reconcile (main study 64, set A 132), leaving out 18 harder-variant runs (on all 214: κ 0.002, 53 of 68
+  failures credited; on the 196: κ −0.006, 48 of 62)."
