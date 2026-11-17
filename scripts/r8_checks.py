@@ -263,5 +263,201 @@ def cmd_first():
     print(json.dumps(out, indent=1))
 
 
+def auroc_pairs(P, lv, by=None):
+    v = [(a["v"][lv][1] > b["v"][lv][1]) + 0.5 * (a["v"][lv][1] == b["v"][lv][1]) for a, b in P]
+    return (round(sum(v) / len(v), 4) if v else None), len(v)
+
+
+def auroc_boot(P, lv, by):
+    groups = {}
+    for a, b in P:
+        groups.setdefault(a[by], []).append((a["v"][lv][1] > b["v"][lv][1]) + 0.5 * (a["v"][lv][1] == b["v"][lv][1]))
+    ks = sorted(groups)
+    if len(ks) < 2:
+        return None
+    rng = random.Random(SEED)
+    out = []
+    for _ in range(N_BOOT):
+        v = [x for _ in ks for x in groups[ks[rng.randrange(len(ks))]]]
+        out.append(sum(v) / len(v))
+    out.sort()
+    return [round(out[int(0.025 * N_BOOT)], 4), round(out[min(N_BOOT - 1, int(0.975 * N_BOOT))], 4)]
+
+
+def auc_block(P, lv):
+    a, n = auroc_pairs(P, lv)
+    return OrderedDict(auroc=a, pairs=n, items=len({x["item"] for x, _ in P}), item95=auroc_boot(P, lv, "item"),
+                       run95=auroc_boot(P, lv, "cid"))
+
+
+def four_way(P, lv):
+    goods, bads = [a for a, _ in P], [b for _, b in P]
+    return OrderedDict(right_passed=sum(int(a["v"][lv][0]) for a in goods), right_failed=sum(1 - int(a["v"][lv][0]) for a in goods),
+                       wrong_passed=sum(int(b["v"][lv][0]) for b in bads), wrong_failed=sum(1 - int(b["v"][lv][0]) for b in bads))
+
+
+def check3(pairs):
+    P = [(a, b) for a, b in pairs if a["v"]["L2r"] is not None and b["v"]["L2r"] is not None]
+    out = OrderedDict(pairs_with_L2r=len(P), of=len(pairs), by_set=dict(Counter(a["set"] for a, _ in P)),
+                      note="L2r was sent only for set A open-arm runs and the main study")
+    if len(P) < 10:
+        out["note_small"] = "fewer than 10 pairs: counts only"
+    for lv in ("L2r", "L2"):
+        blk = auc_block(P, lv) if len(P) >= 10 else OrderedDict()
+        blk["credited"] = four_way(P, lv)
+        out[lv] = blk
+    return out
+
+
+def check4(pairs):
+    out = OrderedDict(cells=dict(Counter(f"{a['set']} | {a['agent']} | {b['kind']}" for a, b in pairs)))
+    out["four_way"] = OrderedDict((lv, four_way(pairs, lv)) for lv in ("L0", "L2", "Sol_L2"))
+    out["four_way_by_set"] = OrderedDict(
+        (st, OrderedDict((lv, four_way([p for p in pairs if p[0]["set"] == st], lv)) for lv in ("L0", "L2", "Sol_L2")))
+        for st in ("set_A", "luna", "main_study"))
+    cells = OrderedDict()
+    for key, f in [(f"agent {ag}", lambda p, ag=ag: p[0]["agent"] == ag) for ag in sorted({a["agent"] for a, _ in pairs})] + \
+                  [(f"type {k}", lambda p, k=k: p[1]["kind"] == k) for k in ("trap", "two-part")]:
+        P = [p for p in pairs if f(p)]
+        cells[key] = auc_block(P, "L2") if len(P) >= 5 else OrderedDict(pairs=len(P), note="fewer than 5 pairs")
+        if len(P) >= 5 and cells[key]["items"] < 2:
+            cells[key]["item95"] = "fewer than 2 items"
+    out["L2_auroc_cells"] = cells
+    return out
+
+
+def check5(rows, eps, slots):
+    import failure_flags as FF
+    import method_ladder as ML
+    import x7_signal as X7
+    out = []
+    for s in slots:
+        if s["arm"] != "bb64" or s["cert"] or s["kind"] == "null":
+            continue
+        b, run = s["cid"].split("__")
+        T = KV.texts_fulltext(JV.RAW / b / run)[0]
+        ep = KV.Ep(s["item"])
+        j = s["probe"]
+        items = (T or {}).get(j, [])
+        aligned = set(FF.aligned_columns(ep.e.sample_rows(j), [t["label"] for t in ep.e.samples[j]]))
+        RT, RG = KV.readings(ep, j, items, "T"), KV.readings(ep, j, items, "gap")
+        if not aligned <= set(RT):
+            continue
+        ans = json.loads((JV.RAW / b / run / "answer.json").read_text())["probes"][j]
+        mains = set(ML.mains_of(ans))
+        assert mains & {ep.cols[k] for k in aligned}, s["cid"]
+        cands = []
+        for rank, (k, prox) in enumerate(X7.proxy_table(s["item"])[j], 1):
+            cands.append(OrderedDict(
+                label="[main]" if ep.cols[k] in mains else "[other]", proxy_rank=rank, proxy_score=round(prox, 3),
+                clean_pairs=len(RT[k]),
+                topic_unit_mean=round(sum(RT[k]) / len(RT[k]), 3), topic_unit_max_abs=round(max(abs(x) for x in RT[k]), 3),
+                gap_unit_mean=round(sum(RG[k]) / len(RG[k]), 3), gap_unit_max_abs=round(max(abs(x) for x in RG[k]), 3)))
+        tags = ML.slot_types(ans)
+        out.append(OrderedDict(probe_type=s["kind"], arm="BB-64", agent=s["agent"], main_cues=len(mains),
+                               cue_structure=("two-part cue (a nested property: its presence implies a parent "
+                                              "property)" if "nested" in tags else
+                                              "two main cues" if "twomain" in tags else "single property"),
+                               none_threshold="|mean| < 0.15 in each unit (topic unit: the contract's; agent-visible "
+                                              "unit: the same 0.15 on the class-mean-gap reading)",
+                               named_bar_reference=0.30, candidates=cands,
+                               main_readings_topic=[c["topic_unit_mean"] for c in cands if c["label"] == "[main]"],
+                               main_readings_gap=[c["gap_unit_mean"] for c in cands if c["label"] == "[main]"]))
+    return out
+
+
+def check6(rows, G, eps, S):
+    import abstain_judge as AJ
+    import decidable_slots as DS  # noqa: F401
+    A = G["A"]
+    res = OrderedDict()
+    for scope in ("all_slots", "hard"):
+        T = []
+        for cid in A:
+            r = rows[cid]
+            for j, ok in enumerate(r["naming"]):
+                if scope == "hard" and j not in r["hard"]:
+                    continue
+                v = S["L1"].get((cid, j))
+                if v is None:
+                    continue
+                credit, p = v
+                conf = p if credit else 100 - p
+                T.append(dict(conf=conf, right=int(credit == bool(ok))))
+        target = 75 if scope == "all_slots" else 16
+
+        def at(t):
+            U = [x for x in T if x["conf"] >= t]
+            return len(U), (round(sum(x["right"] for x in U) / len(U), 4) if U else None), sum(x["right"] for x in U)
+        tiers = sorted({x["conf"] for x in T}, reverse=True)
+        above = [t for t in tiers if at(t)[0] < target]
+        reach = next(t for t in tiers if at(t)[0] >= target)
+        hi = above[-1] if above else None
+        n_hi, a_hi, k_hi = at(hi) if hi is not None else (0, None, 0)
+        tier = [x for x in T if x["conf"] == reach]
+        exp75 = (k_hi + (target - n_hi) * sum(x["right"] for x in tier) / len(tier)) / target
+        bins = OrderedDict()
+        for lab, lo, hi_ in (("100", 100, 101), ("95-99", 95, 100), ("90-94", 90, 95), ("80-89", 80, 90),
+                             ("70-79", 70, 80), ("<70", -1, 70)):
+            U = [x for x in T if lo <= x["conf"] < hi_]
+            bins[lab] = OrderedDict(n=len(U), right=sum(x["right"] for x in U),
+                                    accuracy=round(sum(x["right"] for x in U) / len(U), 4) if U else None)
+        n100, a100, k100 = at(100)
+        res[scope] = OrderedDict(slots=len(T), target_coverage=target,
+                                 at_confidence_100=OrderedDict(covered=n100, right=k100, accuracy=a100),
+                                 bracket_below=OrderedDict(confidence_at_least=hi, covered=n_hi, accuracy=a_hi),
+                                 bracket_reaching=OrderedDict(confidence_at_least=reach, covered=at(reach)[0],
+                                                              accuracy=at(reach)[1]),
+                                 expected_accuracy_exactly_target_random_ties=round(exp75, 4), bins=bins)
+    kv = json.loads((KV.PRIV / "slots.json").read_text())
+    jv = json.loads((ROOT / "results" / "private_1112" / "gpuplan" / "u" / "judge_visible_slots.json").read_text())
+
+    def drule(sl):
+        (c1, d1), (c3, d3) = sl["v"]["V1"], sl["v"]["V3"]
+        if sl["answer"] == "named":
+            return bool(d1 or d3), bool(c1 or c3)
+        return bool((d3 and c3) or (d1 and not c1)), bool(d3 and c3)
+    fails = []
+    for cid in A:
+        r = rows[cid]
+        for j in r["hard"]:
+            if r["naming"][j]:
+                continue
+            dT, _ = drule(kv[f"T|{cid}"]["slots"][j])
+            if not dT:
+                continue
+            dG, cG = drule(kv[f"gap|{cid}"]["slots"][j])
+            refG = bool(dG and not cG)  # refuted in the agent-visible unit (decidable and not credited)
+            n = len(r["naming"])
+            f1, _ = AJ.verdicts3(f"F1__{cid}", n)
+            f2, _ = AJ.verdicts3(f"F2__{cid}", n)
+            sf = S["Sol_SF"].get((cid, j))
+            fails.append(OrderedDict(answer="named cue" if (r["named"][j] if j < len(r["named"]) else 0) else "none",
+                                     agent=r["agent"], arm=cid.split("__")[0].rsplit("_", 1)[1],
+                                     agent_visible=("refuted" if refG else "confirmed (script credits the failure)"
+                                                    if dG else "undecidable"),
+                                     judge_visible=("refuted" if refG and jv[f"{cid}|{j}"] else
+                                                    "confirmed (script credits the failure)" if jv[f"{cid}|{j}"]
+                                                    else "not judge-visible"),
+                                     F1=None if f1 is None else f1[j], F2=None if f2 is None else f2[j], Sol_SF=sf))
+    res["log_refuted_failures"] = OrderedDict(
+        topic_unit_refuted=len(fails), agent_visible_unit_refuted=sum(f["agent_visible"] == "refuted" for f in fails),
+        judge_visible_refuted=sum(f["judge_visible"] == "refuted" for f in fails), each=fails)
+    return res
+
+
+def cmd_rest():
+    rows, meta, G, eps, S = load()
+    slots = none_slots(rows, G, eps, S)
+    pairs = [(a, b) for a, b in pairs_of(slots) if a["proxy"]]
+    assert len(pairs) == 40, len(pairs)
+    out = OrderedDict(prereg="results/blackbox_1112/gpuplan/r8/PREREG_R8.md", label="pre-specified, post hoc to the data",
+                      script="scripts/r8_checks.py rest", check3_L2r=check3(pairs), check4_pairs=check4(pairs),
+                      check5_full_coverage_wrong_none=check5(rows, eps, slots), check6_v6_leftovers=check6(rows, G, eps, S))
+    OUT.mkdir(parents=True, exist_ok=True)
+    (OUT / "r8_36.json").write_text(json.dumps(out, indent=1) + "\n")
+    print(json.dumps(out, indent=1))
+
+
 if __name__ == "__main__":
-    {"first": cmd_first}[sys.argv[1]]()
+    {"first": cmd_first, "rest": cmd_rest}[sys.argv[1]]()
