@@ -50,3 +50,6 @@ Only the bold scores share one scale: the same three blind reviewers, the same r
 - GPU results: [RESULTS_FOR_PAPER_f44495b.md](https://github.com/dianhaoli/shifthunt/blob/claude/nifty-wozniak-vunb6z/paper_loop/gpu_results/RESULTS_FOR_PAPER_f44495b.md) (copy). Live version on the GPU branch: [RESULTS_FOR_PAPER.md](https://github.com/dianhaoli/shifthunt/blob/claude/serene-fermi-pog4k7/results/blackbox_1112/gpuplan/RESULTS_FOR_PAPER.md)
 - Figures: [final/fig](https://github.com/dianhaoli/shifthunt/tree/claude/nifty-wozniak-vunb6z/paper_loop/final/fig)
 - Older key-idea index: [README.md](https://github.com/dianhaoli/shifthunt/blob/claude/nifty-wozniak-vunb6z/paper_loop/README.md)
+
+## Facts only (17 Nov)
+- [facts/FACTS_ONLY.md](facts/FACTS_ONLY.md): every research question, experiment and result (rounds 1-8, Sol), environment, related-work comparison and reference cards; no claims. Section files in [facts/](facts/).
