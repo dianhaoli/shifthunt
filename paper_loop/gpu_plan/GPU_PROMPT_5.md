@@ -4,7 +4,7 @@
 and prompt"). The hard stop for new data is **17 Nov 23:59 UTC**. If the counted calls cannot finish by then,
 stop and report what finished. Commit to `claude/serene-fermi-pog4k7`.
 
-## S. Claude Sonnet as judge, set A (Anthropic guard $25)
+## S. Claude Sonnet as judge, set A (Anthropic guard $15: the author's account has about $47 left)
 
 **What.** Use the frozen judge prompts with only the model changed to `claude-sonnet-5-5` (Sonnet 5.5), on set A
 (130 runs).
@@ -16,10 +16,10 @@ Reuse `scripts/judge_ladder2.py` with a model override. If an override needs cod
 
 **Order:**
 1. Dry run: the 5 longest G2 prompts. Quarantine the responses unread and project the cost.
-2. If the projection for G0 + G2 is over $25, run G2 only.
-3. If G2 alone is over $25, run G2 on a seeded random subset that fits, stratified by item, and log it as a
-   deviation.
-4. Interleave G0 and G2 calls.
+2. Run **G2 only** (skip G0).
+3. If G2 on all 130 runs projects over $15, run G2 on a seeded random subset that fits, stratified by item, and log
+   it as a deviation.
+4. Stop at $15 total, dry run included.
 
 **Freeze first.** Write `gpuplan/s/PREREG_S.md`, hash it and commit it before any counted call. It holds the tests
 and readings below, written in advance.
