@@ -7,10 +7,10 @@
   - At N = 100, nominal 95% CLT intervals cover only 92.5% (Sec. 3.1).
   - The CLT interval has zero width when the observed accuracy is 0 or 1, and can extend outside [0, 1] (Sec. 3.1).
   - Recommended methods: Wilson score or Beta-Bernoulli Bayesian intervals for IID data (Sec. 3.1), and a clustered Bayesian model for clustered questions (Sec. 3.2).
-  - Real-eval examples where the CLT interval collapses or leaves [0, 1]: Fig. 1 (N = 20, LangChain tool use) and Fig. 9 (AIME, N = 15). Source: verify_batch_2; unconfirmed by me.
+  - Real-eval examples where the CLT interval collapses or leaves [0, 1]: Fig. 1 (N = 20, LangChain tool use) and Fig. 9 (App. B.2, Math Arena AIME 2025 II, N = 15). Confirmed in the v3 PDF.
 - **Where V9 uses it:** §3, the "Statistics" paragraph (l. 60): the claim that normal approximations fail with six items, given as the reason for the interval methods V9 uses. CITATIONS_REPORT c notes that the paper does not test six items. 00_collected.md labels l. 60 as §2, but l. 60 sits under "## 3 Readers, Runs and Statistics".
 - **Properties (for the comparison table):**
-  - Executed/automatic ground truth: not applicable (a statistics paper; coverage is measured on simulated data with a known true θ).
+  - Executed/automatic ground truth: no (a statistics paper, not an agent benchmark). Coverage is measured on simulated data with a known true θ (Sec. 3).
   - Graded "nothing found" answers: no.
   - Planted or known-rank tool failure: no.
   - LLM judge evaluated against ground truth: no.
@@ -26,13 +26,13 @@
     - Instance level: 68.1% agreement (τ 0.369) on instances with a clear winner.
     - The individual metrics agree with experts 38.7% to 63.5% of the time.
   - Judge choice: gemini-2.5-flash and gemini-2.5-pro judge scores correlate at Pearson 0.995, and gemini-2.5-flash is the official judge (App. E.3).
-  - E2E-Bench rubric scoring was judged 92% correct on a dev sample of 50 rubric items in a human spot check (App. F.9, p. 52). Source: verify_batch_2; unconfirmed by me.
+  - E2E-Bench rubric scoring was judged 92% correct on a dev sample of 50 rubric items in a human spot check (App. F.9, p. 52). Confirmed in the v2 PDF; App. F.9 also states the rubrics were checked manually by human annotators.
   - "Faker" is a baseline that prompts an LM to make up the report, code and artifacts without doing the work. It is used to validate the End-to-End scoring metrics (App. F). Its scores (Tables 10 and 17):
     - E2E-Bench: 39.2 ± 6.9.
     - E2E-Bench-Hard: 25.4 ± 4.5.
     - Full-task completion: 0.00 on both (Table 20).
   - Best End-to-End scores: Asta Panda (claude-sonnet-4) 70.5 ± 6.2 on E2E-Bench and 68.2 ± 4.4 on E2E-Bench-Hard (Table 10).
-  - Best overall score: Asta v0, 53.0 (Table 4).
+  - Best overall score among agents that can solve all the tasks: Asta v0, 53.0 (Table 4).
 - **Where V9 uses it:** §1, first paragraph (l. 15): research output lacks reference answers, so benchmarks validate their LLM judges against experts, which AstaBench does on one subset. §7 "Judges for research agents" (l. 171) points back to it ("Beyond AstaBench (§1)") without a second citation.
 - **Properties (for the comparison table):**
   - Executed/automatic ground truth: partly. 5 of the 11 benchmarks are scored programmatically (Sec. 3). The end-to-end tasks are scored by an LLM judge against rubrics, over the report, code and artifacts (App. E.9).
@@ -116,7 +116,7 @@
   - Gradient pursuit gives "a very slight decrease" in nonlinear error, and earlier-layer linear transformations give "a larger reduction" (abstract). No exact values were checked.
 - **Where V9 uses it:** §7 "Auditing and agentic interpretability" (l. 173): attached to the clause saying that ShiftHunt's traps exploit what SAEs miss. CITATIONS_REPORT c notes that the paper says nothing about traps.
 - **Properties (for the comparison table):**
-  - Executed/automatic ground truth: not applicable (an analysis of SAE reconstruction error, not an agent benchmark).
+  - Executed/automatic ground truth: no (an analysis of SAE reconstruction error, not an agent benchmark).
   - Graded "nothing found" answers: no.
   - Planted or known-rank tool failure: no.
   - LLM judge evaluated against ground truth: no.
@@ -131,8 +131,8 @@
   - In the frequentist setting, abstention affects only lower-order exponent terms (abstract).
 - **Where V9 uses it:** §7 "Proxies and search" (l. 175): cited with Russo et al. 2026 for framing query choice under a biased proxy as best-arm identification with abstention. CITATIONS_REPORT c notes that the paper covers abstention but not biased proxies.
 - **Properties (for the comparison table):**
-  - Executed/automatic ground truth: not applicable (theory paper).
-  - Graded "nothing found" answers: not applicable. The paper analyses abstention as an allowed output with a budget α, scored by the probability of undetected error.
+  - Executed/automatic ground truth: no (theory paper; no benchmark).
+  - Graded "nothing found" answers: no graded answers (theory paper). The paper analyses abstention as an allowed output with a budget α, scored by the probability of undetected error.
   - Planted or known-rank tool failure: no.
   - LLM judge evaluated against ground truth: no.
 
@@ -161,13 +161,17 @@
     - Circuit Oracle, single committed pick: 0.804. Diff-in-means baseline: 0.825.
     - Circuit Oracle, best of 5: 0.854. No intervention: 0.041.
   - Two passes agree on pinned features at Jaccard 0.511 and on layers at 0.754 (Sec. 7).
-  - Secret elicitation: do not quote. The numbers disagree within the paper: 69.2% vs. 81.2% for Activation Oracles in the intro, 75.0% in the Fig. 3 caption, and 75.8% vs. 75% in the judge cross-check of Sec. 5.2 (verify_batch_5; consistent with my reading).
+  - Secret elicitation: do not quote. The closed-mode Circuit Oracle figure differs across the paper:
+    - Intro (Sec. 1): 69.2%, against 81.2% for the Activation Oracle baseline.
+    - Fig. 3: the caption says 75.0% overall, while the plotted Overall bar is labelled 68.3%.
+    - Sec. 5.2 judge cross-check (gpt-oss-120b grading, re-graded with gpt-5.4-mini): "75.8% vs. 75%"; the paper does not say which value belongs to which judge.
+    - verify_batch_5 additionally records 86.7% for the Activation Oracle in App. F.2 (not re-read).
 - **Where V9 uses it:** §7 "Auditing and agentic interpretability" (l. 173): listed with SAEScientist-Bench and AuditBench as interpretability or auditing evaluations that grade with LLM judges, classifiers or rank metrics.
 - **Properties (for the comparison table):**
   - Executed/automatic ground truth: ground truth is known by construction but scored by an LLM judge. Spurious reliance is set by the probe's training split (stereotype-only vs. balanced), and the secret word is fixed by finetuning. The judge reads the oracle's report and returns the verdict.
   - Graded "nothing found" answers: in part. Unbiased probes count as correct when the verdict is "causal" or "mixed". The judge's categories include "none".
   - Planted or known-rank tool failure: no tool failure. A spurious correlation is planted through the biased probe's training split.
-  - LLM judge evaluated against ground truth: no validation against human labels is stated. The judges are compared with each other: gpt-oss-120b vs. gpt-5.4-mini in Sec. 5.2, with closed-mode accuracy 75.8% vs. 75%.
+  - LLM judge evaluated against ground truth: no validation against human labels is stated. The judges are compared with each other: the secret-elicitation runs graded by gpt-oss-120b were re-graded with gpt-5.4-mini, giving closed-mode accuracy "75.8% vs. 75%" (Sec. 5.2).
 
 ### klayman1987
 - **Citation:** Joshua Klayman, Young-Won Ha. 1987. "Confirmation, Disconfirmation, and Information in Hypothesis Testing." Psychological Review 94(2):211-228. DOI 10.1037/0033-295X.94.2.211. https://psycnet.apa.org/doi/10.1037/0033-295X.94.2.211
@@ -176,10 +180,10 @@
 - **Numbers we might cite:** none checked.
 - **Where V9 uses it:** §7 "Proxies and search" (l. 175): an analogy between agents testing only the proxy's favoured candidate and the positive test strategy.
 - **Properties (for the comparison table):**
-  - Executed/automatic ground truth: not applicable (a theory paper in psychology).
-  - Graded "nothing found" answers: not applicable.
-  - Planted or known-rank tool failure: not applicable.
-  - LLM judge evaluated against ground truth: not applicable.
+  - Executed/automatic ground truth: no (a theoretical paper in psychology; no benchmark).
+  - Graded "nothing found" answers: no.
+  - Planted or known-rank tool failure: no.
+  - LLM judge evaluated against ground truth: no.
 
 ### krishnamurthy2024
 - **Citation:** Akshay Krishnamurthy, Keegan Harris, Dylan J. Foster, Cyril Zhang, Aleksandrs Slivkins. 2024. "Can Large Language Models Explore In-Context?" Advances in Neural Information Processing Systems 37 (NeurIPS 2024). arXiv 2403.15371. https://arxiv.org/abs/2403.15371
@@ -195,6 +199,6 @@
 - **Where V9 uses it:** §7 "Proxies and search" (l. 175): cited with Chen et al. 2026 for LLM agents' exploration deficits. CITATIONS_REPORT c lists it as fully supporting that wording.
 - **Properties (for the comparison table):**
   - Executed/automatic ground truth: yes, in the sense of synthetic bandits whose arm means are known. Rewards and failure statistics are computed automatically.
-  - Graded "nothing found" answers: not applicable.
+  - Graded "nothing found" answers: no.
   - Planted or known-rank tool failure: no.
   - LLM judge evaluated against ground truth: no LLM judge.
