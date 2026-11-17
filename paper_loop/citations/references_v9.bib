@@ -1,0 +1,434 @@
+% references_v9.bib -- bibliography for PAPER_V9 (ShiftHunt judge paper)
+% Built 2026-11-17 from the verification batches (verify_batch_1..10), the gap searches
+% (gaps_judges, gaps_auditing, gaps_aisci) and a final arXiv API + OpenReview API recheck.
+%
+% Part 1: the 18 references V9 cites (all verified or corrected).
+% Part 2: additions marked "must" (8) and "should" (12) in the gap search.
+% Keys follow 00_collected.md where a paper already had a key there:
+%   marks2025a = Sparse Feature Circuits (gap key marks2025sfc)
+%   marks2025b = Auditing language models for hidden objectives (V9 cites it as "Marks et al. 2025")
+%   angelopoulos2023 = Prediction-Powered Inference (gap key angelopoulos2023ppi)
+%   chanin2026 = Are Sparse Autoencoder Benchmarks Reliable? (gap key chanin2026saebenchreliable)
+% If marks2025a is added, the text must say "Marks et al. 2025a" / "2025b".
+%
+% Open items (NOT VERIFIED):
+%   chen2026      NeurIPS 2026 acceptance: only the PDF footer says so; arXiv comment empty,
+%                 Semantic Scholar no venue, OpenReview search (again 2026-11-17) no match,
+%                 neurips.cc unreachable. Cited as arXiv.
+%   klayman1987   DOI follows the APA pattern; doi.org and Crossref are blocked here.
+%   bricken2025   the blog page itself is blocked; authors taken from the AuditBench reference list.
+%   lu2026endtoend author order: arXiv v1 lists Yamada, Lange, Cong Lu, Chris Lu, ...; the order
+%                 below is the Nature-version order reported by Semantic Scholar in the gap search.
+%                 nature.com unreachable. Check before camera-ready (it decides "Lu et al." vs "Yamada et al.").
+%   angelopoulos2023 issue number (6671) left out: Crossref blocked.
+%   huang2025popper page range seen only in a search snippet, so it is left out.
+
+% ---------------------------------------------------------------------------
+% Part 1. References cited in V9
+% ---------------------------------------------------------------------------
+
+@inproceedings{bowyer2025,
+  author    = {Bowyer, Sam and Aitchison, Laurence and Ivanova, Desi R.},
+  title     = {Position: Don't Use the {CLT} in {LLM} Evals With Fewer Than a Few Hundred Datapoints},
+  booktitle = {Proceedings of the 42nd International Conference on Machine Learning (Position Paper Track)},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {267},
+  year      = {2025},
+  url       = {https://openreview.net/forum?id=YhZ2PY2nZa},
+  eprint    = {2503.01747},
+  archivePrefix = {arXiv}
+}
+
+@inproceedings{bragg2026,
+  author    = {Bragg, Jonathan and D'Arcy, Mike and Balepur, Nishant and Bareket, Dan and Dalvi, Bhavana and Feldman, Sergey and Haddad, Dany and Hwang, Jena D. and Jansen, Peter and Kishore, Varsha and Majumder, Bodhisattwa Prasad and Naik, Aakanksha and Rahamimov, Sigal and Richardson, Kyle and Singh, Amanpreet and Surana, Harshit and Tiktinsky, Aryeh and Vasu, Rosni and Wiener, Guy and Anastasiades, Chloe and Candra, Stefan and Dunkelberger, Jason and Emery, Dan and Evans, Rob and Hamada, Malachi and Huff, Regan and Kinney, Rodney and Latzke, Matt and Lochner, Jaron and Lozano-Aguilera, Ruben and Nguyen, Cecile and Rao, Smita and Tanaka, Amber and Vlahos, Brooke and Clark, Peter and Downey, Doug and Goldberg, Yoav and Sabharwal, Ashish and Weld, Daniel S.},
+  title     = {{AstaBench}: Rigorous Benchmarking of {AI} Agents with a Scientific Research Suite},
+  booktitle = {International Conference on Learning Representations (ICLR)},
+  year      = {2026},
+  url       = {https://openreview.net/forum?id=M7TNf5J26u},
+  eprint    = {2510.21652},
+  archivePrefix = {arXiv}
+}
+
+@misc{bricken2025,
+  author       = {Bricken, Trenton and Wang, Rowan and Bowman, Sam and Ong, Euan and Treutlein, Johannes and Wu, Jeff and Hubinger, Evan and Marks, Samuel},
+  title        = {Building and Evaluating Alignment Auditing Agents},
+  howpublished = {Anthropic Alignment Science Blog},
+  month        = jul,
+  year         = {2025},
+  url          = {https://alignment.anthropic.com/2025/automated-auditing/}
+}
+
+@inproceedings{chan2025,
+  author    = {Chan, Jun Shern and Chowdhury, Neil and Jaffe, Oliver and Aung, James and Sherburn, Dane and Mays, Evan and Starace, Giulio and Liu, Kevin and Maksin, Leon and Patwardhan, Tejal and Weng, Lilian and M{\k{a}}dry, Aleksander},
+  title     = {{MLE}-bench: Evaluating Machine Learning Agents on Machine Learning Engineering},
+  booktitle = {International Conference on Learning Representations (ICLR)},
+  year      = {2025},
+  url       = {https://openreview.net/forum?id=6s5uXNWGIh},
+  eprint    = {2410.07095},
+  archivePrefix = {arXiv}
+}
+
+@misc{chen2026,
+  author        = {Chen, Yiwei and Weerasinghe, Amila and Biswal, Siddharth and Rajkumar, Utkrisht and Boz, Olcay and Berg-Kirkpatrick, Taylor and Yu, Rose},
+  title         = {{ACED-Bench}: Evaluating How {LLM} Agents Acquire and Act on Causal Evidence},
+  year          = {2026},
+  eprint        = {2610.14381},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.AI},
+  url           = {https://arxiv.org/abs/2610.14381},
+  note          = {PDF title: ``ACED: Evaluating How LLM Agents Acquire and Act on Causal Evidence''. The PDF footer states NeurIPS 2026; acceptance not verified}
+}
+
+@article{engels2025,
+  author  = {Engels, Joshua and Smith, Logan and Tegmark, Max},
+  title   = {Decomposing The Dark Matter of Sparse Autoencoders},
+  journal = {Transactions on Machine Learning Research},
+  year    = {2025},
+  url     = {https://openreview.net/forum?id=sXq3Wb3vef},
+  eprint  = {2410.14670},
+  archivePrefix = {arXiv}
+}
+
+@misc{huang2026,
+  author        = {Huang, Yuqi and Hou, Yunlong and Tan, Vincent Y. F.},
+  title         = {Bayesian Best-Arm Identification with Abstention: A Polynomial-to-Exponential Phase Transition},
+  year          = {2026},
+  eprint        = {2606.29203},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2606.29203}
+}
+
+@misc{kabir2026,
+  author        = {Kabir, Shariar and Tan, Hong Kiat and Agrawal, Swastik and Chereddy, Sai V. R. and Balasubramanian, Sriram},
+  title         = {Circuit Oracle: Automating Attribution Graph Analysis via Natural-Language Queries},
+  year          = {2026},
+  eprint        = {2611.00420},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CL},
+  note          = {Extended version of a paper presented at the Mechanistic Interpretability and Compositional Learning workshops at ICML 2026},
+  url           = {https://arxiv.org/abs/2611.00420}
+}
+
+@article{klayman1987,
+  author  = {Klayman, Joshua and Ha, Young-Won},
+  title   = {Confirmation, Disconfirmation, and Information in Hypothesis Testing},
+  journal = {Psychological Review},
+  volume  = {94},
+  number  = {2},
+  pages   = {211--228},
+  year    = {1987},
+  doi     = {10.1037/0033-295X.94.2.211}
+}
+
+@inproceedings{krishnamurthy2024,
+  author    = {Krishnamurthy, Akshay and Harris, Keegan and Foster, Dylan J. and Zhang, Cyril and Slivkins, Aleksandrs},
+  title     = {Can Large Language Models Explore In-Context?},
+  booktitle = {Advances in Neural Information Processing Systems},
+  volume    = {37},
+  year      = {2024},
+  eprint    = {2403.15371},
+  archivePrefix = {arXiv}
+}
+
+@inproceedings{lieberum2024,
+  author    = {Lieberum, Tom and Rajamanoharan, Senthooran and Conmy, Arthur and Smith, Lewis and Sonnerat, Nicolas and Varma, Vikrant and Kram{\'a}r, J{\'a}nos and Dragan, Anca and Shah, Rohin and Nanda, Neel},
+  title     = {Gemma Scope: Open Sparse Autoencoders Everywhere All At Once on Gemma 2},
+  booktitle = {Proceedings of the 7th BlackboxNLP Workshop: Analyzing and Interpreting Neural Networks for NLP},
+  pages     = {278--300},
+  year      = {2024},
+  doi       = {10.18653/v1/2024.blackboxnlp-1.19},
+  eprint    = {2408.05147},
+  archivePrefix = {arXiv}
+}
+
+@misc{marks2025b,
+  author        = {Marks, Samuel and Treutlein, Johannes and Bricken, Trenton and Lindsey, Jack and Marcus, Jonathan and Mishra-Sharma, Siddharth and Ziegler, Daniel and Ameisen, Emmanuel and Batson, Joshua and Belonax, Tim and Bowman, Samuel R. and Carter, Shan and Chen, Brian and Cunningham, Hoagy and Denison, Carson and Dietz, Florian and Golechha, Satvik and Khan, Akbir and Kirchner, Jan and Leike, Jan and Meek, Austin and Nishimura-Gasparian, Kei and Ong, Euan and Olah, Christopher and Pearce, Adam and Roger, Fabien and Salle, Jeanne and Shih, Andy and Tong, Meg and Thomas, Drake and Rivoire, Kelley and Jermyn, Adam and MacDiarmid, Monte and Henighan, Tom and Hubinger, Evan},
+  title         = {Auditing Language Models for Hidden Objectives},
+  year          = {2025},
+  eprint        = {2503.10965},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.AI},
+  url           = {https://arxiv.org/abs/2503.10965}
+}
+
+@inproceedings{russo2026,
+  author        = {Russo, Alessio and Welch, Ryan and Pacchiano, Aldo},
+  title         = {In-Context Learning for Pure Exploration},
+  booktitle     = {International Conference on Learning Representations (ICLR)},
+  year          = {2026},
+  eprint        = {2506.01876},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2506.01876}
+}
+
+@misc{sheshadri2026,
+  author        = {Sheshadri, Abhay and Ewart, Aidan and Kempf, Elias and Fronsdal, Kai and Gupta, Isha and Schrodi, Simon and Conmy, Arthur and Bowman, Samuel R. and Price, Sara and Marks, Samuel and Wang, Rowan},
+  title         = {{AuditBench}: Evaluating Alignment Auditing Techniques on Models with Hidden Behaviors},
+  year          = {2026},
+  eprint        = {2602.22755},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CL},
+  url           = {https://arxiv.org/abs/2602.22755}
+}
+
+@inproceedings{starace2025,
+  author    = {Starace, Giulio and Jaffe, Oliver and Sherburn, Dane and Aung, James and Chan, Jun Shern and Maksin, Leon and Dias, Rachel and Mays, Evan and Kinsella, Benjamin and Thompson, Wyatt and Heidecke, Johannes and Glaese, Amelia and Patwardhan, Tejal},
+  title     = {{PaperBench}: Evaluating {AI}'s Ability to Replicate {AI} Research},
+  booktitle = {Proceedings of the 42nd International Conference on Machine Learning},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {267},
+  pages     = {56843--56873},
+  year      = {2025},
+  url       = {https://proceedings.mlr.press/v267/starace25a.html},
+  eprint    = {2504.01848},
+  archivePrefix = {arXiv}
+}
+
+@misc{tan2026,
+  author        = {Tan, Yuqiao and He, Shizhu and Zhao, Jun and Liu, Kang},
+  title         = {{SAEScientist-Bench}: Can {AI} Agents Conduct Autonomous {SAE} Interpretability Research?},
+  year          = {2026},
+  eprint        = {2609.09113},
+  archivePrefix = {arXiv},
+  url           = {https://arxiv.org/abs/2609.09113}
+}
+
+@misc{zhong2026pando,
+  author        = {Zhong, Ziqian and Muhamed, Aashiq and Diab, Mona T. and Smith, Virginia and Raghunathan, Aditi},
+  title         = {Pando: Do Interpretability Methods Work When Models Won't Explain Themselves?},
+  year          = {2026},
+  eprint        = {2604.11061},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.LG},
+  url           = {https://arxiv.org/abs/2604.11061}
+}
+
+@inproceedings{zhu2025abc,
+  author    = {Zhu, Yuxuan and Jin, Tengjun and Pruksachatkun, Yada and Zhang, Andy and Liu, Shu and Cui, Sasha and Kapoor, Sayash and Longpre, Shayne and Meng, Kevin and Weiss, Rebecca and Barez, Fazl and Gupta, Rahul and Dhamala, Jwala and Merizian, Jacob and Giulianelli, Mario and Coppock, Harry and Ududec, Cozmin and Sekhon, Jasjeet and Steinhardt, Jacob and Kellermann, Antony and Schwettmann, Sarah and Zaharia, Matei and Stoica, Ion and Liang, Percy and Kang, Daniel},
+  title     = {Establishing Best Practices in Building Rigorous Agentic Benchmarks},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS), Datasets and Benchmarks Track},
+  year      = {2025},
+  url       = {https://openreview.net/forum?id=E58HNCqoaA},
+  eprint    = {2507.02825},
+  archivePrefix = {arXiv},
+  note      = {arXiv title: ``Establishing Best Practices for Building Rigorous Agentic Benchmarks''}
+}
+
+% ---------------------------------------------------------------------------
+% Part 2a. Additions, priority "must"
+% ---------------------------------------------------------------------------
+
+@inproceedings{krumdick2026nofreelabels,
+  author        = {Krumdick, Michael and Lovering, Charles and Reddy, Varshini and Ebner, Seth and Tanner, Chris},
+  title         = {No Free Labels: Limitations of {LLM}-as-a-Judge Without Human Grounding},
+  booktitle     = {Conference on Language Modeling (COLM)},
+  year          = {2026},
+  url           = {https://openreview.net/forum?id=jHjPCNaI4N},
+  eprint        = {2503.05061},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CL}
+}
+
+@inproceedings{jung2025trust,
+  author        = {Jung, Jaehun and Brahman, Faeze and Choi, Yejin},
+  title         = {Trust or Escalate: {LLM} Judges with Provable Guarantees for Human Agreement},
+  booktitle     = {International Conference on Learning Representations (ICLR)},
+  year          = {2025},
+  url           = {https://openreview.net/forum?id=UHPnqSTBPO},
+  eprint        = {2407.18370},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.LG}
+}
+
+@inproceedings{zheng2023judging,
+  author        = {Zheng, Lianmin and Chiang, Wei-Lin and Sheng, Ying and Zhuang, Siyuan and Wu, Zhanghao and Zhuang, Yonghao and Lin, Zi and Li, Zhuohan and Li, Dacheng and Xing, Eric P. and Zhang, Hao and Gonzalez, Joseph E. and Stoica, Ion},
+  title         = {Judging {LLM}-as-a-Judge with {MT-Bench} and {Chatbot Arena}},
+  booktitle     = {Advances in Neural Information Processing Systems 36 (NeurIPS 2023), Datasets and Benchmarks Track},
+  year          = {2023},
+  eprint        = {2306.05685},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CL}
+}
+
+@inproceedings{marks2025a,
+  author        = {Marks, Samuel and Rager, Can and Michaud, Eric J. and Belinkov, Yonatan and Bau, David and Mueller, Aaron},
+  title         = {Sparse Feature Circuits: Discovering and Editing Interpretable Causal Graphs in Language Models},
+  booktitle     = {International Conference on Learning Representations (ICLR)},
+  year          = {2025},
+  eprint        = {2403.19647},
+  archivePrefix = {arXiv}
+}
+
+@misc{rosu2026auditorsrl,
+  author        = {Rosu, Paul and Wang, Rowan},
+  title         = {Training Alignment Auditors via Reinforcement Learning},
+  year          = {2026},
+  eprint        = {2608.25460},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.AI},
+  url           = {https://arxiv.org/abs/2608.25460}
+}
+
+@inproceedings{rottshaham2024maia,
+  author        = {Rott Shaham, Tamar and Schwettmann, Sarah and Wang, Franklin and Rajaram, Achyuta and Hernandez, Evan and Andreas, Jacob and Torralba, Antonio},
+  title         = {A Multimodal Automated Interpretability Agent},
+  booktitle     = {Proceedings of the 41st International Conference on Machine Learning (ICML)},
+  year          = {2024},
+  eprint        = {2404.14394},
+  archivePrefix = {arXiv}
+}
+
+@article{lu2026endtoend,
+  author        = {Lu, Chris and Lu, Cong and Lange, Robert Tjarko and Yamada, Yutaro and Hu, Shengran and Foerster, Jakob and Ha, David and Clune, Jeff},
+  title         = {Towards End-to-End Automation of {AI} Research},
+  journal       = {Nature},
+  volume        = {651},
+  pages         = {914--919},
+  year          = {2026},
+  doi           = {10.1038/s41586-026-10265-5},
+  eprint        = {2606.15497},
+  archivePrefix = {arXiv},
+  note          = {Author order follows the Nature version as listed by Semantic Scholar; arXiv v1 lists Yamada, Lange, Cong Lu, Chris Lu first. Not checked against nature.com}
+}
+
+@misc{bai2026story,
+  author        = {Bai, Xiaoyan and Baumgartner, Alexander and Sun, Haojia and Holtzman, Ari and Tan, Chenhao},
+  title         = {The Story is Not the Science: Execution-Grounded Evaluation of Mechanistic Interpretability Research},
+  year          = {2026},
+  eprint        = {2602.18458},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CY},
+  url           = {https://arxiv.org/abs/2602.18458}
+}
+
+% ---------------------------------------------------------------------------
+% Part 2b. Additions, priority "should"
+% ---------------------------------------------------------------------------
+
+@inproceedings{dorner2025limits,
+  author        = {Dorner, Florian E. and Nastl, Vivian Y. and Hardt, Moritz},
+  title         = {Limits to Scalable Evaluation at the Frontier: {LLM} as Judge Won't Beat Twice the Data},
+  booktitle     = {International Conference on Learning Representations (ICLR)},
+  year          = {2025},
+  eprint        = {2410.13341},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.LG}
+}
+
+@inproceedings{panickssery2024llm,
+  author        = {Panickssery, Arjun and Bowman, Samuel R. and Feng, Shi},
+  title         = {{LLM} Evaluators Recognize and Favor Their Own Generations},
+  booktitle     = {Advances in Neural Information Processing Systems 37 (NeurIPS 2024)},
+  year          = {2024},
+  url           = {https://openreview.net/forum?id=4NJBV6Wp0h},
+  eprint        = {2404.13076},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CL}
+}
+
+@inproceedings{zhuge2025agentasajudge,
+  author        = {Zhuge, Mingchen and Zhao, Changsheng and Ashley, Dylan R. and Wang, Wenyi and Khizbullin, Dmitrii and Xiong, Yunyang and Liu, Zechun and Chang, Ernie and Krishnamoorthi, Raghuraman and Tian, Yuandong and Shi, Yangyang and Chandra, Vikas and Schmidhuber, J{\"u}rgen},
+  title         = {Agent-as-a-Judge: Evaluate Agents with Agents},
+  booktitle     = {Proceedings of the 42nd International Conference on Machine Learning (ICML)},
+  series        = {Proceedings of Machine Learning Research},
+  volume        = {267},
+  pages         = {80569--80611},
+  year          = {2025},
+  eprint        = {2410.10934},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.AI}
+}
+
+@article{angelopoulos2023,
+  author  = {Angelopoulos, Anastasios N. and Bates, Stephen and Fannjiang, Clara and Jordan, Michael I. and Zrnic, Tijana},
+  title   = {Prediction-Powered Inference},
+  journal = {Science},
+  volume  = {382},
+  pages   = {669--674},
+  year    = {2023},
+  doi     = {10.1126/science.adi6000},
+  eprint  = {2301.09633},
+  archivePrefix = {arXiv}
+}
+
+@inproceedings{karvonen2025saebench,
+  author        = {Karvonen, Adam and Rager, Can and Lin, Johnny and Tigges, Curt and Bloom, Joseph and Chanin, David and Lau, Yeu-Tong and Farrell, Eoin and McDougall, Callum and Ayonrinde, Kola and Till, Demian and Wearden, Matthew and Conmy, Arthur and Marks, Samuel and Nanda, Neel},
+  title         = {{SAEBench}: A Comprehensive Benchmark for Sparse Autoencoders in Language Model Interpretability},
+  booktitle     = {Proceedings of the 42nd International Conference on Machine Learning (ICML)},
+  series        = {Proceedings of Machine Learning Research},
+  volume        = {267},
+  pages         = {29223--29264},
+  year          = {2025},
+  eprint        = {2503.09532},
+  archivePrefix = {arXiv}
+}
+
+@misc{chanin2026,
+  author        = {Chanin, David},
+  title         = {Are Sparse Autoencoder Benchmarks Reliable?},
+  year          = {2026},
+  eprint        = {2605.18229},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.LG},
+  url           = {https://arxiv.org/abs/2605.18229}
+}
+
+@inproceedings{schwettmann2023find,
+  author        = {Schwettmann, Sarah and Rott Shaham, Tamar and Materzynska, Joanna and Chowdhury, Neil and Li, Shuang and Andreas, Jacob and Bau, David and Torralba, Antonio},
+  title         = {{FIND}: A Function Description Benchmark for Evaluating Interpretability Methods},
+  booktitle     = {Advances in Neural Information Processing Systems 36 (NeurIPS 2023), Datasets and Benchmarks Track},
+  year          = {2023},
+  eprint        = {2309.03886},
+  archivePrefix = {arXiv}
+}
+
+@misc{cywinski2025secret,
+  author        = {Cywi{\'n}ski, Bartosz and Ryd, Emil and Wang, Rowan and Rajamanoharan, Senthooran and Nanda, Neel and Conmy, Arthur and Marks, Samuel},
+  title         = {Eliciting Secret Knowledge from Language Models},
+  year          = {2025},
+  eprint        = {2510.01070},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.LG},
+  url           = {https://arxiv.org/abs/2510.01070}
+}
+
+@inproceedings{huang2025popper,
+  author        = {Huang, Kexin and Jin, Ying and Li, Ryan and Li, Michael Y. and Cand{\`e}s, Emmanuel and Leskovec, Jure},
+  title         = {Automated Hypothesis Validation with Agentic Sequential Falsifications},
+  booktitle     = {Proceedings of the 42nd International Conference on Machine Learning (ICML)},
+  series        = {Proceedings of Machine Learning Research},
+  volume        = {267},
+  year          = {2025},
+  eprint        = {2502.09858},
+  archivePrefix = {arXiv}
+}
+
+@inproceedings{bean2025measuring,
+  author        = {Bean, Andrew M. and Kearns, Ryan Othniel and Romanou, Angelika and Hafner, Franziska Sofia and Mayne, Harry and Batzner, Jan and Foroutan, Negar and Schmitz, Chris and Korgul, Karolina and Batra, Hunar and Deb, Oishi and Beharry, Emma and Emde, Cornelius and Foster, Thomas and Gausen, Anna and Grandury, Mar{\'i}a and Han, Simeng and Hofmann, Valentin and Ibrahim, Lujain and Kim, Hazel and Kirk, Hannah Rose and Lin, Fangru and Liu, Gabrielle Kaili-May and Luettgau, Lennart and Magomere, Jabez and Rystr{\o}m, Jonathan and Sotnikova, Anna and Yang, Yushi and Zhao, Yilun and Bibi, Adel and Bosselut, Antoine and Clark, Ronald and Cohan, Arman and Foerster, Jakob and Gal, Yarin and Hale, Scott A. and Raji, Inioluwa Deborah and Summerfield, Christopher and Torr, Philip H. S. and Ududec, Cozmin and Rocher, Luc and Mahdi, Adam},
+  title         = {Measuring what Matters: Construct Validity in Large Language Model Benchmarks},
+  booktitle     = {Advances in Neural Information Processing Systems 38 (NeurIPS 2025), Datasets and Benchmarks Track},
+  year          = {2025},
+  eprint        = {2511.04703},
+  archivePrefix = {arXiv}
+}
+
+@misc{miller2024errorbars,
+  author        = {Miller, Evan},
+  title         = {Adding Error Bars to Evals: A Statistical Approach to Language Model Evaluations},
+  year          = {2024},
+  eprint        = {2411.00640},
+  archivePrefix = {arXiv},
+  primaryClass  = {stat.AP},
+  url           = {https://arxiv.org/abs/2411.00640}
+}
+
+@inproceedings{wang2026firebench,
+  author        = {Wang, Zhen and Bai, Fan and Luo, Zhongyan and Su, Jinyan and Sun, Kaiser and Yu, Xinle and Liu, Jieyuan and Zhou, Kun and Cardie, Claire and Dredze, Mark and Hu, Zhiting and Xing, Eric P.},
+  title         = {{FIRE-Bench}: Evaluating {AI} Agents on the Rediscovery of Scientific Insights},
+  booktitle     = {Proceedings of the 43rd International Conference on Machine Learning (ICML)},
+  series        = {Proceedings of Machine Learning Research},
+  volume        = {306},
+  year          = {2026},
+  eprint        = {2602.02905},
+  archivePrefix = {arXiv}
+}
