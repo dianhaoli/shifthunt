@@ -118,8 +118,26 @@ def cmd_mod(a, rest):
     return mod.main(rest)
 
 
+MSGS_MARK = "\x00R10_MSGS\x00"     # = r10_addendum.MSGS_MARK: the prompt field carries a JSON message list (AD4)
+
+
+def two_turn(TC):
+    """AD4: a call whose prompt starts with MSGS_MARK is sent as a multi-message input; every other call unchanged."""
+    orig = TC.build_request
+
+    def build_request(model, prompt):
+        if not prompt.startswith(MSGS_MARK):
+            return orig(model, prompt)
+        msgs = json.loads(prompt[len(MSGS_MARK):])
+        assert TC.PROVIDER[model] == TC.OPENAI
+        body = {"model": model, "input": [{"role": m["role"], "content": m["content"]} for m in msgs], "store": False}
+        return json.dumps(body, ensure_ascii=False, separators=(",", ":")).encode("utf-8")
+    TC.build_request = build_request
+
+
 def register_models():
     import textonly_client as TC
+    two_turn(TC)
     import sol_judge  # noqa: F401  (registers gpt-6.1-sol in TC.PROVIDER / TC.PRICES)
     import judge_panel  # noqa: F401  (registers gpt-6-luna)
     return TC
