@@ -91,3 +91,7 @@ and `GPU_PROMPT_10_ADDENDUM.md`.
     own `main` with only that early return removed (asserted present once) and records the bypass in the output.
 23. **Bank path and freetext cache in the worktree.** X7, U and R8 checks 3–6 need `SHIFTHUNT_BANK` and the untracked
     `.cache/freetext`; the bank is read from its shared location (read-only) and the freetext cache copied.
+24. **Leaked paraphrases in copied R9 samples (found by the final recheck).** The unchanged R9 check-2 script, re-run on
+    r10, wrote redacted samples whose round-9 hand edits no longer applied; 19 still held property paraphrases and were
+    pushed in 7ad7c9a / e84311e inside `out/` and `diff/`. All tracked r10 JSONs were re-screened and those excerpts
+    replaced by `[withheld]` (RECHECK_FINAL.md). The older commits stay in history (no force-push).
