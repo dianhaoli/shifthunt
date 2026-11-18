@@ -1,12 +1,7 @@
 {
  "file": "gpuplan/c6b/c6b.json",
- "changed": 171,
+ "changed": 117,
  "rows": {
-  "set_A/set_A_open_runs_with_L2r": {
-   "frozen": 36,
-   "r10": 29,
-   "change": -7.0
-  },
   "set_A/L0/hard_kappa": {
    "frozen": -0.021,
    "r10": 0.3215,
@@ -177,21 +172,6 @@
    "r10": 0.65625,
    "change": 0.5469
   },
-  "set_A/J12_L2_vs_L2r/n": {
-   "frozen": 1,
-   "r10": 0,
-   "change": -1.0
-  },
-  "set_A/J12_L2_vs_L2r/credited_a": {
-   "frozen": 1,
-   "r10": 0,
-   "change": -1.0
-  },
-  "set_A/J12_L2_vs_L2r/credited_b": {
-   "frozen": 1,
-   "r10": 0,
-   "change": -1.0
-  },
   "set_A/prediction_kappa_L2_lt_040": {
    "frozen": true,
    "r10": false,
@@ -269,138 +249,48 @@
   },
   "set_A/open_arm_only/L1/hard_kappa": {
    "frozen": 0.0357,
-   "r10": 0.4423,
-   "change": 0.4066
-  },
-  "set_A/open_arm_only/L1/answer_type_baseline_kappa": {
-   "frozen": 0.9159,
-   "r10": 1.0,
-   "change": 0.0841
+   "r10": 0.3415,
+   "change": 0.3058
   },
   "set_A/open_arm_only/L1/named_only_kappa": {
    "frozen": -0.0628,
-   "r10": null,
-   "change": null
-  },
-  "set_A/open_arm_only/L1/false_credit_none": {
-   "frozen": "5/7",
-   "r10": "4/6",
-   "change": -0.0476
-  },
-  "set_A/open_arm_only/L1/false_credit_wrong_cue": {
-   "frozen": "1/1",
-   "r10": "0/0",
-   "change": null
+   "r10": 0.0,
+   "change": 0.0628
   },
   "set_A/open_arm_only/L1/false_blame": {
    "frozen": "6/28",
-   "r10": "0/23",
+   "r10": "0/28",
    "change": -0.2143
   },
   "set_A/open_arm_only/L1/none_index": {
    "frozen": 0.1722,
-   "r10": 0.2299,
-   "change": 0.0577
+   "r10": 0.1167,
+   "change": -0.0555
   },
   "set_A/open_arm_only/L1/null_slot_false_blame": {
    "frozen": "1/36",
-   "r10": "3/29",
-   "change": 0.0757
-  },
-  "set_A/open_arm_only/L1/n_runs": {
-   "frozen": 36,
-   "r10": 29,
-   "change": -7.0
-  },
-  "set_A/open_arm_only/L2/hard_kappa": {
-   "frozen": 0.3505,
-   "r10": 0.4402,
-   "change": 0.0897
-  },
-  "set_A/open_arm_only/L2/answer_type_baseline_kappa": {
-   "frozen": 0.9159,
-   "r10": 1.0,
-   "change": 0.0841
-  },
-  "set_A/open_arm_only/L2/named_only_kappa": {
-   "frozen": -0.0482,
-   "r10": 0.0,
-   "change": 0.0482
-  },
-  "set_A/open_arm_only/L2/false_credit_none": {
-   "frozen": "4/7",
-   "r10": "3/6",
-   "change": -0.0714
-  },
-  "set_A/open_arm_only/L2/false_credit_wrong_cue": {
-   "frozen": "1/1",
-   "r10": "0/0",
-   "change": null
-  },
-  "set_A/open_arm_only/L2/false_blame": {
-   "frozen": "2/28",
-   "r10": "2/23",
-   "change": 0.0155
-  },
-  "set_A/open_arm_only/L2/none_index": {
-   "frozen": 0.6,
-   "r10": 0.5,
-   "change": -0.1
-  },
-  "set_A/open_arm_only/L2/null_slot_false_blame": {
-   "frozen": "0/36",
-   "r10": "0/29",
-   "change": 0.0
-  },
-  "set_A/open_arm_only/L2/n_runs": {
-   "frozen": 36,
-   "r10": 29,
-   "change": -7.0
+   "r10": "3/36",
+   "change": 0.0556
   },
   "set_A/open_arm_only/L2r/hard_kappa": {
    "frozen": 0.2941,
-   "r10": 0.3556,
-   "change": 0.0615
-  },
-  "set_A/open_arm_only/L2r/answer_type_baseline_kappa": {
-   "frozen": 0.9159,
-   "r10": 1.0,
-   "change": 0.0841
+   "r10": 0.413,
+   "change": 0.1189
   },
   "set_A/open_arm_only/L2r/named_only_kappa": {
    "frozen": -0.0545,
-   "r10": 0.0,
-   "change": 0.0545
-  },
-  "set_A/open_arm_only/L2r/false_credit_none": {
-   "frozen": "4/7",
-   "r10": "4/6",
-   "change": 0.0952
-  },
-  "set_A/open_arm_only/L2r/false_credit_wrong_cue": {
-   "frozen": "1/1",
-   "r10": "0/0",
-   "change": null
+   "r10": -0.0357,
+   "change": 0.0188
   },
   "set_A/open_arm_only/L2r/false_blame": {
    "frozen": "3/28",
-   "r10": "1/23",
-   "change": -0.0637
+   "r10": "1/28",
+   "change": -0.0714
   },
   "set_A/open_arm_only/L2r/none_index": {
    "frozen": 0.2722,
-   "r10": 0.3333,
-   "change": 0.0611
-  },
-  "set_A/open_arm_only/L2r/null_slot_false_blame": {
-   "frozen": "1/36",
-   "r10": "0/29",
-   "change": -0.0278
-  },
-  "set_A/open_arm_only/L2r/n_runs": {
-   "frozen": 36,
-   "r10": 29,
-   "change": -7.0
+   "r10": 0.4722,
+   "change": 0.2
   },
   "luna/L0/hard_kappa": {
    "frozen": 0.0177,
@@ -489,63 +379,38 @@
   },
   "main_study/L0/hard_kappa": {
    "frozen": 0.0562,
-   "r10": 0.3161,
-   "change": 0.2599
-  },
-  "main_study/L0/answer_type_baseline_kappa": {
-   "frozen": 0.7529,
-   "r10": 0.6538,
-   "change": -0.0991
+   "r10": 0.207,
+   "change": 0.1508
   },
   "main_study/L0/named_only_kappa": {
    "frozen": 0.3398,
-   "r10": 0.5455,
-   "change": 0.2057
+   "r10": 0.491,
+   "change": 0.1512
   },
   "main_study/L0/false_credit_none": {
    "frozen": "13/13",
-   "r10": "7/8",
-   "change": -0.125
+   "r10": "12/13",
+   "change": -0.0769
   },
   "main_study/L0/false_blame": {
    "frozen": "5/45",
-   "r10": "1/34",
-   "change": -0.0817
+   "r10": "2/45",
+   "change": -0.0667
   },
   "main_study/L0/none_index": {
    "frozen": 0.0,
-   "r10": 0.125,
-   "change": 0.125
-  },
-  "main_study/L0/null_slot_false_blame": {
-   "frozen": "0/64",
-   "r10": "0/48",
-   "change": 0.0
-  },
-  "main_study/L0/n_runs": {
-   "frozen": 64,
-   "r10": 48,
-   "change": -16.0
+   "r10": 0.0769,
+   "change": 0.0769
   },
   "main_study/L2/hard_kappa": {
    "frozen": 0.2629,
-   "r10": 0.2727,
-   "change": 0.0098
-  },
-  "main_study/L2/answer_type_baseline_kappa": {
-   "frozen": 0.7529,
-   "r10": 0.6538,
-   "change": -0.0991
+   "r10": 0.236,
+   "change": -0.0269
   },
   "main_study/L2/named_only_kappa": {
    "frozen": 0.0838,
-   "r10": -0.0811,
-   "change": -0.1649
-  },
-  "main_study/L2/false_credit_none": {
-   "frozen": "8/13",
-   "r10": "4/8",
-   "change": -0.1154
+   "r10": -0.0851,
+   "change": -0.1689
   },
   "main_study/L2/false_credit_wrong_cue": {
    "frozen": "5/6",
@@ -554,43 +419,28 @@
   },
   "main_study/L2/false_blame": {
    "frozen": "4/45",
-   "r10": "2/34",
-   "change": -0.0301
+   "r10": "3/45",
+   "change": -0.0222
   },
   "main_study/L2/none_index": {
    "frozen": 0.369,
-   "r10": 0.5,
-   "change": 0.131
+   "r10": 0.3846,
+   "change": 0.0156
   },
   "main_study/L2/null_slot_false_blame": {
    "frozen": "1/64",
-   "r10": "0/48",
+   "r10": "0/64",
    "change": -0.0156
-  },
-  "main_study/L2/n_runs": {
-   "frozen": 64,
-   "r10": 48,
-   "change": -16.0
   },
   "main_study/L2r/hard_kappa": {
    "frozen": 0.176,
-   "r10": 0.1064,
-   "change": -0.0696
-  },
-  "main_study/L2r/answer_type_baseline_kappa": {
-   "frozen": 0.7529,
-   "r10": 0.6538,
-   "change": -0.0991
+   "r10": 0.0844,
+   "change": -0.0916
   },
   "main_study/L2r/named_only_kappa": {
    "frozen": 0.1169,
-   "r10": -0.0811,
-   "change": -0.198
-  },
-  "main_study/L2r/false_credit_none": {
-   "frozen": "10/13",
-   "r10": "6/8",
-   "change": -0.0192
+   "r10": -0.1039,
+   "change": -0.2208
   },
   "main_study/L2r/false_credit_wrong_cue": {
    "frozen": "5/6",
@@ -599,43 +449,18 @@
   },
   "main_study/L2r/false_blame": {
    "frozen": "3/45",
-   "r10": "2/34",
-   "change": -0.0078
-  },
-  "main_study/L2r/none_index": {
-   "frozen": 0.2308,
-   "r10": 0.25,
-   "change": 0.0192
-  },
-  "main_study/L2r/null_slot_false_blame": {
-   "frozen": "0/64",
-   "r10": "0/48",
-   "change": 0.0
-  },
-  "main_study/L2r/n_runs": {
-   "frozen": 64,
-   "r10": 48,
-   "change": -16.0
+   "r10": "4/45",
+   "change": 0.0222
   },
   "main_study/by_agent_L2/gpt/hard_kappa": {
    "frozen": 0.2941,
-   "r10": -0.1111,
-   "change": -0.4052
-  },
-  "main_study/by_agent_L2/gpt/answer_type_baseline_kappa": {
-   "frozen": 0.6364,
-   "r10": 0.0,
-   "change": -0.6364
+   "r10": -0.0909,
+   "change": -0.385
   },
   "main_study/by_agent_L2/gpt/named_only_kappa": {
    "frozen": 0.4444,
-   "r10": -0.1111,
-   "change": -0.5555
-  },
-  "main_study/by_agent_L2/gpt/false_credit_none": {
-   "frozen": "1/1",
-   "r10": "0/0",
-   "change": null
+   "r10": -0.0714,
+   "change": -0.5158
   },
   "main_study/by_agent_L2/gpt/false_credit_wrong_cue": {
    "frozen": "0/1",
@@ -644,38 +469,8 @@
   },
   "main_study/by_agent_L2/gpt/false_blame": {
    "frozen": "2/14",
-   "r10": "1/9",
-   "change": -0.0317
-  },
-  "main_study/by_agent_L2/gpt/null_slot_false_blame": {
-   "frozen": "0/16",
-   "r10": "0/10",
-   "change": 0.0
-  },
-  "main_study/by_agent_L2/gpt/n_runs": {
-   "frozen": 16,
-   "r10": 10,
-   "change": -6.0
-  },
-  "main_study/by_agent_L2/haiku/hard_kappa": {
-   "frozen": 0.25,
-   "r10": 0.2258,
-   "change": -0.0242
-  },
-  "main_study/by_agent_L2/haiku/answer_type_baseline_kappa": {
-   "frozen": 0.75,
-   "r10": 0.6364,
-   "change": -0.1136
-  },
-  "main_study/by_agent_L2/haiku/false_credit_none": {
-   "frozen": "4/6",
-   "r10": "2/3",
-   "change": 0.0
-  },
-  "main_study/by_agent_L2/haiku/false_blame": {
-   "frozen": "0/8",
-   "r10": "0/7",
-   "change": 0.0
+   "r10": "1/14",
+   "change": -0.0714
   },
   "main_study/by_agent_L2/haiku/none_index": {
    "frozen": 0.2708,
@@ -684,73 +479,8 @@
   },
   "main_study/by_agent_L2/haiku/null_slot_false_blame": {
    "frozen": "1/16",
-   "r10": "0/12",
+   "r10": "0/16",
    "change": -0.0625
-  },
-  "main_study/by_agent_L2/haiku/n_runs": {
-   "frozen": 16,
-   "r10": 12,
-   "change": -4.0
-  },
-  "main_study/by_agent_L2/opus/hard_kappa": {
-   "frozen": 0.2558,
-   "r10": 0.3284,
-   "change": 0.0726
-  },
-  "main_study/by_agent_L2/opus/answer_type_baseline_kappa": {
-   "frozen": 0.6735,
-   "r10": 0.5946,
-   "change": -0.0789
-  },
-  "main_study/by_agent_L2/opus/false_credit_none": {
-   "frozen": "2/3",
-   "r10": "1/2",
-   "change": -0.1667
-  },
-  "main_study/by_agent_L2/opus/none_index": {
-   "frozen": 0.3333,
-   "r10": 0.5,
-   "change": 0.1667
-  },
-  "main_study/by_agent_L2/opus/null_slot_false_blame": {
-   "frozen": "0/16",
-   "r10": "0/15",
-   "change": 0.0
-  },
-  "main_study/by_agent_L2/opus/n_runs": {
-   "frozen": 16,
-   "r10": 15,
-   "change": -1.0
-  },
-  "main_study/by_agent_L2/sonnet/hard_kappa": {
-   "frozen": 0.3333,
-   "r10": 0.3774,
-   "change": 0.0441
-  },
-  "main_study/by_agent_L2/sonnet/answer_type_baseline_kappa": {
-   "frozen": 0.8182,
-   "r10": 0.7925,
-   "change": -0.0257
-  },
-  "main_study/by_agent_L2/sonnet/named_only_kappa": {
-   "frozen": -0.1143,
-   "r10": -0.1429,
-   "change": -0.0286
-  },
-  "main_study/by_agent_L2/sonnet/false_blame": {
-   "frozen": "2/12",
-   "r10": "1/7",
-   "change": -0.0238
-  },
-  "main_study/by_agent_L2/sonnet/null_slot_false_blame": {
-   "frozen": "0/16",
-   "r10": "0/11",
-   "change": 0.0
-  },
-  "main_study/by_agent_L2/sonnet/n_runs": {
-   "frozen": 16,
-   "r10": 11,
-   "change": -5.0
   },
   "haiku_set_A/H2/hard_kappa": {
    "frozen": -0.209,

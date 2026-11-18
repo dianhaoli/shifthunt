@@ -1,0 +1,36 @@
+{
+ "file": "gpuplan/c6b/c6b_holm.json",
+ "changed": 6,
+ "rows": {
+  "J11/delta": {
+   "frozen": 0.1779,
+   "r10": 0.0378,
+   "change": -0.1401
+  },
+  "J11/one_sided_95_lower": {
+   "frozen": 0.0223,
+   "r10": -0.1183,
+   "change": -0.1406
+  },
+  "J11/one_sided_975_lower": {
+   "frozen": -0.0068,
+   "r10": -0.1466,
+   "change": -0.1398
+  },
+  "J11/bootstrap_p_one_sided": {
+   "frozen": 0.03,
+   "r10": 0.3495,
+   "change": 0.3195
+  },
+  "holm/J11/p": {
+   "frozen": 0.03,
+   "r10": 0.3495,
+   "change": 0.3195
+  },
+  "holm/J12/p": {
+   "frozen": 0.1094,
+   "r10": 0.6562,
+   "change": 0.5468
+  }
+ }
+}

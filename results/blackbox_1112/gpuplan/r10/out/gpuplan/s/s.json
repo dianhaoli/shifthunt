@@ -6,16 +6,15 @@
   "2": 4.1826,
   "3": 1.1697,
   "4": 24.4373,
-  "5": 2.8432
+  "5": 2.9341
  },
- "usd_total": 53.4154,
+ "usd_total": 53.5063,
  "statuses": {
   "step 1: ok": 130,
   "step 2: ok": 260,
   "step 3: ok": 130,
   "step 4: ok": 124,
-  "step 5: not sent": 4,
-  "step 5: ok": 126
+  "step 5: ok": 130
  },
  "levels": {
   "S0": "report",
@@ -1789,148 +1788,149 @@
    }
   },
   "SF vs F1 (log level, abstaining, candidate-aware)": {
-   "runs": 14,
+   "runs": 130,
    "sol": {
-    "coverage_hard": "7/14",
-    "coverage_all_slots": "22/56",
-    "covered_hard_kappa": null,
-    "covered_hard_balanced_accuracy": null,
+    "coverage_hard": "57/130",
+    "coverage_all_slots": "228/520",
+    "covered_hard_kappa": -0.017857142857139408,
+    "covered_hard_balanced_accuracy": 0.4911,
     "wrong_none_hard": {
-     "pass": "0/2",
-     "fail": "0/2",
-     "cannot tell": "2/2"
+     "pass": "0/26",
+     "fail": "0/26",
+     "cannot tell": "26/26"
     },
     "commissions_hard": {
-     "pass": "0/4",
-     "fail": "0/4",
-     "cannot tell": "4/4"
+     "pass": "1/17",
+     "fail": "0/17",
+     "cannot tell": "16/17"
     },
     "passes_hard": {
-     "pass": "7/8",
-     "fail": "0/8",
-     "cannot tell": "1/8"
+     "pass": "55/87",
+     "fail": "1/87",
+     "cannot tell": "31/87"
     },
     "right_none_null": {
-     "pass": "2/14",
-     "fail": "0/14",
-     "cannot tell": "12/14"
+     "pass": "16/125",
+     "fail": "0/125",
+     "cannot tell": "109/125"
     },
     "decidable_hard": {
-     "pass": "7/8",
-     "fail": "0/8",
-     "cannot tell": "1/8"
+     "pass": "55/71",
+     "fail": "1/71",
+     "cannot tell": "15/71"
     },
     "undecidable_hard": {
-     "pass": "0/6",
-     "fail": "0/6",
-     "cannot tell": "6/6"
+     "pass": "1/59",
+     "fail": "0/59",
+     "cannot tell": "58/59"
     },
     "fail_on_decidable_failures": {
-     "pass": "0/1",
-     "fail": "0/1",
-     "cannot tell": "1/1"
+     "pass": "1/5",
+     "fail": "0/5",
+     "cannot tell": "4/5"
     },
     "f_reading": "in between: reported as is"
    },
    "terra": {
-    "coverage_hard": "4/14",
-    "coverage_all_slots": "14/56",
-    "covered_hard_kappa": null,
+    "coverage_hard": "30/130",
+    "coverage_all_slots": "123/520",
+    "covered_hard_kappa": 0.0,
     "covered_hard_balanced_accuracy": null,
     "wrong_none_hard": {
-     "pass": "0/2",
-     "fail": "0/2",
-     "cannot tell": "2/2"
+     "pass": "0/26",
+     "fail": "0/26",
+     "cannot tell": "26/26"
     },
     "commissions_hard": {
-     "pass": "0/4",
-     "fail": "0/4",
-     "cannot tell": "4/4"
+     "pass": "0/17",
+     "fail": "0/17",
+     "cannot tell": "17/17"
     },
     "passes_hard": {
-     "pass": "4/8",
-     "fail": "0/8",
-     "cannot tell": "4/8"
+     "pass": "29/87",
+     "fail": "1/87",
+     "cannot tell": "57/87"
     },
     "right_none_null": {
-     "pass": "3/14",
-     "fail": "0/14",
-     "cannot tell": "11/14"
+     "pass": "15/125",
+     "fail": "0/125",
+     "cannot tell": "110/125"
     },
     "decidable_hard": {
-     "pass": "4/8",
-     "fail": "0/8",
-     "cannot tell": "4/8"
+     "pass": "28/71",
+     "fail": "1/71",
+     "cannot tell": "42/71"
     },
     "undecidable_hard": {
-     "pass": "0/6",
-     "fail": "0/6",
-     "cannot tell": "6/6"
+     "pass": "1/59",
+     "fail": "0/59",
+     "cannot tell": "58/59"
     },
     "fail_on_decidable_failures": {
-     "pass": "0/1",
-     "fail": "0/1",
-     "cannot tell": "1/1"
+     "pass": "0/5",
+     "fail": "0/5",
+     "cannot tell": "5/5"
     },
     "f_reading": "in between: reported as is"
    },
    "hard_kappa_abstain_as_no_credit": [
-    0.4615384615384616,
-    0.8571428571428572
+    0.24855491329479767,
+    0.5150350440877233
    ],
    "sol_vs_terra_abstain_as_no_credit": {
     "kappa": [
-     0.4615,
-     0.8571
+     0.2486,
+     0.515
     ],
-    "kappa_change": 0.3956,
-    "balanced_accuracy_change": 0.1875,
+    "kappa_change": 0.2665,
+    "balanced_accuracy_change": 0.1378,
     "mcnemar_runs": {
-     "second_right_first_wrong": 3,
-     "first_right_second_wrong": 0,
-     "p": 0.25
+     "second_right_first_wrong": 26,
+     "first_right_second_wrong": 1,
+     "p": 4.17e-07
     },
     "items": {
-     "items": 5,
+     "items": 6,
      "per_item_diff": [
-      0.1667,
-      0.5,
-      0.0,
-      0.0,
-      1.0
+      0.2727,
+      0.2727,
+      0.1905,
+      0.0455,
+      0.3333,
+      0.0455
      ],
-     "p_signflip": 0.25,
+     "p_signflip": 0.0312,
      "sign_test": {
-      "positive": 3,
+      "positive": 6,
       "negative": 0,
-      "p": 0.25
+      "p": 0.0312
      }
     },
     "boot95_item": {
      "kappa_change": [
-      0.1478,
-      0.8
+      0.113,
+      0.4447
      ],
      "balanced_accuracy_change": [
-      0.0833,
-      0.375
+      0.0675,
+      0.212
      ],
-     "clusters": 5,
-     "undefined_draws_kappa": 112,
-     "undefined_draws_balanced_accuracy": 112
+     "clusters": 6,
+     "undefined_draws_kappa": 0,
+     "undefined_draws_balanced_accuracy": 0
     },
     "boot95_run": {
      "kappa_change": [
-      0.0,
-      0.7586
+      0.1672,
+      0.3679
      ],
      "balanced_accuracy_change": [
-      0.0,
-      0.375
+      0.0846,
+      0.1905
      ],
-     "clusters": 14,
+     "clusters": 130,
      "undefined_draws_kappa": 0,
-     "undefined_draws_balanced_accuracy": 1
+     "undefined_draws_balanced_accuracy": 0
     }
    }
   }

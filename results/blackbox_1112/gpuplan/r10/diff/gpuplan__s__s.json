@@ -1,6 +1,6 @@
 {
  "file": "gpuplan/s/s.json",
- "changed": 756,
+ "changed": 717,
  "rows": {
   "usd_by_step/1": {
    "frozen": 20.7486,
@@ -24,18 +24,13 @@
   },
   "usd_by_step/5": {
    "frozen": 2.988,
-   "r10": 2.8432,
-   "change": -0.1448
+   "r10": 2.9341,
+   "change": -0.0539
   },
   "usd_total": {
    "frozen": 53.9469,
-   "r10": 53.4154,
-   "change": -0.5315
-  },
-  "statuses/step 5: ok": {
-   "frozen": 130,
-   "r10": 126,
-   "change": -4.0
+   "r10": 53.5063,
+   "change": -0.4406
   },
   "set_A/S0 vs L0 (report)/sol/kappa": {
    "frozen": 0.3862,
@@ -2921,250 +2916,115 @@
    ],
    "change": null
   },
-  "set_A/SF vs F1 (log level, abstaining, candidate-aware)/runs": {
-   "frozen": 130,
-   "r10": 14,
-   "change": -116.0
-  },
   "set_A/SF vs F1 (log level, abstaining, candidate-aware)/sol/coverage_hard": {
    "frozen": "59/130",
-   "r10": "7/14",
-   "change": 0.0462
+   "r10": "57/130",
+   "change": -0.0154
   },
   "set_A/SF vs F1 (log level, abstaining, candidate-aware)/sol/coverage_all_slots": {
    "frozen": "233/520",
-   "r10": "22/56",
-   "change": -0.0552
+   "r10": "228/520",
+   "change": -0.0096
   },
   "set_A/SF vs F1 (log level, abstaining, candidate-aware)/sol/covered_hard_kappa": {
    "frozen": -0.023121387283237253,
-   "r10": null,
-   "change": null
+   "r10": -0.017857142857139408,
+   "change": 0.0053
   },
   "set_A/SF vs F1 (log level, abstaining, candidate-aware)/sol/covered_hard_balanced_accuracy": {
    "frozen": 0.4828,
-   "r10": null,
-   "change": null
-  },
-  "set_A/SF vs F1 (log level, abstaining, candidate-aware)/sol/wrong_none_hard/pass": {
-   "frozen": "0/26",
-   "r10": "0/2",
-   "change": 0.0
-  },
-  "set_A/SF vs F1 (log level, abstaining, candidate-aware)/sol/wrong_none_hard/fail": {
-   "frozen": "0/26",
-   "r10": "0/2",
-   "change": 0.0
-  },
-  "set_A/SF vs F1 (log level, abstaining, candidate-aware)/sol/wrong_none_hard/cannot tell": {
-   "frozen": "26/26",
-   "r10": "2/2",
-   "change": 0.0
-  },
-  "set_A/SF vs F1 (log level, abstaining, candidate-aware)/sol/commissions_hard/pass": {
-   "frozen": "1/17",
-   "r10": "0/4",
-   "change": -0.0588
-  },
-  "set_A/SF vs F1 (log level, abstaining, candidate-aware)/sol/commissions_hard/fail": {
-   "frozen": "0/17",
-   "r10": "0/4",
-   "change": 0.0
-  },
-  "set_A/SF vs F1 (log level, abstaining, candidate-aware)/sol/commissions_hard/cannot tell": {
-   "frozen": "16/17",
-   "r10": "4/4",
-   "change": 0.0588
+   "r10": 0.4911,
+   "change": 0.0083
   },
   "set_A/SF vs F1 (log level, abstaining, candidate-aware)/sol/passes_hard/pass": {
    "frozen": "56/87",
-   "r10": "7/8",
-   "change": 0.2313
+   "r10": "55/87",
+   "change": -0.0115
   },
   "set_A/SF vs F1 (log level, abstaining, candidate-aware)/sol/passes_hard/fail": {
    "frozen": "2/87",
-   "r10": "0/8",
-   "change": -0.023
+   "r10": "1/87",
+   "change": -0.0115
   },
   "set_A/SF vs F1 (log level, abstaining, candidate-aware)/sol/passes_hard/cannot tell": {
    "frozen": "29/87",
-   "r10": "1/8",
-   "change": -0.2083
+   "r10": "31/87",
+   "change": 0.023
   },
   "set_A/SF vs F1 (log level, abstaining, candidate-aware)/sol/right_none_null/pass": {
    "frozen": "14/125",
-   "r10": "2/14",
-   "change": 0.0309
-  },
-  "set_A/SF vs F1 (log level, abstaining, candidate-aware)/sol/right_none_null/fail": {
-   "frozen": "0/125",
-   "r10": "0/14",
-   "change": 0.0
+   "r10": "16/125",
+   "change": 0.016
   },
   "set_A/SF vs F1 (log level, abstaining, candidate-aware)/sol/right_none_null/cannot tell": {
    "frozen": "111/125",
-   "r10": "12/14",
-   "change": -0.0309
+   "r10": "109/125",
+   "change": -0.016
   },
   "set_A/SF vs F1 (log level, abstaining, candidate-aware)/sol/decidable_hard/pass": {
    "frozen": "56/71",
-   "r10": "7/8",
-   "change": 0.0863
-  },
-  "set_A/SF vs F1 (log level, abstaining, candidate-aware)/sol/decidable_hard/fail": {
-   "frozen": "1/71",
-   "r10": "0/8",
+   "r10": "55/71",
    "change": -0.0141
   },
   "set_A/SF vs F1 (log level, abstaining, candidate-aware)/sol/decidable_hard/cannot tell": {
    "frozen": "14/71",
-   "r10": "1/8",
-   "change": -0.0722
-  },
-  "set_A/SF vs F1 (log level, abstaining, candidate-aware)/sol/undecidable_hard/pass": {
-   "frozen": "1/59",
-   "r10": "0/6",
-   "change": -0.0169
+   "r10": "15/71",
+   "change": 0.0141
   },
   "set_A/SF vs F1 (log level, abstaining, candidate-aware)/sol/undecidable_hard/fail": {
    "frozen": "1/59",
-   "r10": "0/6",
+   "r10": "0/59",
    "change": -0.0169
   },
   "set_A/SF vs F1 (log level, abstaining, candidate-aware)/sol/undecidable_hard/cannot tell": {
    "frozen": "57/59",
-   "r10": "6/6",
-   "change": 0.0339
-  },
-  "set_A/SF vs F1 (log level, abstaining, candidate-aware)/sol/fail_on_decidable_failures/pass": {
-   "frozen": "1/5",
-   "r10": "0/1",
-   "change": -0.2
-  },
-  "set_A/SF vs F1 (log level, abstaining, candidate-aware)/sol/fail_on_decidable_failures/fail": {
-   "frozen": "0/5",
-   "r10": "0/1",
-   "change": 0.0
-  },
-  "set_A/SF vs F1 (log level, abstaining, candidate-aware)/sol/fail_on_decidable_failures/cannot tell": {
-   "frozen": "4/5",
-   "r10": "1/1",
-   "change": 0.2
+   "r10": "58/59",
+   "change": 0.0169
   },
   "set_A/SF vs F1 (log level, abstaining, candidate-aware)/terra/coverage_hard": {
    "frozen": "16/130",
-   "r10": "4/14",
-   "change": 0.1626
+   "r10": "30/130",
+   "change": 0.1077
   },
   "set_A/SF vs F1 (log level, abstaining, candidate-aware)/terra/coverage_all_slots": {
    "frozen": "75/520",
-   "r10": "14/56",
-   "change": 0.1058
+   "r10": "123/520",
+   "change": 0.0923
   },
-  "set_A/SF vs F1 (log level, abstaining, candidate-aware)/terra/wrong_none_hard/pass": {
-   "frozen": "0/26",
-   "r10": "0/2",
-   "change": 0.0
-  },
-  "set_A/SF vs F1 (log level, abstaining, candidate-aware)/terra/wrong_none_hard/fail": {
-   "frozen": "0/26",
-   "r10": "0/2",
-   "change": 0.0
-  },
-  "set_A/SF vs F1 (log level, abstaining, candidate-aware)/terra/wrong_none_hard/cannot tell": {
-   "frozen": "26/26",
-   "r10": "2/2",
-   "change": 0.0
-  },
-  "set_A/SF vs F1 (log level, abstaining, candidate-aware)/terra/commissions_hard/pass": {
-   "frozen": "0/17",
-   "r10": "0/4",
-   "change": 0.0
-  },
-  "set_A/SF vs F1 (log level, abstaining, candidate-aware)/terra/commissions_hard/fail": {
-   "frozen": "0/17",
-   "r10": "0/4",
-   "change": 0.0
-  },
-  "set_A/SF vs F1 (log level, abstaining, candidate-aware)/terra/commissions_hard/cannot tell": {
-   "frozen": "17/17",
-   "r10": "4/4",
-   "change": 0.0
+  "set_A/SF vs F1 (log level, abstaining, candidate-aware)/terra/covered_hard_kappa": {
+   "frozen": null,
+   "r10": 0.0,
+   "change": null
   },
   "set_A/SF vs F1 (log level, abstaining, candidate-aware)/terra/passes_hard/pass": {
    "frozen": "16/87",
-   "r10": "4/8",
-   "change": 0.3161
+   "r10": "29/87",
+   "change": 0.1494
   },
   "set_A/SF vs F1 (log level, abstaining, candidate-aware)/terra/passes_hard/fail": {
    "frozen": "0/87",
-   "r10": "0/8",
-   "change": 0.0
+   "r10": "1/87",
+   "change": 0.0115
   },
   "set_A/SF vs F1 (log level, abstaining, candidate-aware)/terra/passes_hard/cannot tell": {
    "frozen": "71/87",
-   "r10": "4/8",
-   "change": -0.3161
-  },
-  "set_A/SF vs F1 (log level, abstaining, candidate-aware)/terra/right_none_null/pass": {
-   "frozen": "15/125",
-   "r10": "3/14",
-   "change": 0.0943
-  },
-  "set_A/SF vs F1 (log level, abstaining, candidate-aware)/terra/right_none_null/fail": {
-   "frozen": "0/125",
-   "r10": "0/14",
-   "change": 0.0
-  },
-  "set_A/SF vs F1 (log level, abstaining, candidate-aware)/terra/right_none_null/cannot tell": {
-   "frozen": "110/125",
-   "r10": "11/14",
-   "change": -0.0943
+   "r10": "57/87",
+   "change": -0.1609
   },
   "set_A/SF vs F1 (log level, abstaining, candidate-aware)/terra/decidable_hard/pass": {
    "frozen": "15/71",
-   "r10": "4/8",
-   "change": 0.2887
+   "r10": "28/71",
+   "change": 0.1831
   },
   "set_A/SF vs F1 (log level, abstaining, candidate-aware)/terra/decidable_hard/fail": {
    "frozen": "0/71",
-   "r10": "0/8",
-   "change": 0.0
+   "r10": "1/71",
+   "change": 0.0141
   },
   "set_A/SF vs F1 (log level, abstaining, candidate-aware)/terra/decidable_hard/cannot tell": {
    "frozen": "56/71",
-   "r10": "4/8",
-   "change": -0.2887
-  },
-  "set_A/SF vs F1 (log level, abstaining, candidate-aware)/terra/undecidable_hard/pass": {
-   "frozen": "1/59",
-   "r10": "0/6",
-   "change": -0.0169
-  },
-  "set_A/SF vs F1 (log level, abstaining, candidate-aware)/terra/undecidable_hard/fail": {
-   "frozen": "0/59",
-   "r10": "0/6",
-   "change": 0.0
-  },
-  "set_A/SF vs F1 (log level, abstaining, candidate-aware)/terra/undecidable_hard/cannot tell": {
-   "frozen": "58/59",
-   "r10": "6/6",
-   "change": 0.0169
-  },
-  "set_A/SF vs F1 (log level, abstaining, candidate-aware)/terra/fail_on_decidable_failures/pass": {
-   "frozen": "0/5",
-   "r10": "0/1",
-   "change": 0.0
-  },
-  "set_A/SF vs F1 (log level, abstaining, candidate-aware)/terra/fail_on_decidable_failures/fail": {
-   "frozen": "0/5",
-   "r10": "0/1",
-   "change": 0.0
-  },
-  "set_A/SF vs F1 (log level, abstaining, candidate-aware)/terra/fail_on_decidable_failures/cannot tell": {
-   "frozen": "5/5",
-   "r10": "1/1",
-   "change": 0.0
+   "r10": "42/71",
+   "change": -0.1972
   },
   "set_A/SF vs F1 (log level, abstaining, candidate-aware)/hard_kappa_abstain_as_no_credit": {
    "frozen": [
@@ -3172,8 +3032,8 @@
     0.5273801408770734
    ],
    "r10": [
-    0.4615384615384616,
-    0.8571428571428572
+    0.24855491329479767,
+    0.5150350440877233
    ],
    "change": null
   },
@@ -3183,85 +3043,60 @@
     0.5274
    ],
    "r10": [
-    0.4615,
-    0.8571
+    0.2486,
+    0.515
    ],
    "change": null
   },
   "set_A/SF vs F1 (log level, abstaining, candidate-aware)/sol_vs_terra_abstain_as_no_credit/kappa_change": {
    "frozen": 0.3976,
-   "r10": 0.3956,
-   "change": -0.002
+   "r10": 0.2665,
+   "change": -0.1311
   },
   "set_A/SF vs F1 (log level, abstaining, candidate-aware)/sol_vs_terra_abstain_as_no_credit/balanced_accuracy_change": {
    "frozen": 0.2183,
-   "r10": 0.1875,
-   "change": -0.0308
+   "r10": 0.1378,
+   "change": -0.0805
   },
   "set_A/SF vs F1 (log level, abstaining, candidate-aware)/sol_vs_terra_abstain_as_no_credit/mcnemar_runs/second_right_first_wrong": {
    "frozen": 40,
-   "r10": 3,
-   "change": -37.0
-  },
-  "set_A/SF vs F1 (log level, abstaining, candidate-aware)/sol_vs_terra_abstain_as_no_credit/mcnemar_runs/first_right_second_wrong": {
-   "frozen": 1,
-   "r10": 0,
-   "change": -1.0
+   "r10": 26,
+   "change": -14.0
   },
   "set_A/SF vs F1 (log level, abstaining, candidate-aware)/sol_vs_terra_abstain_as_no_credit/mcnemar_runs/p": {
    "frozen": 3.82e-11,
-   "r10": 0.25,
-   "change": 0.25
-  },
-  "set_A/SF vs F1 (log level, abstaining, candidate-aware)/sol_vs_terra_abstain_as_no_credit/items/items": {
-   "frozen": 6,
-   "r10": 5,
-   "change": -1.0
+   "r10": 4.17e-07,
+   "change": 0.0
   },
   "set_A/SF vs F1 (log level, abstaining, candidate-aware)/sol_vs_terra_abstain_as_no_credit/items/per_item_diff[0]": {
    "frozen": 0.3636,
-   "r10": 0.1667,
-   "change": -0.1969
+   "r10": 0.2727,
+   "change": -0.0909
   },
   "set_A/SF vs F1 (log level, abstaining, candidate-aware)/sol_vs_terra_abstain_as_no_credit/items/per_item_diff[1]": {
    "frozen": 0.3182,
-   "r10": 0.5,
-   "change": 0.1818
+   "r10": 0.2727,
+   "change": -0.0455
   },
   "set_A/SF vs F1 (log level, abstaining, candidate-aware)/sol_vs_terra_abstain_as_no_credit/items/per_item_diff[2]": {
    "frozen": 0.2857,
-   "r10": 0.0,
-   "change": -0.2857
+   "r10": 0.1905,
+   "change": -0.0952
   },
   "set_A/SF vs F1 (log level, abstaining, candidate-aware)/sol_vs_terra_abstain_as_no_credit/items/per_item_diff[3]": {
    "frozen": 0.1364,
-   "r10": 0.0,
-   "change": -0.1364
+   "r10": 0.0455,
+   "change": -0.0909
   },
   "set_A/SF vs F1 (log level, abstaining, candidate-aware)/sol_vs_terra_abstain_as_no_credit/items/per_item_diff[4]": {
    "frozen": 0.4762,
-   "r10": 1.0,
-   "change": 0.5238
+   "r10": 0.3333,
+   "change": -0.1429
   },
   "set_A/SF vs F1 (log level, abstaining, candidate-aware)/sol_vs_terra_abstain_as_no_credit/items/per_item_diff[5]": {
    "frozen": 0.2273,
-   "r10": null,
-   "change": null
-  },
-  "set_A/SF vs F1 (log level, abstaining, candidate-aware)/sol_vs_terra_abstain_as_no_credit/items/p_signflip": {
-   "frozen": 0.0312,
-   "r10": 0.25,
-   "change": 0.2188
-  },
-  "set_A/SF vs F1 (log level, abstaining, candidate-aware)/sol_vs_terra_abstain_as_no_credit/items/sign_test/positive": {
-   "frozen": 6,
-   "r10": 3,
-   "change": -3.0
-  },
-  "set_A/SF vs F1 (log level, abstaining, candidate-aware)/sol_vs_terra_abstain_as_no_credit/items/sign_test/p": {
-   "frozen": 0.0312,
-   "r10": 0.25,
-   "change": 0.2188
+   "r10": 0.0455,
+   "change": -0.1818
   },
   "set_A/SF vs F1 (log level, abstaining, candidate-aware)/sol_vs_terra_abstain_as_no_credit/boot95_item/kappa_change": {
    "frozen": [
@@ -3269,8 +3104,8 @@
     0.5819
    ],
    "r10": [
-    0.1478,
-    0.8
+    0.113,
+    0.4447
    ],
    "change": null
   },
@@ -3280,25 +3115,10 @@
     0.2941
    ],
    "r10": [
-    0.0833,
-    0.375
+    0.0675,
+    0.212
    ],
    "change": null
-  },
-  "set_A/SF vs F1 (log level, abstaining, candidate-aware)/sol_vs_terra_abstain_as_no_credit/boot95_item/clusters": {
-   "frozen": 6,
-   "r10": 5,
-   "change": -1.0
-  },
-  "set_A/SF vs F1 (log level, abstaining, candidate-aware)/sol_vs_terra_abstain_as_no_credit/boot95_item/undefined_draws_kappa": {
-   "frozen": 0,
-   "r10": 112,
-   "change": 112.0
-  },
-  "set_A/SF vs F1 (log level, abstaining, candidate-aware)/sol_vs_terra_abstain_as_no_credit/boot95_item/undefined_draws_balanced_accuracy": {
-   "frozen": 0,
-   "r10": 112,
-   "change": 112.0
   },
   "set_A/SF vs F1 (log level, abstaining, candidate-aware)/sol_vs_terra_abstain_as_no_credit/boot95_run/kappa_change": {
    "frozen": [
@@ -3306,8 +3126,8 @@
     0.5117
    ],
    "r10": [
-    0.0,
-    0.7586
+    0.1672,
+    0.3679
    ],
    "change": null
   },
@@ -3317,20 +3137,10 @@
     0.2753
    ],
    "r10": [
-    0.0,
-    0.375
+    0.0846,
+    0.1905
    ],
    "change": null
-  },
-  "set_A/SF vs F1 (log level, abstaining, candidate-aware)/sol_vs_terra_abstain_as_no_credit/boot95_run/clusters": {
-   "frozen": 130,
-   "r10": 14,
-   "change": -116.0
-  },
-  "set_A/SF vs F1 (log level, abstaining, candidate-aware)/sol_vs_terra_abstain_as_no_credit/boot95_run/undefined_draws_balanced_accuracy": {
-   "frozen": 0,
-   "r10": 1,
-   "change": 1.0
   },
   "luna/S2 vs L2 (transcript)/sol/kappa": {
    "frozen": 0.1881,
@@ -4766,11 +4576,6 @@
    "frozen": true,
    "r10": false,
    "change": -1.0
-  },
-  "statuses/step 5: not sent": {
-   "frozen": null,
-   "r10": 4,
-   "change": null
   }
  }
 }
