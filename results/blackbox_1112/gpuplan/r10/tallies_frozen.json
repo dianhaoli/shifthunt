@@ -686,5 +686,77 @@
    "cannot tell": 5,
    "n": 5
   }
+ },
+ "check3_abstaining_on_V6_50": {
+  "F1": {
+   "slots": 50,
+   "verdicts": {
+    "pass": 3,
+    "cannot tell": 47
+   },
+   "tally": {
+    "n": 50,
+    "second_cue_not_ruled_out": {
+     "k": 33,
+     "share": 0.66
+    },
+    "relative_size_not_established": {
+     "k": 17,
+     "share": 0.34
+    },
+    "no_clean_test": {
+     "k": 1,
+     "share": 0.02
+    },
+    "other": 17
+   }
+  },
+  "SF": {
+   "slots": 50,
+   "verdicts": {
+    "pass": 40,
+    "cannot tell": 9,
+    "fail": 1
+   },
+   "tally": {
+    "n": 50,
+    "second_cue_not_ruled_out": {
+     "k": 2,
+     "share": 0.04
+    },
+    "relative_size_not_established": {
+     "k": 2,
+     "share": 0.04
+    },
+    "no_clean_test": {
+     "k": 1,
+     "share": 0.02
+    },
+    "other": 45
+   }
+  },
+  "F2": {
+   "slots": 16,
+   "verdicts": {
+    "cannot tell": 12,
+    "pass": 4
+   },
+   "tally": {
+    "n": 16,
+    "second_cue_not_ruled_out": {
+     "k": 8,
+     "share": 0.5
+    },
+    "relative_size_not_established": {
+     "k": 4,
+     "share": 0.25
+    },
+    "no_clean_test": {
+     "k": 0,
+     "share": 0.0
+    },
+    "other": 8
+   }
+  }
  }
 }

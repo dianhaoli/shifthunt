@@ -66,3 +66,8 @@ and `GPU_PROMPT_10_ADDENDUM.md`.
     Anthropic $0.65 (the directory's $8 / $1 cap is checked on the total at the end). Two calls were in flight when the
     process stopped (one L0r, one H1): they had request files and no response, and each was sent once more.
 18. **RUNLOG rows** are written per batch from the meta files (`scripts/r10_cost.py row`); the C6b directory (L2 set A, L2 Luna + main, L2r) is logged as one row when its last block finishes, so no call is counted twice.
+19. **C7 panel split at 07:25 UTC**, as C6: the small-judge lane (Luna serial, Haiku behind it) and the Terra lane were
+    stopped and their 447 and 147 remaining calls sent by three and two processes on disjoint order-keeping subsets
+    (`subsets/calls_panel_{small,terra}_rest*.jsonl`). Two calls were in flight (one TK, one LF) and were sent once
+    more. Per-process caps: small OpenAI $0.62 / Anthropic $0.42, Terra OpenAI $3.8 (directory caps checked at the end).
+20. **F split at 07:26 UTC** into three sub-lanes the same way (cap $4.4 each; the directory's $8 is checked at the end); one F1 call was in flight and was sent once more.

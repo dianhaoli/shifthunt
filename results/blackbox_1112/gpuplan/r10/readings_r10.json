@@ -122,11 +122,7 @@
    "label": "holds"
   }
  },
- "H5": {
-  "self_agreement_hard_fleiss_kappa": 0.388,
-  "kappa_with_grade_J1": 0.284,
-  "label": "holds"
- },
+ "H5": "not computed: RuntimeError('pending: c17.json in the worktree is still the frozen file (C17 not yet recomputed on r10)')",
  "H6": {
   "wrong_none_credited_with_key": {
    "K0": "0/129",

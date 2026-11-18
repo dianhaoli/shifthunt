@@ -125,6 +125,17 @@ def main():
                and (lambda d: d[0] and not d[1])(R9.d_rule(kv[f"T|{u['cid']}"]["slots"][u["probe"]]))]
         fills[f"row 6 refuted failures ({lv})"] = dict(Counter(u["verdict"] for u in ref), n=len(ref))
     out["failures_table_fills"] = fills
+    # R9 check 3 on the tag (its script asserts the frozen F1 counts): the abstaining rubric on V6's 50 confirmed passes
+    c3 = OrderedDict()
+    for lv in ("F1", "SF", "O2", "F2"):
+        x = [u for u in H(lv) if u["case"] == "D"]
+        P = [u for u in x if all(R9.d_rule(kv[f"T|{u['cid']}"]["slots"][u["probe"]]))
+             and kv[f"T|{u['cid']}"]["slots"][u["probe"]]["isolated"] != kv[f"T|{u['cid']}"]["slots"][u["probe"]]["aligned"]]
+        if P:
+            t = R9.tally([u["reason"] for u in P], R9.KW3)
+            t["other"] = len(P) - t.pop("_any")
+            c3[lv] = OrderedDict(slots=len(P), verdicts=dict(Counter(u["verdict"] for u in P)), tally=t)
+    out["check3_abstaining_on_V6_50"] = c3
     p = MAIN / "results/blackbox_1112/gpuplan/r10" / f"tallies_{a.tag}.json"
     p.write_text(json.dumps(out, indent=1) + "\n")
     print(json.dumps(out, indent=1))

@@ -125,6 +125,8 @@ def main():
             label="holds" if ci and ci[1] < 0.86 else "weakened" if d < 0.86 else "reversed")
     out["H4"] = h4
     try:
+        if a.tag == "r10" and (R / "gpuplan/c17/c17.json").read_bytes() == (MAIN / "results/blackbox_1112/gpuplan/c17/c17.json").read_bytes():
+            raise RuntimeError("pending: c17.json in the worktree is still the frozen file (C17 not yet recomputed on r10)")
         k17 = json.loads((R / "gpuplan/c17/c17.json").read_text())["three_replicates"]["hard_fleiss_kappa"]
         j1 = json.loads((R / "judge/judge.json").read_text())["J1_hard_slots"]["kappa"]
         out["H5"] = OrderedDict(self_agreement_hard_fleiss_kappa=k17, kappa_with_grade_J1=j1,
