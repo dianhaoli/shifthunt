@@ -1,5 +1,17 @@
 # Prompt to paste to the GPU agent (round 10, v2: rerun every judge call with a corrected prompt)
 
+> **AUTHOR DECISIONS (18 Nov; these override anything below):**
+> - **D1:** the body uses the corrected (r10) numbers; the registered (frozen-prompt) ones go in the appendix.
+> - **D2:** the instruction sentence in §3 is approved as written.
+> - **D3: RUN O2** (the F′ variant, post hoc deviation R10-2).
+> - **D4: RUN all of O1a–O1e.** Run O3 only if its condition holds.
+> - **D5: the gate (P1a) is a CHECK-AND-REPORT step, not a stop.** Report its latent-rejection share and
+>   continue regardless. Stop only if most calls fail to parse or the API errors on most calls.
+> - **D6: do not stop early.** Keep running until everything is done. Hard stop **18 Nov 20:00 UTC** (3 pm EST);
+>   then push and report whatever finished.
+> - **Order:** P0 → P1 → P2 → P3, then P4 (the optional items, now required).
+> - **Reporting:** push after each block and report each commit hash.
+
 This replaces GPU_PROMPT_10.md. It folds in three reviews (coverage, prompt-fix correctness, design). Items marked
 **OPTIONAL** run only if the author says so in the paste message. Everything else is required.
 
@@ -321,7 +333,7 @@ Costs are estimated from the logged cost per call.
   - **Pass if** reasons that reject for missing latents or too little removal are ≤ 5% of rejected passes, for
     Terra L0 and for Haiku H0.
   - Also tally credited verdicts whose reason cites latents ("cannot verify the latents").
-  - **If the gate fails: stop, push, report, and wait for the author.**
+  - **If the gate fails: push and report it, then CONTINUE (author decision D5). Stop only if most calls fail to parse or the API errors on most calls.**
 
 **P1: headline on set A** (OpenAI ≈ $45, Anthropic ≈ $3.3, ≈ 2 h with 4 processes).
 - **Terra:**
@@ -360,7 +372,7 @@ Costs are estimated from the logged cost per call.
 
 **Total P0–P3:** ≈ $136 OpenAI, ≈ $5.4 Anthropic. That is 4,975 counted calls plus 264 control calls plus dry runs.
 
-**P4: OPTIONAL** (only if the author says so; headroom about $44 / $4.6).
+**P4: REQUIRED by author decisions D3/D4** (run after P0–P3; headroom about $44 / $4.6).
 
 | item | what | calls | cost |
 |---|---|---|---|
