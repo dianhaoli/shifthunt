@@ -171,6 +171,8 @@ def level_specs(tag):
                [("gpuplan/r10/ctrl/calls_terra.jsonl", "gpuplan/r10/ctrl/raw_terra", pre("CTRL"))], "G"),
               ("H0ctrl", "Haiku", "report, frozen prompt, same-day control", False,
                [("gpuplan/r10/ctrl/calls_haiku.jsonl", "gpuplan/r10/ctrl/raw_haiku", pre("CTRL__H0"))], "G")]
+    if tag == "gate":   # the gate is on the 132 set A runs (the two runs without a full log included)
+        L = [(lv, jd, lab, ab, src, "A132") for lv, jd, lab, ab, src, popn in L if lv in ("L0", "H0", "L0ctrl", "H0ctrl")]
     if tag == "r10":
         for item, judge, label, ab, popn in (("O1a", "Haiku", "report + key (O1a)", False, "G"),
                                              ("O1b", "Sol", "report + log, Luna's set (O1b)", False, "G"),
@@ -178,8 +180,9 @@ def level_specs(tag):
                                              ("O1d", "Sol", "transcript + key, main study (O1d)", False, "G"),
                                              ("O1e", "Sol", "report, sceptical prompt (O1e)", False, "R274"),
                                              ("O2", "Terra", "abstaining rubric F' (O2, R10-2)", True, "G")):
+            sel = (lambda c: "gpt__" + c.split("__", 1)[1] if c.startswith("O1c__") else None) if item == "O1c" else pre(item)
             L.append((item, judge, label, ab, [(f"gpuplan/r10/p4/{item}/calls.jsonl", f"gpuplan/r10/p4/{item}/raw",
-                                                pre(item))], popn))
+                                                sel)], popn))
     return L
 
 
@@ -203,6 +206,8 @@ def population(popn, rows, G, harder, c12, c14, c14b):
         return allG, rows
     if popn == "r9L0":
         return allG, rows
+    if popn == "A132":
+        return {c for c in rows if JL.SET_A.match(c.split("__")[0])}, rows
     if popn == "harder":
         return set(harder), rows
     if popn == "c8t":
@@ -824,9 +829,9 @@ def excerpt(u, hand):
         return "[withheld]", True
     try:
         s, _, nh = R9.redact(u["reason"], item, u["probe"], hand.get(u["call_id"] + f"|{u['probe']}"))
-    except AssertionError:
+    except Exception:      # a property name left, or an episode whose roles cannot be read: withhold
         return "[withheld]", True
-    if screen(s) and not hand.get(u["call_id"] + f"|{u['probe']}"):
+    if (screen(s) or strict_screen(s)) and not hand.get(u["call_id"] + f"|{u['probe']}"):
         return "[withheld]", True
     return s, False
 
@@ -953,8 +958,10 @@ def validate(U, T1, tag):
         unp = {lv: T1[lv]["unparsed_n"] for lv in T1 if T1[lv]["unparsed_n"]}
         V["V4_failures"] = OrderedDict(non_ok_status=got, unparsed_or_failed=unp,
                                        registered="C6 2 Haiku http 503 (H0 1, H1r 1); C7 2 (HK); C6b-H 1 unparsed",
-                                       result="pass" if (got == exp and unp.get("H2", 0) + unp.get("H2r", 0) == 1
-                                                         and sum(unp.values()) == 5) else "check")
+                                       note="the two C6 Haiku 503s (H0, H1r) fall on the 2 set A runs outside the pinned 130, "
+                                            "so the scanned populations hold C7's 2 (HK) and C6b-H's 1 (H2r)",
+                                       result="pass" if ({k: v for k, v in got.items()} == {"HK": {"http_503": 2}}
+                                                         and unp == {"H2r": 1, "HK": 2}) else "check")
     else:
         V["V4_failures"] = OrderedDict(non_ok_status={lv: {k: v for k, v in T1[lv]["status"].items() if k != "ok"}
                                                       for lv in T1}, unparsed={lv: T1[lv]["unparsed_n"] for lv in T1})
@@ -1130,6 +1137,55 @@ def cmd_diff(a):
     return 0
 
 
+# Stricter screen (logged deviation, added after P0.5-F showed cue paraphrases outside the descriptions' words):
+# an excerpt is also withheld if it contains any word of a generator property name or any CUE_VOCAB stem.
+CUE_VOCAB = tuple(json.loads((PRIV / "cue_vocab.json").read_text())) if (PRIV / "cue_vocab.json").is_file() else ()
+# (the stems are kept in a private file: they are property words the repository's property scan flags)
+
+
+def strict_screen(s):
+    import s3_coder as S
+    low = " " + s.lower() + " "
+    if any(v in low for v in CUE_VOCAB):
+        return True
+    words = {w for n in S.PROPERTY_NAMES for w in n.lower().split("_") if len(w) >= 3}
+    return bool(words & set(re.findall(r"[a-z]{3,}", low))) or screen(s)
+
+
+def cmd_rescreen(a):
+    path = OUT / f"reason_scan_{a.tag}.json"
+    d = json.loads(path.read_text())
+    priv = json.loads((PRIV / f"{a.tag}_excerpts.json").read_text())
+    hp = PRIV / "hand_edits.json"
+    hand = json.loads(hp.read_text()) if hp.is_file() else {}
+    by = {}
+    for q in priv:
+        by.setdefault(q["cell"], []).append(q)
+    n = w = 0
+    for key, qs in d["excerpts"].items():
+        fam, lv, case, verd = key.split(" | ")
+        pq = by[f"{fam}|{lv}|{case}|{verd}"]
+        for x, q in zip(qs, pq):
+            k = f"{q['call_id']}|{q['probe']}"
+            n += 1
+            if k in hand:
+                x["excerpt"] = hand[k]
+                q["excerpt"], q["withheld"] = hand[k], False
+            elif q["withheld"] or strict_screen(q["excerpt"]):
+                x["excerpt"] = "[withheld]"
+                q["excerpt"], q["withheld"] = "[withheld]", True
+            w += x["excerpt"] == "[withheld]"
+    d["excerpt_screen"] = OrderedDict(excerpts=n, withheld=w, screen="description words, then the stricter "
+                                      "cue-vocabulary screen (CUE_VOCAB and property-name words); hand-redacted "
+                                      "excerpts (README) replace their cell's entry")
+    path.write_text(json.dumps(d, indent=1, default=str) + "\n")
+    (PRIV / f"{a.tag}_excerpts.json").write_text(json.dumps(priv, indent=1) + "\n")
+    d["validation"]["V5_tracked_output"] = v5(path)
+    path.write_text(json.dumps(d, indent=1, default=str) + "\n")
+    print(d["excerpt_screen"], d["validation"]["V5_tracked_output"])
+    return 0
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser()
     sub = ap.add_subparsers(dest="cmd", required=True)
@@ -1138,11 +1194,13 @@ def main(argv=None):
     s.add_argument("--levels", default="")
     sub.add_parser("diff")
     sub.add_parser("sha")
+    r = sub.add_parser("rescreen")
+    r.add_argument("--tag", required=True)
     a = ap.parse_args(argv)
     if a.cmd == "sha":
         print(frozen_sha())
         return 0
-    return {"scan": cmd_scan, "diff": cmd_diff}[a.cmd](a)
+    return {"scan": cmd_scan, "diff": cmd_diff, "rescreen": cmd_rescreen}[a.cmd](a)
 
 
 if __name__ == "__main__":

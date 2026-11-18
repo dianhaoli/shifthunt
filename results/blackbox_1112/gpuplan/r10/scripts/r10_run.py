@@ -108,6 +108,13 @@ def cmd_mod(a, rest):
         atexit.register(_dump_stats, f"{a.module}_{'_'.join(rest)}")
     mod = importlib.import_module(a.module)
     print(f"[r10_run] {a.module} {rest} parser={a.parser} ROOT={ROOT}", file=sys.stderr)
+    sys.argv = [str(Path(mod.__file__)), *rest]
+    if not hasattr(mod, "main"):                 # r8_checks / r9_checks: dispatch by subcommand name
+        f = getattr(mod, rest[0], None) or getattr(mod, "cmd_" + rest[0])
+        return f()
+    import inspect
+    if not inspect.signature(mod.main).parameters:
+        return mod.main()
     return mod.main(rest)
 
 
