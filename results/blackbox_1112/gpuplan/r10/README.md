@@ -12,7 +12,7 @@ and `GPU_PROMPT_10_ADDENDUM.md`.
 | Dry runs and projection | `dryrun.json` | done (13 calls, $4.61; projection P0–P3 OpenAI $129, Anthropic $5.4) |
 | Addendum freeze | `PLAN_R10.md` s.13 | done, aa00de9 |
 | P1a gate and same-day control | `gate/` | done: **pass** (Terra L0 0/24, Haiku H0 0/219 rejected passes cite latents; same-day frozen control 98/109 and 224/297) |
-| P1 headline on set A | — | sending |
+| P1 headline on set A | `p1/`, `out/`, `diff/`, `table3_*`, `readings_*`, `tallies_*` | done: Terra report κ −0.02 → 0.32, passes rejected 24 → 6/87, wrong `none` 23 → 19/26; H2 **weakened** (report, transcript); H3 holds (17/39 vs 7/39, p 0.041); no confidence-100 verdict at L1 |
 | P2 other sets, pairs, C7, C17 | — | sending |
 | P3 key ladder, rubric, placebos, C14 | — | sending |
 | P4 O1a–O1e, O2 | — | sending (Sol and Haiku items) |
@@ -59,3 +59,10 @@ and `GPU_PROMPT_10_ADDENDUM.md`.
     back by the budget guard; it was sent at 06:24 UTC under $1.6 (not a re-send: it had never been sent).
 16. **Gate hand reads** are in a file of their own (`gate_narrow_handread.json`, private), separate from the T5 leak
     categories (`gate_handread.json`).
+17. **C6 split into four sub-lanes at 06:47 UTC.** The single C6 process (OpenAI one call at a time, and its Haiku
+    calls held behind the same worker pool) would have finished P1 after 09:00 UTC, so it was stopped and the 416 calls
+    with no `.meta.json` were sent by four processes on disjoint, order-keeping subsets of the stored file
+    (`subsets/calls_c6_rest{0..3}.jsonl`, round-robin) into the same raw directory, each capped at OpenAI $3.8 /
+    Anthropic $0.65 (the directory's $8 / $1 cap is checked on the total at the end). Two calls were in flight when the
+    process stopped (one L0r, one H1): they had request files and no response, and each was sent once more.
+18. **RUNLOG rows** are written per batch from the meta files (`scripts/r10_cost.py row`); the C6b directory (L2 set A, L2 Luna + main, L2r) is logged as one row when its last block finishes, so no call is counted twice.

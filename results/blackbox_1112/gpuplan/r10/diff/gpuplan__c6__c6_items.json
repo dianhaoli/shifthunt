@@ -1,0 +1,71 @@
+{
+ "file": "gpuplan/c6/c6_items.json",
+ "changed": 13,
+ "rows": {
+  "set_A_runs": {
+   "frozen": 130,
+   "r10": 128,
+   "change": -2.0
+  },
+  "items/ep415/credited_L0r": {
+   "frozen": 6,
+   "r10": 5,
+   "change": -1.0
+  },
+  "items/ep415/credited_L1r": {
+   "frozen": 4,
+   "r10": 3,
+   "change": -1.0
+  },
+  "items/ep415/sign_L1_minus_L0r": {
+   "frozen": "-",
+   "r10": "0",
+   "change": null
+  },
+  "items/ep476/hard_failures": {
+   "frozen": 7,
+   "r10": 6,
+   "change": -1.0
+  },
+  "items/ep476/credited_L0r": {
+   "frozen": 5,
+   "r10": 4,
+   "change": -1.0
+  },
+  "items/ep476/credited_L1": {
+   "frozen": 5,
+   "r10": 4,
+   "change": -1.0
+  },
+  "items/ep476/credited_L1r": {
+   "frozen": 6,
+   "r10": 5,
+   "change": -1.0
+  },
+  "items/ep474/credited_L1": {
+   "frozen": 5,
+   "r10": 2,
+   "change": -3.0
+  },
+  "items/ep474/sign_L1_minus_L0r": {
+   "frozen": "+",
+   "r10": "-",
+   "change": null
+  },
+  "summary/more_credited_at_L1": {
+   "frozen": 1,
+   "r10": 0,
+   "change": -1.0
+  },
+  "summary/unchanged": {
+   "frozen": 4,
+   "r10": 5,
+   "change": 1.0
+  },
+  "summary/sign_test_one_sided": {
+   "frozen": 0.75,
+   "r10": 0.5,
+   "change": -0.25
+  }
+ }
+}
