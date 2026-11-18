@@ -4,7 +4,8 @@
 > - **D1:** the body uses the corrected (r10) numbers; the registered (frozen-prompt) ones go in the appendix.
 > - **D2:** the instruction sentence in §3 is approved as written.
 > - **D3: RUN O2** (the F′ variant, post hoc deviation R10-2).
-> - **D4: RUN all of O1a–O1e.** Run O3 only if its condition holds.
+> - **D4: RUN EVERY OPTIONAL ITEM: O1a, O1b, O1c, O1d, O1e, O2 and O3.** Run O3 (the "main cue(s)" key-wording
+>   variant on K0) unconditionally, even if the §6 tally does not show two-regex answers; still report that tally.
 > - **D5: the gate (P1a) is a CHECK-AND-REPORT step, not a stop.** Report its latent-rejection share and
 >   continue regardless. Stop only if most calls fail to parse or the API errors on most calls.
 > - **D6: do not stop early.** Keep running until everything is done. Hard stop **18 Nov 20:00 UTC** (3 pm EST);
