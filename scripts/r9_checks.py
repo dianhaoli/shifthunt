@@ -469,6 +469,10 @@ def c3():
     write("r9_3.json", out, priv)
 
 
+def _blind(cid):
+    return cid.split("__")[0].rsplit("_", 1)[1].startswith("bb")
+
+
 def _n_latents(u):
     b, run = u["cid"].split("__")
     sub = json.loads((JV.RAW / b / run / "submission.json").read_text())
@@ -506,7 +510,22 @@ def c4():
     hit = lambda lv, u: any(w in (V[lv][(u["cid"], u["probe"])]["reason"] or "").lower() for w in lat)  # noqa: E731
     ph = OrderedDict(keywords=lat, confidence_100=OrderedDict(n=len(T), k=sum(hit("L1", u) for u in T)),
                      by_agent_arm=dict(Counter(f"{u['agent']} | {u['arm']}" for u in T)))
-    ph["final_answer_block_shows_latents"] = False  # J2/JL prompts render each cue's regex and scope only
+    l0, c8, c6, _ = J2.load_prompts()
+    seta = [c for c in G["A"]]
+    instr = "for a probe with main cues the answer must name exactly its main cues"
+    fin = lambda p: p[p.index(JL.MARK):] if JL.MARK in p else ""  # noqa: E731
+    l1p = [c6[f"L1__{c}"] for c in seta if f"L1__{c}" in c6]
+    ph["judge_instruction"] = instr
+    ph["instruction_in_L1_prompts"] = f"{sum(' '.join(instr.split()) in ' '.join(p.split()) for p in l1p)}/{len(l1p)}"
+    ph["L1_final_answer_blocks_naming_a_latent"] = f"{sum('latent' in fin(p).lower() for p in l1p)}/{len(l1p)}"
+    clause = "A cue is a regex that detects the property (with a scope) plus SAE latents to ablate."
+    ph["task_clause"] = clause
+    ph["task_clause_in_L0_prompts"] = OrderedDict(
+        (acc, f"{sum(' '.join(clause.split()) in ' '.join((l0 | c8)[c].split()) for g in G.values() for c in g if f(c))}/"
+              f"{sum(1 for g in G.values() for c in g if f(c))}")
+        for acc, f in (("proxy_runs", lambda c: not _blind(c)), ("blind_runs", _blind)))
+    ph["L0_final_answer_blocks_naming_a_latent_all_sets"] = (
+        f"{sum('latent' in fin((l0 | c8)[c]).lower() for g in G.values() for c in g)}/{sum(len(g) for g in G.values())}")
     ph["submissions_listing_latents"] = OrderedDict(
         (arm, f"{sum(int(_n_latents(u) > 0) for u in U if u['set'] == 'set_A' and u['case'] == 'D' and u['arm'] == arm)}/"
               f"{sum(1 for u in U if u['set'] == 'set_A' and u['case'] == 'D' and u['arm'] == arm)}")
