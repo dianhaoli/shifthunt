@@ -77,6 +77,8 @@ KW3 = OrderedDict(second_cue_not_ruled_out=["second", "another main cue", "addit
 POST2 = OrderedDict(report_relayed=["report says", "report states", "reports that", "report claims", "the agent reports",
                                     "according to the report", "report describes"],
                     concession=["though", "but ", "however", "uncertain"])
+POST3 = OrderedDict(second_cue_wider=["only main cue", "could also be a main cue"],
+                    edit_not_clean=["not isolate", "not cleanly isolate", "not a clean test", "not cleanly test"])
 KW4 = OrderedDict(list(KW3.items()) + [("below_threshold", ["below", "threshold"])])
 
 
@@ -441,8 +443,13 @@ def c3():
                 byv[verdict] = tv
         smp, h = redacted_samples(sample(T, 8, f"r9-3-{lv}"), V, lv, f"c3|{lv}", priv)
         hand += h
+        ct = [V[lv][(u["cid"], u["probe"])]["reason"] for u in T if V[lv][(u["cid"], u["probe"])]["v"] == "cannot tell"]
+        frozen_other = [x for x in ct if not any(w.lower() in x.lower() for ws in KW3.values() for w in ws)]
+        ph = tally(frozen_other, POST3)
+        ph["still_other"] = len(frozen_other) - ph.pop("_any")
         out[lv] = OrderedDict(slots=len(T), verdicts=dict(Counter(V[lv][(u["cid"], u["probe"])]["v"] for u in T)),
-                              tally_all_reasons=t, tally_by_verdict=byv, sample=smp)
+                              tally_all_reasons=t, tally_by_verdict=byv,
+                              post_hoc_cannot_tell_other=ph, sample=smp)
     rule = [s for s in re.split(r"(?<=\.)\s+", AJ.RULE) if s.startswith("Credit a named cue")]
     assert len(rule) == 1
     task_rx = re.compile(r"A\s+probe\s+that\s+relies\s+on\s+properties\s+\(its\s+main\s+cues;\s+one\s+or\s+two\s+per\s+probe,"
@@ -456,7 +463,17 @@ def c3():
     out["task_sentence_on_number_of_cues"] = " ".join(hits[0].group(0).split())
     out["task_sentence_found_in"] = f"{sum(map(bool, hits))}/{len(prompts)} report-level prompts (all three sets)"
     out["hand_edits_total"] = hand
+    out["post_hoc_keywords"] = POST3
+    out["post_hoc_note"] = ("post_hoc_cannot_tell_other re-reads the cannot-tell reasons that match no frozen list with "
+                            "two wider lists, added after the frozen tallies were seen; descriptive only")
     write("r9_3.json", out, priv)
+
+
+def _n_latents(u):
+    b, run = u["cid"].split("__")
+    sub = json.loads((JV.RAW / b / run / "submission.json").read_text())
+    e = [x for x in sub["probes"] if x.get("probe") == u["probe"]][0]
+    return sum(len(c.get("latents") or []) for c in e.get("cues") or [] if isinstance(c, dict))
 
 
 def c4():
@@ -485,8 +502,30 @@ def c4():
         byc[key] = tv
     priv = []
     smp, hand = redacted_samples(sample(T, 8, "r9-4"), V, "L1", "c4|L1", priv)
+    lat = ["latent", "ablat"]
+    hit = lambda lv, u: any(w in (V[lv][(u["cid"], u["probe"])]["reason"] or "").lower() for w in lat)  # noqa: E731
+    ph = OrderedDict(keywords=lat, confidence_100=OrderedDict(n=len(T), k=sum(hit("L1", u) for u in T)),
+                     by_agent_arm=dict(Counter(f"{u['agent']} | {u['arm']}" for u in T)))
+    ph["final_answer_block_shows_latents"] = False  # J2/JL prompts render each cue's regex and scope only
+    ph["submissions_listing_latents"] = OrderedDict(
+        (arm, f"{sum(int(_n_latents(u) > 0) for u in U if u['set'] == 'set_A' and u['case'] == 'D' and u['arm'] == arm)}/"
+              f"{sum(1 for u in U if u['set'] == 'set_A' and u['case'] == 'D' and u['arm'] == arm)}")
+        for arm in ("open8", "bb8", "bb16", "bb64"))
+    rej = OrderedDict()
+    for lv, *_, ab in LEVELS:
+        if ab:
+            continue
+        D = [u for u in U if u["case"] == "D" and (u["cid"], u["probe"]) in V[lv] and not V[lv][(u["cid"], u["probe"])]["v"]]
+        if D:
+            rej[lv] = OrderedDict(rejected_passes=len(D), citing_latents_or_ablation=sum(hit(lv, u) for u in D),
+                                  share=round(sum(hit(lv, u) for u in D) / len(D), 3))
+            for acc, f in (("proxy_arms", lambda u: not u["arm"].startswith("bb")), ("blind_arms", lambda u: u["arm"].startswith("bb"))):
+                Dx = [u for u in D if f(u)]
+                rej[lv][acc] = f"{sum(hit(lv, u) for u in Dx)}/{len(Dx)}"
+    ph["rejected_passes_citing_latents_by_level"] = rej
+    ph["note"] = "post hoc (added after the frozen tallies were seen); descriptive only"
     out = OrderedDict(plan="results/blackbox_1112/gpuplan/r9/PLAN_R9.md", label="descriptive, post hoc to the data",
-                      script="scripts/r9_checks.py c4",
+                      script="scripts/r9_checks.py c4", post_hoc_latents=ph,
                       population="Terra L1 (report + log), set A, all slots, stated confidence 100",
                       verdicts=len(T), right=sum(map(right, T)), by_case_and_verdict=split,
                       by_probe_type=dict(Counter(u["ptype"] for u in T)), keywords=KW4,
