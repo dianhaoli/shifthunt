@@ -1,0 +1,316 @@
+{
+ "file": "gpuplan/b/reconcile.json",
+ "changed": 62,
+ "rows": {
+  "report_judge/runs_214/J1_hard_slots/agreement": {
+   "frozen": 0.603,
+   "r10": 0.738,
+   "change": 0.135
+  },
+  "report_judge/runs_214/J1_hard_slots/kappa": {
+   "frozen": 0.002,
+   "r10": 0.284,
+   "change": 0.282
+  },
+  "report_judge/runs_214/J1_hard_slots/false_credit": {
+   "frozen": "53/68",
+   "r10": "48/68",
+   "change": -0.0735
+  },
+  "report_judge/runs_214/J1_hard_slots/false_blame": {
+   "frozen": "32/146",
+   "r10": "8/146",
+   "change": -0.1644
+  },
+  "report_judge/runs_214/J2_false_credit_hard": {
+   "frozen": 0.779,
+   "r10": 0.706,
+   "change": -0.073
+  },
+  "report_judge/runs_214/J3_false_credit_by_error/answered none": {
+   "frozen": "41/44",
+   "r10": "36/44",
+   "change": -0.1136
+  },
+  "report_judge/runs_214/J4_all_slots/agreement": {
+   "frozen": 0.765,
+   "r10": 0.863,
+   "change": 0.098
+  },
+  "report_judge/runs_214/J4_all_slots/kappa": {
+   "frozen": 0.116,
+   "r10": 0.354,
+   "change": 0.238
+  },
+  "report_judge/runs_214/J4_all_slots/false_credit": {
+   "frozen": "84/118",
+   "r10": "74/118",
+   "change": -0.0847
+  },
+  "report_judge/runs_214/J4_all_slots/false_blame": {
+   "frozen": "117/738",
+   "r10": "43/738",
+   "change": -0.1003
+  },
+  "report_judge/runs_196_reconciled/J1_hard_slots/agreement": {
+   "frozen": 0.597,
+   "r10": 0.74,
+   "change": 0.143
+  },
+  "report_judge/runs_196_reconciled/J1_hard_slots/kappa": {
+   "frozen": -0.006,
+   "r10": 0.291,
+   "change": 0.297
+  },
+  "report_judge/runs_196_reconciled/J1_hard_slots/false_credit": {
+   "frozen": "48/62",
+   "r10": "43/62",
+   "change": -0.0806
+  },
+  "report_judge/runs_196_reconciled/J1_hard_slots/false_blame": {
+   "frozen": "31/134",
+   "r10": "8/134",
+   "change": -0.1716
+  },
+  "report_judge/runs_196_reconciled/J2_false_credit_hard": {
+   "frozen": 0.774,
+   "r10": 0.694,
+   "change": -0.08
+  },
+  "report_judge/runs_196_reconciled/J3_false_credit_by_error/answered none": {
+   "frozen": "36/39",
+   "r10": "31/39",
+   "change": -0.1282
+  },
+  "report_judge/runs_196_reconciled/J4_all_slots/agreement": {
+   "frozen": 0.758,
+   "r10": 0.861,
+   "change": 0.103
+  },
+  "report_judge/runs_196_reconciled/J4_all_slots/kappa": {
+   "frozen": 0.11,
+   "r10": 0.358,
+   "change": 0.248
+  },
+  "report_judge/runs_196_reconciled/J4_all_slots/false_credit": {
+   "frozen": "79/111",
+   "r10": "69/111",
+   "change": -0.0901
+  },
+  "report_judge/runs_196_reconciled/J4_all_slots/false_blame": {
+   "frozen": "111/673",
+   "r10": "40/673",
+   "change": -0.1055
+  },
+  "c17_test_retest/runs_214/all_slot_cohen_kappa": {
+   "frozen": 0.47,
+   "r10": 0.737,
+   "change": 0.267
+  },
+  "c17_test_retest/runs_214/all_slot_agreement": {
+   "frozen": 0.843,
+   "r10": 0.95,
+   "change": 0.107
+  },
+  "c17_test_retest/runs_214/hard_cohen_kappa": {
+   "frozen": 0.507,
+   "r10": 0.818,
+   "change": 0.311
+  },
+  "c17_test_retest/runs_214/hard_agreement": {
+   "frozen": 0.827,
+   "r10": 0.958,
+   "change": 0.131
+  },
+  "c17_test_retest/runs_196_reconciled/all_slot_cohen_kappa": {
+   "frozen": 0.461,
+   "r10": 0.734,
+   "change": 0.273
+  },
+  "c17_test_retest/runs_196_reconciled/all_slot_agreement": {
+   "frozen": 0.837,
+   "r10": 0.948,
+   "change": 0.111
+  },
+  "c17_test_retest/runs_196_reconciled/hard_cohen_kappa": {
+   "frozen": 0.507,
+   "r10": 0.81,
+   "change": 0.303
+  },
+  "c17_test_retest/runs_196_reconciled/hard_agreement": {
+   "frozen": 0.821,
+   "r10": 0.954,
+   "change": 0.133
+  },
+  "c17_test_retest/three_replicates_set_A_132/fleiss_kappa": {
+   "frozen": 0.444,
+   "r10": 0.78,
+   "change": 0.336
+  },
+  "c17_test_retest/three_replicates_set_A_132/all_agree": {
+   "frozen": 0.68,
+   "r10": 0.92,
+   "change": 0.24
+  },
+  "c17_test_retest/three_replicates_set_A_132/hard_fleiss_kappa": {
+   "frozen": 0.388,
+   "r10": 0.842,
+   "change": 0.454
+  },
+  "c17_test_retest/three_replicates_set_A_132/hard_all_agree": {
+   "frozen": 0.598,
+   "r10": 0.932,
+   "change": 0.334
+  },
+  "set_A/analysed": {
+   "frozen": 130,
+   "r10": 132,
+   "change": 2.0
+  },
+  "set_A/dropped[0]": {
+   "frozen": "r1112_gpt_bb64: ['http_503', 'H1r']",
+   "r10": null,
+   "change": null
+  },
+  "set_A/dropped[1]": {
+   "frozen": "r1112_haiku_bb64: ['http_503', 'H0']",
+   "r10": null,
+   "change": null
+  },
+  "credit_baselines/set_A/L0/omissions": {
+   "frozen": "23/26",
+   "r10": "19/26",
+   "change": -0.1538
+  },
+  "credit_baselines/set_A/L0/passes_blamed": {
+   "frozen": "24/87",
+   "r10": "6/87",
+   "change": -0.2069
+  },
+  "credit_baselines/set_A/L0r/omissions": {
+   "frozen": "20/26",
+   "r10": "18/26",
+   "change": -0.0769
+  },
+  "credit_baselines/set_A/L0r/passes_blamed": {
+   "frozen": "33/87",
+   "r10": "7/87",
+   "change": -0.2989
+  },
+  "credit_baselines/set_A/L1/commissions": {
+   "frozen": "7/17",
+   "r10": "6/17",
+   "change": -0.0588
+  },
+  "credit_baselines/set_A/L1/omissions": {
+   "frozen": "21/26",
+   "r10": "19/26",
+   "change": -0.0769
+  },
+  "credit_baselines/set_A/L1/passes_blamed": {
+   "frozen": "25/87",
+   "r10": "4/87",
+   "change": -0.2414
+  },
+  "credit_baselines/set_A/L1r/omissions": {
+   "frozen": "20/26",
+   "r10": "18/26",
+   "change": -0.0769
+  },
+  "credit_baselines/set_A/L1r/passes_blamed": {
+   "frozen": "18/87",
+   "r10": "6/87",
+   "change": -0.1379
+  },
+  "credit_baselines/set_A/L2/commissions": {
+   "frozen": "3/17",
+   "r10": "6/17",
+   "change": 0.1765
+  },
+  "credit_baselines/set_A/L2/omissions": {
+   "frozen": "17/26",
+   "r10": "16/26",
+   "change": -0.0385
+  },
+  "credit_baselines/set_A/L2/passes_blamed": {
+   "frozen": "25/87",
+   "r10": "6/87",
+   "change": -0.2184
+  },
+  "credit_baselines/set_A/L3_1/passes_blamed": {
+   "frozen": "5/87",
+   "r10": "4/87",
+   "change": -0.0115
+  },
+  "credit_baselines/luna/L0/omissions": {
+   "frozen": "24/38",
+   "r10": "19/38",
+   "change": -0.1316
+  },
+  "credit_baselines/luna/L0/passes_blamed": {
+   "frozen": "2/7",
+   "r10": "1/7",
+   "change": -0.1429
+  },
+  "credit_baselines/luna/L1/commissions": {
+   "frozen": "6/15",
+   "r10": "5/15",
+   "change": -0.0667
+  },
+  "credit_baselines/luna/L1/omissions": {
+   "frozen": "21/38",
+   "r10": "18/38",
+   "change": -0.0789
+  },
+  "credit_baselines/luna/L1/passes_blamed": {
+   "frozen": "4/7",
+   "r10": "2/7",
+   "change": -0.2857
+  },
+  "credit_baselines/luna/L2/omissions": {
+   "frozen": "10/38",
+   "r10": "15/38",
+   "change": 0.1316
+  },
+  "credit_baselines/main_study/L0/omissions": {
+   "frozen": "13/13",
+   "r10": "12/13",
+   "change": -0.0769
+  },
+  "credit_baselines/main_study/L0/passes_blamed": {
+   "frozen": "5/45",
+   "r10": "2/45",
+   "change": -0.0667
+  },
+  "credit_baselines/main_study/L2/commissions": {
+   "frozen": "5/6",
+   "r10": "6/6",
+   "change": 0.1667
+  },
+  "credit_baselines/main_study/L2/passes_blamed": {
+   "frozen": "4/45",
+   "r10": "3/45",
+   "change": -0.0222
+  },
+  "credit_baselines/main_study/L2r/commissions": {
+   "frozen": "5/6",
+   "r10": "6/6",
+   "change": 0.1667
+  },
+  "credit_baselines/main_study/L2r/passes_blamed": {
+   "frozen": "3/45",
+   "r10": "4/45",
+   "change": 0.0222
+  },
+  "credit_baselines/harder_variant/L0/passes_blamed": {
+   "frozen": "1/12",
+   "r10": "0/12",
+   "change": -0.0833
+  },
+  "credit_baselines/harder_variant/L3_0/passes_blamed": {
+   "frozen": "2/12",
+   "r10": "3/12",
+   "change": 0.0833
+  }
+ }
+}

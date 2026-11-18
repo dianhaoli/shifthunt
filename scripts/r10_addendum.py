@@ -193,10 +193,14 @@ def cmd_build_ad4(with_l0=False):
             calls = {k: v[0] for k, v in sol.items()}
         else:
             calls = {c["call_id"]: c for c in read_calls(src[lv][0])}
+            if lv == "L0":   # Luna's report-level send is C8's (judge_luna), as everywhere in the study
+                calls.update({c["call_id"]: c for c in read_calls(WP / "judge_luna" / "calls.jsonl")
+                              if c["call_id"].startswith("r1112_luna_")})
         for p in pairs:
             cid0 = src[lv][2](p["cid"])
             c = calls[cid0]
-            raw = sol[cid0][1] if lv == "S2" else src[lv][1]
+            raw = sol[cid0][1] if lv == "S2" else (WP / "judge_luna" / "raw" if lv == "L0" and cid0.startswith("r1112_luna_")
+                                                     else src[lv][1])
             rep = _reply(raw, cid0, "openai")
             if rep is None:
                 missing[lv] += 1
@@ -336,9 +340,9 @@ def _boot_or(rows, seed=1116, n=10000):
     return [round(math.exp(vals[int(0.025 * len(vals))]), 3), round(math.exp(vals[min(len(vals) - 1, int(0.975 * len(vals)))]), 3)], bad
 
 
-def cmd_ad2():
+def cmd_ad2(tag="r10"):
     import math
-    U = units("r10")
+    U = units(tag)
     out = OrderedDict(plan="results/blackbox_1112/gpuplan/r10/PLAN_R10.md section 13 (AD2)",
                       model="GEE, independence working correlation, clustered by item (= logistic regression with the "
                             "item-clustered CR1 sandwich); item bootstrap of the log odds ratio (random.Random(1116), 10,000)",
@@ -404,7 +408,7 @@ def cmd_ad2():
                                            for k in sorted({u["agent"] for u in B})})
     out["wrong_none_credit_split_all_probes"] = sp
     OUTD.mkdir(parents=True, exist_ok=True)
-    (OUTD / "ad2.json").write_text(json.dumps(out, indent=1) + "\n")
+    (OUTD / f"ad2_{tag}.json").write_text(json.dumps(out, indent=1) + "\n")
     print(json.dumps(out, indent=1))
 
 
@@ -571,7 +575,9 @@ if __name__ == "__main__":
         cmd_build_ad4("--with-l0" in sys.argv)
     elif cmd == "ad1":
         cmd_ad1(sys.argv[sys.argv.index("--tag") + 1])
-    elif cmd in ("ad2", "ad3", "ad4", "ad5"):
+    elif cmd == "ad2":
+        cmd_ad2(sys.argv[sys.argv.index("--tag") + 1] if "--tag" in sys.argv else "r10")
+    elif cmd in ("ad3", "ad4", "ad5"):
         {"ad2": cmd_ad2, "ad3": cmd_ad3, "ad4": cmd_ad4, "ad5": cmd_ad5}[cmd]()
     else:
         raise SystemExit(f"{cmd}: analysis subcommands are added after the sends (frozen definitions in PLAN_R10 s.13)")

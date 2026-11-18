@@ -17,8 +17,8 @@
    "wrong": 0
   },
   "ADb": {
-   "n": 55,
-   "wrong": 36
+   "n": 195,
+   "wrong": 120
   },
   "C12H": {
    "n": 0,
@@ -271,9 +271,9 @@
   }
  },
  "rejected_passes_with_2plus_regexes": {
-  "AD5": "0/7",
-  "ADa": "0/4",
-  "ADb": "0/29",
+  "AD5": "0/28",
+  "ADa": "0/22",
+  "ADb": "0/85",
   "C12H": "36/172",
   "C12T": "29/155",
   "C8T": "0/4",
@@ -308,7 +308,7 @@
   "O1c": "27/138",
   "O1d": "0/0",
   "O1e": "0/20",
-  "O2": "0/23",
+  "O2": "0/98",
   "S0": "0/11",
   "S1": "0/12",
   "S2": "0/13",
@@ -319,28 +319,28 @@
  },
  "latent_tallies": {
   "AD5": {
-   "rejected_passes": 7,
+   "rejected_passes": 28,
    "rejected_passes_broad": 0,
    "rejected_passes_narrow": 0,
-   "credited": 112,
-   "credited_broad": 1,
-   "credited_narrow": 4
+   "credited": 469,
+   "credited_broad": 6,
+   "credited_narrow": 9
   },
   "ADa": {
-   "rejected_passes": 4,
+   "rejected_passes": 22,
    "rejected_passes_broad": 0,
-   "rejected_passes_narrow": 3,
-   "credited": 65,
-   "credited_broad": 1,
-   "credited_narrow": 8
+   "rejected_passes_narrow": 7,
+   "credited": 425,
+   "credited_broad": 3,
+   "credited_narrow": 65
   },
   "ADb": {
-   "rejected_passes": 29,
+   "rejected_passes": 85,
    "rejected_passes_broad": 2,
-   "rejected_passes_narrow": 8,
-   "credited": 81,
+   "rejected_passes_narrow": 12,
+   "credited": 234,
    "credited_broad": 0,
-   "credited_narrow": 19
+   "credited_narrow": 62
   },
   "C12H": {
    "rejected_passes": 172,
@@ -615,12 +615,12 @@
    "credited_narrow": 20
   },
   "O2": {
-   "rejected_passes": 23,
+   "rejected_passes": 98,
    "rejected_passes_broad": 0,
-   "rejected_passes_narrow": 0,
-   "credited": 48,
+   "rejected_passes_narrow": 8,
+   "credited": 221,
    "credited_broad": 0,
-   "credited_narrow": 11
+   "credited_narrow": 54
   },
   "S0": {
    "rejected_passes": 11,
@@ -681,15 +681,15 @@
  },
  "confidence_n_missing": {
   "AD5": {
-   "slots": 128,
+   "slots": 520,
    "n_missing": 0
   },
   "ADa": {
-   "slots": 80,
+   "slots": 520,
    "n_missing": 0
   },
   "ADb": {
-   "slots": 176,
+   "slots": 520,
    "n_missing": 0
   },
   "C12H": {
@@ -829,7 +829,7 @@
    "n_missing": 0
   },
   "O2": {
-   "slots": 124,
+   "slots": 520,
    "n_missing": 0
   },
   "S0": {
@@ -930,26 +930,26 @@
    }
   },
   "O2": {
-   "slots": 13,
+   "slots": 50,
    "verdicts": {
-    "pass": 12,
-    "cannot tell": 1
+    "pass": 40,
+    "cannot tell": 10
    },
    "tally": {
-    "n": 13,
+    "n": 50,
     "second_cue_not_ruled_out": {
      "k": 0,
      "share": 0.0
     },
     "relative_size_not_established": {
-     "k": 1,
-     "share": 0.077
+     "k": 3,
+     "share": 0.06
     },
     "no_clean_test": {
      "k": 0,
      "share": 0.0
     },
-    "other": 12
+    "other": 47
    }
   },
   "F2": {

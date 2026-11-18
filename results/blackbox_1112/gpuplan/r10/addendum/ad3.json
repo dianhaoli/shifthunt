@@ -1,0 +1,39 @@
+{
+ "plan": "results/blackbox_1112/gpuplan/r10/PLAN_R10.md section 13 (AD3, post hoc R10-4)",
+ "plain log level (r10 L1)": {
+  "runs": 130,
+  "coverage_hard": "130/130",
+  "wrong_none_credited": "19/26",
+  "right_none_credited": "111/125",
+  "passes_credited": "83/87",
+  "hard_kappa": 0.425,
+  "covered_hard_kappa": 0.425
+ },
+ "F-a: candidates only": {
+  "runs": 130,
+  "coverage_hard": "130/130",
+  "wrong_none_credited": "13/26",
+  "right_none_credited": "107/125",
+  "passes_credited": "78/87",
+  "hard_kappa": 0.526,
+  "covered_hard_kappa": 0.526
+ },
+ "F-b: candidates + rule, binary": {
+  "runs": 130,
+  "coverage_hard": "130/130",
+  "wrong_none_credited": "0/26",
+  "right_none_credited": "14/125",
+  "passes_credited": "59/87",
+  "hard_kappa": 0.565,
+  "covered_hard_kappa": 0.565
+ },
+ "F (r10): candidates + rule + abstain": {
+  "runs": 130,
+  "coverage_hard": "30/130",
+  "wrong_none_credited": "0/26",
+  "right_none_credited": "15/125",
+  "passes_credited": "29/87",
+  "hard_kappa": 0.249,
+  "covered_hard_kappa": 0.0
+ }
+}

@@ -1,0 +1,2461 @@
+{
+ "file": "gpuplan/e/ladder_tests.json",
+ "changed": 395,
+ "rows": {
+  "set_A/per_item/ep411/L0/correct": {
+   "frozen": 13,
+   "r10": 17,
+   "change": 4.0
+  },
+  "set_A/per_item/ep411/L0/credited": {
+   "frozen": 17,
+   "r10": 19,
+   "change": 2.0
+  },
+  "set_A/per_item/ep411/L0/omissions_credited": {
+   "frozen": 6,
+   "r10": 5,
+   "change": -1.0
+  },
+  "set_A/per_item/ep411/L1/correct": {
+   "frozen": 13,
+   "r10": 17,
+   "change": 4.0
+  },
+  "set_A/per_item/ep411/L1/credited": {
+   "frozen": 15,
+   "r10": 19,
+   "change": 4.0
+  },
+  "set_A/per_item/ep411/L2/correct": {
+   "frozen": 13,
+   "r10": 17,
+   "change": 4.0
+  },
+  "set_A/per_item/ep411/L2/credited": {
+   "frozen": 13,
+   "r10": 17,
+   "change": 4.0
+  },
+  "set_A/per_item/ep413/L0/correct": {
+   "frozen": 13,
+   "r10": 17,
+   "change": 4.0
+  },
+  "set_A/per_item/ep413/L0/credited": {
+   "frozen": 15,
+   "r10": 19,
+   "change": 4.0
+  },
+  "set_A/per_item/ep413/L1/correct": {
+   "frozen": 13,
+   "r10": 16,
+   "change": 3.0
+  },
+  "set_A/per_item/ep413/L1/credited": {
+   "frozen": 15,
+   "r10": 18,
+   "change": 3.0
+  },
+  "set_A/per_item/ep413/L2/correct": {
+   "frozen": 12,
+   "r10": 15,
+   "change": 3.0
+  },
+  "set_A/per_item/ep413/L2/credited": {
+   "frozen": 14,
+   "r10": 15,
+   "change": 1.0
+  },
+  "set_A/per_item/ep413/L2/omissions_credited": {
+   "frozen": 4,
+   "r10": 3,
+   "change": -1.0
+  },
+  "set_A/per_item/ep415/L0/correct": {
+   "frozen": 11,
+   "r10": 9,
+   "change": -2.0
+  },
+  "set_A/per_item/ep415/L0/credited": {
+   "frozen": 15,
+   "r10": 13,
+   "change": -2.0
+  },
+  "set_A/per_item/ep415/L0/commissions_credited": {
+   "frozen": 4,
+   "r10": 5,
+   "change": 1.0
+  },
+  "set_A/per_item/ep415/L0/omissions_credited": {
+   "frozen": 2,
+   "r10": 1,
+   "change": -1.0
+  },
+  "set_A/per_item/ep415/L1/correct": {
+   "frozen": 13,
+   "r10": 16,
+   "change": 3.0
+  },
+  "set_A/per_item/ep415/L1/credited": {
+   "frozen": 15,
+   "r10": 18,
+   "change": 3.0
+  },
+  "set_A/per_item/ep415/L1/commissions_credited": {
+   "frozen": 4,
+   "r10": 3,
+   "change": -1.0
+  },
+  "set_A/per_item/ep415/L1/omissions_credited": {
+   "frozen": 1,
+   "r10": 2,
+   "change": 1.0
+  },
+  "set_A/per_item/ep415/L2/correct": {
+   "frozen": 14,
+   "r10": 16,
+   "change": 2.0
+  },
+  "set_A/per_item/ep415/L2/credited": {
+   "frozen": 10,
+   "r10": 16,
+   "change": 6.0
+  },
+  "set_A/per_item/ep415/L2/commissions_credited": {
+   "frozen": 1,
+   "r10": 3,
+   "change": 2.0
+  },
+  "set_A/per_item/ep472/L0/correct": {
+   "frozen": 11,
+   "r10": 19,
+   "change": 8.0
+  },
+  "set_A/per_item/ep472/L0/credited": {
+   "frozen": 12,
+   "r10": 20,
+   "change": 8.0
+  },
+  "set_A/per_item/ep472/L1/correct": {
+   "frozen": 10,
+   "r10": 18,
+   "change": 8.0
+  },
+  "set_A/per_item/ep472/L1/credited": {
+   "frozen": 11,
+   "r10": 19,
+   "change": 8.0
+  },
+  "set_A/per_item/ep472/L2/correct": {
+   "frozen": 15,
+   "r10": 19,
+   "change": 4.0
+  },
+  "set_A/per_item/ep472/L2/credited": {
+   "frozen": 16,
+   "r10": 20,
+   "change": 4.0
+  },
+  "set_A/per_item/ep474/L0/correct": {
+   "frozen": 12,
+   "r10": 18,
+   "change": 6.0
+  },
+  "set_A/per_item/ep474/L0/credited": {
+   "frozen": 15,
+   "r10": 17,
+   "change": 2.0
+  },
+  "set_A/per_item/ep474/L0/omissions_credited": {
+   "frozen": 5,
+   "r10": 3,
+   "change": -2.0
+  },
+  "set_A/per_item/ep474/L1/correct": {
+   "frozen": 12,
+   "r10": 18,
+   "change": 6.0
+  },
+  "set_A/per_item/ep474/L1/omissions_credited": {
+   "frozen": 5,
+   "r10": 2,
+   "change": -3.0
+  },
+  "set_A/per_item/ep474/L2/correct": {
+   "frozen": 16,
+   "r10": 19,
+   "change": 3.0
+  },
+  "set_A/per_item/ep474/L2/credited": {
+   "frozen": 13,
+   "r10": 16,
+   "change": 3.0
+  },
+  "set_A/per_item/ep476/L0/correct": {
+   "frozen": 14,
+   "r10": 16,
+   "change": 2.0
+  },
+  "set_A/per_item/ep476/L0/commissions_credited": {
+   "frozen": 4,
+   "r10": 3,
+   "change": -1.0
+  },
+  "set_A/per_item/ep476/L2/correct": {
+   "frozen": 15,
+   "r10": 16,
+   "change": 1.0
+  },
+  "set_A/per_item/ep476/L2/credited": {
+   "frozen": 16,
+   "r10": 19,
+   "change": 3.0
+  },
+  "set_A/per_item/ep476/L2/commissions_credited": {
+   "frozen": 1,
+   "r10": 2,
+   "change": 1.0
+  },
+  "set_A/steps/report vs log (L0 -> L1)/kappa": {
+   "frozen": [
+    -0.021,
+    0.0626
+   ],
+   "r10": [
+    0.3215,
+    0.4251
+   ],
+   "change": null
+  },
+  "set_A/steps/report vs log (L0 -> L1)/kappa_change": {
+   "frozen": 0.0836,
+   "r10": 0.1037,
+   "change": 0.0201
+  },
+  "set_A/steps/report vs log (L0 -> L1)/balanced_accuracy_change": {
+   "frozen": 0.0408,
+   "r10": 0.0464,
+   "change": 0.0056
+  },
+  "set_A/steps/report vs log (L0 -> L1)/mcnemar_runs/later_right_earlier_wrong": {
+   "frozen": 19,
+   "r10": 12,
+   "change": -7.0
+  },
+  "set_A/steps/report vs log (L0 -> L1)/mcnemar_runs/earlier_right_later_wrong": {
+   "frozen": 16,
+   "r10": 7,
+   "change": -9.0
+  },
+  "set_A/steps/report vs log (L0 -> L1)/mcnemar_runs/p": {
+   "frozen": 0.736,
+   "r10": 0.359,
+   "change": -0.377
+  },
+  "set_A/steps/report vs log (L0 -> L1)/items/per_item_diff[1]": {
+   "frozen": 0.0,
+   "r10": -0.0455,
+   "change": -0.0455
+  },
+  "set_A/steps/report vs log (L0 -> L1)/items/per_item_diff[2]": {
+   "frozen": 0.0952,
+   "r10": 0.3333,
+   "change": 0.2381
+  },
+  "set_A/steps/report vs log (L0 -> L1)/items/per_item_diff[5]": {
+   "frozen": 0.0909,
+   "r10": 0.0,
+   "change": -0.0909
+  },
+  "set_A/steps/report vs log (L0 -> L1)/items/p_signflip": {
+   "frozen": 0.5,
+   "r10": 1.0,
+   "change": 0.5
+  },
+  "set_A/steps/report vs log (L0 -> L1)/items/sign_test/positive": {
+   "frozen": 2,
+   "r10": 1,
+   "change": -1.0
+  },
+  "set_A/steps/report vs log (L0 -> L1)/items/sign_test/negative": {
+   "frozen": 1,
+   "r10": 2,
+   "change": 1.0
+  },
+  "set_A/steps/report vs log (L0 -> L1)/boot95_run/kappa_change": {
+   "frozen": [
+    -0.1061,
+    0.2681
+   ],
+   "r10": [
+    -0.065,
+    0.2759
+   ],
+   "change": null
+  },
+  "set_A/steps/report vs log (L0 -> L1)/boot95_run/balanced_accuracy_change": {
+   "frozen": [
+    -0.0515,
+    0.131
+   ],
+   "r10": [
+    -0.0289,
+    0.1242
+   ],
+   "change": null
+  },
+  "set_A/steps/report vs log (L0 -> L1)/boot95_item/kappa_change": {
+   "frozen": [
+    -0.0084,
+    0.1974
+   ],
+   "r10": [
+    -0.0573,
+    0.341
+   ],
+   "change": null
+  },
+  "set_A/steps/report vs log (L0 -> L1)/boot95_item/balanced_accuracy_change": {
+   "frozen": [
+    -0.0045,
+    0.0909
+   ],
+   "r10": [
+    -0.0167,
+    0.1464
+   ],
+   "change": null
+  },
+  "set_A/steps/log vs transcript (L1 -> L2)/kappa": {
+   "frozen": [
+    0.0626,
+    0.2405
+   ],
+   "r10": [
+    0.4251,
+    0.463
+   ],
+   "change": null
+  },
+  "set_A/steps/log vs transcript (L1 -> L2)/kappa_change": {
+   "frozen": 0.1779,
+   "r10": 0.0378,
+   "change": -0.1401
+  },
+  "set_A/steps/log vs transcript (L1 -> L2)/balanced_accuracy_change": {
+   "frozen": 0.093,
+   "r10": 0.0234,
+   "change": -0.0696
+  },
+  "set_A/steps/log vs transcript (L1 -> L2)/mcnemar_runs/later_right_earlier_wrong": {
+   "frozen": 25,
+   "r10": 11,
+   "change": -14.0
+  },
+  "set_A/steps/log vs transcript (L1 -> L2)/mcnemar_runs/earlier_right_later_wrong": {
+   "frozen": 17,
+   "r10": 10,
+   "change": -7.0
+  },
+  "set_A/steps/log vs transcript (L1 -> L2)/mcnemar_runs/p": {
+   "frozen": 0.28,
+   "r10": 1.0,
+   "change": 0.72
+  },
+  "set_A/steps/log vs transcript (L1 -> L2)/items/per_item_diff[2]": {
+   "frozen": 0.0476,
+   "r10": 0.0,
+   "change": -0.0476
+  },
+  "set_A/steps/log vs transcript (L1 -> L2)/items/per_item_diff[3]": {
+   "frozen": 0.2273,
+   "r10": 0.0455,
+   "change": -0.1818
+  },
+  "set_A/steps/log vs transcript (L1 -> L2)/items/per_item_diff[4]": {
+   "frozen": 0.1905,
+   "r10": 0.0476,
+   "change": -0.1429
+  },
+  "set_A/steps/log vs transcript (L1 -> L2)/items/per_item_diff[5]": {
+   "frozen": -0.0455,
+   "r10": 0.0,
+   "change": 0.0455
+  },
+  "set_A/steps/log vs transcript (L1 -> L2)/items/p_signflip": {
+   "frozen": 0.312,
+   "r10": 0.75,
+   "change": 0.438
+  },
+  "set_A/steps/log vs transcript (L1 -> L2)/items/sign_test/positive": {
+   "frozen": 3,
+   "r10": 2,
+   "change": -1.0
+  },
+  "set_A/steps/log vs transcript (L1 -> L2)/items/sign_test/negative": {
+   "frozen": 2,
+   "r10": 1,
+   "change": -1.0
+  },
+  "set_A/steps/log vs transcript (L1 -> L2)/boot95_run/kappa_change": {
+   "frozen": [
+    -0.0079,
+    0.365
+   ],
+   "r10": [
+    -0.1498,
+    0.2276
+   ],
+   "change": null
+  },
+  "set_A/steps/log vs transcript (L1 -> L2)/boot95_run/balanced_accuracy_change": {
+   "frozen": [
+    0.0018,
+    0.1864
+   ],
+   "r10": [
+    -0.0652,
+    0.1139
+   ],
+   "change": null
+  },
+  "set_A/steps/log vs transcript (L1 -> L2)/boot95_item/kappa_change": {
+   "frozen": [
+    0.0126,
+    0.3348
+   ],
+   "r10": [
+    -0.0049,
+    0.0813
+   ],
+   "change": null
+  },
+  "set_A/steps/log vs transcript (L1 -> L2)/boot95_item/balanced_accuracy_change": {
+   "frozen": [
+    0.012,
+    0.177
+   ],
+   "r10": [
+    0.0071,
+    0.0362
+   ],
+   "change": null
+  },
+  "set_A/steps/transcript vs transcript + key (L2 -> L3_2)/kappa": {
+   "frozen": [
+    0.2405,
+    1.0
+   ],
+   "r10": [
+    0.463,
+    1.0
+   ],
+   "change": null
+  },
+  "set_A/steps/transcript vs transcript + key (L2 -> L3_2)/kappa_change": {
+   "frozen": 0.7595,
+   "r10": 0.537,
+   "change": -0.2225
+  },
+  "set_A/steps/transcript vs transcript + key (L2 -> L3_2)/balanced_accuracy_change": {
+   "frozen": 0.3762,
+   "r10": 0.2903,
+   "change": -0.0859
+  },
+  "set_A/steps/transcript vs transcript + key (L2 -> L3_2)/mcnemar_runs/later_right_earlier_wrong": {
+   "frozen": 45,
+   "r10": 28,
+   "change": -17.0
+  },
+  "set_A/steps/transcript vs transcript + key (L2 -> L3_2)/mcnemar_runs/p": {
+   "frozen": 5.68e-14,
+   "r10": 7.45e-09,
+   "change": 0.0
+  },
+  "set_A/steps/transcript vs transcript + key (L2 -> L3_2)/items/per_item_diff[0]": {
+   "frozen": 0.4091,
+   "r10": 0.2273,
+   "change": -0.1818
+  },
+  "set_A/steps/transcript vs transcript + key (L2 -> L3_2)/items/per_item_diff[1]": {
+   "frozen": 0.4545,
+   "r10": 0.3182,
+   "change": -0.1363
+  },
+  "set_A/steps/transcript vs transcript + key (L2 -> L3_2)/items/per_item_diff[2]": {
+   "frozen": 0.3333,
+   "r10": 0.2381,
+   "change": -0.0952
+  },
+  "set_A/steps/transcript vs transcript + key (L2 -> L3_2)/items/per_item_diff[3]": {
+   "frozen": 0.3182,
+   "r10": 0.1364,
+   "change": -0.1818
+  },
+  "set_A/steps/transcript vs transcript + key (L2 -> L3_2)/items/per_item_diff[4]": {
+   "frozen": 0.2381,
+   "r10": 0.0952,
+   "change": -0.1429
+  },
+  "set_A/steps/transcript vs transcript + key (L2 -> L3_2)/items/per_item_diff[5]": {
+   "frozen": 0.3182,
+   "r10": 0.2727,
+   "change": -0.0455
+  },
+  "set_A/steps/transcript vs transcript + key (L2 -> L3_2)/boot95_run/kappa_change": {
+   "frozen": [
+    0.5917,
+    0.9346
+   ],
+   "r10": [
+    0.378,
+    0.708
+   ],
+   "change": null
+  },
+  "set_A/steps/transcript vs transcript + key (L2 -> L3_2)/boot95_run/balanced_accuracy_change": {
+   "frozen": [
+    0.2889,
+    0.4661
+   ],
+   "r10": [
+    0.2105,
+    0.3718
+   ],
+   "change": null
+  },
+  "set_A/steps/transcript vs transcript + key (L2 -> L3_2)/boot95_item/kappa_change": {
+   "frozen": [
+    0.642,
+    0.8799
+   ],
+   "r10": [
+    0.3974,
+    0.657
+   ],
+   "change": null
+  },
+  "set_A/steps/transcript vs transcript + key (L2 -> L3_2)/boot95_item/balanced_accuracy_change": {
+   "frozen": [
+    0.3123,
+    0.4393
+   ],
+   "r10": [
+    0.2256,
+    0.3466
+   ],
+   "change": null
+  },
+  "set_A/steps/script vs transcript judge (V1 -> L2)/kappa": {
+   "frozen": [
+    0.5236,
+    0.2405
+   ],
+   "r10": [
+    0.5236,
+    0.463
+   ],
+   "change": null
+  },
+  "set_A/steps/script vs transcript judge (V1 -> L2)/kappa_change": {
+   "frozen": -0.2831,
+   "r10": -0.0606,
+   "change": 0.2225
+  },
+  "set_A/steps/script vs transcript judge (V1 -> L2)/balanced_accuracy_change": {
+   "frozen": -0.1627,
+   "r10": -0.0767,
+   "change": 0.086
+  },
+  "set_A/steps/script vs transcript judge (V1 -> L2)/mcnemar_runs/later_right_earlier_wrong": {
+   "frozen": 19,
+   "r10": 23,
+   "change": 4.0
+  },
+  "set_A/steps/script vs transcript judge (V1 -> L2)/mcnemar_runs/earlier_right_later_wrong": {
+   "frozen": 34,
+   "r10": 21,
+   "change": -13.0
+  },
+  "set_A/steps/script vs transcript judge (V1 -> L2)/mcnemar_runs/p": {
+   "frozen": 0.0534,
+   "r10": 0.88,
+   "change": 0.8266
+  },
+  "set_A/steps/script vs transcript judge (V1 -> L2)/items/per_item_diff[0]": {
+   "frozen": -0.2727,
+   "r10": -0.0909,
+   "change": 0.1818
+  },
+  "set_A/steps/script vs transcript judge (V1 -> L2)/items/per_item_diff[1]": {
+   "frozen": -0.2727,
+   "r10": -0.1364,
+   "change": 0.1363
+  },
+  "set_A/steps/script vs transcript judge (V1 -> L2)/items/per_item_diff[2]": {
+   "frozen": -0.1905,
+   "r10": -0.0952,
+   "change": 0.0953
+  },
+  "set_A/steps/script vs transcript judge (V1 -> L2)/items/per_item_diff[3]": {
+   "frozen": -0.0455,
+   "r10": 0.1364,
+   "change": 0.1819
+  },
+  "set_A/steps/script vs transcript judge (V1 -> L2)/items/per_item_diff[4]": {
+   "frozen": 0.0476,
+   "r10": 0.1905,
+   "change": 0.1429
+  },
+  "set_A/steps/script vs transcript judge (V1 -> L2)/items/per_item_diff[5]": {
+   "frozen": 0.0455,
+   "r10": 0.0909,
+   "change": 0.0454
+  },
+  "set_A/steps/script vs transcript judge (V1 -> L2)/items/p_signflip": {
+   "frozen": 0.219,
+   "r10": 0.844,
+   "change": 0.625
+  },
+  "set_A/steps/script vs transcript judge (V1 -> L2)/items/sign_test/positive": {
+   "frozen": 2,
+   "r10": 3,
+   "change": 1.0
+  },
+  "set_A/steps/script vs transcript judge (V1 -> L2)/items/sign_test/negative": {
+   "frozen": 4,
+   "r10": 3,
+   "change": -1.0
+  },
+  "set_A/steps/script vs transcript judge (V1 -> L2)/items/sign_test/p": {
+   "frozen": 0.688,
+   "r10": 1.0,
+   "change": 0.312
+  },
+  "set_A/steps/script vs transcript judge (V1 -> L2)/boot95_run/kappa_change": {
+   "frozen": [
+    -0.4947,
+    -0.07
+   ],
+   "r10": [
+    -0.2791,
+    0.1599
+   ],
+   "change": null
+  },
+  "set_A/steps/script vs transcript judge (V1 -> L2)/boot95_run/balanced_accuracy_change": {
+   "frozen": [
+    -0.2693,
+    -0.055
+   ],
+   "r10": [
+    -0.1841,
+    0.0333
+   ],
+   "change": null
+  },
+  "set_A/steps/script vs transcript judge (V1 -> L2)/boot95_item/kappa_change": {
+   "frozen": [
+    -0.4888,
+    -0.0735
+   ],
+   "r10": [
+    -0.2434,
+    0.1691
+   ],
+   "change": null
+  },
+  "set_A/steps/script vs transcript judge (V1 -> L2)/boot95_item/balanced_accuracy_change": {
+   "frozen": [
+    -0.264,
+    -0.0496
+   ],
+   "r10": [
+    -0.1582,
+    0.0405
+   ],
+   "change": null
+  },
+  "set_A/steps/report vs transcript (added after the plan) (L0 -> L2)/kappa": {
+   "frozen": [
+    -0.021,
+    0.2405
+   ],
+   "r10": [
+    0.3215,
+    0.463
+   ],
+   "change": null
+  },
+  "set_A/steps/report vs transcript (added after the plan) (L0 -> L2)/kappa_change": {
+   "frozen": 0.2615,
+   "r10": 0.1415,
+   "change": -0.12
+  },
+  "set_A/steps/report vs transcript (added after the plan) (L0 -> L2)/balanced_accuracy_change": {
+   "frozen": 0.1338,
+   "r10": 0.0698,
+   "change": -0.064
+  },
+  "set_A/steps/report vs transcript (added after the plan) (L0 -> L2)/mcnemar_runs/later_right_earlier_wrong": {
+   "frozen": 26,
+   "r10": 14,
+   "change": -12.0
+  },
+  "set_A/steps/report vs transcript (added after the plan) (L0 -> L2)/mcnemar_runs/earlier_right_later_wrong": {
+   "frozen": 15,
+   "r10": 8,
+   "change": -7.0
+  },
+  "set_A/steps/report vs transcript (added after the plan) (L0 -> L2)/mcnemar_runs/p": {
+   "frozen": 0.117,
+   "r10": 0.286,
+   "change": 0.169
+  },
+  "set_A/steps/report vs transcript (added after the plan) (L0 -> L2)/items/per_item_diff[1]": {
+   "frozen": -0.0455,
+   "r10": -0.0909,
+   "change": -0.0454
+  },
+  "set_A/steps/report vs transcript (added after the plan) (L0 -> L2)/items/per_item_diff[2]": {
+   "frozen": 0.1429,
+   "r10": 0.3333,
+   "change": 0.1904
+  },
+  "set_A/steps/report vs transcript (added after the plan) (L0 -> L2)/items/per_item_diff[3]": {
+   "frozen": 0.1818,
+   "r10": 0.0,
+   "change": -0.1818
+  },
+  "set_A/steps/report vs transcript (added after the plan) (L0 -> L2)/items/per_item_diff[4]": {
+   "frozen": 0.1905,
+   "r10": 0.0476,
+   "change": -0.1429
+  },
+  "set_A/steps/report vs transcript (added after the plan) (L0 -> L2)/items/per_item_diff[5]": {
+   "frozen": 0.0455,
+   "r10": 0.0,
+   "change": -0.0455
+  },
+  "set_A/steps/report vs transcript (added after the plan) (L0 -> L2)/items/p_signflip": {
+   "frozen": 0.188,
+   "r10": 0.75,
+   "change": 0.562
+  },
+  "set_A/steps/report vs transcript (added after the plan) (L0 -> L2)/items/sign_test/positive": {
+   "frozen": 4,
+   "r10": 2,
+   "change": -2.0
+  },
+  "set_A/steps/report vs transcript (added after the plan) (L0 -> L2)/items/sign_test/p": {
+   "frozen": 0.375,
+   "r10": 1.0,
+   "change": 0.625
+  },
+  "set_A/steps/report vs transcript (added after the plan) (L0 -> L2)/boot95_run/kappa_change": {
+   "frozen": [
+    0.0747,
+    0.4443
+   ],
+   "r10": [
+    -0.0338,
+    0.3178
+   ],
+   "change": null
+  },
+  "set_A/steps/report vs transcript (added after the plan) (L0 -> L2)/boot95_run/balanced_accuracy_change": {
+   "frozen": [
+    0.0431,
+    0.226
+   ],
+   "r10": [
+    -0.0083,
+    0.151
+   ],
+   "change": null
+  },
+  "set_A/steps/report vs transcript (added after the plan) (L0 -> L2)/boot95_item/kappa_change": {
+   "frozen": [
+    0.094,
+    0.4073
+   ],
+   "r10": [
+    -0.0379,
+    0.3842
+   ],
+   "change": null
+  },
+  "set_A/steps/report vs transcript (added after the plan) (L0 -> L2)/boot95_item/balanced_accuracy_change": {
+   "frozen": [
+    0.0483,
+    0.2093
+   ],
+   "r10": [
+    0.0008,
+    0.1719
+   ],
+   "change": null
+  },
+  "luna/per_item/ep411/L0/correct": {
+   "frozen": 5,
+   "r10": 6,
+   "change": 1.0
+  },
+  "luna/per_item/ep411/L0/credited": {
+   "frozen": 7,
+   "r10": 6,
+   "change": -1.0
+  },
+  "luna/per_item/ep411/L0/omissions_credited": {
+   "frozen": 5,
+   "r10": 4,
+   "change": -1.0
+  },
+  "luna/per_item/ep411/L1/credited": {
+   "frozen": 5,
+   "r10": 7,
+   "change": 2.0
+  },
+  "luna/per_item/ep411/L1/omissions_credited": {
+   "frozen": 4,
+   "r10": 5,
+   "change": 1.0
+  },
+  "luna/per_item/ep411/L2/correct": {
+   "frozen": 5,
+   "r10": 4,
+   "change": -1.0
+  },
+  "luna/per_item/ep411/L2/credited": {
+   "frozen": 5,
+   "r10": 6,
+   "change": 1.0
+  },
+  "luna/per_item/ep411/L2/omissions_credited": {
+   "frozen": 4,
+   "r10": 5,
+   "change": 1.0
+  },
+  "luna/per_item/ep413/L0/correct": {
+   "frozen": 4,
+   "r10": 5,
+   "change": 1.0
+  },
+  "luna/per_item/ep413/L0/credited": {
+   "frozen": 6,
+   "r10": 5,
+   "change": -1.0
+  },
+  "luna/per_item/ep413/L0/omissions_credited": {
+   "frozen": 2,
+   "r10": 1,
+   "change": -1.0
+  },
+  "luna/per_item/ep413/L1/correct": {
+   "frozen": 7,
+   "r10": 6,
+   "change": -1.0
+  },
+  "luna/per_item/ep413/L1/credited": {
+   "frozen": 3,
+   "r10": 4,
+   "change": 1.0
+  },
+  "luna/per_item/ep413/L1/omissions_credited": {
+   "frozen": 1,
+   "r10": 2,
+   "change": 1.0
+  },
+  "luna/per_item/ep413/L2/commissions_credited": {
+   "frozen": 0,
+   "r10": 1,
+   "change": 1.0
+  },
+  "luna/per_item/ep413/L2/omissions_credited": {
+   "frozen": 2,
+   "r10": 1,
+   "change": -1.0
+  },
+  "luna/per_item/ep415/L0/correct": {
+   "frozen": 2,
+   "r10": 3,
+   "change": 1.0
+  },
+  "luna/per_item/ep415/L0/credited": {
+   "frozen": 7,
+   "r10": 6,
+   "change": -1.0
+  },
+  "luna/per_item/ep415/L0/omissions_credited": {
+   "frozen": 1,
+   "r10": 0,
+   "change": -1.0
+  },
+  "luna/per_item/ep415/L2/commissions_credited": {
+   "frozen": 4,
+   "r10": 3,
+   "change": -1.0
+  },
+  "luna/per_item/ep415/L2/omissions_credited": {
+   "frozen": 0,
+   "r10": 1,
+   "change": 1.0
+  },
+  "luna/per_item/ep472/L0/correct": {
+   "frozen": 5,
+   "r10": 6,
+   "change": 1.0
+  },
+  "luna/per_item/ep472/L0/credited": {
+   "frozen": 6,
+   "r10": 7,
+   "change": 1.0
+  },
+  "luna/per_item/ep472/L1/correct": {
+   "frozen": 3,
+   "r10": 6,
+   "change": 3.0
+  },
+  "luna/per_item/ep472/L1/credited": {
+   "frozen": 6,
+   "r10": 5,
+   "change": -1.0
+  },
+  "luna/per_item/ep472/L1/omissions_credited": {
+   "frozen": 5,
+   "r10": 3,
+   "change": -2.0
+  },
+  "luna/per_item/ep474/L0/correct": {
+   "frozen": 3,
+   "r10": 4,
+   "change": 1.0
+  },
+  "luna/per_item/ep474/L0/credited": {
+   "frozen": 7,
+   "r10": 6,
+   "change": -1.0
+  },
+  "luna/per_item/ep474/L0/omissions_credited": {
+   "frozen": 7,
+   "r10": 6,
+   "change": -1.0
+  },
+  "luna/per_item/ep474/L1/correct": {
+   "frozen": 3,
+   "r10": 4,
+   "change": 1.0
+  },
+  "luna/per_item/ep474/L1/credited": {
+   "frozen": 7,
+   "r10": 6,
+   "change": -1.0
+  },
+  "luna/per_item/ep474/L1/omissions_credited": {
+   "frozen": 7,
+   "r10": 6,
+   "change": -1.0
+  },
+  "luna/per_item/ep474/L2/correct": {
+   "frozen": 7,
+   "r10": 5,
+   "change": -2.0
+  },
+  "luna/per_item/ep474/L2/credited": {
+   "frozen": 3,
+   "r10": 5,
+   "change": 2.0
+  },
+  "luna/per_item/ep474/L2/omissions_credited": {
+   "frozen": 3,
+   "r10": 5,
+   "change": 2.0
+  },
+  "luna/per_item/ep476/L0/correct": {
+   "frozen": 4,
+   "r10": 5,
+   "change": 1.0
+  },
+  "luna/per_item/ep476/L0/credited": {
+   "frozen": 7,
+   "r10": 6,
+   "change": -1.0
+  },
+  "luna/per_item/ep476/L0/omissions_credited": {
+   "frozen": 5,
+   "r10": 4,
+   "change": -1.0
+  },
+  "luna/per_item/ep476/L1/correct": {
+   "frozen": 5,
+   "r10": 8,
+   "change": 3.0
+  },
+  "luna/per_item/ep476/L1/credited": {
+   "frozen": 6,
+   "r10": 3,
+   "change": -3.0
+  },
+  "luna/per_item/ep476/L1/commissions_credited": {
+   "frozen": 1,
+   "r10": 0,
+   "change": -1.0
+  },
+  "luna/per_item/ep476/L1/omissions_credited": {
+   "frozen": 4,
+   "r10": 2,
+   "change": -2.0
+  },
+  "luna/per_item/ep476/L2/correct": {
+   "frozen": 10,
+   "r10": 8,
+   "change": -2.0
+  },
+  "luna/per_item/ep476/L2/credited": {
+   "frozen": 1,
+   "r10": 3,
+   "change": 2.0
+  },
+  "luna/per_item/ep476/L2/omissions_credited": {
+   "frozen": 0,
+   "r10": 2,
+   "change": 2.0
+  },
+  "luna/steps/report vs log (L0 -> L1)/kappa": {
+   "frozen": [
+    0.0177,
+    -0.0333
+   ],
+   "r10": [
+    0.104,
+    0.1218
+   ],
+   "change": null
+  },
+  "luna/steps/report vs log (L0 -> L1)/kappa_change": {
+   "frozen": -0.051,
+   "r10": 0.0177,
+   "change": 0.0687
+  },
+  "luna/steps/report vs log (L0 -> L1)/balanced_accuracy_change": {
+   "frozen": -0.0674,
+   "r10": -0.0054,
+   "change": 0.062
+  },
+  "luna/steps/report vs log (L0 -> L1)/mcnemar_runs/later_right_earlier_wrong": {
+   "frozen": 9,
+   "r10": 10,
+   "change": 1.0
+  },
+  "luna/steps/report vs log (L0 -> L1)/mcnemar_runs/earlier_right_later_wrong": {
+   "frozen": 3,
+   "r10": 4,
+   "change": 1.0
+  },
+  "luna/steps/report vs log (L0 -> L1)/mcnemar_runs/p": {
+   "frozen": 0.146,
+   "r10": 0.18,
+   "change": 0.034
+  },
+  "luna/steps/report vs log (L0 -> L1)/items/per_item_diff[0]": {
+   "frozen": 0.0,
+   "r10": -0.1,
+   "change": -0.1
+  },
+  "luna/steps/report vs log (L0 -> L1)/items/per_item_diff[1]": {
+   "frozen": 0.3,
+   "r10": 0.1,
+   "change": -0.2
+  },
+  "luna/steps/report vs log (L0 -> L1)/items/per_item_diff[2]": {
+   "frozen": 0.4,
+   "r10": 0.3,
+   "change": -0.1
+  },
+  "luna/steps/report vs log (L0 -> L1)/items/per_item_diff[3]": {
+   "frozen": -0.2,
+   "r10": 0.0,
+   "change": 0.2
+  },
+  "luna/steps/report vs log (L0 -> L1)/items/per_item_diff[5]": {
+   "frozen": 0.1,
+   "r10": 0.3,
+   "change": 0.2
+  },
+  "luna/steps/report vs log (L0 -> L1)/boot95_run/kappa_change": {
+   "frozen": [
+    -0.2055,
+    0.0693
+   ],
+   "r10": [
+    -0.1241,
+    0.1404
+   ],
+   "change": null
+  },
+  "luna/steps/report vs log (L0 -> L1)/boot95_run/balanced_accuracy_change": {
+   "frozen": [
+    -0.2722,
+    0.0982
+   ],
+   "r10": [
+    -0.1875,
+    0.1154
+   ],
+   "change": null
+  },
+  "luna/steps/report vs log (L0 -> L1)/boot95_item/kappa_change": {
+   "frozen": [
+    -0.1875,
+    0.045
+   ],
+   "r10": [
+    -0.0783,
+    0.1167
+   ],
+   "change": null
+  },
+  "luna/steps/report vs log (L0 -> L1)/boot95_item/balanced_accuracy_change": {
+   "frozen": [
+    -0.1786,
+    0.1273
+   ],
+   "r10": [
+    -0.1,
+    0.1161
+   ],
+   "change": null
+  },
+  "luna/steps/log vs transcript (L1 -> L2)/kappa": {
+   "frozen": [
+    -0.0333,
+    0.2581
+   ],
+   "r10": [
+    0.1218,
+    0.1732
+   ],
+   "change": null
+  },
+  "luna/steps/log vs transcript (L1 -> L2)/kappa_change": {
+   "frozen": 0.2914,
+   "r10": 0.0514,
+   "change": -0.24
+  },
+  "luna/steps/log vs transcript (L1 -> L2)/balanced_accuracy_change": {
+   "frozen": 0.2655,
+   "r10": 0.0377,
+   "change": -0.2278
+  },
+  "luna/steps/log vs transcript (L1 -> L2)/mcnemar_runs/later_right_earlier_wrong": {
+   "frozen": 20,
+   "r10": 9,
+   "change": -11.0
+  },
+  "luna/steps/log vs transcript (L1 -> L2)/mcnemar_runs/p": {
+   "frozen": 0.00408,
+   "r10": 0.424,
+   "change": 0.4199
+  },
+  "luna/steps/log vs transcript (L1 -> L2)/items/per_item_diff[0]": {
+   "frozen": 0.0,
+   "r10": -0.1,
+   "change": -0.1
+  },
+  "luna/steps/log vs transcript (L1 -> L2)/items/per_item_diff[1]": {
+   "frozen": 0.1,
+   "r10": 0.2,
+   "change": 0.1
+  },
+  "luna/steps/log vs transcript (L1 -> L2)/items/per_item_diff[3]": {
+   "frozen": 0.6,
+   "r10": 0.3,
+   "change": -0.3
+  },
+  "luna/steps/log vs transcript (L1 -> L2)/items/per_item_diff[4]": {
+   "frozen": 0.4,
+   "r10": 0.1,
+   "change": -0.3
+  },
+  "luna/steps/log vs transcript (L1 -> L2)/items/per_item_diff[5]": {
+   "frozen": 0.5,
+   "r10": 0.0,
+   "change": -0.5
+  },
+  "luna/steps/log vs transcript (L1 -> L2)/items/p_signflip": {
+   "frozen": 0.188,
+   "r10": 0.5,
+   "change": 0.312
+  },
+  "luna/steps/log vs transcript (L1 -> L2)/items/sign_test/positive": {
+   "frozen": 4,
+   "r10": 3,
+   "change": -1.0
+  },
+  "luna/steps/log vs transcript (L1 -> L2)/items/sign_test/negative": {
+   "frozen": 1,
+   "r10": 2,
+   "change": 1.0
+  },
+  "luna/steps/log vs transcript (L1 -> L2)/items/sign_test/p": {
+   "frozen": 0.375,
+   "r10": 1.0,
+   "change": 0.625
+  },
+  "luna/steps/log vs transcript (L1 -> L2)/boot95_run/kappa_change": {
+   "frozen": [
+    0.0005,
+    0.5952
+   ],
+   "r10": [
+    -0.143,
+    0.2575
+   ],
+   "change": null
+  },
+  "luna/steps/log vs transcript (L1 -> L2)/boot95_run/balanced_accuracy_change": {
+   "frozen": [
+    -0.0278,
+    0.5455
+   ],
+   "r10": [
+    -0.1818,
+    0.2727
+   ],
+   "change": null
+  },
+  "luna/steps/log vs transcript (L1 -> L2)/boot95_item/kappa_change": {
+   "frozen": [
+    0.0032,
+    0.6812
+   ],
+   "r10": [
+    -0.1462,
+    0.3119
+   ],
+   "change": null
+  },
+  "luna/steps/log vs transcript (L1 -> L2)/boot95_item/balanced_accuracy_change": {
+   "frozen": [
+    0.0263,
+    0.4933
+   ],
+   "r10": [
+    -0.1875,
+    0.23
+   ],
+   "change": null
+  },
+  "luna/steps/transcript vs transcript + key (L2 -> L3_2)/kappa": {
+   "frozen": [
+    0.2581,
+    1.0
+   ],
+   "r10": [
+    0.1732,
+    1.0
+   ],
+   "change": null
+  },
+  "luna/steps/transcript vs transcript + key (L2 -> L3_2)/kappa_change": {
+   "frozen": 0.7419,
+   "r10": 0.8268,
+   "change": 0.0849
+  },
+  "luna/steps/transcript vs transcript + key (L2 -> L3_2)/balanced_accuracy_change": {
+   "frozen": 0.2749,
+   "r10": 0.3221,
+   "change": 0.0472
+  },
+  "luna/steps/transcript vs transcript + key (L2 -> L3_2)/mcnemar_runs/later_right_earlier_wrong": {
+   "frozen": 16,
+   "r10": 21,
+   "change": 5.0
+  },
+  "luna/steps/transcript vs transcript + key (L2 -> L3_2)/mcnemar_runs/p": {
+   "frozen": 3.05e-05,
+   "r10": 9.54e-07,
+   "change": -0.0
+  },
+  "luna/steps/transcript vs transcript + key (L2 -> L3_2)/items/per_item_diff[0]": {
+   "frozen": 0.5,
+   "r10": 0.6,
+   "change": 0.1
+  },
+  "luna/steps/transcript vs transcript + key (L2 -> L3_2)/items/per_item_diff[4]": {
+   "frozen": 0.3,
+   "r10": 0.5,
+   "change": 0.2
+  },
+  "luna/steps/transcript vs transcript + key (L2 -> L3_2)/items/per_item_diff[5]": {
+   "frozen": 0.0,
+   "r10": 0.2,
+   "change": 0.2
+  },
+  "luna/steps/transcript vs transcript + key (L2 -> L3_2)/items/p_signflip": {
+   "frozen": 0.0625,
+   "r10": 0.0312,
+   "change": -0.0313
+  },
+  "luna/steps/transcript vs transcript + key (L2 -> L3_2)/items/sign_test/positive": {
+   "frozen": 5,
+   "r10": 6,
+   "change": 1.0
+  },
+  "luna/steps/transcript vs transcript + key (L2 -> L3_2)/items/sign_test/p": {
+   "frozen": 0.0625,
+   "r10": 0.0312,
+   "change": -0.0313
+  },
+  "luna/steps/transcript vs transcript + key (L2 -> L3_2)/boot95_run/kappa_change": {
+   "frozen": [
+    0.5039,
+    0.9862
+   ],
+   "r10": [
+    0.6189,
+    1.0261
+   ],
+   "change": null
+  },
+  "luna/steps/transcript vs transcript + key (L2 -> L3_2)/boot95_run/balanced_accuracy_change": {
+   "frozen": [
+    0.1071,
+    0.4825
+   ],
+   "r10": [
+    0.1518,
+    0.531
+   ],
+   "change": null
+  },
+  "luna/steps/transcript vs transcript + key (L2 -> L3_2)/boot95_item/kappa_change": {
+   "frozen": [
+    0.3684,
+    1.0405
+   ],
+   "r10": [
+    0.5143,
+    1.0651
+   ],
+   "change": null
+  },
+  "luna/steps/transcript vs transcript + key (L2 -> L3_2)/boot95_item/balanced_accuracy_change": {
+   "frozen": [
+    0.0727,
+    0.5686
+   ],
+   "r10": [
+    0.1226,
+    0.6091
+   ],
+   "change": null
+  },
+  "luna/steps/script vs transcript judge (V1 -> L2)/kappa": {
+   "frozen": [
+    -0.1591,
+    0.2581
+   ],
+   "r10": [
+    -0.1591,
+    0.1732
+   ],
+   "change": null
+  },
+  "luna/steps/script vs transcript judge (V1 -> L2)/kappa_change": {
+   "frozen": 0.4172,
+   "r10": 0.3323,
+   "change": -0.0849
+  },
+  "luna/steps/script vs transcript judge (V1 -> L2)/balanced_accuracy_change": {
+   "frozen": 0.3194,
+   "r10": 0.2722,
+   "change": -0.0472
+  },
+  "luna/steps/script vs transcript judge (V1 -> L2)/mcnemar_runs/later_right_earlier_wrong": {
+   "frozen": 15,
+   "r10": 14,
+   "change": -1.0
+  },
+  "luna/steps/script vs transcript judge (V1 -> L2)/mcnemar_runs/earlier_right_later_wrong": {
+   "frozen": 14,
+   "r10": 18,
+   "change": 4.0
+  },
+  "luna/steps/script vs transcript judge (V1 -> L2)/mcnemar_runs/p": {
+   "frozen": 1.0,
+   "r10": 0.597,
+   "change": -0.403
+  },
+  "luna/steps/script vs transcript judge (V1 -> L2)/items/per_item_diff[0]": {
+   "frozen": -0.2,
+   "r10": -0.3,
+   "change": -0.1
+  },
+  "luna/steps/script vs transcript judge (V1 -> L2)/items/per_item_diff[4]": {
+   "frozen": 0.0,
+   "r10": -0.2,
+   "change": -0.2
+  },
+  "luna/steps/script vs transcript judge (V1 -> L2)/items/per_item_diff[5]": {
+   "frozen": 0.1,
+   "r10": -0.1,
+   "change": -0.2
+  },
+  "luna/steps/script vs transcript judge (V1 -> L2)/items/p_signflip": {
+   "frozen": 1.0,
+   "r10": 0.594,
+   "change": -0.406
+  },
+  "luna/steps/script vs transcript judge (V1 -> L2)/items/sign_test/positive": {
+   "frozen": 3,
+   "r10": 2,
+   "change": -1.0
+  },
+  "luna/steps/script vs transcript judge (V1 -> L2)/items/sign_test/negative": {
+   "frozen": 2,
+   "r10": 4,
+   "change": 2.0
+  },
+  "luna/steps/script vs transcript judge (V1 -> L2)/items/sign_test/p": {
+   "frozen": 1.0,
+   "r10": 0.688,
+   "change": -0.312
+  },
+  "luna/steps/script vs transcript judge (V1 -> L2)/boot95_run/kappa_change": {
+   "frozen": [
+    0.1098,
+    0.6962
+   ],
+   "r10": [
+    0.0782,
+    0.5808
+   ],
+   "change": null
+  },
+  "luna/steps/script vs transcript judge (V1 -> L2)/boot95_run/balanced_accuracy_change": {
+   "frozen": [
+    0.1,
+    0.5
+   ],
+   "r10": [
+    0.0526,
+    0.4576
+   ],
+   "change": null
+  },
+  "luna/steps/script vs transcript judge (V1 -> L2)/boot95_item/kappa_change": {
+   "frozen": [
+    0.0752,
+    0.7585
+   ],
+   "r10": [
+    0.0592,
+    0.669
+   ],
+   "change": null
+  },
+  "luna/steps/script vs transcript judge (V1 -> L2)/boot95_item/balanced_accuracy_change": {
+   "frozen": [
+    0.0364,
+    0.5185
+   ],
+   "r10": [
+    0.0,
+    0.4746
+   ],
+   "change": null
+  },
+  "luna/steps/report vs transcript (added after the plan) (L0 -> L2)/kappa": {
+   "frozen": [
+    0.0177,
+    0.2581
+   ],
+   "r10": [
+    0.104,
+    0.1732
+   ],
+   "change": null
+  },
+  "luna/steps/report vs transcript (added after the plan) (L0 -> L2)/kappa_change": {
+   "frozen": 0.2404,
+   "r10": 0.0692,
+   "change": -0.1712
+  },
+  "luna/steps/report vs transcript (added after the plan) (L0 -> L2)/balanced_accuracy_change": {
+   "frozen": 0.1981,
+   "r10": 0.0323,
+   "change": -0.1658
+  },
+  "luna/steps/report vs transcript (added after the plan) (L0 -> L2)/mcnemar_runs/later_right_earlier_wrong": {
+   "frozen": 23,
+   "r10": 14,
+   "change": -9.0
+  },
+  "luna/steps/report vs transcript (added after the plan) (L0 -> L2)/mcnemar_runs/earlier_right_later_wrong": {
+   "frozen": 2,
+   "r10": 4,
+   "change": 2.0
+  },
+  "luna/steps/report vs transcript (added after the plan) (L0 -> L2)/mcnemar_runs/p": {
+   "frozen": 1.94e-05,
+   "r10": 0.0309,
+   "change": 0.0309
+  },
+  "luna/steps/report vs transcript (added after the plan) (L0 -> L2)/items/per_item_diff[0]": {
+   "frozen": 0.0,
+   "r10": -0.2,
+   "change": -0.2
+  },
+  "luna/steps/report vs transcript (added after the plan) (L0 -> L2)/items/per_item_diff[1]": {
+   "frozen": 0.4,
+   "r10": 0.3,
+   "change": -0.1
+  },
+  "luna/steps/report vs transcript (added after the plan) (L0 -> L2)/items/per_item_diff[2]": {
+   "frozen": 0.3,
+   "r10": 0.2,
+   "change": -0.1
+  },
+  "luna/steps/report vs transcript (added after the plan) (L0 -> L2)/items/per_item_diff[3]": {
+   "frozen": 0.4,
+   "r10": 0.3,
+   "change": -0.1
+  },
+  "luna/steps/report vs transcript (added after the plan) (L0 -> L2)/items/per_item_diff[4]": {
+   "frozen": 0.4,
+   "r10": 0.1,
+   "change": -0.3
+  },
+  "luna/steps/report vs transcript (added after the plan) (L0 -> L2)/items/per_item_diff[5]": {
+   "frozen": 0.6,
+   "r10": 0.3,
+   "change": -0.3
+  },
+  "luna/steps/report vs transcript (added after the plan) (L0 -> L2)/items/p_signflip": {
+   "frozen": 0.0625,
+   "r10": 0.125,
+   "change": 0.0625
+  },
+  "luna/steps/report vs transcript (added after the plan) (L0 -> L2)/items/sign_test/negative": {
+   "frozen": 0,
+   "r10": 1,
+   "change": 1.0
+  },
+  "luna/steps/report vs transcript (added after the plan) (L0 -> L2)/items/sign_test/p": {
+   "frozen": 0.0625,
+   "r10": 0.219,
+   "change": 0.1565
+  },
+  "luna/steps/report vs transcript (added after the plan) (L0 -> L2)/boot95_run/kappa_change": {
+   "frozen": [
+    0.0122,
+    0.4815
+   ],
+   "r10": [
+    -0.0889,
+    0.2215
+   ],
+   "change": null
+  },
+  "luna/steps/report vs transcript (added after the plan) (L0 -> L2)/boot95_run/balanced_accuracy_change": {
+   "frozen": [
+    -0.024,
+    0.4286
+   ],
+   "r10": [
+    -0.1394,
+    0.1579
+   ],
+   "change": null
+  },
+  "luna/steps/report vs transcript (added after the plan) (L0 -> L2)/boot95_item/kappa_change": {
+   "frozen": [
+    -0.0194,
+    0.5751
+   ],
+   "r10": [
+    -0.1209,
+    0.2944
+   ],
+   "change": null
+  },
+  "luna/steps/report vs transcript (added after the plan) (L0 -> L2)/boot95_item/balanced_accuracy_change": {
+   "frozen": [
+    -0.0687,
+    0.3704
+   ],
+   "r10": [
+    -0.1765,
+    0.1667
+   ],
+   "change": null
+  },
+  "main_study/per_item/ep413/L0/correct": {
+   "frozen": 4,
+   "r10": 5,
+   "change": 1.0
+  },
+  "main_study/per_item/ep413/L0/credited": {
+   "frozen": 6,
+   "r10": 7,
+   "change": 1.0
+  },
+  "main_study/per_item/ep413/L2/correct": {
+   "frozen": 5,
+   "r10": 4,
+   "change": -1.0
+  },
+  "main_study/per_item/ep413/L2/credited": {
+   "frozen": 5,
+   "r10": 6,
+   "change": 1.0
+  },
+  "main_study/per_item/ep413/L2/commissions_credited": {
+   "frozen": 0,
+   "r10": 1,
+   "change": 1.0
+  },
+  "main_study/per_item/ep415/L2/correct": {
+   "frozen": 6,
+   "r10": 7,
+   "change": 1.0
+  },
+  "main_study/per_item/ep415/L2/credited": {
+   "frozen": 10,
+   "r10": 11,
+   "change": 1.0
+  },
+  "main_study/per_item/ep472/L0/correct": {
+   "frozen": 7,
+   "r10": 9,
+   "change": 2.0
+  },
+  "main_study/per_item/ep472/L0/omissions_credited": {
+   "frozen": 3,
+   "r10": 2,
+   "change": -1.0
+  },
+  "main_study/per_item/ep474/L0/correct": {
+   "frozen": 4,
+   "r10": 5,
+   "change": 1.0
+  },
+  "main_study/per_item/ep474/L0/credited": {
+   "frozen": 7,
+   "r10": 8,
+   "change": 1.0
+  },
+  "main_study/steps/report vs transcript (no log rung) (L0 -> L2)/kappa": {
+   "frozen": [
+    0.0562,
+    0.2629
+   ],
+   "r10": [
+    0.207,
+    0.236
+   ],
+   "change": null
+  },
+  "main_study/steps/report vs transcript (no log rung) (L0 -> L2)/kappa_change": {
+   "frozen": 0.2067,
+   "r10": 0.029,
+   "change": -0.1777
+  },
+  "main_study/steps/report vs transcript (no log rung) (L0 -> L2)/balanced_accuracy_change": {
+   "frozen": 0.0901,
+   "r10": 0.0152,
+   "change": -0.0749
+  },
+  "main_study/steps/report vs transcript (no log rung) (L0 -> L2)/mcnemar_runs/later_right_earlier_wrong": {
+   "frozen": 8,
+   "r10": 6,
+   "change": -2.0
+  },
+  "main_study/steps/report vs transcript (no log rung) (L0 -> L2)/mcnemar_runs/earlier_right_later_wrong": {
+   "frozen": 4,
+   "r10": 6,
+   "change": 2.0
+  },
+  "main_study/steps/report vs transcript (no log rung) (L0 -> L2)/mcnemar_runs/p": {
+   "frozen": 0.388,
+   "r10": 1.0,
+   "change": 0.612
+  },
+  "main_study/steps/report vs transcript (no log rung) (L0 -> L2)/items/per_item_diff[1]": {
+   "frozen": 0.125,
+   "r10": -0.125,
+   "change": -0.25
+  },
+  "main_study/steps/report vs transcript (no log rung) (L0 -> L2)/items/per_item_diff[2]": {
+   "frozen": -0.0833,
+   "r10": 0.0,
+   "change": 0.0833
+  },
+  "main_study/steps/report vs transcript (no log rung) (L0 -> L2)/items/per_item_diff[3]": {
+   "frozen": 0.1667,
+   "r10": 0.0,
+   "change": -0.1667
+  },
+  "main_study/steps/report vs transcript (no log rung) (L0 -> L2)/items/per_item_diff[4]": {
+   "frozen": 0.375,
+   "r10": 0.25,
+   "change": -0.125
+  },
+  "main_study/steps/report vs transcript (no log rung) (L0 -> L2)/items/p_signflip": {
+   "frozen": 0.406,
+   "r10": 1.0,
+   "change": 0.594
+  },
+  "main_study/steps/report vs transcript (no log rung) (L0 -> L2)/items/sign_test/positive": {
+   "frozen": 4,
+   "r10": 2,
+   "change": -2.0
+  },
+  "main_study/steps/report vs transcript (no log rung) (L0 -> L2)/items/sign_test/p": {
+   "frozen": 0.688,
+   "r10": 1.0,
+   "change": 0.312
+  },
+  "main_study/steps/report vs transcript (no log rung) (L0 -> L2)/boot95_run/kappa_change": {
+   "frozen": [
+    -0.1257,
+    0.5221
+   ],
+   "r10": [
+    -0.3478,
+    0.398
+   ],
+   "change": null
+  },
+  "main_study/steps/report vs transcript (no log rung) (L0 -> L2)/boot95_run/balanced_accuracy_change": {
+   "frozen": [
+    -0.0556,
+    0.2322
+   ],
+   "r10": [
+    -0.1471,
+    0.1771
+   ],
+   "change": null
+  },
+  "main_study/steps/report vs transcript (no log rung) (L0 -> L2)/boot95_item/kappa_change": {
+   "frozen": [
+    -0.1784,
+    0.5633
+   ],
+   "r10": [
+    -0.2774,
+    0.3821
+   ],
+   "change": null
+  },
+  "main_study/steps/report vs transcript (no log rung) (L0 -> L2)/boot95_item/balanced_accuracy_change": {
+   "frozen": [
+    -0.0697,
+    0.2556
+   ],
+   "r10": [
+    -0.1154,
+    0.1701
+   ],
+   "change": null
+  },
+  "main_study/steps/transcript vs transcript + key (L2 -> L3_2)/kappa": {
+   "frozen": [
+    0.2629,
+    0.962
+   ],
+   "r10": [
+    0.236,
+    0.962
+   ],
+   "change": null
+  },
+  "main_study/steps/transcript vs transcript + key (L2 -> L3_2)/kappa_change": {
+   "frozen": 0.6991,
+   "r10": 0.726,
+   "change": 0.0269
+  },
+  "main_study/steps/transcript vs transcript + key (L2 -> L3_2)/balanced_accuracy_change": {
+   "frozen": 0.3602,
+   "r10": 0.3754,
+   "change": 0.0152
+  },
+  "main_study/steps/transcript vs transcript + key (L2 -> L3_2)/items/per_item_diff[1]": {
+   "frozen": 0.375,
+   "r10": 0.5,
+   "change": 0.125
+  },
+  "main_study/steps/transcript vs transcript + key (L2 -> L3_2)/items/per_item_diff[2]": {
+   "frozen": 0.5,
+   "r10": 0.4167,
+   "change": -0.0833
+  },
+  "main_study/steps/transcript vs transcript + key (L2 -> L3_2)/boot95_run/kappa_change": {
+   "frozen": [
+    0.4555,
+    0.9524
+   ],
+   "r10": [
+    0.4884,
+    0.971
+   ],
+   "change": null
+  },
+  "main_study/steps/transcript vs transcript + key (L2 -> L3_2)/boot95_run/balanced_accuracy_change": {
+   "frozen": [
+    0.2432,
+    0.4731
+   ],
+   "r10": [
+    0.2619,
+    0.4841
+   ],
+   "change": null
+  },
+  "main_study/steps/transcript vs transcript + key (L2 -> L3_2)/boot95_item/kappa_change": {
+   "frozen": [
+    0.4266,
+    1.0113
+   ],
+   "r10": [
+    0.4548,
+    1.0
+   ],
+   "change": null
+  },
+  "main_study/steps/transcript vs transcript + key (L2 -> L3_2)/boot95_item/balanced_accuracy_change": {
+   "frozen": [
+    0.2368,
+    0.5
+   ],
+   "r10": [
+    0.2504,
+    0.4984
+   ],
+   "change": null
+  },
+  "main_study/steps/script vs transcript judge (V1 -> L2)/kappa": {
+   "frozen": [
+    0.426,
+    0.2629
+   ],
+   "r10": [
+    0.426,
+    0.236
+   ],
+   "change": null
+  },
+  "main_study/steps/script vs transcript judge (V1 -> L2)/kappa_change": {
+   "frozen": -0.1631,
+   "r10": -0.1901,
+   "change": -0.027
+  },
+  "main_study/steps/script vs transcript judge (V1 -> L2)/balanced_accuracy_change": {
+   "frozen": -0.1643,
+   "r10": -0.1795,
+   "change": -0.0152
+  },
+  "main_study/steps/script vs transcript judge (V1 -> L2)/items/per_item_diff[1]": {
+   "frozen": 0.0,
+   "r10": -0.125,
+   "change": -0.125
+  },
+  "main_study/steps/script vs transcript judge (V1 -> L2)/items/per_item_diff[2]": {
+   "frozen": -0.3333,
+   "r10": -0.25,
+   "change": 0.0833
+  },
+  "main_study/steps/script vs transcript judge (V1 -> L2)/items/p_signflip": {
+   "frozen": 0.625,
+   "r10": 0.688,
+   "change": 0.063
+  },
+  "main_study/steps/script vs transcript judge (V1 -> L2)/items/sign_test/negative": {
+   "frozen": 1,
+   "r10": 2,
+   "change": 1.0
+  },
+  "main_study/steps/script vs transcript judge (V1 -> L2)/items/sign_test/p": {
+   "frozen": 0.375,
+   "r10": 0.688,
+   "change": 0.313
+  },
+  "main_study/steps/script vs transcript judge (V1 -> L2)/boot95_run/kappa_change": {
+   "frozen": [
+    -0.4673,
+    0.1393
+   ],
+   "r10": [
+    -0.4821,
+    0.1062
+   ],
+   "change": null
+  },
+  "main_study/steps/script vs transcript judge (V1 -> L2)/boot95_run/balanced_accuracy_change": {
+   "frozen": [
+    -0.2996,
+    -0.0292
+   ],
+   "r10": [
+    -0.3029,
+    -0.0495
+   ],
+   "change": null
+  },
+  "main_study/steps/script vs transcript judge (V1 -> L2)/boot95_item/kappa_change": {
+   "frozen": [
+    -0.5327,
+    0.1441
+   ],
+   "r10": [
+    -0.5179,
+    0.106
+   ],
+   "change": null
+  },
+  "main_study/steps/script vs transcript judge (V1 -> L2)/boot95_item/balanced_accuracy_change": {
+   "frozen": [
+    -0.3292,
+    -0.0142
+   ],
+   "r10": [
+    -0.3136,
+    -0.05
+   ],
+   "change": null
+  },
+  "harder_variant/per_item/ep416/L0/correct": {
+   "frozen": 0,
+   "r10": 1,
+   "change": 1.0
+  },
+  "harder_variant/per_item/ep416/L0/credited": {
+   "frozen": 0,
+   "r10": 1,
+   "change": 1.0
+  },
+  "harder_variant/per_item/ep483/L3_0/correct": {
+   "frozen": 3,
+   "r10": 2,
+   "change": -1.0
+  },
+  "harder_variant/per_item/ep483/L3_0/credited": {
+   "frozen": 2,
+   "r10": 1,
+   "change": -1.0
+  },
+  "harder_variant/steps/report vs report + key (L0 -> L3_0)/kappa": {
+   "frozen": [
+    0.1,
+    0.7692
+   ],
+   "r10": [
+    0.2105,
+    0.6667
+   ],
+   "change": null
+  },
+  "harder_variant/steps/report vs report + key (L0 -> L3_0)/kappa_change": {
+   "frozen": 0.6692,
+   "r10": 0.4561,
+   "change": -0.2131
+  },
+  "harder_variant/steps/report vs report + key (L0 -> L3_0)/balanced_accuracy_change": {
+   "frozen": 0.375,
+   "r10": 0.2917,
+   "change": -0.0833
+  },
+  "harder_variant/steps/report vs report + key (L0 -> L3_0)/mcnemar_runs/later_right_earlier_wrong": {
+   "frozen": 6,
+   "r10": 5,
+   "change": -1.0
+  },
+  "harder_variant/steps/report vs report + key (L0 -> L3_0)/mcnemar_runs/earlier_right_later_wrong": {
+   "frozen": 2,
+   "r10": 3,
+   "change": 1.0
+  },
+  "harder_variant/steps/report vs report + key (L0 -> L3_0)/mcnemar_runs/p": {
+   "frozen": 0.289,
+   "r10": 0.727,
+   "change": 0.438
+  },
+  "harder_variant/steps/report vs report + key (L0 -> L3_0)/items/per_item_diff[2]": {
+   "frozen": 1.0,
+   "r10": 0.0,
+   "change": -1.0
+  },
+  "harder_variant/steps/report vs report + key (L0 -> L3_0)/items/per_item_diff[4]": {
+   "frozen": -0.2,
+   "r10": -0.4,
+   "change": -0.2
+  },
+  "harder_variant/steps/report vs report + key (L0 -> L3_0)/items/p_signflip": {
+   "frozen": 0.25,
+   "r10": 0.5,
+   "change": 0.25
+  },
+  "harder_variant/steps/report vs report + key (L0 -> L3_0)/items/sign_test/positive": {
+   "frozen": 3,
+   "r10": 2,
+   "change": -1.0
+  },
+  "harder_variant/steps/report vs report + key (L0 -> L3_0)/items/sign_test/p": {
+   "frozen": 0.625,
+   "r10": 1.0,
+   "change": 0.375
+  },
+  "harder_variant/steps/report vs report + key (L0 -> L3_0)/boot95_run/kappa_change": {
+   "frozen": [
+    0.0952,
+    1.1111
+   ],
+   "r10": [
+    -0.1212,
+    0.8861
+   ],
+   "change": null
+  },
+  "harder_variant/steps/report vs report + key (L0 -> L3_0)/boot95_run/balanced_accuracy_change": {
+   "frozen": [
+    0.1494,
+    0.5667
+   ],
+   "r10": [
+    0.0714,
+    0.4615
+   ],
+   "change": null
+  },
+  "harder_variant/steps/report vs report + key (L0 -> L3_0)/boot95_run/undefined_draws_kappa": {
+   "frozen": 2,
+   "r10": 9,
+   "change": 7.0
+  },
+  "harder_variant/steps/report vs report + key (L0 -> L3_0)/boot95_item/kappa_change": {
+   "frozen": [
+    0.0828,
+    1.2143
+   ],
+   "r10": [
+    -0.2366,
+    1.0
+   ],
+   "change": null
+  },
+  "harder_variant/steps/report vs report + key (L0 -> L3_0)/boot95_item/balanced_accuracy_change": {
+   "frozen": [
+    0.1212,
+    0.6
+   ],
+   "r10": [
+    0.0,
+    0.5
+   ],
+   "change": null
+  },
+  "body_table[0]/hard_kappa": {
+   "frozen": -0.021,
+   "r10": 0.3215,
+   "change": 0.3425
+  },
+  "body_table[0]/hard_kappa_item95": {
+   "frozen": [
+    -0.0789,
+    0.0439
+   ],
+   "r10": [
+    0.0896,
+    0.5311
+   ],
+   "change": null
+  },
+  "body_table[0]/hard_balanced_accuracy": {
+   "frozen": 0.49,
+   "r10": 0.6399,
+   "change": 0.1499
+  },
+  "body_table[0]/all_slot_kappa": {
+   "frozen": 0.0941,
+   "r10": 0.369,
+   "change": 0.2749
+  },
+  "body_table[0]/all_slot_balanced_accuracy": {
+   "frozen": 0.5525,
+   "r10": 0.668,
+   "change": 0.1155
+  },
+  "body_table[0]/omissions_credited": {
+   "frozen": "23/26",
+   "r10": "19/26",
+   "change": -0.1538
+  },
+  "body_table[0]/passes_blamed": {
+   "frozen": "24/87",
+   "r10": "6/87",
+   "change": -0.2069
+  },
+  "body_table[1]/hard_kappa": {
+   "frozen": 0.0626,
+   "r10": 0.4251,
+   "change": 0.3625
+  },
+  "body_table[1]/hard_kappa_item95": {
+   "frozen": [
+    -0.0347,
+    0.1705
+   ],
+   "r10": [
+    0.3314,
+    0.5351
+   ],
+   "change": null
+  },
+  "body_table[1]/hard_balanced_accuracy": {
+   "frozen": 0.5307,
+   "r10": 0.6863,
+   "change": 0.1556
+  },
+  "body_table[1]/all_slot_kappa": {
+   "frozen": 0.2076,
+   "r10": 0.4514,
+   "change": 0.2438
+  },
+  "body_table[1]/all_slot_balanced_accuracy": {
+   "frozen": 0.622,
+   "r10": 0.7064,
+   "change": 0.0844
+  },
+  "body_table[1]/commissions_credited": {
+   "frozen": "7/17",
+   "r10": "6/17",
+   "change": -0.0588
+  },
+  "body_table[1]/omissions_credited": {
+   "frozen": "21/26",
+   "r10": "19/26",
+   "change": -0.0769
+  },
+  "body_table[1]/passes_blamed": {
+   "frozen": "25/87",
+   "r10": "4/87",
+   "change": -0.2414
+  },
+  "body_table[2]/hard_kappa": {
+   "frozen": 0.2405,
+   "r10": 0.463,
+   "change": 0.2225
+  },
+  "body_table[2]/hard_kappa_item95": {
+   "frozen": [
+    0.1201,
+    0.358
+   ],
+   "r10": [
+    0.343,
+    0.6026
+   ],
+   "change": null
+  },
+  "body_table[2]/hard_balanced_accuracy": {
+   "frozen": 0.6238,
+   "r10": 0.7097,
+   "change": 0.0859
+  },
+  "body_table[2]/all_slot_kappa": {
+   "frozen": 0.3191,
+   "r10": 0.5473,
+   "change": 0.2282
+  },
+  "body_table[2]/all_slot_balanced_accuracy": {
+   "frozen": 0.6949,
+   "r10": 0.7515,
+   "change": 0.0566
+  },
+  "body_table[2]/commissions_credited": {
+   "frozen": "3/17",
+   "r10": "6/17",
+   "change": 0.1765
+  },
+  "body_table[2]/omissions_credited": {
+   "frozen": "17/26",
+   "r10": "16/26",
+   "change": -0.0385
+  },
+  "body_table[2]/passes_blamed": {
+   "frozen": "25/87",
+   "r10": "6/87",
+   "change": -0.2184
+  },
+  "body_table[5]/hard_kappa": {
+   "frozen": 0.0177,
+   "r10": 0.104,
+   "change": 0.0863
+  },
+  "body_table[5]/hard_kappa_item95": {
+   "frozen": [
+    -0.0909,
+    0.1154
+   ],
+   "r10": [
+    -0.0571,
+    0.2373
+   ],
+   "change": null
+  },
+  "body_table[5]/hard_balanced_accuracy": {
+   "frozen": 0.527,
+   "r10": 0.6456,
+   "change": 0.1186
+  },
+  "body_table[5]/all_slot_kappa": {
+   "frozen": 0.3001,
+   "r10": 0.4016,
+   "change": 0.1015
+  },
+  "body_table[5]/all_slot_balanced_accuracy": {
+   "frozen": 0.6477,
+   "r10": 0.6974,
+   "change": 0.0497
+  },
+  "body_table[5]/omissions_credited": {
+   "frozen": "24/38",
+   "r10": "19/38",
+   "change": -0.1316
+  },
+  "body_table[5]/passes_blamed": {
+   "frozen": "2/7",
+   "r10": "1/7",
+   "change": -0.1429
+  },
+  "body_table[6]/hard_kappa": {
+   "frozen": -0.0333,
+   "r10": 0.1218,
+   "change": 0.1551
+  },
+  "body_table[6]/hard_kappa_item95": {
+   "frozen": [
+    -0.1413,
+    0.071
+   ],
+   "r10": [
+    -0.0332,
+    0.25
+   ],
+   "change": null
+  },
+  "body_table[6]/hard_balanced_accuracy": {
+   "frozen": 0.4596,
+   "r10": 0.6402,
+   "change": 0.1806
+  },
+  "body_table[6]/all_slot_kappa": {
+   "frozen": 0.3297,
+   "r10": 0.4677,
+   "change": 0.138
+  },
+  "body_table[6]/all_slot_balanced_accuracy": {
+   "frozen": 0.6654,
+   "r10": 0.7326,
+   "change": 0.0672
+  },
+  "body_table[6]/commissions_credited": {
+   "frozen": "6/15",
+   "r10": "5/15",
+   "change": -0.0667
+  },
+  "body_table[6]/omissions_credited": {
+   "frozen": "21/38",
+   "r10": "18/38",
+   "change": -0.0789
+  },
+  "body_table[6]/passes_blamed": {
+   "frozen": "4/7",
+   "r10": "2/7",
+   "change": -0.2857
+  },
+  "body_table[7]/hard_kappa": {
+   "frozen": 0.2581,
+   "r10": 0.1732,
+   "change": -0.0849
+  },
+  "body_table[7]/hard_kappa_item95": {
+   "frozen": [
+    -0.0405,
+    0.6316
+   ],
+   "r10": [
+    -0.0651,
+    0.4857
+   ],
+   "change": null
+  },
+  "body_table[7]/hard_balanced_accuracy": {
+   "frozen": 0.7251,
+   "r10": 0.6779,
+   "change": -0.0472
+  },
+  "body_table[7]/all_slot_kappa": {
+   "frozen": 0.5811,
+   "r10": 0.6047,
+   "change": 0.0236
+  },
+  "body_table[7]/all_slot_balanced_accuracy": {
+   "frozen": 0.7914,
+   "r10": 0.8021,
+   "change": 0.0107
+  },
+  "body_table[7]/omissions_credited": {
+   "frozen": "10/38",
+   "r10": "15/38",
+   "change": 0.1316
+  },
+  "body_table[10]/hard_kappa": {
+   "frozen": 0.0562,
+   "r10": 0.207,
+   "change": 0.1508
+  },
+  "body_table[10]/hard_kappa_item95": {
+   "frozen": [
+    -0.1139,
+    0.2699
+   ],
+   "r10": [
+    -0.0196,
+    0.4105
+   ],
+   "change": null
+  },
+  "body_table[10]/hard_balanced_accuracy": {
+   "frozen": 0.5234,
+   "r10": 0.583,
+   "change": 0.0596
+  },
+  "body_table[10]/all_slot_kappa": {
+   "frozen": 0.097,
+   "r10": 0.2245,
+   "change": 0.1275
+  },
+  "body_table[10]/all_slot_balanced_accuracy": {
+   "frozen": 0.5473,
+   "r10": 0.5905,
+   "change": 0.0432
+  },
+  "body_table[10]/omissions_credited": {
+   "frozen": "13/13",
+   "r10": "12/13",
+   "change": -0.0769
+  },
+  "body_table[10]/passes_blamed": {
+   "frozen": "5/45",
+   "r10": "2/45",
+   "change": -0.0667
+  },
+  "body_table[11]/hard_kappa": {
+   "frozen": 0.2629,
+   "r10": 0.236,
+   "change": -0.0269
+  },
+  "body_table[11]/hard_kappa_item95": {
+   "frozen": [
+    -0.036,
+    0.539
+   ],
+   "r10": [
+    -0.0137,
+    0.5119
+   ],
+   "change": null
+  },
+  "body_table[11]/hard_balanced_accuracy": {
+   "frozen": 0.6135,
+   "r10": 0.5982,
+   "change": -0.0153
+  },
+  "body_table[11]/all_slot_kappa": {
+   "frozen": 0.2831,
+   "r10": 0.3249,
+   "change": 0.0418
+  },
+  "body_table[11]/all_slot_balanced_accuracy": {
+   "frozen": 0.6347,
+   "r10": 0.6231,
+   "change": -0.0116
+  },
+  "body_table[11]/commissions_credited": {
+   "frozen": "5/6",
+   "r10": "6/6",
+   "change": 0.1667
+  },
+  "body_table[11]/passes_blamed": {
+   "frozen": "4/45",
+   "r10": "3/45",
+   "change": -0.0222
+  },
+  "body_table[14]/hard_kappa": {
+   "frozen": 0.1,
+   "r10": 0.2105,
+   "change": 0.1105
+  },
+  "body_table[14]/hard_kappa_item95": {
+   "frozen": [
+    -0.25,
+    0.5758
+   ],
+   "r10": [
+    0.0,
+    0.7586
+   ],
+   "change": null
+  },
+  "body_table[14]/hard_balanced_accuracy": {
+   "frozen": 0.5417,
+   "r10": 0.5833,
+   "change": 0.0416
+  },
+  "body_table[14]/all_slot_kappa": {
+   "frozen": 0.1818,
+   "r10": 0.2746,
+   "change": 0.0928
+  },
+  "body_table[14]/all_slot_balanced_accuracy": {
+   "frozen": 0.5967,
+   "r10": 0.6198,
+   "change": 0.0231
+  },
+  "body_table[14]/passes_blamed": {
+   "frozen": "1/12",
+   "r10": "0/12",
+   "change": -0.0833
+  },
+  "body_table[15]/hard_kappa": {
+   "frozen": 0.7692,
+   "r10": 0.6667,
+   "change": -0.1025
+  },
+  "body_table[15]/hard_kappa_item95": {
+   "frozen": [
+    0.4286,
+    1.0
+   ],
+   "r10": [
+    0.2703,
+    1.0
+   ],
+   "change": null
+  },
+  "body_table[15]/hard_balanced_accuracy": {
+   "frozen": 0.9167,
+   "r10": 0.875,
+   "change": -0.0417
+  },
+  "body_table[15]/passes_blamed": {
+   "frozen": "2/12",
+   "r10": "3/12",
+   "change": 0.0833
+  }
+ }
+}

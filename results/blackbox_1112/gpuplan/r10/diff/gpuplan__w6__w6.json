@@ -1,0 +1,71 @@
+{
+ "file": "gpuplan/w6/w6.json",
+ "changed": 13,
+ "rows": {
+  "p_0004[0]/set": {
+   "frozen": "luna",
+   "r10": null,
+   "change": null
+  },
+  "p_0004[0]/step": {
+   "frozen": "log vs transcript (L1 -> L2)",
+   "r10": null,
+   "change": null
+  },
+  "p_0004[0]/later_right_earlier_wrong": {
+   "frozen": 20,
+   "r10": null,
+   "change": null
+  },
+  "p_0004[0]/earlier_right_later_wrong": {
+   "frozen": 5,
+   "r10": null,
+   "change": null
+  },
+  "p_0004[0]/p": {
+   "frozen": 0.00408,
+   "r10": null,
+   "change": null
+  },
+  "commission_credit_set_A/L0/hard_kappa": {
+   "frozen": -0.021,
+   "r10": 0.3215,
+   "change": 0.3425
+  },
+  "commission_credit_set_A/L0r/hard_kappa": {
+   "frozen": -0.007,
+   "r10": 0.3782,
+   "change": 0.3852
+  },
+  "commission_credit_set_A/L1/commissions_credited": {
+   "frozen": "7/17",
+   "r10": "6/17",
+   "change": -0.0588
+  },
+  "commission_credit_set_A/L1/hard_kappa": {
+   "frozen": 0.0626,
+   "r10": 0.4251,
+   "change": 0.3625
+  },
+  "report_level_populations/runs_214/kappa": {
+   "frozen": 0.002,
+   "r10": 0.284,
+   "change": 0.282
+  },
+  "report_level_populations/runs_214/failures_credited": {
+   "frozen": "53/68",
+   "r10": "48/68",
+   "change": -0.0735
+  },
+  "report_level_populations/runs_196_reconciled/kappa": {
+   "frozen": -0.006,
+   "r10": 0.291,
+   "change": 0.297
+  },
+  "report_level_populations/runs_196_reconciled/failures_credited": {
+   "frozen": "48/62",
+   "r10": "43/62",
+   "change": -0.0806
+  }
+ }
+}

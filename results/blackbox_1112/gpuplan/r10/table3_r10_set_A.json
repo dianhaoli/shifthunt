@@ -5,45 +5,45 @@
  "levels": {
   "AD5": {
    "judge": "Terra",
-   "runs": 32,
-   "hard_kappa": 0.139,
+   "runs": 130,
+   "hard_kappa": 0.126,
    "item95": [
-    -0.18,
-    0.39
+    -0.14,
+    0.35
    ],
-   "wrong_cues_credited": "1/3",
-   "wrong_none_credited": "9/10",
-   "passes_rejected": "2/19",
+   "wrong_cues_credited": "10/17",
+   "wrong_none_credited": "25/26",
+   "passes_rejected": "7/87",
    "abstained": 0,
-   "answer_type_baseline_kappa": 0.798
+   "answer_type_baseline_kappa": 0.672
   },
   "ADa": {
    "judge": "Terra",
-   "runs": 20,
-   "hard_kappa": 0.659,
+   "runs": 130,
+   "hard_kappa": 0.526,
    "item95": [
-    0.21,
-    1.0
+    0.38,
+    0.7
    ],
-   "wrong_cues_credited": "0/3",
-   "wrong_none_credited": "2/4",
-   "passes_rejected": "1/13",
+   "wrong_cues_credited": "4/17",
+   "wrong_none_credited": "13/26",
+   "passes_rejected": "9/87",
    "abstained": 0,
-   "answer_type_baseline_kappa": 0.634
+   "answer_type_baseline_kappa": 0.672
   },
   "ADb": {
    "judge": "Terra",
-   "runs": 44,
-   "hard_kappa": 0.598,
+   "runs": 130,
+   "hard_kappa": 0.565,
    "item95": [
-    0.28,
-    0.87
+    0.34,
+    0.76
    ],
-   "wrong_cues_credited": "0/8",
-   "wrong_none_credited": "0/6",
-   "passes_rejected": "9/30",
+   "wrong_cues_credited": "1/17",
+   "wrong_none_credited": "0/26",
+   "passes_rejected": "28/87",
    "abstained": 0,
-   "answer_type_baseline_kappa": 0.506
+   "answer_type_baseline_kappa": 0.672
   },
   "C8T": {
    "judge": "Terra",
@@ -383,17 +383,17 @@
   },
   "O2": {
    "judge": "Terra",
-   "runs": 31,
-   "hard_kappa": 0.684,
+   "runs": 130,
+   "hard_kappa": 0.52,
    "item95": [
-    0.5,
-    0.93
+    0.33,
+    0.72
    ],
-   "wrong_cues_credited": "0/8",
-   "wrong_none_credited": "0/4",
-   "passes_rejected": "5/19",
-   "abstained": 17,
-   "answer_type_baseline_kappa": 0.38
+   "wrong_cues_credited": "0/17",
+   "wrong_none_credited": "0/26",
+   "passes_rejected": "33/87",
+   "abstained": 76,
+   "answer_type_baseline_kappa": 0.672
   },
   "S0": {
    "judge": "Sol",
