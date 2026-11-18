@@ -72,3 +72,22 @@ and `GPU_PROMPT_10_ADDENDUM.md`.
     more. Per-process caps: small OpenAI $0.62 / Anthropic $0.42, Terra OpenAI $3.8 (directory caps checked at the end).
 20. **F split at 07:26 UTC** into three sub-lanes the same way (cap $4.4 each; the directory's $8 is checked at the end); one F1 call was in flight and was sent once more.
 21. **F-a (AD3) split at 08:21 UTC** into three sub-lanes the same way (cap $2.2 each; the item's $3 is checked at the end); any call in flight was sent once more.
+
+## Final recompute (section 6) and report (section 7)
+
+- Every analysis script in prompt section 6 was re-run unchanged in the worktree through `scripts/r10_run.py` on the r10
+  verdicts (C6, c6_items, C6b, c6b_holm, C6b-H, ladder_table, C6c, J1–J4, C8, C14, C14b, C7, C12, C17, C19 (through
+  `scripts/r10_c19.py`, see below), C21, A, B (reconcile, body_numbers), D, U, E, F, V6, V (keyless_verifier report),
+  W6, J9 (luna_decoy_flag), X7, R8 checks 1–6, R9 checks 1–2, K, S and sol_agent_unit). Their r10 outputs are in `out/`,
+  leaf diffs in `diff/`. R9 checks 3 and 4 assert the frozen counts, so their r10 equivalents are computed in
+  `tallies_r10.json` (`check3_abstaining_on_V6_50`, `check4_L1_confidence_100`); the equivalents reproduce round 9
+  exactly on the frozen data.
+- `ROUND10_DIFF.md`: every judge-based number of the paper's body, Tables 3–6, Fig. 1/2, the failures table and the
+  appendix labels, old → new, flagged. `fig_values.md`: one row per bar or point.
+- `RESULTS_FOR_PAPER.md`: Round 10 section with sentences for the paper.
+- Confidence sidecars: private per batch; `conf/n_missing.json` (no missing confidence at any r10 level).
+
+22. **C19's reproduction gate** (frozen 12 Nov counts) cannot pass on r10; `scripts/r10_c19.py` executes the script's
+    own `main` with only that early return removed (asserted present once) and records the bypass in the output.
+23. **Bank path and freetext cache in the worktree.** X7, U and R8 checks 3–6 need `SHIFTHUNT_BANK` and the untracked
+    `.cache/freetext`; the bank is read from its shared location (read-only) and the freetext cache copied.

@@ -170,7 +170,8 @@ def level_specs(tag):
         L += [("L0ctrl", "Terra", "report, frozen prompt, same-day control", False,
                [("gpuplan/r10/ctrl/calls_terra.jsonl", "gpuplan/r10/ctrl/raw_terra", pre("CTRL"))], "G"),
               ("H0ctrl", "Haiku", "report, frozen prompt, same-day control", False,
-               [("gpuplan/r10/ctrl/calls_haiku.jsonl", "gpuplan/r10/ctrl/raw_haiku", pre("CTRL__H0"))], "G")]
+               [("gpuplan/r10/ctrl/calls_haiku.jsonl", "gpuplan/r10/ctrl/raw_haiku",
+                 lambda c: c[len("CTRL__H0__"):] if c.startswith("CTRL__H0__") else None)], "G")]
     if tag == "gate":   # the gate is on the 132 set A runs (the two runs without a full log included)
         L = [(lv, jd, lab, ab, src, "A132") for lv, jd, lab, ab, src, popn in L if lv in ("L0", "H0", "L0ctrl", "H0ctrl")]
     if tag == "r10":
@@ -179,7 +180,10 @@ def level_specs(tag):
                                              ("O1c", "Sol", "scripted answers (O1c)", False, "c12"),
                                              ("O1d", "Sol", "transcript + key, main study (O1d)", False, "G"),
                                              ("O1e", "Sol", "report, sceptical prompt (O1e)", False, "R274"),
-                                             ("O2", "Terra", "abstaining rubric F' (O2, R10-2)", True, "G")):
+                                             ("O2", "Terra", "abstaining rubric F' (O2, R10-2)", True, "G"),
+                                             ("ADa", "Terra", "F-a: candidates only, binary (AD3, R10-4)", False, "G"),
+                                             ("ADb", "Terra", "F-b: candidates + rule, binary (AD3, R10-4)", False, "G"),
+                                             ("AD5", "Terra", "report, base rate stated (AD5, R10-6)", False, "G")):
             sel = (lambda c: "gpt__" + c.split("__", 1)[1] if c.startswith("O1c__") else None) if item == "O1c" else pre(item)
             L.append((item, judge, label, ab, [(f"gpuplan/r10/p4/{item}/calls.jsonl", f"gpuplan/r10/p4/{item}/raw",
                                                 sel)], popn))

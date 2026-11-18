@@ -99,7 +99,9 @@ def cmd_spend():
         pass
     agg = Counter()
     n = Counter()
-    for p in R10.rglob("*.meta.json"):
+    dirs = [R10 / d for d in ("judge", "judge_luna", "judge_ladder", "judge_ladder2", "judge_panel", "judge_cheaters",
+                              "judge_c14", "judge_c14b", "judge_sol", "gpuplan/r10")]
+    for p in (q for d in dirs for q in d.rglob("*.meta.json")):
         rel = p.parent.relative_to(R10)
         if "superseded" in rel.parts:
             pass
