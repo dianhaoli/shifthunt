@@ -263,3 +263,21 @@ So v2 is about 0.85 of a column longer. The text of pp. 1–8 runs 7,593 words a
 9. **Venues.** fox2026presence's NeurIPS listing and zhang2026measuring's oral status are unconfirmed. Both are cited as arXiv / workshop, which is fine.
 10. **Not verified by me.** These sentences are unchanged from clean: "32 of the 40 pairs come from Luna and Haiku", and the nine-system τb 0.29 with 12 of 36 pairs reversed.
 11. **V2_REPORT.md does not exist.** Recreate it if the workflow expects it.
+---
+
+## Part C. Table 3 split (19 Nov, after the checker)
+
+- **Table 3 (`tab:agents`)** is now a single-column table of runs with the SAE tools at $B=8$.
+  - The Cross-model and Controlled/Weak-agent columns are pooled into one "Shipped episodes" column. The six
+    episodes, the prompt, the tools and $B=8$ are the same in both batches (FACTS ITEMS, MAIN, BLOCK1, LUNA).
+  - Pooled values: Terra 14/16 + 23/24 = 37/40; Haiku 8/16 + 5/12 = 13/28; Luna 5/36; Opus 11/16 and Sonnet 12/16
+    are unchanged.
+  - The held-out decoys and runner-up-tested columns are kept. Runner-up tested was already pooled over the same
+    runs.
+- **New Table 4 (`tab:tools`)** holds the no-tool columns: Terra 23/24 | 6/24 | 16/24 | 24/24; Haiku 5/12 | 3/12 | –
+  | 8/12; Luna 5/36 | 1/24 | – | –.
+  - Each row comes from one study, so the registered tools contrast stays within Block 1.
+  - The "tools help a capable agent" paragraph now points to it.
+- **Unpooled values** are kept in a `% table fix` comment under the caption.
+- **Compile:** clean (realistic-figure build, no undefined references, no overfull boxes). References still start on
+  page 9.
