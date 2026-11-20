@@ -10,13 +10,13 @@ from pathlib import Path
 import numpy as np
 import pytest
 
-from shifthunt import detectors, episodes, grader
-from shifthunt import episode_files as E
-from shifthunt import textgen as tg
-from shifthunt.probes import PLANTABLE
+from shortcuthunt import detectors, episodes, grader
+from shortcuthunt import episode_files as E
+from shortcuthunt import textgen as tg
+from shortcuthunt.probes import PLANTABLE
 
 ROOT = Path(__file__).resolve().parents[1]
-ARTIFACTS = Path(os.environ.get("SHIFTHUNT_ARTIFACTS", ROOT / "artifacts"))
+ARTIFACTS = Path(os.environ.get("SHORTCUTHUNT_ARTIFACTS", ROOT / "artifacts"))
 KNOB = "knob_lopsided"
 needs_knob = pytest.mark.skipif(not (ARTIFACTS / "grader" / KNOB).is_dir(),
                                 reason=f"no {KNOB} grader artifacts under {ARTIFACTS}")

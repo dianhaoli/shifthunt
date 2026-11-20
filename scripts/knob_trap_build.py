@@ -1,6 +1,6 @@
 """Knob "trap": error-term trap probes via the gamma projection (handoff 2.3.5).
 
-    flock /tmp/shifthunt-gpu.lock python scripts/knob_trap_build.py encode [--tag knob_trap]   # GPU
+    flock /tmp/shortcuthunt-gpu.lock python scripts/knob_trap_build.py encode [--tag knob_trap]   # GPU
     python scripts/knob_trap_build.py fit [--tag knob_trap]                                     # CPU only
 
 Recipe per job (cue c, topic pair, sign, eval_seed): the ordinary planted recipe of probes.py (sample_texts
@@ -36,9 +36,9 @@ import scipy.sparse as sp
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
-from shifthunt import probes as P  # noqa: E402
-from shifthunt import textgen as tg  # noqa: E402
-from shifthunt.ablation import gradient, probe_logit  # noqa: E402
+from shortcuthunt import probes as P  # noqa: E402
+from shortcuthunt import textgen as tg  # noqa: E402
+from shortcuthunt.ablation import gradient, probe_logit  # noqa: E402
 
 RESULTS = ROOT / "results" / "knobs" / "trap"
 ARTIFACTS = ROOT / "artifacts" / "probes"
@@ -103,8 +103,8 @@ def enc_path(tag, job):
 # ---------------------------------------------------------------- phase 1: GPU encode
 
 def encode(args):
-    from shifthunt import hidden as H
-    from shifthunt.substrate import Subject
+    from shortcuthunt import hidden as H
+    from shortcuthunt.substrate import Subject
     subject = Subject()
     enc = P.CachedEncoder(subject, CACHE)
     lab = P.Lab(enc)
@@ -142,7 +142,7 @@ class _NoModel:
 
 def load_W_dec():
     from huggingface_hub import hf_hub_download
-    from shifthunt.substrate import SAE_FILE, SAE_REPO
+    from shortcuthunt.substrate import SAE_FILE, SAE_REPO
     with np.load(hf_hub_download(SAE_REPO, SAE_FILE)) as z:
         return z["W_dec"].astype(np.float64)
 

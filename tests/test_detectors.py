@@ -4,8 +4,8 @@ import re
 import numpy as np
 import pytest
 
-from shifthunt import textgen as tg
-from shifthunt.detectors import DETECTORS, Detector, balanced_accuracy, detect, detect_all
+from shortcuthunt import textgen as tg
+from shortcuthunt.detectors import DETECTORS, Detector, balanced_accuracy, detect, detect_all
 
 
 def test_detectors_cover_features():

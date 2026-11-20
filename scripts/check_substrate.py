@@ -20,9 +20,9 @@ import torch
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
-from shifthunt import textgen as tg  # noqa: E402
-from shifthunt.ablation import ablate_logits, gradient, probe_logit  # noqa: E402
-from shifthunt.substrate import D_SAE, MAX_CONTENT_TOKENS, Subject  # noqa: E402
+from shortcuthunt import textgen as tg  # noqa: E402
+from shortcuthunt.ablation import ablate_logits, gradient, probe_logit  # noqa: E402
+from shortcuthunt.substrate import D_SAE, MAX_CONTENT_TOKENS, Subject  # noqa: E402
 
 LOGIT_STD = 3.0
 SIZES = (1, 4, 16, 64)

@@ -1,0 +1,298 @@
+{
+ "plan": "results/blackbox_1112/gpuplan/r10/PLAN_R10.md section 13 (AD1)",
+ "tag": "frozen",
+ "label": "post hoc, descriptive; n of supported answers is small",
+ "answers": 385,
+ "table": {
+  "supported | right": 20,
+  "supported | wrong": 2,
+  "unsupported | right": 223,
+  "unsupported | wrong": 140
+ },
+ "supported_by_arm": {
+  "bb64 | supported | right": 20,
+  "bb64 | supported | wrong": 2
+ },
+ "credit_by_level": {
+  "C8T": {
+   "supported right": "0/0",
+   "supported wrong": "0/0",
+   "unsupported right": "24/24",
+   "unsupported wrong": "1/1",
+   "key_contrast_unsupported_wrong_minus_supported_right": null,
+   "unsupported_right_minus_wrong": 0.0,
+   "fisher_two_sided_descriptive": 1.0,
+   "ignores_support": true
+  },
+  "F1": {
+   "supported right": "14/20",
+   "supported wrong": "0/2",
+   "unsupported right": "1/105",
+   "unsupported wrong": "0/53",
+   "key_contrast_unsupported_wrong_minus_supported_right": -0.7,
+   "unsupported_right_minus_wrong": 0.01,
+   "fisher_two_sided_descriptive": 1.0,
+   "ignores_support": true
+  },
+  "F2": {
+   "supported right": "6/10",
+   "supported wrong": "0/2",
+   "unsupported right": "0/37",
+   "unsupported wrong": "0/12",
+   "key_contrast_unsupported_wrong_minus_supported_right": -0.6,
+   "unsupported_right_minus_wrong": 0.0,
+   "fisher_two_sided_descriptive": 1.0,
+   "ignores_support": true
+  },
+  "H0": {
+   "supported right": "11/20",
+   "supported wrong": "2/2",
+   "unsupported right": "38/105",
+   "unsupported wrong": "12/53",
+   "key_contrast_unsupported_wrong_minus_supported_right": -0.324,
+   "unsupported_right_minus_wrong": 0.135,
+   "fisher_two_sided_descriptive": 0.1036,
+   "ignores_support": true
+  },
+  "H1": {
+   "supported right": "20/20",
+   "supported wrong": "2/2",
+   "unsupported right": "60/105",
+   "unsupported wrong": "28/53",
+   "key_contrast_unsupported_wrong_minus_supported_right": -0.472,
+   "unsupported_right_minus_wrong": 0.043,
+   "fisher_two_sided_descriptive": 0.6155,
+   "ignores_support": true
+  },
+  "H1r": {
+   "supported right": "11/20",
+   "supported wrong": "2/2",
+   "unsupported right": "35/105",
+   "unsupported wrong": "13/53",
+   "key_contrast_unsupported_wrong_minus_supported_right": -0.305,
+   "unsupported_right_minus_wrong": 0.088,
+   "fisher_two_sided_descriptive": 0.2777,
+   "ignores_support": true
+  },
+  "H2": {
+   "supported right": "18/20",
+   "supported wrong": "2/2",
+   "unsupported right": "80/105",
+   "unsupported wrong": "25/53",
+   "key_contrast_unsupported_wrong_minus_supported_right": -0.428,
+   "unsupported_right_minus_wrong": 0.29,
+   "fisher_two_sided_descriptive": 0.0004,
+   "ignores_support": false
+  },
+  "H2r": {
+   "supported right": "0/0",
+   "supported wrong": "0/0",
+   "unsupported right": "21/35",
+   "unsupported wrong": "3/10",
+   "key_contrast_unsupported_wrong_minus_supported_right": null,
+   "unsupported_right_minus_wrong": 0.3,
+   "fisher_two_sided_descriptive": 0.1513,
+   "ignores_support": true
+  },
+  "HF": {
+   "supported right": "0/0",
+   "supported wrong": "0/0",
+   "unsupported right": "44/118",
+   "unsupported wrong": "6/87",
+   "key_contrast_unsupported_wrong_minus_supported_right": null,
+   "unsupported_right_minus_wrong": 0.304,
+   "fisher_two_sided_descriptive": 0.0,
+   "ignores_support": false
+  },
+  "HK": {
+   "supported right": "2/20",
+   "supported wrong": "0/2",
+   "unsupported right": "2/222",
+   "unsupported wrong": "2/138",
+   "key_contrast_unsupported_wrong_minus_supported_right": -0.086,
+   "unsupported_right_minus_wrong": -0.005,
+   "fisher_two_sided_descriptive": 0.6393,
+   "ignores_support": true
+  },
+  "K0": {
+   "supported right": "20/20",
+   "supported wrong": "0/2",
+   "unsupported right": "159/159",
+   "unsupported wrong": "0/127",
+   "key_contrast_unsupported_wrong_minus_supported_right": -1.0,
+   "unsupported_right_minus_wrong": 1.0,
+   "fisher_two_sided_descriptive": 0.0,
+   "ignores_support": false
+  },
+  "L0": {
+   "supported right": "20/20",
+   "supported wrong": "2/2",
+   "unsupported right": "207/223",
+   "unsupported wrong": "99/140",
+   "key_contrast_unsupported_wrong_minus_supported_right": -0.293,
+   "unsupported_right_minus_wrong": 0.221,
+   "fisher_two_sided_descriptive": 0.0,
+   "ignores_support": false
+  },
+  "L0r": {
+   "supported right": "20/20",
+   "supported wrong": "2/2",
+   "unsupported right": "98/105",
+   "unsupported wrong": "41/53",
+   "key_contrast_unsupported_wrong_minus_supported_right": -0.226,
+   "unsupported_right_minus_wrong": 0.16,
+   "fisher_two_sided_descriptive": 0.0078,
+   "ignores_support": false
+  },
+  "L1": {
+   "supported right": "20/20",
+   "supported wrong": "2/2",
+   "unsupported right": "133/159",
+   "unsupported wrong": "70/127",
+   "key_contrast_unsupported_wrong_minus_supported_right": -0.449,
+   "unsupported_right_minus_wrong": 0.285,
+   "fisher_two_sided_descriptive": 0.0,
+   "ignores_support": false
+  },
+  "L1r": {
+   "supported right": "20/20",
+   "supported wrong": "2/2",
+   "unsupported right": "93/105",
+   "unsupported wrong": "38/53",
+   "key_contrast_unsupported_wrong_minus_supported_right": -0.283,
+   "unsupported_right_minus_wrong": 0.169,
+   "fisher_two_sided_descriptive": 0.0127,
+   "ignores_support": false
+  },
+  "L2": {
+   "supported right": "20/20",
+   "supported wrong": "2/2",
+   "unsupported right": "199/223",
+   "unsupported wrong": "55/140",
+   "key_contrast_unsupported_wrong_minus_supported_right": -0.607,
+   "unsupported_right_minus_wrong": 0.5,
+   "fisher_two_sided_descriptive": 0.0,
+   "ignores_support": false
+  },
+  "L2r": {
+   "supported right": "0/0",
+   "supported wrong": "0/0",
+   "unsupported right": "99/100",
+   "unsupported wrong": "17/23",
+   "key_contrast_unsupported_wrong_minus_supported_right": null,
+   "unsupported_right_minus_wrong": 0.251,
+   "fisher_two_sided_descriptive": 0.0001,
+   "ignores_support": false
+  },
+  "L3_1": {
+   "supported right": "20/20",
+   "supported wrong": "0/2",
+   "unsupported right": "159/159",
+   "unsupported wrong": "0/127",
+   "key_contrast_unsupported_wrong_minus_supported_right": -1.0,
+   "unsupported_right_minus_wrong": 1.0,
+   "fisher_two_sided_descriptive": 0.0,
+   "ignores_support": false
+  },
+  "L3_2": {
+   "supported right": "20/20",
+   "supported wrong": "0/2",
+   "unsupported right": "223/223",
+   "unsupported wrong": "0/140",
+   "key_contrast_unsupported_wrong_minus_supported_right": -1.0,
+   "unsupported_right_minus_wrong": 1.0,
+   "fisher_two_sided_descriptive": 0.0,
+   "ignores_support": false
+  },
+  "LF": {
+   "supported right": "20/20",
+   "supported wrong": "2/2",
+   "unsupported right": "184/223",
+   "unsupported wrong": "76/140",
+   "key_contrast_unsupported_wrong_minus_supported_right": -0.457,
+   "unsupported_right_minus_wrong": 0.282,
+   "fisher_two_sided_descriptive": 0.0,
+   "ignores_support": false
+  },
+  "LK": {
+   "supported right": "2/20",
+   "supported wrong": "0/2",
+   "unsupported right": "4/223",
+   "unsupported wrong": "1/140",
+   "key_contrast_unsupported_wrong_minus_supported_right": -0.093,
+   "unsupported_right_minus_wrong": 0.011,
+   "fisher_two_sided_descriptive": 0.6527,
+   "ignores_support": true
+  },
+  "S0": {
+   "supported right": "20/20",
+   "supported wrong": "2/2",
+   "unsupported right": "97/105",
+   "unsupported wrong": "36/53",
+   "key_contrast_unsupported_wrong_minus_supported_right": -0.321,
+   "unsupported_right_minus_wrong": 0.245,
+   "fisher_two_sided_descriptive": 0.0001,
+   "ignores_support": false
+  },
+  "S1": {
+   "supported right": "20/20",
+   "supported wrong": "2/2",
+   "unsupported right": "99/105",
+   "unsupported wrong": "33/53",
+   "key_contrast_unsupported_wrong_minus_supported_right": -0.377,
+   "unsupported_right_minus_wrong": 0.32,
+   "fisher_two_sided_descriptive": 0.0,
+   "ignores_support": false
+  },
+  "S2": {
+   "supported right": "20/20",
+   "supported wrong": "2/2",
+   "unsupported right": "210/223",
+   "unsupported wrong": "65/140",
+   "key_contrast_unsupported_wrong_minus_supported_right": -0.536,
+   "unsupported_right_minus_wrong": 0.477,
+   "fisher_two_sided_descriptive": 0.0,
+   "ignores_support": false
+  },
+  "S3": {
+   "supported right": "20/20",
+   "supported wrong": "0/2",
+   "unsupported right": "105/105",
+   "unsupported wrong": "0/53",
+   "key_contrast_unsupported_wrong_minus_supported_right": -1.0,
+   "unsupported_right_minus_wrong": 1.0,
+   "fisher_two_sided_descriptive": 0.0,
+   "ignores_support": false
+  },
+  "SF": {
+   "supported right": "13/20",
+   "supported wrong": "0/2",
+   "unsupported right": "1/105",
+   "unsupported wrong": "0/53",
+   "key_contrast_unsupported_wrong_minus_supported_right": -0.65,
+   "unsupported_right_minus_wrong": 0.01,
+   "fisher_two_sided_descriptive": 1.0,
+   "ignores_support": true
+  },
+  "TF2": {
+   "supported right": "20/20",
+   "supported wrong": "2/2",
+   "unsupported right": "166/169",
+   "unsupported wrong": "59/66",
+   "key_contrast_unsupported_wrong_minus_supported_right": -0.106,
+   "unsupported_right_minus_wrong": 0.088,
+   "fisher_two_sided_descriptive": 0.006,
+   "ignores_support": false
+  },
+  "TK": {
+   "supported right": "4/20",
+   "supported wrong": "2/2",
+   "unsupported right": "2/223",
+   "unsupported wrong": "1/140",
+   "key_contrast_unsupported_wrong_minus_supported_right": -0.193,
+   "unsupported_right_minus_wrong": 0.002,
+   "fisher_two_sided_descriptive": 1.0,
+   "ignores_support": true
+  }
+ }
+}

@@ -2,7 +2,7 @@
 SAE-only reader (even one that uses the sample's confound signs) claims the decoy, while true-logit checks of the
 top SAE candidates find the main.
 
-    flock /tmp/shifthunt-gpu.lock env HF_HUB_OFFLINE=1 python scripts/knob_trap3_build.py encode   # GPU, ~4 min
+    flock /tmp/shortcuthunt-gpu.lock env HF_HUB_OFFLINE=1 python scripts/knob_trap3_build.py encode   # GPU, ~4 min
     env HF_HUB_OFFLINE=1 python scripts/knob_trap3_build.py fit                                    # CPU
 
 encode: per base probe, residuals + sparse SAE latents of
@@ -46,7 +46,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(ROOT / "scripts"))
 
-from shifthunt import textgen as tg  # noqa: E402
+from shortcuthunt import textgen as tg  # noqa: E402
 
 FE = list(tg.FEATURES)
 BASES = ("planted_003", "planted_009", "planted_011", "planted_012")
@@ -69,9 +69,9 @@ def meta_of(name, pool=SRC_POOL):
 
 def encode(args):
     import scipy.sparse as sp
-    from shifthunt import hidden as H
-    from shifthunt import probes as P
-    from shifthunt.substrate import Subject
+    from shortcuthunt import hidden as H
+    from shortcuthunt import probes as P
+    from shortcuthunt.substrate import Subject
     from trap_solvability import flip_texts
     CACHE.mkdir(parents=True, exist_ok=True)
     subject = Subject("cuda")
@@ -126,8 +126,8 @@ def dep_ols(logits, flags, topic):
 
 def fit(args):
     import scipy.sparse as sp
-    from shifthunt import probes as P
-    from shifthunt.ablation import probe_logit
+    from shortcuthunt import probes as P
+    from shortcuthunt.ablation import probe_logit
     W = np.load(CACHE / "W_dec.npy").astype(np.float64)  # [D_SAE, D_RESID]
     PRIV.mkdir(parents=True, exist_ok=True)
     rng = np.random.default_rng(0)
@@ -235,8 +235,8 @@ def write(accepted, W, args):
     """Keep per (base) the accepted candidate with the best min(dom16) then lowest decoy p15 (at most args.per_base
     per base), write the knob_trap_s3 pool and the held-out caches."""
     import scipy.sparse as sp
-    from shifthunt import probes as P
-    from shifthunt.ablation import probe_logit
+    from shortcuthunt import probes as P
+    from shortcuthunt.ablation import probe_logit
     (ART / OUT_POOL).mkdir(parents=True, exist_ok=True)
     TS_CACHE.mkdir(parents=True, exist_ok=True)
     by = {}

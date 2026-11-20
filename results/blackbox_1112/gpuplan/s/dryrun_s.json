@@ -1,0 +1,41 @@
+{
+ "dryrun_calls": 5,
+ "sent": 5,
+ "statuses": [
+  "ok",
+  "ok",
+  "ok",
+  "ok",
+  "ok"
+ ],
+ "response_models": [
+  "gpt-6.1-sol"
+ ],
+ "chars": 3418700,
+ "input_tokens": 1216276,
+ "chars_per_token": 2.811,
+ "output_tokens": [
+  662,
+  616,
+  329,
+  326,
+  1197
+ ],
+ "seconds": [
+  25.0,
+  20.0,
+  12.0,
+  10.0,
+  36.0
+ ],
+ "usd": 3.072,
+ "projection_usd": {
+  "1": 22.44,
+  "2": 6.07,
+  "3": 2.13,
+  "4": 24.68,
+  "5": 4.15
+ },
+ "projection_total_usd": 59.46,
+ "note": "input cost per character of the 5 longest prompts (an upper bound per character) plus their mean output cost per call, over every call of the step"
+}

@@ -3,7 +3,7 @@
 
 stop(pidfile, timeout=10, sock=SOCK) -> "absent" | "terminated" | "killed"
     SIGTERM every process of user toolsrv plus the pidfile's pid (only if its cmdline names
-    shifthunt.toolserver, so a stale pidfile cannot hit another process), wait up to
+    shortcuthunt.toolserver, so a stale pidfile cannot hit another process), wait up to
     `timeout` s, SIGKILL whatever is left, then verify all are gone (else RuntimeError) and remove
     a stale socket. Safe to call twice.
 run_with_timeout(fn, seconds, *args, **kwargs) -> fn(*args, **kwargs)
@@ -25,7 +25,7 @@ from pathlib import Path
 
 USER = "toolsrv"
 PIDFILE = Path("/srv/state/daemon.pid")
-SOCK = Path("/run/shifthunt/tool.sock")
+SOCK = Path("/run/shortcuthunt/tool.sock")
 KILL_WAIT_S = 60
 
 
@@ -53,7 +53,7 @@ def _user_pids(uid):
 
 def _is_daemon(pid):
     try:
-        return b"shifthunt.toolserver" in Path(f"/proc/{pid}/cmdline").read_bytes()
+        return b"shortcuthunt.toolserver" in Path(f"/proc/{pid}/cmdline").read_bytes()
     except OSError:
         return False
 

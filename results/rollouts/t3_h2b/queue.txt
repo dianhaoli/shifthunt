@@ -1,4 +1,0 @@
-ep435-sample_only
-ep462-open
-ep472-open
-ep474-open

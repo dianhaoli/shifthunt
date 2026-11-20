@@ -1,16 +1,16 @@
 """Encode fresh held-out notes for probe sources, for checking the prompt's reliance promises out of sample.
 
-    flock /tmp/shifthunt-gpu.lock env HF_HUB_OFFLINE=1 python scripts/heldout_encode.py --bank .cache/bank [--n 1024]
+    flock /tmp/shortcuthunt-gpu.lock env HF_HUB_OFFLINE=1 python scripts/heldout_encode.py --bank .cache/bank [--n 1024]
     ... --sources knob_x/planted_003,ft_y/null_002 [--artifacts-dir artifacts/probes]   # extra / newly planted probes
 
 For every distinct probe source (every .cache/bank/ep*/private/answer.json 'source', plus --sources) it draws N
 notes on which topic and every property vary independently (the generator's sample_grid(..., mains=[])), with
 the probe's topics and cue strings, on a NEW stream f"heldout1012:{eval_seed}" that no build, selection or
 episode grid used (those are reliance:, hidden_null:, scan:, trapflip:, sample:, check:). The substrate is
-chosen per pool: templated (shifthunt.textgen) for build_* / knob_*, free text (shifthunt.freetext) for ft_*,
-hard free text (shifthunt.freetext_hard) for fh_*. The generator module's own sample_grid / make_cues are
+chosen per pool: templated (shortcuthunt.textgen) for build_* / knob_*, free text (shortcuthunt.freetext) for ft_*,
+hard free text (shortcuthunt.freetext_hard) for fh_*. The generator module's own sample_grid / make_cues are
 called directly, so one process covers all substrates (no scripts/freetext_run.py swap is needed: nothing on
-the encode path reads shifthunt.textgen). Notes are encoded once per (substrate, topics, eval_seed) and every
+the encode path reads shortcuthunt.textgen). Notes are encoded once per (substrate, topics, eval_seed) and every
 source sharing them is scored with its pool artifact's w, b (ablation.probe_logit).
 
 Output per source: <out>/<pool>/<name>.npz with logits [N], flags [nF, N] (as rendered, after the free-text
@@ -42,7 +42,7 @@ def substrate_of(pool):
 
 def gen_module(name):
     import importlib
-    return importlib.import_module(f"shifthunt.{name}")
+    return importlib.import_module(f"shortcuthunt.{name}")
 
 
 def cues_for(mod, eval_seed):
@@ -106,8 +106,8 @@ def main():
           f"(~{len(groups) * a.n / 140 / 60:.1f} min at 140 notes/s)", flush=True)
     if a.dry or not groups:
         return 0
-    from shifthunt import ablation, substrate
-    from shifthunt.probes import CachedEncoder
+    from shortcuthunt import ablation, substrate
+    from shortcuthunt.probes import CachedEncoder
     subject = substrate.Subject("cuda")
     t0 = time.time()
     for gi, ((sub, topics, es), names) in enumerate(sorted(groups.items())):

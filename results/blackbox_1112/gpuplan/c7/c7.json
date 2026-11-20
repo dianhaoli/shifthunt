@@ -1,0 +1,127 @@
+{
+ "prereg": "results/blackbox_1112/gpuplan/c7/PREREG_C7.md",
+ "usd": {
+  "gpt-6.1-terra": 4.296,
+  "gpt-6-luna": 0.692,
+  "claude-haiku-5-5": 0.39
+ },
+ "cells": {
+  "TF": {
+   "runs": 274,
+   "within_run_none_auroc": 0.579,
+   "pairs": 146,
+   "auroc_boot95": [
+    0.52,
+    0.64
+   ],
+   "named_hard_kappa": 0.17,
+   "hard_kappa": 0.053,
+   "hard_false_credit": "88/121",
+   "none_FPR": "106/148",
+   "none_TPR": "247/263"
+  },
+  "TK": {
+   "runs": 274,
+   "within_run_none_auroc": 0.483,
+   "pairs": 146,
+   "auroc_boot95": [
+    0.462,
+    0.497
+   ],
+   "named_hard_kappa": 0.19,
+   "hard_kappa": 0.548,
+   "hard_false_credit": "22/121",
+   "none_FPR": "3/148",
+   "none_TPR": "6/263"
+  },
+  "LF": {
+   "runs": 274,
+   "within_run_none_auroc": 0.514,
+   "pairs": 146,
+   "auroc_boot95": [
+    0.454,
+    0.572
+   ],
+   "named_hard_kappa": 0.016,
+   "hard_kappa": -0.33,
+   "hard_false_credit": "59/121",
+   "none_FPR": "84/148",
+   "none_TPR": "222/263"
+  },
+  "LK": {
+   "runs": 274,
+   "within_run_none_auroc": 0.51,
+   "pairs": 146,
+   "auroc_boot95": [
+    0.468,
+    0.552
+   ],
+   "named_hard_kappa": 0.075,
+   "hard_kappa": 0.252,
+   "hard_false_credit": "9/121",
+   "none_FPR": "1/148",
+   "none_TPR": "6/263"
+  },
+  "HF": {
+   "runs": 273,
+   "within_run_none_auroc": 0.579,
+   "pairs": 146,
+   "auroc_boot95": [
+    0.526,
+    0.63
+   ],
+   "named_hard_kappa": 0.011,
+   "hard_kappa": -0.087,
+   "hard_false_credit": "18/121",
+   "none_FPR": "24/148",
+   "none_TPR": "100/262"
+  },
+  "HK": {
+   "runs": 272,
+   "within_run_none_auroc": 0.542,
+   "pairs": 144,
+   "auroc_boot95": [
+    0.489,
+    0.594
+   ],
+   "named_hard_kappa": 0.014,
+   "hard_kappa": 0.022,
+   "hard_false_credit": "1/120",
+   "none_FPR": "2/146",
+   "none_TPR": "4/261"
+  }
+ },
+ "P1_no_judge_separates_none": {
+  "TF": true,
+  "TK": true,
+  "LF": true,
+  "LK": true,
+  "HF": true,
+  "HK": true
+ },
+ "P2_skeptical_prompt": {
+  "T": {
+   "delta_auroc": -0.096,
+   "lower95": -0.156,
+   "delta_none_FPR": -0.696,
+   "label": "threshold-only"
+  },
+  "L": {
+   "delta_auroc": -0.003,
+   "lower95": -0.065,
+   "delta_none_FPR": -0.561,
+   "label": "threshold-only"
+  },
+  "H": {
+   "delta_auroc": -0.031,
+   "lower95": -0.086,
+   "delta_none_FPR": -0.148,
+   "label": "inert"
+  }
+ },
+ "P3_replicates_frozen": {
+  "TF": true,
+  "LF": true,
+  "HF": true
+ }
+}

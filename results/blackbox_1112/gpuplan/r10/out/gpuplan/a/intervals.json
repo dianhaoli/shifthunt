@@ -1,0 +1,776 @@
+{
+ "script": "scripts/ladder_intervals.py",
+ "n_boot": 10000,
+ "seed": 1116,
+ "note": "hard slot unless stated; kappa vs the executed (certified) grade",
+ "set_A": {
+  "runs": 130,
+  "items": 6,
+  "prevalence_hard": {
+   "passed": "87/130",
+   "answered_named": "104/130",
+   "answered_none": "26/130"
+  },
+  "L0": {
+   "hard_kappa": 0.3215,
+   "hard_balanced_accuracy": 0.6399,
+   "kappa_within_named_hard": 0.4323,
+   "kappa_within_none_all_slots": 0.2383,
+   "all_slot_kappa": 0.369,
+   "all_slot_balanced_accuracy": 0.668,
+   "omissions_credited": "19/26",
+   "commissions_credited": "9/17",
+   "passes_blamed": "6/87",
+   "hard_kappa_item_boot95": {
+    "lo": 0.0896,
+    "hi": 0.5311,
+    "clusters": 6,
+    "undefined_draws": 0
+   },
+   "hard_kappa_run_boot95": {
+    "lo": 0.1549,
+    "hi": 0.4859,
+    "clusters": 130,
+    "undefined_draws": 0
+   }
+  },
+  "L0r": {
+   "hard_kappa": 0.3782,
+   "hard_balanced_accuracy": 0.6691,
+   "kappa_within_named_hard": 0.5078,
+   "kappa_within_none_all_slots": 0.2806,
+   "all_slot_kappa": 0.3733,
+   "all_slot_balanced_accuracy": 0.6691,
+   "omissions_credited": "18/26",
+   "commissions_credited": "7/17",
+   "passes_blamed": "7/87",
+   "hard_kappa_item_boot95": {
+    "lo": 0.1768,
+    "hi": 0.514,
+    "clusters": 6,
+    "undefined_draws": 0
+   },
+   "hard_kappa_run_boot95": {
+    "lo": 0.211,
+    "hi": 0.5439,
+    "clusters": 130,
+    "undefined_draws": 0
+   }
+  },
+  "L1": {
+   "hard_kappa": 0.4251,
+   "hard_balanced_accuracy": 0.6863,
+   "kappa_within_named_hard": 0.6309,
+   "kappa_within_none_all_slots": 0.2245,
+   "all_slot_kappa": 0.4514,
+   "all_slot_balanced_accuracy": 0.7064,
+   "omissions_credited": "19/26",
+   "commissions_credited": "6/17",
+   "passes_blamed": "4/87",
+   "hard_kappa_item_boot95": {
+    "lo": 0.3314,
+    "hi": 0.5351,
+    "clusters": 6,
+    "undefined_draws": 0
+   },
+   "hard_kappa_run_boot95": {
+    "lo": 0.2539,
+    "hi": 0.5837,
+    "clusters": 130,
+    "undefined_draws": 0
+   }
+  },
+  "L1r": {
+   "hard_kappa": 0.417,
+   "hard_balanced_accuracy": 0.6864,
+   "kappa_within_named_hard": 0.5781,
+   "kappa_within_none_all_slots": 0.1838,
+   "all_slot_kappa": 0.4068,
+   "all_slot_balanced_accuracy": 0.6947,
+   "omissions_credited": "18/26",
+   "commissions_credited": "6/17",
+   "passes_blamed": "6/87",
+   "hard_kappa_item_boot95": {
+    "lo": 0.2857,
+    "hi": 0.5408,
+    "clusters": 6,
+    "undefined_draws": 0
+   },
+   "hard_kappa_run_boot95": {
+    "lo": 0.2467,
+    "hi": 0.5788,
+    "clusters": 130,
+    "undefined_draws": 0
+   }
+  },
+  "L2": {
+   "hard_kappa": 0.463,
+   "hard_balanced_accuracy": 0.7097,
+   "kappa_within_named_hard": 0.5781,
+   "kappa_within_none_all_slots": 0.3737,
+   "all_slot_kappa": 0.5473,
+   "all_slot_balanced_accuracy": 0.7515,
+   "omissions_credited": "16/26",
+   "commissions_credited": "6/17",
+   "passes_blamed": "6/87",
+   "hard_kappa_item_boot95": {
+    "lo": 0.343,
+    "hi": 0.6026,
+    "clusters": 6,
+    "undefined_draws": 0
+   },
+   "hard_kappa_run_boot95": {
+    "lo": 0.292,
+    "hi": 0.622,
+    "clusters": 130,
+    "undefined_draws": 0
+   }
+  },
+  "L3_1": {
+   "hard_kappa": 0.9321,
+   "hard_balanced_accuracy": 0.977,
+   "kappa_within_named_hard": 0.8715,
+   "kappa_within_none_all_slots": 1.0,
+   "all_slot_kappa": 0.9614,
+   "all_slot_balanced_accuracy": 0.993,
+   "omissions_credited": "0/26",
+   "commissions_credited": "0/17",
+   "passes_blamed": "4/87",
+   "hard_kappa_item_boot95": {
+    "lo": 0.8076,
+    "hi": 1.0,
+    "clusters": 6,
+    "undefined_draws": 0
+   },
+   "hard_kappa_run_boot95": {
+    "lo": 0.8581,
+    "hi": 0.9839,
+    "clusters": 130,
+    "undefined_draws": 0
+   }
+  },
+  "L3_2": {
+   "hard_kappa": 1.0,
+   "hard_balanced_accuracy": 1.0,
+   "kappa_within_named_hard": 1.0,
+   "kappa_within_none_all_slots": 1.0,
+   "all_slot_kappa": 1.0,
+   "all_slot_balanced_accuracy": 1.0,
+   "omissions_credited": "0/26",
+   "commissions_credited": "0/17",
+   "passes_blamed": "0/87",
+   "hard_kappa_item_boot95": {
+    "lo": 1.0,
+    "hi": 1.0,
+    "clusters": 6,
+    "undefined_draws": 0
+   },
+   "hard_kappa_run_boot95": {
+    "lo": 1.0,
+    "hi": 1.0,
+    "clusters": 130,
+    "undefined_draws": 0
+   }
+  },
+  "answer_type": {
+   "hard_kappa": 0.6718,
+   "hard_balanced_accuracy": 0.8023,
+   "kappa_within_named_hard": 0.0,
+   "kappa_within_none_all_slots": 0.0,
+   "all_slot_kappa": 0.2223,
+   "all_slot_balanced_accuracy": 0.6529,
+   "omissions_credited": "0/26",
+   "commissions_credited": "17/17",
+   "passes_blamed": "0/87",
+   "hard_kappa_item_boot95": {
+    "lo": 0.48,
+    "hi": 0.8471,
+    "clusters": 6,
+    "undefined_draws": 0
+   },
+   "hard_kappa_run_boot95": {
+    "lo": 0.5244,
+    "hi": 0.8024,
+    "clusters": 130,
+    "undefined_draws": 0
+   }
+  },
+  "V1": {
+   "hard_kappa": 0.5236,
+   "hard_balanced_accuracy": 0.7864,
+   "kappa_within_named_hard": 0.4764,
+   "kappa_within_none_all_slots": 0.0022,
+   "all_slot_kappa": 0.2509,
+   "all_slot_balanced_accuracy": 0.7078,
+   "omissions_credited": "7/26",
+   "commissions_credited": "0/17",
+   "passes_blamed": "23/87",
+   "hard_kappa_item_boot95": {
+    "lo": 0.3948,
+    "hi": 0.6546,
+    "clusters": 6,
+    "undefined_draws": 0
+   },
+   "hard_kappa_run_boot95": {
+    "lo": 0.377,
+    "hi": 0.6615,
+    "clusters": 130,
+    "undefined_draws": 0
+   }
+  },
+  "V2": {
+   "hard_kappa": 0.1912,
+   "hard_balanced_accuracy": 0.5945,
+   "kappa_within_named_hard": 0.4598,
+   "kappa_within_none_all_slots": 0.0517,
+   "all_slot_kappa": 0.2035,
+   "all_slot_balanced_accuracy": 0.6131,
+   "omissions_credited": "23/26",
+   "commissions_credited": "1/17",
+   "passes_blamed": "22/87",
+   "hard_kappa_item_boot95": {
+    "lo": 0.0698,
+    "hi": 0.2968,
+    "clusters": 6,
+    "undefined_draws": 0
+   },
+   "hard_kappa_run_boot95": {
+    "lo": 0.0119,
+    "hi": 0.3594,
+    "clusters": 130,
+    "undefined_draws": 0
+   }
+  },
+  "V3": {
+   "hard_kappa": 0.648,
+   "hard_balanced_accuracy": 0.8678,
+   "kappa_within_named_hard": 0.4764,
+   "kappa_within_none_all_slots": 0.0872,
+   "all_slot_kappa": 0.2998,
+   "all_slot_balanced_accuracy": 0.7714,
+   "omissions_credited": "0/26",
+   "commissions_credited": "0/17",
+   "passes_blamed": "23/87",
+   "hard_kappa_item_boot95": {
+    "lo": 0.5315,
+    "hi": 0.7516,
+    "clusters": 6,
+    "undefined_draws": 0
+   },
+   "hard_kappa_run_boot95": {
+    "lo": 0.5231,
+    "hi": 0.765,
+    "clusters": 130,
+    "undefined_draws": 0
+   }
+  }
+ },
+ "luna": {
+  "runs": 60,
+  "items": 6,
+  "prevalence_hard": {
+   "passed": "7/60",
+   "answered_named": "22/60",
+   "answered_none": "38/60"
+  },
+  "L0": {
+   "hard_kappa": 0.104,
+   "hard_balanced_accuracy": 0.6456,
+   "kappa_within_named_hard": 0.0897,
+   "kappa_within_none_all_slots": 0.302,
+   "all_slot_kappa": 0.4016,
+   "all_slot_balanced_accuracy": 0.6974,
+   "omissions_credited": "19/38",
+   "commissions_credited": "11/15",
+   "passes_blamed": "1/7",
+   "hard_kappa_item_boot95": {
+    "lo": -0.0571,
+    "hi": 0.2373,
+    "clusters": 6,
+    "undefined_draws": 0
+   },
+   "hard_kappa_run_boot95": {
+    "lo": -0.0213,
+    "hi": 0.2373,
+    "clusters": 60,
+    "undefined_draws": 0
+   }
+  },
+  "L1": {
+   "hard_kappa": 0.1218,
+   "hard_balanced_accuracy": 0.6402,
+   "kappa_within_named_hard": 0.3419,
+   "kappa_within_none_all_slots": 0.2602,
+   "all_slot_kappa": 0.4677,
+   "all_slot_balanced_accuracy": 0.7326,
+   "omissions_credited": "18/38",
+   "commissions_credited": "5/15",
+   "passes_blamed": "2/7",
+   "hard_kappa_item_boot95": {
+    "lo": -0.0332,
+    "hi": 0.25,
+    "clusters": 6,
+    "undefined_draws": 0
+   },
+   "hard_kappa_run_boot95": {
+    "lo": -0.0519,
+    "hi": 0.3023,
+    "clusters": 60,
+    "undefined_draws": 0
+   }
+  },
+  "L2": {
+   "hard_kappa": 0.1732,
+   "hard_balanced_accuracy": 0.6779,
+   "kappa_within_named_hard": 0.4159,
+   "kappa_within_none_all_slots": 0.4408,
+   "all_slot_kappa": 0.6047,
+   "all_slot_balanced_accuracy": 0.8021,
+   "omissions_credited": "15/38",
+   "commissions_credited": "4/15",
+   "passes_blamed": "2/7",
+   "hard_kappa_item_boot95": {
+    "lo": -0.0651,
+    "hi": 0.4857,
+    "clusters": 6,
+    "undefined_draws": 0
+   },
+   "hard_kappa_run_boot95": {
+    "lo": -0.0256,
+    "hi": 0.3811,
+    "clusters": 60,
+    "undefined_draws": 0
+   }
+  },
+  "L3_1": {
+   "hard_kappa": 1.0,
+   "hard_balanced_accuracy": 1.0,
+   "kappa_within_named_hard": 1.0,
+   "kappa_within_none_all_slots": 1.0,
+   "all_slot_kappa": 0.9748,
+   "all_slot_balanced_accuracy": 0.9885,
+   "omissions_credited": "0/38",
+   "commissions_credited": "0/15",
+   "passes_blamed": "0/7",
+   "hard_kappa_item_boot95": {
+    "lo": 1.0,
+    "hi": 1.0,
+    "clusters": 6,
+    "undefined_draws": 8
+   },
+   "hard_kappa_run_boot95": {
+    "lo": 1.0,
+    "hi": 1.0,
+    "clusters": 60,
+    "undefined_draws": 7
+   }
+  },
+  "L3_2": {
+   "hard_kappa": 1.0,
+   "hard_balanced_accuracy": 1.0,
+   "kappa_within_named_hard": 1.0,
+   "kappa_within_none_all_slots": 1.0,
+   "all_slot_kappa": 1.0,
+   "all_slot_balanced_accuracy": 1.0,
+   "omissions_credited": "0/38",
+   "commissions_credited": "0/15",
+   "passes_blamed": "0/7",
+   "hard_kappa_item_boot95": {
+    "lo": 1.0,
+    "hi": 1.0,
+    "clusters": 6,
+    "undefined_draws": 8
+   },
+   "hard_kappa_run_boot95": {
+    "lo": 1.0,
+    "hi": 1.0,
+    "clusters": 60,
+    "undefined_draws": 7
+   }
+  },
+  "answer_type": {
+   "hard_kappa": 0.3715,
+   "hard_balanced_accuracy": 0.8585,
+   "kappa_within_named_hard": 0.0,
+   "kappa_within_none_all_slots": 0.0,
+   "all_slot_kappa": 0.2628,
+   "all_slot_balanced_accuracy": 0.6333,
+   "omissions_credited": "0/38",
+   "commissions_credited": "15/15",
+   "passes_blamed": "0/7",
+   "hard_kappa_item_boot95": {
+    "lo": 0.1204,
+    "hi": 0.7243,
+    "clusters": 6,
+    "undefined_draws": 0
+   },
+   "hard_kappa_run_boot95": {
+    "lo": 0.1561,
+    "hi": 0.5946,
+    "clusters": 60,
+    "undefined_draws": 0
+   }
+  },
+  "V1": {
+   "hard_kappa": -0.1591,
+   "hard_balanced_accuracy": 0.4057,
+   "kappa_within_named_hard": -0.0,
+   "kappa_within_none_all_slots": -0.1802,
+   "all_slot_kappa": 0.049,
+   "all_slot_balanced_accuracy": 0.5258,
+   "omissions_credited": "10/38",
+   "commissions_credited": "0/15",
+   "passes_blamed": "7/7",
+   "hard_kappa_item_boot95": {
+    "lo": -0.2044,
+    "hi": -0.0619,
+    "clusters": 6,
+    "undefined_draws": 0
+   },
+   "hard_kappa_run_boot95": {
+    "lo": -0.2366,
+    "hi": -0.0619,
+    "clusters": 60,
+    "undefined_draws": 0
+   }
+  },
+  "V2": {
+   "hard_kappa": -0.2428,
+   "hard_balanced_accuracy": 0.1604,
+   "kappa_within_named_hard": -0.0,
+   "kappa_within_none_all_slots": 0.046,
+   "all_slot_kappa": -0.0119,
+   "all_slot_balanced_accuracy": 0.4942,
+   "omissions_credited": "36/38",
+   "commissions_credited": "0/15",
+   "passes_blamed": "7/7",
+   "hard_kappa_item_boot95": {
+    "lo": -0.4368,
+    "hi": -0.0677,
+    "clusters": 6,
+    "undefined_draws": 0
+   },
+   "hard_kappa_run_boot95": {
+    "lo": -0.4242,
+    "hi": -0.0682,
+    "clusters": 60,
+    "undefined_draws": 0
+   }
+  },
+  "V3": {
+   "hard_kappa": 0.0,
+   "hard_balanced_accuracy": 0.5,
+   "kappa_within_named_hard": -0.0,
+   "kappa_within_none_all_slots": 0.0,
+   "all_slot_kappa": 0.1969,
+   "all_slot_balanced_accuracy": 0.6061,
+   "omissions_credited": "0/38",
+   "commissions_credited": "0/15",
+   "passes_blamed": "7/7",
+   "hard_kappa_item_boot95": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "clusters": 6,
+    "undefined_draws": 8
+   },
+   "hard_kappa_run_boot95": {
+    "lo": 0.0,
+    "hi": 0.0,
+    "clusters": 60,
+    "undefined_draws": 7
+   }
+  }
+ },
+ "main_study": {
+  "runs": 64,
+  "items": 6,
+  "prevalence_hard": {
+   "passed": "45/64",
+   "answered_named": "51/64",
+   "answered_none": "13/64"
+  },
+  "L0": {
+   "hard_kappa": 0.207,
+   "hard_balanced_accuracy": 0.583,
+   "kappa_within_named_hard": 0.491,
+   "kappa_within_none_all_slots": 0.1217,
+   "all_slot_kappa": 0.2245,
+   "all_slot_balanced_accuracy": 0.5905,
+   "omissions_credited": "12/13",
+   "commissions_credited": "3/6",
+   "passes_blamed": "2/45",
+   "hard_kappa_item_boot95": {
+    "lo": -0.0196,
+    "hi": 0.4105,
+    "clusters": 6,
+    "undefined_draws": 0
+   },
+   "hard_kappa_run_boot95": {
+    "lo": -0.027,
+    "hi": 0.4439,
+    "clusters": 64,
+    "undefined_draws": 0
+   }
+  },
+  "L2": {
+   "hard_kappa": 0.236,
+   "hard_balanced_accuracy": 0.5982,
+   "kappa_within_named_hard": -0.0851,
+   "kappa_within_none_all_slots": 0.5096,
+   "all_slot_kappa": 0.3249,
+   "all_slot_balanced_accuracy": 0.6231,
+   "omissions_credited": "8/13",
+   "commissions_credited": "6/6",
+   "passes_blamed": "3/45",
+   "hard_kappa_item_boot95": {
+    "lo": -0.0137,
+    "hi": 0.5119,
+    "clusters": 6,
+    "undefined_draws": 0
+   },
+   "hard_kappa_run_boot95": {
+    "lo": -0.0066,
+    "hi": 0.4774,
+    "clusters": 64,
+    "undefined_draws": 0
+   }
+  },
+  "L2r": {
+   "hard_kappa": 0.0844,
+   "hard_balanced_accuracy": 0.5345,
+   "kappa_within_named_hard": -0.1039,
+   "kappa_within_none_all_slots": 0.3328,
+   "all_slot_kappa": 0.1864,
+   "all_slot_balanced_accuracy": 0.5684,
+   "omissions_credited": "10/13",
+   "commissions_credited": "6/6",
+   "passes_blamed": "4/45",
+   "hard_kappa_item_boot95": {
+    "lo": -0.0625,
+    "hi": 0.1923,
+    "clusters": 6,
+    "undefined_draws": 0
+   },
+   "hard_kappa_run_boot95": {
+    "lo": -0.1304,
+    "hi": 0.3143,
+    "clusters": 64,
+    "undefined_draws": 0
+   }
+  },
+  "L3_2": {
+   "hard_kappa": 0.962,
+   "hard_balanced_accuracy": 0.9737,
+   "kappa_within_named_hard": 0.8982,
+   "kappa_within_none_all_slots": 1.0,
+   "all_slot_kappa": 0.9709,
+   "all_slot_balanced_accuracy": 0.9737,
+   "omissions_credited": "0/13",
+   "commissions_credited": "1/6",
+   "passes_blamed": "0/45",
+   "hard_kappa_item_boot95": {
+    "lo": 0.8897,
+    "hi": 1.0,
+    "clusters": 6,
+    "undefined_draws": 0
+   },
+   "hard_kappa_run_boot95": {
+    "lo": 0.8672,
+    "hi": 1.0,
+    "clusters": 64,
+    "undefined_draws": 0
+   }
+  },
+  "answer_type": {
+   "hard_kappa": 0.7529,
+   "hard_balanced_accuracy": 0.8421,
+   "kappa_within_named_hard": 0.0,
+   "kappa_within_none_all_slots": 0.0,
+   "all_slot_kappa": 0.1723,
+   "all_slot_balanced_accuracy": 0.7071,
+   "omissions_credited": "0/13",
+   "commissions_credited": "6/6",
+   "passes_blamed": "0/45",
+   "hard_kappa_item_boot95": {
+    "lo": 0.5455,
+    "hi": 0.9172,
+    "clusters": 6,
+    "undefined_draws": 0
+   },
+   "hard_kappa_run_boot95": {
+    "lo": 0.5499,
+    "hi": 0.92,
+    "clusters": 64,
+    "undefined_draws": 0
+   }
+  },
+  "V1": {
+   "hard_kappa": 0.426,
+   "hard_balanced_accuracy": 0.7778,
+   "kappa_within_named_hard": 0.2273,
+   "kappa_within_none_all_slots": 0.0,
+   "all_slot_kappa": 0.0962,
+   "all_slot_balanced_accuracy": 0.7089,
+   "omissions_credited": "0/13",
+   "commissions_credited": "0/6",
+   "passes_blamed": "20/45",
+   "hard_kappa_item_boot95": {
+    "lo": 0.339,
+    "hi": 0.5498,
+    "clusters": 6,
+    "undefined_draws": 0
+   },
+   "hard_kappa_run_boot95": {
+    "lo": 0.2653,
+    "hi": 0.609,
+    "clusters": 64,
+    "undefined_draws": 0
+   }
+  },
+  "V2": {
+   "hard_kappa": -0.0783,
+   "hard_balanced_accuracy": 0.4579,
+   "kappa_within_named_hard": 0.2609,
+   "kappa_within_none_all_slots": 0.0,
+   "all_slot_kappa": 0.0163,
+   "all_slot_balanced_accuracy": 0.5187,
+   "omissions_credited": "13/13",
+   "commissions_credited": "0/6",
+   "passes_blamed": "18/45",
+   "hard_kappa_item_boot95": {
+    "lo": -0.3704,
+    "hi": 0.2184,
+    "clusters": 6,
+    "undefined_draws": 0
+   },
+   "hard_kappa_run_boot95": {
+    "lo": -0.3091,
+    "hi": 0.1604,
+    "clusters": 64,
+    "undefined_draws": 0
+   }
+  },
+  "V3": {
+   "hard_kappa": 0.426,
+   "hard_balanced_accuracy": 0.7778,
+   "kappa_within_named_hard": 0.2273,
+   "kappa_within_none_all_slots": 0.0,
+   "all_slot_kappa": 0.0962,
+   "all_slot_balanced_accuracy": 0.7089,
+   "omissions_credited": "0/13",
+   "commissions_credited": "0/6",
+   "passes_blamed": "20/45",
+   "hard_kappa_item_boot95": {
+    "lo": 0.339,
+    "hi": 0.5498,
+    "clusters": 6,
+    "undefined_draws": 0
+   },
+   "hard_kappa_run_boot95": {
+    "lo": 0.2653,
+    "hi": 0.609,
+    "clusters": 64,
+    "undefined_draws": 0
+   }
+  }
+ },
+ "harder_variant": {
+  "runs": 18,
+  "items": 6,
+  "prevalence_hard": {
+   "passed": "12/18",
+   "answered_named": "13/18",
+   "answered_none": "5/18"
+  },
+  "L0": {
+   "hard_kappa": 0.2105,
+   "hard_balanced_accuracy": 0.5833,
+   "kappa_within_named_hard": 1.0,
+   "kappa_within_none_all_slots": 0.2308,
+   "all_slot_kappa": 0.2746,
+   "all_slot_balanced_accuracy": 0.6198,
+   "omissions_credited": "5/5",
+   "commissions_credited": "0/1",
+   "passes_blamed": "0/12",
+   "hard_kappa_item_boot95": {
+    "lo": 0.0,
+    "hi": 0.7586,
+    "clusters": 6,
+    "undefined_draws": 14
+   },
+   "hard_kappa_run_boot95": {
+    "lo": 0.0,
+    "hi": 0.6197,
+    "clusters": 18,
+    "undefined_draws": 9
+   }
+  },
+  "L3_0": {
+   "hard_kappa": 0.6667,
+   "hard_balanced_accuracy": 0.875,
+   "kappa_within_named_hard": 0.3158,
+   "kappa_within_none_all_slots": 1.0,
+   "all_slot_kappa": 0.6566,
+   "all_slot_balanced_accuracy": 0.9538,
+   "omissions_credited": "0/5",
+   "commissions_credited": "0/1",
+   "passes_blamed": "3/12",
+   "hard_kappa_item_boot95": {
+    "lo": 0.2703,
+    "hi": 1.0,
+    "clusters": 6,
+    "undefined_draws": 14
+   },
+   "hard_kappa_run_boot95": {
+    "lo": 0.3226,
+    "hi": 1.0,
+    "clusters": 18,
+    "undefined_draws": 0
+   }
+  },
+  "answer_type": {
+   "hard_kappa": 0.8696,
+   "hard_balanced_accuracy": 0.9167,
+   "kappa_within_named_hard": 0.0,
+   "kappa_within_none_all_slots": 0.0,
+   "all_slot_kappa": 0.2785,
+   "all_slot_balanced_accuracy": 0.7901,
+   "omissions_credited": "0/5",
+   "commissions_credited": "1/1",
+   "passes_blamed": "0/12",
+   "hard_kappa_item_boot95": {
+    "lo": 0.3721,
+    "hi": 1.0,
+    "clusters": 6,
+    "undefined_draws": 14
+   },
+   "hard_kappa_run_boot95": {
+    "lo": 0.5556,
+    "hi": 1.0,
+    "clusters": 18,
+    "undefined_draws": 9
+   }
+  }
+ },
+ "judge_noise": {
+  "L0_vs_L0r_set_A_runs": 130,
+  "L0_vs_L0r_hard_kappa": 0.8945,
+  "L0_vs_L0r_all_slot_kappa": 0.8441,
+  "c17_three_replicates": {
+   "runs": 132,
+   "slots": 528,
+   "fleiss_kappa": 0.78,
+   "all_agree": 0.92,
+   "hard_fleiss_kappa": 0.842,
+   "hard_all_agree": 0.932
+  },
+  "c17_two_replicates_214": {
+   "runs": 214,
+   "slots": 856,
+   "agreement": 0.95,
+   "pabak": 0.9,
+   "cohen_kappa": 0.737
+  },
+  "figure1_line": "hard-slot test-retest (the figure plots hard-slot kappa)"
+ }
+}

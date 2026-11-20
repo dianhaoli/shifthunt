@@ -1,0 +1,133 @@
+{
+ "factors": {
+  "terra": {
+   "sent_ok": 5,
+   "r10_usd": 1.6755,
+   "orig_usd": 1.6863,
+   "factor": 0.994
+  },
+  "sol": {
+   "sent_ok": 4,
+   "r10_usd": 2.5348,
+   "orig_usd": 2.5416,
+   "factor": 0.997
+  },
+  "haiku": {
+   "sent_ok": 4,
+   "r10_usd": 0.4031,
+   "orig_usd": 0.3607,
+   "factor": 1.117
+  }
+ },
+ "by_file": {
+  "judge/calls.jsonl | gpt-6.1-terra": {
+   "orig_usd": 1.97,
+   "factor": 0.994,
+   "projected_usd": 1.958
+  },
+  "judge_luna/calls.jsonl | gpt-6.1-terra": {
+   "orig_usd": 0.665,
+   "factor": 0.994,
+   "projected_usd": 0.661
+  },
+  "judge_ladder/calls.jsonl | gpt-6.1-terra": {
+   "orig_usd": 6.137,
+   "factor": 0.994,
+   "projected_usd": 6.1
+  },
+  "judge_ladder/calls.jsonl | claude-haiku-5-5": {
+   "orig_usd": 0.645,
+   "factor": 1.117,
+   "projected_usd": 0.721
+  },
+  "judge_ladder2/calls_c6b.jsonl | gpt-6.1-terra": {
+   "orig_usd": 29.246,
+   "factor": 0.994,
+   "projected_usd": 29.07
+  },
+  "judge_ladder2/calls_haiku.jsonl | claude-haiku-5-5": {
+   "orig_usd": 3.695,
+   "factor": 1.117,
+   "projected_usd": 4.127
+  },
+  "judge_ladder2/calls_c6c.jsonl | gpt-6.1-terra": {
+   "orig_usd": 24.411,
+   "factor": 0.994,
+   "projected_usd": 24.264
+  },
+  "judge_ladder2/calls_k.jsonl | gpt-6.1-terra": {
+   "orig_usd": 1.139,
+   "factor": 0.994,
+   "projected_usd": 1.132
+  },
+  "judge_ladder2/calls_f.jsonl | gpt-6.1-terra": {
+   "orig_usd": 6.183,
+   "factor": 0.994,
+   "projected_usd": 6.146
+  },
+  "judge_panel/calls_terra.jsonl | gpt-6.1-terra": {
+   "orig_usd": 4.296,
+   "factor": 0.994,
+   "projected_usd": 4.271
+  },
+  "judge_panel/calls_small.jsonl | gpt-6-luna": {
+   "orig_usd": 0.692,
+   "factor": 1.0,
+   "projected_usd": 0.692
+  },
+  "judge_panel/calls_small.jsonl | claude-haiku-5-5": {
+   "orig_usd": 0.39,
+   "factor": 1.117,
+   "projected_usd": 0.436
+  },
+  "judge_cheaters/calls.jsonl | claude-haiku-5-5": {
+   "orig_usd": 0.062,
+   "factor": 1.117,
+   "projected_usd": 0.069
+  },
+  "judge_cheaters/calls.jsonl | gpt-6.1-terra": {
+   "orig_usd": 0.546,
+   "factor": 0.994,
+   "projected_usd": 0.543
+  },
+  "judge_sol/calls_s1.jsonl | gpt-6.1-sol": {
+   "orig_usd": 20.749,
+   "factor": 0.997,
+   "projected_usd": 20.686
+  },
+  "judge_sol/calls_s2.jsonl | gpt-6.1-sol": {
+   "orig_usd": 4.504,
+   "factor": 0.997,
+   "projected_usd": 4.49
+  },
+  "judge_sol/calls_s3.jsonl | gpt-6.1-sol": {
+   "orig_usd": 1.198,
+   "factor": 0.997,
+   "projected_usd": 1.194
+  },
+  "judge_sol/calls_s4.jsonl | gpt-6.1-sol": {
+   "orig_usd": 24.509,
+   "factor": 0.997,
+   "projected_usd": 24.436
+  },
+  "judge_sol/calls_s5.jsonl | gpt-6.1-sol": {
+   "orig_usd": 2.988,
+   "factor": 0.997,
+   "projected_usd": 2.979
+  },
+  "judge_c14/calls.jsonl | gpt-6.1-terra": {
+   "orig_usd": 0.239,
+   "factor": 0.994,
+   "projected_usd": 0.238
+  },
+  "judge_c14b/calls.jsonl | gpt-6.1-terra": {
+   "orig_usd": 0.145,
+   "factor": 0.994,
+   "projected_usd": 0.144
+  }
+ },
+ "total_P0_P3": {
+  "openai": 129.0,
+  "anthropic": 5.35
+ }
+}

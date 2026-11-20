@@ -1,1 +1,1 @@
-# Lets pytest import the shifthunt package from the repo root.
+# Lets pytest import the shortcuthunt package from the repo root.

@@ -7,7 +7,7 @@
 #   usage: scripts/test_crash_zero_in_image.sh [image] [episode]
 set -u
 HERE="$(cd "$(dirname "$0")/.." && pwd)"
-IMAGE="${1:-rl-task-shifthunt-overnight}"
+IMAGE="${1:-shortcuthunt}"
 EP="${2:-ep201}"
 fail=0
 for scenario in crash submit noready; do

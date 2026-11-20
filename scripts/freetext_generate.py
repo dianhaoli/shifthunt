@@ -3,7 +3,7 @@
     python scripts/freetext_generate.py --out .cache/freetext/raw.jsonl --per-topic 260 --model claude-haiku-5-5
 
 Each request asks for BATCH paragraphs about one hobby in a canonical form that the deterministic feature
-edits in shifthunt/freetext.py rely on (he/him only, present tense, American spelling, no contractions,
+edits in shortcuthunt/freetext.py rely on (he/him only, present tense, American spelling, no contractions,
 numbers as words, no ! ? " ( ) # : ; or digits). freetext.py re-checks every paragraph and drops the
 ones that break the form, so this script only asks; it never certifies. The API key is read from the
 environment or from a .env file given with --env (never printed or written anywhere).
@@ -20,7 +20,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
-from shifthunt import textgen as tg  # noqa: E402
+from shortcuthunt import textgen as tg  # noqa: E402
 
 BATCH = 20
 THEMES = ["his job", "a coworker", "his sister", "his parents", "the weather", "money worries",

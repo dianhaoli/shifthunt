@@ -1,0 +1,2881 @@
+{
+ "file": "gpuplan/c19_reorder.json",
+ "changed": 551,
+ "rows": {
+  "boot": {
+   "frozen": 4000,
+   "r10": 10000,
+   "change": 6000.0
+  },
+  "gate": {
+   "frozen": "passed: 214 runs, 53/68 false credit, 32/146 false blame, L9 certified counts, Part A ranges",
+   "r10": "bypassed on r10 (frozen-count reproduction gate; scripts/r10_c19.py)",
+   "change": null
+  },
+  "L9/systems/Terra-open/judge": {
+   "frozen": "34/40",
+   "r10": "38/40",
+   "change": 0.1
+  },
+  "L9/systems/Terra-open/judge_rate": {
+   "frozen": 0.85,
+   "r10": 0.95,
+   "change": 0.1
+  },
+  "L9/systems/Sonnet-open/judge": {
+   "frozen": "12/16",
+   "r10": "13/16",
+   "change": 0.0625
+  },
+  "L9/systems/Sonnet-open/judge_rate": {
+   "frozen": 0.75,
+   "r10": 0.812,
+   "change": 0.062
+  },
+  "L9/systems/Haiku-open/judge": {
+   "frozen": "25/28",
+   "r10": "26/28",
+   "change": 0.0357
+  },
+  "L9/systems/Haiku-open/judge_rate": {
+   "frozen": 0.893,
+   "r10": 0.929,
+   "change": 0.036
+  },
+  "L9/systems/Terra-BB8/judge": {
+   "frozen": "14/24",
+   "r10": "18/24",
+   "change": 0.1667
+  },
+  "L9/systems/Terra-BB8/judge_rate": {
+   "frozen": 0.583,
+   "r10": 0.75,
+   "change": 0.167
+  },
+  "L9/systems/Terra-BB64/judge": {
+   "frozen": "16/24",
+   "r10": "21/24",
+   "change": 0.2083
+  },
+  "L9/systems/Terra-BB64/judge_rate": {
+   "frozen": 0.667,
+   "r10": 0.875,
+   "change": 0.208
+  },
+  "L9/systems/Haiku-BB8/judge": {
+   "frozen": "6/12",
+   "r10": "5/12",
+   "change": -0.0833
+  },
+  "L9/systems/Haiku-BB8/judge_rate": {
+   "frozen": 0.5,
+   "r10": 0.417,
+   "change": -0.083
+  },
+  "L9/systems/Haiku-BB64/judge": {
+   "frozen": "8/12",
+   "r10": "12/12",
+   "change": 0.3333
+  },
+  "L9/systems/Haiku-BB64/judge_rate": {
+   "frozen": 0.667,
+   "r10": 1.0,
+   "change": 0.333
+  },
+  "L9/tau_b": {
+   "frozen": 0.229,
+   "r10": 0.286,
+   "change": 0.057
+  },
+  "L9/tau_b_run_boot_95": {
+   "frozen": [
+    -0.09,
+    0.457
+   ],
+   "r10": [
+    0.0,
+    0.551
+   ],
+   "change": null
+  },
+  "L9/tau_b_item_boot_95": {
+   "frozen": [
+    -0.167,
+    0.366
+   ],
+   "r10": [
+    -0.056,
+    0.777
+   ],
+   "change": null
+  },
+  "L9/tau_b_hard_pairs_concordance": {
+   "frozen": 0.0,
+   "r10": 0.176,
+   "change": 0.176
+  },
+  "L9/discordant_pairs": {
+   "frozen": 13,
+   "r10": 12,
+   "change": -1.0
+  },
+  "L9/pair_rows[0]/judge_gap": {
+   "frozen": -0.088,
+   "r10": 0.012,
+   "change": 0.1
+  },
+  "L9/pair_rows[0]/item_boot_p_cert_order": {
+   "frozen": 0.89,
+   "r10": 0.882,
+   "change": -0.008
+  },
+  "L9/pair_rows[0]/judge_point_reversed": {
+   "frozen": true,
+   "r10": false,
+   "change": -1.0
+  },
+  "L9/pair_rows[0]/run_boot_p_judge_reversed": {
+   "frozen": 0.876,
+   "r10": 0.415,
+   "change": -0.461
+  },
+  "L9/pair_rows[0]/flip_probability": {
+   "frozen": 0.898,
+   "r10": 0.434,
+   "change": -0.464
+  },
+  "L9/pair_rows[1]/judge_gap": {
+   "frozen": 0.1,
+   "r10": 0.137,
+   "change": 0.037
+  },
+  "L9/pair_rows[1]/run_boot_p_judge_reversed": {
+   "frozen": 0.147,
+   "r10": 0.062,
+   "change": -0.085
+  },
+  "L9/pair_rows[1]/flip_probability": {
+   "frozen": 0.183,
+   "r10": 0.101,
+   "change": -0.082
+  },
+  "L9/pair_rows[2]/judge_gap": {
+   "frozen": -0.043,
+   "r10": 0.021,
+   "change": 0.064
+  },
+  "L9/pair_rows[2]/judge_point_reversed": {
+   "frozen": true,
+   "r10": false,
+   "change": -1.0
+  },
+  "L9/pair_rows[2]/run_boot_p_judge_reversed": {
+   "frozen": 0.724,
+   "r10": 0.36,
+   "change": -0.364
+  },
+  "L9/pair_rows[2]/flip_probability": {
+   "frozen": 0.724,
+   "r10": 0.366,
+   "change": -0.358
+  },
+  "L9/pair_rows[3]/judge_gap": {
+   "frozen": 0.267,
+   "r10": 0.2,
+   "change": -0.067
+  },
+  "L9/pair_rows[3]/run_boot_p_judge_reversed": {
+   "frozen": 0.003,
+   "r10": 0.006,
+   "change": 0.003
+  },
+  "L9/pair_rows[3]/flip_probability": {
+   "frozen": 0.003,
+   "r10": 0.007,
+   "change": 0.004
+  },
+  "L9/pair_rows[4]/judge_gap": {
+   "frozen": -0.025,
+   "r10": 0.075,
+   "change": 0.1
+  },
+  "L9/pair_rows[4]/item_boot_p_cert_order": {
+   "frozen": 0.947,
+   "r10": 0.943,
+   "change": -0.004
+  },
+  "L9/pair_rows[4]/judge_point_reversed": {
+   "frozen": true,
+   "r10": false,
+   "change": -1.0
+  },
+  "L9/pair_rows[4]/run_boot_p_judge_reversed": {
+   "frozen": 0.614,
+   "r10": 0.118,
+   "change": -0.496
+  },
+  "L9/pair_rows[4]/flip_probability": {
+   "frozen": 0.629,
+   "r10": 0.134,
+   "change": -0.495
+  },
+  "L9/pair_rows[5]/judge_gap": {
+   "frozen": -0.183,
+   "r10": -0.075,
+   "change": 0.108
+  },
+  "L9/pair_rows[5]/item_boot_p_cert_order": {
+   "frozen": 0.913,
+   "r10": 0.914,
+   "change": 0.001
+  },
+  "L9/pair_rows[5]/run_boot_p_judge_reversed": {
+   "frozen": 0.964,
+   "r10": 0.921,
+   "change": -0.043
+  },
+  "L9/pair_rows[5]/flip_probability": {
+   "frozen": 0.968,
+   "r10": 0.928,
+   "change": -0.04
+  },
+  "L9/pair_rows[6]/judge_gap": {
+   "frozen": 0.35,
+   "r10": 0.533,
+   "change": 0.183
+  },
+  "L9/pair_rows[6]/run_boot_p_judge_reversed": {
+   "frozen": 0.004,
+   "r10": 0.0,
+   "change": -0.004
+  },
+  "L9/pair_rows[6]/flip_probability": {
+   "frozen": 0.004,
+   "r10": 0.0,
+   "change": -0.004
+  },
+  "L9/pair_rows[7]/judge_gap": {
+   "frozen": 0.183,
+   "r10": -0.05,
+   "change": -0.233
+  },
+  "L9/pair_rows[7]/item_boot_p_cert_order": {
+   "frozen": 0.938,
+   "r10": 0.939,
+   "change": 0.001
+  },
+  "L9/pair_rows[7]/judge_point_reversed": {
+   "frozen": false,
+   "r10": true,
+   "change": 1.0
+  },
+  "L9/pair_rows[7]/run_boot_p_judge_reversed": {
+   "frozen": 0.032,
+   "r10": 0.891,
+   "change": 0.859
+  },
+  "L9/pair_rows[7]/flip_probability": {
+   "frozen": 0.036,
+   "r10": 0.945,
+   "change": 0.909
+  },
+  "L9/pair_rows[8]/judge_gap": {
+   "frozen": -0.188,
+   "r10": -0.125,
+   "change": 0.063
+  },
+  "L9/pair_rows[8]/item_boot_p_cert_order": {
+   "frozen": 0.577,
+   "r10": 0.56,
+   "change": -0.017
+  },
+  "L9/pair_rows[8]/run_boot_p_judge_reversed": {
+   "frozen": 0.952,
+   "r10": 0.821,
+   "change": -0.131
+  },
+  "L9/pair_rows[8]/flip_probability": {
+   "frozen": 0.791,
+   "r10": 0.724,
+   "change": -0.067
+  },
+  "L9/pair_rows[9]/judge_gap": {
+   "frozen": 0.045,
+   "r10": 0.009,
+   "change": -0.036
+  },
+  "L9/pair_rows[9]/item_boot_p_cert_order": {
+   "frozen": 0.835,
+   "r10": 0.838,
+   "change": 0.003
+  },
+  "L9/pair_rows[9]/run_boot_p_judge_reversed": {
+   "frozen": 0.242,
+   "r10": 0.39,
+   "change": 0.148
+  },
+  "L9/pair_rows[9]/flip_probability": {
+   "frozen": 0.247,
+   "r10": 0.406,
+   "change": 0.159
+  },
+  "L9/pair_rows[10]/judge_gap": {
+   "frozen": 0.354,
+   "r10": 0.188,
+   "change": -0.166
+  },
+  "L9/pair_rows[10]/item_boot_p_cert_order": {
+   "frozen": 0.874,
+   "r10": 0.878,
+   "change": 0.004
+  },
+  "L9/pair_rows[10]/run_boot_p_judge_reversed": {
+   "frozen": 0.0,
+   "r10": 0.015,
+   "change": 0.015
+  },
+  "L9/pair_rows[10]/flip_probability": {
+   "frozen": 0.0,
+   "r10": 0.022,
+   "change": 0.022
+  },
+  "L9/pair_rows[11]/item_boot_p_cert_order": {
+   "frozen": 0.617,
+   "r10": 0.609,
+   "change": -0.008
+  },
+  "L9/pair_rows[11]/run_boot_p_judge_reversed": {
+   "frozen": 0.747,
+   "r10": 0.765,
+   "change": 0.018
+  },
+  "L9/pair_rows[11]/flip_probability": {
+   "frozen": 0.651,
+   "r10": 0.659,
+   "change": 0.008
+  },
+  "L9/pair_rows[12]/judge_gap": {
+   "frozen": -0.271,
+   "r10": -0.062,
+   "change": 0.209
+  },
+  "L9/pair_rows[12]/item_boot_p_cert_order": {
+   "frozen": 0.915,
+   "r10": 0.911,
+   "change": -0.004
+  },
+  "L9/pair_rows[12]/run_boot_p_judge_reversed": {
+   "frozen": 0.998,
+   "r10": 0.786,
+   "change": -0.212
+  },
+  "L9/pair_rows[12]/flip_probability": {
+   "frozen": 0.999,
+   "r10": 0.834,
+   "change": -0.165
+  },
+  "L9/pair_rows[13]/judge_gap": {
+   "frozen": 0.438,
+   "r10": 0.521,
+   "change": 0.083
+  },
+  "L9/pair_rows[13]/item_boot_p_cert_order": {
+   "frozen": 0.992,
+   "r10": 0.993,
+   "change": 0.001
+  },
+  "L9/pair_rows[14]/judge_gap": {
+   "frozen": 0.271,
+   "r10": -0.062,
+   "change": -0.333
+  },
+  "L9/pair_rows[14]/item_boot_p_cert_order": {
+   "frozen": 0.552,
+   "r10": 0.567,
+   "change": 0.015
+  },
+  "L9/pair_rows[14]/judge_point_reversed": {
+   "frozen": false,
+   "r10": true,
+   "change": 1.0
+  },
+  "L9/pair_rows[14]/run_boot_p_judge_reversed": {
+   "frozen": 0.0,
+   "r10": 0.702,
+   "change": 0.702
+  },
+  "L9/pair_rows[14]/flip_probability": {
+   "frozen": 0.416,
+   "r10": 0.598,
+   "change": 0.182
+  },
+  "L9/pair_rows[15]/judge_gap": {
+   "frozen": -0.143,
+   "r10": -0.116,
+   "change": 0.027
+  },
+  "L9/pair_rows[15]/item_boot_p_cert_order": {
+   "frozen": 0.994,
+   "r10": 0.991,
+   "change": -0.003
+  },
+  "L9/pair_rows[15]/run_boot_p_judge_reversed": {
+   "frozen": 0.93,
+   "r10": 0.87,
+   "change": -0.06
+  },
+  "L9/pair_rows[15]/flip_probability": {
+   "frozen": 0.921,
+   "r10": 0.861,
+   "change": -0.06
+  },
+  "L9/pair_rows[16]/judge_gap": {
+   "frozen": 0.167,
+   "r10": 0.062,
+   "change": -0.105
+  },
+  "L9/pair_rows[16]/run_boot_p_judge_reversed": {
+   "frozen": 0.078,
+   "r10": 0.268,
+   "change": 0.19
+  },
+  "L9/pair_rows[16]/flip_probability": {
+   "frozen": 0.093,
+   "r10": 0.299,
+   "change": 0.206
+  },
+  "L9/pair_rows[17]/judge_gap": {
+   "frozen": -0.083,
+   "r10": 0.062,
+   "change": 0.145
+  },
+  "L9/pair_rows[17]/judge_point_reversed": {
+   "frozen": true,
+   "r10": false,
+   "change": -1.0
+  },
+  "L9/pair_rows[17]/run_boot_p_judge_reversed": {
+   "frozen": 0.707,
+   "r10": 0.211,
+   "change": -0.496
+  },
+  "L9/pair_rows[17]/flip_probability": {
+   "frozen": 0.733,
+   "r10": 0.263,
+   "change": -0.47
+  },
+  "L9/pair_rows[18]/judge_gap": {
+   "frozen": 0.25,
+   "r10": 0.396,
+   "change": 0.146
+  },
+  "L9/pair_rows[18]/run_boot_p_judge_reversed": {
+   "frozen": 0.039,
+   "r10": 0.0,
+   "change": -0.039
+  },
+  "L9/pair_rows[18]/flip_probability": {
+   "frozen": 0.045,
+   "r10": 0.0,
+   "change": -0.045
+  },
+  "L9/pair_rows[19]/judge_gap": {
+   "frozen": 0.083,
+   "r10": -0.188,
+   "change": -0.271
+  },
+  "L9/pair_rows[19]/item_boot_p_cert_order": {
+   "frozen": 0.61,
+   "r10": 0.606,
+   "change": -0.004
+  },
+  "L9/pair_rows[19]/judge_point_reversed": {
+   "frozen": false,
+   "r10": true,
+   "change": 1.0
+  },
+  "L9/pair_rows[19]/run_boot_p_judge_reversed": {
+   "frozen": 0.221,
+   "r10": 0.976,
+   "change": 0.755
+  },
+  "L9/pair_rows[19]/flip_probability": {
+   "frozen": 0.421,
+   "r10": 0.778,
+   "change": 0.357
+  },
+  "L9/pair_rows[20]/judge_gap": {
+   "frozen": 0.31,
+   "r10": 0.179,
+   "change": -0.131
+  },
+  "L9/pair_rows[20]/run_boot_p_judge_reversed": {
+   "frozen": 0.001,
+   "r10": 0.025,
+   "change": 0.024
+  },
+  "L9/pair_rows[20]/flip_probability": {
+   "frozen": 0.107,
+   "r10": 0.123,
+   "change": 0.016
+  },
+  "L9/pair_rows[21]/judge_gap": {
+   "frozen": -0.018,
+   "r10": -0.054,
+   "change": -0.036
+  },
+  "L9/pair_rows[21]/item_boot_p_cert_order": {
+   "frozen": 0.966,
+   "r10": 0.971,
+   "change": 0.005
+  },
+  "L9/pair_rows[21]/run_boot_p_judge_reversed": {
+   "frozen": 0.586,
+   "r10": 0.787,
+   "change": 0.201
+  },
+  "L9/pair_rows[21]/flip_probability": {
+   "frozen": 0.585,
+   "r10": 0.785,
+   "change": 0.2
+  },
+  "L9/pair_rows[22]/judge_gap": {
+   "frozen": -0.226,
+   "r10": -0.054,
+   "change": 0.172
+  },
+  "L9/pair_rows[22]/run_boot_p_judge_reversed": {
+   "frozen": 0.984,
+   "r10": 0.833,
+   "change": -0.151
+  },
+  "L9/pair_rows[22]/robust_reversal": {
+   "frozen": true,
+   "r10": false,
+   "change": -1.0
+  },
+  "L9/pair_rows[22]/flip_probability": {
+   "frozen": 0.984,
+   "r10": 0.833,
+   "change": -0.151
+  },
+  "L9/pair_rows[23]/judge_gap": {
+   "frozen": 0.393,
+   "r10": 0.512,
+   "change": 0.119
+  },
+  "L9/pair_rows[23]/item_boot_p_cert_order": {
+   "frozen": 0.866,
+   "r10": 0.863,
+   "change": -0.003
+  },
+  "L9/pair_rows[23]/run_boot_p_judge_reversed": {
+   "frozen": 0.002,
+   "r10": 0.0,
+   "change": -0.002
+  },
+  "L9/pair_rows[23]/flip_probability": {
+   "frozen": 0.046,
+   "r10": 0.05,
+   "change": 0.004
+  },
+  "L9/pair_rows[24]/judge_gap": {
+   "frozen": -0.226,
+   "r10": 0.071,
+   "change": 0.297
+  },
+  "L9/pair_rows[24]/item_boot_p_cert_order": {
+   "frozen": 0.787,
+   "r10": 0.775,
+   "change": -0.012
+  },
+  "L9/pair_rows[24]/judge_point_reversed": {
+   "frozen": true,
+   "r10": false,
+   "change": -1.0
+  },
+  "L9/pair_rows[24]/run_boot_p_judge_reversed": {
+   "frozen": 0.991,
+   "r10": 0.0,
+   "change": -0.991
+  },
+  "L9/pair_rows[24]/flip_probability": {
+   "frozen": 0.966,
+   "r10": 0.083,
+   "change": -0.883
+  },
+  "L9/pair_rows[25]/judge_gap": {
+   "frozen": 0.292,
+   "r10": 0.125,
+   "change": -0.167
+  },
+  "L9/pair_rows[25]/item_boot_p_cert_order": {
+   "frozen": 0.991,
+   "r10": 0.993,
+   "change": 0.002
+  },
+  "L9/pair_rows[25]/run_boot_p_judge_reversed": {
+   "frozen": 0.001,
+   "r10": 0.064,
+   "change": 0.063
+  },
+  "L9/pair_rows[25]/flip_probability": {
+   "frozen": 0.002,
+   "r10": 0.103,
+   "change": 0.101
+  },
+  "L9/pair_rows[26]/judge_gap": {
+   "frozen": 0.083,
+   "r10": 0.125,
+   "change": 0.042
+  },
+  "L9/pair_rows[26]/run_boot_p_judge_reversed": {
+   "frozen": 0.194,
+   "r10": 0.041,
+   "change": -0.153
+  },
+  "L9/pair_rows[26]/flip_probability": {
+   "frozen": 0.249,
+   "r10": 0.078,
+   "change": -0.171
+  },
+  "L9/pair_rows[27]/judge_gap": {
+   "frozen": 0.083,
+   "r10": 0.333,
+   "change": 0.25
+  },
+  "L9/pair_rows[27]/item_boot_p_cert_order": {
+   "frozen": 0.609,
+   "r10": 0.612,
+   "change": 0.003
+  },
+  "L9/pair_rows[27]/run_boot_p_judge_reversed": {
+   "frozen": 0.252,
+   "r10": 0.0,
+   "change": -0.252
+  },
+  "L9/pair_rows[27]/flip_probability": {
+   "frozen": 0.551,
+   "r10": 0.318,
+   "change": -0.233
+  },
+  "L9/pair_rows[28]/judge_gap": {
+   "frozen": 0.083,
+   "r10": 0.25,
+   "change": 0.167
+  },
+  "L9/pair_rows[28]/run_boot_p_judge_reversed": {
+   "frozen": 0.181,
+   "r10": 0.0,
+   "change": -0.181
+  },
+  "L9/pair_rows[28]/flip_probability": {
+   "frozen": 0.238,
+   "r10": 0.003,
+   "change": -0.235
+  },
+  "L9/pair_rows[29]/judge_gap": {
+   "frozen": -0.208,
+   "r10": 0.0,
+   "change": 0.208
+  },
+  "L9/pair_rows[29]/item_boot_p_cert_order": {
+   "frozen": 1.0,
+   "r10": 0.998,
+   "change": -0.002
+  },
+  "L9/pair_rows[29]/judge_point_reversed": {
+   "frozen": true,
+   "r10": false,
+   "change": -1.0
+  },
+  "L9/pair_rows[29]/run_boot_p_judge_reversed": {
+   "frozen": 0.964,
+   "r10": 0.384,
+   "change": -0.58
+  },
+  "L9/pair_rows[29]/robust_reversal": {
+   "frozen": true,
+   "r10": false,
+   "change": -1.0
+  },
+  "L9/pair_rows[29]/flip_probability": {
+   "frozen": 0.976,
+   "r10": 0.51,
+   "change": -0.466
+  },
+  "L9/pair_rows[30]/judge_gap": {
+   "frozen": 0.375,
+   "r10": 0.458,
+   "change": 0.083
+  },
+  "L9/pair_rows[30]/item_boot_p_cert_order": {
+   "frozen": 0.998,
+   "r10": 0.999,
+   "change": 0.001
+  },
+  "L9/pair_rows[30]/run_boot_p_judge_reversed": {
+   "frozen": 0.001,
+   "r10": 0.0,
+   "change": -0.001
+  },
+  "L9/pair_rows[30]/flip_probability": {
+   "frozen": 0.003,
+   "r10": 0.0,
+   "change": -0.003
+  },
+  "L9/pair_rows[31]/judge_gap": {
+   "frozen": 0.208,
+   "r10": -0.125,
+   "change": -0.333
+  },
+  "L9/pair_rows[31]/item_boot_p_cert_order": {
+   "frozen": 0.621,
+   "r10": 0.63,
+   "change": 0.009
+  },
+  "L9/pair_rows[31]/judge_point_reversed": {
+   "frozen": false,
+   "r10": true,
+   "change": 1.0
+  },
+  "L9/pair_rows[31]/run_boot_p_judge_reversed": {
+   "frozen": 0.011,
+   "r10": 0.983,
+   "change": 0.972
+  },
+  "L9/pair_rows[31]/flip_probability": {
+   "frozen": 0.313,
+   "r10": 0.814,
+   "change": 0.501
+  },
+  "L9/pair_rows[32]/judge_gap": {
+   "frozen": 0.167,
+   "r10": 0.458,
+   "change": 0.291
+  },
+  "L9/pair_rows[32]/run_boot_p_judge_reversed": {
+   "frozen": 0.113,
+   "r10": 0.0,
+   "change": -0.113
+  },
+  "L9/pair_rows[32]/flip_probability": {
+   "frozen": 0.148,
+   "r10": 0.0,
+   "change": -0.148
+  },
+  "L9/pair_rows[33]/judge_gap": {
+   "frozen": 0.0,
+   "r10": -0.125,
+   "change": -0.125
+  },
+  "L9/pair_rows[33]/item_boot_p_cert_order": {
+   "frozen": 0.984,
+   "r10": 0.985,
+   "change": 0.001
+  },
+  "L9/pair_rows[33]/judge_point_reversed": {
+   "frozen": false,
+   "r10": true,
+   "change": 1.0
+  },
+  "L9/pair_rows[33]/run_boot_p_judge_reversed": {
+   "frozen": 0.442,
+   "r10": 0.996,
+   "change": 0.554
+  },
+  "L9/pair_rows[33]/robust_reversal": {
+   "frozen": false,
+   "r10": true,
+   "change": 1.0
+  },
+  "L9/pair_rows[33]/flip_probability": {
+   "frozen": 0.503,
+   "r10": 0.998,
+   "change": 0.495
+  },
+  "L9/pair_rows[34]/judge_gap": {
+   "frozen": 0.167,
+   "r10": 0.583,
+   "change": 0.416
+  },
+  "L9/pair_rows[34]/item_boot_p_cert_order": {
+   "frozen": 0.998,
+   "r10": 0.999,
+   "change": 0.001
+  },
+  "L9/pair_rows[34]/run_boot_p_judge_reversed": {
+   "frozen": 0.076,
+   "r10": 0.0,
+   "change": -0.076
+  },
+  "L9/pair_rows[34]/flip_probability": {
+   "frozen": 0.141,
+   "r10": 0.001,
+   "change": -0.14
+  },
+  "L11/systems/Terra-main/judge": {
+   "frozen": "14/16",
+   "r10": "15/16",
+   "change": 0.0625
+  },
+  "L11/systems/Terra-main/judge_rate": {
+   "frozen": 0.875,
+   "r10": 0.938,
+   "change": 0.063
+  },
+  "L11/systems/Sonnet-main/judge": {
+   "frozen": "12/16",
+   "r10": "13/16",
+   "change": 0.0625
+  },
+  "L11/systems/Sonnet-main/judge_rate": {
+   "frozen": 0.75,
+   "r10": 0.812,
+   "change": 0.062
+  },
+  "L11/systems/Terra-O8/judge": {
+   "frozen": "20/24",
+   "r10": "23/24",
+   "change": 0.125
+  },
+  "L11/systems/Terra-O8/judge_rate": {
+   "frozen": 0.833,
+   "r10": 0.958,
+   "change": 0.125
+  },
+  "L11/systems/Terra-BB8/judge": {
+   "frozen": "14/24",
+   "r10": "18/24",
+   "change": 0.1667
+  },
+  "L11/systems/Terra-BB8/judge_rate": {
+   "frozen": 0.583,
+   "r10": 0.75,
+   "change": 0.167
+  },
+  "L11/systems/Terra-BB64/judge": {
+   "frozen": "16/24",
+   "r10": "21/24",
+   "change": 0.2083
+  },
+  "L11/systems/Terra-BB64/judge_rate": {
+   "frozen": 0.667,
+   "r10": 0.875,
+   "change": 0.208
+  },
+  "L11/systems/Haiku-O8/judge": {
+   "frozen": "10/12",
+   "r10": "11/12",
+   "change": 0.0833
+  },
+  "L11/systems/Haiku-O8/judge_rate": {
+   "frozen": 0.833,
+   "r10": 0.917,
+   "change": 0.084
+  },
+  "L11/systems/Haiku-BB8/judge": {
+   "frozen": "6/12",
+   "r10": "5/12",
+   "change": -0.0833
+  },
+  "L11/systems/Haiku-BB8/judge_rate": {
+   "frozen": 0.5,
+   "r10": 0.417,
+   "change": -0.083
+  },
+  "L11/systems/Haiku-BB64/judge": {
+   "frozen": "8/12",
+   "r10": "12/12",
+   "change": 0.3333
+  },
+  "L11/systems/Haiku-BB64/judge_rate": {
+   "frozen": 0.667,
+   "r10": 1.0,
+   "change": 0.333
+  },
+  "L11/tau_b": {
+   "frozen": 0.191,
+   "r10": 0.305,
+   "change": 0.114
+  },
+  "L11/tau_b_run_boot_95": {
+   "frozen": [
+    -0.1,
+    0.4
+   ],
+   "r10": [
+    0.0,
+    0.544
+   ],
+   "change": null
+  },
+  "L11/tau_b_item_boot_95": {
+   "frozen": [
+    -0.17,
+    0.311
+   ],
+   "r10": [
+    -0.038,
+    0.719
+   ],
+   "change": null
+  },
+  "L11/tau_b_hard_pairs_concordance": {
+   "frozen": -0.036,
+   "r10": 0.143,
+   "change": 0.179
+  },
+  "L11/discordant_pairs": {
+   "frozen": 20,
+   "r10": 17,
+   "change": -3.0
+  },
+  "L11/pair_rows[0]/judge_gap": {
+   "frozen": -0.062,
+   "r10": 0.0,
+   "change": 0.062
+  },
+  "L11/pair_rows[0]/item_boot_p_cert_order": {
+   "frozen": 0.741,
+   "r10": 0.73,
+   "change": -0.011
+  },
+  "L11/pair_rows[0]/judge_point_reversed": {
+   "frozen": true,
+   "r10": false,
+   "change": -1.0
+  },
+  "L11/pair_rows[0]/run_boot_p_judge_reversed": {
+   "frozen": 0.751,
+   "r10": 0.318,
+   "change": -0.433
+  },
+  "L11/pair_rows[0]/flip_probability": {
+   "frozen": 0.873,
+   "r10": 0.497,
+   "change": -0.376
+  },
+  "L11/pair_rows[1]/item_boot_p_cert_order": {
+   "frozen": 0.915,
+   "r10": 0.912,
+   "change": -0.003
+  },
+  "L11/pair_rows[1]/run_boot_p_judge_reversed": {
+   "frozen": 0.036,
+   "r10": 0.053,
+   "change": 0.017
+  },
+  "L11/pair_rows[1]/flip_probability": {
+   "frozen": 0.237,
+   "r10": 0.234,
+   "change": -0.003
+  },
+  "L11/pair_rows[2]/judge_gap": {
+   "frozen": -0.062,
+   "r10": 0.0,
+   "change": 0.062
+  },
+  "L11/pair_rows[2]/judge_point_reversed": {
+   "frozen": true,
+   "r10": false,
+   "change": -1.0
+  },
+  "L11/pair_rows[2]/run_boot_p_judge_reversed": {
+   "frozen": 0.746,
+   "r10": 0.326,
+   "change": -0.42
+  },
+  "L11/pair_rows[2]/flip_probability": {
+   "frozen": 0.855,
+   "r10": 0.505,
+   "change": -0.35
+  },
+  "L11/pair_rows[3]/judge_gap": {
+   "frozen": -0.042,
+   "r10": 0.021,
+   "change": 0.063
+  },
+  "L11/pair_rows[3]/item_boot_p_cert_order": {
+   "frozen": 0.913,
+   "r10": 0.914,
+   "change": 0.001
+  },
+  "L11/pair_rows[3]/judge_point_reversed": {
+   "frozen": true,
+   "r10": false,
+   "change": -1.0
+  },
+  "L11/pair_rows[3]/run_boot_p_judge_reversed": {
+   "frozen": 0.622,
+   "r10": 0.3,
+   "change": -0.322
+  },
+  "L11/pair_rows[3]/flip_probability": {
+   "frozen": 0.69,
+   "r10": 0.32,
+   "change": -0.37
+  },
+  "L11/pair_rows[4]/judge_gap": {
+   "frozen": 0.292,
+   "r10": 0.188,
+   "change": -0.104
+  },
+  "L11/pair_rows[4]/run_boot_p_judge_reversed": {
+   "frozen": 0.0,
+   "r10": 0.009,
+   "change": 0.009
+  },
+  "L11/pair_rows[4]/flip_probability": {
+   "frozen": 0.0,
+   "r10": 0.016,
+   "change": 0.016
+  },
+  "L11/pair_rows[5]/judge_gap": {
+   "frozen": 0.0,
+   "r10": 0.062,
+   "change": 0.062
+  },
+  "L11/pair_rows[5]/item_boot_p_cert_order": {
+   "frozen": 0.812,
+   "r10": 0.803,
+   "change": -0.009
+  },
+  "L11/pair_rows[5]/run_boot_p_judge_reversed": {
+   "frozen": 0.392,
+   "r10": 0.147,
+   "change": -0.245
+  },
+  "L11/pair_rows[5]/flip_probability": {
+   "frozen": 0.518,
+   "r10": 0.219,
+   "change": -0.299
+  },
+  "L11/pair_rows[6]/judge_gap": {
+   "frozen": -0.208,
+   "r10": -0.062,
+   "change": 0.146
+  },
+  "L11/pair_rows[6]/item_boot_p_cert_order": {
+   "frozen": 0.913,
+   "r10": 0.914,
+   "change": 0.001
+  },
+  "L11/pair_rows[6]/run_boot_p_judge_reversed": {
+   "frozen": 0.989,
+   "r10": 0.808,
+   "change": -0.181
+  },
+  "L11/pair_rows[6]/flip_probability": {
+   "frozen": 0.993,
+   "r10": 0.86,
+   "change": -0.133
+  },
+  "L11/pair_rows[7]/judge_gap": {
+   "frozen": 0.042,
+   "r10": 0.021,
+   "change": -0.021
+  },
+  "L11/pair_rows[7]/item_boot_p_cert_order": {
+   "frozen": 0.998,
+   "r10": 0.999,
+   "change": 0.001
+  },
+  "L11/pair_rows[7]/run_boot_p_judge_reversed": {
+   "frozen": 0.32,
+   "r10": 0.309,
+   "change": -0.011
+  },
+  "L11/pair_rows[7]/flip_probability": {
+   "frozen": 0.32,
+   "r10": 0.341,
+   "change": 0.021
+  },
+  "L11/pair_rows[8]/judge_gap": {
+   "frozen": 0.375,
+   "r10": 0.521,
+   "change": 0.146
+  },
+  "L11/pair_rows[9]/judge_gap": {
+   "frozen": 0.208,
+   "r10": -0.062,
+   "change": -0.27
+  },
+  "L11/pair_rows[9]/item_boot_p_cert_order": {
+   "frozen": 0.86,
+   "r10": 0.857,
+   "change": -0.003
+  },
+  "L11/pair_rows[9]/judge_point_reversed": {
+   "frozen": false,
+   "r10": true,
+   "change": 1.0
+  },
+  "L11/pair_rows[9]/run_boot_p_judge_reversed": {
+   "frozen": 0.0,
+   "r10": 0.744,
+   "change": 0.744
+  },
+  "L11/pair_rows[9]/flip_probability": {
+   "frozen": 0.036,
+   "r10": 0.854,
+   "change": 0.818
+  },
+  "L11/pair_rows[10]/judge_gap": {
+   "frozen": -0.188,
+   "r10": -0.125,
+   "change": 0.063
+  },
+  "L11/pair_rows[10]/item_boot_p_cert_order": {
+   "frozen": 0.577,
+   "r10": 0.56,
+   "change": -0.017
+  },
+  "L11/pair_rows[10]/run_boot_p_judge_reversed": {
+   "frozen": 0.939,
+   "r10": 0.814,
+   "change": -0.125
+  },
+  "L11/pair_rows[10]/flip_probability": {
+   "frozen": 0.786,
+   "r10": 0.717,
+   "change": -0.069
+  },
+  "L11/pair_rows[11]/item_boot_p_cert_order": {
+   "frozen": 0.785,
+   "r10": 0.794,
+   "change": 0.009
+  },
+  "L11/pair_rows[11]/run_boot_p_judge_reversed": {
+   "frozen": 0.336,
+   "r10": 0.337,
+   "change": 0.001
+  },
+  "L11/pair_rows[11]/flip_probability": {
+   "frozen": 0.5,
+   "r10": 0.499,
+   "change": -0.001
+  },
+  "L11/pair_rows[12]/judge_gap": {
+   "frozen": -0.104,
+   "r10": 0.021,
+   "change": 0.125
+  },
+  "L11/pair_rows[12]/item_boot_p_cert_order": {
+   "frozen": 0.913,
+   "r10": 0.909,
+   "change": -0.004
+  },
+  "L11/pair_rows[12]/judge_point_reversed": {
+   "frozen": true,
+   "r10": false,
+   "change": -1.0
+  },
+  "L11/pair_rows[12]/run_boot_p_judge_reversed": {
+   "frozen": 0.883,
+   "r10": 0.319,
+   "change": -0.564
+  },
+  "L11/pair_rows[12]/flip_probability": {
+   "frozen": 0.909,
+   "r10": 0.367,
+   "change": -0.542
+  },
+  "L11/pair_rows[13]/judge_gap": {
+   "frozen": 0.354,
+   "r10": 0.188,
+   "change": -0.166
+  },
+  "L11/pair_rows[13]/item_boot_p_cert_order": {
+   "frozen": 0.874,
+   "r10": 0.878,
+   "change": 0.004
+  },
+  "L11/pair_rows[13]/run_boot_p_judge_reversed": {
+   "frozen": 0.0,
+   "r10": 0.016,
+   "change": 0.016
+  },
+  "L11/pair_rows[13]/flip_probability": {
+   "frozen": 0.0,
+   "r10": 0.022,
+   "change": 0.022
+  },
+  "L11/pair_rows[14]/item_boot_p_cert_order": {
+   "frozen": 0.617,
+   "r10": 0.609,
+   "change": -0.008
+  },
+  "L11/pair_rows[14]/run_boot_p_judge_reversed": {
+   "frozen": 0.754,
+   "r10": 0.761,
+   "change": 0.007
+  },
+  "L11/pair_rows[14]/flip_probability": {
+   "frozen": 0.667,
+   "r10": 0.662,
+   "change": -0.005
+  },
+  "L11/pair_rows[15]/judge_gap": {
+   "frozen": -0.271,
+   "r10": -0.062,
+   "change": 0.209
+  },
+  "L11/pair_rows[15]/item_boot_p_cert_order": {
+   "frozen": 0.915,
+   "r10": 0.911,
+   "change": -0.004
+  },
+  "L11/pair_rows[15]/run_boot_p_judge_reversed": {
+   "frozen": 0.997,
+   "r10": 0.782,
+   "change": -0.215
+  },
+  "L11/pair_rows[15]/flip_probability": {
+   "frozen": 0.998,
+   "r10": 0.832,
+   "change": -0.166
+  },
+  "L11/pair_rows[16]/judge_gap": {
+   "frozen": 0.104,
+   "r10": 0.021,
+   "change": -0.083
+  },
+  "L11/pair_rows[16]/run_boot_p_judge_reversed": {
+   "frozen": 0.105,
+   "r10": 0.319,
+   "change": 0.214
+  },
+  "L11/pair_rows[16]/flip_probability": {
+   "frozen": 0.115,
+   "r10": 0.356,
+   "change": 0.241
+  },
+  "L11/pair_rows[17]/judge_gap": {
+   "frozen": 0.438,
+   "r10": 0.521,
+   "change": 0.083
+  },
+  "L11/pair_rows[17]/item_boot_p_cert_order": {
+   "frozen": 0.992,
+   "r10": 0.993,
+   "change": 0.001
+  },
+  "L11/pair_rows[18]/judge_gap": {
+   "frozen": 0.271,
+   "r10": -0.062,
+   "change": -0.333
+  },
+  "L11/pair_rows[18]/item_boot_p_cert_order": {
+   "frozen": 0.552,
+   "r10": 0.567,
+   "change": 0.015
+  },
+  "L11/pair_rows[18]/judge_point_reversed": {
+   "frozen": false,
+   "r10": true,
+   "change": 1.0
+  },
+  "L11/pair_rows[18]/run_boot_p_judge_reversed": {
+   "frozen": 0.0,
+   "r10": 0.714,
+   "change": 0.714
+  },
+  "L11/pair_rows[18]/flip_probability": {
+   "frozen": 0.416,
+   "r10": 0.605,
+   "change": 0.189
+  },
+  "L11/pair_rows[19]/judge_gap": {
+   "frozen": -0.188,
+   "r10": -0.125,
+   "change": 0.063
+  },
+  "L11/pair_rows[19]/item_boot_p_cert_order": {
+   "frozen": 0.986,
+   "r10": 0.982,
+   "change": -0.004
+  },
+  "L11/pair_rows[19]/run_boot_p_judge_reversed": {
+   "frozen": 0.941,
+   "r10": 0.816,
+   "change": -0.125
+  },
+  "L11/pair_rows[19]/flip_probability": {
+   "frozen": 0.938,
+   "r10": 0.854,
+   "change": -0.084
+  },
+  "L11/pair_rows[20]/judge_gap": {
+   "frozen": 0.083,
+   "r10": 0.146,
+   "change": 0.063
+  },
+  "L11/pair_rows[20]/run_boot_p_judge_reversed": {
+   "frozen": 0.204,
+   "r10": 0.052,
+   "change": -0.152
+  },
+  "L11/pair_rows[20]/flip_probability": {
+   "frozen": 0.237,
+   "r10": 0.077,
+   "change": -0.16
+  },
+  "L11/pair_rows[21]/judge_gap": {
+   "frozen": 0.167,
+   "r10": 0.062,
+   "change": -0.105
+  },
+  "L11/pair_rows[21]/run_boot_p_judge_reversed": {
+   "frozen": 0.075,
+   "r10": 0.271,
+   "change": 0.196
+  },
+  "L11/pair_rows[21]/flip_probability": {
+   "frozen": 0.091,
+   "r10": 0.3,
+   "change": 0.209
+  },
+  "L11/pair_rows[22]/judge_gap": {
+   "frozen": -0.083,
+   "r10": 0.062,
+   "change": 0.145
+  },
+  "L11/pair_rows[22]/judge_point_reversed": {
+   "frozen": true,
+   "r10": false,
+   "change": -1.0
+  },
+  "L11/pair_rows[22]/run_boot_p_judge_reversed": {
+   "frozen": 0.713,
+   "r10": 0.214,
+   "change": -0.499
+  },
+  "L11/pair_rows[22]/flip_probability": {
+   "frozen": 0.741,
+   "r10": 0.268,
+   "change": -0.473
+  },
+  "L11/pair_rows[23]/judge_gap": {
+   "frozen": -0.083,
+   "r10": -0.104,
+   "change": -0.021
+  },
+  "L11/pair_rows[23]/run_boot_p_judge_reversed": {
+   "frozen": 0.731,
+   "r10": 0.824,
+   "change": 0.093
+  },
+  "L11/pair_rows[23]/flip_probability": {
+   "frozen": 0.765,
+   "r10": 0.828,
+   "change": 0.063
+  },
+  "L11/pair_rows[24]/judge_gap": {
+   "frozen": 0.25,
+   "r10": 0.396,
+   "change": 0.146
+  },
+  "L11/pair_rows[24]/run_boot_p_judge_reversed": {
+   "frozen": 0.041,
+   "r10": 0.0,
+   "change": -0.041
+  },
+  "L11/pair_rows[24]/flip_probability": {
+   "frozen": 0.047,
+   "r10": 0.0,
+   "change": -0.047
+  },
+  "L11/pair_rows[25]/judge_gap": {
+   "frozen": 0.083,
+   "r10": -0.188,
+   "change": -0.271
+  },
+  "L11/pair_rows[25]/item_boot_p_cert_order": {
+   "frozen": 0.61,
+   "r10": 0.606,
+   "change": -0.004
+  },
+  "L11/pair_rows[25]/judge_point_reversed": {
+   "frozen": false,
+   "r10": true,
+   "change": 1.0
+  },
+  "L11/pair_rows[25]/run_boot_p_judge_reversed": {
+   "frozen": 0.212,
+   "r10": 0.97,
+   "change": 0.758
+  },
+  "L11/pair_rows[25]/flip_probability": {
+   "frozen": 0.421,
+   "r10": 0.772,
+   "change": 0.351
+  },
+  "L11/pair_rows[26]/judge_gap": {
+   "frozen": -0.104,
+   "r10": 0.021,
+   "change": 0.125
+  },
+  "L11/pair_rows[26]/judge_point_reversed": {
+   "frozen": true,
+   "r10": false,
+   "change": -1.0
+  },
+  "L11/pair_rows[26]/run_boot_p_judge_reversed": {
+   "frozen": 0.867,
+   "r10": 0.317,
+   "change": -0.55
+  },
+  "L11/pair_rows[26]/flip_probability": {
+   "frozen": 0.891,
+   "r10": 0.367,
+   "change": -0.524
+  },
+  "L11/pair_rows[27]/judge_gap": {
+   "frozen": 0.354,
+   "r10": 0.188,
+   "change": -0.166
+  },
+  "L11/pair_rows[27]/item_boot_p_cert_order": {
+   "frozen": 0.865,
+   "r10": 0.864,
+   "change": -0.001
+  },
+  "L11/pair_rows[27]/run_boot_p_judge_reversed": {
+   "frozen": 0.0,
+   "r10": 0.016,
+   "change": 0.016
+  },
+  "L11/pair_rows[27]/flip_probability": {
+   "frozen": 0.13,
+   "r10": 0.131,
+   "change": 0.001
+  },
+  "L11/pair_rows[28]/item_boot_p_cert_order": {
+   "frozen": 0.987,
+   "r10": 0.992,
+   "change": 0.005
+  },
+  "L11/pair_rows[28]/run_boot_p_judge_reversed": {
+   "frozen": 0.741,
+   "r10": 0.764,
+   "change": 0.023
+  },
+  "L11/pair_rows[28]/flip_probability": {
+   "frozen": 0.751,
+   "r10": 0.777,
+   "change": 0.026
+  },
+  "L11/pair_rows[29]/judge_gap": {
+   "frozen": -0.271,
+   "r10": -0.062,
+   "change": 0.209
+  },
+  "L11/pair_rows[29]/run_boot_p_judge_reversed": {
+   "frozen": 0.996,
+   "r10": 0.786,
+   "change": -0.21
+  },
+  "L11/pair_rows[29]/robust_reversal": {
+   "frozen": true,
+   "r10": false,
+   "change": -1.0
+  },
+  "L11/pair_rows[29]/flip_probability": {
+   "frozen": 0.997,
+   "r10": 0.834,
+   "change": -0.163
+  },
+  "L11/pair_rows[30]/judge_gap": {
+   "frozen": 0.104,
+   "r10": 0.021,
+   "change": -0.083
+  },
+  "L11/pair_rows[30]/item_boot_p_cert_order": {
+   "frozen": 0.69,
+   "r10": 0.685,
+   "change": -0.005
+  },
+  "L11/pair_rows[30]/run_boot_p_judge_reversed": {
+   "frozen": 0.121,
+   "r10": 0.311,
+   "change": 0.19
+  },
+  "L11/pair_rows[30]/flip_probability": {
+   "frozen": 0.301,
+   "r10": 0.382,
+   "change": 0.081
+  },
+  "L11/pair_rows[31]/judge_gap": {
+   "frozen": 0.438,
+   "r10": 0.521,
+   "change": 0.083
+  },
+  "L11/pair_rows[31]/item_boot_p_cert_order": {
+   "frozen": 0.908,
+   "r10": 0.906,
+   "change": -0.002
+  },
+  "L11/pair_rows[32]/judge_gap": {
+   "frozen": -0.271,
+   "r10": 0.062,
+   "change": 0.333
+  },
+  "L11/pair_rows[32]/item_boot_p_cert_order": {
+   "frozen": 0.779,
+   "r10": 0.768,
+   "change": -0.011
+  },
+  "L11/pair_rows[32]/judge_point_reversed": {
+   "frozen": true,
+   "r10": false,
+   "change": -1.0
+  },
+  "L11/pair_rows[32]/run_boot_p_judge_reversed": {
+   "frozen": 0.998,
+   "r10": 0.0,
+   "change": -0.998
+  },
+  "L11/pair_rows[32]/flip_probability": {
+   "frozen": 0.895,
+   "r10": 0.199,
+   "change": -0.696
+  },
+  "L11/pair_rows[33]/judge_gap": {
+   "frozen": 0.25,
+   "r10": 0.208,
+   "change": -0.042
+  },
+  "L11/pair_rows[33]/run_boot_p_judge_reversed": {
+   "frozen": 0.007,
+   "r10": 0.002,
+   "change": -0.005
+  },
+  "L11/pair_rows[33]/flip_probability": {
+   "frozen": 0.013,
+   "r10": 0.007,
+   "change": -0.006
+  },
+  "L11/pair_rows[34]/judge_gap": {
+   "frozen": -0.042,
+   "r10": 0.083,
+   "change": 0.125
+  },
+  "L11/pair_rows[34]/item_boot_p_cert_order": {
+   "frozen": 0.985,
+   "r10": 0.983,
+   "change": -0.002
+  },
+  "L11/pair_rows[34]/judge_point_reversed": {
+   "frozen": true,
+   "r10": false,
+   "change": -1.0
+  },
+  "L11/pair_rows[34]/run_boot_p_judge_reversed": {
+   "frozen": 0.607,
+   "r10": 0.054,
+   "change": -0.553
+  },
+  "L11/pair_rows[34]/flip_probability": {
+   "frozen": 0.683,
+   "r10": 0.12,
+   "change": -0.563
+  },
+  "L11/pair_rows[35]/judge_gap": {
+   "frozen": -0.167,
+   "r10": -0.083,
+   "change": 0.084
+  },
+  "L11/pair_rows[35]/item_boot_p_cert_order": {
+   "frozen": 0.67,
+   "r10": 0.664,
+   "change": -0.006
+  },
+  "L11/pair_rows[35]/run_boot_p_judge_reversed": {
+   "frozen": 0.904,
+   "r10": 0.888,
+   "change": -0.016
+  },
+  "L11/pair_rows[35]/flip_probability": {
+   "frozen": 0.946,
+   "r10": 0.939,
+   "change": -0.007
+  },
+  "L11/pair_rows[36]/judge_gap": {
+   "frozen": 0.0,
+   "r10": 0.042,
+   "change": 0.042
+  },
+  "L11/pair_rows[36]/item_boot_p_cert_order": {
+   "frozen": 0.998,
+   "r10": 0.999,
+   "change": 0.001
+  },
+  "L11/pair_rows[36]/run_boot_p_judge_reversed": {
+   "frozen": 0.432,
+   "r10": 0.197,
+   "change": -0.235
+  },
+  "L11/pair_rows[36]/flip_probability": {
+   "frozen": 0.507,
+   "r10": 0.29,
+   "change": -0.217
+  },
+  "L11/pair_rows[37]/judge_gap": {
+   "frozen": 0.333,
+   "r10": 0.542,
+   "change": 0.209
+  },
+  "L11/pair_rows[37]/run_boot_p_judge_reversed": {
+   "frozen": 0.005,
+   "r10": 0.0,
+   "change": -0.005
+  },
+  "L11/pair_rows[37]/flip_probability": {
+   "frozen": 0.008,
+   "r10": 0.0,
+   "change": -0.008
+  },
+  "L11/pair_rows[38]/judge_gap": {
+   "frozen": 0.167,
+   "r10": -0.042,
+   "change": -0.209
+  },
+  "L11/pair_rows[38]/judge_point_reversed": {
+   "frozen": false,
+   "r10": true,
+   "change": 1.0
+  },
+  "L11/pair_rows[38]/run_boot_p_judge_reversed": {
+   "frozen": 0.04,
+   "r10": 0.683,
+   "change": 0.643
+  },
+  "L11/pair_rows[38]/flip_probability": {
+   "frozen": 0.067,
+   "r10": 0.841,
+   "change": 0.774
+  },
+  "L11/pair_rows[39]/judge_gap": {
+   "frozen": 0.292,
+   "r10": 0.125,
+   "change": -0.167
+  },
+  "L11/pair_rows[39]/item_boot_p_cert_order": {
+   "frozen": 0.991,
+   "r10": 0.993,
+   "change": 0.002
+  },
+  "L11/pair_rows[39]/run_boot_p_judge_reversed": {
+   "frozen": 0.003,
+   "r10": 0.064,
+   "change": 0.061
+  },
+  "L11/pair_rows[39]/flip_probability": {
+   "frozen": 0.006,
+   "r10": 0.102,
+   "change": 0.096
+  },
+  "L11/pair_rows[40]/judge_gap": {
+   "frozen": 0.083,
+   "r10": 0.125,
+   "change": 0.042
+  },
+  "L11/pair_rows[40]/run_boot_p_judge_reversed": {
+   "frozen": 0.199,
+   "r10": 0.037,
+   "change": -0.162
+  },
+  "L11/pair_rows[40]/flip_probability": {
+   "frozen": 0.252,
+   "r10": 0.072,
+   "change": -0.18
+  },
+  "L11/pair_rows[41]/judge_gap": {
+   "frozen": 0.25,
+   "r10": 0.167,
+   "change": -0.083
+  },
+  "L11/pair_rows[41]/item_boot_p_cert_order": {
+   "frozen": 0.643,
+   "r10": 0.647,
+   "change": 0.004
+  },
+  "L11/pair_rows[41]/run_boot_p_judge_reversed": {
+   "frozen": 0.012,
+   "r10": 0.024,
+   "change": 0.012
+  },
+  "L11/pair_rows[41]/flip_probability": {
+   "frozen": 0.265,
+   "r10": 0.271,
+   "change": 0.006
+  },
+  "L11/pair_rows[42]/judge_gap": {
+   "frozen": 0.083,
+   "r10": 0.333,
+   "change": 0.25
+  },
+  "L11/pair_rows[42]/item_boot_p_cert_order": {
+   "frozen": 0.609,
+   "r10": 0.612,
+   "change": 0.003
+  },
+  "L11/pair_rows[42]/run_boot_p_judge_reversed": {
+   "frozen": 0.244,
+   "r10": 0.0,
+   "change": -0.244
+  },
+  "L11/pair_rows[42]/flip_probability": {
+   "frozen": 0.529,
+   "r10": 0.321,
+   "change": -0.208
+  },
+  "L11/pair_rows[43]/judge_gap": {
+   "frozen": 0.083,
+   "r10": 0.25,
+   "change": 0.167
+  },
+  "L11/pair_rows[43]/run_boot_p_judge_reversed": {
+   "frozen": 0.2,
+   "r10": 0.0,
+   "change": -0.2
+  },
+  "L11/pair_rows[43]/flip_probability": {
+   "frozen": 0.251,
+   "r10": 0.002,
+   "change": -0.249
+  },
+  "L11/pair_rows[44]/judge_gap": {
+   "frozen": -0.208,
+   "r10": 0.0,
+   "change": 0.208
+  },
+  "L11/pair_rows[44]/item_boot_p_cert_order": {
+   "frozen": 1.0,
+   "r10": 0.998,
+   "change": -0.002
+  },
+  "L11/pair_rows[44]/judge_point_reversed": {
+   "frozen": true,
+   "r10": false,
+   "change": -1.0
+  },
+  "L11/pair_rows[44]/run_boot_p_judge_reversed": {
+   "frozen": 0.96,
+   "r10": 0.38,
+   "change": -0.58
+  },
+  "L11/pair_rows[44]/robust_reversal": {
+   "frozen": true,
+   "r10": false,
+   "change": -1.0
+  },
+  "L11/pair_rows[44]/flip_probability": {
+   "frozen": 0.972,
+   "r10": 0.503,
+   "change": -0.469
+  },
+  "L11/pair_rows[45]/judge_gap": {
+   "frozen": 0.042,
+   "r10": -0.042,
+   "change": -0.084
+  },
+  "L11/pair_rows[45]/item_boot_p_cert_order": {
+   "frozen": 0.917,
+   "r10": 0.922,
+   "change": 0.005
+  },
+  "L11/pair_rows[45]/judge_point_reversed": {
+   "frozen": false,
+   "r10": true,
+   "change": 1.0
+  },
+  "L11/pair_rows[45]/run_boot_p_judge_reversed": {
+   "frozen": 0.275,
+   "r10": 0.602,
+   "change": 0.327
+  },
+  "L11/pair_rows[45]/flip_probability": {
+   "frozen": 0.348,
+   "r10": 0.69,
+   "change": 0.342
+  },
+  "L11/pair_rows[46]/judge_gap": {
+   "frozen": 0.375,
+   "r10": 0.458,
+   "change": 0.083
+  },
+  "L11/pair_rows[46]/item_boot_p_cert_order": {
+   "frozen": 0.998,
+   "r10": 0.999,
+   "change": 0.001
+  },
+  "L11/pair_rows[46]/run_boot_p_judge_reversed": {
+   "frozen": 0.001,
+   "r10": 0.0,
+   "change": -0.001
+  },
+  "L11/pair_rows[46]/flip_probability": {
+   "frozen": 0.003,
+   "r10": 0.0,
+   "change": -0.003
+  },
+  "L11/pair_rows[47]/judge_gap": {
+   "frozen": 0.208,
+   "r10": -0.125,
+   "change": -0.333
+  },
+  "L11/pair_rows[47]/item_boot_p_cert_order": {
+   "frozen": 0.621,
+   "r10": 0.63,
+   "change": 0.009
+  },
+  "L11/pair_rows[47]/judge_point_reversed": {
+   "frozen": false,
+   "r10": true,
+   "change": 1.0
+  },
+  "L11/pair_rows[47]/run_boot_p_judge_reversed": {
+   "frozen": 0.012,
+   "r10": 0.979,
+   "change": 0.967
+  },
+  "L11/pair_rows[47]/flip_probability": {
+   "frozen": 0.308,
+   "r10": 0.815,
+   "change": 0.507
+  },
+  "L11/pair_rows[48]/judge_gap": {
+   "frozen": -0.167,
+   "r10": -0.042,
+   "change": 0.125
+  },
+  "L11/pair_rows[48]/item_boot_p_cert_order": {
+   "frozen": 0.998,
+   "r10": 0.999,
+   "change": 0.001
+  },
+  "L11/pair_rows[48]/run_boot_p_judge_reversed": {
+   "frozen": 0.882,
+   "r10": 0.621,
+   "change": -0.261
+  },
+  "L11/pair_rows[48]/flip_probability": {
+   "frozen": 0.912,
+   "r10": 0.712,
+   "change": -0.2
+  },
+  "L11/pair_rows[49]/judge_gap": {
+   "frozen": 0.167,
+   "r10": 0.458,
+   "change": 0.291
+  },
+  "L11/pair_rows[49]/run_boot_p_judge_reversed": {
+   "frozen": 0.11,
+   "r10": 0.0,
+   "change": -0.11
+  },
+  "L11/pair_rows[49]/flip_probability": {
+   "frozen": 0.141,
+   "r10": 0.0,
+   "change": -0.141
+  },
+  "L11/pair_rows[50]/judge_gap": {
+   "frozen": 0.0,
+   "r10": -0.125,
+   "change": -0.125
+  },
+  "L11/pair_rows[50]/item_boot_p_cert_order": {
+   "frozen": 0.984,
+   "r10": 0.985,
+   "change": 0.001
+  },
+  "L11/pair_rows[50]/judge_point_reversed": {
+   "frozen": false,
+   "r10": true,
+   "change": 1.0
+  },
+  "L11/pair_rows[50]/run_boot_p_judge_reversed": {
+   "frozen": 0.442,
+   "r10": 0.996,
+   "change": 0.554
+  },
+  "L11/pair_rows[50]/robust_reversal": {
+   "frozen": false,
+   "r10": true,
+   "change": 1.0
+  },
+  "L11/pair_rows[50]/flip_probability": {
+   "frozen": 0.506,
+   "r10": 0.998,
+   "change": 0.492
+  },
+  "L11/pair_rows[51]/judge_gap": {
+   "frozen": 0.333,
+   "r10": 0.5,
+   "change": 0.167
+  },
+  "L11/pair_rows[51]/item_boot_p_cert_order": {
+   "frozen": 0.702,
+   "r10": 0.703,
+   "change": 0.001
+  },
+  "L11/pair_rows[51]/run_boot_p_judge_reversed": {
+   "frozen": 0.005,
+   "r10": 0.0,
+   "change": -0.005
+  },
+  "L11/pair_rows[51]/flip_probability": {
+   "frozen": 0.153,
+   "r10": 0.146,
+   "change": -0.007
+  },
+  "L11/pair_rows[52]/judge_gap": {
+   "frozen": -0.167,
+   "r10": 0.083,
+   "change": 0.25
+  },
+  "L11/pair_rows[52]/item_boot_p_cert_order": {
+   "frozen": 0.753,
+   "r10": 0.738,
+   "change": -0.015
+  },
+  "L11/pair_rows[52]/judge_point_reversed": {
+   "frozen": true,
+   "r10": false,
+   "change": -1.0
+  },
+  "L11/pair_rows[52]/run_boot_p_judge_reversed": {
+   "frozen": 0.855,
+   "r10": 0.0,
+   "change": -0.855
+  },
+  "L11/pair_rows[52]/flip_probability": {
+   "frozen": 0.911,
+   "r10": 0.136,
+   "change": -0.775
+  },
+  "L11/pair_rows[53]/judge_gap": {
+   "frozen": 0.167,
+   "r10": 0.583,
+   "change": 0.416
+  },
+  "L11/pair_rows[53]/item_boot_p_cert_order": {
+   "frozen": 0.998,
+   "r10": 0.999,
+   "change": 0.001
+  },
+  "L11/pair_rows[53]/run_boot_p_judge_reversed": {
+   "frozen": 0.076,
+   "r10": 0.0,
+   "change": -0.076
+  },
+  "L11/pair_rows[53]/flip_probability": {
+   "frozen": 0.141,
+   "r10": 0.001,
+   "change": -0.14
+  },
+  "L-main/systems/Terra-main/judge": {
+   "frozen": "14/16",
+   "r10": "15/16",
+   "change": 0.0625
+  },
+  "L-main/systems/Terra-main/judge_rate": {
+   "frozen": 0.875,
+   "r10": 0.938,
+   "change": 0.063
+  },
+  "L-main/systems/Sonnet-main/judge": {
+   "frozen": "12/16",
+   "r10": "13/16",
+   "change": 0.0625
+  },
+  "L-main/systems/Sonnet-main/judge_rate": {
+   "frozen": 0.75,
+   "r10": 0.812,
+   "change": 0.062
+  },
+  "L-main/tau_b": {
+   "frozen": -0.548,
+   "r10": -0.236,
+   "change": 0.312
+  },
+  "L-main/tau_b_run_boot_95": {
+   "frozen": [
+    -0.913,
+    0.333
+   ],
+   "r10": [
+    -0.894,
+    0.8
+   ],
+   "change": null
+  },
+  "L-main/tau_b_item_boot_95": {
+   "frozen": [
+    -0.913,
+    0.333
+   ],
+   "r10": [
+    -0.8,
+    0.577
+   ],
+   "change": null
+  },
+  "L-main/tau_b_hard_pairs_concordance": {
+   "frozen": -0.4,
+   "r10": -0.2,
+   "change": 0.2
+  },
+  "L-main/discordant_pairs": {
+   "frozen": 4,
+   "r10": 2,
+   "change": -2.0
+  },
+  "L-main/pair_rows[0]/judge_gap": {
+   "frozen": -0.062,
+   "r10": 0.0,
+   "change": 0.062
+  },
+  "L-main/pair_rows[0]/judge_point_reversed": {
+   "frozen": true,
+   "r10": false,
+   "change": -1.0
+  },
+  "L-main/pair_rows[0]/run_boot_p_judge_reversed": {
+   "frozen": 0.751,
+   "r10": 0.318,
+   "change": -0.433
+  },
+  "L-main/pair_rows[0]/flip_probability": {
+   "frozen": 0.873,
+   "r10": 0.497,
+   "change": -0.376
+  },
+  "L-main/pair_rows[1]/item_boot_p_cert_order": {
+   "frozen": 0.909,
+   "r10": 0.913,
+   "change": 0.004
+  },
+  "L-main/pair_rows[1]/run_boot_p_judge_reversed": {
+   "frozen": 0.036,
+   "r10": 0.053,
+   "change": 0.017
+  },
+  "L-main/pair_rows[1]/flip_probability": {
+   "frozen": 0.237,
+   "r10": 0.234,
+   "change": -0.003
+  },
+  "L-main/pair_rows[2]/judge_gap": {
+   "frozen": -0.062,
+   "r10": 0.0,
+   "change": 0.062
+  },
+  "L-main/pair_rows[2]/judge_point_reversed": {
+   "frozen": true,
+   "r10": false,
+   "change": -1.0
+  },
+  "L-main/pair_rows[2]/run_boot_p_judge_reversed": {
+   "frozen": 0.746,
+   "r10": 0.326,
+   "change": -0.42
+  },
+  "L-main/pair_rows[2]/flip_probability": {
+   "frozen": 0.855,
+   "r10": 0.505,
+   "change": -0.35
+  },
+  "L-main/pair_rows[3]/judge_gap": {
+   "frozen": -0.188,
+   "r10": -0.125,
+   "change": 0.063
+  },
+  "L-main/pair_rows[3]/item_boot_p_cert_order": {
+   "frozen": 0.56,
+   "r10": 0.568,
+   "change": 0.008
+  },
+  "L-main/pair_rows[3]/run_boot_p_judge_reversed": {
+   "frozen": 0.939,
+   "r10": 0.814,
+   "change": -0.125
+  },
+  "L-main/pair_rows[3]/flip_probability": {
+   "frozen": 0.786,
+   "r10": 0.717,
+   "change": -0.069
+  },
+  "L-main/pair_rows[4]/item_boot_p_cert_order": {
+   "frozen": 0.797,
+   "r10": 0.787,
+   "change": -0.01
+  },
+  "L-main/pair_rows[4]/run_boot_p_judge_reversed": {
+   "frozen": 0.336,
+   "r10": 0.337,
+   "change": 0.001
+  },
+  "L-main/pair_rows[4]/flip_probability": {
+   "frozen": 0.5,
+   "r10": 0.499,
+   "change": -0.001
+  },
+  "L-main/pair_rows[5]/judge_gap": {
+   "frozen": -0.188,
+   "r10": -0.125,
+   "change": 0.063
+  },
+  "L-main/pair_rows[5]/item_boot_p_cert_order": {
+   "frozen": 0.982,
+   "r10": 0.985,
+   "change": 0.003
+  },
+  "L-main/pair_rows[5]/run_boot_p_judge_reversed": {
+   "frozen": 0.941,
+   "r10": 0.816,
+   "change": -0.125
+  },
+  "L-main/pair_rows[5]/flip_probability": {
+   "frozen": 0.938,
+   "r10": 0.854,
+   "change": -0.084
+  },
+  "L-B1/systems/Terra-O8/judge": {
+   "frozen": "20/24",
+   "r10": "23/24",
+   "change": 0.125
+  },
+  "L-B1/systems/Terra-O8/judge_rate": {
+   "frozen": 0.833,
+   "r10": 0.958,
+   "change": 0.125
+  },
+  "L-B1/systems/Terra-BB8/judge": {
+   "frozen": "14/24",
+   "r10": "18/24",
+   "change": 0.1667
+  },
+  "L-B1/systems/Terra-BB8/judge_rate": {
+   "frozen": 0.583,
+   "r10": 0.75,
+   "change": 0.167
+  },
+  "L-B1/systems/Terra-BB64/judge": {
+   "frozen": "16/24",
+   "r10": "21/24",
+   "change": 0.2083
+  },
+  "L-B1/systems/Terra-BB64/judge_rate": {
+   "frozen": 0.667,
+   "r10": 0.875,
+   "change": 0.208
+  },
+  "L-B1/systems/Haiku-O8/judge": {
+   "frozen": "10/12",
+   "r10": "11/12",
+   "change": 0.0833
+  },
+  "L-B1/systems/Haiku-O8/judge_rate": {
+   "frozen": 0.833,
+   "r10": 0.917,
+   "change": 0.084
+  },
+  "L-B1/systems/Haiku-BB8/judge": {
+   "frozen": "6/12",
+   "r10": "5/12",
+   "change": -0.0833
+  },
+  "L-B1/systems/Haiku-BB8/judge_rate": {
+   "frozen": 0.5,
+   "r10": 0.417,
+   "change": -0.083
+  },
+  "L-B1/systems/Haiku-BB64/judge": {
+   "frozen": "8/12",
+   "r10": "12/12",
+   "change": 0.3333
+  },
+  "L-B1/systems/Haiku-BB64/judge_rate": {
+   "frozen": 0.667,
+   "r10": 1.0,
+   "change": 0.333
+  },
+  "L-B1/tau_b": {
+   "frozen": 0.501,
+   "r10": 0.467,
+   "change": -0.034
+  },
+  "L-B1/tau_b_run_boot_95": {
+   "frozen": [
+    -0.138,
+    0.741
+   ],
+   "r10": [
+    0.077,
+    0.714
+   ],
+   "change": null
+  },
+  "L-B1/tau_b_item_boot_95": {
+   "frozen": [
+    -0.215,
+    0.69
+   ],
+   "r10": [
+    -0.138,
+    0.894
+   ],
+   "change": null
+  },
+  "L-B1/tau_b_hard_pairs_concordance": {
+   "frozen": 0.2,
+   "r10": 0.6,
+   "change": 0.4
+  },
+  "L-B1/discordant_pairs": {
+   "frozen": 3,
+   "r10": 4,
+   "change": 1.0
+  },
+  "L-B1/pair_rows[0]/judge_gap": {
+   "frozen": 0.25,
+   "r10": 0.208,
+   "change": -0.042
+  },
+  "L-B1/pair_rows[0]/run_boot_p_judge_reversed": {
+   "frozen": 0.006,
+   "r10": 0.002,
+   "change": -0.004
+  },
+  "L-B1/pair_rows[0]/flip_probability": {
+   "frozen": 0.011,
+   "r10": 0.007,
+   "change": -0.004
+  },
+  "L-B1/pair_rows[1]/judge_gap": {
+   "frozen": -0.167,
+   "r10": -0.083,
+   "change": 0.084
+  },
+  "L-B1/pair_rows[1]/item_boot_p_cert_order": {
+   "frozen": 0.672,
+   "r10": 0.669,
+   "change": -0.003
+  },
+  "L-B1/pair_rows[1]/run_boot_p_judge_reversed": {
+   "frozen": 0.91,
+   "r10": 0.891,
+   "change": -0.019
+  },
+  "L-B1/pair_rows[1]/flip_probability": {
+   "frozen": 0.948,
+   "r10": 0.941,
+   "change": -0.007
+  },
+  "L-B1/pair_rows[2]/judge_gap": {
+   "frozen": 0.0,
+   "r10": 0.042,
+   "change": 0.042
+  },
+  "L-B1/pair_rows[2]/item_boot_p_cert_order": {
+   "frozen": 0.998,
+   "r10": 0.999,
+   "change": 0.001
+  },
+  "L-B1/pair_rows[2]/run_boot_p_judge_reversed": {
+   "frozen": 0.432,
+   "r10": 0.19,
+   "change": -0.242
+  },
+  "L-B1/pair_rows[2]/flip_probability": {
+   "frozen": 0.506,
+   "r10": 0.284,
+   "change": -0.222
+  },
+  "L-B1/pair_rows[3]/judge_gap": {
+   "frozen": 0.333,
+   "r10": 0.542,
+   "change": 0.209
+  },
+  "L-B1/pair_rows[3]/run_boot_p_judge_reversed": {
+   "frozen": 0.004,
+   "r10": 0.0,
+   "change": -0.004
+  },
+  "L-B1/pair_rows[3]/flip_probability": {
+   "frozen": 0.006,
+   "r10": 0.0,
+   "change": -0.006
+  },
+  "L-B1/pair_rows[4]/judge_gap": {
+   "frozen": 0.167,
+   "r10": -0.042,
+   "change": -0.209
+  },
+  "L-B1/pair_rows[4]/item_boot_p_cert_order": {
+   "frozen": 0.951,
+   "r10": 0.946,
+   "change": -0.005
+  },
+  "L-B1/pair_rows[4]/established": {
+   "frozen": true,
+   "r10": false,
+   "change": -1.0
+  },
+  "L-B1/pair_rows[4]/judge_point_reversed": {
+   "frozen": false,
+   "r10": true,
+   "change": 1.0
+  },
+  "L-B1/pair_rows[4]/run_boot_p_judge_reversed": {
+   "frozen": 0.036,
+   "r10": 0.679,
+   "change": 0.643
+  },
+  "L-B1/pair_rows[4]/flip_probability": {
+   "frozen": 0.06,
+   "r10": 0.84,
+   "change": 0.78
+  },
+  "L-B1/pair_rows[5]/judge_gap": {
+   "frozen": 0.083,
+   "r10": 0.125,
+   "change": 0.042
+  },
+  "L-B1/pair_rows[5]/run_boot_p_judge_reversed": {
+   "frozen": 0.199,
+   "r10": 0.04,
+   "change": -0.159
+  },
+  "L-B1/pair_rows[5]/flip_probability": {
+   "frozen": 0.252,
+   "r10": 0.076,
+   "change": -0.176
+  },
+  "L-B1/pair_rows[6]/judge_gap": {
+   "frozen": 0.25,
+   "r10": 0.167,
+   "change": -0.083
+  },
+  "L-B1/pair_rows[6]/run_boot_p_judge_reversed": {
+   "frozen": 0.013,
+   "r10": 0.026,
+   "change": 0.013
+  },
+  "L-B1/pair_rows[6]/flip_probability": {
+   "frozen": 0.268,
+   "r10": 0.269,
+   "change": 0.001
+  },
+  "L-B1/pair_rows[7]/judge_gap": {
+   "frozen": 0.083,
+   "r10": 0.333,
+   "change": 0.25
+  },
+  "L-B1/pair_rows[7]/item_boot_p_cert_order": {
+   "frozen": 0.605,
+   "r10": 0.608,
+   "change": 0.003
+  },
+  "L-B1/pair_rows[7]/run_boot_p_judge_reversed": {
+   "frozen": 0.243,
+   "r10": 0.0,
+   "change": -0.243
+  },
+  "L-B1/pair_rows[7]/flip_probability": {
+   "frozen": 0.532,
+   "r10": 0.308,
+   "change": -0.224
+  },
+  "L-B1/pair_rows[8]/judge_gap": {
+   "frozen": 0.083,
+   "r10": 0.25,
+   "change": 0.167
+  },
+  "L-B1/pair_rows[8]/item_boot_p_cert_order": {
+   "frozen": 0.871,
+   "r10": 0.875,
+   "change": 0.004
+  },
+  "L-B1/pair_rows[8]/run_boot_p_judge_reversed": {
+   "frozen": 0.192,
+   "r10": 0.0,
+   "change": -0.192
+  },
+  "L-B1/pair_rows[8]/flip_probability": {
+   "frozen": 0.252,
+   "r10": 0.002,
+   "change": -0.25
+  },
+  "L-B1/pair_rows[9]/judge_gap": {
+   "frozen": -0.167,
+   "r10": -0.042,
+   "change": 0.125
+  },
+  "L-B1/pair_rows[9]/item_boot_p_cert_order": {
+   "frozen": 0.998,
+   "r10": 0.999,
+   "change": 0.001
+  },
+  "L-B1/pair_rows[9]/run_boot_p_judge_reversed": {
+   "frozen": 0.887,
+   "r10": 0.617,
+   "change": -0.27
+  },
+  "L-B1/pair_rows[9]/flip_probability": {
+   "frozen": 0.915,
+   "r10": 0.71,
+   "change": -0.205
+  },
+  "L-B1/pair_rows[10]/judge_gap": {
+   "frozen": 0.167,
+   "r10": 0.458,
+   "change": 0.291
+  },
+  "L-B1/pair_rows[10]/run_boot_p_judge_reversed": {
+   "frozen": 0.105,
+   "r10": 0.0,
+   "change": -0.105
+  },
+  "L-B1/pair_rows[10]/flip_probability": {
+   "frozen": 0.134,
+   "r10": 0.0,
+   "change": -0.134
+  },
+  "L-B1/pair_rows[11]/judge_gap": {
+   "frozen": 0.0,
+   "r10": -0.125,
+   "change": -0.125
+  },
+  "L-B1/pair_rows[11]/item_boot_p_cert_order": {
+   "frozen": 0.987,
+   "r10": 0.984,
+   "change": -0.003
+  },
+  "L-B1/pair_rows[11]/judge_point_reversed": {
+   "frozen": false,
+   "r10": true,
+   "change": 1.0
+  },
+  "L-B1/pair_rows[11]/run_boot_p_judge_reversed": {
+   "frozen": 0.436,
+   "r10": 0.996,
+   "change": 0.56
+  },
+  "L-B1/pair_rows[11]/robust_reversal": {
+   "frozen": false,
+   "r10": true,
+   "change": 1.0
+  },
+  "L-B1/pair_rows[11]/flip_probability": {
+   "frozen": 0.504,
+   "r10": 0.998,
+   "change": 0.494
+  },
+  "L-B1/pair_rows[12]/judge_gap": {
+   "frozen": 0.333,
+   "r10": 0.5,
+   "change": 0.167
+  },
+  "L-B1/pair_rows[12]/item_boot_p_cert_order": {
+   "frozen": 0.702,
+   "r10": 0.705,
+   "change": 0.003
+  },
+  "L-B1/pair_rows[12]/run_boot_p_judge_reversed": {
+   "frozen": 0.002,
+   "r10": 0.0,
+   "change": -0.002
+  },
+  "L-B1/pair_rows[12]/flip_probability": {
+   "frozen": 0.151,
+   "r10": 0.144,
+   "change": -0.007
+  },
+  "L-B1/pair_rows[13]/judge_gap": {
+   "frozen": -0.167,
+   "r10": 0.083,
+   "change": 0.25
+  },
+  "L-B1/pair_rows[13]/item_boot_p_cert_order": {
+   "frozen": 0.734,
+   "r10": 0.74,
+   "change": 0.006
+  },
+  "L-B1/pair_rows[13]/judge_point_reversed": {
+   "frozen": true,
+   "r10": false,
+   "change": -1.0
+  },
+  "L-B1/pair_rows[13]/run_boot_p_judge_reversed": {
+   "frozen": 0.86,
+   "r10": 0.0,
+   "change": -0.86
+  },
+  "L-B1/pair_rows[13]/flip_probability": {
+   "frozen": 0.914,
+   "r10": 0.137,
+   "change": -0.777
+  },
+  "L-B1/pair_rows[14]/judge_gap": {
+   "frozen": 0.167,
+   "r10": 0.583,
+   "change": 0.416
+  },
+  "L-B1/pair_rows[14]/item_boot_p_cert_order": {
+   "frozen": 0.998,
+   "r10": 0.999,
+   "change": 0.001
+  },
+  "L-B1/pair_rows[14]/run_boot_p_judge_reversed": {
+   "frozen": 0.074,
+   "r10": 0.0,
+   "change": -0.074
+  },
+  "L-B1/pair_rows[14]/flip_probability": {
+   "frozen": 0.137,
+   "r10": 0.001,
+   "change": -0.136
+  },
+  "hypotheses/H1/tau_b": {
+   "frozen": 0.229,
+   "r10": 0.286,
+   "change": 0.057
+  },
+  "hypotheses/H1/run_boot_975": {
+   "frozen": 0.457,
+   "r10": 0.551,
+   "change": 0.094
+  },
+  "hypotheses/H1/confirmed": {
+   "frozen": true,
+   "r10": false,
+   "change": -1.0
+  },
+  "hypotheses/H2/robust_reversals[0][1]": {
+   "frozen": "Haiku-open",
+   "r10": "Haiku-BB64",
+   "change": null
+  },
+  "hypotheses/H2/robust_reversals[1][0]": {
+   "frozen": "Terra-BB64",
+   "r10": null,
+   "change": null
+  },
+  "hypotheses/H2/robust_reversals[1][1]": {
+   "frozen": "Terra-BB16",
+   "r10": null,
+   "change": null
+  },
+  "hypotheses/H3/judge": {
+   "frozen": -0.062,
+   "r10": 0.0,
+   "change": 0.062
+  },
+  "hypotheses/H3/judge_run_95": {
+   "frozen": [
+    -0.125,
+    0.062
+   ],
+   "r10": [
+    -0.125,
+    0.125
+   ],
+   "change": null
+  },
+  "hypotheses/H3/judge_item_95": {
+   "frozen": [
+    -0.429,
+    0.167
+   ],
+   "r10": [
+    -0.214,
+    0.176
+   ],
+   "change": null
+  },
+  "hypotheses/H3/run_boot_p_judge_gap_ge_thr": {
+   "frozen": 0.0,
+   "r10": 0.008,
+   "change": 0.008
+  },
+  "hypotheses/H3/item_boot_p_judge_gap_ge_thr": {
+   "frozen": 0.011,
+   "r10": 0.012,
+   "change": 0.001
+  },
+  "hypotheses/H3/certified_minus_judge_paired_run_95": {
+   "frozen": [
+    0.188,
+    0.688
+   ],
+   "r10": [
+    0.188,
+    0.562
+   ],
+   "change": null
+  },
+  "hypotheses/H4/judge": {
+   "frozen": 0.083,
+   "r10": 0.125,
+   "change": 0.042
+  },
+  "hypotheses/H4/judge_run_95": {
+   "frozen": [
+    -0.167,
+    0.333
+   ],
+   "r10": [
+    -0.042,
+    0.292
+   ],
+   "change": null
+  },
+  "hypotheses/H4/judge_item_95": {
+   "frozen": [
+    -0.083,
+    0.292
+   ],
+   "r10": [
+    -0.167,
+    0.375
+   ],
+   "change": null
+  },
+  "hypotheses/H4/run_boot_p_judge_gap_ge_thr": {
+   "frozen": 0.031,
+   "r10": 0.016,
+   "change": -0.015
+  },
+  "hypotheses/H4/item_boot_p_judge_gap_ge_thr": {
+   "frozen": 0.012,
+   "r10": 0.087,
+   "change": 0.075
+  },
+  "hypotheses/H4/certified_minus_judge_paired_run_95": {
+   "frozen": [
+    0.292,
+    0.875
+   ],
+   "r10": [
+    0.333,
+    0.75
+   ],
+   "change": null
+  },
+  "hypotheses/budget_curve_BB64_minus_BB16/judge": {
+   "frozen": -0.208,
+   "r10": 0.0,
+   "change": 0.208
+  },
+  "hypotheses/budget_curve_BB64_minus_BB16/judge_run_95": {
+   "frozen": [
+    -0.417,
+    0.0
+   ],
+   "r10": [
+    -0.125,
+    0.125
+   ],
+   "change": null
+  },
+  "hypotheses/budget_curve_BB64_minus_BB16/judge_item_95": {
+   "frozen": [
+    -0.333,
+    -0.083
+   ],
+   "r10": [
+    -0.125,
+    0.125
+   ],
+   "change": null
+  },
+  "hypotheses/budget_curve_BB64_minus_BB16/run_boot_p_judge_gap_ge_thr": {
+   "frozen": 0.036,
+   "r10": 0.616,
+   "change": 0.58
+  },
+  "hypotheses/budget_curve_BB64_minus_BB16/item_boot_p_judge_gap_ge_thr": {
+   "frozen": 0.002,
+   "r10": 0.644,
+   "change": 0.642
+  },
+  "hypotheses/budget_curve_BB64_minus_BB16/certified_minus_judge_paired_run_95": {
+   "frozen": [
+    0.208,
+    0.708
+   ],
+   "r10": [
+    0.083,
+    0.417
+   ],
+   "change": null
+  },
+  "hypotheses/Terra_minus_Haiku_pooled_main_B1/judge": {
+   "frozen": -0.043,
+   "r10": 0.021,
+   "change": 0.064
+  },
+  "hypotheses/Terra_minus_Haiku_pooled_main_B1/judge_run_95": {
+   "frozen": [
+    -0.189,
+    0.093
+   ],
+   "r10": [
+    -0.075,
+    0.139
+   ],
+   "change": null
+  },
+  "hypotheses/Terra_minus_Haiku_pooled_main_B1/judge_item_95": {
+   "frozen": [
+    -0.179,
+    0.095
+   ],
+   "r10": [
+    -0.063,
+    0.11
+   ],
+   "change": null
+  },
+  "hypotheses/Terra_minus_Haiku_pooled_main_B1/run_boot_p_judge_gap_ge_thr": {
+   "frozen": 0.276,
+   "r10": 0.64,
+   "change": 0.364
+  },
+  "hypotheses/Terra_minus_Haiku_pooled_main_B1/item_boot_p_judge_gap_ge_thr": {
+   "frozen": 0.278,
+   "r10": 0.671,
+   "change": 0.393
+  },
+  "hypotheses/Terra_minus_Haiku_pooled_main_B1/certified_minus_judge_paired_run_95": {
+   "frozen": [
+    0.3,
+    0.707
+   ],
+   "r10": [
+    0.271,
+    0.607
+   ],
+   "change": null
+  },
+  "outcome": {
+   "frozen": "confirm",
+   "r10": "null",
+   "change": null
+  },
+  "block1_exact/Terra-O8/judge": {
+   "frozen": "20/24",
+   "r10": "23/24",
+   "change": 0.125
+  },
+  "block1_exact/Terra-O8/false_blame": {
+   "frozen": "4/23",
+   "r10": "1/23",
+   "change": -0.1304
+  },
+  "block1_exact/Terra-BB8/judge": {
+   "frozen": "14/24",
+   "r10": "18/24",
+   "change": 0.1667
+  },
+  "block1_exact/Terra-BB8/false_blame": {
+   "frozen": "5/8",
+   "r10": "1/8",
+   "change": -0.5
+  },
+  "block1_exact/Terra-BB16/false_credit": {
+   "frozen": "5/6",
+   "r10": "4/6",
+   "change": -0.1667
+  },
+  "block1_exact/Terra-BB16/false_blame": {
+   "frozen": "2/18",
+   "r10": "1/18",
+   "change": -0.0556
+  },
+  "block1_exact/Terra-BB64/judge": {
+   "frozen": "16/24",
+   "r10": "21/24",
+   "change": 0.2083
+  },
+  "block1_exact/Terra-BB64/false_blame": {
+   "frozen": "8/24",
+   "r10": "3/24",
+   "change": -0.2083
+  },
+  "block1_exact/Haiku-O8/judge": {
+   "frozen": "10/12",
+   "r10": "11/12",
+   "change": 0.0833
+  },
+  "block1_exact/Haiku-O8/false_blame": {
+   "frozen": "1/5",
+   "r10": "0/5",
+   "change": -0.2
+  },
+  "block1_exact/Haiku-BB8/judge": {
+   "frozen": "6/12",
+   "r10": "5/12",
+   "change": -0.0833
+  },
+  "block1_exact/Haiku-BB8/false_credit": {
+   "frozen": "5/9",
+   "r10": "2/9",
+   "change": -0.3333
+  },
+  "block1_exact/Haiku-BB8/false_blame": {
+   "frozen": "2/3",
+   "r10": "0/3",
+   "change": -0.6667
+  },
+  "block1_exact/Haiku-BB64/judge": {
+   "frozen": "8/12",
+   "r10": "12/12",
+   "change": 0.3333
+  },
+  "block1_exact/Haiku-BB64/false_blame": {
+   "frozen": "4/8",
+   "r10": "0/8",
+   "change": -0.5
+  },
+  "terra_contrasts/C1 Open8-BB8/judge": {
+   "frozen": 0.25,
+   "r10": 0.208,
+   "change": -0.042
+  },
+  "terra_contrasts/C2 BB64-BB8/judge": {
+   "frozen": 0.083,
+   "r10": 0.125,
+   "change": 0.042
+  },
+  "terra_contrasts/C4 BB64-Open8/judge": {
+   "frozen": -0.167,
+   "r10": -0.083,
+   "change": 0.084
+  },
+  "terra_contrasts/BB16-BB64/judge": {
+   "frozen": 0.208,
+   "r10": 0.0,
+   "change": -0.208
+  },
+  "terra_cost_per_pass/Terra-O8/usd_per_credited_pass": {
+   "frozen": 0.813,
+   "r10": 0.707,
+   "change": -0.106
+  },
+  "terra_cost_per_pass/Terra-BB8/usd_per_credited_pass": {
+   "frozen": 1.656,
+   "r10": 1.288,
+   "change": -0.368
+  },
+  "terra_cost_per_pass/Terra-BB64/usd_per_credited_pass": {
+   "frozen": 0.558,
+   "r10": 0.425,
+   "change": -0.133
+  }
+ }
+}

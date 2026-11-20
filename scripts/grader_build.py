@@ -26,11 +26,11 @@ import numpy as np
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
-from shifthunt import hidden as H  # noqa: E402
-from shifthunt import probes as P  # noqa: E402
-from shifthunt import textgen as tg  # noqa: E402
-from shifthunt.ablation import probe_logit  # noqa: E402
-from shifthunt.substrate import Subject  # noqa: E402
+from shortcuthunt import hidden as H  # noqa: E402
+from shortcuthunt import probes as P  # noqa: E402
+from shortcuthunt import textgen as tg  # noqa: E402
+from shortcuthunt.ablation import probe_logit  # noqa: E402
+from shortcuthunt.substrate import Subject  # noqa: E402
 
 PROBES = ROOT / "artifacts" / "probes"
 OUT = ROOT / "artifacts" / "grader"

@@ -20,9 +20,9 @@ import numpy as np
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
-from shifthunt import episodes as EP  # noqa: E402
-from shifthunt import textgen as tg  # noqa: E402
-from shifthunt.hidden import N_SCAN  # noqa: E402
+from shortcuthunt import episodes as EP  # noqa: E402
+from shortcuthunt import textgen as tg  # noqa: E402
+from shortcuthunt.hidden import N_SCAN  # noqa: E402
 
 OUT = ROOT / "results" / "knobs" / "nearnull"
 

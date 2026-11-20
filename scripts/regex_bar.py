@@ -25,11 +25,11 @@ import numpy as np
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
-from shifthunt import hidden  # noqa: E402
-from shifthunt import textgen as tg  # noqa: E402
-from shifthunt.detectors import submission_regex  # noqa: E402
-from shifthunt.grader import BA_MIN, balanced_accuracy  # noqa: E402
-from shifthunt.regex_sandbox import run_many  # noqa: E402
+from shortcuthunt import hidden  # noqa: E402
+from shortcuthunt import textgen as tg  # noqa: E402
+from shortcuthunt.detectors import submission_regex  # noqa: E402
+from shortcuthunt.grader import BA_MIN, balanced_accuracy  # noqa: E402
+from shortcuthunt.regex_sandbox import run_many  # noqa: E402
 
 RESULTS = ROOT / "results" / "grader"
 FALLBACK = (("gardening", "astronomy"), 12345)

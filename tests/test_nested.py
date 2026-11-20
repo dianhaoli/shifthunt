@@ -9,10 +9,10 @@ from types import SimpleNamespace
 import numpy as np
 import pytest
 
-from shifthunt import episode_files as E
-from shifthunt import freetext as ft
-from shifthunt import freetext_hard as fh
-from shifthunt import probes as P
+from shortcuthunt import episode_files as E
+from shortcuthunt import freetext as ft
+from shortcuthunt import freetext_hard as fh
+from shortcuthunt import probes as P
 
 ROOT = Path(__file__).resolve().parents[1]
 TOPICS = ["pottery", "fishing"]

@@ -1,4 +1,4 @@
-"""Recompute the tables in docs/CROSS_MODEL_STUDY.md from results/cross_model_1103/rollouts.csv (stdlib only).
+"""Recompute the tables in docs/study/CROSS_MODEL_STUDY.md from results/cross_model_1103/rollouts.csv (stdlib only).
 
     python scripts/cross_model_stats.py [--md results/cross_model_1103/stats.md]
 

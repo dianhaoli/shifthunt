@@ -1,0 +1,370 @@
+# Black-box study run log (append-only)
+
+Spend is tracked per provider against two caps: OpenAI ≈ $800, Anthropic ≈ $130 (plan §0, rule 3).
+`cum_openai` and `cum_anthropic` are cumulative USD after the row. Times are UTC.
+Run id = first 12 characters of the container id (agent runs) or the request batch name (text-only calls).
+
+| time | run id | arm | agent | item | status | usd | cum_openai | cum_anthropic |
+|---|---|---|---|---|---|---|---|---|
+| 2026-11-10T06:55Z | setup-keycheck | setup | all four models | - | ok (3 Claude 8-token replies, 1 OpenAI model lookup) | 0.00 | 0.00 | 0.00 |
+| 2026-11-10T07:35Z | exp_e (24 calls) | exp_e | gpt-6.1-terra ×6, claude-opus-5-5 ×6, claude-sonnet-5-5 ×6, claude-haiku-5-5 ×6 | - | ok 24/24 (openai 0.017, anthropic 0.500) | 0.52 | 0.02 | 0.50 |
+| 2026-11-10T12:32Z | 2c9ee009bdc8 | bb64 (pilot) | gpt | ep411 | ok | 0.292 | 0.312 | 0.500 |
+| 2026-11-10T12:33Z | c1471efa5db5 | open8 (pilot) | gpt | ep411 | ok | 0.496 | 0.808 | 0.500 |
+| 2026-11-10T12:45Z | cbf915076e07 | bb8 (pilot) | gpt | ep411 | ok | 0.875 | 1.683 | 0.500 |
+| 2026-11-10T12:56Z | d9877b3db3b5 | bb8 (pilot) | haiku | ep472 | ok | 1.009 | 1.683 | 1.509 |
+| 2026-11-10T13:19Z | b67b0bf1c8ef | bb64 | gpt | ep472 | ok | 0.386 | 2.069 | 1.509 |
+| 2026-11-10T13:22Z | 29a9c5a59d82 | bb64 | haiku | ep413 | ok | 0.630 | 2.069 | 2.139 |
+| 2026-11-10T13:30Z | 54f9ad91611c | bb64 | gpt | ep472 | ok | 0.812 | 2.881 | 2.139 |
+| 2026-11-10T13:36Z | b4ec220ca7e3 | bb64 | gpt | ep476 | ok | 0.415 | 3.296 | 2.139 |
+| 2026-11-10T13:45Z | exp_d (400 calls) | exp_d | gpt-6.1-terra ×100, claude-opus-5-5 ×100, claude-sonnet-5-5 ×100, claude-haiku-5-5 ×100 | - | ok 400/400 (openai 2.375, anthropic 18.373) | 20.748 | 5.671 | 20.512 |
+| 2026-11-10T13:49Z | cb3eae38f5ce | open8 | gpt | ep476 | ok | 0.644 | 6.315 | 20.512 |
+| 2026-11-10T13:53Z | afe465b9df76 | bb8 | gpt | ep474 | ok (codex_error_recovered) | 1.344 | 7.659 | 20.512 |
+| 2026-11-10T13:54Z | e0e706576849 | open8 | gpt | ep472 | ok | 0.725 | 8.384 | 20.512 |
+| 2026-11-10T13:58Z | 6362226b6a3a | bb64 | gpt | ep413 | ok | 0.293 | 8.677 | 20.512 |
+| 2026-11-10T14:15Z | 67bc5b41db84 | open8 | gpt | ep413 | ok | 0.710 | 9.387 | 20.512 |
+| 2026-11-10T14:17Z | 97950b6d8f57 | bb64 | haiku | ep413 | ok | 0.726 | 9.387 | 21.238 |
+| 2026-11-10T14:22Z | 2c9ae4c7e30f | bb8 | haiku | ep474 | ok | 1.303 | 9.387 | 22.541 |
+| 2026-11-10T14:32Z | 9d7ae27fd4f0 | bb64 | haiku | ep411 | ok | 0.689 | 9.387 | 23.230 |
+| 2026-11-10T14:40Z | 8f6e5ae1ea30 | open8 | gpt | ep476 | ok | 0.602 | 9.989 | 23.230 |
+| 2026-11-10T14:43Z | f41997827cd0 | bb64 | gpt | ep476 | ok | 0.947 | 10.936 | 23.230 |
+| 2026-11-10T14:58Z | bbf1157679c3 | open8 | gpt | ep411 | ok | 0.612 | 11.548 | 23.230 |
+| 2026-11-10T15:00Z | 392f5629f318 | bb8 | gpt | ep413 | ok | 0.826 | 12.374 | 23.230 |
+| 2026-11-10T15:00Z | 67a30a8da8f4 | bb64 | gpt | ep474 | ok | 0.490 | 12.864 | 23.230 |
+| 2026-11-10T15:17Z | 6a5e5ccb30b7 | open8 | gpt | ep472 | ok | 0.549 | 13.413 | 23.230 |
+| 2026-11-10T15:19Z | e62427fcbcf9 | open8 | haiku | ep474 | ok | 1.040 | 13.413 | 24.270 |
+| 2026-11-10T15:34Z | c87bc1c4b1a9 | bb8 | haiku | ep472 | ok | 1.624 | 13.413 | 25.894 |
+| 2026-11-10T15:42Z | b41b2272ec5d | open8 | gpt | ep413 | ok | 0.937 | 14.350 | 25.894 |
+| 2026-11-10T15:44Z | 2727265002d4 | bb8 | gpt | ep476 | ok | 0.862 | 15.212 | 25.894 |
+| 2026-11-10T16:00Z | 580745f7c7ea | open8 | gpt | ep411 | ok | 0.716 | 15.928 | 25.894 |
+| 2026-11-10T16:02Z | d38ee7ebab09 | bb8 | gpt | ep415 | ok | 0.992 | 16.920 | 25.894 |
+| 2026-11-10T16:15Z | d4e66a5ae8b2 | bb8 | haiku | ep415 | ok | 1.544 | 16.920 | 27.438 |
+| 2026-11-10T16:21Z | 4a5ae56dd044 | bb64 | haiku | ep472 | ok | 0.759 | 16.920 | 28.197 |
+| 2026-11-10T16:23Z | 3bc764e5d5b9 | bb64 | gpt | ep411 | ok | 0.223 | 17.143 | 28.197 |
+| 2026-11-10T16:27Z | 72f1fbc42c93 | bb8 | gpt | ep413 | ok | 0.892 | 18.035 | 28.197 |
+| 2026-11-10T16:34Z | dca067d7dea8 | bb64 | gpt | ep413 | ok | 0.200 | 18.235 | 28.197 |
+| 2026-11-10T16:35Z | 04b5aca1258a | open8 | gpt | ep476 | ok | 0.614 | 18.849 | 28.197 |
+| 2026-11-10T16:45Z | e9389bdb4578 | bb8 | gpt | ep476 | ok | 0.835 | 19.684 | 28.197 |
+| 2026-11-10T16:56Z | e9df3deb75fb | open8 | gpt | ep476 | ok (codex_error_recovered) | 0.825 | 20.509 | 28.197 |
+| 2026-11-10T17:02Z | 73065c82846e | bb8 | gpt | ep474 | ok (codex_error_recovered) | 1.111 | 21.620 | 28.197 |
+| 2026-11-10T17:05Z | 7ee5a16535ee | open8 | gpt | ep413 | ok | 0.782 | 22.402 | 28.197 |
+| 2026-11-10T17:19Z | f21d6894141f | bb64 | gpt | ep472 | ok | 0.418 | 22.820 | 28.197 |
+| 2026-11-10T17:23Z | 9e94f125b517 | bb8 | haiku | ep476 | ok | 0.853 | 22.820 | 29.050 |
+| 2026-11-10T17:35Z | abb8a9636286 | bb8 | gpt | ep474 | ok | 1.531 | 24.351 | 29.050 |
+| 2026-11-10T17:40Z | db9446d3e746 | open8 | haiku | ep415 | ok | 0.914 | 24.351 | 29.964 |
+| 2026-11-10T17:49Z | d25aca1b6db0 | open8 | haiku | ep472 | ok | 1.316 | 24.351 | 31.280 |
+| 2026-11-10T18:03Z | 32eeb80ce0e4 | open8 | gpt | ep474 | ok | 0.489 | 24.840 | 31.280 |
+| 2026-11-10T18:05Z | e0ca038acf56 | open8 | haiku | ep415 | ok | 1.056 | 24.840 | 32.336 |
+| 2026-11-10T18:11Z | 5c7b64a24477 | bb8 | haiku | ep413 | ok | 1.753 | 24.840 | 34.089 |
+| 2026-11-10T18:21Z | 6fc6e9d5bb30 | open8 | gpt | ep474 | ok | 0.711 | 25.551 | 34.089 |
+| 2026-11-10T18:27Z | 90d4251352b5 | bb8 | gpt | ep472 | ok | 0.676 | 26.227 | 34.089 |
+| 2026-11-10T18:34Z | e615c5938f9e | bb8 | gpt | ep472 | ok | 0.831 | 27.058 | 34.089 |
+| 2026-11-10T18:45Z | a4aa52644854 | bb64 | gpt | ep476 | ok | 0.383 | 27.441 | 34.089 |
+| 2026-11-10T18:46Z | 620c2c1948fe | open8 | gpt | ep411 | ok | 0.767 | 28.208 | 34.089 |
+| 2026-11-10T18:48Z | ec4d97a1786d | open8 | haiku | ep413 | ok | 1.049 | 28.208 | 35.138 |
+| 2026-11-10T18:59Z | 8ed93887adeb | bb64 | gpt | ep476 | ok | 0.423 | 28.631 | 35.138 |
+| 2026-11-10T19:02Z | 13e8a939b242 | open8 | gpt | ep413 | ok | 0.720 | 29.351 | 35.138 |
+| 2026-11-10T19:06Z | 744e297e57b1 | open8 | gpt | ep415 | ok | 0.660 | 30.011 | 35.138 |
+| 2026-11-10T19:08Z | 61b5c00fb404 | bb64 | gpt | ep415 | ok | 0.294 | 30.305 | 35.138 |
+| 2026-11-10T19:11Z | b24bb04016d1 | bb64 | gpt | ep413 | ok | 0.289 | 30.594 | 35.138 |
+| 2026-11-10T19:17Z | 0cf158e42e8e | bb64 | gpt | ep474 | ok | 0.409 | 31.003 | 35.138 |
+| 2026-11-10T19:26Z | 92a9ac6d040b | open8 | haiku | ep476 | ok | 0.772 | 31.003 | 35.910 |
+| 2026-11-10T19:26Z | 5c4cf391ea5f | bb64 | gpt | ep411 | ok | 0.270 | 31.273 | 35.910 |
+| 2026-11-10T19:34Z | c4bbedfd9003 | bb64 | haiku | ep476 | ok | 0.903 | 31.273 | 36.813 |
+| 2026-11-10T19:41Z | 8b0e4174b700 | open8 | gpt | ep474 | ok | 0.612 | 31.885 | 36.813 |
+| 2026-11-10T19:47Z | 26e27553ea1c | open8 | haiku | ep411 | ok | 0.892 | 31.885 | 37.705 |
+| 2026-11-10T20:00Z | 91b051a1f95d | bb8 | gpt | ep415 | ok | 0.842 | 32.727 | 37.705 |
+| 2026-11-10T20:01Z | e5db687fdd6a | open8 | gpt | ep415 | ok | 0.776 | 33.503 | 37.705 |
+| 2026-11-10T20:07Z | a340351d2934 | open8 | haiku | ep413 | ok | 0.795 | 33.503 | 38.500 |
+| 2026-11-10T20:17Z | 479239b4c83f | bb64 | haiku | ep472 | ok | 0.668 | 33.503 | 39.168 |
+| 2026-11-10T20:30Z | 8cac292d7ed4 | bb8 | haiku | ep472 | ok | 1.178 | 33.503 | 40.346 |
+| 2026-11-10T20:30Z | dbb2d25647f0 | bb8 | gpt | ep476 | ok | 0.809 | 34.312 | 40.346 |
+| 2026-11-10T20:39Z | 271a02492f8c | bb64 | gpt | ep415 | ok | 0.235 | 34.547 | 40.346 |
+| 2026-11-10T20:41Z | 4b0762a0c53f | bb8 | gpt | ep472 | ok | 0.994 | 35.541 | 40.346 |
+| 2026-11-10T20:51Z | cfff9c96bb16 | bb8 | gpt | ep415 | ok | 0.720 | 36.261 | 40.346 |
+| 2026-11-10T20:58Z | f6c824ac7985 | open8 | gpt | ep472 | ok | 0.724 | 36.985 | 40.346 |
+| 2026-11-10T20:59Z | df7a956cf9ab | open8 | haiku | ep472 | ok | 0.909 | 36.985 | 41.255 |
+| 2026-11-10T21:05Z | 833d9ef52bf7 | bb64 | gpt | ep474 | ok | 0.446 | 37.431 | 41.255 |
+| 2026-11-10T21:20Z | e746a5f0618d | bb64 | haiku | ep474 | ok | 0.943 | 37.431 | 42.198 |
+| 2026-11-10T21:25Z | ce83d0006947 | bb8 | haiku | ep415 | ok | 1.150 | 37.431 | 43.348 |
+| 2026-11-10T21:27Z | d2bf3a202415 | bb8 | gpt | ep413 | ok | 0.718 | 38.149 | 43.348 |
+| 2026-11-10T21:34Z | bec8b4b6a49c | bb64 | gpt | ep472 | ok | 0.294 | 38.443 | 43.348 |
+| 2026-11-10T21:39Z | d738ab6b8ac3 | open8 | gpt | ep415 | ok | 0.758 | 39.201 | 43.348 |
+| 2026-11-10T21:51Z | d8fe8cb5529c | open8 | gpt | ep411 | ok | 0.394 | 39.595 | 43.348 |
+| 2026-11-10T21:52Z | 4d99181566cf | bb8 | gpt | ep411 | ok | 0.819 | 40.414 | 43.348 |
+| 2026-11-10T21:57Z | 8be7adb42a1a | bb64 | haiku | ep476 | ok | 1.168 | 40.414 | 44.516 |
+| 2026-11-10T22:13Z | 32a550d6c62d | open8 | gpt | ep474 | ok | 0.714 | 41.128 | 44.516 |
+| 2026-11-10T22:20Z | a4a64154cd9b | bb8 | haiku | ep413 | ok | 1.247 | 41.128 | 45.763 |
+| 2026-11-10T22:27Z | ee1521588124 | bb8 | gpt | ep476 | ok | 1.076 | 42.204 | 45.763 |
+| 2026-11-10T22:31Z | 6f3f6903885e | bb64 | haiku | ep411 | ok | 0.743 | 42.204 | 46.506 |
+| 2026-11-10T22:43Z | 910e77f71e2c | bb8 | haiku | ep411 | ok | 0.917 | 42.204 | 47.423 |
+| 2026-11-10T22:44Z | c5b434233252 | open8 | gpt | ep472 | ok | 0.509 | 42.713 | 47.423 |
+| 2026-11-10T22:49Z | 4b5bbd16d149 | open8 | haiku | ep476 | ok | 1.003 | 42.713 | 48.426 |
+| 2026-11-10T22:51Z | exp_f roundtrip (4 calls) | exp_f | gpt-6.1-terra ×1, claude-opus-5-5 ×1, claude-sonnet-5-5 ×1, claude-haiku-5-5 ×1 | - | ok 4/4 (openai 0.000543, anthropic 0.010737) | 0.011 | 42.714 | 48.437 |
+| 2026-11-10T22:53Z | exp_f pilot (20 calls) | exp_f | gpt-6.1-terra ×5, claude-opus-5-5 ×5, claude-sonnet-5-5 ×5, claude-haiku-5-5 ×5 | - | ok 20/20 (openai 0.111778, anthropic 0.949502) | 1.061 | 42.826 | 49.387 |
+| 2026-11-10T22:56Z | exp_f manual round trip (4 calls, results/private_1112/exp_f_roundtrip) | exp_f | gpt-6.1-terra ×1, claude-opus-5-5 ×1, claude-sonnet-5-5 ×1, claude-haiku-5-5 ×1 | - | ok 4/4 (openai 0.0006, anthropic 0.0119; sent 21:4xZ, logged late) | 0.012 | 42.827 | 49.399 |
+| 2026-11-10T22:58Z | 3989045eba3e | bb64 | gpt | ep411 | ok | 0.295 | 43.122 | 49.399 |
+| 2026-11-10T23:07Z | f35851679ee4 | open8 | haiku | ep474 | ok | 1.238 | 43.122 | 50.637 |
+| 2026-11-10T23:14Z | 8349c713359b | bb8 | haiku | ep474 | ok | 1.545 | 43.122 | 52.182 |
+| 2026-11-10T23:16Z | 123f6463f065 | bb8 | gpt | ep411 | ok | 0.581 | 43.703 | 52.182 |
+| 2026-11-10T23:22Z | 543d2b1f9971 | bb64 | gpt | ep415 | ok | 0.239 | 43.942 | 52.182 |
+| 2026-11-10T23:30Z | 3b966026b482 | bb64 | gpt | ep415 | ok | 0.426 | 44.368 | 52.182 |
+| 2026-11-10T23:32Z | 64d3c125c0f6 | bb8 | gpt | ep472 | ok | 0.947 | 45.315 | 52.182 |
+| 2026-11-10T23:47Z | f35702cc1aab | bb64 | haiku | ep415 | ok | 1.104 | 45.315 | 53.286 |
+| 2026-11-10T23:51Z | a468b55a4fd0 | bb8 | gpt | ep411 | ok | 0.666 | 45.981 | 53.286 |
+| 2026-11-10T23:52Z | b74ca474a35d | open8 | haiku | ep411 | ok | 0.926 | 45.981 | 54.212 |
+| 2026-11-10T23:55Z | exp_f (400 calls) | exp_f | gpt-6.1-terra ×100, claude-opus-5-5 ×100, claude-sonnet-5-5 ×100, claude-haiku-5-5 ×100 | - | ok 400/400 (openai 2.736619, anthropic 20.575487) | 23.312 | 48.718 | 74.787 |
+| 2026-11-10T23:59Z | 3da4a92a3de9 | bb64 | gpt | ep411 | ok | 0.214 | 48.932 | 74.787 |
+| 2026-11-11T00:14Z | bb8a1da45524 | bb8 | gpt | ep413 | ok | 0.979 | 49.911 | 74.787 |
+| 2026-11-11T00:15Z | 30fd403d01a1 | bb8 | haiku | ep476 | ok | 1.084 | 49.911 | 75.871 |
+| 2026-11-11T00:21Z | 926a7563fe66 | bb64 | gpt | ep413 | ok | 0.230 | 50.141 | 75.871 |
+| 2026-11-11T00:29Z | d12b5b6bfba1 | bb64 | gpt | ep474 | ok | 0.304 | 50.445 | 75.871 |
+| 2026-11-11T00:33Z | cc2e85fb2979 | bb8 | gpt | ep474 | ok | 1.401 | 51.846 | 75.871 |
+| 2026-11-11T00:35Z | 47f8a94ff0e4 | open8 | gpt | ep415 | ok | 0.718 | 52.564 | 75.871 |
+| 2026-11-11T00:55Z | 966058d8d8f8 | bb8 | haiku | ep411 | ok | 0.610 | 52.564 | 76.481 |
+| 2026-11-11T01:02Z | 69158ac330ad | bb8 | gpt | ep415 | ok | 1.124 | 53.688 | 76.481 |
+| 2026-11-11T01:12Z | 61b772d162d3 | bb8 | gpt | ep411 | ok | 1.610 | 55.298 | 76.481 |
+| 2026-11-11T01:13Z | d8b7bc9faea9 | bb64 | haiku | ep415 | ok | 0.723 | 55.298 | 77.204 |
+| 2026-11-11T01:28Z | 916724dfde63 | bb64 | haiku | ep474 | ok | 1.199 | 55.298 | 78.403 |
+| 2026-11-11T06:20Z | coders pilot (4 calls, results/private_1112/followup/coders/raw_pilot) | coders | gpt-6.1-terra ×4 | - | ok 4/4 (openai 0.294355) | 0.294 | 55.592 | 78.403 |
+| 2026-11-11T06:51Z | 0277bb9f04c1 | bb16 (pilot) | gpt | ep472 | ok | 0.451 | 56.043 | 78.403 |
+| 2026-11-11T06:52Z | coders full (212 calls, 106 transcripts × coders A and B; two client processes, results/private_1112/followup/coders/raw_full_1 and raw_full_2; sent 06:23Z–06:52Z) | coders | gpt-6.1-terra ×212 | - | ok 212/212 (openai 12.514541) | 12.515 | 68.558 | 78.403 |
+| 2026-11-11T16:20Z | 2d2840009fb0 | bb16 | gpt | ep411 | ok | 0.338 | 68.896 | 78.403 |
+| 2026-11-11T16:21Z | f9150bc3af9c | bb16 | gpt | ep415 | ok | 0.395 | 69.291 | 78.403 |
+| 2026-11-11T16:23Z | cf64d7be2df6 | bb16 | gpt | ep474 | ok | 0.540 | 69.831 | 78.403 |
+| 2026-11-11T16:34Z | 4fb3617abfe1 | bb16 | gpt | ep415 | ok | 0.343 | 70.174 | 78.403 |
+| 2026-11-11T16:41Z | 46f7d45ee738 | bb16 | gpt | ep472 | ok | 0.491 | 70.665 | 78.403 |
+| 2026-11-11T16:50Z | 591de34af6d5 | bb16 | gpt | ep411 | ok | 0.420 | 71.085 | 78.403 |
+| 2026-11-11T16:50Z | 9073a29241d8 | bb16 | gpt | ep474 | ok | 0.764 | 71.849 | 78.403 |
+| 2026-11-11T16:54Z | 90b9780383df | bb16 | gpt | ep411 | ok | 0.327 | 72.176 | 78.403 |
+| 2026-11-11T17:07Z | 2884fc96169a | bb16 | gpt | ep415 | ok | 0.372 | 72.548 | 78.403 |
+| 2026-11-11T17:13Z | 8de64a6023d4 | bb16 | gpt | ep411 | ok | 0.668 | 73.216 | 78.403 |
+| 2026-11-11T17:24Z | 8bc002901f82 | bb16 | gpt | ep476 | ok | 0.468 | 73.684 | 78.403 |
+| 2026-11-11T17:26Z | ad6ff8e3bc80 | bb16 | gpt | ep476 | ok | 1.038 | 74.722 | 78.403 |
+| 2026-11-11T17:39Z | 6932f10e5a5c | bb16 | gpt | ep474 | ok | 0.881 | 75.603 | 78.403 |
+| 2026-11-11T17:41Z | fb8fa636880f | bb16 | gpt | ep472 | ok | 0.385 | 75.988 | 78.403 |
+| 2026-11-11T17:47Z | 15debef4127d | bb16 | gpt | ep413 | ok | 0.715 | 76.703 | 78.403 |
+| 2026-11-11T17:52Z | 2bf9915858a2 | bb16 | gpt | ep413 | ok | 0.307 | 77.010 | 78.403 |
+| 2026-11-11T18:05Z | 2954ca37e57b | bb16 | gpt | ep413 | ok | 0.808 | 77.818 | 78.403 |
+| 2026-11-11T18:06Z | 693b522057b1 | bb16 | gpt | ep415 | ok | 0.514 | 78.332 | 78.403 |
+| 2026-11-11T18:07Z | 5432e6763c13 | bb16 | gpt | ep474 | ok | 0.399 | 78.731 | 78.403 |
+| 2026-11-11T18:25Z | 5086bb5662f3 | bb16 | gpt | ep413 | ok | 0.523 | 79.254 | 78.403 |
+| 2026-11-11T18:30Z | 5ab2ff1fb342 | bb16 | gpt | ep472 | ok | 0.740 | 79.994 | 78.403 |
+| 2026-11-11T18:33Z | 19480c0694e9 | bb16 | gpt | ep472 | ok | 0.734 | 80.728 | 78.403 |
+| 2026-11-11T18:50Z | accf0206823a | bb16 | gpt | ep476 | ok | 0.644 | 81.372 | 78.403 |
+| 2026-11-11T19:03Z | 2cbf3801f213 | bb16 | gpt | ep476 | ok | 1.375 | 82.747 | 78.403 |
+| 2026-11-12T06:16Z | 1a2e60748088 | open8 (pilot) | luna | ep472 | ok | 0.136 | 82.883 | 78.403 |
+| 2026-11-12T06:32Z | aafe30e6b917 | open8 | luna | ep411 | ok | 0.080 | 82.963 | 78.403 |
+| 2026-11-12T06:36Z | d5ca2d73574f | open8 | luna | ep474 | ok | 0.126 | 83.089 | 78.403 |
+| 2026-11-12T06:40Z | 3074fd6b54a7 | bb8 | luna | ep474 | ok | 0.099 | 83.188 | 78.403 |
+| 2026-11-12T06:50Z | 170a4883879a | bb8 | luna | ep474 | ok | 0.095 | 83.283 | 78.403 |
+| 2026-11-12T06:50Z | fc08bd7d3e4d | bb8 | luna | ep472 | ok | 0.060 | 83.343 | 78.403 |
+| 2026-11-12T06:53Z | dd92406c704d | bb8 | luna | ep413 | ok | 0.056 | 83.399 | 78.403 |
+| 2026-11-12T07:01Z | 6eb1a2494353 | open8 | luna | ep476 | ok | 0.061 | 83.460 | 78.403 |
+| 2026-11-12T07:07Z | 5a74b25a6ae5 | open8 | luna | ep413 | ok | 0.090 | 83.550 | 78.403 |
+| 2026-11-12T07:07Z | e5436084a831 | bb8 | luna | ep413 | ok | 0.062 | 83.612 | 78.403 |
+| 2026-11-12T07:24Z | bdbc4557a278 | open8 | luna | ep476 | ok | 0.158 | 83.770 | 78.403 |
+| 2026-11-12T07:26Z | b7a765aa6444 | bb8 | luna | ep415 | ok | 0.087 | 83.857 | 78.403 |
+| 2026-11-12T07:26Z | 3dade161b74e | open8 | luna | ep411 | ok | 0.101 | 83.958 | 78.403 |
+| 2026-11-12T07:42Z | 1d92471fd649 | open8 | luna | ep413 | ok | 0.102 | 84.060 | 78.403 |
+| 2026-11-12T07:42Z | fbdc8b2802d9 | open8 | luna | ep472 | ok | 0.113 | 84.173 | 78.403 |
+| 2026-11-12T07:44Z | d811befcd40f | open8 | luna | ep415 | ok | 0.103 | 84.276 | 78.403 |
+| 2026-11-12T07:50Z | judge (214 calls; results/private_1112/judge/raw) | judge | gpt-6.1-terra x214 | - | ok 214/214 | 1.970 | 86.246 | 78.403 |
+| 2026-11-12T07:51Z | f9de33387f54 | bb8 | luna | ep415 | ok | 0.040 | 86.286 | 78.403 |
+| 2026-11-12T07:57Z | a0ba410d8d79 | bb8 | luna | ep411 | ok | 0.062 | 86.348 | 78.403 |
+| 2026-11-12T08:03Z | 058c5dfce786 | bb8 | luna | ep476 | ok | 0.097 | 86.445 | 78.403 |
+| 2026-11-12T08:04Z | cdff161c3af5 | open8 | luna | ep474 | ok | 0.072 | 86.517 | 78.403 |
+| 2026-11-12T08:10Z | 747a7939118c | bb8 | luna | ep472 | ok | 0.057 | 86.574 | 78.403 |
+| 2026-11-12T08:18Z | 183f5b9aac7a | bb8 | luna | ep411 | ok | 0.036 | 86.610 | 78.403 |
+| 2026-11-12T08:20Z | 04f09e6c9989 | bb8 | luna | ep413 | ok | 0.080 | 86.690 | 78.403 |
+| 2026-11-12T08:23Z | 5f0611b69ae3 | open8 | luna | ep476 | ok | 0.111 | 86.801 | 78.403 |
+| 2026-11-12T08:37Z | 105d53df858a | bb8 | luna | ep415 | ok | 0.064 | 86.865 | 78.403 |
+| 2026-11-12T08:38Z | 307993f59d93 | open8 | luna | ep472 | ok | 0.117 | 86.982 | 78.403 |
+| 2026-11-12T08:51Z | c4ae7f76c5db | open8 | luna | ep411 | ok | 0.226 | 87.208 | 78.403 |
+| 2026-11-12T08:51Z | 6bec56cb1367 | open8 | luna | ep415 | ok | 0.079 | 87.287 | 78.403 |
+| 2026-11-12T08:55Z | 0c28a907f741 | open8 | luna | ep476 | ok | 0.100 | 87.387 | 78.403 |
+| 2026-11-12T09:10Z | c97ac11305dd | open8 | luna | ep474 | ok | 0.120 | 87.507 | 78.403 |
+| 2026-11-12T09:16Z | e9a5478a5321 | bb8 | luna | ep474 | ok | 0.136 | 87.643 | 78.403 |
+| 2026-11-12T09:19Z | e91d814988c2 | open8 | luna | ep476 | ok | 0.161 | 87.804 | 78.403 |
+| 2026-11-12T09:25Z | d92856577e95 | open8 | luna | ep474 | ok | 0.108 | 87.912 | 78.403 |
+| 2026-11-12T09:32Z | 889bb520a836 | bb8 | luna | ep476 | ok | 0.080 | 87.992 | 78.403 |
+| 2026-11-12T09:45Z | 5a5d83e129f0 | open8 | luna | ep415 | ok | 0.120 | 88.112 | 78.403 |
+| 2026-11-12T09:46Z | 358c75b674b4 | open8 | luna | ep415 | ok | 0.082 | 88.194 | 78.403 |
+| 2026-11-12T09:49Z | 51b77d657229 | bb8 | luna | ep472 | ok | 0.154 | 88.348 | 78.403 |
+| 2026-11-12T09:57Z | 4047a4793b6c | bb8 | luna | ep413 | ok | 0.051 | 88.399 | 78.403 |
+| 2026-11-12T10:04Z | bf434a3433d2 | open8 | luna | ep472 | ok | 0.119 | 88.518 | 78.403 |
+| 2026-11-12T10:11Z | e1a574ef4204 | bb8 | luna | ep472 | ok | 0.105 | 88.623 | 78.403 |
+| 2026-11-12T10:11Z | 5f699070c6b1 | open8 | luna | ep413 | ok | 0.078 | 88.701 | 78.403 |
+| 2026-11-12T10:19Z | 36a57c0b216e | open8 | luna | ep413 | ok | 0.082 | 88.783 | 78.403 |
+| 2026-11-12T10:30Z | 90d415ce9d41 | open8 | luna | ep411 | ok | 0.124 | 88.907 | 78.403 |
+| 2026-11-12T10:32Z | 9284dc3daded | open8 | luna | ep415 | ok | 0.074 | 88.981 | 78.403 |
+| 2026-11-12T10:38Z | 977f4926f5df | open8 | luna | ep472 | ok | 0.185 | 89.166 | 78.403 |
+| 2026-11-12T10:47Z | 7a28c3a6a7ac | bb8 | luna | ep411 | ok | 0.069 | 89.235 | 78.403 |
+| 2026-11-12T10:52Z | 3b17a6fd9d15 | bb8 | luna | ep476 | ok | 0.122 | 89.357 | 78.403 |
+| 2026-11-12T10:57Z | b8b8936f19e3 | bb8 | luna | ep476 | ok | 0.082 | 89.439 | 78.403 |
+| 2026-11-12T11:14Z | 081da9afbd2c | open8 | luna | ep413 | ok | 0.101 | 89.540 | 78.403 |
+| 2026-11-12T11:15Z | 44b7acddd762 | open8 | luna | ep474 | ok | 0.152 | 89.692 | 78.403 |
+| 2026-11-12T11:19Z | 100072279af7 | open8 | luna | ep472 | ok | 0.209 | 89.901 | 78.403 |
+| 2026-11-12T11:27Z | c095aca2c51e | open8 | luna | ep472 | ok | 0.079 | 89.980 | 78.403 |
+| 2026-11-12T11:31Z | bafd82dade1e | bb8 | luna | ep474 | ok | 0.070 | 90.050 | 78.403 |
+| 2026-11-12T11:34Z | 6d1b9c70fd61 | bb8 | luna | ep411 | ok | 0.065 | 90.115 | 78.403 |
+| 2026-11-12T11:45Z | f3b7c20ed529 | open8 | luna | ep474 | ok | 0.109 | 90.224 | 78.403 |
+| 2026-11-12T11:47Z | 1bf0a5c14342 | open8 | luna | ep413 | ok | 0.095 | 90.319 | 78.403 |
+| 2026-11-12T11:50Z | fe6b1a8f2fdb | open8 | luna | ep411 | ok | 0.103 | 90.422 | 78.403 |
+| 2026-11-12T11:57Z | 04273e0e4a58 | bb8 | luna | ep415 | ok | 0.054 | 90.476 | 78.403 |
+| 2026-11-12T12:03Z | e9e42c0b00e8 | open8 | luna | ep411 | ok | 0.088 | 90.564 | 78.403 |
+| 2026-11-12T12:07Z | 6ab46ca3cf7c | open8 | luna | ep476 | ok | 0.104 | 90.668 | 78.403 |
+| 2026-11-12T12:14Z | ef28174a51b0 | open8 | luna | ep415 | ok | 0.087 | 90.755 | 78.403 |
+| 2026-11-13T07:26Z | gpuplan S0: Step 0 gate (gpuplan/STEP0.md; image check 101/101, substrate gate pass; R6 cancelled: 1 source, checker not clean) | gpuplan | cpu/gpu only | - | ok | 0.000 | 90.755 | 78.403 |
+| 2026-11-13T07:26Z | gpuplan X1: scripted policies x budgets x trap ranks (gpuplan/xr_curves.json; scripts/xr_scripted_curves.py) | gpuplan | cpu/gpu only | - | ok | 0.000 | 90.755 | 78.403 |
+| 2026-11-13T07:26Z | gpuplan X2: edit-effect SD across base notes (gpuplan/xr_noise.json; scripts/xr_edit_noise.py) | gpuplan | cpu/gpu only | - | ok | 0.000 | 90.755 | 78.403 |
+| 2026-11-13T07:26Z | gpuplan X4: one-burst and allocation from logs, 13 agent x arm cells (gpuplan/xr_alloc.json; scripts/xr_alloc.py) | gpuplan | cpu/gpu only | - | ok | 0.000 | 90.755 | 78.403 |
+| 2026-11-13T07:26Z | gpuplan C19: judge vs certified leaderboard, L9 tau_b 0.23 (gpuplan/c19_reorder.json; scripts/c19_leaderboard.py) | gpuplan | cpu/gpu only | - | ok | 0.000 | 90.755 | 78.403 |
+| 2026-11-13T07:26Z | gpuplan C21: audit-order curves and PPI line (gpuplan/c21_audit.json; scripts/c21_audit.py) | gpuplan | cpu/gpu only | - | ok | 0.000 | 90.755 | 78.403 |
+| 2026-11-13T07:43Z | 07975ccc1081 | open4 (pilot) | gpt | ep472 | ok | 0.686 | 91.441 | 78.403 |
+| 2026-11-13T08:00Z | gpuplan C8: frozen L0 judge on Luna 60 + Terra 24 re-sent (84 calls; results/private_1112/judge_luna/raw; gpuplan/c8) | judge | gpt-6.1-terra x84 | - | ok 84/84 | 0.665 | 92.106 | 78.403 |
+| 2026-11-13T08:15Z | 0fd2915bdbfc | open4 (pilot) | luna | ep472 | ok | 0.193 | 92.299 | 78.403 |
+| 2026-11-13T08:25Z | 9ddc6d011d4c | open8 (pilot) | luna | ep801 | ok | 0.049 | 92.348 | 78.403 |
+| 2026-11-13T08:36Z | 1e558a7628c9 | open8 (pilot) | luna | ep802 | ok | 0.139 | 92.487 | 78.403 |
+| 2026-11-13T08:52Z | 72facb01d194 | open8 | gpt | ep415 | ok | 0.560 | 93.047 | 78.403 |
+| 2026-11-13T08:58Z | 7016eb8b7478 | open8 | gpt | ep801 | ok | 0.757 | 93.804 | 78.403 |
+| 2026-11-13T09:01Z | 654f3fc3a899 | open8 | gpt | ep802 | ok | 0.775 | 94.579 | 78.403 |
+| 2026-11-13T09:13Z | 251a1c557786 | open8 | gpt | ep411 | ok | 0.537 | 95.116 | 78.403 |
+| 2026-11-13T09:18Z | dfd59fcba69f | open8 | gpt | ep413 | ok | 1.037 | 96.153 | 78.403 |
+| 2026-11-13T09:23Z | 66cf5c41f212 | open8 | gpt | ep802 | ok | 0.835 | 96.988 | 78.403 |
+| 2026-11-13T09:30Z | 181d5cfa1ac3 | open8 | gpt | ep801 | ok | 0.659 | 97.647 | 78.403 |
+| 2026-11-13T09:33Z | 689047b5cca9 | open8 | gpt | ep801 | ok | 0.581 | 98.228 | 78.403 |
+| 2026-11-13T09:47Z | d843fd21ca63 | open8 | gpt | ep802 | ok | 0.944 | 99.172 | 78.403 |
+| 2026-11-13T09:48Z | 2eec974c6d05 | open8 | gpt | ep802 | ok | 0.585 | 99.757 | 78.403 |
+| 2026-11-13T09:49Z | none-c14_gpt-o12a1 | open8 | gpt | ep801 | infra:no_container (runner_exit_1) | 0.000 | 99.757 | 78.403 |
+| 2026-11-13T09:50Z | 2705d5f46142 | open8 | gpt | ep801 | ok | 0.716 | 100.473 | 78.403 |
+| 2026-11-13T10:04Z | bebb41a44543 | open8 | gpt | ep802 | ok | 0.520 | 100.993 | 78.403 |
+| 2026-11-13T10:21Z | b7f67a91ca91 | open8 | gpt | ep801 | ok | 1.247 | 102.240 | 78.403 |
+| 2026-11-13T10:22Z | none-open4_gpt-o1a1 | open4 | gpt | ep474 | infra:no_container (runner_exit_1) | 0.000 | 102.240 | 78.403 |
+| 2026-11-13T10:23Z | none-open4_gpt-o2a1 | open4 | gpt | ep474 | infra:no_container (runner_exit_1) | 0.000 | 102.240 | 78.403 |
+| 2026-11-13T10:39Z | f7de6c21160b | open4 | gpt | ep472 | ok | 0.590 | 102.830 | 78.403 |
+| 2026-11-13T10:45Z | b139d663a0d0 | open4 | gpt | ep411 | ok | 0.733 | 103.563 | 78.403 |
+| 2026-11-13T10:46Z | 0314870c2fa3 | open4 | gpt | ep413 | ok | 0.832 | 104.395 | 78.403 |
+| 2026-11-13T10:55Z | f35d436707ae | open4 | gpt | ep476 | ok | 0.598 | 104.993 | 78.403 |
+| 2026-11-13T11:05Z | 464971dfe65c | open4 | gpt | ep415 | ok | 0.749 | 105.742 | 78.403 |
+| 2026-11-13T11:07Z | 14d394b5ee82 | open4 | gpt | ep415 | ok | 0.749 | 106.491 | 78.403 |
+| 2026-11-13T11:09Z | b39873953a68 | open4 | gpt | ep472 | ok | 0.544 | 107.035 | 78.403 |
+| 2026-11-13T11:23Z | a1941090735f | open4 | gpt | ep411 | ok | 0.498 | 107.533 | 78.403 |
+| 2026-11-13T11:23Z | ace726fc7bcd | open4 | gpt | ep413 | ok | 0.670 | 108.203 | 78.403 |
+| 2026-11-13T11:27Z | 767e0d44346d | open4 | gpt | ep476 | ok | 0.589 | 108.792 | 78.403 |
+| 2026-11-13T11:38Z | ebc8e4da6935 | open4 | gpt | ep474 | ok | 0.592 | 109.384 | 78.403 |
+| 2026-11-13T11:44Z | 5cdcc8496b2e | open4 | gpt | ep474 | ok | 0.774 | 110.158 | 78.403 |
+| 2026-11-13T12:02Z | 8e74c5c9ad63 | open8 | luna | ep801 | ok | 0.103 | 110.261 | 78.403 |
+| 2026-11-13T12:04Z | 98bf684a7817 | open8 | luna | ep802 | ok | 0.105 | 110.366 | 78.403 |
+| 2026-11-13T12:07Z | 4e6af31e71ca | open8 | luna | ep801 | ok | 0.116 | 110.482 | 78.403 |
+| 2026-11-13T12:23Z | 8584927c01cd | open8 | luna | ep802 | ok | 0.096 | 110.578 | 78.403 |
+| 2026-11-13T12:28Z | 7491783aac79 | open8 | luna | ep802 | ok | 0.133 | 110.711 | 78.403 |
+| 2026-11-13T12:28Z | 9f43162c766c | open8 | luna | ep801 | ok | 0.127 | 110.838 | 78.403 |
+| 2026-11-13T12:38Z | ca34c0141593 | open8 | luna | ep802 | ok | 0.098 | 110.936 | 78.403 |
+| 2026-11-13T12:42Z | ebd4fa982c94 | open8 | luna | ep801 | ok | 0.091 | 111.027 | 78.403 |
+| 2026-11-13T12:50Z | 5c70d307e1c7 | open8 | luna | ep801 | ok | 0.137 | 111.164 | 78.403 |
+| 2026-11-13T12:51Z | cfd11cf81b47 | open8 | luna | ep802 | ok | 0.083 | 111.247 | 78.403 |
+| 2026-11-13T12:53Z | none-open4_luna-o1a1 | open4 | luna | ep474 | infra:no_container (runner_exit_1) | 0.000 | 111.247 | 78.403 |
+| 2026-11-13T12:54Z | none-open4_luna-o2a1 | open4 | luna | ep413 | infra:no_container (runner_exit_1) | 0.000 | 111.247 | 78.403 |
+| 2026-11-13T13:11Z | f393714787da | open4 | luna | ep415 | ok | 0.081 | 111.328 | 78.403 |
+| 2026-11-13T13:16Z | 12470244ec90 | open4 | luna | ep472 | ok | 0.154 | 111.482 | 78.403 |
+| 2026-11-13T13:23Z | eb737fb3f128 | open4 | luna | ep411 | ok | 0.063 | 111.545 | 78.403 |
+| 2026-11-13T13:27Z | 4eddcb3c1db5 | open4 | luna | ep413 | ok | 0.056 | 111.601 | 78.403 |
+| 2026-11-13T13:32Z | 6ff7c0bb19cf | open4 | luna | ep476 | ok | 0.234 | 111.835 | 78.403 |
+| 2026-11-13T13:51Z | 9a9b628e690f | open4 | luna | ep411 | ok | 0.104 | 111.939 | 78.403 |
+| 2026-11-13T13:52Z | e2d438a51c68 | open4 | luna | ep415 | ok | 0.138 | 112.077 | 78.403 |
+| 2026-11-13T14:06Z | b3d100b3d3f2 | open4 | luna | ep474 | ok | 0.078 | 112.155 | 78.403 |
+| 2026-11-13T14:07Z | 4cfa91e9e0db | open4 | luna | ep476 | ok | 0.256 | 112.411 | 78.403 |
+| 2026-11-13T14:07Z | f0045a8b10c0 | open4 | luna | ep472 | ok | 0.080 | 112.491 | 78.403 |
+| 2026-11-13T14:25Z | 56fc0a4dcaf4 | open4 | luna | ep413 | ok | 0.107 | 112.598 | 78.403 |
+| 2026-11-13T14:27Z | d176c1b44788 | open4 | luna | ep474 | ok | 0.152 | 112.750 | 78.403 |
+| 2026-11-13T14:46Z | 618a19daaaa0 | open8 | gpt | ep801 | ok | 0.566 | 113.316 | 78.403 |
+| 2026-11-13T14:50Z | 5883255492d1 | open8 | gpt | ep802 | ok | 0.851 | 114.167 | 78.403 |
+| 2026-11-13T14:50Z | 98c9b0fc641a | open8 | gpt | ep802 | ok | 0.746 | 114.913 | 78.403 |
+| 2026-11-13T15:02Z | 5a7684990f1a | open8 | gpt | ep801 | ok | 0.545 | 115.458 | 78.403 |
+| 2026-11-13T17:07Z | gpuplan C6: judge evidence ladder, set A 132 runs x L0r/L1/L1r (Terra) + H0/H1/H1r (Haiku), Luna L1 (852 calls, 850 ok, 2 http_503 not re-sent; results/private_1112/judge_ladder/raw; gpuplan/c6); Haiku spend 0.645 in cum_anthropic | judge | gpt-6.1-terra x456, claude-haiku-5-5 x396 | - | ok 850/852 | 6.137 | 121.595 | 79.048 |
+| 2026-11-13T17:07Z | gpuplan X3: Terra Open-4, 12 counted runs (spend in the run rows above; gpuplan/open4) | gpuplan | runs | - | ok | 0.000 | 121.595 | 79.048 |
+| 2026-11-13T17:07Z | gpuplan X3b: Luna Open-4, 12 counted runs (spend in the run rows above; gpuplan/open4) | gpuplan | runs | - | ok | 0.000 | 121.595 | 79.048 |
+| 2026-11-13T17:07Z | gpuplan C14: Terra 13 + stage 2 4 runs, Luna 10 runs on image r1114c (spend in the run rows above; gpuplan/c14) | gpuplan | runs | - | ok | 0.000 | 121.595 | 79.048 |
+| 2026-11-13T17:20Z | gpuplan C14 H5: frozen L0 judge on the 27 counted C14 runs (results/private_1112/judge_c14/raw; gpuplan/c14/judge.json) | judge | gpt-6.1-terra x27 | - | ok 27/27 | 0.239 | 121.834 | 79.048 |
+| 2026-11-13T17:32Z | gpuplan C12 lean: frozen judge on scripted answers with no report, P0/P7/P1/P6, shipped x2 + 27 bank episodes (204 calls; results/private_1112/judge_cheaters/raw; gpuplan/c12); Haiku 0.062 in cum_anthropic | judge | gpt-6.1-terra x102, claude-haiku-5-5 x102 | - | ok 204/204 | 0.546 | 122.380 | 79.110 |
+| 2026-11-13T19:17Z | 13608b230940 | open8 (pilot) | luna | ep803 | ok | 0.111 | 122.491 | 79.110 |
+| 2026-11-13T19:19Z | gpuplan C7 slim: Terra TK 274, Luna LF/LK 548, Haiku HF 142 (+C6's H0) / HK 274 (results/private_1112/judge_panel/raw_*; gpuplan/c7); Haiku 0.390 in cum_anthropic | judge | gpt-6.1-terra x274, gpt-6-luna x548, claude-haiku-5-5 x416 | - | ok 1236/1238 (2 http_503) | 2.965 | 125.456 | 79.500 |
+| 2026-11-13T19:19Z | gpuplan C17 R2: the 214 frozen L0 calls re-sent byte-identical (results/private_1112/judge_panel/raw_terra TF2; gpuplan/c17) | judge | gpt-6.1-terra x214 | - | ok 214/214 | 2.023 | 127.479 | 79.500 |
+| 2026-11-13T19:19Z | gpuplan C6b/C6c dry runs (5 + 5 longest prompts, responses quarantined unread) and one cache test (results/private_1112/judge_ladder2/dryrun_*) | judge | gpt-6.1-terra x11 | - | ok 11/11 | 3.111 | 130.590 | 79.500 |
+| 2026-11-13T19:35Z | 7c9bd6f66c00 | open8 | gpt | ep803 | infra:api_error | 0.392 | 130.982 | 79.500 |
+| 2026-11-13T19:38Z | b970df841700 | open8 | gpt | ep803 | infra:api_error | 0.587 | 131.569 | 79.500 |
+| 2026-11-13T19:41Z | b35ef57685d8 | open8 | gpt | ep803 | ok (codex_error_recovered) | 0.754 | 132.323 | 79.500 |
+| 2026-11-13T20:11Z | 1fb67c2c0a9c | open8 | gpt | ep803 | ok (codex_error_recovered) | 0.603 | 132.926 | 79.500 |
+| 2026-11-13T20:17Z | 061fe4c54e1d | open8 | gpt | ep803 | ok (codex_error_recovered) | 0.525 | 133.451 | 79.500 |
+| 2026-11-13T20:19Z | 9e7c8d4a0352 | open8 | gpt | ep803 | ok (codex_error_recovered) | 0.665 | 134.116 | 79.500 |
+| 2026-11-13T20:29Z | gpuplan C6b: L2 set A 130 / Luna 60 / main 64, L2r set A open 36 / main 64 (results/private_1112/judge_ladder2/raw_c6b; gpuplan/c6b) | judge | gpt-6.1-terra x354 | - | ok 354/354 | 29.246 | 163.362 | 79.500 |
+| 2026-11-13T20:29Z | gpuplan C6c: L3 answer key on L1 190 / L2 254 / L0 harder 18 (results/private_1112/judge_ladder2/raw_c6c; gpuplan/c6c) | judge | gpt-6.1-terra x462 | - | ok 462/462 | 24.411 | 187.773 | 79.500 |
+| 2026-11-13T20:29Z | gpuplan C6b-H: Haiku H2 130 / H2r 36 on set A + its dry run 5 (results/private_1112/judge_ladder2/raw_haiku; gpuplan/c6bh); Anthropic 0.478 dry run + 3.695 counted in cum_anthropic | judge | claude-haiku-5-5 x171 | - | ok 170/171 (1 H2r unparsed) | 0.000 | 187.773 | 83.673 |
+| 2026-11-13T20:34Z | da553188f289 | open8 | gpt | ep803 | ok (codex_error_recovered) | 0.853 | 188.626 | 83.673 |
+| 2026-11-13T20:41Z | ffde34e5ae38 | open8 | gpt | ep803 | ok | 0.985 | 189.611 | 83.673 |
+| 2026-11-13T20:44Z | f2fa65511d82 | open8 | gpt | ep803 | ok | 1.191 | 190.802 | 83.673 |
+| 2026-11-13T20:57Z | f66704337977 | open8 | luna | ep803 | ok | 0.075 | 190.877 | 83.673 |
+| 2026-11-13T21:05Z | 9eb3fe020422 | open8 | luna | ep803 | ok | 0.124 | 191.001 | 83.673 |
+| 2026-11-13T21:07Z | 81ba8ed5b26a | open8 | luna | ep803 | ok | 0.109 | 191.110 | 83.673 |
+| 2026-11-13T21:18Z | 2aded45ab0d4 | open8 | luna | ep803 | ok | 0.124 | 191.234 | 83.673 |
+| 2026-11-13T21:21Z | 81a35962a717 | open8 | luna | ep803 | ok | 0.081 | 191.315 | 83.673 |
+| 2026-11-13T21:30Z | d80fa1b11e04 | open8 | luna | ep803 | ok | 0.157 | 191.472 | 83.673 |
+| 2026-11-13T21:35Z | deb5bbdaf401 | open8 | luna | ep803 | ok | 0.124 | 191.596 | 83.673 |
+| 2026-11-13T21:54Z | 98adf31a3acf | open8 | luna | ep801 | ok | 0.131 | 191.727 | 83.673 |
+| 2026-11-13T21:55Z | cd1addef1e5f | open8 | luna | ep801 | ok | 0.097 | 191.824 | 83.673 |
+| 2026-11-13T21:59Z | e8ee8c526e51 | open8 | luna | ep802 | ok | 0.140 | 191.964 | 83.673 |
+| 2026-11-13T22:10Z | 9d8c312c599e | open8 | luna | ep802 | ok | 0.097 | 192.061 | 83.673 |
+| 2026-11-13T22:29Z | gpuplan C14b: F2-c (ep803) Terra 7 counted (+2 rate-limit infra re-runs, $0.979) + Luna 7 counted on image r1114d (spend in the run rows above; gpuplan/c14b) | gpuplan | runs | - | ok | 0.000 | 192.061 | 83.673 |
+| 2026-11-13T22:29Z | gpuplan C14L: Luna +2 on F2-a and +2 on F2-b, r1114d (spend in the run rows above; gpuplan/c14l) | gpuplan | runs | - | ok | 0.000 | 192.061 | 83.673 |
+| 2026-11-13T22:29Z | gpuplan C14b H5c: frozen L0 judge on the 14 C14b + 4 C14L runs (results/private_1112/judge_c14b/raw; gpuplan/c14b/judge.json) | judge | gpt-6.1-terra x18 | - | ok 18/18 | 0.145 | 192.206 | 83.673 |
+| 2026-11-14T21:04Z | gpuplan round 3 V: keyless scripted verifier on set A 130 / Luna 60 / main 64 (gpuplan/v; scripts/keyless_verifier.py) | gpuplan | cpu only | - | ok | 0.000 | 192.206 | 83.673 |
+| 2026-11-14T21:04Z | gpuplan round 3 A: item- and run-bootstrap intervals, balanced accuracy, all-slot ladder (gpuplan/a; scripts/ladder_intervals.py) | gpuplan | cpu only | - | ok | 0.000 | 192.206 | 83.673 |
+| 2026-11-14T21:04Z | gpuplan round 3 B: reconciliation, 196-run J1-J3 and C17, body-number scripts (gpuplan/b, RECONCILE.md; scripts/reconcile.py, scripts/body_numbers.py) | gpuplan | cpu only | - | ok | 0.000 | 192.206 | 83.673 |
+| 2026-11-14T21:04Z | gpuplan round 3 T: band-plus-closeness scripted policy (gpuplan/t; scripts/t_bandclose.py, t_bandclose_posthoc.py) | gpuplan | cpu only | - | ok | 0.000 | 192.206 | 83.673 |
+| 2026-11-14T21:34Z | gpuplan round 3 K: report + answer key, set A 130 + Luna 60 (results/private_1112/judge_ladder2/raw_k; gpuplan/k) + its dry run 5 | judge | gpt-6.1-terra x195 | - | ok 195/195 | 1.184 | 193.390 | 83.673 |
+| 2026-11-16T06:57Z | gpuplan round 4 D: judge on slots the agent's log decides, post hoc, prereg 04be402 (gpuplan/d; scripts/decidable_slots.py) | gpuplan | cpu only | - | ok | 0.000 | 193.390 | 83.673 |
+| 2026-11-16T06:57Z | gpuplan round 4 E: per-item counts and exact paired ladder tests (gpuplan/e; scripts/ladder_tests.py) | gpuplan | cpu only | - | ok | 0.000 | 193.390 | 83.673 |
+| 2026-11-16T08:08Z | gpuplan round 4 F: abstaining candidate-aware judge, set A L1 130 + L2 48 (results/private_1112/judge_ladder2/raw_f; gpuplan/f) + its dry run 4 ($0.622) | judge | gpt-6.1-terra x182 | - | ok 178/178 | 6.805 | 200.195 | 83.673 |
+| 2026-11-17T03:09Z | gpuplan round 6 U/V/W: agent-visible-unit decidable slots, abstaining judge as selective prediction, small fixes (gpuplan/u, v6, w6; scripts/u_agent_unit.py, v6_selective.py, w6_fixes.py) | gpuplan | cpu only | - | ok | 0.000 | 200.195 | 83.673 |
+| 2026-11-17T03:37Z | gpuplan round 5 S: GPT 6.1 Sol as judge on frozen prompts, set A L2/L0/L1/report+key/abstaining L1 + Luna and main study L2 (results/private_1112/judge_sol/raw_s1..5; gpuplan/s) + its dry run 5 ($3.072) | judge | gpt-6.1-sol x779 | - | ok 774/774 | 57.019 | 257.214 | 83.673 |
+| 2026-11-17T03:40Z | gpuplan round 7 X7: signal in the transcript, stored data only (gpuplan/x7; scripts/x7_signal.py) | gpuplan | cpu only | - | ok | 0.000 | 257.214 | 83.673 |
+| 2026-11-17T04:13Z | gpuplan round 8 R8: six checks on stored data (gpuplan/r8; scripts/r8_checks.py) | gpuplan | cpu only | - | ok | 0.000 | 257.214 | 83.673 |
+| 2026-11-18T04:33Z | gpuplan round 10 dry runs: 5 longest r10 prompts per model (Terra, Sol, Haiku; responses quarantined unread; results/private_1112/gpuplan/r10/dryrun in the r10 worktree); calls 13, returned 13, parsed not read (quarantined); window 2026-11-18T04:31:10Z–2026-11-18T04:32:19Z; response model claude-haiku-5-5, gpt-6.1-sol, gpt-6.1-terra | judge | gpt-6.1-terra x5, gpt-6.1-sol x4, claude-haiku-5-5 x4 | - | ok 13 | 4.613 | 261.424 | 84.076 |
+| 2026-11-18T05:31Z | gpuplan round 10 P0.5-F: reason scan on the frozen verdicts (gpuplan/r10/p05; scripts/r10_reason_scan.py) | gpuplan | cpu only | - | ok | 0.000 | 261.424 | 84.076 |
+| 2026-11-18T06:23Z | gpuplan round 10 P1a gate: r10 L0 (Terra) on set A 132 (judge/raw, worktree); calls 132, returned 132, parsed 132; window 2026-11-18T05:31:44Z–2026-11-18T06:18:53Z; response model gpt-6.1-terra | judge | gpt-6.1-terra x132 | - | ok 132 | 1.117 | 262.541 | 84.076 |
+| 2026-11-18T06:23Z | gpuplan round 10 P1a gate: r10 H0 (Haiku) on set A 132 (judge_ladder/raw, worktree); calls 132, returned 132, parsed 131; window 2026-11-18T05:31:44Z–2026-11-18T05:34:05Z; response model claude-haiku-5-5 | judge | claude-haiku-5-5 x132 | - | ok 132 | 0.133 | 262.541 | 84.209 |
+| 2026-11-18T06:23Z | gpuplan round 10 P1a same-day control: frozen L0 prompts, set A 132 (gpuplan/r10/ctrl/raw_terra); calls 131, returned 131, parsed 131; window 2026-11-18T05:31:44Z–2026-11-18T06:14:32Z; response model gpt-6.1-terra | judge | gpt-6.1-terra x132 | - | ok 131 | 1.206 | 263.747 | 84.209 |
+| 2026-11-18T06:23Z | gpuplan round 10 P1a same-day control: frozen H0 prompts, set A 132 (gpuplan/r10/ctrl/raw_haiku); calls 132, returned 132, parsed 132; window 2026-11-18T05:31:44Z–2026-11-18T05:33:41Z; response model claude-haiku-5-5 | judge | claude-haiku-5-5 x132 | - | ok 132 | 0.120 | 263.747 | 84.329 |
+| 2026-11-18T06:25Z | gpuplan round 10 P1a control: the 1 frozen L0 call held back by the $1.3 cap, sent under $1.6 (gpuplan/r10/ctrl/raw_terra); calls 1, returned 1; window 2026-11-18T06:23:39Z–2026-11-18T06:24:12Z; response model gpt-6.1-terra | judge | gpt-6.1-terra x1 | - | ok 1 | 0.018 | 263.765 | 84.329 |
+| 2026-11-18T07:22Z | gpuplan round 10 P1: r10 C6 (L0r, L1, L1r on set A 132, L1 Luna 60; H1, H1r; split into four sub-lanes); calls 456, returned 456, parsed 456; window 2026-11-18T05:34:00Z–2026-11-18T07:18:46Z; response model gpt-6.1-terra | judge | gpt-6.1-terra x456, claude-haiku-5-5 x264 | - | ok 456 | 5.746 | 269.511 | 84.329 |
+| 2026-11-18T07:22Z | gpuplan round 10 P1: r10 C6b-H H2 + H2r (judge_ladder2/raw_haiku); calls 166, returned 166, parsed 164; window 2026-11-18T05:34:00Z–2026-11-18T05:47:30Z; response model claude-haiku-5-5 | judge | claude-haiku-5-5 x166 | - | ok 166 | 4.034 | 269.511 | 88.363 |
+| 2026-11-18T07:22Z | gpuplan round 10 P1: r10 C12 scripted answers (judge_cheaters/raw); calls 204, returned 204, parsed 203; window 2026-11-18T05:33:59Z–2026-11-18T06:01:50Z; response model claude-haiku-5-5, gpt-6.1-terra | judge | gpt-6.1-terra x102, claude-haiku-5-5 x102 | - | ok 204 | 0.676 | 270.125 | 88.425 |
+| 2026-11-18T07:22Z | gpuplan round 10 P1: r10 K report + key (judge_ladder2/raw_k); calls 190, returned 190, parsed 190; window 2026-11-18T06:01:51Z–2026-11-18T06:43:21Z; response model gpt-6.1-terra | judge | gpt-6.1-terra x190 | - | ok 190 | 1.220 | 271.345 | 88.425 |
+| 2026-11-18T07:22Z | gpuplan round 10 P1: r10 Sol S0 + S1 (judge_sol/raw_s2); calls 260, returned 260, parsed 260; window 2026-11-18T05:33:59Z–2026-11-18T06:33:57Z; response model gpt-6.1-sol | judge | gpt-6.1-sol x260 | - | ok 260 | 4.183 | 275.528 | 88.425 |
+| 2026-11-18T07:22Z | gpuplan round 10 P1: r10 Sol S2 set A (judge_sol/raw_s1); calls 130, returned 130, parsed 130; window 2026-11-18T05:34:00Z–2026-11-18T06:09:08Z; response model gpt-6.1-sol | judge | gpt-6.1-sol x130 | - | ok 130 | 20.783 | 296.311 | 88.425 |
+| 2026-11-18T07:22Z | gpuplan round 10 P1: r10 Sol S3 (judge_sol/raw_s3); calls 130, returned 130, parsed 130; window 2026-11-18T06:33:57Z–2026-11-18T06:50:17Z; response model gpt-6.1-sol | judge | gpt-6.1-sol x130 | - | ok 130 | 1.170 | 297.481 | 88.425 |
+| 2026-11-18T07:23Z | gpuplan round 10 P1: r10 C6 Haiku H1 + H1r on set A (judge_ladder/raw); calls 264, returned 264, parsed 261; window 2026-11-18T05:34:00Z–2026-11-18T07:16:36Z; response model claude-haiku-5-5 | judge | claude-haiku-5-5 x264 | - | ok 264 | 0.641 | 297.481 | 89.066 |
+| 2026-11-18T08:02Z | gpuplan round 10 P2: r10 L0 on the other 82 registered runs (judge/raw); calls 82, returned 82, parsed 82; window 2026-11-18T06:43:21Z–2026-11-18T07:12:19Z; response model gpt-6.1-terra | judge | gpt-6.1-terra x82 | - | ok 82 | 0.672 | 298.153 | 89.066 |
+| 2026-11-18T08:02Z | gpuplan round 10 P2: r10 C8, Luna 60 + Terra re-send 24 (judge_luna/raw); calls 84, returned 84, parsed 84; window 2026-11-18T06:47:55Z–2026-11-18T07:16:39Z; response model gpt-6.1-terra | judge | gpt-6.1-terra x84 | - | ok 84 | 0.607 | 298.760 | 89.066 |
+| 2026-11-18T08:02Z | gpuplan round 10 P2: r10 C7 panel Terra TF2 + TK (judge_panel/raw_terra; split into two sub-lanes); calls 488, returned 488, parsed 488; window 2026-11-18T05:34:00Z–2026-11-18T07:49:16Z; response model gpt-6.1-terra | judge | gpt-6.1-terra x488 | - | ok 488 | 3.823 | 302.583 | 89.066 |
+| 2026-11-18T08:02Z | gpuplan round 10 P2: r10 C7 panel Luna LF + LK and Haiku HF + HK (judge_panel/raw_small; split into three sub-lanes); calls 964, returned 964, parsed 958; window 2026-11-18T05:34:00Z–2026-11-18T07:58:28Z; response model claude-haiku-5-5, gpt-6-luna | judge | gpt-6-luna x548, claude-haiku-5-5 x416 | - | ok 964 | 1.174 | 303.337 | 89.486 |
+| 2026-11-18T08:02Z | gpuplan round 10 P2: r10 Sol S2 on Luna's set and the main study (judge_sol/raw_s4); calls 124, returned 124, parsed 124; window 2026-11-18T06:09:08Z–2026-11-18T06:45:58Z; response model gpt-6.1-sol | judge | gpt-6.1-sol x124 | - | ok 124 | 24.437 | 327.774 | 89.486 |
+| 2026-11-18T08:03Z | gpuplan round 10 P1-P3: r10 C6b whole directory, L2 set A 130 (P1) + L2 Luna and main 124 (P2) + L2r 100 (P3) (judge_ladder2/raw_c6b); calls 354, returned 354, parsed 354; window 2026-11-18T05:34:00Z–2026-11-18T07:25:11Z; response model gpt-6.1-terra | judge | gpt-6.1-terra x354 | - | ok 354 | 28.509 | 356.283 | 89.486 |
+| 2026-11-18T08:03Z | gpuplan round 10 P3: r10 C6c key ladder (judge_ladder2/raw_c6c); calls 462, returned 462, parsed 462; window 2026-11-18T05:34:00Z–2026-11-18T06:31:06Z; response model gpt-6.1-terra | judge | gpt-6.1-terra x462 | - | ok 462 | 24.257 | 380.540 | 89.486 |
+| 2026-11-18T08:03Z | gpuplan round 10 P3: r10 F abstaining rubric F1 + F2 (judge_ladder2/raw_f; split into three sub-lanes); calls 178, returned 178, parsed 178; window 2026-11-18T07:12:19Z–2026-11-18T07:48:52Z; response model gpt-6.1-terra | judge | gpt-6.1-terra x178 | - | ok 178 | 6.181 | 386.721 | 89.486 |
+| 2026-11-18T08:03Z | gpuplan round 10 P3: r10 C14 H5 (judge_c14/raw); calls 27, returned 27, parsed 27; window 2026-11-18T07:16:39Z–2026-11-18T07:26:23Z; response model gpt-6.1-terra | judge | gpt-6.1-terra x27 | - | ok 27 | 0.209 | 386.930 | 89.486 |
+| 2026-11-18T08:03Z | gpuplan round 10 P3: r10 C14b H5c (judge_c14b/raw); calls 18, returned 18, parsed 18; window 2026-11-18T07:26:23Z–2026-11-18T07:33:06Z; response model gpt-6.1-terra | judge | gpt-6.1-terra x18 | - | ok 18 | 0.136 | 387.066 | 89.486 |
+| 2026-11-18T08:03Z | gpuplan round 10 P3: r10 Sol SF (judge_sol/raw_s5); calls 130, returned 130, parsed 130; window 2026-11-18T06:50:17Z–2026-11-18T07:20:08Z; response model gpt-6.1-sol | judge | gpt-6.1-sol x130 | - | ok 130 | 2.934 | 390.000 | 89.486 |
+| 2026-11-18T08:45Z | gpuplan round 10 P4 O1a: Haiku report + key, set A (gpuplan/r10/p4/O1a/raw); calls 130, returned 130, parsed 127; window 2026-11-18T05:38:03Z–2026-11-18T05:39:57Z; response model claude-haiku-5-5 | judge | claude-haiku-5-5 x130 | - | ok 130 | 0.120 | 390.000 | 89.606 |
+| 2026-11-18T08:45Z | gpuplan round 10 P4 O1b: Sol report + log, Luna's set; calls 60, returned 60, parsed 60; window 2026-11-18T05:38:03Z–2026-11-18T05:52:05Z; response model gpt-6.1-sol | judge | gpt-6.1-sol x60 | - | ok 60 | 0.712 | 390.712 | 89.606 |
+| 2026-11-18T08:45Z | gpuplan round 10 P4 O1c: Sol on scripted answers (C12); calls 102, returned 102, parsed 102; window 2026-11-18T05:52:05Z–2026-11-18T06:12:21Z; response model gpt-6.1-sol | judge | gpt-6.1-sol x102 | - | ok 102 | 0.667 | 391.379 | 89.606 |
+| 2026-11-18T08:45Z | gpuplan round 10 P4 O1d: Sol transcript + key, main study; calls 64, returned 64, parsed 64; window 2026-11-18T06:59:09Z–2026-11-18T07:04:34Z; response model gpt-6.1-sol | judge | gpt-6.1-sol x64 | - | ok 64 | 9.939 | 401.318 | 89.606 |
+| 2026-11-18T08:45Z | gpuplan round 10 P4 O1e: Sol sceptical prompt (C7 K); calls 274, returned 274, parsed 274; window 2026-11-18T06:12:21Z–2026-11-18T06:55:06Z; response model gpt-6.1-sol | judge | gpt-6.1-sol x274 | - | ok 274 | 2.560 | 403.878 | 89.606 |
+| 2026-11-18T08:45Z | gpuplan round 10 P4 O2: Terra F' (R10-2); calls 130, returned 130, parsed 130; window 2026-11-18T07:48:57Z–2026-11-18T08:40:40Z; response model gpt-6.1-terra | judge | gpt-6.1-terra x130 | - | ok 130 | 1.897 | 405.775 | 89.606 |
+| 2026-11-18T08:46Z | gpuplan round 10 addendum AD3 F-a (R10-4); calls 130, returned 130, parsed 130; window 2026-11-18T07:48:57Z–2026-11-18T08:36:40Z; response model gpt-6.1-terra | judge | gpt-6.1-terra x130 | - | ok 130 | 2.195 | 407.970 | 89.606 |
+| 2026-11-18T08:46Z | gpuplan round 10 addendum AD3 F-b (R10-4); calls 130, returned 130, parsed 130; window 2026-11-18T07:48:57Z–2026-11-18T08:28:21Z; response model gpt-6.1-terra | judge | gpt-6.1-terra x130 | - | ok 130 | 1.714 | 409.684 | 89.606 |
+| 2026-11-18T08:46Z | gpuplan round 10 addendum AD4 follow-up interview, Terra L2 (R10-5; two-turn); calls 40, returned 40, parsed 0; window 2026-11-18T07:48:57Z–2026-11-18T07:59:11Z; response model gpt-6.1-terra | judge | gpt-6.1-terra x40 | - | ok 40 | 5.030 | 414.714 | 89.606 |
+| 2026-11-18T08:46Z | gpuplan round 10 addendum AD4 follow-up interview, Terra L0 (R10-5; two-turn); calls 40, returned 40, parsed 0; window 2026-11-18T07:59:11Z–2026-11-18T08:05:26Z; response model gpt-6.1-terra | judge | gpt-6.1-terra x40 | - | ok 40 | 0.237 | 414.951 | 89.606 |
+| 2026-11-18T08:46Z | gpuplan round 10 addendum AD4 follow-up interview, Sol S2 (R10-5; two-turn); calls 40, returned 40, parsed 0; window 2026-11-18T07:48:57Z–2026-11-18T07:56:22Z; response model gpt-6.1-sol | judge | gpt-6.1-sol x40 | - | ok 40 | 9.933 | 424.884 | 89.606 |
+| 2026-11-18T08:46Z | gpuplan round 10 addendum AD5 base rate stated, Terra L0 set A (R10-6); calls 132, returned 132, parsed 132; window 2026-11-18T07:48:57Z–2026-11-18T08:39:37Z; response model gpt-6.1-terra | judge | gpt-6.1-terra x132 | - | ok 132 | 1.110 | 425.994 | 89.606 |
+| 2026-11-18T08:48Z | gpuplan round 10 final recompute: every section 6 analysis on the r10 verdicts (worktree), ROUND10_DIFF, figure values, RESULTS_FOR_PAPER Round 10 (gpuplan/r10) | gpuplan | cpu only | - | ok | 0.000 | 425.994 | 89.606 |

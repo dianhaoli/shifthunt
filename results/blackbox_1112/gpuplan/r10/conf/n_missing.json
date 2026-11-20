@@ -1,0 +1,185 @@
+{
+ "note": "per-batch confidence sidecars (verdict, confidence_raw, reason, call_id, send) are private (results/private_1112/gpuplan/r10/conf/ in the r10 worktree); this file holds the n_missing counts. Abstaining levels (F1, F2, SF, O2) report confidence too.",
+ "levels": {
+  "L0": {
+   "slots": 1016,
+   "n_missing": 0
+  },
+  "L0r": {
+   "slots": 520,
+   "n_missing": 0
+  },
+  "L1": {
+   "slots": 760,
+   "n_missing": 0
+  },
+  "L2": {
+   "slots": 1016,
+   "n_missing": 0
+  },
+  "L2r": {
+   "slots": 400,
+   "n_missing": 0
+  },
+  "K0": {
+   "slots": 760,
+   "n_missing": 0
+  },
+  "L3_2": {
+   "slots": 1016,
+   "n_missing": 0
+  },
+  "F1": {
+   "slots": 520,
+   "n_missing": 0
+  },
+  "L1r": {
+   "slots": 520,
+   "n_missing": 0
+  },
+  "L3_1": {
+   "slots": 760,
+   "n_missing": 0
+  },
+  "F2": {
+   "slots": 192,
+   "n_missing": 0
+  },
+  "S0": {
+   "slots": 520,
+   "n_missing": 0
+  },
+  "S1": {
+   "slots": 520,
+   "n_missing": 0
+  },
+  "S2": {
+   "slots": 1016,
+   "n_missing": 0
+  },
+  "S3": {
+   "slots": 520,
+   "n_missing": 0
+  },
+  "SF": {
+   "slots": 520,
+   "n_missing": 0
+  },
+  "H0": {
+   "slots": 516,
+   "n_missing": 0
+  },
+  "H1": {
+   "slots": 516,
+   "n_missing": 0
+  },
+  "H1r": {
+   "slots": 512,
+   "n_missing": 0
+  },
+  "H2": {
+   "slots": 516,
+   "n_missing": 0
+  },
+  "H2r": {
+   "slots": 140,
+   "n_missing": 0
+  },
+  "L0hv": {
+   "slots": 72,
+   "n_missing": 0
+  },
+  "L3_0": {
+   "slots": 72,
+   "n_missing": 0
+  },
+  "C8T": {
+   "slots": 96,
+   "n_missing": 0
+  },
+  "TF2": {
+   "slots": 856,
+   "n_missing": 0
+  },
+  "TK": {
+   "slots": 1096,
+   "n_missing": 0
+  },
+  "LF": {
+   "slots": 1096,
+   "n_missing": 0
+  },
+  "LK": {
+   "slots": 1096,
+   "n_missing": 0
+  },
+  "HF": {
+   "slots": 560,
+   "n_missing": 0
+  },
+  "HK": {
+   "slots": 1080,
+   "n_missing": 0
+  },
+  "C12T": {
+   "slots": 396,
+   "n_missing": 0
+  },
+  "C12H": {
+   "slots": 392,
+   "n_missing": 0
+  },
+  "H5": {
+   "slots": 108,
+   "n_missing": 0
+  },
+  "H5c": {
+   "slots": 72,
+   "n_missing": 0
+  },
+  "L0ctrl": {
+   "slots": 520,
+   "n_missing": 0
+  },
+  "H0ctrl": {
+   "slots": 520,
+   "n_missing": 0
+  },
+  "O1a": {
+   "slots": 508,
+   "n_missing": 0
+  },
+  "O1b": {
+   "slots": 240,
+   "n_missing": 0
+  },
+  "O1c": {
+   "slots": 396,
+   "n_missing": 0
+  },
+  "O1d": {
+   "slots": 256,
+   "n_missing": 0
+  },
+  "O1e": {
+   "slots": 1096,
+   "n_missing": 0
+  },
+  "O2": {
+   "slots": 520,
+   "n_missing": 0
+  },
+  "ADa": {
+   "slots": 520,
+   "n_missing": 0
+  },
+  "ADb": {
+   "slots": 520,
+   "n_missing": 0
+  },
+  "AD5": {
+   "slots": 520,
+   "n_missing": 0
+  }
+ }
+}

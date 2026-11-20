@@ -15,12 +15,12 @@ from pathlib import Path
 import numpy as np
 import pytest
 
-from shifthunt import contract
-from shifthunt import textgen as tg
-from shifthunt import toolserver as ts
-from shifthunt.ablation import ablate_logits, probe_logit
-from shifthunt.leakscan import LeakScanner
-from shifthunt.toolbackend import D_RESID, D_SAE, FakeBackend
+from shortcuthunt import contract
+from shortcuthunt import textgen as tg
+from shortcuthunt import toolserver as ts
+from shortcuthunt.ablation import ablate_logits, probe_logit
+from shortcuthunt.leakscan import LeakScanner
+from shortcuthunt.toolbackend import D_RESID, D_SAE, FakeBackend
 
 ROOT = Path(__file__).resolve().parents[1]
 N_SAMPLE, N_CORPUS = 40, 24  # 40: the last encoder batch is partial
@@ -661,7 +661,7 @@ def test_daemon_main_sigterm(tmp_path):
     ep = make_episode(tmp_path / "ep")
     sock, pid = tmp_path / "tool.sock", tmp_path / "daemon.pid"
     code = ("import sys, runpy; sys.argv = ['toolserver'] + sys.argv[1:]\n"
-            "try:\n    runpy.run_module('shifthunt.toolserver', run_name='__main__')\n"
+            "try:\n    runpy.run_module('shortcuthunt.toolserver', run_name='__main__')\n"
             "finally:\n    print('torch' in sys.modules, flush=True)\n")
     p = subprocess.Popen([sys.executable, "-c", code, "--episode", str(ep), "--sock", str(sock),
                           "--out", str(tmp_path / "out"), "--state", str(tmp_path / "state"),

@@ -32,3 +32,7 @@ results/rollouts/*/summary.jsonl
 results/rollouts/*/launch*.log
 results/rollouts/*/launcher.out
 results/private_1012/
+
+# Black-box study (Nov 2026): per-probe detail that names cues, and large raw request/response bytes
+results/private_1112/
+results/blackbox_1112/**/raw_private/

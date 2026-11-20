@@ -1,0 +1,6494 @@
+{
+ "scope": "shipped",
+ "episodes": [
+  "ep411",
+  "ep413",
+  "ep415",
+  "ep472",
+  "ep474",
+  "ep476"
+ ],
+ "n_episodes": 6,
+ "kinds": {
+  "ep411": "trap",
+  "ep413": "trap",
+  "ep415": "trap",
+  "ep472": "two-part",
+  "ep474": "two-part",
+  "ep476": "two-part"
+ },
+ "kind_counts": {
+  "trap": 3,
+  "two-part": 3
+ },
+ "skipped": {},
+ "dropped_duplicates": 0,
+ "seeds": 2000,
+ "budgets": [
+  8,
+  16
+ ],
+ "threshold_topic_units": 0.225,
+ "proxy_claim_threshold": 0.225,
+ "exact_status": "used",
+ "bases_per_reading": {
+  "8": [
+   1
+  ],
+  "16": [
+   2
+  ]
+ },
+ "results": {
+  "topic": {
+   "additive": {
+    "proxy_only": {
+     "8": {
+      "per_episode": {
+       "ep411": {
+        "name": 0.0,
+        "all": 0.0,
+        "used": 0.0,
+        "null_none": 1.0,
+        "hard": {
+         "wrong": 1.0
+        },
+        "n": 2000
+       },
+       "ep413": {
+        "name": 0.0,
+        "all": 0.0,
+        "used": 0.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 1.0
+        },
+        "n": 2000
+       },
+       "ep415": {
+        "name": 0.0,
+        "all": 0.0,
+        "used": 0.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 1.0
+        },
+        "n": 2000
+       },
+       "ep472": {
+        "name": 1.0,
+        "all": 1.0,
+        "used": 0.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 1.0
+        },
+        "n": 2000
+       },
+       "ep474": {
+        "name": 1.0,
+        "all": 1.0,
+        "used": 0.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 1.0
+        },
+        "n": 2000
+       },
+       "ep476": {
+        "name": 1.0,
+        "all": 1.0,
+        "used": 0.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 1.0
+        },
+        "n": 2000
+       }
+      },
+      "pooled": {
+       "name": 0.5,
+       "all": 0.5,
+       "used": 0.0,
+       "null_none": 1.0,
+       "episodes": 6,
+       "hard": {
+        "named": 0.5,
+        "none": 0.0,
+        "wrong": 0.16666666666666666,
+        "extra": 0.3333333333333333
+       }
+      },
+      "by_kind": {
+       "trap": {
+        "name": 0.0,
+        "all": 0.0,
+        "used": 0.0,
+        "null_none": 1.0,
+        "episodes": 3,
+        "hard": {
+         "named": 0.0,
+         "none": 0.0,
+         "wrong": 0.3333333333333333,
+         "extra": 0.6666666666666666
+        }
+       },
+       "two-part": {
+        "name": 1.0,
+        "all": 1.0,
+        "used": 0.0,
+        "null_none": 1.0,
+        "episodes": 3,
+        "hard": {
+         "named": 1.0,
+         "none": 0.0,
+         "wrong": 0.0,
+         "extra": 0.0
+        }
+       }
+      }
+     },
+     "16": {
+      "per_episode": {
+       "ep411": {
+        "name": 0.0,
+        "all": 0.0,
+        "used": 0.0,
+        "null_none": 1.0,
+        "hard": {
+         "wrong": 1.0
+        },
+        "n": 2000
+       },
+       "ep413": {
+        "name": 0.0,
+        "all": 0.0,
+        "used": 0.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 1.0
+        },
+        "n": 2000
+       },
+       "ep415": {
+        "name": 0.0,
+        "all": 0.0,
+        "used": 0.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 1.0
+        },
+        "n": 2000
+       },
+       "ep472": {
+        "name": 1.0,
+        "all": 1.0,
+        "used": 0.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 1.0
+        },
+        "n": 2000
+       },
+       "ep474": {
+        "name": 1.0,
+        "all": 1.0,
+        "used": 0.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 1.0
+        },
+        "n": 2000
+       },
+       "ep476": {
+        "name": 1.0,
+        "all": 1.0,
+        "used": 0.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 1.0
+        },
+        "n": 2000
+       }
+      },
+      "pooled": {
+       "name": 0.5,
+       "all": 0.5,
+       "used": 0.0,
+       "null_none": 1.0,
+       "episodes": 6,
+       "hard": {
+        "named": 0.5,
+        "none": 0.0,
+        "wrong": 0.16666666666666666,
+        "extra": 0.3333333333333333
+       }
+      },
+      "by_kind": {
+       "trap": {
+        "name": 0.0,
+        "all": 0.0,
+        "used": 0.0,
+        "null_none": 1.0,
+        "episodes": 3,
+        "hard": {
+         "named": 0.0,
+         "none": 0.0,
+         "wrong": 0.3333333333333333,
+         "extra": 0.6666666666666666
+        }
+       },
+       "two-part": {
+        "name": 1.0,
+        "all": 1.0,
+        "used": 0.0,
+        "null_none": 1.0,
+        "episodes": 3,
+        "hard": {
+         "named": 1.0,
+         "none": 0.0,
+         "wrong": 0.0,
+         "extra": 0.0
+        }
+       }
+      }
+     }
+    },
+    "prefix1": {
+     "8": {
+      "per_episode": {
+       "ep411": {
+        "name": 0.0,
+        "all": 0.0,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "none": 1.0
+        },
+        "n": 2000
+       },
+       "ep413": {
+        "name": 0.0,
+        "all": 0.0,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "none": 1.0
+        },
+        "n": 2000
+       },
+       "ep415": {
+        "name": 0.0,
+        "all": 0.0,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "none": 1.0
+        },
+        "n": 2000
+       },
+       "ep472": {
+        "name": 1.0,
+        "all": 1.0,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 1.0
+        },
+        "n": 2000
+       },
+       "ep474": {
+        "name": 1.0,
+        "all": 1.0,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 1.0
+        },
+        "n": 2000
+       },
+       "ep476": {
+        "name": 0.992,
+        "all": 0.992,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 0.992,
+         "none": 0.008
+        },
+        "n": 2000
+       }
+      },
+      "pooled": {
+       "name": 0.49866666666666665,
+       "all": 0.49866666666666665,
+       "used": 8.0,
+       "null_none": 1.0,
+       "episodes": 6,
+       "hard": {
+        "named": 0.49866666666666665,
+        "none": 0.5013333333333333,
+        "wrong": 0.0,
+        "extra": 0.0
+       }
+      },
+      "by_kind": {
+       "trap": {
+        "name": 0.0,
+        "all": 0.0,
+        "used": 8.0,
+        "null_none": 1.0,
+        "episodes": 3,
+        "hard": {
+         "named": 0.0,
+         "none": 1.0,
+         "wrong": 0.0,
+         "extra": 0.0
+        }
+       },
+       "two-part": {
+        "name": 0.9973333333333333,
+        "all": 0.9973333333333333,
+        "used": 8.0,
+        "null_none": 1.0,
+        "episodes": 3,
+        "hard": {
+         "named": 0.9973333333333333,
+         "none": 0.0026666666666666666,
+         "wrong": 0.0,
+         "extra": 0.0
+        }
+       }
+      }
+     },
+     "16": {
+      "per_episode": {
+       "ep411": {
+        "name": 0.0,
+        "all": 0.0,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "none": 1.0
+        },
+        "n": 2000
+       },
+       "ep413": {
+        "name": 0.0,
+        "all": 0.0,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "none": 1.0
+        },
+        "n": 2000
+       },
+       "ep415": {
+        "name": 0.0,
+        "all": 0.0,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "none": 1.0
+        },
+        "n": 2000
+       },
+       "ep472": {
+        "name": 1.0,
+        "all": 1.0,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 1.0
+        },
+        "n": 2000
+       },
+       "ep474": {
+        "name": 1.0,
+        "all": 1.0,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 1.0
+        },
+        "n": 2000
+       },
+       "ep476": {
+        "name": 1.0,
+        "all": 1.0,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 1.0
+        },
+        "n": 2000
+       }
+      },
+      "pooled": {
+       "name": 0.5,
+       "all": 0.5,
+       "used": 16.0,
+       "null_none": 1.0,
+       "episodes": 6,
+       "hard": {
+        "named": 0.5,
+        "none": 0.5,
+        "wrong": 0.0,
+        "extra": 0.0
+       }
+      },
+      "by_kind": {
+       "trap": {
+        "name": 0.0,
+        "all": 0.0,
+        "used": 16.0,
+        "null_none": 1.0,
+        "episodes": 3,
+        "hard": {
+         "named": 0.0,
+         "none": 1.0,
+         "wrong": 0.0,
+         "extra": 0.0
+        }
+       },
+       "two-part": {
+        "name": 1.0,
+        "all": 1.0,
+        "used": 16.0,
+        "null_none": 1.0,
+        "episodes": 3,
+        "hard": {
+         "named": 1.0,
+         "none": 0.0,
+         "wrong": 0.0,
+         "extra": 0.0
+        }
+       }
+      }
+     }
+    },
+    "prefix2": {
+     "8": {
+      "per_episode": {
+       "ep411": {
+        "name": 0.939,
+        "all": 0.91,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 0.939,
+         "none": 0.061
+        },
+        "n": 2000
+       },
+       "ep413": {
+        "name": 0.968,
+        "all": 0.968,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 0.968,
+         "none": 0.032
+        },
+        "n": 2000
+       },
+       "ep415": {
+        "name": 1.0,
+        "all": 0.7675,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 1.0
+        },
+        "n": 2000
+       },
+       "ep472": {
+        "name": 1.0,
+        "all": 0.947,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 1.0
+        },
+        "n": 2000
+       },
+       "ep474": {
+        "name": 0.8165,
+        "all": 0.8165,
+        "used": 8.0,
+        "null_none": 0.8775,
+        "hard": {
+         "named": 0.9275,
+         "none": 0.0725
+        },
+        "n": 2000
+       },
+       "ep476": {
+        "name": 0.8785,
+        "all": 0.7705,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 0.8785,
+         "none": 0.1215
+        },
+        "n": 2000
+       }
+      },
+      "pooled": {
+       "name": 0.9336666666666665,
+       "all": 0.8632500000000002,
+       "used": 8.0,
+       "null_none": 0.9795833333333333,
+       "episodes": 6,
+       "hard": {
+        "named": 0.9521666666666667,
+        "none": 0.04783333333333333,
+        "wrong": 0.0,
+        "extra": 0.0
+       }
+      },
+      "by_kind": {
+       "trap": {
+        "name": 0.969,
+        "all": 0.8818333333333334,
+        "used": 8.0,
+        "null_none": 1.0,
+        "episodes": 3,
+        "hard": {
+         "named": 0.969,
+         "none": 0.031,
+         "wrong": 0.0,
+         "extra": 0.0
+        }
+       },
+       "two-part": {
+        "name": 0.8983333333333333,
+        "all": 0.8446666666666666,
+        "used": 8.0,
+        "null_none": 0.9591666666666666,
+        "episodes": 3,
+        "hard": {
+         "named": 0.9353333333333333,
+         "none": 0.06466666666666666,
+         "wrong": 0.0,
+         "extra": 0.0
+        }
+       }
+      }
+     },
+     "16": {
+      "per_episode": {
+       "ep411": {
+        "name": 0.9905,
+        "all": 0.9825,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 0.9905,
+         "none": 0.0095
+        },
+        "n": 2000
+       },
+       "ep413": {
+        "name": 1.0,
+        "all": 1.0,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 1.0
+        },
+        "n": 2000
+       },
+       "ep415": {
+        "name": 1.0,
+        "all": 0.9435,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 1.0
+        },
+        "n": 2000
+       },
+       "ep472": {
+        "name": 1.0,
+        "all": 1.0,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 1.0
+        },
+        "n": 2000
+       },
+       "ep474": {
+        "name": 0.9935,
+        "all": 0.9935,
+        "used": 16.0,
+        "null_none": 0.9935,
+        "hard": {
+         "named": 1.0
+        },
+        "n": 2000
+       },
+       "ep476": {
+        "name": 0.9915,
+        "all": 0.9915,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 0.9915,
+         "none": 0.0085
+        },
+        "n": 2000
+       }
+      },
+      "pooled": {
+       "name": 0.9959166666666667,
+       "all": 0.9851666666666667,
+       "used": 16.0,
+       "null_none": 0.9989166666666667,
+       "episodes": 6,
+       "hard": {
+        "named": 0.997,
+        "none": 0.0030000000000000005,
+        "wrong": 0.0,
+        "extra": 0.0
+       }
+      },
+      "by_kind": {
+       "trap": {
+        "name": 0.9968333333333333,
+        "all": 0.9753333333333334,
+        "used": 16.0,
+        "null_none": 1.0,
+        "episodes": 3,
+        "hard": {
+         "named": 0.9968333333333333,
+         "none": 0.0031666666666666666,
+         "wrong": 0.0,
+         "extra": 0.0
+        }
+       },
+       "two-part": {
+        "name": 0.9950000000000001,
+        "all": 0.9950000000000001,
+        "used": 16.0,
+        "null_none": 0.9978333333333333,
+        "episodes": 3,
+        "hard": {
+         "named": 0.9971666666666668,
+         "none": 0.0028333333333333335,
+         "wrong": 0.0,
+         "extra": 0.0
+        }
+       }
+      }
+     }
+    },
+    "complement_none": {
+     "8": {
+      "per_episode": {
+       "ep411": {
+        "name": 0.4915,
+        "all": 0.4855,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.084,
+         "named": 0.4915,
+         "none": 0.3365,
+         "wrong": 0.088
+        },
+        "n": 2000
+       },
+       "ep413": {
+        "name": 0.6165,
+        "all": 0.6165,
+        "used": 8.0,
+        "null_none": 0.996,
+        "hard": {
+         "extra": 0.2095,
+         "named": 0.6165,
+         "none": 0.0195,
+         "wrong": 0.1545
+        },
+        "n": 2000
+       },
+       "ep415": {
+        "name": 0.6225,
+        "all": 0.601,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.3765,
+         "named": 0.6225,
+         "wrong": 0.001
+        },
+        "n": 2000
+       },
+       "ep472": {
+        "name": 1.0,
+        "all": 0.4795,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 1.0
+        },
+        "n": 2000
+       },
+       "ep474": {
+        "name": 0.753,
+        "all": 0.7065,
+        "used": 8.0,
+        "null_none": 0.936,
+        "hard": {
+         "extra": 0.1245,
+         "named": 0.817,
+         "none": 0.0585
+        },
+        "n": 2000
+       },
+       "ep476": {
+        "name": 0.7635,
+        "all": 0.196,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.181,
+         "named": 0.7635,
+         "none": 0.0555
+        },
+        "n": 2000
+       }
+      },
+      "pooled": {
+       "name": 0.7078333333333333,
+       "all": 0.5141666666666668,
+       "used": 8.0,
+       "null_none": 0.9886666666666667,
+       "episodes": 6,
+       "hard": {
+        "named": 0.7185,
+        "none": 0.07833333333333334,
+        "wrong": 0.04058333333333333,
+        "extra": 0.16258333333333333
+       }
+      },
+      "by_kind": {
+       "trap": {
+        "name": 0.5768333333333334,
+        "all": 0.5676666666666667,
+        "used": 8.0,
+        "null_none": 0.9986666666666667,
+        "episodes": 3,
+        "hard": {
+         "named": 0.5768333333333334,
+         "none": 0.11866666666666668,
+         "wrong": 0.08116666666666666,
+         "extra": 0.2233333333333333
+        }
+       },
+       "two-part": {
+        "name": 0.8388333333333334,
+        "all": 0.4606666666666666,
+        "used": 8.0,
+        "null_none": 0.9786666666666667,
+        "episodes": 3,
+        "hard": {
+         "named": 0.8601666666666666,
+         "none": 0.038,
+         "wrong": 0.0,
+         "extra": 0.10183333333333333
+        }
+       }
+      }
+     },
+     "16": {
+      "per_episode": {
+       "ep411": {
+        "name": 0.5625,
+        "all": 0.5615,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.027,
+         "named": 0.5625,
+         "none": 0.3825,
+         "wrong": 0.028
+        },
+        "n": 2000
+       },
+       "ep413": {
+        "name": 0.847,
+        "all": 0.847,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.1135,
+         "named": 0.847,
+         "none": 0.0015,
+         "wrong": 0.038
+        },
+        "n": 2000
+       },
+       "ep415": {
+        "name": 0.782,
+        "all": 0.772,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.218,
+         "named": 0.782
+        },
+        "n": 2000
+       },
+       "ep472": {
+        "name": 1.0,
+        "all": 0.634,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 1.0
+        },
+        "n": 2000
+       },
+       "ep474": {
+        "name": 0.9245,
+        "all": 0.918,
+        "used": 16.0,
+        "null_none": 0.972,
+        "hard": {
+         "extra": 0.0475,
+         "named": 0.9525
+        },
+        "n": 2000
+       },
+       "ep476": {
+        "name": 0.8685,
+        "all": 0.263,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.1295,
+         "named": 0.8685,
+         "none": 0.002
+        },
+        "n": 2000
+       }
+      },
+      "pooled": {
+       "name": 0.83075,
+       "all": 0.6659166666666667,
+       "used": 16.0,
+       "null_none": 0.9953333333333333,
+       "episodes": 6,
+       "hard": {
+        "named": 0.8354166666666667,
+        "none": 0.06433333333333334,
+        "wrong": 0.011000000000000001,
+        "extra": 0.08925000000000001
+       }
+      },
+      "by_kind": {
+       "trap": {
+        "name": 0.7305,
+        "all": 0.7268333333333334,
+        "used": 16.0,
+        "null_none": 1.0,
+        "episodes": 3,
+        "hard": {
+         "named": 0.7305,
+         "none": 0.128,
+         "wrong": 0.022000000000000002,
+         "extra": 0.11950000000000001
+        }
+       },
+       "two-part": {
+        "name": 0.931,
+        "all": 0.605,
+        "used": 16.0,
+        "null_none": 0.9906666666666667,
+        "episodes": 3,
+        "hard": {
+         "named": 0.9403333333333334,
+         "none": 0.0006666666666666666,
+         "wrong": 0.0,
+         "extra": 0.059
+        }
+       }
+      }
+     }
+    },
+    "complement_guess": {
+     "8": {
+      "per_episode": {
+       "ep411": {
+        "name": 0.4915,
+        "all": 0.4855,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.1045,
+         "named": 0.4915,
+         "none": 0.3365,
+         "wrong": 0.0675
+        },
+        "n": 2000
+       },
+       "ep413": {
+        "name": 0.6165,
+        "all": 0.6165,
+        "used": 8.0,
+        "null_none": 0.9335,
+        "hard": {
+         "extra": 0.231,
+         "named": 0.6165,
+         "none": 0.0195,
+         "wrong": 0.133
+        },
+        "n": 2000
+       },
+       "ep415": {
+        "name": 0.6225,
+        "all": 0.601,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.3775,
+         "named": 0.6225
+        },
+        "n": 2000
+       },
+       "ep472": {
+        "name": 1.0,
+        "all": 0.4795,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 1.0
+        },
+        "n": 2000
+       },
+       "ep474": {
+        "name": 0.753,
+        "all": 0.7065,
+        "used": 8.0,
+        "null_none": 0.936,
+        "hard": {
+         "extra": 0.1345,
+         "named": 0.807,
+         "none": 0.0585
+        },
+        "n": 2000
+       },
+       "ep476": {
+        "name": 0.5645,
+        "all": 0.196,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.38,
+         "named": 0.5645,
+         "none": 0.0555
+        },
+        "n": 2000
+       }
+      },
+      "pooled": {
+       "name": 0.6746666666666666,
+       "all": 0.5141666666666668,
+       "used": 8.0,
+       "null_none": 0.9782500000000001,
+       "episodes": 6,
+       "hard": {
+        "named": 0.6836666666666668,
+        "none": 0.07833333333333334,
+        "wrong": 0.03341666666666667,
+        "extra": 0.20458333333333334
+       }
+      },
+      "by_kind": {
+       "trap": {
+        "name": 0.5768333333333334,
+        "all": 0.5676666666666667,
+        "used": 8.0,
+        "null_none": 0.9778333333333333,
+        "episodes": 3,
+        "hard": {
+         "named": 0.5768333333333334,
+         "none": 0.11866666666666668,
+         "wrong": 0.06683333333333334,
+         "extra": 0.2376666666666667
+        }
+       },
+       "two-part": {
+        "name": 0.7725,
+        "all": 0.4606666666666666,
+        "used": 8.0,
+        "null_none": 0.9786666666666667,
+        "episodes": 3,
+        "hard": {
+         "named": 0.7905000000000001,
+         "none": 0.038,
+         "wrong": 0.0,
+         "extra": 0.17149999999999999
+        }
+       }
+      }
+     },
+     "16": {
+      "per_episode": {
+       "ep411": {
+        "name": 0.5625,
+        "all": 0.5615,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.037,
+         "named": 0.5625,
+         "none": 0.3825,
+         "wrong": 0.018
+        },
+        "n": 2000
+       },
+       "ep413": {
+        "name": 0.847,
+        "all": 0.847,
+        "used": 16.0,
+        "null_none": 0.987,
+        "hard": {
+         "extra": 0.116,
+         "named": 0.847,
+         "none": 0.0015,
+         "wrong": 0.0355
+        },
+        "n": 2000
+       },
+       "ep415": {
+        "name": 0.782,
+        "all": 0.772,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.218,
+         "named": 0.782
+        },
+        "n": 2000
+       },
+       "ep472": {
+        "name": 1.0,
+        "all": 0.634,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 1.0
+        },
+        "n": 2000
+       },
+       "ep474": {
+        "name": 0.9245,
+        "all": 0.918,
+        "used": 16.0,
+        "null_none": 0.9715,
+        "hard": {
+         "extra": 0.0485,
+         "named": 0.9515
+        },
+        "n": 2000
+       },
+       "ep476": {
+        "name": 0.7235,
+        "all": 0.263,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.2745,
+         "named": 0.7235,
+         "none": 0.002
+        },
+        "n": 2000
+       }
+      },
+      "pooled": {
+       "name": 0.8065833333333332,
+       "all": 0.6659166666666667,
+       "used": 16.0,
+       "null_none": 0.9930833333333333,
+       "episodes": 6,
+       "hard": {
+        "named": 0.8110833333333334,
+        "none": 0.06433333333333334,
+        "wrong": 0.008916666666666665,
+        "extra": 0.11566666666666665
+       }
+      },
+      "by_kind": {
+       "trap": {
+        "name": 0.7305,
+        "all": 0.7268333333333334,
+        "used": 16.0,
+        "null_none": 0.9956666666666667,
+        "episodes": 3,
+        "hard": {
+         "named": 0.7305,
+         "none": 0.128,
+         "wrong": 0.01783333333333333,
+         "extra": 0.12366666666666666
+        }
+       },
+       "two-part": {
+        "name": 0.8826666666666667,
+        "all": 0.605,
+        "used": 16.0,
+        "null_none": 0.9904999999999999,
+        "episodes": 3,
+        "hard": {
+         "named": 0.8916666666666666,
+         "none": 0.0006666666666666666,
+         "wrong": 0.0,
+         "extra": 0.10766666666666667
+        }
+       }
+      }
+     }
+    },
+    "complement_rand_none": {
+     "8": {
+      "per_episode": {
+       "ep411": {
+        "name": 0.4765,
+        "all": 0.4765,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.0805,
+         "named": 0.4765,
+         "none": 0.338,
+         "wrong": 0.105
+        },
+        "n": 2000
+       },
+       "ep413": {
+        "name": 0.5015,
+        "all": 0.5015,
+        "used": 8.0,
+        "null_none": 0.998,
+        "hard": {
+         "extra": 0.1615,
+         "named": 0.5015,
+         "none": 0.0205,
+         "wrong": 0.3165
+        },
+        "n": 2000
+       },
+       "ep415": {
+        "name": 0.5145,
+        "all": 0.51,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.3335,
+         "named": 0.5145,
+         "wrong": 0.152
+        },
+        "n": 2000
+       },
+       "ep472": {
+        "name": 1.0,
+        "all": 0.4915,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 1.0
+        },
+        "n": 2000
+       },
+       "ep474": {
+        "name": 0.754,
+        "all": 0.715,
+        "used": 8.0,
+        "null_none": 0.9355,
+        "hard": {
+         "extra": 0.125,
+         "named": 0.8185,
+         "none": 0.0565
+        },
+        "n": 2000
+       },
+       "ep476": {
+        "name": 0.7785,
+        "all": 0.2055,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.1675,
+         "named": 0.7785,
+         "none": 0.054
+        },
+        "n": 2000
+       }
+      },
+      "pooled": {
+       "name": 0.6708333333333333,
+       "all": 0.48333333333333334,
+       "used": 8.0,
+       "null_none": 0.9889166666666668,
+       "episodes": 6,
+       "hard": {
+        "named": 0.6815833333333333,
+        "none": 0.07816666666666668,
+        "wrong": 0.09558333333333334,
+        "extra": 0.14466666666666667
+       }
+      },
+      "by_kind": {
+       "trap": {
+        "name": 0.4975,
+        "all": 0.496,
+        "used": 8.0,
+        "null_none": 0.9993333333333334,
+        "episodes": 3,
+        "hard": {
+         "named": 0.4975,
+         "none": 0.11950000000000001,
+         "wrong": 0.19116666666666668,
+         "extra": 0.19183333333333333
+        }
+       },
+       "two-part": {
+        "name": 0.8441666666666666,
+        "all": 0.4706666666666666,
+        "used": 8.0,
+        "null_none": 0.9785,
+        "episodes": 3,
+        "hard": {
+         "named": 0.8656666666666667,
+         "none": 0.036833333333333336,
+         "wrong": 0.0,
+         "extra": 0.09749999999999999
+        }
+       }
+      }
+     },
+     "16": {
+      "per_episode": {
+       "ep411": {
+        "name": 0.5595,
+        "all": 0.5595,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.0235,
+         "named": 0.5595,
+         "none": 0.382,
+         "wrong": 0.035
+        },
+        "n": 2000
+       },
+       "ep413": {
+        "name": 0.732,
+        "all": 0.732,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.0875,
+         "named": 0.732,
+         "none": 0.002,
+         "wrong": 0.1785
+        },
+        "n": 2000
+       },
+       "ep415": {
+        "name": 0.696,
+        "all": 0.6935,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.2035,
+         "named": 0.696,
+         "wrong": 0.1005
+        },
+        "n": 2000
+       },
+       "ep472": {
+        "name": 1.0,
+        "all": 0.678,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 1.0
+        },
+        "n": 2000
+       },
+       "ep474": {
+        "name": 0.9205,
+        "all": 0.9145,
+        "used": 16.0,
+        "null_none": 0.97,
+        "hard": {
+         "extra": 0.0495,
+         "named": 0.9505
+        },
+        "n": 2000
+       },
+       "ep476": {
+        "name": 0.885,
+        "all": 0.2785,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.113,
+         "named": 0.885,
+         "none": 0.002
+        },
+        "n": 2000
+       }
+      },
+      "pooled": {
+       "name": 0.7988333333333334,
+       "all": 0.6426666666666667,
+       "used": 16.0,
+       "null_none": 0.995,
+       "episodes": 6,
+       "hard": {
+        "named": 0.8038333333333333,
+        "none": 0.06433333333333334,
+        "wrong": 0.052333333333333336,
+        "extra": 0.0795
+       }
+      },
+      "by_kind": {
+       "trap": {
+        "name": 0.6625,
+        "all": 0.6616666666666667,
+        "used": 16.0,
+        "null_none": 1.0,
+        "episodes": 3,
+        "hard": {
+         "named": 0.6625,
+         "none": 0.128,
+         "wrong": 0.10466666666666667,
+         "extra": 0.10483333333333333
+        }
+       },
+       "two-part": {
+        "name": 0.9351666666666668,
+        "all": 0.6236666666666667,
+        "used": 16.0,
+        "null_none": 0.9899999999999999,
+        "episodes": 3,
+        "hard": {
+         "named": 0.9451666666666666,
+         "none": 0.0006666666666666666,
+         "wrong": 0.0,
+         "extra": 0.05416666666666667
+        }
+       }
+      }
+     }
+    },
+    "complement_rand_guess": {
+     "8": {
+      "per_episode": {
+       "ep411": {
+        "name": 0.4765,
+        "all": 0.4765,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.088,
+         "named": 0.4765,
+         "none": 0.338,
+         "wrong": 0.0975
+        },
+        "n": 2000
+       },
+       "ep413": {
+        "name": 0.5015,
+        "all": 0.5015,
+        "used": 8.0,
+        "null_none": 0.9415,
+        "hard": {
+         "extra": 0.1695,
+         "named": 0.5015,
+         "none": 0.0205,
+         "wrong": 0.3085
+        },
+        "n": 2000
+       },
+       "ep415": {
+        "name": 0.5145,
+        "all": 0.51,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.3355,
+         "named": 0.5145,
+         "wrong": 0.15
+        },
+        "n": 2000
+       },
+       "ep472": {
+        "name": 1.0,
+        "all": 0.4915,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 1.0
+        },
+        "n": 2000
+       },
+       "ep474": {
+        "name": 0.754,
+        "all": 0.715,
+        "used": 8.0,
+        "null_none": 0.9355,
+        "hard": {
+         "extra": 0.134,
+         "named": 0.8095,
+         "none": 0.0565
+        },
+        "n": 2000
+       },
+       "ep476": {
+        "name": 0.583,
+        "all": 0.2055,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.363,
+         "named": 0.583,
+         "none": 0.054
+        },
+        "n": 2000
+       }
+      },
+      "pooled": {
+       "name": 0.6382499999999999,
+       "all": 0.48333333333333334,
+       "used": 8.0,
+       "null_none": 0.9794999999999999,
+       "episodes": 6,
+       "hard": {
+        "named": 0.6475,
+        "none": 0.07816666666666668,
+        "wrong": 0.09266666666666667,
+        "extra": 0.18166666666666664
+       }
+      },
+      "by_kind": {
+       "trap": {
+        "name": 0.4975,
+        "all": 0.496,
+        "used": 8.0,
+        "null_none": 0.9805,
+        "episodes": 3,
+        "hard": {
+         "named": 0.4975,
+         "none": 0.11950000000000001,
+         "wrong": 0.18533333333333335,
+         "extra": 0.19766666666666666
+        }
+       },
+       "two-part": {
+        "name": 0.7789999999999999,
+        "all": 0.4706666666666666,
+        "used": 8.0,
+        "null_none": 0.9785,
+        "episodes": 3,
+        "hard": {
+         "named": 0.7975,
+         "none": 0.036833333333333336,
+         "wrong": 0.0,
+         "extra": 0.16566666666666666
+        }
+       }
+      }
+     },
+     "16": {
+      "per_episode": {
+       "ep411": {
+        "name": 0.5595,
+        "all": 0.5595,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.0265,
+         "named": 0.5595,
+         "none": 0.382,
+         "wrong": 0.032
+        },
+        "n": 2000
+       },
+       "ep413": {
+        "name": 0.732,
+        "all": 0.732,
+        "used": 16.0,
+        "null_none": 0.9895,
+        "hard": {
+         "extra": 0.0875,
+         "named": 0.732,
+         "none": 0.002,
+         "wrong": 0.1785
+        },
+        "n": 2000
+       },
+       "ep415": {
+        "name": 0.696,
+        "all": 0.6935,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.2035,
+         "named": 0.696,
+         "wrong": 0.1005
+        },
+        "n": 2000
+       },
+       "ep472": {
+        "name": 1.0,
+        "all": 0.678,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 1.0
+        },
+        "n": 2000
+       },
+       "ep474": {
+        "name": 0.9205,
+        "all": 0.9145,
+        "used": 16.0,
+        "null_none": 0.97,
+        "hard": {
+         "extra": 0.0525,
+         "named": 0.9475
+        },
+        "n": 2000
+       },
+       "ep476": {
+        "name": 0.7435,
+        "all": 0.2785,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.2545,
+         "named": 0.7435,
+         "none": 0.002
+        },
+        "n": 2000
+       }
+      },
+      "pooled": {
+       "name": 0.7752500000000001,
+       "all": 0.6426666666666667,
+       "used": 16.0,
+       "null_none": 0.9932500000000001,
+       "episodes": 6,
+       "hard": {
+        "named": 0.7797499999999999,
+        "none": 0.06433333333333334,
+        "wrong": 0.051833333333333335,
+        "extra": 0.10408333333333335
+       }
+      },
+      "by_kind": {
+       "trap": {
+        "name": 0.6625,
+        "all": 0.6616666666666667,
+        "used": 16.0,
+        "null_none": 0.9965,
+        "episodes": 3,
+        "hard": {
+         "named": 0.6625,
+         "none": 0.128,
+         "wrong": 0.10366666666666667,
+         "extra": 0.10583333333333333
+        }
+       },
+       "two-part": {
+        "name": 0.888,
+        "all": 0.6236666666666667,
+        "used": 16.0,
+        "null_none": 0.9899999999999999,
+        "episodes": 3,
+        "hard": {
+         "named": 0.8969999999999999,
+         "none": 0.0006666666666666666,
+         "wrong": 0.0,
+         "extra": 0.10233333333333333
+        }
+       }
+      }
+     }
+    }
+   },
+   "exact": {
+    "proxy_only": {
+     "8": {
+      "per_episode": {
+       "ep411": {
+        "name": 0.0,
+        "all": 0.0,
+        "used": 0.0,
+        "null_none": 1.0,
+        "hard": {
+         "wrong": 1.0
+        },
+        "n": 2000
+       },
+       "ep413": {
+        "name": 0.0,
+        "all": 0.0,
+        "used": 0.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 1.0
+        },
+        "n": 2000
+       },
+       "ep415": {
+        "name": 0.0,
+        "all": 0.0,
+        "used": 0.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 1.0
+        },
+        "n": 2000
+       },
+       "ep472": {
+        "name": 1.0,
+        "all": 1.0,
+        "used": 0.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 1.0
+        },
+        "n": 2000
+       },
+       "ep474": {
+        "name": 1.0,
+        "all": 1.0,
+        "used": 0.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 1.0
+        },
+        "n": 2000
+       },
+       "ep476": {
+        "name": 1.0,
+        "all": 1.0,
+        "used": 0.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 1.0
+        },
+        "n": 2000
+       }
+      },
+      "pooled": {
+       "name": 0.5,
+       "all": 0.5,
+       "used": 0.0,
+       "null_none": 1.0,
+       "episodes": 6,
+       "hard": {
+        "named": 0.5,
+        "none": 0.0,
+        "wrong": 0.16666666666666666,
+        "extra": 0.3333333333333333
+       }
+      },
+      "by_kind": {
+       "trap": {
+        "name": 0.0,
+        "all": 0.0,
+        "used": 0.0,
+        "null_none": 1.0,
+        "episodes": 3,
+        "hard": {
+         "named": 0.0,
+         "none": 0.0,
+         "wrong": 0.3333333333333333,
+         "extra": 0.6666666666666666
+        }
+       },
+       "two-part": {
+        "name": 1.0,
+        "all": 1.0,
+        "used": 0.0,
+        "null_none": 1.0,
+        "episodes": 3,
+        "hard": {
+         "named": 1.0,
+         "none": 0.0,
+         "wrong": 0.0,
+         "extra": 0.0
+        }
+       }
+      }
+     },
+     "16": {
+      "per_episode": {
+       "ep411": {
+        "name": 0.0,
+        "all": 0.0,
+        "used": 0.0,
+        "null_none": 1.0,
+        "hard": {
+         "wrong": 1.0
+        },
+        "n": 2000
+       },
+       "ep413": {
+        "name": 0.0,
+        "all": 0.0,
+        "used": 0.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 1.0
+        },
+        "n": 2000
+       },
+       "ep415": {
+        "name": 0.0,
+        "all": 0.0,
+        "used": 0.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 1.0
+        },
+        "n": 2000
+       },
+       "ep472": {
+        "name": 1.0,
+        "all": 1.0,
+        "used": 0.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 1.0
+        },
+        "n": 2000
+       },
+       "ep474": {
+        "name": 1.0,
+        "all": 1.0,
+        "used": 0.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 1.0
+        },
+        "n": 2000
+       },
+       "ep476": {
+        "name": 1.0,
+        "all": 1.0,
+        "used": 0.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 1.0
+        },
+        "n": 2000
+       }
+      },
+      "pooled": {
+       "name": 0.5,
+       "all": 0.5,
+       "used": 0.0,
+       "null_none": 1.0,
+       "episodes": 6,
+       "hard": {
+        "named": 0.5,
+        "none": 0.0,
+        "wrong": 0.16666666666666666,
+        "extra": 0.3333333333333333
+       }
+      },
+      "by_kind": {
+       "trap": {
+        "name": 0.0,
+        "all": 0.0,
+        "used": 0.0,
+        "null_none": 1.0,
+        "episodes": 3,
+        "hard": {
+         "named": 0.0,
+         "none": 0.0,
+         "wrong": 0.3333333333333333,
+         "extra": 0.6666666666666666
+        }
+       },
+       "two-part": {
+        "name": 1.0,
+        "all": 1.0,
+        "used": 0.0,
+        "null_none": 1.0,
+        "episodes": 3,
+        "hard": {
+         "named": 1.0,
+         "none": 0.0,
+         "wrong": 0.0,
+         "extra": 0.0
+        }
+       }
+      }
+     }
+    },
+    "prefix1": {
+     "8": {
+      "per_episode": {
+       "ep411": {
+        "name": 0.0,
+        "all": 0.0,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "none": 1.0
+        },
+        "n": 2000
+       },
+       "ep413": {
+        "name": 0.0,
+        "all": 0.0,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "none": 1.0
+        },
+        "n": 2000
+       },
+       "ep415": {
+        "name": 0.0,
+        "all": 0.0,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "none": 1.0
+        },
+        "n": 2000
+       },
+       "ep472": {
+        "name": 1.0,
+        "all": 1.0,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 1.0
+        },
+        "n": 2000
+       },
+       "ep474": {
+        "name": 1.0,
+        "all": 1.0,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 1.0
+        },
+        "n": 2000
+       },
+       "ep476": {
+        "name": 0.992,
+        "all": 0.992,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 0.992,
+         "none": 0.008
+        },
+        "n": 2000
+       }
+      },
+      "pooled": {
+       "name": 0.49866666666666665,
+       "all": 0.49866666666666665,
+       "used": 8.0,
+       "null_none": 1.0,
+       "episodes": 6,
+       "hard": {
+        "named": 0.49866666666666665,
+        "none": 0.5013333333333333,
+        "wrong": 0.0,
+        "extra": 0.0
+       }
+      },
+      "by_kind": {
+       "trap": {
+        "name": 0.0,
+        "all": 0.0,
+        "used": 8.0,
+        "null_none": 1.0,
+        "episodes": 3,
+        "hard": {
+         "named": 0.0,
+         "none": 1.0,
+         "wrong": 0.0,
+         "extra": 0.0
+        }
+       },
+       "two-part": {
+        "name": 0.9973333333333333,
+        "all": 0.9973333333333333,
+        "used": 8.0,
+        "null_none": 1.0,
+        "episodes": 3,
+        "hard": {
+         "named": 0.9973333333333333,
+         "none": 0.0026666666666666666,
+         "wrong": 0.0,
+         "extra": 0.0
+        }
+       }
+      }
+     },
+     "16": {
+      "per_episode": {
+       "ep411": {
+        "name": 0.0,
+        "all": 0.0,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "none": 1.0
+        },
+        "n": 2000
+       },
+       "ep413": {
+        "name": 0.0,
+        "all": 0.0,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "none": 1.0
+        },
+        "n": 2000
+       },
+       "ep415": {
+        "name": 0.0,
+        "all": 0.0,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "none": 1.0
+        },
+        "n": 2000
+       },
+       "ep472": {
+        "name": 1.0,
+        "all": 1.0,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 1.0
+        },
+        "n": 2000
+       },
+       "ep474": {
+        "name": 1.0,
+        "all": 1.0,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 1.0
+        },
+        "n": 2000
+       },
+       "ep476": {
+        "name": 1.0,
+        "all": 1.0,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 1.0
+        },
+        "n": 2000
+       }
+      },
+      "pooled": {
+       "name": 0.5,
+       "all": 0.5,
+       "used": 16.0,
+       "null_none": 1.0,
+       "episodes": 6,
+       "hard": {
+        "named": 0.5,
+        "none": 0.5,
+        "wrong": 0.0,
+        "extra": 0.0
+       }
+      },
+      "by_kind": {
+       "trap": {
+        "name": 0.0,
+        "all": 0.0,
+        "used": 16.0,
+        "null_none": 1.0,
+        "episodes": 3,
+        "hard": {
+         "named": 0.0,
+         "none": 1.0,
+         "wrong": 0.0,
+         "extra": 0.0
+        }
+       },
+       "two-part": {
+        "name": 1.0,
+        "all": 1.0,
+        "used": 16.0,
+        "null_none": 1.0,
+        "episodes": 3,
+        "hard": {
+         "named": 1.0,
+         "none": 0.0,
+         "wrong": 0.0,
+         "extra": 0.0
+        }
+       }
+      }
+     }
+    },
+    "prefix2": {
+     "8": {
+      "per_episode": {
+       "ep411": {
+        "name": 0.8725,
+        "all": 0.8725,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 0.8725,
+         "none": 0.1275
+        },
+        "n": 2000
+       },
+       "ep413": {
+        "name": 1.0,
+        "all": 1.0,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 1.0
+        },
+        "n": 2000
+       },
+       "ep415": {
+        "name": 1.0,
+        "all": 0.8085,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 1.0
+        },
+        "n": 2000
+       },
+       "ep472": {
+        "name": 1.0,
+        "all": 1.0,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 1.0
+        },
+        "n": 2000
+       },
+       "ep474": {
+        "name": 0.9345,
+        "all": 0.9345,
+        "used": 8.0,
+        "null_none": 0.9345,
+        "hard": {
+         "named": 1.0
+        },
+        "n": 2000
+       },
+       "ep476": {
+        "name": 0.9345,
+        "all": 0.89,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 0.9345,
+         "none": 0.0655
+        },
+        "n": 2000
+       }
+      },
+      "pooled": {
+       "name": 0.9569166666666667,
+       "all": 0.9175833333333333,
+       "used": 8.0,
+       "null_none": 0.9890833333333333,
+       "episodes": 6,
+       "hard": {
+        "named": 0.9678333333333334,
+        "none": 0.03216666666666667,
+        "wrong": 0.0,
+        "extra": 0.0
+       }
+      },
+      "by_kind": {
+       "trap": {
+        "name": 0.9575,
+        "all": 0.8936666666666667,
+        "used": 8.0,
+        "null_none": 1.0,
+        "episodes": 3,
+        "hard": {
+         "named": 0.9575,
+         "none": 0.0425,
+         "wrong": 0.0,
+         "extra": 0.0
+        }
+       },
+       "two-part": {
+        "name": 0.9563333333333333,
+        "all": 0.9415,
+        "used": 8.0,
+        "null_none": 0.9781666666666666,
+        "episodes": 3,
+        "hard": {
+         "named": 0.9781666666666666,
+         "none": 0.021833333333333333,
+         "wrong": 0.0,
+         "extra": 0.0
+        }
+       }
+      }
+     },
+     "16": {
+      "per_episode": {
+       "ep411": {
+        "name": 0.956,
+        "all": 0.956,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 0.956,
+         "none": 0.044
+        },
+        "n": 2000
+       },
+       "ep413": {
+        "name": 1.0,
+        "all": 1.0,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 1.0
+        },
+        "n": 2000
+       },
+       "ep415": {
+        "name": 1.0,
+        "all": 0.943,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 1.0
+        },
+        "n": 2000
+       },
+       "ep472": {
+        "name": 1.0,
+        "all": 1.0,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 1.0
+        },
+        "n": 2000
+       },
+       "ep474": {
+        "name": 0.9935,
+        "all": 0.9935,
+        "used": 16.0,
+        "null_none": 0.9935,
+        "hard": {
+         "named": 1.0
+        },
+        "n": 2000
+       },
+       "ep476": {
+        "name": 0.9915,
+        "all": 0.9915,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 0.9915,
+         "none": 0.0085
+        },
+        "n": 2000
+       }
+      },
+      "pooled": {
+       "name": 0.9901666666666668,
+       "all": 0.9806666666666667,
+       "used": 16.0,
+       "null_none": 0.9989166666666667,
+       "episodes": 6,
+       "hard": {
+        "named": 0.99125,
+        "none": 0.008749999999999999,
+        "wrong": 0.0,
+        "extra": 0.0
+       }
+      },
+      "by_kind": {
+       "trap": {
+        "name": 0.9853333333333333,
+        "all": 0.9663333333333334,
+        "used": 16.0,
+        "null_none": 1.0,
+        "episodes": 3,
+        "hard": {
+         "named": 0.9853333333333333,
+         "none": 0.014666666666666666,
+         "wrong": 0.0,
+         "extra": 0.0
+        }
+       },
+       "two-part": {
+        "name": 0.9950000000000001,
+        "all": 0.9950000000000001,
+        "used": 16.0,
+        "null_none": 0.9978333333333333,
+        "episodes": 3,
+        "hard": {
+         "named": 0.9971666666666668,
+         "none": 0.0028333333333333335,
+         "wrong": 0.0,
+         "extra": 0.0
+        }
+       }
+      }
+     }
+    },
+    "complement_none": {
+     "8": {
+      "per_episode": {
+       "ep411": {
+        "name": 0.434,
+        "all": 0.434,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.0195,
+         "named": 0.434,
+         "none": 0.5025,
+         "wrong": 0.044
+        },
+        "n": 2000
+       },
+       "ep413": {
+        "name": 0.5135,
+        "all": 0.5135,
+        "used": 8.0,
+        "null_none": 0.998,
+        "hard": {
+         "extra": 0.1895,
+         "named": 0.5135,
+         "none": 0.0505,
+         "wrong": 0.2465
+        },
+        "n": 2000
+       },
+       "ep415": {
+        "name": 0.687,
+        "all": 0.645,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.313,
+         "named": 0.687
+        },
+        "n": 2000
+       },
+       "ep472": {
+        "name": 0.9745,
+        "all": 0.447,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.0255,
+         "named": 0.9745
+        },
+        "n": 2000
+       },
+       "ep474": {
+        "name": 0.6255,
+        "all": 0.6255,
+        "used": 8.0,
+        "null_none": 0.9505,
+        "hard": {
+         "extra": 0.325,
+         "named": 0.675
+        },
+        "n": 2000
+       },
+       "ep476": {
+        "name": 0.844,
+        "all": 0.2425,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.129,
+         "named": 0.844,
+         "none": 0.027
+        },
+        "n": 2000
+       }
+      },
+      "pooled": {
+       "name": 0.67975,
+       "all": 0.48458333333333337,
+       "used": 8.0,
+       "null_none": 0.9914166666666667,
+       "episodes": 6,
+       "hard": {
+        "named": 0.6880000000000001,
+        "none": 0.09666666666666666,
+        "wrong": 0.04841666666666666,
+        "extra": 0.16691666666666669
+       }
+      },
+      "by_kind": {
+       "trap": {
+        "name": 0.5448333333333334,
+        "all": 0.5308333333333334,
+        "used": 8.0,
+        "null_none": 0.9993333333333334,
+        "episodes": 3,
+        "hard": {
+         "named": 0.5448333333333334,
+         "none": 0.18433333333333332,
+         "wrong": 0.09683333333333333,
+         "extra": 0.17400000000000002
+        }
+       },
+       "two-part": {
+        "name": 0.8146666666666667,
+        "all": 0.4383333333333333,
+        "used": 8.0,
+        "null_none": 0.9834999999999999,
+        "episodes": 3,
+        "hard": {
+         "named": 0.8311666666666667,
+         "none": 0.009,
+         "wrong": 0.0,
+         "extra": 0.15983333333333336
+        }
+       }
+      }
+     },
+     "16": {
+      "per_episode": {
+       "ep411": {
+        "name": 0.45,
+        "all": 0.45,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.006,
+         "named": 0.45,
+         "none": 0.5345,
+         "wrong": 0.0095
+        },
+        "n": 2000
+       },
+       "ep413": {
+        "name": 0.7565,
+        "all": 0.7565,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.1215,
+         "named": 0.7565,
+         "none": 0.005,
+         "wrong": 0.117
+        },
+        "n": 2000
+       },
+       "ep415": {
+        "name": 0.8145,
+        "all": 0.798,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.1855,
+         "named": 0.8145
+        },
+        "n": 2000
+       },
+       "ep472": {
+        "name": 1.0,
+        "all": 0.5365,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 1.0
+        },
+        "n": 2000
+       },
+       "ep474": {
+        "name": 0.7615,
+        "all": 0.7615,
+        "used": 16.0,
+        "null_none": 0.9865,
+        "hard": {
+         "extra": 0.225,
+         "named": 0.775
+        },
+        "n": 2000
+       },
+       "ep476": {
+        "name": 0.9015,
+        "all": 0.3055,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.0965,
+         "named": 0.9015,
+         "none": 0.002
+        },
+        "n": 2000
+       }
+      },
+      "pooled": {
+       "name": 0.7806666666666665,
+       "all": 0.6013333333333334,
+       "used": 16.0,
+       "null_none": 0.99775,
+       "episodes": 6,
+       "hard": {
+        "named": 0.7829166666666666,
+        "none": 0.09025,
+        "wrong": 0.021083333333333332,
+        "extra": 0.10575000000000001
+       }
+      },
+      "by_kind": {
+       "trap": {
+        "name": 0.6736666666666666,
+        "all": 0.6681666666666667,
+        "used": 16.0,
+        "null_none": 1.0,
+        "episodes": 3,
+        "hard": {
+         "named": 0.6736666666666666,
+         "none": 0.17983333333333332,
+         "wrong": 0.042166666666666665,
+         "extra": 0.10433333333333333
+        }
+       },
+       "two-part": {
+        "name": 0.8876666666666666,
+        "all": 0.5345,
+        "used": 16.0,
+        "null_none": 0.9954999999999999,
+        "episodes": 3,
+        "hard": {
+         "named": 0.8921666666666667,
+         "none": 0.0006666666666666666,
+         "wrong": 0.0,
+         "extra": 0.10716666666666667
+        }
+       }
+      }
+     }
+    },
+    "complement_guess": {
+     "8": {
+      "per_episode": {
+       "ep411": {
+        "name": 0.434,
+        "all": 0.434,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.0295,
+         "named": 0.434,
+         "none": 0.5025,
+         "wrong": 0.034
+        },
+        "n": 2000
+       },
+       "ep413": {
+        "name": 0.5135,
+        "all": 0.5135,
+        "used": 8.0,
+        "null_none": 0.9665,
+        "hard": {
+         "extra": 0.1945,
+         "named": 0.5135,
+         "none": 0.0505,
+         "wrong": 0.2415
+        },
+        "n": 2000
+       },
+       "ep415": {
+        "name": 0.687,
+        "all": 0.645,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.313,
+         "named": 0.687
+        },
+        "n": 2000
+       },
+       "ep472": {
+        "name": 0.946,
+        "all": 0.447,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.054,
+         "named": 0.946
+        },
+        "n": 2000
+       },
+       "ep474": {
+        "name": 0.6255,
+        "all": 0.6255,
+        "used": 8.0,
+        "null_none": 0.936,
+        "hard": {
+         "extra": 0.3355,
+         "named": 0.6645
+        },
+        "n": 2000
+       },
+       "ep476": {
+        "name": 0.716,
+        "all": 0.2425,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.257,
+         "named": 0.716,
+         "none": 0.027
+        },
+        "n": 2000
+       }
+      },
+      "pooled": {
+       "name": 0.6536666666666666,
+       "all": 0.48458333333333337,
+       "used": 8.0,
+       "null_none": 0.98375,
+       "episodes": 6,
+       "hard": {
+        "named": 0.6601666666666666,
+        "none": 0.09666666666666666,
+        "wrong": 0.04591666666666666,
+        "extra": 0.19725
+       }
+      },
+      "by_kind": {
+       "trap": {
+        "name": 0.5448333333333334,
+        "all": 0.5308333333333334,
+        "used": 8.0,
+        "null_none": 0.9888333333333333,
+        "episodes": 3,
+        "hard": {
+         "named": 0.5448333333333334,
+         "none": 0.18433333333333332,
+         "wrong": 0.09183333333333332,
+         "extra": 0.17900000000000002
+        }
+       },
+       "two-part": {
+        "name": 0.7624999999999998,
+        "all": 0.4383333333333333,
+        "used": 8.0,
+        "null_none": 0.9786666666666667,
+        "episodes": 3,
+        "hard": {
+         "named": 0.7755000000000001,
+         "none": 0.009,
+         "wrong": 0.0,
+         "extra": 0.21550000000000002
+        }
+       }
+      }
+     },
+     "16": {
+      "per_episode": {
+       "ep411": {
+        "name": 0.45,
+        "all": 0.45,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.006,
+         "named": 0.45,
+         "none": 0.5345,
+         "wrong": 0.0095
+        },
+        "n": 2000
+       },
+       "ep413": {
+        "name": 0.7565,
+        "all": 0.7565,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.1225,
+         "named": 0.7565,
+         "none": 0.005,
+         "wrong": 0.116
+        },
+        "n": 2000
+       },
+       "ep415": {
+        "name": 0.8145,
+        "all": 0.798,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.1855,
+         "named": 0.8145
+        },
+        "n": 2000
+       },
+       "ep472": {
+        "name": 1.0,
+        "all": 0.5365,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 1.0
+        },
+        "n": 2000
+       },
+       "ep474": {
+        "name": 0.7615,
+        "all": 0.7615,
+        "used": 16.0,
+        "null_none": 0.982,
+        "hard": {
+         "extra": 0.225,
+         "named": 0.775
+        },
+        "n": 2000
+       },
+       "ep476": {
+        "name": 0.8165,
+        "all": 0.3055,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.1815,
+         "named": 0.8165,
+         "none": 0.002
+        },
+        "n": 2000
+       }
+      },
+      "pooled": {
+       "name": 0.7665000000000001,
+       "all": 0.6013333333333334,
+       "used": 16.0,
+       "null_none": 0.997,
+       "episodes": 6,
+       "hard": {
+        "named": 0.7687499999999999,
+        "none": 0.09025,
+        "wrong": 0.020916666666666667,
+        "extra": 0.12008333333333333
+       }
+      },
+      "by_kind": {
+       "trap": {
+        "name": 0.6736666666666666,
+        "all": 0.6681666666666667,
+        "used": 16.0,
+        "null_none": 1.0,
+        "episodes": 3,
+        "hard": {
+         "named": 0.6736666666666666,
+         "none": 0.17983333333333332,
+         "wrong": 0.041833333333333333,
+         "extra": 0.10466666666666667
+        }
+       },
+       "two-part": {
+        "name": 0.8593333333333333,
+        "all": 0.5345,
+        "used": 16.0,
+        "null_none": 0.9940000000000001,
+        "episodes": 3,
+        "hard": {
+         "named": 0.8638333333333333,
+         "none": 0.0006666666666666666,
+         "wrong": 0.0,
+         "extra": 0.13549999999999998
+        }
+       }
+      }
+     }
+    },
+    "complement_rand_none": {
+     "8": {
+      "per_episode": {
+       "ep411": {
+        "name": 0.423,
+        "all": 0.423,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.0125,
+         "named": 0.423,
+         "none": 0.5005,
+         "wrong": 0.064
+        },
+        "n": 2000
+       },
+       "ep413": {
+        "name": 0.544,
+        "all": 0.544,
+        "used": 8.0,
+        "null_none": 0.9975,
+        "hard": {
+         "extra": 0.195,
+         "named": 0.544,
+         "none": 0.042,
+         "wrong": 0.219
+        },
+        "n": 2000
+       },
+       "ep415": {
+        "name": 0.579,
+        "all": 0.5725,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.2455,
+         "named": 0.579,
+         "wrong": 0.1755
+        },
+        "n": 2000
+       },
+       "ep472": {
+        "name": 0.9725,
+        "all": 0.478,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.0275,
+         "named": 0.9725
+        },
+        "n": 2000
+       },
+       "ep474": {
+        "name": 0.6315,
+        "all": 0.6315,
+        "used": 8.0,
+        "null_none": 0.951,
+        "hard": {
+         "extra": 0.3195,
+         "named": 0.6805
+        },
+        "n": 2000
+       },
+       "ep476": {
+        "name": 0.86,
+        "all": 0.248,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.119,
+         "named": 0.86,
+         "none": 0.021
+        },
+        "n": 2000
+       }
+      },
+      "pooled": {
+       "name": 0.6683333333333333,
+       "all": 0.4828333333333334,
+       "used": 8.0,
+       "null_none": 0.9914166666666667,
+       "episodes": 6,
+       "hard": {
+        "named": 0.6765,
+        "none": 0.09391666666666666,
+        "wrong": 0.07641666666666667,
+        "extra": 0.15316666666666667
+       }
+      },
+      "by_kind": {
+       "trap": {
+        "name": 0.5153333333333333,
+        "all": 0.5131666666666667,
+        "used": 8.0,
+        "null_none": 0.9991666666666666,
+        "episodes": 3,
+        "hard": {
+         "named": 0.5153333333333333,
+         "none": 0.18083333333333332,
+         "wrong": 0.15283333333333335,
+         "extra": 0.151
+        }
+       },
+       "two-part": {
+        "name": 0.8213333333333334,
+        "all": 0.45249999999999996,
+        "used": 8.0,
+        "null_none": 0.9836666666666667,
+        "episodes": 3,
+        "hard": {
+         "named": 0.8376666666666667,
+         "none": 0.007,
+         "wrong": 0.0,
+         "extra": 0.15533333333333335
+        }
+       }
+      }
+     },
+     "16": {
+      "per_episode": {
+       "ep411": {
+        "name": 0.441,
+        "all": 0.441,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.009,
+         "named": 0.441,
+         "none": 0.54,
+         "wrong": 0.01
+        },
+        "n": 2000
+       },
+       "ep413": {
+        "name": 0.763,
+        "all": 0.763,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.1175,
+         "named": 0.763,
+         "none": 0.0065,
+         "wrong": 0.113
+        },
+        "n": 2000
+       },
+       "ep415": {
+        "name": 0.713,
+        "all": 0.71,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.1675,
+         "named": 0.713,
+         "wrong": 0.1195
+        },
+        "n": 2000
+       },
+       "ep472": {
+        "name": 1.0,
+        "all": 0.5905,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 1.0
+        },
+        "n": 2000
+       },
+       "ep474": {
+        "name": 0.753,
+        "all": 0.753,
+        "used": 16.0,
+        "null_none": 0.9865,
+        "hard": {
+         "extra": 0.2335,
+         "named": 0.7665
+        },
+        "n": 2000
+       },
+       "ep476": {
+        "name": 0.9135,
+        "all": 0.298,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.0845,
+         "named": 0.9135,
+         "none": 0.002
+        },
+        "n": 2000
+       }
+      },
+      "pooled": {
+       "name": 0.7639166666666667,
+       "all": 0.5925833333333334,
+       "used": 16.0,
+       "null_none": 0.99775,
+       "episodes": 6,
+       "hard": {
+        "named": 0.7661666666666666,
+        "none": 0.09141666666666666,
+        "wrong": 0.04041666666666666,
+        "extra": 0.10200000000000002
+       }
+      },
+      "by_kind": {
+       "trap": {
+        "name": 0.6389999999999999,
+        "all": 0.638,
+        "used": 16.0,
+        "null_none": 1.0,
+        "episodes": 3,
+        "hard": {
+         "named": 0.6389999999999999,
+         "none": 0.18216666666666667,
+         "wrong": 0.08083333333333333,
+         "extra": 0.09800000000000002
+        }
+       },
+       "two-part": {
+        "name": 0.8888333333333334,
+        "all": 0.5471666666666667,
+        "used": 16.0,
+        "null_none": 0.9954999999999999,
+        "episodes": 3,
+        "hard": {
+         "named": 0.8933333333333332,
+         "none": 0.0006666666666666666,
+         "wrong": 0.0,
+         "extra": 0.106
+        }
+       }
+      }
+     }
+    },
+    "complement_rand_guess": {
+     "8": {
+      "per_episode": {
+       "ep411": {
+        "name": 0.423,
+        "all": 0.423,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.0175,
+         "named": 0.423,
+         "none": 0.5005,
+         "wrong": 0.059
+        },
+        "n": 2000
+       },
+       "ep413": {
+        "name": 0.544,
+        "all": 0.544,
+        "used": 8.0,
+        "null_none": 0.9715,
+        "hard": {
+         "extra": 0.199,
+         "named": 0.544,
+         "none": 0.042,
+         "wrong": 0.215
+        },
+        "n": 2000
+       },
+       "ep415": {
+        "name": 0.579,
+        "all": 0.5725,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.2455,
+         "named": 0.579,
+         "wrong": 0.1755
+        },
+        "n": 2000
+       },
+       "ep472": {
+        "name": 0.94,
+        "all": 0.478,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.06,
+         "named": 0.94
+        },
+        "n": 2000
+       },
+       "ep474": {
+        "name": 0.6315,
+        "all": 0.6315,
+        "used": 8.0,
+        "null_none": 0.9355,
+        "hard": {
+         "extra": 0.3305,
+         "named": 0.6695
+        },
+        "n": 2000
+       },
+       "ep476": {
+        "name": 0.7285,
+        "all": 0.248,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.2505,
+         "named": 0.7285,
+         "none": 0.021
+        },
+        "n": 2000
+       }
+      },
+      "pooled": {
+       "name": 0.6409999999999999,
+       "all": 0.4828333333333334,
+       "used": 8.0,
+       "null_none": 0.9845,
+       "episodes": 6,
+       "hard": {
+        "named": 0.6473333333333333,
+        "none": 0.09391666666666666,
+        "wrong": 0.07491666666666667,
+        "extra": 0.18383333333333332
+       }
+      },
+      "by_kind": {
+       "trap": {
+        "name": 0.5153333333333333,
+        "all": 0.5131666666666667,
+        "used": 8.0,
+        "null_none": 0.9904999999999999,
+        "episodes": 3,
+        "hard": {
+         "named": 0.5153333333333333,
+         "none": 0.18083333333333332,
+         "wrong": 0.14983333333333335,
+         "extra": 0.154
+        }
+       },
+       "two-part": {
+        "name": 0.7666666666666666,
+        "all": 0.45249999999999996,
+        "used": 8.0,
+        "null_none": 0.9785,
+        "episodes": 3,
+        "hard": {
+         "named": 0.7793333333333333,
+         "none": 0.007,
+         "wrong": 0.0,
+         "extra": 0.21366666666666667
+        }
+       }
+      }
+     },
+     "16": {
+      "per_episode": {
+       "ep411": {
+        "name": 0.441,
+        "all": 0.441,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.009,
+         "named": 0.441,
+         "none": 0.54,
+         "wrong": 0.01
+        },
+        "n": 2000
+       },
+       "ep413": {
+        "name": 0.763,
+        "all": 0.763,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.1175,
+         "named": 0.763,
+         "none": 0.0065,
+         "wrong": 0.113
+        },
+        "n": 2000
+       },
+       "ep415": {
+        "name": 0.713,
+        "all": 0.71,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.1675,
+         "named": 0.713,
+         "wrong": 0.1195
+        },
+        "n": 2000
+       },
+       "ep472": {
+        "name": 1.0,
+        "all": 0.5905,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 1.0
+        },
+        "n": 2000
+       },
+       "ep474": {
+        "name": 0.753,
+        "all": 0.753,
+        "used": 16.0,
+        "null_none": 0.983,
+        "hard": {
+         "extra": 0.235,
+         "named": 0.765
+        },
+        "n": 2000
+       },
+       "ep476": {
+        "name": 0.825,
+        "all": 0.298,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.173,
+         "named": 0.825,
+         "none": 0.002
+        },
+        "n": 2000
+       }
+      },
+      "pooled": {
+       "name": 0.7491666666666666,
+       "all": 0.5925833333333334,
+       "used": 16.0,
+       "null_none": 0.9971666666666666,
+       "episodes": 6,
+       "hard": {
+        "named": 0.7511666666666666,
+        "none": 0.09141666666666666,
+        "wrong": 0.04041666666666666,
+        "extra": 0.11699999999999999
+       }
+      },
+      "by_kind": {
+       "trap": {
+        "name": 0.6389999999999999,
+        "all": 0.638,
+        "used": 16.0,
+        "null_none": 1.0,
+        "episodes": 3,
+        "hard": {
+         "named": 0.6389999999999999,
+         "none": 0.18216666666666667,
+         "wrong": 0.08083333333333333,
+         "extra": 0.09800000000000002
+        }
+       },
+       "two-part": {
+        "name": 0.8593333333333334,
+        "all": 0.5471666666666667,
+        "used": 16.0,
+        "null_none": 0.9943333333333334,
+        "episodes": 3,
+        "hard": {
+         "named": 0.8633333333333333,
+         "none": 0.0006666666666666666,
+         "wrong": 0.0,
+         "extra": 0.13599999999999998
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "free": {
+   "additive": {
+    "proxy_only": {
+     "8": {
+      "per_episode": {
+       "ep411": {
+        "name": 0.0,
+        "all": 0.0,
+        "used": 0.0,
+        "null_none": 1.0,
+        "hard": {
+         "wrong": 1.0
+        },
+        "n": 2000
+       },
+       "ep413": {
+        "name": 0.0,
+        "all": 0.0,
+        "used": 0.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 1.0
+        },
+        "n": 2000
+       },
+       "ep415": {
+        "name": 0.0,
+        "all": 0.0,
+        "used": 0.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 1.0
+        },
+        "n": 2000
+       },
+       "ep472": {
+        "name": 1.0,
+        "all": 1.0,
+        "used": 0.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 1.0
+        },
+        "n": 2000
+       },
+       "ep474": {
+        "name": 1.0,
+        "all": 1.0,
+        "used": 0.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 1.0
+        },
+        "n": 2000
+       },
+       "ep476": {
+        "name": 1.0,
+        "all": 1.0,
+        "used": 0.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 1.0
+        },
+        "n": 2000
+       }
+      },
+      "pooled": {
+       "name": 0.5,
+       "all": 0.5,
+       "used": 0.0,
+       "null_none": 1.0,
+       "episodes": 6,
+       "hard": {
+        "named": 0.5,
+        "none": 0.0,
+        "wrong": 0.16666666666666666,
+        "extra": 0.3333333333333333
+       }
+      },
+      "by_kind": {
+       "trap": {
+        "name": 0.0,
+        "all": 0.0,
+        "used": 0.0,
+        "null_none": 1.0,
+        "episodes": 3,
+        "hard": {
+         "named": 0.0,
+         "none": 0.0,
+         "wrong": 0.3333333333333333,
+         "extra": 0.6666666666666666
+        }
+       },
+       "two-part": {
+        "name": 1.0,
+        "all": 1.0,
+        "used": 0.0,
+        "null_none": 1.0,
+        "episodes": 3,
+        "hard": {
+         "named": 1.0,
+         "none": 0.0,
+         "wrong": 0.0,
+         "extra": 0.0
+        }
+       }
+      }
+     },
+     "16": {
+      "per_episode": {
+       "ep411": {
+        "name": 0.0,
+        "all": 0.0,
+        "used": 0.0,
+        "null_none": 1.0,
+        "hard": {
+         "wrong": 1.0
+        },
+        "n": 2000
+       },
+       "ep413": {
+        "name": 0.0,
+        "all": 0.0,
+        "used": 0.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 1.0
+        },
+        "n": 2000
+       },
+       "ep415": {
+        "name": 0.0,
+        "all": 0.0,
+        "used": 0.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 1.0
+        },
+        "n": 2000
+       },
+       "ep472": {
+        "name": 1.0,
+        "all": 1.0,
+        "used": 0.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 1.0
+        },
+        "n": 2000
+       },
+       "ep474": {
+        "name": 1.0,
+        "all": 1.0,
+        "used": 0.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 1.0
+        },
+        "n": 2000
+       },
+       "ep476": {
+        "name": 1.0,
+        "all": 1.0,
+        "used": 0.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 1.0
+        },
+        "n": 2000
+       }
+      },
+      "pooled": {
+       "name": 0.5,
+       "all": 0.5,
+       "used": 0.0,
+       "null_none": 1.0,
+       "episodes": 6,
+       "hard": {
+        "named": 0.5,
+        "none": 0.0,
+        "wrong": 0.16666666666666666,
+        "extra": 0.3333333333333333
+       }
+      },
+      "by_kind": {
+       "trap": {
+        "name": 0.0,
+        "all": 0.0,
+        "used": 0.0,
+        "null_none": 1.0,
+        "episodes": 3,
+        "hard": {
+         "named": 0.0,
+         "none": 0.0,
+         "wrong": 0.3333333333333333,
+         "extra": 0.6666666666666666
+        }
+       },
+       "two-part": {
+        "name": 1.0,
+        "all": 1.0,
+        "used": 0.0,
+        "null_none": 1.0,
+        "episodes": 3,
+        "hard": {
+         "named": 1.0,
+         "none": 0.0,
+         "wrong": 0.0,
+         "extra": 0.0
+        }
+       }
+      }
+     }
+    },
+    "prefix1": {
+     "8": {
+      "per_episode": {
+       "ep411": {
+        "name": 0.0,
+        "all": 0.0,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "none": 1.0
+        },
+        "n": 2000
+       },
+       "ep413": {
+        "name": 0.0,
+        "all": 0.0,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "none": 1.0
+        },
+        "n": 2000
+       },
+       "ep415": {
+        "name": 0.0,
+        "all": 0.0,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "none": 1.0
+        },
+        "n": 2000
+       },
+       "ep472": {
+        "name": 1.0,
+        "all": 0.786,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 1.0
+        },
+        "n": 2000
+       },
+       "ep474": {
+        "name": 0.9775,
+        "all": 0.9775,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 0.9775,
+         "none": 0.0225
+        },
+        "n": 2000
+       },
+       "ep476": {
+        "name": 0.9435,
+        "all": 0.9255,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 0.9435,
+         "none": 0.0565
+        },
+        "n": 2000
+       }
+      },
+      "pooled": {
+       "name": 0.4868333333333334,
+       "all": 0.44816666666666666,
+       "used": 8.0,
+       "null_none": 1.0,
+       "episodes": 6,
+       "hard": {
+        "named": 0.4868333333333334,
+        "none": 0.5131666666666667,
+        "wrong": 0.0,
+        "extra": 0.0
+       }
+      },
+      "by_kind": {
+       "trap": {
+        "name": 0.0,
+        "all": 0.0,
+        "used": 8.0,
+        "null_none": 1.0,
+        "episodes": 3,
+        "hard": {
+         "named": 0.0,
+         "none": 1.0,
+         "wrong": 0.0,
+         "extra": 0.0
+        }
+       },
+       "two-part": {
+        "name": 0.9736666666666668,
+        "all": 0.8963333333333333,
+        "used": 8.0,
+        "null_none": 1.0,
+        "episodes": 3,
+        "hard": {
+         "named": 0.9736666666666668,
+         "none": 0.026333333333333334,
+         "wrong": 0.0,
+         "extra": 0.0
+        }
+       }
+      }
+     },
+     "16": {
+      "per_episode": {
+       "ep411": {
+        "name": 0.0,
+        "all": 0.0,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "none": 1.0
+        },
+        "n": 2000
+       },
+       "ep413": {
+        "name": 0.0,
+        "all": 0.0,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "none": 1.0
+        },
+        "n": 2000
+       },
+       "ep415": {
+        "name": 0.0,
+        "all": 0.0,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "none": 1.0
+        },
+        "n": 2000
+       },
+       "ep472": {
+        "name": 1.0,
+        "all": 0.8775,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 1.0
+        },
+        "n": 2000
+       },
+       "ep474": {
+        "name": 1.0,
+        "all": 1.0,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 1.0
+        },
+        "n": 2000
+       },
+       "ep476": {
+        "name": 0.9975,
+        "all": 0.997,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 0.9975,
+         "none": 0.0025
+        },
+        "n": 2000
+       }
+      },
+      "pooled": {
+       "name": 0.4995833333333333,
+       "all": 0.4790833333333333,
+       "used": 16.0,
+       "null_none": 1.0,
+       "episodes": 6,
+       "hard": {
+        "named": 0.4995833333333333,
+        "none": 0.5004166666666666,
+        "wrong": 0.0,
+        "extra": 0.0
+       }
+      },
+      "by_kind": {
+       "trap": {
+        "name": 0.0,
+        "all": 0.0,
+        "used": 16.0,
+        "null_none": 1.0,
+        "episodes": 3,
+        "hard": {
+         "named": 0.0,
+         "none": 1.0,
+         "wrong": 0.0,
+         "extra": 0.0
+        }
+       },
+       "two-part": {
+        "name": 0.9991666666666666,
+        "all": 0.9581666666666666,
+        "used": 16.0,
+        "null_none": 1.0,
+        "episodes": 3,
+        "hard": {
+         "named": 0.9991666666666666,
+         "none": 0.0008333333333333334,
+         "wrong": 0.0,
+         "extra": 0.0
+        }
+       }
+      }
+     }
+    },
+    "prefix2": {
+     "8": {
+      "per_episode": {
+       "ep411": {
+        "name": 0.939,
+        "all": 0.91,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 0.939,
+         "none": 0.061
+        },
+        "n": 2000
+       },
+       "ep413": {
+        "name": 0.938,
+        "all": 0.938,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 0.938,
+         "none": 0.062
+        },
+        "n": 2000
+       },
+       "ep415": {
+        "name": 0.9455,
+        "all": 0.8005,
+        "used": 8.0,
+        "null_none": 0.972,
+        "hard": {
+         "named": 0.9725,
+         "none": 0.0275
+        },
+        "n": 2000
+       },
+       "ep472": {
+        "name": 0.944,
+        "all": 0.613,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 0.944,
+         "none": 0.056
+        },
+        "n": 2000
+       },
+       "ep474": {
+        "name": 0.8165,
+        "all": 0.778,
+        "used": 8.0,
+        "null_none": 0.8775,
+        "hard": {
+         "named": 0.9275,
+         "none": 0.0725
+        },
+        "n": 2000
+       },
+       "ep476": {
+        "name": 0.8785,
+        "all": 0.78,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 0.8785,
+         "none": 0.1215
+        },
+        "n": 2000
+       }
+      },
+      "pooled": {
+       "name": 0.91025,
+       "all": 0.8032500000000001,
+       "used": 8.0,
+       "null_none": 0.9749166666666667,
+       "episodes": 6,
+       "hard": {
+        "named": 0.93325,
+        "none": 0.06674999999999999,
+        "wrong": 0.0,
+        "extra": 0.0
+       }
+      },
+      "by_kind": {
+       "trap": {
+        "name": 0.9408333333333333,
+        "all": 0.8828333333333332,
+        "used": 8.0,
+        "null_none": 0.9906666666666667,
+        "episodes": 3,
+        "hard": {
+         "named": 0.9498333333333333,
+         "none": 0.050166666666666665,
+         "wrong": 0.0,
+         "extra": 0.0
+        }
+       },
+       "two-part": {
+        "name": 0.8796666666666666,
+        "all": 0.7236666666666668,
+        "used": 8.0,
+        "null_none": 0.9591666666666666,
+        "episodes": 3,
+        "hard": {
+         "named": 0.9166666666666666,
+         "none": 0.08333333333333333,
+         "wrong": 0.0,
+         "extra": 0.0
+        }
+       }
+      }
+     },
+     "16": {
+      "per_episode": {
+       "ep411": {
+        "name": 0.9905,
+        "all": 0.9825,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 0.9905,
+         "none": 0.0095
+        },
+        "n": 2000
+       },
+       "ep413": {
+        "name": 0.9755,
+        "all": 0.9755,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 0.9755,
+         "none": 0.0245
+        },
+        "n": 2000
+       },
+       "ep415": {
+        "name": 1.0,
+        "all": 0.923,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 1.0
+        },
+        "n": 2000
+       },
+       "ep472": {
+        "name": 1.0,
+        "all": 0.7915,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 1.0
+        },
+        "n": 2000
+       },
+       "ep474": {
+        "name": 0.95,
+        "all": 0.95,
+        "used": 16.0,
+        "null_none": 0.977,
+        "hard": {
+         "named": 0.972,
+         "none": 0.028
+        },
+        "n": 2000
+       },
+       "ep476": {
+        "name": 0.9345,
+        "all": 0.922,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 0.9345,
+         "none": 0.0655
+        },
+        "n": 2000
+       }
+      },
+      "pooled": {
+       "name": 0.9750833333333334,
+       "all": 0.9240833333333334,
+       "used": 16.0,
+       "null_none": 0.9961666666666668,
+       "episodes": 6,
+       "hard": {
+        "named": 0.9787500000000001,
+        "none": 0.02125,
+        "wrong": 0.0,
+        "extra": 0.0
+       }
+      },
+      "by_kind": {
+       "trap": {
+        "name": 0.9886666666666667,
+        "all": 0.9603333333333334,
+        "used": 16.0,
+        "null_none": 1.0,
+        "episodes": 3,
+        "hard": {
+         "named": 0.9886666666666667,
+         "none": 0.011333333333333334,
+         "wrong": 0.0,
+         "extra": 0.0
+        }
+       },
+       "two-part": {
+        "name": 0.9615,
+        "all": 0.8878333333333334,
+        "used": 16.0,
+        "null_none": 0.9923333333333333,
+        "episodes": 3,
+        "hard": {
+         "named": 0.9688333333333333,
+         "none": 0.031166666666666665,
+         "wrong": 0.0,
+         "extra": 0.0
+        }
+       }
+      }
+     }
+    },
+    "complement_none": {
+     "8": {
+      "per_episode": {
+       "ep411": {
+        "name": 0.5455,
+        "all": 0.539,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.0465,
+         "named": 0.5455,
+         "none": 0.3685,
+         "wrong": 0.0395
+        },
+        "n": 2000
+       },
+       "ep413": {
+        "name": 0.5015,
+        "all": 0.5015,
+        "used": 8.0,
+        "null_none": 0.9665,
+        "hard": {
+         "extra": 0.2335,
+         "named": 0.5015,
+         "none": 0.06,
+         "wrong": 0.205
+        },
+        "n": 2000
+       },
+       "ep415": {
+        "name": 0.8185,
+        "all": 0.7735,
+        "used": 8.0,
+        "null_none": 0.9895,
+        "hard": {
+         "extra": 0.139,
+         "named": 0.829,
+         "wrong": 0.032
+        },
+        "n": 2000
+       },
+       "ep472": {
+        "name": 0.957,
+        "all": 0.4095,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 0.957,
+         "none": 0.043
+        },
+        "n": 2000
+       },
+       "ep474": {
+        "name": 0.7025,
+        "all": 0.666,
+        "used": 8.0,
+        "null_none": 0.8215,
+        "hard": {
+         "extra": 0.0645,
+         "named": 0.879,
+         "none": 0.0565
+        },
+        "n": 2000
+       },
+       "ep476": {
+        "name": 0.765,
+        "all": 0.3705,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.159,
+         "named": 0.765,
+         "none": 0.076
+        },
+        "n": 2000
+       }
+      },
+      "pooled": {
+       "name": 0.715,
+       "all": 0.5433333333333333,
+       "used": 8.0,
+       "null_none": 0.9629166666666666,
+       "episodes": 6,
+       "hard": {
+        "named": 0.7461666666666665,
+        "none": 0.10066666666666667,
+        "wrong": 0.04608333333333333,
+        "extra": 0.10708333333333335
+       }
+      },
+      "by_kind": {
+       "trap": {
+        "name": 0.6218333333333333,
+        "all": 0.6046666666666667,
+        "used": 8.0,
+        "null_none": 0.9853333333333333,
+        "episodes": 3,
+        "hard": {
+         "named": 0.6253333333333333,
+         "none": 0.14283333333333334,
+         "wrong": 0.09216666666666666,
+         "extra": 0.1396666666666667
+        }
+       },
+       "two-part": {
+        "name": 0.8081666666666667,
+        "all": 0.482,
+        "used": 8.0,
+        "null_none": 0.9405,
+        "episodes": 3,
+        "hard": {
+         "named": 0.867,
+         "none": 0.058499999999999996,
+         "wrong": 0.0,
+         "extra": 0.0745
+        }
+       }
+      }
+     },
+     "16": {
+      "per_episode": {
+       "ep411": {
+        "name": 0.588,
+        "all": 0.587,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.005,
+         "named": 0.588,
+         "none": 0.4035,
+         "wrong": 0.0035
+        },
+        "n": 2000
+       },
+       "ep413": {
+        "name": 0.766,
+        "all": 0.766,
+        "used": 16.0,
+        "null_none": 0.998,
+        "hard": {
+         "extra": 0.102,
+         "named": 0.766,
+         "none": 0.0115,
+         "wrong": 0.1205
+        },
+        "n": 2000
+       },
+       "ep415": {
+        "name": 0.9645,
+        "all": 0.94,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.035,
+         "named": 0.9645,
+         "wrong": 0.0005
+        },
+        "n": 2000
+       },
+       "ep472": {
+        "name": 1.0,
+        "all": 0.691,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 1.0
+        },
+        "n": 2000
+       },
+       "ep474": {
+        "name": 0.928,
+        "all": 0.928,
+        "used": 16.0,
+        "null_none": 0.9565,
+        "hard": {
+         "named": 0.9715,
+         "none": 0.0285
+        },
+        "n": 2000
+       },
+       "ep476": {
+        "name": 0.841,
+        "all": 0.5615,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.1215,
+         "named": 0.841,
+         "none": 0.0375
+        },
+        "n": 2000
+       }
+      },
+      "pooled": {
+       "name": 0.8479166666666668,
+       "all": 0.7455833333333333,
+       "used": 16.0,
+       "null_none": 0.9924166666666667,
+       "episodes": 6,
+       "hard": {
+        "named": 0.8551666666666667,
+        "none": 0.08016666666666668,
+        "wrong": 0.02075,
+        "extra": 0.043916666666666666
+       }
+      },
+      "by_kind": {
+       "trap": {
+        "name": 0.7728333333333334,
+        "all": 0.7643333333333334,
+        "used": 16.0,
+        "null_none": 0.9993333333333334,
+        "episodes": 3,
+        "hard": {
+         "named": 0.7728333333333334,
+         "none": 0.13833333333333334,
+         "wrong": 0.0415,
+         "extra": 0.04733333333333334
+        }
+       },
+       "two-part": {
+        "name": 0.923,
+        "all": 0.7268333333333333,
+        "used": 16.0,
+        "null_none": 0.9855,
+        "episodes": 3,
+        "hard": {
+         "named": 0.9375,
+         "none": 0.022000000000000002,
+         "wrong": 0.0,
+         "extra": 0.0405
+        }
+       }
+      }
+     }
+    },
+    "complement_guess": {
+     "8": {
+      "per_episode": {
+       "ep411": {
+        "name": 0.5455,
+        "all": 0.539,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.0505,
+         "named": 0.5455,
+         "none": 0.3685,
+         "wrong": 0.0355
+        },
+        "n": 2000
+       },
+       "ep413": {
+        "name": 0.5015,
+        "all": 0.5015,
+        "used": 8.0,
+        "null_none": 0.74,
+        "hard": {
+         "extra": 0.2505,
+         "named": 0.5015,
+         "none": 0.06,
+         "wrong": 0.188
+        },
+        "n": 2000
+       },
+       "ep415": {
+        "name": 0.8185,
+        "all": 0.7735,
+        "used": 8.0,
+        "null_none": 0.9895,
+        "hard": {
+         "extra": 0.1435,
+         "named": 0.829,
+         "wrong": 0.0275
+        },
+        "n": 2000
+       },
+       "ep472": {
+        "name": 0.957,
+        "all": 0.4095,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 0.957,
+         "none": 0.043
+        },
+        "n": 2000
+       },
+       "ep474": {
+        "name": 0.7025,
+        "all": 0.666,
+        "used": 8.0,
+        "null_none": 0.8175,
+        "hard": {
+         "extra": 0.074,
+         "named": 0.8695,
+         "none": 0.0565
+        },
+        "n": 2000
+       },
+       "ep476": {
+        "name": 0.727,
+        "all": 0.3705,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.197,
+         "named": 0.727,
+         "none": 0.076
+        },
+        "n": 2000
+       }
+      },
+      "pooled": {
+       "name": 0.7086666666666667,
+       "all": 0.5433333333333333,
+       "used": 8.0,
+       "null_none": 0.9245,
+       "episodes": 6,
+       "hard": {
+        "named": 0.73825,
+        "none": 0.10066666666666667,
+        "wrong": 0.041833333333333333,
+        "extra": 0.11925000000000001
+       }
+      },
+      "by_kind": {
+       "trap": {
+        "name": 0.6218333333333333,
+        "all": 0.6046666666666667,
+        "used": 8.0,
+        "null_none": 0.9098333333333333,
+        "episodes": 3,
+        "hard": {
+         "named": 0.6253333333333333,
+         "none": 0.14283333333333334,
+         "wrong": 0.08366666666666667,
+         "extra": 0.14816666666666667
+        }
+       },
+       "two-part": {
+        "name": 0.7955,
+        "all": 0.482,
+        "used": 8.0,
+        "null_none": 0.9391666666666666,
+        "episodes": 3,
+        "hard": {
+         "named": 0.8511666666666667,
+         "none": 0.058499999999999996,
+         "wrong": 0.0,
+         "extra": 0.09033333333333333
+        }
+       }
+      }
+     },
+     "16": {
+      "per_episode": {
+       "ep411": {
+        "name": 0.588,
+        "all": 0.587,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.006,
+         "named": 0.588,
+         "none": 0.4035,
+         "wrong": 0.0025
+        },
+        "n": 2000
+       },
+       "ep413": {
+        "name": 0.766,
+        "all": 0.766,
+        "used": 16.0,
+        "null_none": 0.91,
+        "hard": {
+         "extra": 0.1035,
+         "named": 0.766,
+         "none": 0.0115,
+         "wrong": 0.119
+        },
+        "n": 2000
+       },
+       "ep415": {
+        "name": 0.9645,
+        "all": 0.94,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.0355,
+         "named": 0.9645
+        },
+        "n": 2000
+       },
+       "ep472": {
+        "name": 1.0,
+        "all": 0.691,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 1.0
+        },
+        "n": 2000
+       },
+       "ep474": {
+        "name": 0.928,
+        "all": 0.928,
+        "used": 16.0,
+        "null_none": 0.9565,
+        "hard": {
+         "named": 0.9715,
+         "none": 0.0285
+        },
+        "n": 2000
+       },
+       "ep476": {
+        "name": 0.824,
+        "all": 0.5615,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.1385,
+         "named": 0.824,
+         "none": 0.0375
+        },
+        "n": 2000
+       }
+      },
+      "pooled": {
+       "name": 0.8450833333333333,
+       "all": 0.7455833333333333,
+       "used": 16.0,
+       "null_none": 0.97775,
+       "episodes": 6,
+       "hard": {
+        "named": 0.8523333333333333,
+        "none": 0.08016666666666668,
+        "wrong": 0.02025,
+        "extra": 0.04724999999999999
+       }
+      },
+      "by_kind": {
+       "trap": {
+        "name": 0.7728333333333334,
+        "all": 0.7643333333333334,
+        "used": 16.0,
+        "null_none": 0.9700000000000001,
+        "episodes": 3,
+        "hard": {
+         "named": 0.7728333333333334,
+         "none": 0.13833333333333334,
+         "wrong": 0.0405,
+         "extra": 0.04833333333333333
+        }
+       },
+       "two-part": {
+        "name": 0.9173333333333332,
+        "all": 0.7268333333333333,
+        "used": 16.0,
+        "null_none": 0.9855,
+        "episodes": 3,
+        "hard": {
+         "named": 0.9318333333333334,
+         "none": 0.022000000000000002,
+         "wrong": 0.0,
+         "extra": 0.04616666666666667
+        }
+       }
+      }
+     }
+    },
+    "complement_rand_none": {
+     "8": {
+      "per_episode": {
+       "ep411": {
+        "name": 0.529,
+        "all": 0.529,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.0515,
+         "named": 0.529,
+         "none": 0.376,
+         "wrong": 0.0435
+        },
+        "n": 2000
+       },
+       "ep413": {
+        "name": 0.4945,
+        "all": 0.4945,
+        "used": 8.0,
+        "null_none": 0.971,
+        "hard": {
+         "extra": 0.2165,
+         "named": 0.4945,
+         "none": 0.06,
+         "wrong": 0.229
+        },
+        "n": 2000
+       },
+       "ep415": {
+        "name": 0.7925,
+        "all": 0.786,
+        "used": 8.0,
+        "null_none": 0.9985,
+        "hard": {
+         "extra": 0.133,
+         "named": 0.794,
+         "wrong": 0.073
+        },
+        "n": 2000
+       },
+       "ep472": {
+        "name": 0.954,
+        "all": 0.4345,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 0.954,
+         "none": 0.046
+        },
+        "n": 2000
+       },
+       "ep474": {
+        "name": 0.716,
+        "all": 0.67,
+        "used": 8.0,
+        "null_none": 0.8335,
+        "hard": {
+         "extra": 0.0645,
+         "named": 0.8825,
+         "none": 0.053
+        },
+        "n": 2000
+       },
+       "ep476": {
+        "name": 0.781,
+        "all": 0.3545,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.1495,
+         "named": 0.781,
+         "none": 0.0695
+        },
+        "n": 2000
+       }
+      },
+      "pooled": {
+       "name": 0.7111666666666666,
+       "all": 0.54475,
+       "used": 8.0,
+       "null_none": 0.9671666666666666,
+       "episodes": 6,
+       "hard": {
+        "named": 0.7391666666666666,
+        "none": 0.10075,
+        "wrong": 0.05758333333333334,
+        "extra": 0.1025
+       }
+      },
+      "by_kind": {
+       "trap": {
+        "name": 0.6053333333333334,
+        "all": 0.6031666666666667,
+        "used": 8.0,
+        "null_none": 0.9898333333333333,
+        "episodes": 3,
+        "hard": {
+         "named": 0.6058333333333333,
+         "none": 0.14533333333333334,
+         "wrong": 0.11516666666666668,
+         "extra": 0.13366666666666668
+        }
+       },
+       "two-part": {
+        "name": 0.8170000000000001,
+        "all": 0.48633333333333334,
+        "used": 8.0,
+        "null_none": 0.9445,
+        "episodes": 3,
+        "hard": {
+         "named": 0.8725,
+         "none": 0.05616666666666667,
+         "wrong": 0.0,
+         "extra": 0.07133333333333333
+        }
+       }
+      }
+     },
+     "16": {
+      "per_episode": {
+       "ep411": {
+        "name": 0.577,
+        "all": 0.577,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.0085,
+         "named": 0.577,
+         "none": 0.41,
+         "wrong": 0.0045
+        },
+        "n": 2000
+       },
+       "ep413": {
+        "name": 0.77,
+        "all": 0.77,
+        "used": 16.0,
+        "null_none": 0.996,
+        "hard": {
+         "extra": 0.0895,
+         "named": 0.77,
+         "none": 0.017,
+         "wrong": 0.1235
+        },
+        "n": 2000
+       },
+       "ep415": {
+        "name": 0.9465,
+        "all": 0.9435,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.0345,
+         "named": 0.9465,
+         "wrong": 0.019
+        },
+        "n": 2000
+       },
+       "ep472": {
+        "name": 1.0,
+        "all": 0.7185,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 1.0
+        },
+        "n": 2000
+       },
+       "ep474": {
+        "name": 0.9205,
+        "all": 0.9205,
+        "used": 16.0,
+        "null_none": 0.9465,
+        "hard": {
+         "named": 0.974,
+         "none": 0.026
+        },
+        "n": 2000
+       },
+       "ep476": {
+        "name": 0.8495,
+        "all": 0.5665,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.1125,
+         "named": 0.8495,
+         "none": 0.038
+        },
+        "n": 2000
+       }
+      },
+      "pooled": {
+       "name": 0.8439166666666665,
+       "all": 0.7493333333333334,
+       "used": 16.0,
+       "null_none": 0.9904166666666666,
+       "episodes": 6,
+       "hard": {
+        "named": 0.8528333333333333,
+        "none": 0.08183333333333333,
+        "wrong": 0.024499999999999997,
+        "extra": 0.04083333333333333
+       }
+      },
+      "by_kind": {
+       "trap": {
+        "name": 0.7645,
+        "all": 0.7635,
+        "used": 16.0,
+        "null_none": 0.9986666666666667,
+        "episodes": 3,
+        "hard": {
+         "named": 0.7645,
+         "none": 0.14233333333333334,
+         "wrong": 0.048999999999999995,
+         "extra": 0.04416666666666667
+        }
+       },
+       "two-part": {
+        "name": 0.9233333333333333,
+        "all": 0.7351666666666666,
+        "used": 16.0,
+        "null_none": 0.9821666666666666,
+        "episodes": 3,
+        "hard": {
+         "named": 0.9411666666666667,
+         "none": 0.021333333333333333,
+         "wrong": 0.0,
+         "extra": 0.0375
+        }
+       }
+      }
+     }
+    },
+    "complement_rand_guess": {
+     "8": {
+      "per_episode": {
+       "ep411": {
+        "name": 0.529,
+        "all": 0.529,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.0525,
+         "named": 0.529,
+         "none": 0.376,
+         "wrong": 0.0425
+        },
+        "n": 2000
+       },
+       "ep413": {
+        "name": 0.4945,
+        "all": 0.4945,
+        "used": 8.0,
+        "null_none": 0.752,
+        "hard": {
+         "extra": 0.2205,
+         "named": 0.4945,
+         "none": 0.06,
+         "wrong": 0.225
+        },
+        "n": 2000
+       },
+       "ep415": {
+        "name": 0.7925,
+        "all": 0.786,
+        "used": 8.0,
+        "null_none": 0.9985,
+        "hard": {
+         "extra": 0.136,
+         "named": 0.794,
+         "wrong": 0.07
+        },
+        "n": 2000
+       },
+       "ep472": {
+        "name": 0.954,
+        "all": 0.4345,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 0.954,
+         "none": 0.046
+        },
+        "n": 2000
+       },
+       "ep474": {
+        "name": 0.716,
+        "all": 0.67,
+        "used": 8.0,
+        "null_none": 0.83,
+        "hard": {
+         "extra": 0.076,
+         "named": 0.871,
+         "none": 0.053
+        },
+        "n": 2000
+       },
+       "ep476": {
+        "name": 0.7385,
+        "all": 0.3545,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.192,
+         "named": 0.7385,
+         "none": 0.0695
+        },
+        "n": 2000
+       }
+      },
+      "pooled": {
+       "name": 0.7040833333333333,
+       "all": 0.54475,
+       "used": 8.0,
+       "null_none": 0.9300833333333333,
+       "episodes": 6,
+       "hard": {
+        "named": 0.7301666666666667,
+        "none": 0.10075,
+        "wrong": 0.05625,
+        "extra": 0.11283333333333334
+       }
+      },
+      "by_kind": {
+       "trap": {
+        "name": 0.6053333333333334,
+        "all": 0.6031666666666667,
+        "used": 8.0,
+        "null_none": 0.9168333333333334,
+        "episodes": 3,
+        "hard": {
+         "named": 0.6058333333333333,
+         "none": 0.14533333333333334,
+         "wrong": 0.1125,
+         "extra": 0.13633333333333333
+        }
+       },
+       "two-part": {
+        "name": 0.8028333333333334,
+        "all": 0.48633333333333334,
+        "used": 8.0,
+        "null_none": 0.9433333333333334,
+        "episodes": 3,
+        "hard": {
+         "named": 0.8544999999999999,
+         "none": 0.05616666666666667,
+         "wrong": 0.0,
+         "extra": 0.08933333333333333
+        }
+       }
+      }
+     },
+     "16": {
+      "per_episode": {
+       "ep411": {
+        "name": 0.577,
+        "all": 0.577,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.0085,
+         "named": 0.577,
+         "none": 0.41,
+         "wrong": 0.0045
+        },
+        "n": 2000
+       },
+       "ep413": {
+        "name": 0.77,
+        "all": 0.77,
+        "used": 16.0,
+        "null_none": 0.9125,
+        "hard": {
+         "extra": 0.09,
+         "named": 0.77,
+         "none": 0.017,
+         "wrong": 0.123
+        },
+        "n": 2000
+       },
+       "ep415": {
+        "name": 0.9465,
+        "all": 0.9435,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.0345,
+         "named": 0.9465,
+         "wrong": 0.019
+        },
+        "n": 2000
+       },
+       "ep472": {
+        "name": 1.0,
+        "all": 0.7185,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 1.0
+        },
+        "n": 2000
+       },
+       "ep474": {
+        "name": 0.9205,
+        "all": 0.9205,
+        "used": 16.0,
+        "null_none": 0.9465,
+        "hard": {
+         "named": 0.974,
+         "none": 0.026
+        },
+        "n": 2000
+       },
+       "ep476": {
+        "name": 0.834,
+        "all": 0.5665,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.128,
+         "named": 0.834,
+         "none": 0.038
+        },
+        "n": 2000
+       }
+      },
+      "pooled": {
+       "name": 0.8413333333333332,
+       "all": 0.7493333333333334,
+       "used": 16.0,
+       "null_none": 0.9765,
+       "episodes": 6,
+       "hard": {
+        "named": 0.85025,
+        "none": 0.08183333333333333,
+        "wrong": 0.024416666666666666,
+        "extra": 0.043500000000000004
+       }
+      },
+      "by_kind": {
+       "trap": {
+        "name": 0.7645,
+        "all": 0.7635,
+        "used": 16.0,
+        "null_none": 0.9708333333333333,
+        "episodes": 3,
+        "hard": {
+         "named": 0.7645,
+         "none": 0.14233333333333334,
+         "wrong": 0.04883333333333333,
+         "extra": 0.044333333333333336
+        }
+       },
+       "two-part": {
+        "name": 0.9181666666666667,
+        "all": 0.7351666666666666,
+        "used": 16.0,
+        "null_none": 0.9821666666666666,
+        "episodes": 3,
+        "hard": {
+         "named": 0.9359999999999999,
+         "none": 0.021333333333333333,
+         "wrong": 0.0,
+         "extra": 0.042666666666666665
+        }
+       }
+      }
+     }
+    }
+   },
+   "exact": {
+    "proxy_only": {
+     "8": {
+      "per_episode": {
+       "ep411": {
+        "name": 0.0,
+        "all": 0.0,
+        "used": 0.0,
+        "null_none": 1.0,
+        "hard": {
+         "wrong": 1.0
+        },
+        "n": 2000
+       },
+       "ep413": {
+        "name": 0.0,
+        "all": 0.0,
+        "used": 0.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 1.0
+        },
+        "n": 2000
+       },
+       "ep415": {
+        "name": 0.0,
+        "all": 0.0,
+        "used": 0.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 1.0
+        },
+        "n": 2000
+       },
+       "ep472": {
+        "name": 1.0,
+        "all": 1.0,
+        "used": 0.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 1.0
+        },
+        "n": 2000
+       },
+       "ep474": {
+        "name": 1.0,
+        "all": 1.0,
+        "used": 0.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 1.0
+        },
+        "n": 2000
+       },
+       "ep476": {
+        "name": 1.0,
+        "all": 1.0,
+        "used": 0.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 1.0
+        },
+        "n": 2000
+       }
+      },
+      "pooled": {
+       "name": 0.5,
+       "all": 0.5,
+       "used": 0.0,
+       "null_none": 1.0,
+       "episodes": 6,
+       "hard": {
+        "named": 0.5,
+        "none": 0.0,
+        "wrong": 0.16666666666666666,
+        "extra": 0.3333333333333333
+       }
+      },
+      "by_kind": {
+       "trap": {
+        "name": 0.0,
+        "all": 0.0,
+        "used": 0.0,
+        "null_none": 1.0,
+        "episodes": 3,
+        "hard": {
+         "named": 0.0,
+         "none": 0.0,
+         "wrong": 0.3333333333333333,
+         "extra": 0.6666666666666666
+        }
+       },
+       "two-part": {
+        "name": 1.0,
+        "all": 1.0,
+        "used": 0.0,
+        "null_none": 1.0,
+        "episodes": 3,
+        "hard": {
+         "named": 1.0,
+         "none": 0.0,
+         "wrong": 0.0,
+         "extra": 0.0
+        }
+       }
+      }
+     },
+     "16": {
+      "per_episode": {
+       "ep411": {
+        "name": 0.0,
+        "all": 0.0,
+        "used": 0.0,
+        "null_none": 1.0,
+        "hard": {
+         "wrong": 1.0
+        },
+        "n": 2000
+       },
+       "ep413": {
+        "name": 0.0,
+        "all": 0.0,
+        "used": 0.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 1.0
+        },
+        "n": 2000
+       },
+       "ep415": {
+        "name": 0.0,
+        "all": 0.0,
+        "used": 0.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 1.0
+        },
+        "n": 2000
+       },
+       "ep472": {
+        "name": 1.0,
+        "all": 1.0,
+        "used": 0.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 1.0
+        },
+        "n": 2000
+       },
+       "ep474": {
+        "name": 1.0,
+        "all": 1.0,
+        "used": 0.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 1.0
+        },
+        "n": 2000
+       },
+       "ep476": {
+        "name": 1.0,
+        "all": 1.0,
+        "used": 0.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 1.0
+        },
+        "n": 2000
+       }
+      },
+      "pooled": {
+       "name": 0.5,
+       "all": 0.5,
+       "used": 0.0,
+       "null_none": 1.0,
+       "episodes": 6,
+       "hard": {
+        "named": 0.5,
+        "none": 0.0,
+        "wrong": 0.16666666666666666,
+        "extra": 0.3333333333333333
+       }
+      },
+      "by_kind": {
+       "trap": {
+        "name": 0.0,
+        "all": 0.0,
+        "used": 0.0,
+        "null_none": 1.0,
+        "episodes": 3,
+        "hard": {
+         "named": 0.0,
+         "none": 0.0,
+         "wrong": 0.3333333333333333,
+         "extra": 0.6666666666666666
+        }
+       },
+       "two-part": {
+        "name": 1.0,
+        "all": 1.0,
+        "used": 0.0,
+        "null_none": 1.0,
+        "episodes": 3,
+        "hard": {
+         "named": 1.0,
+         "none": 0.0,
+         "wrong": 0.0,
+         "extra": 0.0
+        }
+       }
+      }
+     }
+    },
+    "prefix1": {
+     "8": {
+      "per_episode": {
+       "ep411": {
+        "name": 0.0,
+        "all": 0.0,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "none": 1.0
+        },
+        "n": 2000
+       },
+       "ep413": {
+        "name": 0.0,
+        "all": 0.0,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "none": 1.0
+        },
+        "n": 2000
+       },
+       "ep415": {
+        "name": 0.0,
+        "all": 0.0,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "none": 1.0
+        },
+        "n": 2000
+       },
+       "ep472": {
+        "name": 1.0,
+        "all": 0.805,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 1.0
+        },
+        "n": 2000
+       },
+       "ep474": {
+        "name": 0.996,
+        "all": 0.984,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 0.996,
+         "none": 0.004
+        },
+        "n": 2000
+       },
+       "ep476": {
+        "name": 0.9855,
+        "all": 0.97,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 0.9855,
+         "none": 0.0145
+        },
+        "n": 2000
+       }
+      },
+      "pooled": {
+       "name": 0.4969166666666667,
+       "all": 0.45983333333333337,
+       "used": 8.0,
+       "null_none": 1.0,
+       "episodes": 6,
+       "hard": {
+        "named": 0.4969166666666667,
+        "none": 0.5030833333333333,
+        "wrong": 0.0,
+        "extra": 0.0
+       }
+      },
+      "by_kind": {
+       "trap": {
+        "name": 0.0,
+        "all": 0.0,
+        "used": 8.0,
+        "null_none": 1.0,
+        "episodes": 3,
+        "hard": {
+         "named": 0.0,
+         "none": 1.0,
+         "wrong": 0.0,
+         "extra": 0.0
+        }
+       },
+       "two-part": {
+        "name": 0.9938333333333333,
+        "all": 0.9196666666666667,
+        "used": 8.0,
+        "null_none": 1.0,
+        "episodes": 3,
+        "hard": {
+         "named": 0.9938333333333333,
+         "none": 0.0061666666666666675,
+         "wrong": 0.0,
+         "extra": 0.0
+        }
+       }
+      }
+     },
+     "16": {
+      "per_episode": {
+       "ep411": {
+        "name": 0.0,
+        "all": 0.0,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "none": 1.0
+        },
+        "n": 2000
+       },
+       "ep413": {
+        "name": 0.0,
+        "all": 0.0,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "none": 1.0
+        },
+        "n": 2000
+       },
+       "ep415": {
+        "name": 0.0,
+        "all": 0.0,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "none": 1.0
+        },
+        "n": 2000
+       },
+       "ep472": {
+        "name": 1.0,
+        "all": 0.9015,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 1.0
+        },
+        "n": 2000
+       },
+       "ep474": {
+        "name": 1.0,
+        "all": 1.0,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 1.0
+        },
+        "n": 2000
+       },
+       "ep476": {
+        "name": 1.0,
+        "all": 1.0,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 1.0
+        },
+        "n": 2000
+       }
+      },
+      "pooled": {
+       "name": 0.5,
+       "all": 0.4835833333333333,
+       "used": 16.0,
+       "null_none": 1.0,
+       "episodes": 6,
+       "hard": {
+        "named": 0.5,
+        "none": 0.5,
+        "wrong": 0.0,
+        "extra": 0.0
+       }
+      },
+      "by_kind": {
+       "trap": {
+        "name": 0.0,
+        "all": 0.0,
+        "used": 16.0,
+        "null_none": 1.0,
+        "episodes": 3,
+        "hard": {
+         "named": 0.0,
+         "none": 1.0,
+         "wrong": 0.0,
+         "extra": 0.0
+        }
+       },
+       "two-part": {
+        "name": 1.0,
+        "all": 0.9671666666666666,
+        "used": 16.0,
+        "null_none": 1.0,
+        "episodes": 3,
+        "hard": {
+         "named": 1.0,
+         "none": 0.0,
+         "wrong": 0.0,
+         "extra": 0.0
+        }
+       }
+      }
+     }
+    },
+    "prefix2": {
+     "8": {
+      "per_episode": {
+       "ep411": {
+        "name": 0.8725,
+        "all": 0.8725,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 0.8725,
+         "none": 0.1275
+        },
+        "n": 2000
+       },
+       "ep413": {
+        "name": 1.0,
+        "all": 1.0,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 1.0
+        },
+        "n": 2000
+       },
+       "ep415": {
+        "name": 0.9455,
+        "all": 0.7345,
+        "used": 8.0,
+        "null_none": 0.972,
+        "hard": {
+         "named": 0.9725,
+         "none": 0.0275
+        },
+        "n": 2000
+       },
+       "ep472": {
+        "name": 0.944,
+        "all": 0.5555,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 0.944,
+         "none": 0.056
+        },
+        "n": 2000
+       },
+       "ep474": {
+        "name": 0.87,
+        "all": 0.768,
+        "used": 8.0,
+        "null_none": 0.9345,
+        "hard": {
+         "named": 0.9315,
+         "none": 0.0685
+        },
+        "n": 2000
+       },
+       "ep476": {
+        "name": 0.8785,
+        "all": 0.837,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 0.8785,
+         "none": 0.1215
+        },
+        "n": 2000
+       }
+      },
+      "pooled": {
+       "name": 0.9184166666666665,
+       "all": 0.7945833333333333,
+       "used": 8.0,
+       "null_none": 0.9844166666666667,
+       "episodes": 6,
+       "hard": {
+        "named": 0.9331666666666667,
+        "none": 0.06683333333333333,
+        "wrong": 0.0,
+        "extra": 0.0
+       }
+      },
+      "by_kind": {
+       "trap": {
+        "name": 0.9393333333333334,
+        "all": 0.8690000000000001,
+        "used": 8.0,
+        "null_none": 0.9906666666666667,
+        "episodes": 3,
+        "hard": {
+         "named": 0.9483333333333334,
+         "none": 0.051666666666666666,
+         "wrong": 0.0,
+         "extra": 0.0
+        }
+       },
+       "two-part": {
+        "name": 0.8975,
+        "all": 0.7201666666666666,
+        "used": 8.0,
+        "null_none": 0.9781666666666666,
+        "episodes": 3,
+        "hard": {
+         "named": 0.918,
+         "none": 0.082,
+         "wrong": 0.0,
+         "extra": 0.0
+        }
+       }
+      }
+     },
+     "16": {
+      "per_episode": {
+       "ep411": {
+        "name": 0.954,
+        "all": 0.954,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 0.954,
+         "none": 0.046
+        },
+        "n": 2000
+       },
+       "ep413": {
+        "name": 1.0,
+        "all": 1.0,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 1.0
+        },
+        "n": 2000
+       },
+       "ep415": {
+        "name": 1.0,
+        "all": 0.8965,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 1.0
+        },
+        "n": 2000
+       },
+       "ep472": {
+        "name": 1.0,
+        "all": 0.804,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 1.0
+        },
+        "n": 2000
+       },
+       "ep474": {
+        "name": 0.9795,
+        "all": 0.965,
+        "used": 16.0,
+        "null_none": 0.9865,
+        "hard": {
+         "named": 0.993,
+         "none": 0.007
+        },
+        "n": 2000
+       },
+       "ep476": {
+        "name": 0.9825,
+        "all": 0.965,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 0.9825,
+         "none": 0.0175
+        },
+        "n": 2000
+       }
+      },
+      "pooled": {
+       "name": 0.9859999999999999,
+       "all": 0.9307499999999999,
+       "used": 16.0,
+       "null_none": 0.99775,
+       "episodes": 6,
+       "hard": {
+        "named": 0.98825,
+        "none": 0.011750000000000002,
+        "wrong": 0.0,
+        "extra": 0.0
+       }
+      },
+      "by_kind": {
+       "trap": {
+        "name": 0.9846666666666666,
+        "all": 0.9501666666666666,
+        "used": 16.0,
+        "null_none": 1.0,
+        "episodes": 3,
+        "hard": {
+         "named": 0.9846666666666666,
+         "none": 0.015333333333333332,
+         "wrong": 0.0,
+         "extra": 0.0
+        }
+       },
+       "two-part": {
+        "name": 0.9873333333333334,
+        "all": 0.9113333333333333,
+        "used": 16.0,
+        "null_none": 0.9954999999999999,
+        "episodes": 3,
+        "hard": {
+         "named": 0.9918333333333332,
+         "none": 0.008166666666666668,
+         "wrong": 0.0,
+         "extra": 0.0
+        }
+       }
+      }
+     }
+    },
+    "complement_none": {
+     "8": {
+      "per_episode": {
+       "ep411": {
+        "name": 0.4635,
+        "all": 0.4635,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 0.4635,
+         "none": 0.5365
+        },
+        "n": 2000
+       },
+       "ep413": {
+        "name": 0.47,
+        "all": 0.47,
+        "used": 8.0,
+        "null_none": 0.993,
+        "hard": {
+         "extra": 0.144,
+         "named": 0.47,
+         "none": 0.0805,
+         "wrong": 0.3055
+        },
+        "n": 2000
+       },
+       "ep415": {
+        "name": 0.819,
+        "all": 0.7525,
+        "used": 8.0,
+        "null_none": 0.9875,
+        "hard": {
+         "extra": 0.1405,
+         "named": 0.8315,
+         "wrong": 0.028
+        },
+        "n": 2000
+       },
+       "ep472": {
+        "name": 0.967,
+        "all": 0.2825,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 0.967,
+         "none": 0.033
+        },
+        "n": 2000
+       },
+       "ep474": {
+        "name": 0.6235,
+        "all": 0.561,
+        "used": 8.0,
+        "null_none": 0.8345,
+        "hard": {
+         "extra": 0.166,
+         "named": 0.789,
+         "none": 0.045
+        },
+        "n": 2000
+       },
+       "ep476": {
+        "name": 0.812,
+        "all": 0.3975,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.112,
+         "named": 0.812,
+         "none": 0.076
+        },
+        "n": 2000
+       }
+      },
+      "pooled": {
+       "name": 0.6925,
+       "all": 0.48783333333333334,
+       "used": 8.0,
+       "null_none": 0.9691666666666667,
+       "episodes": 6,
+       "hard": {
+        "named": 0.7221666666666667,
+        "none": 0.1285,
+        "wrong": 0.05558333333333334,
+        "extra": 0.09375
+       }
+      },
+      "by_kind": {
+       "trap": {
+        "name": 0.5841666666666666,
+        "all": 0.5619999999999999,
+        "used": 8.0,
+        "null_none": 0.9935,
+        "episodes": 3,
+        "hard": {
+         "named": 0.5883333333333334,
+         "none": 0.20566666666666666,
+         "wrong": 0.11116666666666668,
+         "extra": 0.09483333333333333
+        }
+       },
+       "two-part": {
+        "name": 0.8008333333333333,
+        "all": 0.4136666666666667,
+        "used": 8.0,
+        "null_none": 0.9448333333333334,
+        "episodes": 3,
+        "hard": {
+         "named": 0.856,
+         "none": 0.051333333333333335,
+         "wrong": 0.0,
+         "extra": 0.09266666666666667
+        }
+       }
+      }
+     },
+     "16": {
+      "per_episode": {
+       "ep411": {
+        "name": 0.4445,
+        "all": 0.4445,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 0.4445,
+         "none": 0.5555
+        },
+        "n": 2000
+       },
+       "ep413": {
+        "name": 0.671,
+        "all": 0.671,
+        "used": 16.0,
+        "null_none": 0.9985,
+        "hard": {
+         "extra": 0.052,
+         "named": 0.671,
+         "none": 0.009,
+         "wrong": 0.268
+        },
+        "n": 2000
+       },
+       "ep415": {
+        "name": 0.9765,
+        "all": 0.941,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.0235,
+         "named": 0.9765
+        },
+        "n": 2000
+       },
+       "ep472": {
+        "name": 1.0,
+        "all": 0.669,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 1.0
+        },
+        "n": 2000
+       },
+       "ep474": {
+        "name": 0.868,
+        "all": 0.8595,
+        "used": 16.0,
+        "null_none": 0.97,
+        "hard": {
+         "extra": 0.09,
+         "named": 0.898,
+         "none": 0.012
+        },
+        "n": 2000
+       },
+       "ep476": {
+        "name": 0.8735,
+        "all": 0.6295,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.115,
+         "named": 0.8735,
+         "none": 0.0115
+        },
+        "n": 2000
+       }
+      },
+      "pooled": {
+       "name": 0.8055833333333333,
+       "all": 0.7024166666666667,
+       "used": 16.0,
+       "null_none": 0.9947499999999999,
+       "episodes": 6,
+       "hard": {
+        "named": 0.8105833333333333,
+        "none": 0.09799999999999999,
+        "wrong": 0.04466666666666667,
+        "extra": 0.04674999999999999
+       }
+      },
+      "by_kind": {
+       "trap": {
+        "name": 0.6973333333333334,
+        "all": 0.6854999999999999,
+        "used": 16.0,
+        "null_none": 0.9994999999999999,
+        "episodes": 3,
+        "hard": {
+         "named": 0.6973333333333334,
+         "none": 0.18816666666666668,
+         "wrong": 0.08933333333333333,
+         "extra": 0.025166666666666667
+        }
+       },
+       "two-part": {
+        "name": 0.9138333333333333,
+        "all": 0.7193333333333335,
+        "used": 16.0,
+        "null_none": 0.9899999999999999,
+        "episodes": 3,
+        "hard": {
+         "named": 0.9238333333333334,
+         "none": 0.007833333333333333,
+         "wrong": 0.0,
+         "extra": 0.06833333333333334
+        }
+       }
+      }
+     }
+    },
+    "complement_guess": {
+     "8": {
+      "per_episode": {
+       "ep411": {
+        "name": 0.4635,
+        "all": 0.4635,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 0.4635,
+         "none": 0.5365
+        },
+        "n": 2000
+       },
+       "ep413": {
+        "name": 0.47,
+        "all": 0.47,
+        "used": 8.0,
+        "null_none": 0.9085,
+        "hard": {
+         "extra": 0.148,
+         "named": 0.47,
+         "none": 0.0805,
+         "wrong": 0.3015
+        },
+        "n": 2000
+       },
+       "ep415": {
+        "name": 0.819,
+        "all": 0.7525,
+        "used": 8.0,
+        "null_none": 0.9875,
+        "hard": {
+         "extra": 0.1405,
+         "named": 0.8315,
+         "wrong": 0.028
+        },
+        "n": 2000
+       },
+       "ep472": {
+        "name": 0.967,
+        "all": 0.2825,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 0.967,
+         "none": 0.033
+        },
+        "n": 2000
+       },
+       "ep474": {
+        "name": 0.6235,
+        "all": 0.561,
+        "used": 8.0,
+        "null_none": 0.8175,
+        "hard": {
+         "extra": 0.1875,
+         "named": 0.7675,
+         "none": 0.045
+        },
+        "n": 2000
+       },
+       "ep476": {
+        "name": 0.7905,
+        "all": 0.3975,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.1335,
+         "named": 0.7905,
+         "none": 0.076
+        },
+        "n": 2000
+       }
+      },
+      "pooled": {
+       "name": 0.6889166666666666,
+       "all": 0.48783333333333334,
+       "used": 8.0,
+       "null_none": 0.9522499999999999,
+       "episodes": 6,
+       "hard": {
+        "named": 0.715,
+        "none": 0.1285,
+        "wrong": 0.05491666666666667,
+        "extra": 0.10158333333333332
+       }
+      },
+      "by_kind": {
+       "trap": {
+        "name": 0.5841666666666666,
+        "all": 0.5619999999999999,
+        "used": 8.0,
+        "null_none": 0.9653333333333333,
+        "episodes": 3,
+        "hard": {
+         "named": 0.5883333333333334,
+         "none": 0.20566666666666666,
+         "wrong": 0.10983333333333334,
+         "extra": 0.09616666666666666
+        }
+       },
+       "two-part": {
+        "name": 0.7936666666666667,
+        "all": 0.4136666666666667,
+        "used": 8.0,
+        "null_none": 0.9391666666666666,
+        "episodes": 3,
+        "hard": {
+         "named": 0.8416666666666667,
+         "none": 0.051333333333333335,
+         "wrong": 0.0,
+         "extra": 0.107
+        }
+       }
+      }
+     },
+     "16": {
+      "per_episode": {
+       "ep411": {
+        "name": 0.4445,
+        "all": 0.4445,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 0.4445,
+         "none": 0.5555
+        },
+        "n": 2000
+       },
+       "ep413": {
+        "name": 0.671,
+        "all": 0.671,
+        "used": 16.0,
+        "null_none": 0.9645,
+        "hard": {
+         "extra": 0.052,
+         "named": 0.671,
+         "none": 0.009,
+         "wrong": 0.268
+        },
+        "n": 2000
+       },
+       "ep415": {
+        "name": 0.9765,
+        "all": 0.941,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.0235,
+         "named": 0.9765
+        },
+        "n": 2000
+       },
+       "ep472": {
+        "name": 1.0,
+        "all": 0.669,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 1.0
+        },
+        "n": 2000
+       },
+       "ep474": {
+        "name": 0.868,
+        "all": 0.8595,
+        "used": 16.0,
+        "null_none": 0.969,
+        "hard": {
+         "extra": 0.092,
+         "named": 0.896,
+         "none": 0.012
+        },
+        "n": 2000
+       },
+       "ep476": {
+        "name": 0.86,
+        "all": 0.6295,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.1285,
+         "named": 0.86,
+         "none": 0.0115
+        },
+        "n": 2000
+       }
+      },
+      "pooled": {
+       "name": 0.8033333333333333,
+       "all": 0.7024166666666667,
+       "used": 16.0,
+       "null_none": 0.9889166666666668,
+       "episodes": 6,
+       "hard": {
+        "named": 0.8079999999999999,
+        "none": 0.09799999999999999,
+        "wrong": 0.04466666666666667,
+        "extra": 0.04933333333333333
+       }
+      },
+      "by_kind": {
+       "trap": {
+        "name": 0.6973333333333334,
+        "all": 0.6854999999999999,
+        "used": 16.0,
+        "null_none": 0.9881666666666667,
+        "episodes": 3,
+        "hard": {
+         "named": 0.6973333333333334,
+         "none": 0.18816666666666668,
+         "wrong": 0.08933333333333333,
+         "extra": 0.025166666666666667
+        }
+       },
+       "two-part": {
+        "name": 0.9093333333333332,
+        "all": 0.7193333333333335,
+        "used": 16.0,
+        "null_none": 0.9896666666666666,
+        "episodes": 3,
+        "hard": {
+         "named": 0.9186666666666666,
+         "none": 0.007833333333333333,
+         "wrong": 0.0,
+         "extra": 0.0735
+        }
+       }
+      }
+     }
+    },
+    "complement_rand_none": {
+     "8": {
+      "per_episode": {
+       "ep411": {
+        "name": 0.45,
+        "all": 0.45,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 0.45,
+         "none": 0.5385,
+         "wrong": 0.0115
+        },
+        "n": 2000
+       },
+       "ep413": {
+        "name": 0.617,
+        "all": 0.617,
+        "used": 8.0,
+        "null_none": 0.9905,
+        "hard": {
+         "extra": 0.166,
+         "named": 0.617,
+         "none": 0.0615,
+         "wrong": 0.1555
+        },
+        "n": 2000
+       },
+       "ep415": {
+        "name": 0.7885,
+        "all": 0.78,
+        "used": 8.0,
+        "null_none": 0.998,
+        "hard": {
+         "extra": 0.1495,
+         "named": 0.7905,
+         "wrong": 0.06
+        },
+        "n": 2000
+       },
+       "ep472": {
+        "name": 0.9605,
+        "all": 0.2785,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 0.9605,
+         "none": 0.0395
+        },
+        "n": 2000
+       },
+       "ep474": {
+        "name": 0.6,
+        "all": 0.535,
+        "used": 8.0,
+        "null_none": 0.8405,
+        "hard": {
+         "extra": 0.17,
+         "named": 0.7595,
+         "none": 0.0705
+        },
+        "n": 2000
+       },
+       "ep476": {
+        "name": 0.821,
+        "all": 0.3835,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.109,
+         "named": 0.821,
+         "none": 0.07
+        },
+        "n": 2000
+       }
+      },
+      "pooled": {
+       "name": 0.7061666666666667,
+       "all": 0.5073333333333334,
+       "used": 8.0,
+       "null_none": 0.9715000000000001,
+       "episodes": 6,
+       "hard": {
+        "named": 0.7330833333333334,
+        "none": 0.13,
+        "wrong": 0.03783333333333334,
+        "extra": 0.09908333333333334
+       }
+      },
+      "by_kind": {
+       "trap": {
+        "name": 0.6184999999999999,
+        "all": 0.6156666666666667,
+        "used": 8.0,
+        "null_none": 0.9961666666666668,
+        "episodes": 3,
+        "hard": {
+         "named": 0.6191666666666666,
+         "none": 0.19999999999999998,
+         "wrong": 0.07566666666666667,
+         "extra": 0.10516666666666667
+        }
+       },
+       "two-part": {
+        "name": 0.7938333333333333,
+        "all": 0.399,
+        "used": 8.0,
+        "null_none": 0.9468333333333333,
+        "episodes": 3,
+        "hard": {
+         "named": 0.847,
+         "none": 0.06,
+         "wrong": 0.0,
+         "extra": 0.09300000000000001
+        }
+       }
+      }
+     },
+     "16": {
+      "per_episode": {
+       "ep411": {
+        "name": 0.439,
+        "all": 0.439,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 0.439,
+         "none": 0.561
+        },
+        "n": 2000
+       },
+       "ep413": {
+        "name": 0.8705,
+        "all": 0.8705,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.0525,
+         "named": 0.8705,
+         "none": 0.013,
+         "wrong": 0.064
+        },
+        "n": 2000
+       },
+       "ep415": {
+        "name": 0.96,
+        "all": 0.9555,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.0305,
+         "named": 0.96,
+         "wrong": 0.0095
+        },
+        "n": 2000
+       },
+       "ep472": {
+        "name": 1.0,
+        "all": 0.6875,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 1.0
+        },
+        "n": 2000
+       },
+       "ep474": {
+        "name": 0.8745,
+        "all": 0.86,
+        "used": 16.0,
+        "null_none": 0.9695,
+        "hard": {
+         "extra": 0.0885,
+         "named": 0.905,
+         "none": 0.0065
+        },
+        "n": 2000
+       },
+       "ep476": {
+        "name": 0.878,
+        "all": 0.6195,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.1135,
+         "named": 0.878,
+         "none": 0.0085
+        },
+        "n": 2000
+       }
+      },
+      "pooled": {
+       "name": 0.8370000000000001,
+       "all": 0.7386666666666667,
+       "used": 16.0,
+       "null_none": 0.9949166666666667,
+       "episodes": 6,
+       "hard": {
+        "named": 0.8420833333333334,
+        "none": 0.09816666666666667,
+        "wrong": 0.012249999999999999,
+        "extra": 0.047499999999999994
+       }
+      },
+      "by_kind": {
+       "trap": {
+        "name": 0.7565,
+        "all": 0.755,
+        "used": 16.0,
+        "null_none": 1.0,
+        "episodes": 3,
+        "hard": {
+         "named": 0.7565,
+         "none": 0.19133333333333336,
+         "wrong": 0.024499999999999997,
+         "extra": 0.027666666666666662
+        }
+       },
+       "two-part": {
+        "name": 0.9175,
+        "all": 0.7223333333333333,
+        "used": 16.0,
+        "null_none": 0.9898333333333333,
+        "episodes": 3,
+        "hard": {
+         "named": 0.9276666666666666,
+         "none": 0.005,
+         "wrong": 0.0,
+         "extra": 0.06733333333333334
+        }
+       }
+      }
+     }
+    },
+    "complement_rand_guess": {
+     "8": {
+      "per_episode": {
+       "ep411": {
+        "name": 0.45,
+        "all": 0.45,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 0.45,
+         "none": 0.5385,
+         "wrong": 0.0115
+        },
+        "n": 2000
+       },
+       "ep413": {
+        "name": 0.617,
+        "all": 0.617,
+        "used": 8.0,
+        "null_none": 0.919,
+        "hard": {
+         "extra": 0.166,
+         "named": 0.617,
+         "none": 0.0615,
+         "wrong": 0.1555
+        },
+        "n": 2000
+       },
+       "ep415": {
+        "name": 0.7885,
+        "all": 0.78,
+        "used": 8.0,
+        "null_none": 0.998,
+        "hard": {
+         "extra": 0.1495,
+         "named": 0.7905,
+         "wrong": 0.06
+        },
+        "n": 2000
+       },
+       "ep472": {
+        "name": 0.9605,
+        "all": 0.2785,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 0.9605,
+         "none": 0.0395
+        },
+        "n": 2000
+       },
+       "ep474": {
+        "name": 0.6,
+        "all": 0.535,
+        "used": 8.0,
+        "null_none": 0.83,
+        "hard": {
+         "extra": 0.1905,
+         "named": 0.739,
+         "none": 0.0705
+        },
+        "n": 2000
+       },
+       "ep476": {
+        "name": 0.799,
+        "all": 0.3835,
+        "used": 8.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.131,
+         "named": 0.799,
+         "none": 0.07
+        },
+        "n": 2000
+       }
+      },
+      "pooled": {
+       "name": 0.7025,
+       "all": 0.5073333333333334,
+       "used": 8.0,
+       "null_none": 0.9578333333333333,
+       "episodes": 6,
+       "hard": {
+        "named": 0.726,
+        "none": 0.13,
+        "wrong": 0.03783333333333334,
+        "extra": 0.10616666666666667
+       }
+      },
+      "by_kind": {
+       "trap": {
+        "name": 0.6184999999999999,
+        "all": 0.6156666666666667,
+        "used": 8.0,
+        "null_none": 0.9723333333333333,
+        "episodes": 3,
+        "hard": {
+         "named": 0.6191666666666666,
+         "none": 0.19999999999999998,
+         "wrong": 0.07566666666666667,
+         "extra": 0.10516666666666667
+        }
+       },
+       "two-part": {
+        "name": 0.7865000000000001,
+        "all": 0.399,
+        "used": 8.0,
+        "null_none": 0.9433333333333334,
+        "episodes": 3,
+        "hard": {
+         "named": 0.8328333333333333,
+         "none": 0.06,
+         "wrong": 0.0,
+         "extra": 0.10716666666666667
+        }
+       }
+      }
+     },
+     "16": {
+      "per_episode": {
+       "ep411": {
+        "name": 0.439,
+        "all": 0.439,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 0.439,
+         "none": 0.561
+        },
+        "n": 2000
+       },
+       "ep413": {
+        "name": 0.8705,
+        "all": 0.8705,
+        "used": 16.0,
+        "null_none": 0.968,
+        "hard": {
+         "extra": 0.0525,
+         "named": 0.8705,
+         "none": 0.013,
+         "wrong": 0.064
+        },
+        "n": 2000
+       },
+       "ep415": {
+        "name": 0.96,
+        "all": 0.9555,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.0305,
+         "named": 0.96,
+         "wrong": 0.0095
+        },
+        "n": 2000
+       },
+       "ep472": {
+        "name": 1.0,
+        "all": 0.6875,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "named": 1.0
+        },
+        "n": 2000
+       },
+       "ep474": {
+        "name": 0.8745,
+        "all": 0.86,
+        "used": 16.0,
+        "null_none": 0.9695,
+        "hard": {
+         "extra": 0.0915,
+         "named": 0.902,
+         "none": 0.0065
+        },
+        "n": 2000
+       },
+       "ep476": {
+        "name": 0.868,
+        "all": 0.6195,
+        "used": 16.0,
+        "null_none": 1.0,
+        "hard": {
+         "extra": 0.1235,
+         "named": 0.868,
+         "none": 0.0085
+        },
+        "n": 2000
+       }
+      },
+      "pooled": {
+       "name": 0.8353333333333334,
+       "all": 0.7386666666666667,
+       "used": 16.0,
+       "null_none": 0.9895833333333334,
+       "episodes": 6,
+       "hard": {
+        "named": 0.8399166666666668,
+        "none": 0.09816666666666667,
+        "wrong": 0.012249999999999999,
+        "extra": 0.049666666666666665
+       }
+      },
+      "by_kind": {
+       "trap": {
+        "name": 0.7565,
+        "all": 0.755,
+        "used": 16.0,
+        "null_none": 0.9893333333333333,
+        "episodes": 3,
+        "hard": {
+         "named": 0.7565,
+         "none": 0.19133333333333336,
+         "wrong": 0.024499999999999997,
+         "extra": 0.027666666666666662
+        }
+       },
+       "two-part": {
+        "name": 0.9141666666666667,
+        "all": 0.7223333333333333,
+        "used": 16.0,
+        "null_none": 0.9898333333333333,
+        "episodes": 3,
+        "hard": {
+         "named": 0.9233333333333333,
+         "none": 0.005,
+         "wrong": 0.0,
+         "extra": 0.07166666666666667
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ },
+ "rank_table": {
+  "2": {
+   "episodes": 3,
+   "prefix2": 0.969,
+   "complement_none": 0.5768333333333334,
+   "complement_guess": 0.5768333333333334,
+   "proxy_only": 0.0,
+   "prefix1": 0.0
+  }
+ },
+ "placement": {
+  "traps, B = 8, additive back-end, topic unit": {
+   "ranks": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+   ],
+   "episodes": 3,
+   "name": {
+    "prefix2": {
+     "2": 0.9703333333333334,
+     "3": 0.0,
+     "4": 0.0,
+     "5": 0.0,
+     "6": 0.0,
+     "7": 0.0,
+     "8": 0.0
+    },
+    "complement_none": {
+     "2": 0.5790000000000001,
+     "3": 0.5396666666666666,
+     "4": 0.5086666666666666,
+     "5": 0.5053333333333333,
+     "6": 0.5066666666666667,
+     "7": 0.43366666666666664,
+     "8": 0.4363333333333333
+    },
+    "complement_guess": {
+     "2": 0.5790000000000001,
+     "3": 0.5396666666666666,
+     "4": 0.5086666666666666,
+     "5": 0.5053333333333333,
+     "6": 0.5066666666666667,
+     "7": 0.43366666666666664,
+     "8": 0.4363333333333333
+    }
+   }
+  },
+  "traps, B = 8, exact back-end, topic unit": {
+   "ranks": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+   ],
+   "episodes": 3,
+   "name": {
+    "prefix2": {
+     "2": 0.9591666666666666,
+     "3": 0.0,
+     "4": 0.0,
+     "5": 0.0,
+     "6": 0.0,
+     "7": 0.0,
+     "8": 0.0
+    },
+    "complement_none": {
+     "2": 0.5578333333333334,
+     "3": 0.5291666666666667,
+     "4": 0.48433333333333334,
+     "5": 0.5501666666666667,
+     "6": 0.5435,
+     "7": 0.4668333333333334,
+     "8": 0.461
+    },
+    "complement_guess": {
+     "2": 0.5578333333333334,
+     "3": 0.5291666666666667,
+     "4": 0.48433333333333334,
+     "5": 0.5501666666666667,
+     "6": 0.5435,
+     "7": 0.4668333333333334,
+     "8": 0.461
+    }
+   }
+  }
+ },
+ "grader_check": {
+  "checked": 183,
+  "agree": 183
+ },
+ "main_rank_counts": {
+  "2": 3
+ },
+ "row_labels": {
+  "proxy_only": "SAE only, no exact query",
+  "prefix1": "rank prefix, width 1 (SAE rank 1 on every probe)",
+  "prefix2": "rank prefix, width 2 (SAE ranks 1 and 2 on every probe)",
+  "complement_none": "complement screen + search in SAE order; unfinished -> none",
+  "complement_guess": "complement screen + search in SAE order; unfinished -> guess",
+  "complement_rand_none": "complement screen + search in random order; unfinished -> none",
+  "complement_rand_guess": "complement screen + search in random order; unfinished -> guess"
+ },
+ "extra_base_max_abs_units": 0.0072224031598726625
+}

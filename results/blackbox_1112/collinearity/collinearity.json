@@ -1,0 +1,785 @@
+{
+ "episodes": [
+  "ep411",
+  "ep413",
+  "ep415",
+  "ep472",
+  "ep474",
+  "ep476"
+ ],
+ "summary": {
+  "n_samples": 24,
+  "n_episodes": 6,
+  "notes_per_sample": [
+   128
+  ],
+  "label1_per_sample": [
+   64
+  ],
+  "aligned_per_sample": [
+   8
+  ],
+  "samples_all_aligned_exact_detectors": 24,
+  "samples_all_aligned_exact_generator_flags": 24,
+  "aligned_properties_exact": 192,
+  "aligned_properties_total": 192,
+  "samples_rerender_texts_identical": 24,
+  "samples_detector_flags_equal_generator_flags": 24,
+  "nonaligned_properties_exact": 0,
+  "nonaligned_properties_total": 168,
+  "all_ok": true,
+  "by_substrate": {
+   "ft": {
+    "n_samples": 12,
+    "nonaligned_max_abs_corr_range": [
+     0.5533,
+     0.6742
+    ],
+    "top_nonaligned_property_counts": {
+     "signoff_excl": 8,
+     "postscript": 4
+    },
+    "unstructured_nonaligned_abs_corr_max": 0.2659,
+    "structural": {
+     "postscript": {
+      "role": "parent of an aligned child",
+      "n_samples": 12,
+      "abs_corr_range": [
+       0.517,
+       0.6498
+      ],
+      "p_on_in_richer_class_range": [
+       1.0,
+       1.0
+      ],
+      "p_on_in_other_class_range": [
+       0.4062,
+       0.5781
+      ]
+     },
+     "signoff_excl": {
+      "role": "child of an aligned parent",
+      "n_samples": 12,
+      "abs_corr_range": [
+       0.4804,
+       0.6742
+      ],
+      "p_on_in_richer_class_range": [
+       0.375,
+       0.625
+      ],
+      "p_on_in_other_class_range": [
+       0.0,
+       0.0
+      ]
+     }
+    }
+   },
+   "tmpl": {
+    "n_samples": 12,
+    "nonaligned_max_abs_corr_range": [
+     0.0789,
+     0.2659
+    ],
+    "top_nonaligned_property_counts": {
+     "negative_sentiment": 3,
+     "british_spelling": 2,
+     "past_tense": 2,
+     "greeting": 1,
+     "postscript": 1,
+     "quote": 1,
+     "she_pronoun": 1,
+     "signoff": 1
+    },
+    "unstructured_nonaligned_abs_corr_max": 0.2659,
+    "structural": {}
+   }
+  }
+ },
+ "samples": [
+  {
+   "episode": "ep411",
+   "probe": 0,
+   "substrate": "tmpl",
+   "n": 128,
+   "n_label1": 64,
+   "n_aligned": 8,
+   "n_aligned_exact_detectors": 8,
+   "n_aligned_exact_either_sign": 8,
+   "n_aligned_exact_generator_flags": 8,
+   "aligned_not_exact": [],
+   "rerender_texts_identical": true,
+   "rerender_labels_identical": true,
+   "detector_flags_equal_generator_flags": true,
+   "n_nonaligned": 7,
+   "n_nonaligned_exact": 0,
+   "nonaligned_max_abs_corr": {
+    "property": "she_pronoun",
+    "abs_corr": 0.1876
+   },
+   "structural": {}
+  },
+  {
+   "episode": "ep411",
+   "probe": 1,
+   "substrate": "tmpl",
+   "n": 128,
+   "n_label1": 64,
+   "n_aligned": 8,
+   "n_aligned_exact_detectors": 8,
+   "n_aligned_exact_either_sign": 8,
+   "n_aligned_exact_generator_flags": 8,
+   "aligned_not_exact": [],
+   "rerender_texts_identical": true,
+   "rerender_labels_identical": true,
+   "detector_flags_equal_generator_flags": true,
+   "n_nonaligned": 7,
+   "n_nonaligned_exact": 0,
+   "nonaligned_max_abs_corr": {
+    "property": "signoff",
+    "abs_corr": 0.1724
+   },
+   "structural": {}
+  },
+  {
+   "episode": "ep411",
+   "probe": 2,
+   "substrate": "tmpl",
+   "n": 128,
+   "n_label1": 64,
+   "n_aligned": 8,
+   "n_aligned_exact_detectors": 8,
+   "n_aligned_exact_either_sign": 8,
+   "n_aligned_exact_generator_flags": 8,
+   "aligned_not_exact": [],
+   "rerender_texts_identical": true,
+   "rerender_labels_identical": true,
+   "detector_flags_equal_generator_flags": true,
+   "n_nonaligned": 7,
+   "n_nonaligned_exact": 0,
+   "nonaligned_max_abs_corr": {
+    "property": "negative_sentiment",
+    "abs_corr": 0.1566
+   },
+   "structural": {}
+  },
+  {
+   "episode": "ep411",
+   "probe": 3,
+   "substrate": "tmpl",
+   "n": 128,
+   "n_label1": 64,
+   "n_aligned": 8,
+   "n_aligned_exact_detectors": 8,
+   "n_aligned_exact_either_sign": 8,
+   "n_aligned_exact_generator_flags": 8,
+   "aligned_not_exact": [],
+   "rerender_texts_identical": true,
+   "rerender_labels_identical": true,
+   "detector_flags_equal_generator_flags": true,
+   "n_nonaligned": 7,
+   "n_nonaligned_exact": 0,
+   "nonaligned_max_abs_corr": {
+    "property": "postscript",
+    "abs_corr": 0.1408
+   },
+   "structural": {}
+  },
+  {
+   "episode": "ep413",
+   "probe": 0,
+   "substrate": "tmpl",
+   "n": 128,
+   "n_label1": 64,
+   "n_aligned": 8,
+   "n_aligned_exact_detectors": 8,
+   "n_aligned_exact_either_sign": 8,
+   "n_aligned_exact_generator_flags": 8,
+   "aligned_not_exact": [],
+   "rerender_texts_identical": true,
+   "rerender_labels_identical": true,
+   "detector_flags_equal_generator_flags": true,
+   "n_nonaligned": 7,
+   "n_nonaligned_exact": 0,
+   "nonaligned_max_abs_corr": {
+    "property": "british_spelling",
+    "abs_corr": 0.1252
+   },
+   "structural": {}
+  },
+  {
+   "episode": "ep413",
+   "probe": 1,
+   "substrate": "tmpl",
+   "n": 128,
+   "n_label1": 64,
+   "n_aligned": 8,
+   "n_aligned_exact_detectors": 8,
+   "n_aligned_exact_either_sign": 8,
+   "n_aligned_exact_generator_flags": 8,
+   "aligned_not_exact": [],
+   "rerender_texts_identical": true,
+   "rerender_labels_identical": true,
+   "detector_flags_equal_generator_flags": true,
+   "n_nonaligned": 7,
+   "n_nonaligned_exact": 0,
+   "nonaligned_max_abs_corr": {
+    "property": "quote",
+    "abs_corr": 0.0793
+   },
+   "structural": {}
+  },
+  {
+   "episode": "ep413",
+   "probe": 2,
+   "substrate": "tmpl",
+   "n": 128,
+   "n_label1": 64,
+   "n_aligned": 8,
+   "n_aligned_exact_detectors": 8,
+   "n_aligned_exact_either_sign": 8,
+   "n_aligned_exact_generator_flags": 8,
+   "aligned_not_exact": [],
+   "rerender_texts_identical": true,
+   "rerender_labels_identical": true,
+   "detector_flags_equal_generator_flags": true,
+   "n_nonaligned": 7,
+   "n_nonaligned_exact": 0,
+   "nonaligned_max_abs_corr": {
+    "property": "greeting",
+    "abs_corr": 0.1447
+   },
+   "structural": {}
+  },
+  {
+   "episode": "ep413",
+   "probe": 3,
+   "substrate": "tmpl",
+   "n": 128,
+   "n_label1": 64,
+   "n_aligned": 8,
+   "n_aligned_exact_detectors": 8,
+   "n_aligned_exact_either_sign": 8,
+   "n_aligned_exact_generator_flags": 8,
+   "aligned_not_exact": [],
+   "rerender_texts_identical": true,
+   "rerender_labels_identical": true,
+   "detector_flags_equal_generator_flags": true,
+   "n_nonaligned": 7,
+   "n_nonaligned_exact": 0,
+   "nonaligned_max_abs_corr": {
+    "property": "negative_sentiment",
+    "abs_corr": 0.0938
+   },
+   "structural": {}
+  },
+  {
+   "episode": "ep415",
+   "probe": 0,
+   "substrate": "tmpl",
+   "n": 128,
+   "n_label1": 64,
+   "n_aligned": 8,
+   "n_aligned_exact_detectors": 8,
+   "n_aligned_exact_either_sign": 8,
+   "n_aligned_exact_generator_flags": 8,
+   "aligned_not_exact": [],
+   "rerender_texts_identical": true,
+   "rerender_labels_identical": true,
+   "detector_flags_equal_generator_flags": true,
+   "n_nonaligned": 7,
+   "n_nonaligned_exact": 0,
+   "nonaligned_max_abs_corr": {
+    "property": "british_spelling",
+    "abs_corr": 0.0939
+   },
+   "structural": {}
+  },
+  {
+   "episode": "ep415",
+   "probe": 1,
+   "substrate": "tmpl",
+   "n": 128,
+   "n_label1": 64,
+   "n_aligned": 8,
+   "n_aligned_exact_detectors": 8,
+   "n_aligned_exact_either_sign": 8,
+   "n_aligned_exact_generator_flags": 8,
+   "aligned_not_exact": [],
+   "rerender_texts_identical": true,
+   "rerender_labels_identical": true,
+   "detector_flags_equal_generator_flags": true,
+   "n_nonaligned": 7,
+   "n_nonaligned_exact": 0,
+   "nonaligned_max_abs_corr": {
+    "property": "negative_sentiment",
+    "abs_corr": 0.0789
+   },
+   "structural": {}
+  },
+  {
+   "episode": "ep415",
+   "probe": 2,
+   "substrate": "tmpl",
+   "n": 128,
+   "n_label1": 64,
+   "n_aligned": 8,
+   "n_aligned_exact_detectors": 8,
+   "n_aligned_exact_either_sign": 8,
+   "n_aligned_exact_generator_flags": 8,
+   "aligned_not_exact": [],
+   "rerender_texts_identical": true,
+   "rerender_labels_identical": true,
+   "detector_flags_equal_generator_flags": true,
+   "n_nonaligned": 7,
+   "n_nonaligned_exact": 0,
+   "nonaligned_max_abs_corr": {
+    "property": "past_tense",
+    "abs_corr": 0.2659
+   },
+   "structural": {}
+  },
+  {
+   "episode": "ep415",
+   "probe": 3,
+   "substrate": "tmpl",
+   "n": 128,
+   "n_label1": 64,
+   "n_aligned": 8,
+   "n_aligned_exact_detectors": 8,
+   "n_aligned_exact_either_sign": 8,
+   "n_aligned_exact_generator_flags": 8,
+   "aligned_not_exact": [],
+   "rerender_texts_identical": true,
+   "rerender_labels_identical": true,
+   "detector_flags_equal_generator_flags": true,
+   "n_nonaligned": 7,
+   "n_nonaligned_exact": 0,
+   "nonaligned_max_abs_corr": {
+    "property": "past_tense",
+    "abs_corr": 0.1879
+   },
+   "structural": {}
+  },
+  {
+   "episode": "ep472",
+   "probe": 0,
+   "substrate": "ft",
+   "n": 128,
+   "n_label1": 64,
+   "n_aligned": 8,
+   "n_aligned_exact_detectors": 8,
+   "n_aligned_exact_either_sign": 8,
+   "n_aligned_exact_generator_flags": 8,
+   "aligned_not_exact": [],
+   "rerender_texts_identical": true,
+   "rerender_labels_identical": true,
+   "detector_flags_equal_generator_flags": true,
+   "n_nonaligned": 7,
+   "n_nonaligned_exact": 0,
+   "nonaligned_max_abs_corr": {
+    "property": "postscript",
+    "abs_corr": 0.6498
+   },
+   "structural": {
+    "signoff_excl": {
+     "role": "child of an aligned parent",
+     "abs_corr": 0.6255,
+     "p_on_label1": 0.0,
+     "p_on_label0": 0.5625
+    },
+    "postscript": {
+     "role": "parent of an aligned child",
+     "abs_corr": 0.6498,
+     "p_on_label1": 0.4062,
+     "p_on_label0": 1.0
+    }
+   }
+  },
+  {
+   "episode": "ep472",
+   "probe": 1,
+   "substrate": "ft",
+   "n": 128,
+   "n_label1": 64,
+   "n_aligned": 8,
+   "n_aligned_exact_detectors": 8,
+   "n_aligned_exact_either_sign": 8,
+   "n_aligned_exact_generator_flags": 8,
+   "aligned_not_exact": [],
+   "rerender_texts_identical": true,
+   "rerender_labels_identical": true,
+   "detector_flags_equal_generator_flags": true,
+   "n_nonaligned": 7,
+   "n_nonaligned_exact": 0,
+   "nonaligned_max_abs_corr": {
+    "property": "signoff_excl",
+    "abs_corr": 0.5533
+   },
+   "structural": {
+    "signoff_excl": {
+     "role": "child of an aligned parent",
+     "abs_corr": 0.5533,
+     "p_on_label1": 0.4688,
+     "p_on_label0": 0.0
+    },
+    "postscript": {
+     "role": "parent of an aligned child",
+     "abs_corr": 0.517,
+     "p_on_label1": 1.0,
+     "p_on_label0": 0.5781
+    }
+   }
+  },
+  {
+   "episode": "ep472",
+   "probe": 2,
+   "substrate": "ft",
+   "n": 128,
+   "n_label1": 64,
+   "n_aligned": 8,
+   "n_aligned_exact_detectors": 8,
+   "n_aligned_exact_either_sign": 8,
+   "n_aligned_exact_generator_flags": 8,
+   "aligned_not_exact": [],
+   "rerender_texts_identical": true,
+   "rerender_labels_identical": true,
+   "detector_flags_equal_generator_flags": true,
+   "n_nonaligned": 7,
+   "n_nonaligned_exact": 0,
+   "nonaligned_max_abs_corr": {
+    "property": "signoff_excl",
+    "abs_corr": 0.6376
+   },
+   "structural": {
+    "signoff_excl": {
+     "role": "child of an aligned parent",
+     "abs_corr": 0.6376,
+     "p_on_label1": 0.0,
+     "p_on_label0": 0.5781
+    },
+    "postscript": {
+     "role": "parent of an aligned child",
+     "abs_corr": 0.6014,
+     "p_on_label1": 0.4688,
+     "p_on_label0": 1.0
+    }
+   }
+  },
+  {
+   "episode": "ep472",
+   "probe": 3,
+   "substrate": "ft",
+   "n": 128,
+   "n_label1": 64,
+   "n_aligned": 8,
+   "n_aligned_exact_detectors": 8,
+   "n_aligned_exact_either_sign": 8,
+   "n_aligned_exact_generator_flags": 8,
+   "aligned_not_exact": [],
+   "rerender_texts_identical": true,
+   "rerender_labels_identical": true,
+   "detector_flags_equal_generator_flags": true,
+   "n_nonaligned": 7,
+   "n_nonaligned_exact": 0,
+   "nonaligned_max_abs_corr": {
+    "property": "signoff_excl",
+    "abs_corr": 0.5653
+   },
+   "structural": {
+    "signoff_excl": {
+     "role": "child of an aligned parent",
+     "abs_corr": 0.5653,
+     "p_on_label1": 0.0,
+     "p_on_label0": 0.4844
+    },
+    "postscript": {
+     "role": "parent of an aligned child",
+     "abs_corr": 0.5292,
+     "p_on_label1": 0.5625,
+     "p_on_label0": 1.0
+    }
+   }
+  },
+  {
+   "episode": "ep474",
+   "probe": 0,
+   "substrate": "ft",
+   "n": 128,
+   "n_label1": 64,
+   "n_aligned": 8,
+   "n_aligned_exact_detectors": 8,
+   "n_aligned_exact_either_sign": 8,
+   "n_aligned_exact_generator_flags": 8,
+   "aligned_not_exact": [],
+   "rerender_texts_identical": true,
+   "rerender_labels_identical": true,
+   "detector_flags_equal_generator_flags": true,
+   "n_nonaligned": 7,
+   "n_nonaligned_exact": 0,
+   "nonaligned_max_abs_corr": {
+    "property": "signoff_excl",
+    "abs_corr": 0.6255
+   },
+   "structural": {
+    "signoff_excl": {
+     "role": "child of an aligned parent",
+     "abs_corr": 0.6255,
+     "p_on_label1": 0.5625,
+     "p_on_label0": 0.0
+    },
+    "postscript": {
+     "role": "parent of an aligned child",
+     "abs_corr": 0.5653,
+     "p_on_label1": 0.5156,
+     "p_on_label0": 1.0
+    }
+   }
+  },
+  {
+   "episode": "ep474",
+   "probe": 1,
+   "substrate": "ft",
+   "n": 128,
+   "n_label1": 64,
+   "n_aligned": 8,
+   "n_aligned_exact_detectors": 8,
+   "n_aligned_exact_either_sign": 8,
+   "n_aligned_exact_generator_flags": 8,
+   "aligned_not_exact": [],
+   "rerender_texts_identical": true,
+   "rerender_labels_identical": true,
+   "detector_flags_equal_generator_flags": true,
+   "n_nonaligned": 7,
+   "n_nonaligned_exact": 0,
+   "nonaligned_max_abs_corr": {
+    "property": "postscript",
+    "abs_corr": 0.5533
+   },
+   "structural": {
+    "signoff_excl": {
+     "role": "child of an aligned parent",
+     "abs_corr": 0.4804,
+     "p_on_label1": 0.375,
+     "p_on_label0": 0.0
+    },
+    "postscript": {
+     "role": "parent of an aligned child",
+     "abs_corr": 0.5533,
+     "p_on_label1": 1.0,
+     "p_on_label0": 0.5312
+    }
+   }
+  },
+  {
+   "episode": "ep474",
+   "probe": 2,
+   "substrate": "ft",
+   "n": 128,
+   "n_label1": 64,
+   "n_aligned": 8,
+   "n_aligned_exact_detectors": 8,
+   "n_aligned_exact_either_sign": 8,
+   "n_aligned_exact_generator_flags": 8,
+   "aligned_not_exact": [],
+   "rerender_texts_identical": true,
+   "rerender_labels_identical": true,
+   "detector_flags_equal_generator_flags": true,
+   "n_nonaligned": 7,
+   "n_nonaligned_exact": 0,
+   "nonaligned_max_abs_corr": {
+    "property": "postscript",
+    "abs_corr": 0.6135
+   },
+   "structural": {
+    "signoff_excl": {
+     "role": "child of an aligned parent",
+     "abs_corr": 0.5412,
+     "p_on_label1": 0.0,
+     "p_on_label0": 0.4531
+    },
+    "postscript": {
+     "role": "parent of an aligned child",
+     "abs_corr": 0.6135,
+     "p_on_label1": 1.0,
+     "p_on_label0": 0.4531
+    }
+   }
+  },
+  {
+   "episode": "ep474",
+   "probe": 3,
+   "substrate": "ft",
+   "n": 128,
+   "n_label1": 64,
+   "n_aligned": 8,
+   "n_aligned_exact_detectors": 8,
+   "n_aligned_exact_either_sign": 8,
+   "n_aligned_exact_generator_flags": 8,
+   "aligned_not_exact": [],
+   "rerender_texts_identical": true,
+   "rerender_labels_identical": true,
+   "detector_flags_equal_generator_flags": true,
+   "n_nonaligned": 7,
+   "n_nonaligned_exact": 0,
+   "nonaligned_max_abs_corr": {
+    "property": "signoff_excl",
+    "abs_corr": 0.6135
+   },
+   "structural": {
+    "signoff_excl": {
+     "role": "child of an aligned parent",
+     "abs_corr": 0.6135,
+     "p_on_label1": 0.0,
+     "p_on_label0": 0.5469
+    },
+    "postscript": {
+     "role": "parent of an aligned child",
+     "abs_corr": 0.5653,
+     "p_on_label1": 0.5156,
+     "p_on_label0": 1.0
+    }
+   }
+  },
+  {
+   "episode": "ep476",
+   "probe": 0,
+   "substrate": "ft",
+   "n": 128,
+   "n_label1": 64,
+   "n_aligned": 8,
+   "n_aligned_exact_detectors": 8,
+   "n_aligned_exact_either_sign": 8,
+   "n_aligned_exact_generator_flags": 8,
+   "aligned_not_exact": [],
+   "rerender_texts_identical": true,
+   "rerender_labels_identical": true,
+   "detector_flags_equal_generator_flags": true,
+   "n_nonaligned": 7,
+   "n_nonaligned_exact": 0,
+   "nonaligned_max_abs_corr": {
+    "property": "signoff_excl",
+    "abs_corr": 0.6135
+   },
+   "structural": {
+    "signoff_excl": {
+     "role": "child of an aligned parent",
+     "abs_corr": 0.6135,
+     "p_on_label1": 0.5469,
+     "p_on_label0": 0.0
+    },
+    "postscript": {
+     "role": "parent of an aligned child",
+     "abs_corr": 0.5653,
+     "p_on_label1": 0.5156,
+     "p_on_label0": 1.0
+    }
+   }
+  },
+  {
+   "episode": "ep476",
+   "probe": 1,
+   "substrate": "ft",
+   "n": 128,
+   "n_label1": 64,
+   "n_aligned": 8,
+   "n_aligned_exact_detectors": 8,
+   "n_aligned_exact_either_sign": 8,
+   "n_aligned_exact_generator_flags": 8,
+   "aligned_not_exact": [],
+   "rerender_texts_identical": true,
+   "rerender_labels_identical": true,
+   "detector_flags_equal_generator_flags": true,
+   "n_nonaligned": 7,
+   "n_nonaligned_exact": 0,
+   "nonaligned_max_abs_corr": {
+    "property": "postscript",
+    "abs_corr": 0.5774
+   },
+   "structural": {
+    "signoff_excl": {
+     "role": "child of an aligned parent",
+     "abs_corr": 0.517,
+     "p_on_label1": 0.0,
+     "p_on_label0": 0.4219
+    },
+    "postscript": {
+     "role": "parent of an aligned child",
+     "abs_corr": 0.5774,
+     "p_on_label1": 0.5,
+     "p_on_label0": 1.0
+    }
+   }
+  },
+  {
+   "episode": "ep476",
+   "probe": 2,
+   "substrate": "ft",
+   "n": 128,
+   "n_label1": 64,
+   "n_aligned": 8,
+   "n_aligned_exact_detectors": 8,
+   "n_aligned_exact_either_sign": 8,
+   "n_aligned_exact_generator_flags": 8,
+   "aligned_not_exact": [],
+   "rerender_texts_identical": true,
+   "rerender_labels_identical": true,
+   "detector_flags_equal_generator_flags": true,
+   "n_nonaligned": 7,
+   "n_nonaligned_exact": 0,
+   "nonaligned_max_abs_corr": {
+    "property": "signoff_excl",
+    "abs_corr": 0.6376
+   },
+   "structural": {
+    "signoff_excl": {
+     "role": "child of an aligned parent",
+     "abs_corr": 0.6376,
+     "p_on_label1": 0.5781,
+     "p_on_label0": 0.0
+    },
+    "postscript": {
+     "role": "parent of an aligned child",
+     "abs_corr": 0.5774,
+     "p_on_label1": 1.0,
+     "p_on_label0": 0.5
+    }
+   }
+  },
+  {
+   "episode": "ep476",
+   "probe": 3,
+   "substrate": "ft",
+   "n": 128,
+   "n_label1": 64,
+   "n_aligned": 8,
+   "n_aligned_exact_detectors": 8,
+   "n_aligned_exact_either_sign": 8,
+   "n_aligned_exact_generator_flags": 8,
+   "aligned_not_exact": [],
+   "rerender_texts_identical": true,
+   "rerender_labels_identical": true,
+   "detector_flags_equal_generator_flags": true,
+   "n_nonaligned": 7,
+   "n_nonaligned_exact": 0,
+   "nonaligned_max_abs_corr": {
+    "property": "signoff_excl",
+    "abs_corr": 0.6742
+   },
+   "structural": {
+    "signoff_excl": {
+     "role": "child of an aligned parent",
+     "abs_corr": 0.6742,
+     "p_on_label1": 0.0,
+     "p_on_label0": 0.625
+    },
+    "postscript": {
+     "role": "parent of an aligned child",
+     "abs_corr": 0.5894,
+     "p_on_label1": 1.0,
+     "p_on_label0": 0.4844
+    }
+   }
+  }
+ ]
+}

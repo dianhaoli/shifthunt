@@ -1,0 +1,161 @@
+{
+ "plan": "results/blackbox_1112/gpuplan/r10/PLAN_R10.md (Table 3 recompute)",
+ "tag": "frozen",
+ "set": "main_study",
+ "levels": {
+  "HF": {
+   "judge": "Haiku",
+   "runs": 64,
+   "hard_kappa": -0.05,
+   "item95": [
+    -0.22,
+    0.05
+   ],
+   "wrong_cues_credited": "0/6",
+   "wrong_none_credited": "4/13",
+   "passes_rejected": "39/45",
+   "abstained": 0,
+   "answer_type_baseline_kappa": 0.753
+  },
+  "HK": {
+   "judge": "Haiku",
+   "runs": 64,
+   "hard_kappa": 0.055,
+   "item95": [
+    0.01,
+    0.1
+   ],
+   "wrong_cues_credited": "0/6",
+   "wrong_none_credited": "0/13",
+   "passes_rejected": "41/45",
+   "abstained": 0,
+   "answer_type_baseline_kappa": 0.753
+  },
+  "L0": {
+   "judge": "Terra",
+   "runs": 64,
+   "hard_kappa": 0.056,
+   "item95": [
+    -0.11,
+    0.27
+   ],
+   "wrong_cues_credited": "3/6",
+   "wrong_none_credited": "13/13",
+   "passes_rejected": "5/45",
+   "abstained": 0,
+   "answer_type_baseline_kappa": 0.753
+  },
+  "L2": {
+   "judge": "Terra",
+   "runs": 64,
+   "hard_kappa": 0.263,
+   "item95": [
+    -0.04,
+    0.54
+   ],
+   "wrong_cues_credited": "5/6",
+   "wrong_none_credited": "8/13",
+   "passes_rejected": "4/45",
+   "abstained": 0,
+   "answer_type_baseline_kappa": 0.753
+  },
+  "L2r": {
+   "judge": "Terra",
+   "runs": 64,
+   "hard_kappa": 0.176,
+   "item95": [
+    -0.04,
+    0.34
+   ],
+   "wrong_cues_credited": "5/6",
+   "wrong_none_credited": "10/13",
+   "passes_rejected": "3/45",
+   "abstained": 0,
+   "answer_type_baseline_kappa": 0.753
+  },
+  "L3_2": {
+   "judge": "Terra",
+   "runs": 64,
+   "hard_kappa": 0.962,
+   "item95": [
+    0.89,
+    1.0
+   ],
+   "wrong_cues_credited": "1/6",
+   "wrong_none_credited": "0/13",
+   "passes_rejected": "0/45",
+   "abstained": 0,
+   "answer_type_baseline_kappa": 0.753
+  },
+  "LF": {
+   "judge": "Luna",
+   "runs": 64,
+   "hard_kappa": -0.248,
+   "item95": [
+    -0.49,
+    -0.06
+   ],
+   "wrong_cues_credited": "1/6",
+   "wrong_none_credited": "10/13",
+   "passes_rejected": "34/45",
+   "abstained": 0,
+   "answer_type_baseline_kappa": 0.753
+  },
+  "LK": {
+   "judge": "Luna",
+   "runs": 64,
+   "hard_kappa": 0.196,
+   "item95": [
+    -0.07,
+    0.45
+   ],
+   "wrong_cues_credited": "4/6",
+   "wrong_none_credited": "0/13",
+   "passes_rejected": "24/45",
+   "abstained": 0,
+   "answer_type_baseline_kappa": 0.753
+  },
+  "S2": {
+   "judge": "Sol",
+   "runs": 64,
+   "hard_kappa": 0.403,
+   "item95": [
+    0.1,
+    0.67
+   ],
+   "wrong_cues_credited": "4/6",
+   "wrong_none_credited": "7/13",
+   "passes_rejected": "3/45",
+   "abstained": 0,
+   "answer_type_baseline_kappa": 0.753
+  },
+  "TF2": {
+   "judge": "Terra",
+   "runs": 64,
+   "hard_kappa": 0.056,
+   "item95": [
+    -0.18,
+    0.3
+   ],
+   "wrong_cues_credited": "3/6",
+   "wrong_none_credited": "13/13",
+   "passes_rejected": "5/45",
+   "abstained": 0,
+   "answer_type_baseline_kappa": 0.753
+  },
+  "TK": {
+   "judge": "Terra",
+   "runs": 64,
+   "hard_kappa": 0.657,
+   "item95": [
+    0.48,
+    0.85
+   ],
+   "wrong_cues_credited": "2/6",
+   "wrong_none_credited": "0/13",
+   "passes_rejected": "8/45",
+   "abstained": 0,
+   "answer_type_baseline_kappa": 0.753
+  }
+ }
+}

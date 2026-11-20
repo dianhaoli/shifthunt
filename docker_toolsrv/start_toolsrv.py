@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Start the ShiftHunt tool server before the agent runs (installed as /task.py; runs as root).
+"""Start the ShortcutHunt tool server before the agent runs (installed as /task.py; runs as root).
 
-Isolation (TOOLS_SPEC.md "Isolation"): ensures the system user `toolsrv` exists, sets owners and
+Isolation (docs/TOOLS_SPEC.md "Isolation"): ensures the system user `toolsrv` exists, sets owners and
 modes on the episode and runtime dirs, copies the public episode files to /workdir/public, and
-starts `python -m shifthunt.toolserver` as toolsrv in its own session with a scrubbed environment
+starts `python -m shortcuthunt.toolserver` as toolsrv in its own session with a scrubbed environment
 (env -i: nothing from this process's env, so no API key, reaches the daemon). The daemon's output
 goes to /srv/state/daemon.log (root/toolsrv only). Exits 0 once the socket answers a `budget`
 call; otherwise kills the daemon's process group and exits 1. Stdlib only (system python).
@@ -27,12 +27,12 @@ USER = "toolsrv"
 EPISODE = Path("/srv/episode")
 OUT = Path("/srv/tool_out")
 STATE = Path("/srv/state")
-RUN_DIR = Path("/run/shifthunt")
+RUN_DIR = Path("/run/shortcuthunt")
 SOCK = RUN_DIR / "tool.sock"
 PIDFILE = STATE / "daemon.pid"
 LOG = STATE / "daemon.log"
 WORKDIR_PUBLIC = Path("/workdir/public")
-CODE = Path("/opt/toolsrv")  # holds the shifthunt package
+CODE = Path("/opt/toolsrv")  # holds the shortcuthunt package
 VENV_PY = "/opt/toolsrv-venv/bin/python"
 DAEMON_ONLY = (CODE, Path("/opt/toolsrv-venv"), Path("/opt/models"))  # root:toolsrv 0750
 DAEMON_ENV = ["PATH=/usr/bin:/bin", "HF_HOME=/opt/models", "HF_HUB_OFFLINE=1", f"PYTHONPATH={CODE}"]
@@ -91,7 +91,7 @@ def launch(user, device):
     fd = os.open(LOG, os.O_WRONLY | os.O_CREAT | os.O_APPEND | os.O_NOFOLLOW, 0o600)
     os.fchown(fd, user.pw_uid, user.pw_gid)
     cmd = ["setsid", "runuser", "-u", USER, "--", "env", "-i", *DAEMON_ENV,
-           VENV_PY, "-m", "shifthunt.toolserver", "--episode", str(EPISODE), "--sock", str(SOCK),
+           VENV_PY, "-m", "shortcuthunt.toolserver", "--episode", str(EPISODE), "--sock", str(SOCK),
            "--out", str(OUT), "--state", str(STATE), "--device", device, "--pidfile", str(PIDFILE)]
     try:
         # setsid gives runuser (and the daemon under it) a new session and process group with pgid

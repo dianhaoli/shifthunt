@@ -1,0 +1,4355 @@
+{
+ "file": "gpuplan/u/u.json",
+ "changed": 725,
+ "rows": {
+  "set_A/topic_unit_D/L0/kappa": {
+   "frozen": 0.0621,
+   "r10": 0.4104,
+   "change": 0.3483
+  },
+  "set_A/topic_unit_D/L0/balanced_accuracy": {
+   "frozen": 0.5712,
+   "r10": 0.7621,
+   "change": 0.1909
+  },
+  "set_A/topic_unit_D/L0/accuracy": {
+   "frozen": 0.7183,
+   "r10": 0.9014,
+   "change": 0.1831
+  },
+  "set_A/topic_unit_D/L0/passes_credited": {
+   "frozen": "49/66",
+   "r10": "61/66",
+   "change": 0.1818
+  },
+  "set_A/topic_unit_D/L0/omissions_credited": {
+   "frozen": "3/3",
+   "r10": "2/3",
+   "change": -0.3333
+  },
+  "set_A/topic_unit_D/L0/passes_blamed": {
+   "frozen": "17/66",
+   "r10": "5/66",
+   "change": -0.1818
+  },
+  "set_A/topic_unit_D/L0/boot95_item/balanced_accuracy": {
+   "frozen": [
+    0.3841,
+    0.7684
+   ],
+   "r10": [
+    0.6,
+    0.9609
+   ],
+   "change": null
+  },
+  "set_A/topic_unit_D/L0/boot95_item/kappa": {
+   "frozen": [
+    -0.0962,
+    0.2235
+   ],
+   "r10": [
+    0.1678,
+    0.85
+   ],
+   "change": null
+  },
+  "set_A/topic_unit_D/L0/boot95_run/balanced_accuracy": {
+   "frozen": [
+    0.3478,
+    0.8643
+   ],
+   "r10": [
+    0.4638,
+    0.9776
+   ],
+   "change": null
+  },
+  "set_A/topic_unit_D/L0/boot95_run/kappa": {
+   "frozen": [
+    -0.1088,
+    0.2751
+   ],
+   "r10": [
+    -0.039,
+    0.7461
+   ],
+   "change": null
+  },
+  "set_A/topic_unit_D/L1/kappa": {
+   "frozen": 0.1115,
+   "r10": 0.5697,
+   "change": 0.4582
+  },
+  "set_A/topic_unit_D/L1/balanced_accuracy": {
+   "frozen": 0.6485,
+   "r10": 0.7848,
+   "change": 0.1363
+  },
+  "set_A/topic_unit_D/L1/accuracy": {
+   "frozen": 0.6901,
+   "r10": 0.9437,
+   "change": 0.2536
+  },
+  "set_A/topic_unit_D/L1/passes_credited": {
+   "frozen": "46/66",
+   "r10": "64/66",
+   "change": 0.2727
+  },
+  "set_A/topic_unit_D/L1/passes_blamed": {
+   "frozen": "20/66",
+   "r10": "2/66",
+   "change": -0.2727
+  },
+  "set_A/topic_unit_D/L1/boot95_item/balanced_accuracy": {
+   "frozen": [
+    0.4635,
+    0.9
+   ],
+   "r10": [
+    0.6004,
+    0.9926
+   ],
+   "change": null
+  },
+  "set_A/topic_unit_D/L1/boot95_item/kappa": {
+   "frozen": [
+    -0.0296,
+    0.2609
+   ],
+   "r10": [
+    0.2025,
+    0.9019
+   ],
+   "change": null
+  },
+  "set_A/topic_unit_D/L1/boot95_run/balanced_accuracy": {
+   "frozen": [
+    0.35,
+    0.8714
+   ],
+   "r10": [
+    0.4857,
+    0.9928
+   ],
+   "change": null
+  },
+  "set_A/topic_unit_D/L1/boot95_run/kappa": {
+   "frozen": [
+    -0.0608,
+    0.3062
+   ],
+   "r10": [
+    -0.0216,
+    0.9015
+   ],
+   "change": null
+  },
+  "set_A/topic_unit_D/L2/kappa": {
+   "frozen": 0.1803,
+   "r10": 0.5697,
+   "change": 0.3894
+  },
+  "set_A/topic_unit_D/L2/balanced_accuracy": {
+   "frozen": 0.7485,
+   "r10": 0.7848,
+   "change": 0.0363
+  },
+  "set_A/topic_unit_D/L2/accuracy": {
+   "frozen": 0.7042,
+   "r10": 0.9437,
+   "change": 0.2395
+  },
+  "set_A/topic_unit_D/L2/passes_credited": {
+   "frozen": "46/66",
+   "r10": "64/66",
+   "change": 0.2727
+  },
+  "set_A/topic_unit_D/L2/omissions_credited": {
+   "frozen": "1/3",
+   "r10": "2/3",
+   "change": 0.3333
+  },
+  "set_A/topic_unit_D/L2/passes_blamed": {
+   "frozen": "20/66",
+   "r10": "2/66",
+   "change": -0.2727
+  },
+  "set_A/topic_unit_D/L2/boot95_item/balanced_accuracy": {
+   "frozen": [
+    0.6239,
+    0.8788
+   ],
+   "r10": [
+    0.6029,
+    0.9833
+   ],
+   "change": null
+  },
+  "set_A/topic_unit_D/L2/boot95_item/kappa": {
+   "frozen": [
+    0.0768,
+    0.2835
+   ],
+   "r10": [
+    0.2478,
+    0.7921
+   ],
+   "change": null
+  },
+  "set_A/topic_unit_D/L2/boot95_run/balanced_accuracy": {
+   "frozen": [
+    0.4981,
+    0.8881
+   ],
+   "r10": [
+    0.4857,
+    0.9928
+   ],
+   "change": null
+  },
+  "set_A/topic_unit_D/L2/boot95_run/kappa": {
+   "frozen": [
+    -0.0011,
+    0.3788
+   ],
+   "r10": [
+    -0.0216,
+    0.9015
+   ],
+   "change": null
+  },
+  "set_A/topic_unit_D/judge_vs_script/L0/items/per_item_diff[0]": {
+   "frozen": -0.3077,
+   "r10": -0.0769,
+   "change": 0.2308
+  },
+  "set_A/topic_unit_D/judge_vs_script/L0/items/per_item_diff[1]": {
+   "frozen": -0.1818,
+   "r10": 0.0,
+   "change": 0.1818
+  },
+  "set_A/topic_unit_D/judge_vs_script/L0/items/per_item_diff[2]": {
+   "frozen": -0.2727,
+   "r10": -0.4545,
+   "change": -0.1818
+  },
+  "set_A/topic_unit_D/judge_vs_script/L0/items/per_item_diff[3]": {
+   "frozen": -0.4286,
+   "r10": -0.0714,
+   "change": 0.3572
+  },
+  "set_A/topic_unit_D/judge_vs_script/L0/items/per_item_diff[4]": {
+   "frozen": -0.3077,
+   "r10": 0.0769,
+   "change": 0.3846
+  },
+  "set_A/topic_unit_D/judge_vs_script/L0/items/p_signflip": {
+   "frozen": 0.0625,
+   "r10": 0.688,
+   "change": 0.6255
+  },
+  "set_A/topic_unit_D/judge_vs_script/L0/items/sign_test/positive": {
+   "frozen": 1,
+   "r10": 2,
+   "change": 1.0
+  },
+  "set_A/topic_unit_D/judge_vs_script/L0/items/sign_test/negative": {
+   "frozen": 5,
+   "r10": 3,
+   "change": -2.0
+  },
+  "set_A/topic_unit_D/judge_vs_script/L0/items/sign_test/p": {
+   "frozen": 0.219,
+   "r10": 1.0,
+   "change": 0.781
+  },
+  "set_A/topic_unit_D/judge_vs_script/L0/set_items/per_item_diff[0]": {
+   "frozen": -0.3077,
+   "r10": -0.0769,
+   "change": 0.2308
+  },
+  "set_A/topic_unit_D/judge_vs_script/L0/set_items/per_item_diff[1]": {
+   "frozen": -0.1818,
+   "r10": 0.0,
+   "change": 0.1818
+  },
+  "set_A/topic_unit_D/judge_vs_script/L0/set_items/per_item_diff[2]": {
+   "frozen": -0.2727,
+   "r10": -0.4545,
+   "change": -0.1818
+  },
+  "set_A/topic_unit_D/judge_vs_script/L0/set_items/per_item_diff[3]": {
+   "frozen": -0.4286,
+   "r10": -0.0714,
+   "change": 0.3572
+  },
+  "set_A/topic_unit_D/judge_vs_script/L0/set_items/per_item_diff[4]": {
+   "frozen": -0.3077,
+   "r10": 0.0769,
+   "change": 0.3846
+  },
+  "set_A/topic_unit_D/judge_vs_script/L0/set_items/p_signflip": {
+   "frozen": 0.0625,
+   "r10": 0.688,
+   "change": 0.6255
+  },
+  "set_A/topic_unit_D/judge_vs_script/L0/set_items/sign_test/positive": {
+   "frozen": 1,
+   "r10": 2,
+   "change": 1.0
+  },
+  "set_A/topic_unit_D/judge_vs_script/L0/set_items/sign_test/negative": {
+   "frozen": 5,
+   "r10": 3,
+   "change": -2.0
+  },
+  "set_A/topic_unit_D/judge_vs_script/L0/set_items/sign_test/p": {
+   "frozen": 0.219,
+   "r10": 1.0,
+   "change": 0.781
+  },
+  "set_A/topic_unit_D/judge_vs_script/L0/mcnemar_runs/a_right_b_wrong": {
+   "frozen": 1,
+   "r10": 2,
+   "change": 1.0
+  },
+  "set_A/topic_unit_D/judge_vs_script/L0/mcnemar_runs/a_wrong_b_right": {
+   "frozen": 19,
+   "r10": 7,
+   "change": -12.0
+  },
+  "set_A/topic_unit_D/judge_vs_script/L0/mcnemar_runs/p": {
+   "frozen": 4.01e-05,
+   "r10": 0.18,
+   "change": 0.18
+  },
+  "set_A/topic_unit_D/judge_vs_script/L1/items/per_item_diff[0]": {
+   "frozen": -0.2308,
+   "r10": 0.0,
+   "change": 0.2308
+  },
+  "set_A/topic_unit_D/judge_vs_script/L1/items/per_item_diff[1]": {
+   "frozen": -0.2727,
+   "r10": 0.0,
+   "change": 0.2727
+  },
+  "set_A/topic_unit_D/judge_vs_script/L1/items/per_item_diff[2]": {
+   "frozen": -0.2727,
+   "r10": -0.0909,
+   "change": 0.1818
+  },
+  "set_A/topic_unit_D/judge_vs_script/L1/items/per_item_diff[3]": {
+   "frozen": -0.6429,
+   "r10": -0.1429,
+   "change": 0.5
+  },
+  "set_A/topic_unit_D/judge_vs_script/L1/items/per_item_diff[4]": {
+   "frozen": -0.2308,
+   "r10": 0.0769,
+   "change": 0.3077
+  },
+  "set_A/topic_unit_D/judge_vs_script/L1/items/per_item_diff[5]": {
+   "frozen": 0.1111,
+   "r10": 0.0,
+   "change": -0.1111
+  },
+  "set_A/topic_unit_D/judge_vs_script/L1/items/p_signflip": {
+   "frozen": 0.0625,
+   "r10": 0.5,
+   "change": 0.4375
+  },
+  "set_A/topic_unit_D/judge_vs_script/L1/items/sign_test/negative": {
+   "frozen": 5,
+   "r10": 2,
+   "change": -3.0
+  },
+  "set_A/topic_unit_D/judge_vs_script/L1/items/sign_test/p": {
+   "frozen": 0.219,
+   "r10": 1.0,
+   "change": 0.781
+  },
+  "set_A/topic_unit_D/judge_vs_script/L1/set_items/per_item_diff[0]": {
+   "frozen": -0.2308,
+   "r10": 0.0,
+   "change": 0.2308
+  },
+  "set_A/topic_unit_D/judge_vs_script/L1/set_items/per_item_diff[1]": {
+   "frozen": -0.2727,
+   "r10": 0.0,
+   "change": 0.2727
+  },
+  "set_A/topic_unit_D/judge_vs_script/L1/set_items/per_item_diff[2]": {
+   "frozen": -0.2727,
+   "r10": -0.0909,
+   "change": 0.1818
+  },
+  "set_A/topic_unit_D/judge_vs_script/L1/set_items/per_item_diff[3]": {
+   "frozen": -0.6429,
+   "r10": -0.1429,
+   "change": 0.5
+  },
+  "set_A/topic_unit_D/judge_vs_script/L1/set_items/per_item_diff[4]": {
+   "frozen": -0.2308,
+   "r10": 0.0769,
+   "change": 0.3077
+  },
+  "set_A/topic_unit_D/judge_vs_script/L1/set_items/per_item_diff[5]": {
+   "frozen": 0.1111,
+   "r10": 0.0,
+   "change": -0.1111
+  },
+  "set_A/topic_unit_D/judge_vs_script/L1/set_items/p_signflip": {
+   "frozen": 0.0625,
+   "r10": 0.5,
+   "change": 0.4375
+  },
+  "set_A/topic_unit_D/judge_vs_script/L1/set_items/sign_test/negative": {
+   "frozen": 5,
+   "r10": 2,
+   "change": -3.0
+  },
+  "set_A/topic_unit_D/judge_vs_script/L1/set_items/sign_test/p": {
+   "frozen": 0.219,
+   "r10": 1.0,
+   "change": 0.781
+  },
+  "set_A/topic_unit_D/judge_vs_script/L1/mcnemar_runs/a_right_b_wrong": {
+   "frozen": 2,
+   "r10": 1,
+   "change": -1.0
+  },
+  "set_A/topic_unit_D/judge_vs_script/L1/mcnemar_runs/a_wrong_b_right": {
+   "frozen": 22,
+   "r10": 3,
+   "change": -19.0
+  },
+  "set_A/topic_unit_D/judge_vs_script/L1/mcnemar_runs/p": {
+   "frozen": 3.59e-05,
+   "r10": 0.625,
+   "change": 0.625
+  },
+  "set_A/topic_unit_D/judge_vs_script/L2/items/per_item_diff[0]": {
+   "frozen": -0.3077,
+   "r10": 0.0,
+   "change": 0.3077
+  },
+  "set_A/topic_unit_D/judge_vs_script/L2/items/per_item_diff[1]": {
+   "frozen": -0.3636,
+   "r10": -0.0909,
+   "change": 0.2727
+  },
+  "set_A/topic_unit_D/judge_vs_script/L2/items/per_item_diff[2]": {
+   "frozen": -0.3636,
+   "r10": -0.0909,
+   "change": 0.2727
+  },
+  "set_A/topic_unit_D/judge_vs_script/L2/items/per_item_diff[3]": {
+   "frozen": -0.3571,
+   "r10": -0.0714,
+   "change": 0.2857
+  },
+  "set_A/topic_unit_D/judge_vs_script/L2/items/per_item_diff[4]": {
+   "frozen": -0.0769,
+   "r10": 0.0,
+   "change": 0.0769
+  },
+  "set_A/topic_unit_D/judge_vs_script/L2/items/per_item_diff[5]": {
+   "frozen": -0.1111,
+   "r10": 0.1111,
+   "change": 0.2222
+  },
+  "set_A/topic_unit_D/judge_vs_script/L2/items/p_signflip": {
+   "frozen": 0.0312,
+   "r10": 0.625,
+   "change": 0.5938
+  },
+  "set_A/topic_unit_D/judge_vs_script/L2/items/sign_test/positive": {
+   "frozen": 0,
+   "r10": 1,
+   "change": 1.0
+  },
+  "set_A/topic_unit_D/judge_vs_script/L2/items/sign_test/negative": {
+   "frozen": 6,
+   "r10": 3,
+   "change": -3.0
+  },
+  "set_A/topic_unit_D/judge_vs_script/L2/items/sign_test/p": {
+   "frozen": 0.0312,
+   "r10": 0.625,
+   "change": 0.5938
+  },
+  "set_A/topic_unit_D/judge_vs_script/L2/set_items/per_item_diff[0]": {
+   "frozen": -0.3077,
+   "r10": 0.0,
+   "change": 0.3077
+  },
+  "set_A/topic_unit_D/judge_vs_script/L2/set_items/per_item_diff[1]": {
+   "frozen": -0.3636,
+   "r10": -0.0909,
+   "change": 0.2727
+  },
+  "set_A/topic_unit_D/judge_vs_script/L2/set_items/per_item_diff[2]": {
+   "frozen": -0.3636,
+   "r10": -0.0909,
+   "change": 0.2727
+  },
+  "set_A/topic_unit_D/judge_vs_script/L2/set_items/per_item_diff[3]": {
+   "frozen": -0.3571,
+   "r10": -0.0714,
+   "change": 0.2857
+  },
+  "set_A/topic_unit_D/judge_vs_script/L2/set_items/per_item_diff[4]": {
+   "frozen": -0.0769,
+   "r10": 0.0,
+   "change": 0.0769
+  },
+  "set_A/topic_unit_D/judge_vs_script/L2/set_items/per_item_diff[5]": {
+   "frozen": -0.1111,
+   "r10": 0.1111,
+   "change": 0.2222
+  },
+  "set_A/topic_unit_D/judge_vs_script/L2/set_items/p_signflip": {
+   "frozen": 0.0312,
+   "r10": 0.625,
+   "change": 0.5938
+  },
+  "set_A/topic_unit_D/judge_vs_script/L2/set_items/sign_test/positive": {
+   "frozen": 0,
+   "r10": 1,
+   "change": 1.0
+  },
+  "set_A/topic_unit_D/judge_vs_script/L2/set_items/sign_test/negative": {
+   "frozen": 6,
+   "r10": 3,
+   "change": -3.0
+  },
+  "set_A/topic_unit_D/judge_vs_script/L2/set_items/sign_test/p": {
+   "frozen": 0.0312,
+   "r10": 0.625,
+   "change": 0.5938
+  },
+  "set_A/topic_unit_D/judge_vs_script/L2/mcnemar_runs/a_right_b_wrong": {
+   "frozen": 1,
+   "r10": 2,
+   "change": 1.0
+  },
+  "set_A/topic_unit_D/judge_vs_script/L2/mcnemar_runs/a_wrong_b_right": {
+   "frozen": 20,
+   "r10": 4,
+   "change": -16.0
+  },
+  "set_A/topic_unit_D/judge_vs_script/L2/mcnemar_runs/p": {
+   "frozen": 2.1e-05,
+   "r10": 0.688,
+   "change": 0.688
+  },
+  "set_A/gap_unit/L0/kappa": {
+   "frozen": 0.0878,
+   "r10": 0.3137,
+   "change": 0.2259
+  },
+  "set_A/gap_unit/L0/balanced_accuracy": {
+   "frozen": 0.6212,
+   "r10": 0.7121,
+   "change": 0.0909
+  },
+  "set_A/gap_unit/L0/accuracy": {
+   "frozen": 0.7286,
+   "r10": 0.9,
+   "change": 0.1714
+  },
+  "set_A/gap_unit/L0/passes_credited": {
+   "frozen": "49/66",
+   "r10": "61/66",
+   "change": 0.1818
+  },
+  "set_A/gap_unit/L0/passes_blamed": {
+   "frozen": "17/66",
+   "r10": "5/66",
+   "change": -0.1818
+  },
+  "set_A/gap_unit/L0/boot95_item/balanced_accuracy": {
+   "frozen": [
+    0.3841,
+    0.9016
+   ],
+   "r10": [
+    0.5,
+    0.959
+   ],
+   "change": null
+  },
+  "set_A/gap_unit/L0/boot95_item/kappa": {
+   "frozen": [
+    -0.0535,
+    0.2254
+   ],
+   "r10": [
+    0.0,
+    0.6598
+   ],
+   "change": null
+  },
+  "set_A/gap_unit/L0/boot95_run/balanced_accuracy": {
+   "frozen": [
+    0.3485,
+    0.8897
+   ],
+   "r10": [
+    0.4493,
+    0.9773
+   ],
+   "change": null
+  },
+  "set_A/gap_unit/L0/boot95_run/kappa": {
+   "frozen": [
+    -0.0816,
+    0.3038
+   ],
+   "r10": [
+    -0.0566,
+    0.6825
+   ],
+   "change": null
+  },
+  "set_A/gap_unit/L1/kappa": {
+   "frozen": 0.0633,
+   "r10": 0.4697,
+   "change": 0.4064
+  },
+  "set_A/gap_unit/L1/balanced_accuracy": {
+   "frozen": 0.5985,
+   "r10": 0.7348,
+   "change": 0.1363
+  },
+  "set_A/gap_unit/L1/accuracy": {
+   "frozen": 0.6857,
+   "r10": 0.9429,
+   "change": 0.2572
+  },
+  "set_A/gap_unit/L1/passes_credited": {
+   "frozen": "46/66",
+   "r10": "64/66",
+   "change": 0.2727
+  },
+  "set_A/gap_unit/L1/passes_blamed": {
+   "frozen": "20/66",
+   "r10": "2/66",
+   "change": -0.2727
+  },
+  "set_A/gap_unit/L1/boot95_item/balanced_accuracy": {
+   "frozen": [
+    0.3828,
+    0.8984
+   ],
+   "r10": [
+    0.4839,
+    0.9926
+   ],
+   "change": null
+  },
+  "set_A/gap_unit/L1/boot95_item/kappa": {
+   "frozen": [
+    -0.0568,
+    0.208
+   ],
+   "r10": [
+    -0.024,
+    0.85
+   ],
+   "change": null
+  },
+  "set_A/gap_unit/L1/boot95_run/balanced_accuracy": {
+   "frozen": [
+    0.3261,
+    0.8696
+   ],
+   "r10": [
+    0.4776,
+    0.9926
+   ],
+   "change": null
+  },
+  "set_A/gap_unit/L1/boot95_run/kappa": {
+   "frozen": [
+    -0.0924,
+    0.2497
+   ],
+   "r10": [
+    -0.0396,
+    0.8814
+   ],
+   "change": null
+  },
+  "set_A/gap_unit/L2/kappa": {
+   "frozen": 0.1383,
+   "r10": 0.6441,
+   "change": 0.5058
+  },
+  "set_A/gap_unit/L2/balanced_accuracy": {
+   "frozen": 0.7235,
+   "r10": 0.8598,
+   "change": 0.1363
+  },
+  "set_A/gap_unit/L2/accuracy": {
+   "frozen": 0.7,
+   "r10": 0.9571,
+   "change": 0.2571
+  },
+  "set_A/gap_unit/L2/passes_credited": {
+   "frozen": "46/66",
+   "r10": "64/66",
+   "change": 0.2727
+  },
+  "set_A/gap_unit/L2/passes_blamed": {
+   "frozen": "20/66",
+   "r10": "2/66",
+   "change": -0.2727
+  },
+  "set_A/gap_unit/L2/boot95_item/balanced_accuracy": {
+   "frozen": [
+    0.6029,
+    0.8769
+   ],
+   "r10": [
+    0.7351,
+    0.9926
+   ],
+   "change": null
+  },
+  "set_A/gap_unit/L2/boot95_item/kappa": {
+   "frozen": [
+    0.0548,
+    0.2056
+   ],
+   "r10": [
+    0.3784,
+    0.8815
+   ],
+   "change": null
+  },
+  "set_A/gap_unit/L2/boot95_run/balanced_accuracy": {
+   "frozen": [
+    0.3806,
+    0.8897
+   ],
+   "r10": [
+    0.5,
+    1.0
+   ],
+   "change": null
+  },
+  "set_A/gap_unit/L2/boot95_run/kappa": {
+   "frozen": [
+    -0.028,
+    0.338
+   ],
+   "r10": [
+    0.0,
+    1.0
+   ],
+   "change": null
+  },
+  "set_A/gap_unit/judge_vs_script/L0/items/per_item_diff[0]": {
+   "frozen": -0.1538,
+   "r10": 0.0769,
+   "change": 0.2307
+  },
+  "set_A/gap_unit/judge_vs_script/L0/items/per_item_diff[1]": {
+   "frozen": 0.7273,
+   "r10": 0.9091,
+   "change": 0.1818
+  },
+  "set_A/gap_unit/judge_vs_script/L0/items/per_item_diff[2]": {
+   "frozen": 0.0,
+   "r10": -0.1818,
+   "change": -0.1818
+  },
+  "set_A/gap_unit/judge_vs_script/L0/items/per_item_diff[3]": {
+   "frozen": -0.2857,
+   "r10": 0.0714,
+   "change": 0.3571
+  },
+  "set_A/gap_unit/judge_vs_script/L0/items/per_item_diff[4]": {
+   "frozen": 0.3333,
+   "r10": 0.6667,
+   "change": 0.3334
+  },
+  "set_A/gap_unit/judge_vs_script/L0/items/p_signflip": {
+   "frozen": 0.312,
+   "r10": 0.156,
+   "change": -0.156
+  },
+  "set_A/gap_unit/judge_vs_script/L0/items/sign_test/positive": {
+   "frozen": 3,
+   "r10": 5,
+   "change": 2.0
+  },
+  "set_A/gap_unit/judge_vs_script/L0/items/sign_test/negative": {
+   "frozen": 2,
+   "r10": 1,
+   "change": -1.0
+  },
+  "set_A/gap_unit/judge_vs_script/L0/items/sign_test/p": {
+   "frozen": 1.0,
+   "r10": 0.219,
+   "change": -0.781
+  },
+  "set_A/gap_unit/judge_vs_script/L0/set_items/per_item_diff[0]": {
+   "frozen": -0.1538,
+   "r10": 0.0769,
+   "change": 0.2307
+  },
+  "set_A/gap_unit/judge_vs_script/L0/set_items/per_item_diff[1]": {
+   "frozen": 0.7273,
+   "r10": 0.9091,
+   "change": 0.1818
+  },
+  "set_A/gap_unit/judge_vs_script/L0/set_items/per_item_diff[2]": {
+   "frozen": 0.0,
+   "r10": -0.1818,
+   "change": -0.1818
+  },
+  "set_A/gap_unit/judge_vs_script/L0/set_items/per_item_diff[3]": {
+   "frozen": -0.2857,
+   "r10": 0.0714,
+   "change": 0.3571
+  },
+  "set_A/gap_unit/judge_vs_script/L0/set_items/per_item_diff[4]": {
+   "frozen": 0.3333,
+   "r10": 0.6667,
+   "change": 0.3334
+  },
+  "set_A/gap_unit/judge_vs_script/L0/set_items/p_signflip": {
+   "frozen": 0.312,
+   "r10": 0.156,
+   "change": -0.156
+  },
+  "set_A/gap_unit/judge_vs_script/L0/set_items/sign_test/positive": {
+   "frozen": 3,
+   "r10": 5,
+   "change": 2.0
+  },
+  "set_A/gap_unit/judge_vs_script/L0/set_items/sign_test/negative": {
+   "frozen": 2,
+   "r10": 1,
+   "change": -1.0
+  },
+  "set_A/gap_unit/judge_vs_script/L0/set_items/sign_test/p": {
+   "frozen": 1.0,
+   "r10": 0.219,
+   "change": -0.781
+  },
+  "set_A/gap_unit/judge_vs_script/L0/mcnemar_runs/a_right_b_wrong": {
+   "frozen": 25,
+   "r10": 29,
+   "change": 4.0
+  },
+  "set_A/gap_unit/judge_vs_script/L0/mcnemar_runs/a_wrong_b_right": {
+   "frozen": 13,
+   "r10": 5,
+   "change": -8.0
+  },
+  "set_A/gap_unit/judge_vs_script/L0/mcnemar_runs/p": {
+   "frozen": 0.073,
+   "r10": 3.86e-05,
+   "change": -0.073
+  },
+  "set_A/gap_unit/judge_vs_script/L1/items/per_item_diff[0]": {
+   "frozen": -0.0769,
+   "r10": 0.1538,
+   "change": 0.2307
+  },
+  "set_A/gap_unit/judge_vs_script/L1/items/per_item_diff[1]": {
+   "frozen": 0.6364,
+   "r10": 0.9091,
+   "change": 0.2727
+  },
+  "set_A/gap_unit/judge_vs_script/L1/items/per_item_diff[2]": {
+   "frozen": 0.0,
+   "r10": 0.1818,
+   "change": 0.1818
+  },
+  "set_A/gap_unit/judge_vs_script/L1/items/per_item_diff[3]": {
+   "frozen": -0.5,
+   "r10": 0.0,
+   "change": 0.5
+  },
+  "set_A/gap_unit/judge_vs_script/L1/items/per_item_diff[4]": {
+   "frozen": 0.3333,
+   "r10": 0.6667,
+   "change": 0.3334
+  },
+  "set_A/gap_unit/judge_vs_script/L1/items/per_item_diff[5]": {
+   "frozen": 0.6667,
+   "r10": 0.5556,
+   "change": -0.1111
+  },
+  "set_A/gap_unit/judge_vs_script/L1/items/p_signflip": {
+   "frozen": 0.375,
+   "r10": 0.0625,
+   "change": -0.3125
+  },
+  "set_A/gap_unit/judge_vs_script/L1/items/sign_test/positive": {
+   "frozen": 3,
+   "r10": 5,
+   "change": 2.0
+  },
+  "set_A/gap_unit/judge_vs_script/L1/items/sign_test/negative": {
+   "frozen": 2,
+   "r10": 0,
+   "change": -2.0
+  },
+  "set_A/gap_unit/judge_vs_script/L1/items/sign_test/p": {
+   "frozen": 1.0,
+   "r10": 0.0625,
+   "change": -0.9375
+  },
+  "set_A/gap_unit/judge_vs_script/L1/set_items/per_item_diff[0]": {
+   "frozen": -0.0769,
+   "r10": 0.1538,
+   "change": 0.2307
+  },
+  "set_A/gap_unit/judge_vs_script/L1/set_items/per_item_diff[1]": {
+   "frozen": 0.6364,
+   "r10": 0.9091,
+   "change": 0.2727
+  },
+  "set_A/gap_unit/judge_vs_script/L1/set_items/per_item_diff[2]": {
+   "frozen": 0.0,
+   "r10": 0.1818,
+   "change": 0.1818
+  },
+  "set_A/gap_unit/judge_vs_script/L1/set_items/per_item_diff[3]": {
+   "frozen": -0.5,
+   "r10": 0.0,
+   "change": 0.5
+  },
+  "set_A/gap_unit/judge_vs_script/L1/set_items/per_item_diff[4]": {
+   "frozen": 0.3333,
+   "r10": 0.6667,
+   "change": 0.3334
+  },
+  "set_A/gap_unit/judge_vs_script/L1/set_items/per_item_diff[5]": {
+   "frozen": 0.6667,
+   "r10": 0.5556,
+   "change": -0.1111
+  },
+  "set_A/gap_unit/judge_vs_script/L1/set_items/p_signflip": {
+   "frozen": 0.375,
+   "r10": 0.0625,
+   "change": -0.3125
+  },
+  "set_A/gap_unit/judge_vs_script/L1/set_items/sign_test/positive": {
+   "frozen": 3,
+   "r10": 5,
+   "change": 2.0
+  },
+  "set_A/gap_unit/judge_vs_script/L1/set_items/sign_test/negative": {
+   "frozen": 2,
+   "r10": 0,
+   "change": -2.0
+  },
+  "set_A/gap_unit/judge_vs_script/L1/set_items/sign_test/p": {
+   "frozen": 1.0,
+   "r10": 0.0625,
+   "change": -0.9375
+  },
+  "set_A/gap_unit/judge_vs_script/L1/mcnemar_runs/a_right_b_wrong": {
+   "frozen": 23,
+   "r10": 29,
+   "change": 6.0
+  },
+  "set_A/gap_unit/judge_vs_script/L1/mcnemar_runs/a_wrong_b_right": {
+   "frozen": 14,
+   "r10": 2,
+   "change": -12.0
+  },
+  "set_A/gap_unit/judge_vs_script/L1/mcnemar_runs/p": {
+   "frozen": 0.188,
+   "r10": 4.63e-07,
+   "change": -0.188
+  },
+  "set_A/gap_unit/judge_vs_script/L2/items/per_item_diff[0]": {
+   "frozen": -0.1538,
+   "r10": 0.1538,
+   "change": 0.3076
+  },
+  "set_A/gap_unit/judge_vs_script/L2/items/per_item_diff[1]": {
+   "frozen": 0.5455,
+   "r10": 0.8182,
+   "change": 0.2727
+  },
+  "set_A/gap_unit/judge_vs_script/L2/items/per_item_diff[2]": {
+   "frozen": -0.0909,
+   "r10": 0.1818,
+   "change": 0.2727
+  },
+  "set_A/gap_unit/judge_vs_script/L2/items/per_item_diff[3]": {
+   "frozen": -0.2143,
+   "r10": 0.0714,
+   "change": 0.2857
+  },
+  "set_A/gap_unit/judge_vs_script/L2/items/per_item_diff[4]": {
+   "frozen": 0.5,
+   "r10": 0.6667,
+   "change": 0.1667
+  },
+  "set_A/gap_unit/judge_vs_script/L2/items/per_item_diff[5]": {
+   "frozen": 0.4444,
+   "r10": 0.6667,
+   "change": 0.2223
+  },
+  "set_A/gap_unit/judge_vs_script/L2/items/p_signflip": {
+   "frozen": 0.281,
+   "r10": 0.0312,
+   "change": -0.2498
+  },
+  "set_A/gap_unit/judge_vs_script/L2/items/sign_test/positive": {
+   "frozen": 3,
+   "r10": 6,
+   "change": 3.0
+  },
+  "set_A/gap_unit/judge_vs_script/L2/items/sign_test/negative": {
+   "frozen": 3,
+   "r10": 0,
+   "change": -3.0
+  },
+  "set_A/gap_unit/judge_vs_script/L2/items/sign_test/p": {
+   "frozen": 1.0,
+   "r10": 0.0312,
+   "change": -0.9688
+  },
+  "set_A/gap_unit/judge_vs_script/L2/set_items/per_item_diff[0]": {
+   "frozen": -0.1538,
+   "r10": 0.1538,
+   "change": 0.3076
+  },
+  "set_A/gap_unit/judge_vs_script/L2/set_items/per_item_diff[1]": {
+   "frozen": 0.5455,
+   "r10": 0.8182,
+   "change": 0.2727
+  },
+  "set_A/gap_unit/judge_vs_script/L2/set_items/per_item_diff[2]": {
+   "frozen": -0.0909,
+   "r10": 0.1818,
+   "change": 0.2727
+  },
+  "set_A/gap_unit/judge_vs_script/L2/set_items/per_item_diff[3]": {
+   "frozen": -0.2143,
+   "r10": 0.0714,
+   "change": 0.2857
+  },
+  "set_A/gap_unit/judge_vs_script/L2/set_items/per_item_diff[4]": {
+   "frozen": 0.5,
+   "r10": 0.6667,
+   "change": 0.1667
+  },
+  "set_A/gap_unit/judge_vs_script/L2/set_items/per_item_diff[5]": {
+   "frozen": 0.4444,
+   "r10": 0.6667,
+   "change": 0.2223
+  },
+  "set_A/gap_unit/judge_vs_script/L2/set_items/p_signflip": {
+   "frozen": 0.281,
+   "r10": 0.0312,
+   "change": -0.2498
+  },
+  "set_A/gap_unit/judge_vs_script/L2/set_items/sign_test/positive": {
+   "frozen": 3,
+   "r10": 6,
+   "change": 3.0
+  },
+  "set_A/gap_unit/judge_vs_script/L2/set_items/sign_test/negative": {
+   "frozen": 3,
+   "r10": 0,
+   "change": -3.0
+  },
+  "set_A/gap_unit/judge_vs_script/L2/set_items/sign_test/p": {
+   "frozen": 1.0,
+   "r10": 0.0312,
+   "change": -0.9688
+  },
+  "set_A/gap_unit/judge_vs_script/L2/mcnemar_runs/a_right_b_wrong": {
+   "frozen": 20,
+   "r10": 28,
+   "change": 8.0
+  },
+  "set_A/gap_unit/judge_vs_script/L2/mcnemar_runs/a_wrong_b_right": {
+   "frozen": 10,
+   "r10": 0,
+   "change": -10.0
+  },
+  "set_A/gap_unit/judge_vs_script/L2/mcnemar_runs/p": {
+   "frozen": 0.0987,
+   "r10": 7.45e-09,
+   "change": -0.0987
+  },
+  "set_A/judge_visible_pairs_only/L0/kappa": {
+   "frozen": 0.0878,
+   "r10": 0.3137,
+   "change": 0.2259
+  },
+  "set_A/judge_visible_pairs_only/L0/balanced_accuracy": {
+   "frozen": 0.6212,
+   "r10": 0.7121,
+   "change": 0.0909
+  },
+  "set_A/judge_visible_pairs_only/L0/accuracy": {
+   "frozen": 0.7286,
+   "r10": 0.9,
+   "change": 0.1714
+  },
+  "set_A/judge_visible_pairs_only/L0/passes_credited": {
+   "frozen": "49/66",
+   "r10": "61/66",
+   "change": 0.1818
+  },
+  "set_A/judge_visible_pairs_only/L0/passes_blamed": {
+   "frozen": "17/66",
+   "r10": "5/66",
+   "change": -0.1818
+  },
+  "set_A/judge_visible_pairs_only/L0/boot95_item/balanced_accuracy": {
+   "frozen": [
+    0.3841,
+    0.9016
+   ],
+   "r10": [
+    0.5,
+    0.959
+   ],
+   "change": null
+  },
+  "set_A/judge_visible_pairs_only/L0/boot95_item/kappa": {
+   "frozen": [
+    -0.0535,
+    0.2254
+   ],
+   "r10": [
+    0.0,
+    0.6598
+   ],
+   "change": null
+  },
+  "set_A/judge_visible_pairs_only/L0/boot95_run/balanced_accuracy": {
+   "frozen": [
+    0.3485,
+    0.8897
+   ],
+   "r10": [
+    0.4493,
+    0.9773
+   ],
+   "change": null
+  },
+  "set_A/judge_visible_pairs_only/L0/boot95_run/kappa": {
+   "frozen": [
+    -0.0816,
+    0.3038
+   ],
+   "r10": [
+    -0.0566,
+    0.6825
+   ],
+   "change": null
+  },
+  "set_A/judge_visible_pairs_only/L1/kappa": {
+   "frozen": 0.0633,
+   "r10": 0.4697,
+   "change": 0.4064
+  },
+  "set_A/judge_visible_pairs_only/L1/balanced_accuracy": {
+   "frozen": 0.5985,
+   "r10": 0.7348,
+   "change": 0.1363
+  },
+  "set_A/judge_visible_pairs_only/L1/accuracy": {
+   "frozen": 0.6857,
+   "r10": 0.9429,
+   "change": 0.2572
+  },
+  "set_A/judge_visible_pairs_only/L1/passes_credited": {
+   "frozen": "46/66",
+   "r10": "64/66",
+   "change": 0.2727
+  },
+  "set_A/judge_visible_pairs_only/L1/passes_blamed": {
+   "frozen": "20/66",
+   "r10": "2/66",
+   "change": -0.2727
+  },
+  "set_A/judge_visible_pairs_only/L1/boot95_item/balanced_accuracy": {
+   "frozen": [
+    0.3828,
+    0.8984
+   ],
+   "r10": [
+    0.4839,
+    0.9926
+   ],
+   "change": null
+  },
+  "set_A/judge_visible_pairs_only/L1/boot95_item/kappa": {
+   "frozen": [
+    -0.0568,
+    0.208
+   ],
+   "r10": [
+    -0.024,
+    0.85
+   ],
+   "change": null
+  },
+  "set_A/judge_visible_pairs_only/L1/boot95_run/balanced_accuracy": {
+   "frozen": [
+    0.3261,
+    0.8696
+   ],
+   "r10": [
+    0.4776,
+    0.9926
+   ],
+   "change": null
+  },
+  "set_A/judge_visible_pairs_only/L1/boot95_run/kappa": {
+   "frozen": [
+    -0.0924,
+    0.2497
+   ],
+   "r10": [
+    -0.0396,
+    0.8814
+   ],
+   "change": null
+  },
+  "set_A/judge_visible_pairs_only/L2/kappa": {
+   "frozen": 0.1383,
+   "r10": 0.6441,
+   "change": 0.5058
+  },
+  "set_A/judge_visible_pairs_only/L2/balanced_accuracy": {
+   "frozen": 0.7235,
+   "r10": 0.8598,
+   "change": 0.1363
+  },
+  "set_A/judge_visible_pairs_only/L2/accuracy": {
+   "frozen": 0.7,
+   "r10": 0.9571,
+   "change": 0.2571
+  },
+  "set_A/judge_visible_pairs_only/L2/passes_credited": {
+   "frozen": "46/66",
+   "r10": "64/66",
+   "change": 0.2727
+  },
+  "set_A/judge_visible_pairs_only/L2/passes_blamed": {
+   "frozen": "20/66",
+   "r10": "2/66",
+   "change": -0.2727
+  },
+  "set_A/judge_visible_pairs_only/L2/boot95_item/balanced_accuracy": {
+   "frozen": [
+    0.6029,
+    0.8769
+   ],
+   "r10": [
+    0.7351,
+    0.9926
+   ],
+   "change": null
+  },
+  "set_A/judge_visible_pairs_only/L2/boot95_item/kappa": {
+   "frozen": [
+    0.0548,
+    0.2056
+   ],
+   "r10": [
+    0.3784,
+    0.8815
+   ],
+   "change": null
+  },
+  "set_A/judge_visible_pairs_only/L2/boot95_run/balanced_accuracy": {
+   "frozen": [
+    0.3806,
+    0.8897
+   ],
+   "r10": [
+    0.5,
+    1.0
+   ],
+   "change": null
+  },
+  "set_A/judge_visible_pairs_only/L2/boot95_run/kappa": {
+   "frozen": [
+    -0.028,
+    0.338
+   ],
+   "r10": [
+    0.0,
+    1.0
+   ],
+   "change": null
+  },
+  "set_A/judge_visible_pairs_only/judge_vs_script/L0/items/per_item_diff[0]": {
+   "frozen": -0.1538,
+   "r10": 0.0769,
+   "change": 0.2307
+  },
+  "set_A/judge_visible_pairs_only/judge_vs_script/L0/items/per_item_diff[1]": {
+   "frozen": 0.7273,
+   "r10": 0.9091,
+   "change": 0.1818
+  },
+  "set_A/judge_visible_pairs_only/judge_vs_script/L0/items/per_item_diff[2]": {
+   "frozen": 0.0,
+   "r10": -0.1818,
+   "change": -0.1818
+  },
+  "set_A/judge_visible_pairs_only/judge_vs_script/L0/items/per_item_diff[3]": {
+   "frozen": -0.2857,
+   "r10": 0.0714,
+   "change": 0.3571
+  },
+  "set_A/judge_visible_pairs_only/judge_vs_script/L0/items/per_item_diff[4]": {
+   "frozen": 0.3333,
+   "r10": 0.6667,
+   "change": 0.3334
+  },
+  "set_A/judge_visible_pairs_only/judge_vs_script/L0/items/p_signflip": {
+   "frozen": 0.312,
+   "r10": 0.156,
+   "change": -0.156
+  },
+  "set_A/judge_visible_pairs_only/judge_vs_script/L0/items/sign_test/positive": {
+   "frozen": 3,
+   "r10": 5,
+   "change": 2.0
+  },
+  "set_A/judge_visible_pairs_only/judge_vs_script/L0/items/sign_test/negative": {
+   "frozen": 2,
+   "r10": 1,
+   "change": -1.0
+  },
+  "set_A/judge_visible_pairs_only/judge_vs_script/L0/items/sign_test/p": {
+   "frozen": 1.0,
+   "r10": 0.219,
+   "change": -0.781
+  },
+  "set_A/judge_visible_pairs_only/judge_vs_script/L0/set_items/per_item_diff[0]": {
+   "frozen": -0.1538,
+   "r10": 0.0769,
+   "change": 0.2307
+  },
+  "set_A/judge_visible_pairs_only/judge_vs_script/L0/set_items/per_item_diff[1]": {
+   "frozen": 0.7273,
+   "r10": 0.9091,
+   "change": 0.1818
+  },
+  "set_A/judge_visible_pairs_only/judge_vs_script/L0/set_items/per_item_diff[2]": {
+   "frozen": 0.0,
+   "r10": -0.1818,
+   "change": -0.1818
+  },
+  "set_A/judge_visible_pairs_only/judge_vs_script/L0/set_items/per_item_diff[3]": {
+   "frozen": -0.2857,
+   "r10": 0.0714,
+   "change": 0.3571
+  },
+  "set_A/judge_visible_pairs_only/judge_vs_script/L0/set_items/per_item_diff[4]": {
+   "frozen": 0.3333,
+   "r10": 0.6667,
+   "change": 0.3334
+  },
+  "set_A/judge_visible_pairs_only/judge_vs_script/L0/set_items/p_signflip": {
+   "frozen": 0.312,
+   "r10": 0.156,
+   "change": -0.156
+  },
+  "set_A/judge_visible_pairs_only/judge_vs_script/L0/set_items/sign_test/positive": {
+   "frozen": 3,
+   "r10": 5,
+   "change": 2.0
+  },
+  "set_A/judge_visible_pairs_only/judge_vs_script/L0/set_items/sign_test/negative": {
+   "frozen": 2,
+   "r10": 1,
+   "change": -1.0
+  },
+  "set_A/judge_visible_pairs_only/judge_vs_script/L0/set_items/sign_test/p": {
+   "frozen": 1.0,
+   "r10": 0.219,
+   "change": -0.781
+  },
+  "set_A/judge_visible_pairs_only/judge_vs_script/L0/mcnemar_runs/a_right_b_wrong": {
+   "frozen": 25,
+   "r10": 29,
+   "change": 4.0
+  },
+  "set_A/judge_visible_pairs_only/judge_vs_script/L0/mcnemar_runs/a_wrong_b_right": {
+   "frozen": 13,
+   "r10": 5,
+   "change": -8.0
+  },
+  "set_A/judge_visible_pairs_only/judge_vs_script/L0/mcnemar_runs/p": {
+   "frozen": 0.073,
+   "r10": 3.86e-05,
+   "change": -0.073
+  },
+  "set_A/judge_visible_pairs_only/judge_vs_script/L1/items/per_item_diff[0]": {
+   "frozen": -0.0769,
+   "r10": 0.1538,
+   "change": 0.2307
+  },
+  "set_A/judge_visible_pairs_only/judge_vs_script/L1/items/per_item_diff[1]": {
+   "frozen": 0.6364,
+   "r10": 0.9091,
+   "change": 0.2727
+  },
+  "set_A/judge_visible_pairs_only/judge_vs_script/L1/items/per_item_diff[2]": {
+   "frozen": 0.0,
+   "r10": 0.1818,
+   "change": 0.1818
+  },
+  "set_A/judge_visible_pairs_only/judge_vs_script/L1/items/per_item_diff[3]": {
+   "frozen": -0.5,
+   "r10": 0.0,
+   "change": 0.5
+  },
+  "set_A/judge_visible_pairs_only/judge_vs_script/L1/items/per_item_diff[4]": {
+   "frozen": 0.3333,
+   "r10": 0.6667,
+   "change": 0.3334
+  },
+  "set_A/judge_visible_pairs_only/judge_vs_script/L1/items/per_item_diff[5]": {
+   "frozen": 0.6667,
+   "r10": 0.5556,
+   "change": -0.1111
+  },
+  "set_A/judge_visible_pairs_only/judge_vs_script/L1/items/p_signflip": {
+   "frozen": 0.375,
+   "r10": 0.0625,
+   "change": -0.3125
+  },
+  "set_A/judge_visible_pairs_only/judge_vs_script/L1/items/sign_test/positive": {
+   "frozen": 3,
+   "r10": 5,
+   "change": 2.0
+  },
+  "set_A/judge_visible_pairs_only/judge_vs_script/L1/items/sign_test/negative": {
+   "frozen": 2,
+   "r10": 0,
+   "change": -2.0
+  },
+  "set_A/judge_visible_pairs_only/judge_vs_script/L1/items/sign_test/p": {
+   "frozen": 1.0,
+   "r10": 0.0625,
+   "change": -0.9375
+  },
+  "set_A/judge_visible_pairs_only/judge_vs_script/L1/set_items/per_item_diff[0]": {
+   "frozen": -0.0769,
+   "r10": 0.1538,
+   "change": 0.2307
+  },
+  "set_A/judge_visible_pairs_only/judge_vs_script/L1/set_items/per_item_diff[1]": {
+   "frozen": 0.6364,
+   "r10": 0.9091,
+   "change": 0.2727
+  },
+  "set_A/judge_visible_pairs_only/judge_vs_script/L1/set_items/per_item_diff[2]": {
+   "frozen": 0.0,
+   "r10": 0.1818,
+   "change": 0.1818
+  },
+  "set_A/judge_visible_pairs_only/judge_vs_script/L1/set_items/per_item_diff[3]": {
+   "frozen": -0.5,
+   "r10": 0.0,
+   "change": 0.5
+  },
+  "set_A/judge_visible_pairs_only/judge_vs_script/L1/set_items/per_item_diff[4]": {
+   "frozen": 0.3333,
+   "r10": 0.6667,
+   "change": 0.3334
+  },
+  "set_A/judge_visible_pairs_only/judge_vs_script/L1/set_items/per_item_diff[5]": {
+   "frozen": 0.6667,
+   "r10": 0.5556,
+   "change": -0.1111
+  },
+  "set_A/judge_visible_pairs_only/judge_vs_script/L1/set_items/p_signflip": {
+   "frozen": 0.375,
+   "r10": 0.0625,
+   "change": -0.3125
+  },
+  "set_A/judge_visible_pairs_only/judge_vs_script/L1/set_items/sign_test/positive": {
+   "frozen": 3,
+   "r10": 5,
+   "change": 2.0
+  },
+  "set_A/judge_visible_pairs_only/judge_vs_script/L1/set_items/sign_test/negative": {
+   "frozen": 2,
+   "r10": 0,
+   "change": -2.0
+  },
+  "set_A/judge_visible_pairs_only/judge_vs_script/L1/set_items/sign_test/p": {
+   "frozen": 1.0,
+   "r10": 0.0625,
+   "change": -0.9375
+  },
+  "set_A/judge_visible_pairs_only/judge_vs_script/L1/mcnemar_runs/a_right_b_wrong": {
+   "frozen": 23,
+   "r10": 29,
+   "change": 6.0
+  },
+  "set_A/judge_visible_pairs_only/judge_vs_script/L1/mcnemar_runs/a_wrong_b_right": {
+   "frozen": 14,
+   "r10": 2,
+   "change": -12.0
+  },
+  "set_A/judge_visible_pairs_only/judge_vs_script/L1/mcnemar_runs/p": {
+   "frozen": 0.188,
+   "r10": 4.63e-07,
+   "change": -0.188
+  },
+  "set_A/judge_visible_pairs_only/judge_vs_script/L2/items/per_item_diff[0]": {
+   "frozen": -0.1538,
+   "r10": 0.1538,
+   "change": 0.3076
+  },
+  "set_A/judge_visible_pairs_only/judge_vs_script/L2/items/per_item_diff[1]": {
+   "frozen": 0.5455,
+   "r10": 0.8182,
+   "change": 0.2727
+  },
+  "set_A/judge_visible_pairs_only/judge_vs_script/L2/items/per_item_diff[2]": {
+   "frozen": -0.0909,
+   "r10": 0.1818,
+   "change": 0.2727
+  },
+  "set_A/judge_visible_pairs_only/judge_vs_script/L2/items/per_item_diff[3]": {
+   "frozen": -0.2143,
+   "r10": 0.0714,
+   "change": 0.2857
+  },
+  "set_A/judge_visible_pairs_only/judge_vs_script/L2/items/per_item_diff[4]": {
+   "frozen": 0.5,
+   "r10": 0.6667,
+   "change": 0.1667
+  },
+  "set_A/judge_visible_pairs_only/judge_vs_script/L2/items/per_item_diff[5]": {
+   "frozen": 0.4444,
+   "r10": 0.6667,
+   "change": 0.2223
+  },
+  "set_A/judge_visible_pairs_only/judge_vs_script/L2/items/p_signflip": {
+   "frozen": 0.281,
+   "r10": 0.0312,
+   "change": -0.2498
+  },
+  "set_A/judge_visible_pairs_only/judge_vs_script/L2/items/sign_test/positive": {
+   "frozen": 3,
+   "r10": 6,
+   "change": 3.0
+  },
+  "set_A/judge_visible_pairs_only/judge_vs_script/L2/items/sign_test/negative": {
+   "frozen": 3,
+   "r10": 0,
+   "change": -3.0
+  },
+  "set_A/judge_visible_pairs_only/judge_vs_script/L2/items/sign_test/p": {
+   "frozen": 1.0,
+   "r10": 0.0312,
+   "change": -0.9688
+  },
+  "set_A/judge_visible_pairs_only/judge_vs_script/L2/set_items/per_item_diff[0]": {
+   "frozen": -0.1538,
+   "r10": 0.1538,
+   "change": 0.3076
+  },
+  "set_A/judge_visible_pairs_only/judge_vs_script/L2/set_items/per_item_diff[1]": {
+   "frozen": 0.5455,
+   "r10": 0.8182,
+   "change": 0.2727
+  },
+  "set_A/judge_visible_pairs_only/judge_vs_script/L2/set_items/per_item_diff[2]": {
+   "frozen": -0.0909,
+   "r10": 0.1818,
+   "change": 0.2727
+  },
+  "set_A/judge_visible_pairs_only/judge_vs_script/L2/set_items/per_item_diff[3]": {
+   "frozen": -0.2143,
+   "r10": 0.0714,
+   "change": 0.2857
+  },
+  "set_A/judge_visible_pairs_only/judge_vs_script/L2/set_items/per_item_diff[4]": {
+   "frozen": 0.5,
+   "r10": 0.6667,
+   "change": 0.1667
+  },
+  "set_A/judge_visible_pairs_only/judge_vs_script/L2/set_items/per_item_diff[5]": {
+   "frozen": 0.4444,
+   "r10": 0.6667,
+   "change": 0.2223
+  },
+  "set_A/judge_visible_pairs_only/judge_vs_script/L2/set_items/p_signflip": {
+   "frozen": 0.281,
+   "r10": 0.0312,
+   "change": -0.2498
+  },
+  "set_A/judge_visible_pairs_only/judge_vs_script/L2/set_items/sign_test/positive": {
+   "frozen": 3,
+   "r10": 6,
+   "change": 3.0
+  },
+  "set_A/judge_visible_pairs_only/judge_vs_script/L2/set_items/sign_test/negative": {
+   "frozen": 3,
+   "r10": 0,
+   "change": -3.0
+  },
+  "set_A/judge_visible_pairs_only/judge_vs_script/L2/set_items/sign_test/p": {
+   "frozen": 1.0,
+   "r10": 0.0312,
+   "change": -0.9688
+  },
+  "set_A/judge_visible_pairs_only/judge_vs_script/L2/mcnemar_runs/a_right_b_wrong": {
+   "frozen": 20,
+   "r10": 28,
+   "change": 8.0
+  },
+  "set_A/judge_visible_pairs_only/judge_vs_script/L2/mcnemar_runs/a_wrong_b_right": {
+   "frozen": 10,
+   "r10": 0,
+   "change": -10.0
+  },
+  "set_A/judge_visible_pairs_only/judge_vs_script/L2/mcnemar_runs/p": {
+   "frozen": 0.0987,
+   "r10": 7.45e-09,
+   "change": -0.0987
+  },
+  "set_A/judge_visible/L0/kappa": {
+   "frozen": 0.1284,
+   "r10": 0.3133,
+   "change": 0.1849
+  },
+  "set_A/judge_visible/L0/balanced_accuracy": {
+   "frozen": 0.5729,
+   "r10": 0.6354,
+   "change": 0.0625
+  },
+  "set_A/judge_visible/L0/accuracy": {
+   "frozen": 0.7368,
+   "r10": 0.8421,
+   "change": 0.1053
+  },
+  "set_A/judge_visible/L0/passes_credited": {
+   "frozen": "13/16",
+   "r10": "15/16",
+   "change": 0.125
+  },
+  "set_A/judge_visible/L0/passes_blamed": {
+   "frozen": "3/16",
+   "r10": "1/16",
+   "change": -0.125
+  },
+  "set_A/judge_visible/L0/boot95_item/balanced_accuracy": {
+   "frozen": [
+    0.3684,
+    0.6838
+   ],
+   "r10": [
+    0.4375,
+    0.75
+   ],
+   "change": null
+  },
+  "set_A/judge_visible/L0/boot95_item/kappa": {
+   "frozen": [
+    -0.1644,
+    0.3945
+   ],
+   "r10": [
+    -0.1111,
+    0.6383
+   ],
+   "change": null
+  },
+  "set_A/judge_visible/L0/boot95_run/balanced_accuracy": {
+   "frozen": [
+    0.3333,
+    0.9412
+   ],
+   "r10": [
+    0.4167,
+    1.0
+   ],
+   "change": null
+  },
+  "set_A/judge_visible/L0/boot95_run/kappa": {
+   "frozen": [
+    -0.2459,
+    0.6415
+   ],
+   "r10": [
+    -0.1446,
+    1.0
+   ],
+   "change": null
+  },
+  "set_A/judge_visible/L1/kappa": {
+   "frozen": 0.2297,
+   "r10": 0.7711,
+   "change": 0.5414
+  },
+  "set_A/judge_visible/L1/balanced_accuracy": {
+   "frozen": 0.6771,
+   "r10": 0.8333,
+   "change": 0.1562
+  },
+  "set_A/judge_visible/L1/accuracy": {
+   "frozen": 0.6842,
+   "r10": 0.9474,
+   "change": 0.2632
+  },
+  "set_A/judge_visible/L1/passes_credited": {
+   "frozen": "11/16",
+   "r10": "16/16",
+   "change": 0.3125
+  },
+  "set_A/judge_visible/L1/passes_blamed": {
+   "frozen": "5/16",
+   "r10": "0/16",
+   "change": -0.3125
+  },
+  "set_A/judge_visible/L1/boot95_item/balanced_accuracy": {
+   "frozen": [
+    0.5549,
+    0.8947
+   ],
+   "r10": [
+    0.75,
+    1.0
+   ],
+   "change": null
+  },
+  "set_A/judge_visible/L1/boot95_item/kappa": {
+   "frozen": [
+    0.0909,
+    0.3585
+   ],
+   "r10": [
+    0.5926,
+    1.0
+   ],
+   "change": null
+  },
+  "set_A/judge_visible/L1/boot95_run/balanced_accuracy": {
+   "frozen": [
+    0.3143,
+    0.9333
+   ],
+   "r10": [
+    0.5,
+    1.0
+   ],
+   "change": null
+  },
+  "set_A/judge_visible/L1/boot95_run/kappa": {
+   "frozen": [
+    -0.1875,
+    0.6587
+   ],
+   "r10": [
+    0.0,
+    1.0
+   ],
+   "change": null
+  },
+  "set_A/judge_visible/L2/kappa": {
+   "frozen": 0.4771,
+   "r10": 0.6042,
+   "change": 0.1271
+  },
+  "set_A/judge_visible/L2/balanced_accuracy": {
+   "frozen": 0.7708,
+   "r10": 0.8021,
+   "change": 0.0313
+  },
+  "set_A/judge_visible/L2/accuracy": {
+   "frozen": 0.8421,
+   "r10": 0.8947,
+   "change": 0.0526
+  },
+  "set_A/judge_visible/L2/passes_credited": {
+   "frozen": "14/16",
+   "r10": "15/16",
+   "change": 0.0625
+  },
+  "set_A/judge_visible/L2/passes_blamed": {
+   "frozen": "2/16",
+   "r10": "1/16",
+   "change": -0.0625
+  },
+  "set_A/judge_visible/L2/boot95_item/balanced_accuracy": {
+   "frozen": [
+    0.6447,
+    0.9688
+   ],
+   "r10": [
+    0.6833,
+    1.0
+   ],
+   "change": null
+  },
+  "set_A/judge_visible/L2/boot95_item/kappa": {
+   "frozen": [
+    0.1791,
+    0.8496
+   ],
+   "r10": [
+    0.3014,
+    1.0
+   ],
+   "change": null
+  },
+  "set_A/judge_visible/L2/boot95_run/balanced_accuracy": {
+   "frozen": [
+    0.4167,
+    1.0
+   ],
+   "r10": [
+    0.4667,
+    1.0
+   ],
+   "change": null
+  },
+  "set_A/judge_visible/L2/boot95_run/kappa": {
+   "frozen": [
+    -0.1176,
+    1.0
+   ],
+   "r10": [
+    -0.0755,
+    1.0
+   ],
+   "change": null
+  },
+  "set_A/judge_visible/judge_vs_script/L0/items/per_item_diff[1]": {
+   "frozen": 0.6667,
+   "r10": 1.0,
+   "change": 0.3333
+  },
+  "set_A/judge_visible/judge_vs_script/L0/items/per_item_diff[4]": {
+   "frozen": 0.0,
+   "r10": 0.3333,
+   "change": 0.3333
+  },
+  "set_A/judge_visible/judge_vs_script/L0/items/p_signflip": {
+   "frozen": 0.375,
+   "r10": 0.25,
+   "change": -0.125
+  },
+  "set_A/judge_visible/judge_vs_script/L0/items/sign_test/positive": {
+   "frozen": 3,
+   "r10": 4,
+   "change": 1.0
+  },
+  "set_A/judge_visible/judge_vs_script/L0/items/sign_test/p": {
+   "frozen": 0.625,
+   "r10": 0.375,
+   "change": -0.25
+  },
+  "set_A/judge_visible/judge_vs_script/L0/set_items/per_item_diff[1]": {
+   "frozen": 0.6667,
+   "r10": 1.0,
+   "change": 0.3333
+  },
+  "set_A/judge_visible/judge_vs_script/L0/set_items/per_item_diff[4]": {
+   "frozen": 0.0,
+   "r10": 0.3333,
+   "change": 0.3333
+  },
+  "set_A/judge_visible/judge_vs_script/L0/set_items/p_signflip": {
+   "frozen": 0.375,
+   "r10": 0.25,
+   "change": -0.125
+  },
+  "set_A/judge_visible/judge_vs_script/L0/set_items/sign_test/positive": {
+   "frozen": 3,
+   "r10": 4,
+   "change": 1.0
+  },
+  "set_A/judge_visible/judge_vs_script/L0/set_items/sign_test/p": {
+   "frozen": 0.625,
+   "r10": 0.375,
+   "change": -0.25
+  },
+  "set_A/judge_visible/judge_vs_script/L0/mcnemar_runs/a_wrong_b_right": {
+   "frozen": 3,
+   "r10": 1,
+   "change": -2.0
+  },
+  "set_A/judge_visible/judge_vs_script/L0/mcnemar_runs/p": {
+   "frozen": 0.508,
+   "r10": 0.125,
+   "change": -0.383
+  },
+  "set_A/judge_visible/judge_vs_script/L1/items/per_item_diff[0]": {
+   "frozen": -0.6667,
+   "r10": 0.0,
+   "change": 0.6667
+  },
+  "set_A/judge_visible/judge_vs_script/L1/items/per_item_diff[2]": {
+   "frozen": 0.25,
+   "r10": 0.5,
+   "change": 0.25
+  },
+  "set_A/judge_visible/judge_vs_script/L1/items/per_item_diff[3]": {
+   "frozen": -0.25,
+   "r10": 0.0,
+   "change": 0.25
+  },
+  "set_A/judge_visible/judge_vs_script/L1/items/per_item_diff[4]": {
+   "frozen": 0.0,
+   "r10": 0.3333,
+   "change": 0.3333
+  },
+  "set_A/judge_visible/judge_vs_script/L1/items/p_signflip": {
+   "frozen": 0.625,
+   "r10": 0.125,
+   "change": -0.5
+  },
+  "set_A/judge_visible/judge_vs_script/L1/items/sign_test/positive": {
+   "frozen": 3,
+   "r10": 4,
+   "change": 1.0
+  },
+  "set_A/judge_visible/judge_vs_script/L1/items/sign_test/negative": {
+   "frozen": 2,
+   "r10": 0,
+   "change": -2.0
+  },
+  "set_A/judge_visible/judge_vs_script/L1/items/sign_test/p": {
+   "frozen": 1.0,
+   "r10": 0.125,
+   "change": -0.875
+  },
+  "set_A/judge_visible/judge_vs_script/L1/set_items/per_item_diff[0]": {
+   "frozen": -0.6667,
+   "r10": 0.0,
+   "change": 0.6667
+  },
+  "set_A/judge_visible/judge_vs_script/L1/set_items/per_item_diff[2]": {
+   "frozen": 0.25,
+   "r10": 0.5,
+   "change": 0.25
+  },
+  "set_A/judge_visible/judge_vs_script/L1/set_items/per_item_diff[3]": {
+   "frozen": -0.25,
+   "r10": 0.0,
+   "change": 0.25
+  },
+  "set_A/judge_visible/judge_vs_script/L1/set_items/per_item_diff[4]": {
+   "frozen": 0.0,
+   "r10": 0.3333,
+   "change": 0.3333
+  },
+  "set_A/judge_visible/judge_vs_script/L1/set_items/p_signflip": {
+   "frozen": 0.625,
+   "r10": 0.125,
+   "change": -0.5
+  },
+  "set_A/judge_visible/judge_vs_script/L1/set_items/sign_test/positive": {
+   "frozen": 3,
+   "r10": 4,
+   "change": 1.0
+  },
+  "set_A/judge_visible/judge_vs_script/L1/set_items/sign_test/negative": {
+   "frozen": 2,
+   "r10": 0,
+   "change": -2.0
+  },
+  "set_A/judge_visible/judge_vs_script/L1/set_items/sign_test/p": {
+   "frozen": 1.0,
+   "r10": 0.125,
+   "change": -0.875
+  },
+  "set_A/judge_visible/judge_vs_script/L1/mcnemar_runs/a_wrong_b_right": {
+   "frozen": 5,
+   "r10": 0,
+   "change": -5.0
+  },
+  "set_A/judge_visible/judge_vs_script/L1/mcnemar_runs/p": {
+   "frozen": 0.774,
+   "r10": 0.0156,
+   "change": -0.7584
+  },
+  "set_A/judge_visible/judge_vs_script/L2/items/per_item_diff[2]": {
+   "frozen": 0.25,
+   "r10": 0.5,
+   "change": 0.25
+  },
+  "set_A/judge_visible/judge_vs_script/L2/set_items/per_item_diff[2]": {
+   "frozen": 0.25,
+   "r10": 0.5,
+   "change": 0.25
+  },
+  "set_A/judge_visible/judge_vs_script/L2/mcnemar_runs/a_wrong_b_right": {
+   "frozen": 1,
+   "r10": 0,
+   "change": -1.0
+  },
+  "set_A/judge_visible/judge_vs_script/L2/mcnemar_runs/p": {
+   "frozen": 0.125,
+   "r10": 0.0312,
+   "change": -0.0938
+  },
+  "luna/topic_unit_D/L1/accuracy": {
+   "frozen": 0.5556,
+   "r10": 0.4444,
+   "change": -0.1112
+  },
+  "luna/topic_unit_D/L1/omissions_credited": {
+   "frozen": "1/2",
+   "r10": "2/2",
+   "change": 0.5
+  },
+  "luna/topic_unit_D/judge_vs_script/L1/items/per_item_diff": {
+   "frozen": [
+    -0.5,
+    -0.3333,
+    0.0,
+    -1.0
+   ],
+   "r10": [
+    -0.5,
+    -0.3333,
+    -1.0,
+    -1.0
+   ],
+   "change": null
+  },
+  "luna/topic_unit_D/judge_vs_script/L1/items/p_signflip": {
+   "frozen": 0.25,
+   "r10": 0.125,
+   "change": -0.125
+  },
+  "luna/topic_unit_D/judge_vs_script/L1/items/sign_test/negative": {
+   "frozen": 3,
+   "r10": 4,
+   "change": 1.0
+  },
+  "luna/topic_unit_D/judge_vs_script/L1/items/sign_test/p": {
+   "frozen": 0.25,
+   "r10": 0.125,
+   "change": -0.125
+  },
+  "luna/topic_unit_D/judge_vs_script/L1/set_items/per_item_diff": {
+   "frozen": [
+    -0.5,
+    -0.3333,
+    0.0,
+    -1.0
+   ],
+   "r10": [
+    -0.5,
+    -0.3333,
+    -1.0,
+    -1.0
+   ],
+   "change": null
+  },
+  "luna/topic_unit_D/judge_vs_script/L1/set_items/p_signflip": {
+   "frozen": 0.25,
+   "r10": 0.125,
+   "change": -0.125
+  },
+  "luna/topic_unit_D/judge_vs_script/L1/set_items/sign_test/negative": {
+   "frozen": 3,
+   "r10": 4,
+   "change": 1.0
+  },
+  "luna/topic_unit_D/judge_vs_script/L1/set_items/sign_test/p": {
+   "frozen": 0.25,
+   "r10": 0.125,
+   "change": -0.125
+  },
+  "luna/topic_unit_D/judge_vs_script/L1/mcnemar_runs/a_wrong_b_right": {
+   "frozen": 4,
+   "r10": 5,
+   "change": 1.0
+  },
+  "luna/topic_unit_D/judge_vs_script/L1/mcnemar_runs/p": {
+   "frozen": 0.125,
+   "r10": 0.0625,
+   "change": -0.0625
+  },
+  "luna/topic_unit_D/judge_vs_script/L2/items/per_item_diff": {
+   "frozen": [
+    0.0,
+    -0.3333,
+    0.0,
+    -1.0
+   ],
+   "r10": [
+    -0.25,
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "change": null
+  },
+  "luna/topic_unit_D/judge_vs_script/L2/set_items/per_item_diff": {
+   "frozen": [
+    0.0,
+    -0.3333,
+    0.0,
+    -1.0
+   ],
+   "r10": [
+    -0.25,
+    0.0,
+    0.0,
+    -1.0
+   ],
+   "change": null
+  },
+  "luna/gap_unit/judge_vs_script/L2/items/per_item_diff": {
+   "frozen": [
+    0.0,
+    -0.3333
+   ],
+   "r10": [
+    -0.25,
+    0.0
+   ],
+   "change": null
+  },
+  "luna/gap_unit/judge_vs_script/L2/set_items/per_item_diff": {
+   "frozen": [
+    0.0,
+    -0.3333
+   ],
+   "r10": [
+    -0.25,
+    0.0
+   ],
+   "change": null
+  },
+  "luna/judge_visible_pairs_only/judge_vs_script/L2/items/per_item_diff": {
+   "frozen": [
+    0.0,
+    -0.3333
+   ],
+   "r10": [
+    -0.25,
+    0.0
+   ],
+   "change": null
+  },
+  "luna/judge_visible_pairs_only/judge_vs_script/L2/set_items/per_item_diff": {
+   "frozen": [
+    0.0,
+    -0.3333
+   ],
+   "r10": [
+    -0.25,
+    0.0
+   ],
+   "change": null
+  },
+  "luna/judge_visible/judge_vs_script/L2/items/per_item_diff": {
+   "frozen": [
+    0.0,
+    -0.3333
+   ],
+   "r10": [
+    -0.25,
+    0.0
+   ],
+   "change": null
+  },
+  "luna/judge_visible/judge_vs_script/L2/set_items/per_item_diff": {
+   "frozen": [
+    0.0,
+    -0.3333
+   ],
+   "r10": [
+    -0.25,
+    0.0
+   ],
+   "change": null
+  },
+  "main_study/topic_unit_D/L0/kappa": {
+   "frozen": -0.0345,
+   "r10": 0.0,
+   "change": 0.0345
+  },
+  "main_study/topic_unit_D/L0/balanced_accuracy": {
+   "frozen": 0.4828,
+   "r10": 0.5,
+   "change": 0.0172
+  },
+  "main_study/topic_unit_D/L0/accuracy": {
+   "frozen": 0.9333,
+   "r10": 0.9667,
+   "change": 0.0334
+  },
+  "main_study/topic_unit_D/L0/passes_credited": {
+   "frozen": "28/29",
+   "r10": "29/29",
+   "change": 0.0345
+  },
+  "main_study/topic_unit_D/L0/passes_blamed": {
+   "frozen": "1/29",
+   "r10": "0/29",
+   "change": -0.0345
+  },
+  "main_study/topic_unit_D/L0/boot95_item/balanced_accuracy": {
+   "frozen": [
+    0.4444,
+    0.5
+   ],
+   "r10": [
+    0.5,
+    0.5
+   ],
+   "change": null
+  },
+  "main_study/topic_unit_D/L0/boot95_item/kappa": {
+   "frozen": [
+    -0.0759,
+    0.0
+   ],
+   "r10": [
+    0.0,
+    0.0
+   ],
+   "change": null
+  },
+  "main_study/topic_unit_D/L0/boot95_run/balanced_accuracy": {
+   "frozen": [
+    0.4464,
+    0.5
+   ],
+   "r10": [
+    0.5,
+    0.5
+   ],
+   "change": null
+  },
+  "main_study/topic_unit_D/L0/boot95_run/kappa": {
+   "frozen": [
+    -0.087,
+    0.0
+   ],
+   "r10": [
+    0.0,
+    0.0
+   ],
+   "change": null
+  },
+  "main_study/topic_unit_D/L2/kappa": {
+   "frozen": -0.0465,
+   "r10": -0.0345,
+   "change": 0.012
+  },
+  "main_study/topic_unit_D/L2/balanced_accuracy": {
+   "frozen": 0.4655,
+   "r10": 0.4828,
+   "change": 0.0173
+  },
+  "main_study/topic_unit_D/L2/accuracy": {
+   "frozen": 0.9,
+   "r10": 0.9333,
+   "change": 0.0333
+  },
+  "main_study/topic_unit_D/L2/passes_credited": {
+   "frozen": "27/29",
+   "r10": "28/29",
+   "change": 0.0345
+  },
+  "main_study/topic_unit_D/L2/passes_blamed": {
+   "frozen": "2/29",
+   "r10": "1/29",
+   "change": -0.0345
+  },
+  "main_study/topic_unit_D/L2/boot95_item/balanced_accuracy": {
+   "frozen": [
+    0.4348,
+    0.4833
+   ],
+   "r10": [
+    0.4605,
+    0.5
+   ],
+   "change": null
+  },
+  "main_study/topic_unit_D/L2/boot95_item/kappa": {
+   "frozen": [
+    -0.1121,
+    -0.0333
+   ],
+   "r10": [
+    -0.0591,
+    0.0
+   ],
+   "change": null
+  },
+  "main_study/topic_unit_D/L2/boot95_run/balanced_accuracy": {
+   "frozen": [
+    0.4138,
+    0.5
+   ],
+   "r10": [
+    0.4464,
+    0.5
+   ],
+   "change": null
+  },
+  "main_study/topic_unit_D/L2/boot95_run/kappa": {
+   "frozen": [
+    -0.1111,
+    0.0
+   ],
+   "r10": [
+    -0.087,
+    0.0
+   ],
+   "change": null
+  },
+  "main_study/topic_unit_D/judge_vs_script/L0/items/per_item_diff[4]": {
+   "frozen": 0.0,
+   "r10": 0.25,
+   "change": 0.25
+  },
+  "main_study/topic_unit_D/judge_vs_script/L0/items/p_signflip": {
+   "frozen": 0.5,
+   "r10": 0.25,
+   "change": -0.25
+  },
+  "main_study/topic_unit_D/judge_vs_script/L0/items/sign_test/positive": {
+   "frozen": 2,
+   "r10": 3,
+   "change": 1.0
+  },
+  "main_study/topic_unit_D/judge_vs_script/L0/items/sign_test/p": {
+   "frozen": 1.0,
+   "r10": 0.625,
+   "change": -0.375
+  },
+  "main_study/topic_unit_D/judge_vs_script/L0/set_items/per_item_diff[4]": {
+   "frozen": 0.0,
+   "r10": 0.25,
+   "change": 0.25
+  },
+  "main_study/topic_unit_D/judge_vs_script/L0/set_items/p_signflip": {
+   "frozen": 0.5,
+   "r10": 0.25,
+   "change": -0.25
+  },
+  "main_study/topic_unit_D/judge_vs_script/L0/set_items/sign_test/positive": {
+   "frozen": 2,
+   "r10": 3,
+   "change": 1.0
+  },
+  "main_study/topic_unit_D/judge_vs_script/L0/set_items/sign_test/p": {
+   "frozen": 1.0,
+   "r10": 0.625,
+   "change": -0.375
+  },
+  "main_study/topic_unit_D/judge_vs_script/L0/mcnemar_runs/a_wrong_b_right": {
+   "frozen": 2,
+   "r10": 1,
+   "change": -1.0
+  },
+  "main_study/topic_unit_D/judge_vs_script/L0/mcnemar_runs/p": {
+   "frozen": 0.688,
+   "r10": 0.375,
+   "change": -0.313
+  },
+  "main_study/topic_unit_D/judge_vs_script/L2/items/per_item_diff[2]": {
+   "frozen": -0.2857,
+   "r10": -0.1429,
+   "change": 0.1428
+  },
+  "main_study/topic_unit_D/judge_vs_script/L2/items/p_signflip": {
+   "frozen": 0.625,
+   "r10": 0.375,
+   "change": -0.25
+  },
+  "main_study/topic_unit_D/judge_vs_script/L2/set_items/per_item_diff[2]": {
+   "frozen": -0.2857,
+   "r10": -0.1429,
+   "change": 0.1428
+  },
+  "main_study/topic_unit_D/judge_vs_script/L2/set_items/p_signflip": {
+   "frozen": 0.625,
+   "r10": 0.375,
+   "change": -0.25
+  },
+  "main_study/topic_unit_D/judge_vs_script/L2/mcnemar_runs/a_wrong_b_right": {
+   "frozen": 3,
+   "r10": 2,
+   "change": -1.0
+  },
+  "main_study/topic_unit_D/judge_vs_script/L2/mcnemar_runs/p": {
+   "frozen": 1.0,
+   "r10": 0.688,
+   "change": -0.312
+  },
+  "main_study/gap_unit/L0/kappa": {
+   "frozen": 0.3514,
+   "r10": 0.4754,
+   "change": 0.124
+  },
+  "main_study/gap_unit/L0/balanced_accuracy": {
+   "frozen": 0.6494,
+   "r10": 0.6667,
+   "change": 0.0173
+  },
+  "main_study/gap_unit/L0/accuracy": {
+   "frozen": 0.9062,
+   "r10": 0.9375,
+   "change": 0.0313
+  },
+  "main_study/gap_unit/L0/passes_credited": {
+   "frozen": "28/29",
+   "r10": "29/29",
+   "change": 0.0345
+  },
+  "main_study/gap_unit/L0/passes_blamed": {
+   "frozen": "1/29",
+   "r10": "0/29",
+   "change": -0.0345
+  },
+  "main_study/gap_unit/L0/boot95_item/balanced_accuracy": {
+   "frozen": [
+    0.4643,
+    1.0
+   ],
+   "r10": [
+    0.5,
+    1.0
+   ],
+   "change": null
+  },
+  "main_study/gap_unit/L0/boot95_item/kappa": {
+   "frozen": [
+    -0.0811,
+    1.0
+   ],
+   "r10": [
+    0.0,
+    1.0
+   ],
+   "change": null
+  },
+  "main_study/gap_unit/L0/boot95_run/balanced_accuracy": {
+   "frozen": [
+    0.4516,
+    1.0
+   ],
+   "r10": [
+    0.5,
+    1.0
+   ],
+   "change": null
+  },
+  "main_study/gap_unit/L0/boot95_run/kappa": {
+   "frozen": [
+    -0.0811,
+    1.0
+   ],
+   "r10": [
+    0.0,
+    1.0
+   ],
+   "change": null
+  },
+  "main_study/gap_unit/L2/kappa": {
+   "frozen": 0.2644,
+   "r10": -0.0492,
+   "change": -0.3136
+  },
+  "main_study/gap_unit/L2/balanced_accuracy": {
+   "frozen": 0.6322,
+   "r10": 0.4828,
+   "change": -0.1494
+  },
+  "main_study/gap_unit/L2/passes_credited": {
+   "frozen": "27/29",
+   "r10": "28/29",
+   "change": 0.0345
+  },
+  "main_study/gap_unit/L2/commissions_credited": {
+   "frozen": "2/3",
+   "r10": "3/3",
+   "change": 0.3333
+  },
+  "main_study/gap_unit/L2/passes_blamed": {
+   "frozen": "2/29",
+   "r10": "1/29",
+   "change": -0.0345
+  },
+  "main_study/gap_unit/L2/boot95_item/balanced_accuracy": {
+   "frozen": [
+    0.4444,
+    1.0
+   ],
+   "r10": [
+    0.4571,
+    0.5
+   ],
+   "change": null
+  },
+  "main_study/gap_unit/L2/boot95_item/kappa": {
+   "frozen": [
+    -0.125,
+    1.0
+   ],
+   "r10": [
+    -0.0857,
+    0.0
+   ],
+   "change": null
+  },
+  "main_study/gap_unit/L2/boot95_run/balanced_accuracy": {
+   "frozen": [
+    0.431,
+    0.9833
+   ],
+   "r10": [
+    0.4464,
+    0.5
+   ],
+   "change": null
+  },
+  "main_study/gap_unit/L2/boot95_run/kappa": {
+   "frozen": [
+    -0.12,
+    0.7838
+   ],
+   "r10": [
+    -0.12,
+    0.0
+   ],
+   "change": null
+  },
+  "main_study/gap_unit/judge_vs_script/L0/items/per_item_diff[4]": {
+   "frozen": 0.5,
+   "r10": 0.75,
+   "change": 0.25
+  },
+  "main_study/gap_unit/judge_vs_script/L0/set_items/per_item_diff[4]": {
+   "frozen": 0.5,
+   "r10": 0.75,
+   "change": 0.25
+  },
+  "main_study/gap_unit/judge_vs_script/L0/mcnemar_runs/a_right_b_wrong": {
+   "frozen": 16,
+   "r10": 17,
+   "change": 1.0
+  },
+  "main_study/gap_unit/judge_vs_script/L0/mcnemar_runs/p": {
+   "frozen": 0.00131,
+   "r10": 0.000729,
+   "change": -0.0006
+  },
+  "main_study/gap_unit/judge_vs_script/L2/items/per_item_diff[1]": {
+   "frozen": 0.5,
+   "r10": 0.0,
+   "change": -0.5
+  },
+  "main_study/gap_unit/judge_vs_script/L2/items/per_item_diff[2]": {
+   "frozen": 0.0,
+   "r10": 0.125,
+   "change": 0.125
+  },
+  "main_study/gap_unit/judge_vs_script/L2/set_items/per_item_diff[1]": {
+   "frozen": 0.5,
+   "r10": 0.0,
+   "change": -0.5
+  },
+  "main_study/gap_unit/judge_vs_script/L2/set_items/per_item_diff[2]": {
+   "frozen": 0.0,
+   "r10": 0.125,
+   "change": 0.125
+  },
+  "main_study/gap_unit/judge_vs_script/L2/mcnemar_runs/a_right_b_wrong": {
+   "frozen": 16,
+   "r10": 17,
+   "change": 1.0
+  },
+  "main_study/gap_unit/judge_vs_script/L2/mcnemar_runs/a_wrong_b_right": {
+   "frozen": 3,
+   "r10": 4,
+   "change": 1.0
+  },
+  "main_study/gap_unit/judge_vs_script/L2/mcnemar_runs/p": {
+   "frozen": 0.00443,
+   "r10": 0.0072,
+   "change": 0.0028
+  },
+  "main_study/judge_visible_pairs_only/L0/kappa": {
+   "frozen": 0.3437,
+   "r10": 0.4717,
+   "change": 0.128
+  },
+  "main_study/judge_visible_pairs_only/L0/balanced_accuracy": {
+   "frozen": 0.6467,
+   "r10": 0.6667,
+   "change": 0.02
+  },
+  "main_study/judge_visible_pairs_only/L0/accuracy": {
+   "frozen": 0.8929,
+   "r10": 0.9286,
+   "change": 0.0357
+  },
+  "main_study/judge_visible_pairs_only/L0/passes_credited": {
+   "frozen": "24/25",
+   "r10": "25/25",
+   "change": 0.04
+  },
+  "main_study/judge_visible_pairs_only/L0/passes_blamed": {
+   "frozen": "1/25",
+   "r10": "0/25",
+   "change": -0.04
+  },
+  "main_study/judge_visible_pairs_only/L0/boot95_item/balanced_accuracy": {
+   "frozen": [
+    0.46,
+    1.0
+   ],
+   "r10": [
+    0.5,
+    1.0
+   ],
+   "change": null
+  },
+  "main_study/judge_visible_pairs_only/L0/boot95_item/kappa": {
+   "frozen": [
+    -0.0976,
+    1.0
+   ],
+   "r10": [
+    0.0,
+    1.0
+   ],
+   "change": null
+  },
+  "main_study/judge_visible_pairs_only/L0/boot95_run/balanced_accuracy": {
+   "frozen": [
+    0.4444,
+    1.0
+   ],
+   "r10": [
+    0.5,
+    1.0
+   ],
+   "change": null
+  },
+  "main_study/judge_visible_pairs_only/L0/boot95_run/kappa": {
+   "frozen": [
+    -0.0938,
+    1.0
+   ],
+   "r10": [
+    0.0,
+    1.0
+   ],
+   "change": null
+  },
+  "main_study/judge_visible_pairs_only/L2/kappa": {
+   "frozen": 0.2533,
+   "r10": -0.0566,
+   "change": -0.3099
+  },
+  "main_study/judge_visible_pairs_only/L2/balanced_accuracy": {
+   "frozen": 0.6267,
+   "r10": 0.48,
+   "change": -0.1467
+  },
+  "main_study/judge_visible_pairs_only/L2/passes_credited": {
+   "frozen": "23/25",
+   "r10": "24/25",
+   "change": 0.04
+  },
+  "main_study/judge_visible_pairs_only/L2/commissions_credited": {
+   "frozen": "2/3",
+   "r10": "3/3",
+   "change": 0.3333
+  },
+  "main_study/judge_visible_pairs_only/L2/passes_blamed": {
+   "frozen": "2/25",
+   "r10": "1/25",
+   "change": -0.04
+  },
+  "main_study/judge_visible_pairs_only/L2/boot95_item/balanced_accuracy": {
+   "frozen": [
+    0.4333,
+    1.0
+   ],
+   "r10": [
+    0.4516,
+    0.5
+   ],
+   "change": null
+  },
+  "main_study/judge_visible_pairs_only/L2/boot95_item/kappa": {
+   "frozen": [
+    -0.1379,
+    1.0
+   ],
+   "r10": [
+    -0.1013,
+    0.0
+   ],
+   "change": null
+  },
+  "main_study/judge_visible_pairs_only/L2/boot95_run/balanced_accuracy": {
+   "frozen": [
+    0.42,
+    0.9808
+   ],
+   "r10": [
+    0.4348,
+    0.5
+   ],
+   "change": null
+  },
+  "main_study/judge_visible_pairs_only/L2/boot95_run/kappa": {
+   "frozen": [
+    -0.12,
+    0.7812
+   ],
+   "r10": [
+    -0.1395,
+    0.0
+   ],
+   "change": null
+  },
+  "main_study/judge_visible_pairs_only/judge_vs_script/L0/items/per_item_diff[4]": {
+   "frozen": 0.5,
+   "r10": 0.75,
+   "change": 0.25
+  },
+  "main_study/judge_visible_pairs_only/judge_vs_script/L0/set_items/per_item_diff[4]": {
+   "frozen": 0.5,
+   "r10": 0.75,
+   "change": 0.25
+  },
+  "main_study/judge_visible_pairs_only/judge_vs_script/L0/mcnemar_runs/a_right_b_wrong": {
+   "frozen": 13,
+   "r10": 14,
+   "change": 1.0
+  },
+  "main_study/judge_visible_pairs_only/judge_vs_script/L0/mcnemar_runs/p": {
+   "frozen": 0.00739,
+   "r10": 0.00418,
+   "change": -0.0032
+  },
+  "main_study/judge_visible_pairs_only/judge_vs_script/L2/items/per_item_diff[1]": {
+   "frozen": 0.5,
+   "r10": 0.0,
+   "change": -0.5
+  },
+  "main_study/judge_visible_pairs_only/judge_vs_script/L2/items/per_item_diff[2]": {
+   "frozen": 0.0,
+   "r10": 0.1429,
+   "change": 0.1429
+  },
+  "main_study/judge_visible_pairs_only/judge_vs_script/L2/set_items/per_item_diff[1]": {
+   "frozen": 0.5,
+   "r10": 0.0,
+   "change": -0.5
+  },
+  "main_study/judge_visible_pairs_only/judge_vs_script/L2/set_items/per_item_diff[2]": {
+   "frozen": 0.0,
+   "r10": 0.1429,
+   "change": 0.1429
+  },
+  "main_study/judge_visible_pairs_only/judge_vs_script/L2/mcnemar_runs/a_right_b_wrong": {
+   "frozen": 13,
+   "r10": 14,
+   "change": 1.0
+  },
+  "main_study/judge_visible_pairs_only/judge_vs_script/L2/mcnemar_runs/a_wrong_b_right": {
+   "frozen": 3,
+   "r10": 4,
+   "change": 1.0
+  },
+  "main_study/judge_visible_pairs_only/judge_vs_script/L2/mcnemar_runs/p": {
+   "frozen": 0.0213,
+   "r10": 0.0309,
+   "change": 0.0096
+  },
+  "main_study/judge_visible/L2/kappa": {
+   "frozen": 0.1429,
+   "r10": -0.2,
+   "change": -0.3429
+  },
+  "main_study/judge_visible/L2/balanced_accuracy": {
+   "frozen": 0.5833,
+   "r10": 0.4167,
+   "change": -0.1666
+  },
+  "main_study/judge_visible/L2/passes_credited": {
+   "frozen": "4/6",
+   "r10": "5/6",
+   "change": 0.1667
+  },
+  "main_study/judge_visible/L2/commissions_credited": {
+   "frozen": "1/2",
+   "r10": "2/2",
+   "change": 0.5
+  },
+  "main_study/judge_visible/L2/passes_blamed": {
+   "frozen": "2/6",
+   "r10": "1/6",
+   "change": -0.1667
+  },
+  "main_study/judge_visible/L2/boot95_item/balanced_accuracy": {
+   "frozen": [
+    0.2143,
+    1.0
+   ],
+   "r10": [
+    0.25,
+    0.5
+   ],
+   "change": null
+  },
+  "main_study/judge_visible/L2/boot95_item/kappa": {
+   "frozen": [
+    -0.4211,
+    1.0
+   ],
+   "r10": [
+    -0.4,
+    0.0
+   ],
+   "change": null
+  },
+  "main_study/judge_visible/L2/boot95_run/balanced_accuracy": {
+   "frozen": [
+    0.2143,
+    0.9286
+   ],
+   "r10": [
+    0.25,
+    0.5
+   ],
+   "change": null
+  },
+  "main_study/judge_visible/L2/boot95_run/kappa": {
+   "frozen": [
+    -0.4286,
+    0.75
+   ],
+   "r10": [
+    -0.4286,
+    0.0
+   ],
+   "change": null
+  },
+  "main_study/judge_visible/judge_vs_script/L2/items/per_item_diff[1]": {
+   "frozen": 0.5,
+   "r10": 0.0,
+   "change": -0.5
+  },
+  "main_study/judge_visible/judge_vs_script/L2/items/per_item_diff[2]": {
+   "frozen": 0.0,
+   "r10": 0.3333,
+   "change": 0.3333
+  },
+  "main_study/judge_visible/judge_vs_script/L2/set_items/per_item_diff[1]": {
+   "frozen": 0.5,
+   "r10": 0.0,
+   "change": -0.5
+  },
+  "main_study/judge_visible/judge_vs_script/L2/set_items/per_item_diff[2]": {
+   "frozen": 0.0,
+   "r10": 0.3333,
+   "change": 0.3333
+  },
+  "main_study/judge_visible/judge_vs_script/L2/mcnemar_runs/a_right_b_wrong": {
+   "frozen": 3,
+   "r10": 4,
+   "change": 1.0
+  },
+  "main_study/judge_visible/judge_vs_script/L2/mcnemar_runs/a_wrong_b_right": {
+   "frozen": 2,
+   "r10": 3,
+   "change": 1.0
+  },
+  "pooled_three_sets/topic_unit_D/L0/kappa": {
+   "frozen": 0.009,
+   "r10": 0.2574,
+   "change": 0.2484
+  },
+  "pooled_three_sets/topic_unit_D/L0/balanced_accuracy": {
+   "frozen": 0.5053,
+   "r10": 0.607,
+   "change": 0.1017
+  },
+  "pooled_three_sets/topic_unit_D/L0/accuracy": {
+   "frozen": 0.7273,
+   "r10": 0.8545,
+   "change": 0.1272
+  },
+  "pooled_three_sets/topic_unit_D/L0/passes_credited": {
+   "frozen": "77/95",
+   "r10": "90/95",
+   "change": 0.1368
+  },
+  "pooled_three_sets/topic_unit_D/L0/omissions_credited": {
+   "frozen": "4/5",
+   "r10": "3/5",
+   "change": -0.2
+  },
+  "pooled_three_sets/topic_unit_D/L0/passes_blamed": {
+   "frozen": "18/95",
+   "r10": "5/95",
+   "change": -0.1368
+  },
+  "pooled_three_sets/topic_unit_D/L0/boot95_item/balanced_accuracy": {
+   "frozen": [
+    0.4066,
+    0.6304
+   ],
+   "r10": [
+    0.4979,
+    0.7727
+   ],
+   "change": null
+  },
+  "pooled_three_sets/topic_unit_D/L0/boot95_item/kappa": {
+   "frozen": [
+    -0.1633,
+    0.1772
+   ],
+   "r10": [
+    -0.005,
+    0.6844
+   ],
+   "change": null
+  },
+  "pooled_three_sets/topic_unit_D/L0/boot95_run/balanced_accuracy": {
+   "frozen": [
+    0.401,
+    0.6263
+   ],
+   "r10": [
+    0.4958,
+    0.7324
+   ],
+   "change": null
+  },
+  "pooled_three_sets/topic_unit_D/L0/boot95_run/kappa": {
+   "frozen": [
+    -0.1613,
+    0.2082
+   ],
+   "r10": [
+    -0.0092,
+    0.5126
+   ],
+   "change": null
+  },
+  "pooled_three_sets/topic_unit_D/L2/kappa": {
+   "frozen": 0.3333,
+   "r10": 0.6729,
+   "change": 0.3396
+  },
+  "pooled_three_sets/topic_unit_D/L2/balanced_accuracy": {
+   "frozen": 0.7509,
+   "r10": 0.8175,
+   "change": 0.0666
+  },
+  "pooled_three_sets/topic_unit_D/L2/accuracy": {
+   "frozen": 0.7636,
+   "r10": 0.9273,
+   "change": 0.1637
+  },
+  "pooled_three_sets/topic_unit_D/L2/passes_credited": {
+   "frozen": "73/95",
+   "r10": "92/95",
+   "change": 0.2
+  },
+  "pooled_three_sets/topic_unit_D/L2/omissions_credited": {
+   "frozen": "2/5",
+   "r10": "3/5",
+   "change": 0.2
+  },
+  "pooled_three_sets/topic_unit_D/L2/passes_blamed": {
+   "frozen": "22/95",
+   "r10": "3/95",
+   "change": -0.2
+  },
+  "pooled_three_sets/topic_unit_D/L2/boot95_item/balanced_accuracy": {
+   "frozen": [
+    0.6843,
+    0.846
+   ],
+   "r10": [
+    0.6713,
+    0.8887
+   ],
+   "change": null
+  },
+  "pooled_three_sets/topic_unit_D/L2/boot95_item/kappa": {
+   "frozen": [
+    0.2358,
+    0.4331
+   ],
+   "r10": [
+    0.4306,
+    0.7559
+   ],
+   "change": null
+  },
+  "pooled_three_sets/topic_unit_D/L2/boot95_run/balanced_accuracy": {
+   "frozen": [
+    0.6224,
+    0.8667
+   ],
+   "r10": [
+    0.6882,
+    0.9375
+   ],
+   "change": null
+  },
+  "pooled_three_sets/topic_unit_D/L2/boot95_run/kappa": {
+   "frozen": [
+    0.1444,
+    0.5178
+   ],
+   "r10": [
+    0.4244,
+    0.8608
+   ],
+   "change": null
+  },
+  "pooled_three_sets/topic_unit_D/judge_vs_script/L0/items/per_item_diff[0]": {
+   "frozen": -0.0952,
+   "r10": 0.0476,
+   "change": 0.1428
+  },
+  "pooled_three_sets/topic_unit_D/judge_vs_script/L0/items/per_item_diff[1]": {
+   "frozen": -0.375,
+   "r10": -0.25,
+   "change": 0.125
+  },
+  "pooled_three_sets/topic_unit_D/judge_vs_script/L0/items/per_item_diff[2]": {
+   "frozen": -0.3333,
+   "r10": -0.4286,
+   "change": -0.0953
+  },
+  "pooled_three_sets/topic_unit_D/judge_vs_script/L0/items/per_item_diff[3]": {
+   "frozen": -0.2632,
+   "r10": 0.0,
+   "change": 0.2632
+  },
+  "pooled_three_sets/topic_unit_D/judge_vs_script/L0/items/per_item_diff[4]": {
+   "frozen": -0.2778,
+   "r10": 0.0556,
+   "change": 0.3334
+  },
+  "pooled_three_sets/topic_unit_D/judge_vs_script/L0/items/p_signflip": {
+   "frozen": 0.0625,
+   "r10": 0.5,
+   "change": 0.4375
+  },
+  "pooled_three_sets/topic_unit_D/judge_vs_script/L0/items/sign_test/positive": {
+   "frozen": 1,
+   "r10": 3,
+   "change": 2.0
+  },
+  "pooled_three_sets/topic_unit_D/judge_vs_script/L0/items/sign_test/negative": {
+   "frozen": 5,
+   "r10": 2,
+   "change": -3.0
+  },
+  "pooled_three_sets/topic_unit_D/judge_vs_script/L0/items/sign_test/p": {
+   "frozen": 0.219,
+   "r10": 1.0,
+   "change": 0.781
+  },
+  "pooled_three_sets/topic_unit_D/judge_vs_script/L0/set_items/per_item_diff[8]": {
+   "frozen": 0.0,
+   "r10": 0.25,
+   "change": 0.25
+  },
+  "pooled_three_sets/topic_unit_D/judge_vs_script/L0/set_items/per_item_diff[10]": {
+   "frozen": -0.3077,
+   "r10": -0.0769,
+   "change": 0.2308
+  },
+  "pooled_three_sets/topic_unit_D/judge_vs_script/L0/set_items/per_item_diff[11]": {
+   "frozen": -0.1818,
+   "r10": 0.0,
+   "change": 0.1818
+  },
+  "pooled_three_sets/topic_unit_D/judge_vs_script/L0/set_items/per_item_diff[12]": {
+   "frozen": -0.2727,
+   "r10": -0.4545,
+   "change": -0.1818
+  },
+  "pooled_three_sets/topic_unit_D/judge_vs_script/L0/set_items/per_item_diff[13]": {
+   "frozen": -0.4286,
+   "r10": -0.0714,
+   "change": 0.3572
+  },
+  "pooled_three_sets/topic_unit_D/judge_vs_script/L0/set_items/per_item_diff[14]": {
+   "frozen": -0.3077,
+   "r10": 0.0769,
+   "change": 0.3846
+  },
+  "pooled_three_sets/topic_unit_D/judge_vs_script/L0/set_items/p_signflip": {
+   "frozen": 0.0269,
+   "r10": 0.153,
+   "change": 0.1261
+  },
+  "pooled_three_sets/topic_unit_D/judge_vs_script/L0/set_items/sign_test/positive": {
+   "frozen": 3,
+   "r10": 5,
+   "change": 2.0
+  },
+  "pooled_three_sets/topic_unit_D/judge_vs_script/L0/set_items/sign_test/negative": {
+   "frozen": 9,
+   "r10": 7,
+   "change": -2.0
+  },
+  "pooled_three_sets/topic_unit_D/judge_vs_script/L0/set_items/sign_test/p": {
+   "frozen": 0.146,
+   "r10": 0.774,
+   "change": 0.628
+  },
+  "pooled_three_sets/topic_unit_D/judge_vs_script/L0/mcnemar_runs/a_right_b_wrong": {
+   "frozen": 5,
+   "r10": 6,
+   "change": 1.0
+  },
+  "pooled_three_sets/topic_unit_D/judge_vs_script/L0/mcnemar_runs/a_wrong_b_right": {
+   "frozen": 29,
+   "r10": 16,
+   "change": -13.0
+  },
+  "pooled_three_sets/topic_unit_D/judge_vs_script/L0/mcnemar_runs/p": {
+   "frozen": 3.86e-05,
+   "r10": 0.0525,
+   "change": 0.0525
+  },
+  "pooled_three_sets/topic_unit_D/judge_vs_script/L2/items/per_item_diff[0]": {
+   "frozen": -0.1429,
+   "r10": 0.0476,
+   "change": 0.1905
+  },
+  "pooled_three_sets/topic_unit_D/judge_vs_script/L2/items/per_item_diff[1]": {
+   "frozen": -0.25,
+   "r10": -0.125,
+   "change": 0.125
+  },
+  "pooled_three_sets/topic_unit_D/judge_vs_script/L2/items/per_item_diff[2]": {
+   "frozen": -0.3333,
+   "r10": -0.0952,
+   "change": 0.2381
+  },
+  "pooled_three_sets/topic_unit_D/judge_vs_script/L2/items/per_item_diff[3]": {
+   "frozen": -0.2105,
+   "r10": 0.0,
+   "change": 0.2105
+  },
+  "pooled_three_sets/topic_unit_D/judge_vs_script/L2/items/per_item_diff[4]": {
+   "frozen": -0.0556,
+   "r10": 0.0,
+   "change": 0.0556
+  },
+  "pooled_three_sets/topic_unit_D/judge_vs_script/L2/items/per_item_diff[5]": {
+   "frozen": -0.0667,
+   "r10": 0.0667,
+   "change": 0.1334
+  },
+  "pooled_three_sets/topic_unit_D/judge_vs_script/L2/items/p_signflip": {
+   "frozen": 0.0312,
+   "r10": 0.625,
+   "change": 0.5938
+  },
+  "pooled_three_sets/topic_unit_D/judge_vs_script/L2/items/sign_test/positive": {
+   "frozen": 0,
+   "r10": 2,
+   "change": 2.0
+  },
+  "pooled_three_sets/topic_unit_D/judge_vs_script/L2/items/sign_test/negative": {
+   "frozen": 6,
+   "r10": 2,
+   "change": -4.0
+  },
+  "pooled_three_sets/topic_unit_D/judge_vs_script/L2/items/sign_test/p": {
+   "frozen": 0.0312,
+   "r10": 1.0,
+   "change": 0.9688
+  },
+  "pooled_three_sets/topic_unit_D/judge_vs_script/L2/set_items/per_item_diff[0]": {
+   "frozen": 0.0,
+   "r10": -0.25,
+   "change": -0.25
+  },
+  "pooled_three_sets/topic_unit_D/judge_vs_script/L2/set_items/per_item_diff[1]": {
+   "frozen": -0.3333,
+   "r10": 0.0,
+   "change": 0.3333
+  },
+  "pooled_three_sets/topic_unit_D/judge_vs_script/L2/set_items/per_item_diff[6]": {
+   "frozen": -0.2857,
+   "r10": -0.1429,
+   "change": 0.1428
+  },
+  "pooled_three_sets/topic_unit_D/judge_vs_script/L2/set_items/per_item_diff[10]": {
+   "frozen": -0.3077,
+   "r10": 0.0,
+   "change": 0.3077
+  },
+  "pooled_three_sets/topic_unit_D/judge_vs_script/L2/set_items/per_item_diff[11]": {
+   "frozen": -0.3636,
+   "r10": -0.0909,
+   "change": 0.2727
+  },
+  "pooled_three_sets/topic_unit_D/judge_vs_script/L2/set_items/per_item_diff[12]": {
+   "frozen": -0.3636,
+   "r10": -0.0909,
+   "change": 0.2727
+  },
+  "pooled_three_sets/topic_unit_D/judge_vs_script/L2/set_items/per_item_diff[13]": {
+   "frozen": -0.3571,
+   "r10": -0.0714,
+   "change": 0.2857
+  },
+  "pooled_three_sets/topic_unit_D/judge_vs_script/L2/set_items/per_item_diff[14]": {
+   "frozen": -0.0769,
+   "r10": 0.0,
+   "change": 0.0769
+  },
+  "pooled_three_sets/topic_unit_D/judge_vs_script/L2/set_items/per_item_diff[15]": {
+   "frozen": -0.1111,
+   "r10": 0.1111,
+   "change": 0.2222
+  },
+  "pooled_three_sets/topic_unit_D/judge_vs_script/L2/set_items/p_signflip": {
+   "frozen": 0.043,
+   "r10": 0.576,
+   "change": 0.533
+  },
+  "pooled_three_sets/topic_unit_D/judge_vs_script/L2/set_items/sign_test/positive": {
+   "frozen": 3,
+   "r10": 4,
+   "change": 1.0
+  },
+  "pooled_three_sets/topic_unit_D/judge_vs_script/L2/set_items/sign_test/negative": {
+   "frozen": 9,
+   "r10": 6,
+   "change": -3.0
+  },
+  "pooled_three_sets/topic_unit_D/judge_vs_script/L2/set_items/sign_test/p": {
+   "frozen": 0.146,
+   "r10": 0.754,
+   "change": 0.608
+  },
+  "pooled_three_sets/topic_unit_D/judge_vs_script/L2/mcnemar_runs/a_right_b_wrong": {
+   "frozen": 5,
+   "r10": 6,
+   "change": 1.0
+  },
+  "pooled_three_sets/topic_unit_D/judge_vs_script/L2/mcnemar_runs/a_wrong_b_right": {
+   "frozen": 25,
+   "r10": 8,
+   "change": -17.0
+  },
+  "pooled_three_sets/topic_unit_D/judge_vs_script/L2/mcnemar_runs/p": {
+   "frozen": 0.000325,
+   "r10": 0.791,
+   "change": 0.7907
+  },
+  "pooled_three_sets/gap_unit/L0/kappa": {
+   "frozen": 0.0205,
+   "r10": 0.1978,
+   "change": 0.1773
+  },
+  "pooled_three_sets/gap_unit/L0/balanced_accuracy": {
+   "frozen": 0.5124,
+   "r10": 0.5808,
+   "change": 0.0684
+  },
+  "pooled_three_sets/gap_unit/L0/accuracy": {
+   "frozen": 0.7339,
+   "r10": 0.8532,
+   "change": 0.1193
+  },
+  "pooled_three_sets/gap_unit/L0/passes_credited": {
+   "frozen": "77/95",
+   "r10": "90/95",
+   "change": 0.1368
+  },
+  "pooled_three_sets/gap_unit/L0/passes_blamed": {
+   "frozen": "18/95",
+   "r10": "5/95",
+   "change": -0.1368
+  },
+  "pooled_three_sets/gap_unit/L0/boot95_item/balanced_accuracy": {
+   "frozen": [
+    0.4623,
+    0.5981
+   ],
+   "r10": [
+    0.5024,
+    0.7
+   ],
+   "change": null
+  },
+  "pooled_three_sets/gap_unit/L0/boot95_item/kappa": {
+   "frozen": [
+    -0.0459,
+    0.1111
+   ],
+   "r10": [
+    0.0049,
+    0.5592
+   ],
+   "change": null
+  },
+  "pooled_three_sets/gap_unit/L0/boot95_run/balanced_accuracy": {
+   "frozen": [
+    0.402,
+    0.6375
+   ],
+   "r10": [
+    0.4745,
+    0.7022
+   ],
+   "change": null
+  },
+  "pooled_three_sets/gap_unit/L0/boot95_run/kappa": {
+   "frozen": [
+    -0.1513,
+    0.2202
+   ],
+   "r10": [
+    -0.0644,
+    0.4531
+   ],
+   "change": null
+  },
+  "pooled_three_sets/gap_unit/L2/kappa": {
+   "frozen": 0.3118,
+   "r10": 0.6509,
+   "change": 0.3391
+  },
+  "pooled_three_sets/gap_unit/L2/balanced_accuracy": {
+   "frozen": 0.7414,
+   "r10": 0.8056,
+   "change": 0.0642
+  },
+  "pooled_three_sets/gap_unit/L2/accuracy": {
+   "frozen": 0.7615,
+   "r10": 0.9266,
+   "change": 0.1651
+  },
+  "pooled_three_sets/gap_unit/L2/passes_credited": {
+   "frozen": "73/95",
+   "r10": "92/95",
+   "change": 0.2
+  },
+  "pooled_three_sets/gap_unit/L2/commissions_credited": {
+   "frozen": "3/12",
+   "r10": "4/12",
+   "change": 0.0833
+  },
+  "pooled_three_sets/gap_unit/L2/passes_blamed": {
+   "frozen": "22/95",
+   "r10": "3/95",
+   "change": -0.2
+  },
+  "pooled_three_sets/gap_unit/L2/boot95_item/balanced_accuracy": {
+   "frozen": [
+    0.6319,
+    0.907
+   ],
+   "r10": [
+    0.7705,
+    0.8702
+   ],
+   "change": null
+  },
+  "pooled_three_sets/gap_unit/L2/boot95_item/kappa": {
+   "frozen": [
+    0.1385,
+    0.474
+   ],
+   "r10": [
+    0.6058,
+    0.6937
+   ],
+   "change": null
+  },
+  "pooled_three_sets/gap_unit/L2/boot95_run/balanced_accuracy": {
+   "frozen": [
+    0.6006,
+    0.8627
+   ],
+   "r10": [
+    0.6665,
+    0.9321
+   ],
+   "change": null
+  },
+  "pooled_three_sets/gap_unit/L2/boot95_run/kappa": {
+   "frozen": [
+    0.1172,
+    0.4963
+   ],
+   "r10": [
+    0.3833,
+    0.8539
+   ],
+   "change": null
+  },
+  "pooled_three_sets/gap_unit/judge_vs_script/L0/items/per_item_diff[0]": {
+   "frozen": 0.1905,
+   "r10": 0.3333,
+   "change": 0.1428
+  },
+  "pooled_three_sets/gap_unit/judge_vs_script/L0/items/per_item_diff[1]": {
+   "frozen": 0.2941,
+   "r10": 0.4118,
+   "change": 0.1177
+  },
+  "pooled_three_sets/gap_unit/judge_vs_script/L0/items/per_item_diff[2]": {
+   "frozen": -0.0909,
+   "r10": -0.1818,
+   "change": -0.0909
+  },
+  "pooled_three_sets/gap_unit/judge_vs_script/L0/items/per_item_diff[3]": {
+   "frozen": -0.1667,
+   "r10": 0.1111,
+   "change": 0.2778
+  },
+  "pooled_three_sets/gap_unit/judge_vs_script/L0/items/per_item_diff[4]": {
+   "frozen": 0.375,
+   "r10": 0.6875,
+   "change": 0.3125
+  },
+  "pooled_three_sets/gap_unit/judge_vs_script/L0/items/p_signflip": {
+   "frozen": 0.156,
+   "r10": 0.0938,
+   "change": -0.0622
+  },
+  "pooled_three_sets/gap_unit/judge_vs_script/L0/items/sign_test/positive": {
+   "frozen": 4,
+   "r10": 5,
+   "change": 1.0
+  },
+  "pooled_three_sets/gap_unit/judge_vs_script/L0/items/sign_test/negative": {
+   "frozen": 2,
+   "r10": 1,
+   "change": -1.0
+  },
+  "pooled_three_sets/gap_unit/judge_vs_script/L0/items/sign_test/p": {
+   "frozen": 0.688,
+   "r10": 0.219,
+   "change": -0.469
+  },
+  "pooled_three_sets/gap_unit/judge_vs_script/L0/set_items/per_item_diff[6]": {
+   "frozen": 0.5,
+   "r10": 0.75,
+   "change": 0.25
+  },
+  "pooled_three_sets/gap_unit/judge_vs_script/L0/set_items/per_item_diff[8]": {
+   "frozen": -0.1538,
+   "r10": 0.0769,
+   "change": 0.2307
+  },
+  "pooled_three_sets/gap_unit/judge_vs_script/L0/set_items/per_item_diff[9]": {
+   "frozen": 0.7273,
+   "r10": 0.9091,
+   "change": 0.1818
+  },
+  "pooled_three_sets/gap_unit/judge_vs_script/L0/set_items/per_item_diff[10]": {
+   "frozen": 0.0,
+   "r10": -0.1818,
+   "change": -0.1818
+  },
+  "pooled_three_sets/gap_unit/judge_vs_script/L0/set_items/per_item_diff[11]": {
+   "frozen": -0.2857,
+   "r10": 0.0714,
+   "change": 0.3571
+  },
+  "pooled_three_sets/gap_unit/judge_vs_script/L0/set_items/per_item_diff[12]": {
+   "frozen": 0.3333,
+   "r10": 0.6667,
+   "change": 0.3334
+  },
+  "pooled_three_sets/gap_unit/judge_vs_script/L0/set_items/p_signflip": {
+   "frozen": 0.388,
+   "r10": 0.195,
+   "change": -0.193
+  },
+  "pooled_three_sets/gap_unit/judge_vs_script/L0/set_items/sign_test/positive": {
+   "frozen": 9,
+   "r10": 11,
+   "change": 2.0
+  },
+  "pooled_three_sets/gap_unit/judge_vs_script/L0/set_items/sign_test/negative": {
+   "frozen": 4,
+   "r10": 3,
+   "change": -1.0
+  },
+  "pooled_three_sets/gap_unit/judge_vs_script/L0/set_items/sign_test/p": {
+   "frozen": 0.267,
+   "r10": 0.0574,
+   "change": -0.2096
+  },
+  "pooled_three_sets/gap_unit/judge_vs_script/L0/mcnemar_runs/a_right_b_wrong": {
+   "frozen": 41,
+   "r10": 46,
+   "change": 5.0
+  },
+  "pooled_three_sets/gap_unit/judge_vs_script/L0/mcnemar_runs/a_wrong_b_right": {
+   "frozen": 22,
+   "r10": 14,
+   "change": -8.0
+  },
+  "pooled_three_sets/gap_unit/judge_vs_script/L0/mcnemar_runs/p": {
+   "frozen": 0.0226,
+   "r10": 4.22e-05,
+   "change": -0.0226
+  },
+  "pooled_three_sets/gap_unit/judge_vs_script/L2/items/per_item_diff[0]": {
+   "frozen": 0.1429,
+   "r10": 0.3333,
+   "change": 0.1904
+  },
+  "pooled_three_sets/gap_unit/judge_vs_script/L2/items/per_item_diff[1]": {
+   "frozen": 0.4118,
+   "r10": 0.4706,
+   "change": 0.0588
+  },
+  "pooled_three_sets/gap_unit/judge_vs_script/L2/items/per_item_diff[2]": {
+   "frozen": -0.0909,
+   "r10": 0.1364,
+   "change": 0.2273
+  },
+  "pooled_three_sets/gap_unit/judge_vs_script/L2/items/per_item_diff[3]": {
+   "frozen": -0.1111,
+   "r10": 0.1111,
+   "change": 0.2222
+  },
+  "pooled_three_sets/gap_unit/judge_vs_script/L2/items/per_item_diff[4]": {
+   "frozen": 0.5625,
+   "r10": 0.6875,
+   "change": 0.125
+  },
+  "pooled_three_sets/gap_unit/judge_vs_script/L2/items/per_item_diff[5]": {
+   "frozen": 0.4667,
+   "r10": 0.6,
+   "change": 0.1333
+  },
+  "pooled_three_sets/gap_unit/judge_vs_script/L2/items/p_signflip": {
+   "frozen": 0.156,
+   "r10": 0.0312,
+   "change": -0.1248
+  },
+  "pooled_three_sets/gap_unit/judge_vs_script/L2/items/sign_test/positive": {
+   "frozen": 4,
+   "r10": 6,
+   "change": 2.0
+  },
+  "pooled_three_sets/gap_unit/judge_vs_script/L2/items/sign_test/negative": {
+   "frozen": 2,
+   "r10": 0,
+   "change": -2.0
+  },
+  "pooled_three_sets/gap_unit/judge_vs_script/L2/items/sign_test/p": {
+   "frozen": 0.688,
+   "r10": 0.0312,
+   "change": -0.6568
+  },
+  "pooled_three_sets/gap_unit/judge_vs_script/L2/set_items/per_item_diff[0]": {
+   "frozen": 0.0,
+   "r10": -0.25,
+   "change": -0.25
+  },
+  "pooled_three_sets/gap_unit/judge_vs_script/L2/set_items/per_item_diff[1]": {
+   "frozen": -0.3333,
+   "r10": 0.0,
+   "change": 0.3333
+  },
+  "pooled_three_sets/gap_unit/judge_vs_script/L2/set_items/per_item_diff[3]": {
+   "frozen": 0.5,
+   "r10": 0.0,
+   "change": -0.5
+  },
+  "pooled_three_sets/gap_unit/judge_vs_script/L2/set_items/per_item_diff[4]": {
+   "frozen": 0.0,
+   "r10": 0.125,
+   "change": 0.125
+  },
+  "pooled_three_sets/gap_unit/judge_vs_script/L2/set_items/per_item_diff[8]": {
+   "frozen": -0.1538,
+   "r10": 0.1538,
+   "change": 0.3076
+  },
+  "pooled_three_sets/gap_unit/judge_vs_script/L2/set_items/per_item_diff[9]": {
+   "frozen": 0.5455,
+   "r10": 0.8182,
+   "change": 0.2727
+  },
+  "pooled_three_sets/gap_unit/judge_vs_script/L2/set_items/per_item_diff[10]": {
+   "frozen": -0.0909,
+   "r10": 0.1818,
+   "change": 0.2727
+  },
+  "pooled_three_sets/gap_unit/judge_vs_script/L2/set_items/per_item_diff[11]": {
+   "frozen": -0.2143,
+   "r10": 0.0714,
+   "change": 0.2857
+  },
+  "pooled_three_sets/gap_unit/judge_vs_script/L2/set_items/per_item_diff[12]": {
+   "frozen": 0.5,
+   "r10": 0.6667,
+   "change": 0.1667
+  },
+  "pooled_three_sets/gap_unit/judge_vs_script/L2/set_items/per_item_diff[13]": {
+   "frozen": 0.4444,
+   "r10": 0.6667,
+   "change": 0.2223
+  },
+  "pooled_three_sets/gap_unit/judge_vs_script/L2/set_items/p_signflip": {
+   "frozen": 0.0308,
+   "r10": 0.00439,
+   "change": -0.0264
+  },
+  "pooled_three_sets/gap_unit/judge_vs_script/L2/set_items/sign_test/positive": {
+   "frozen": 8,
+   "r10": 11,
+   "change": 3.0
+  },
+  "pooled_three_sets/gap_unit/judge_vs_script/L2/set_items/sign_test/negative": {
+   "frozen": 4,
+   "r10": 1,
+   "change": -3.0
+  },
+  "pooled_three_sets/gap_unit/judge_vs_script/L2/set_items/sign_test/p": {
+   "frozen": 0.388,
+   "r10": 0.00635,
+   "change": -0.3816
+  },
+  "pooled_three_sets/gap_unit/judge_vs_script/L2/mcnemar_runs/a_right_b_wrong": {
+   "frozen": 36,
+   "r10": 45,
+   "change": 9.0
+  },
+  "pooled_three_sets/gap_unit/judge_vs_script/L2/mcnemar_runs/a_wrong_b_right": {
+   "frozen": 14,
+   "r10": 5,
+   "change": -9.0
+  },
+  "pooled_three_sets/gap_unit/judge_vs_script/L2/mcnemar_runs/p": {
+   "frozen": 0.0026,
+   "r10": 4.21e-09,
+   "change": -0.0026
+  },
+  "pooled_three_sets/judge_visible_pairs_only/L0/kappa": {
+   "frozen": 0.0136,
+   "r10": 0.1946,
+   "change": 0.181
+  },
+  "pooled_three_sets/judge_visible_pairs_only/L0/balanced_accuracy": {
+   "frozen": 0.5082,
+   "r10": 0.5797,
+   "change": 0.0715
+  },
+  "pooled_three_sets/judge_visible_pairs_only/L0/accuracy": {
+   "frozen": 0.7238,
+   "r10": 0.8476,
+   "change": 0.1238
+  },
+  "pooled_three_sets/judge_visible_pairs_only/L0/passes_credited": {
+   "frozen": "73/91",
+   "r10": "86/91",
+   "change": 0.1429
+  },
+  "pooled_three_sets/judge_visible_pairs_only/L0/passes_blamed": {
+   "frozen": "18/91",
+   "r10": "5/91",
+   "change": -0.1429
+  },
+  "pooled_three_sets/judge_visible_pairs_only/L0/boot95_item/balanced_accuracy": {
+   "frozen": [
+    0.4585,
+    0.5944
+   ],
+   "r10": [
+    0.4997,
+    0.7
+   ],
+   "change": null
+  },
+  "pooled_three_sets/judge_visible_pairs_only/L0/boot95_item/kappa": {
+   "frozen": [
+    -0.0521,
+    0.1047
+   ],
+   "r10": [
+    -0.0005,
+    0.5586
+   ],
+   "change": null
+  },
+  "pooled_three_sets/judge_visible_pairs_only/L0/boot95_run/balanced_accuracy": {
+   "frozen": [
+    0.398,
+    0.6353
+   ],
+   "r10": [
+    0.474,
+    0.7014
+   ],
+   "change": null
+  },
+  "pooled_three_sets/judge_visible_pairs_only/L0/boot95_run/kappa": {
+   "frozen": [
+    -0.1566,
+    0.2177
+   ],
+   "r10": [
+    -0.0652,
+    0.4497
+   ],
+   "change": null
+  },
+  "pooled_three_sets/judge_visible_pairs_only/L2/kappa": {
+   "frozen": 0.306,
+   "r10": 0.6491,
+   "change": 0.3431
+  },
+  "pooled_three_sets/judge_visible_pairs_only/L2/balanced_accuracy": {
+   "frozen": 0.7363,
+   "r10": 0.8049,
+   "change": 0.0686
+  },
+  "pooled_three_sets/judge_visible_pairs_only/L2/accuracy": {
+   "frozen": 0.7524,
+   "r10": 0.9238,
+   "change": 0.1714
+  },
+  "pooled_three_sets/judge_visible_pairs_only/L2/passes_credited": {
+   "frozen": "69/91",
+   "r10": "88/91",
+   "change": 0.2088
+  },
+  "pooled_three_sets/judge_visible_pairs_only/L2/commissions_credited": {
+   "frozen": "3/12",
+   "r10": "4/12",
+   "change": 0.0833
+  },
+  "pooled_three_sets/judge_visible_pairs_only/L2/passes_blamed": {
+   "frozen": "22/91",
+   "r10": "3/91",
+   "change": -0.2088
+  },
+  "pooled_three_sets/judge_visible_pairs_only/L2/boot95_item/balanced_accuracy": {
+   "frozen": [
+    0.6263,
+    0.9
+   ],
+   "r10": [
+    0.7705,
+    0.8691
+   ],
+   "change": null
+  },
+  "pooled_three_sets/judge_visible_pairs_only/L2/boot95_item/kappa": {
+   "frozen": [
+    0.138,
+    0.4669
+   ],
+   "r10": [
+    0.6039,
+    0.6918
+   ],
+   "change": null
+  },
+  "pooled_three_sets/judge_visible_pairs_only/L2/boot95_run/balanced_accuracy": {
+   "frozen": [
+    0.5995,
+    0.8611
+   ],
+   "r10": [
+    0.6706,
+    0.9323
+   ],
+   "change": null
+  },
+  "pooled_three_sets/judge_visible_pairs_only/L2/boot95_run/kappa": {
+   "frozen": [
+    0.113,
+    0.4945
+   ],
+   "r10": [
+    0.39,
+    0.8529
+   ],
+   "change": null
+  },
+  "pooled_three_sets/judge_visible_pairs_only/judge_vs_script/L0/items/per_item_diff[0]": {
+   "frozen": 0.15,
+   "r10": 0.3,
+   "change": 0.15
+  },
+  "pooled_three_sets/judge_visible_pairs_only/judge_vs_script/L0/items/per_item_diff[1]": {
+   "frozen": 0.2941,
+   "r10": 0.4118,
+   "change": 0.1177
+  },
+  "pooled_three_sets/judge_visible_pairs_only/judge_vs_script/L0/items/per_item_diff[2]": {
+   "frozen": -0.0952,
+   "r10": -0.1905,
+   "change": -0.0953
+  },
+  "pooled_three_sets/judge_visible_pairs_only/judge_vs_script/L0/items/per_item_diff[3]": {
+   "frozen": -0.1667,
+   "r10": 0.1111,
+   "change": 0.2778
+  },
+  "pooled_three_sets/judge_visible_pairs_only/judge_vs_script/L0/items/per_item_diff[4]": {
+   "frozen": 0.375,
+   "r10": 0.6875,
+   "change": 0.3125
+  },
+  "pooled_three_sets/judge_visible_pairs_only/judge_vs_script/L0/items/p_signflip": {
+   "frozen": 0.188,
+   "r10": 0.0938,
+   "change": -0.0942
+  },
+  "pooled_three_sets/judge_visible_pairs_only/judge_vs_script/L0/items/sign_test/positive": {
+   "frozen": 4,
+   "r10": 5,
+   "change": 1.0
+  },
+  "pooled_three_sets/judge_visible_pairs_only/judge_vs_script/L0/items/sign_test/negative": {
+   "frozen": 2,
+   "r10": 1,
+   "change": -1.0
+  },
+  "pooled_three_sets/judge_visible_pairs_only/judge_vs_script/L0/items/sign_test/p": {
+   "frozen": 0.688,
+   "r10": 0.219,
+   "change": -0.469
+  },
+  "pooled_three_sets/judge_visible_pairs_only/judge_vs_script/L0/set_items/per_item_diff[6]": {
+   "frozen": 0.5,
+   "r10": 0.75,
+   "change": 0.25
+  },
+  "pooled_three_sets/judge_visible_pairs_only/judge_vs_script/L0/set_items/per_item_diff[8]": {
+   "frozen": -0.1538,
+   "r10": 0.0769,
+   "change": 0.2307
+  },
+  "pooled_three_sets/judge_visible_pairs_only/judge_vs_script/L0/set_items/per_item_diff[9]": {
+   "frozen": 0.7273,
+   "r10": 0.9091,
+   "change": 0.1818
+  },
+  "pooled_three_sets/judge_visible_pairs_only/judge_vs_script/L0/set_items/per_item_diff[10]": {
+   "frozen": 0.0,
+   "r10": -0.1818,
+   "change": -0.1818
+  },
+  "pooled_three_sets/judge_visible_pairs_only/judge_vs_script/L0/set_items/per_item_diff[11]": {
+   "frozen": -0.2857,
+   "r10": 0.0714,
+   "change": 0.3571
+  },
+  "pooled_three_sets/judge_visible_pairs_only/judge_vs_script/L0/set_items/per_item_diff[12]": {
+   "frozen": 0.3333,
+   "r10": 0.6667,
+   "change": 0.3334
+  },
+  "pooled_three_sets/judge_visible_pairs_only/judge_vs_script/L0/set_items/p_signflip": {
+   "frozen": 0.446,
+   "r10": 0.231,
+   "change": -0.215
+  },
+  "pooled_three_sets/judge_visible_pairs_only/judge_vs_script/L0/set_items/sign_test/positive": {
+   "frozen": 9,
+   "r10": 11,
+   "change": 2.0
+  },
+  "pooled_three_sets/judge_visible_pairs_only/judge_vs_script/L0/set_items/sign_test/negative": {
+   "frozen": 4,
+   "r10": 3,
+   "change": -1.0
+  },
+  "pooled_three_sets/judge_visible_pairs_only/judge_vs_script/L0/set_items/sign_test/p": {
+   "frozen": 0.267,
+   "r10": 0.0574,
+   "change": -0.2096
+  },
+  "pooled_three_sets/judge_visible_pairs_only/judge_vs_script/L0/mcnemar_runs/a_right_b_wrong": {
+   "frozen": 38,
+   "r10": 43,
+   "change": 5.0
+  },
+  "pooled_three_sets/judge_visible_pairs_only/judge_vs_script/L0/mcnemar_runs/a_wrong_b_right": {
+   "frozen": 22,
+   "r10": 14,
+   "change": -8.0
+  },
+  "pooled_three_sets/judge_visible_pairs_only/judge_vs_script/L0/mcnemar_runs/p": {
+   "frozen": 0.0519,
+   "r10": 0.000154,
+   "change": -0.0517
+  },
+  "pooled_three_sets/judge_visible_pairs_only/judge_vs_script/L2/items/per_item_diff[0]": {
+   "frozen": 0.1,
+   "r10": 0.3,
+   "change": 0.2
+  },
+  "pooled_three_sets/judge_visible_pairs_only/judge_vs_script/L2/items/per_item_diff[1]": {
+   "frozen": 0.4118,
+   "r10": 0.4706,
+   "change": 0.0588
+  },
+  "pooled_three_sets/judge_visible_pairs_only/judge_vs_script/L2/items/per_item_diff[2]": {
+   "frozen": -0.0952,
+   "r10": 0.1429,
+   "change": 0.2381
+  },
+  "pooled_three_sets/judge_visible_pairs_only/judge_vs_script/L2/items/per_item_diff[3]": {
+   "frozen": -0.1111,
+   "r10": 0.1111,
+   "change": 0.2222
+  },
+  "pooled_three_sets/judge_visible_pairs_only/judge_vs_script/L2/items/per_item_diff[4]": {
+   "frozen": 0.5625,
+   "r10": 0.6875,
+   "change": 0.125
+  },
+  "pooled_three_sets/judge_visible_pairs_only/judge_vs_script/L2/items/per_item_diff[5]": {
+   "frozen": 0.3846,
+   "r10": 0.5385,
+   "change": 0.1539
+  },
+  "pooled_three_sets/judge_visible_pairs_only/judge_vs_script/L2/items/p_signflip": {
+   "frozen": 0.188,
+   "r10": 0.0312,
+   "change": -0.1568
+  },
+  "pooled_three_sets/judge_visible_pairs_only/judge_vs_script/L2/items/sign_test/positive": {
+   "frozen": 4,
+   "r10": 6,
+   "change": 2.0
+  },
+  "pooled_three_sets/judge_visible_pairs_only/judge_vs_script/L2/items/sign_test/negative": {
+   "frozen": 2,
+   "r10": 0,
+   "change": -2.0
+  },
+  "pooled_three_sets/judge_visible_pairs_only/judge_vs_script/L2/items/sign_test/p": {
+   "frozen": 0.688,
+   "r10": 0.0312,
+   "change": -0.6568
+  },
+  "pooled_three_sets/judge_visible_pairs_only/judge_vs_script/L2/set_items/per_item_diff[0]": {
+   "frozen": 0.0,
+   "r10": -0.25,
+   "change": -0.25
+  },
+  "pooled_three_sets/judge_visible_pairs_only/judge_vs_script/L2/set_items/per_item_diff[1]": {
+   "frozen": -0.3333,
+   "r10": 0.0,
+   "change": 0.3333
+  },
+  "pooled_three_sets/judge_visible_pairs_only/judge_vs_script/L2/set_items/per_item_diff[3]": {
+   "frozen": 0.5,
+   "r10": 0.0,
+   "change": -0.5
+  },
+  "pooled_three_sets/judge_visible_pairs_only/judge_vs_script/L2/set_items/per_item_diff[4]": {
+   "frozen": 0.0,
+   "r10": 0.1429,
+   "change": 0.1429
+  },
+  "pooled_three_sets/judge_visible_pairs_only/judge_vs_script/L2/set_items/per_item_diff[8]": {
+   "frozen": -0.1538,
+   "r10": 0.1538,
+   "change": 0.3076
+  },
+  "pooled_three_sets/judge_visible_pairs_only/judge_vs_script/L2/set_items/per_item_diff[9]": {
+   "frozen": 0.5455,
+   "r10": 0.8182,
+   "change": 0.2727
+  },
+  "pooled_three_sets/judge_visible_pairs_only/judge_vs_script/L2/set_items/per_item_diff[10]": {
+   "frozen": -0.0909,
+   "r10": 0.1818,
+   "change": 0.2727
+  },
+  "pooled_three_sets/judge_visible_pairs_only/judge_vs_script/L2/set_items/per_item_diff[11]": {
+   "frozen": -0.2143,
+   "r10": 0.0714,
+   "change": 0.2857
+  },
+  "pooled_three_sets/judge_visible_pairs_only/judge_vs_script/L2/set_items/per_item_diff[12]": {
+   "frozen": 0.5,
+   "r10": 0.6667,
+   "change": 0.1667
+  },
+  "pooled_three_sets/judge_visible_pairs_only/judge_vs_script/L2/set_items/per_item_diff[13]": {
+   "frozen": 0.4444,
+   "r10": 0.6667,
+   "change": 0.2223
+  },
+  "pooled_three_sets/judge_visible_pairs_only/judge_vs_script/L2/set_items/p_signflip": {
+   "frozen": 0.0381,
+   "r10": 0.00488,
+   "change": -0.0332
+  },
+  "pooled_three_sets/judge_visible_pairs_only/judge_vs_script/L2/set_items/sign_test/positive": {
+   "frozen": 8,
+   "r10": 11,
+   "change": 3.0
+  },
+  "pooled_three_sets/judge_visible_pairs_only/judge_vs_script/L2/set_items/sign_test/negative": {
+   "frozen": 4,
+   "r10": 1,
+   "change": -3.0
+  },
+  "pooled_three_sets/judge_visible_pairs_only/judge_vs_script/L2/set_items/sign_test/p": {
+   "frozen": 0.388,
+   "r10": 0.00635,
+   "change": -0.3816
+  },
+  "pooled_three_sets/judge_visible_pairs_only/judge_vs_script/L2/mcnemar_runs/a_right_b_wrong": {
+   "frozen": 33,
+   "r10": 42,
+   "change": 9.0
+  },
+  "pooled_three_sets/judge_visible_pairs_only/judge_vs_script/L2/mcnemar_runs/a_wrong_b_right": {
+   "frozen": 14,
+   "r10": 5,
+   "change": -9.0
+  },
+  "pooled_three_sets/judge_visible_pairs_only/judge_vs_script/L2/mcnemar_runs/p": {
+   "frozen": 0.00794,
+   "r10": 2.46e-08,
+   "change": -0.0079
+  },
+  "pooled_three_sets/judge_visible/L0/kappa": {
+   "frozen": 0.0349,
+   "r10": 0.1461,
+   "change": 0.1112
+  },
+  "pooled_three_sets/judge_visible/L0/balanced_accuracy": {
+   "frozen": 0.5152,
+   "r10": 0.5606,
+   "change": 0.0454
+  },
+  "pooled_three_sets/judge_visible/L0/accuracy": {
+   "frozen": 0.6176,
+   "r10": 0.6765,
+   "change": 0.0589
+  },
+  "pooled_three_sets/judge_visible/L0/passes_credited": {
+   "frozen": "19/22",
+   "r10": "21/22",
+   "change": 0.0909
+  },
+  "pooled_three_sets/judge_visible/L0/passes_blamed": {
+   "frozen": "3/22",
+   "r10": "1/22",
+   "change": -0.0909
+  },
+  "pooled_three_sets/judge_visible/L0/boot95_item/balanced_accuracy": {
+   "frozen": [
+    0.4167,
+    0.6667
+   ],
+   "r10": [
+    0.4583,
+    0.7
+   ],
+   "change": null
+  },
+  "pooled_three_sets/judge_visible/L0/boot95_item/kappa": {
+   "frozen": [
+    -0.1818,
+    0.3628
+   ],
+   "r10": [
+    -0.1101,
+    0.5106
+   ],
+   "change": null
+  },
+  "pooled_three_sets/judge_visible/L0/boot95_run/balanced_accuracy": {
+   "frozen": [
+    0.3933,
+    0.65
+   ],
+   "r10": [
+    0.4565,
+    0.6875
+   ],
+   "change": null
+  },
+  "pooled_three_sets/judge_visible/L0/boot95_run/kappa": {
+   "frozen": [
+    -0.2332,
+    0.3359
+   ],
+   "r10": [
+    -0.1106,
+    0.436
+   ],
+   "change": null
+  },
+  "pooled_three_sets/judge_visible/L2/kappa": {
+   "frozen": 0.5576,
+   "r10": 0.5984,
+   "change": 0.0408
+  },
+  "pooled_three_sets/judge_visible/L2/balanced_accuracy": {
+   "frozen": 0.7841,
+   "r10": 0.7879,
+   "change": 0.0038
+  },
+  "pooled_three_sets/judge_visible/L2/accuracy": {
+   "frozen": 0.7941,
+   "r10": 0.8235,
+   "change": 0.0294
+  },
+  "pooled_three_sets/judge_visible/L2/passes_credited": {
+   "frozen": "18/22",
+   "r10": "20/22",
+   "change": 0.0909
+  },
+  "pooled_three_sets/judge_visible/L2/commissions_credited": {
+   "frozen": "2/10",
+   "r10": "3/10",
+   "change": 0.1
+  },
+  "pooled_three_sets/judge_visible/L2/passes_blamed": {
+   "frozen": "4/22",
+   "r10": "2/22",
+   "change": -0.0909
+  },
+  "pooled_three_sets/judge_visible/L2/boot95_item/balanced_accuracy": {
+   "frozen": [
+    0.6389,
+    0.9444
+   ],
+   "r10": [
+    0.7173,
+    0.875
+   ],
+   "change": null
+  },
+  "pooled_three_sets/judge_visible/L2/boot95_item/kappa": {
+   "frozen": [
+    0.2778,
+    0.8033
+   ],
+   "r10": [
+    0.4411,
+    0.7671
+   ],
+   "change": null
+  },
+  "pooled_three_sets/judge_visible/L2/boot95_run/balanced_accuracy": {
+   "frozen": [
+    0.6264,
+    0.9231
+   ],
+   "r10": [
+    0.6298,
+    0.9292
+   ],
+   "change": null
+  },
+  "pooled_three_sets/judge_visible/L2/boot95_run/kappa": {
+   "frozen": [
+    0.2444,
+    0.8198
+   ],
+   "r10": [
+    0.2804,
+    0.8656
+   ],
+   "change": null
+  },
+  "pooled_three_sets/judge_visible/judge_vs_script/L0/items/per_item_diff[1]": {
+   "frozen": -0.1111,
+   "r10": 0.0,
+   "change": 0.1111
+  },
+  "pooled_three_sets/judge_visible/judge_vs_script/L0/items/per_item_diff[4]": {
+   "frozen": 0.0,
+   "r10": 0.3333,
+   "change": 0.3333
+  },
+  "pooled_three_sets/judge_visible/judge_vs_script/L0/items/p_signflip": {
+   "frozen": 1.0,
+   "r10": 0.5,
+   "change": -0.5
+  },
+  "pooled_three_sets/judge_visible/judge_vs_script/L0/items/sign_test/positive": {
+   "frozen": 2,
+   "r10": 3,
+   "change": 1.0
+  },
+  "pooled_three_sets/judge_visible/judge_vs_script/L0/items/sign_test/negative": {
+   "frozen": 3,
+   "r10": 2,
+   "change": -1.0
+  },
+  "pooled_three_sets/judge_visible/judge_vs_script/L0/set_items/per_item_diff[8]": {
+   "frozen": 0.6667,
+   "r10": 1.0,
+   "change": 0.3333
+  },
+  "pooled_three_sets/judge_visible/judge_vs_script/L0/set_items/per_item_diff[11]": {
+   "frozen": 0.0,
+   "r10": 0.3333,
+   "change": 0.3333
+  },
+  "pooled_three_sets/judge_visible/judge_vs_script/L0/set_items/p_signflip": {
+   "frozen": 0.703,
+   "r10": 0.52,
+   "change": -0.183
+  },
+  "pooled_three_sets/judge_visible/judge_vs_script/L0/set_items/sign_test/positive": {
+   "frozen": 6,
+   "r10": 7,
+   "change": 1.0
+  },
+  "pooled_three_sets/judge_visible/judge_vs_script/L0/set_items/sign_test/p": {
+   "frozen": 0.508,
+   "r10": 0.344,
+   "change": -0.164
+  },
+  "pooled_three_sets/judge_visible/judge_vs_script/L0/mcnemar_runs/a_wrong_b_right": {
+   "frozen": 11,
+   "r10": 9,
+   "change": -2.0
+  },
+  "pooled_three_sets/judge_visible/judge_vs_script/L2/items/per_item_diff[1]": {
+   "frozen": 0.3333,
+   "r10": 0.1111,
+   "change": -0.2222
+  },
+  "pooled_three_sets/judge_visible/judge_vs_script/L2/items/per_item_diff[2]": {
+   "frozen": 0.0,
+   "r10": 0.3,
+   "change": 0.3
+  },
+  "pooled_three_sets/judge_visible/judge_vs_script/L2/items/p_signflip": {
+   "frozen": 0.188,
+   "r10": 0.125,
+   "change": -0.063
+  },
+  "pooled_three_sets/judge_visible/judge_vs_script/L2/items/sign_test/positive": {
+   "frozen": 4,
+   "r10": 5,
+   "change": 1.0
+  },
+  "pooled_three_sets/judge_visible/judge_vs_script/L2/items/sign_test/p": {
+   "frozen": 0.375,
+   "r10": 0.219,
+   "change": -0.156
+  },
+  "pooled_three_sets/judge_visible/judge_vs_script/L2/set_items/per_item_diff[0]": {
+   "frozen": 0.0,
+   "r10": -0.25,
+   "change": -0.25
+  },
+  "pooled_three_sets/judge_visible/judge_vs_script/L2/set_items/per_item_diff[1]": {
+   "frozen": -0.3333,
+   "r10": 0.0,
+   "change": 0.3333
+  },
+  "pooled_three_sets/judge_visible/judge_vs_script/L2/set_items/per_item_diff[3]": {
+   "frozen": 0.5,
+   "r10": 0.0,
+   "change": -0.5
+  },
+  "pooled_three_sets/judge_visible/judge_vs_script/L2/set_items/per_item_diff[4]": {
+   "frozen": 0.0,
+   "r10": 0.3333,
+   "change": 0.3333
+  },
+  "pooled_three_sets/judge_visible/judge_vs_script/L2/set_items/per_item_diff[9]": {
+   "frozen": 0.25,
+   "r10": 0.5,
+   "change": 0.25
+  },
+  "pooled_three_sets/judge_visible/judge_vs_script/L2/set_items/p_signflip": {
+   "frozen": 0.336,
+   "r10": 0.281,
+   "change": -0.055
+  },
+  "pooled_three_sets/judge_visible/judge_vs_script/L2/mcnemar_runs/a_right_b_wrong": {
+   "frozen": 9,
+   "r10": 10,
+   "change": 1.0
+  },
+  "pooled_three_sets/judge_visible/judge_vs_script/L2/mcnemar_runs/p": {
+   "frozen": 0.267,
+   "r10": 0.18,
+   "change": -0.087
+  },
+  "sentences/topic_unit_D/pooled": {
+   "frozen": "still trails (script - judge = 0.22, item-level p = 0.043)",
+   "r10": "reported as is (script - judge = 0.15, item-level p = 0.576)",
+   "change": null
+  },
+  "sentences/topic_unit_D/set_A": {
+   "frozen": "still trails (script - judge = 0.24, item-level p = 0.0312)",
+   "r10": "reported as is (script - judge = 0.20, item-level p = 0.625)",
+   "change": null
+  },
+  "sentences/gap_unit/pooled": {
+   "frozen": "similar: the script's advantage depends on a scale the judge never sees; in the agent's own unit they are similar (script - judge = -0.02, item-level p = 0.0308)",
+   "r10": "similar: the script's advantage depends on a scale the judge never sees; in the agent's own unit they are similar (script - judge = -0.09, item-level p = 0.00439)",
+   "change": null
+  },
+  "sentences/gap_unit/set_A": {
+   "frozen": "similar: the script's advantage depends on a scale the judge never sees; in the agent's own unit they are similar (script - judge = -0.08, item-level p = 0.281)",
+   "r10": "reported as is (script - judge = -0.21, item-level p = 0.0312)",
+   "change": null
+  },
+  "sentences/judge_visible_pairs_only/pooled": {
+   "frozen": "similar: the script's advantage depends on a scale the judge never sees; in the agent's own unit they are similar (script - judge = -0.01, item-level p = 0.0381)",
+   "r10": "similar: the script's advantage depends on a scale the judge never sees; in the agent's own unit they are similar (script - judge = -0.08, item-level p = 0.00488)",
+   "change": null
+  },
+  "sentences/judge_visible_pairs_only/set_A": {
+   "frozen": "similar: the script's advantage depends on a scale the judge never sees; in the agent's own unit they are similar (script - judge = -0.08, item-level p = 0.281)",
+   "r10": "reported as is (script - judge = -0.21, item-level p = 0.0312)",
+   "change": null
+  },
+  "sentences/judge_visible/pooled": {
+   "frozen": "similar: the script's advantage depends on a scale the judge never sees; in the agent's own unit they are similar (script - judge = -0.08, item-level p = 0.336)",
+   "r10": "similar: the script's advantage depends on a scale the judge never sees; in the agent's own unit they are similar (script - judge = -0.08, item-level p = 0.281)",
+   "change": null
+  },
+  "sentences/judge_visible/set_A": {
+   "frozen": "reported as is (script - judge = -0.16, item-level p = 0.125)",
+   "r10": "reported as is (script - judge = -0.19, item-level p = 0.125)",
+   "change": null
+  }
+ }
+}

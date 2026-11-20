@@ -9,9 +9,9 @@ from pathlib import Path
 import numpy as np
 import pytest
 
-from shifthunt import textgen as tg
-from shifthunt.detectors import detect, detect_all
-from shifthunt.flipcheck import text_flip_is_clean, undo
+from shortcuthunt import textgen as tg
+from shortcuthunt.detectors import detect, detect_all
+from shortcuthunt.flipcheck import text_flip_is_clean, undo
 
 ROOT = Path(__file__).resolve().parents[1]
 STOP = {"the", "at", "for", "of", "by", "in", "on", "a", "and"}
@@ -50,7 +50,7 @@ def test_render_deterministic():
 
 DIGEST_CODE = """
 import hashlib, random
-from shifthunt import textgen as tg
+from shortcuthunt import textgen as tg
 rng = random.Random(7)
 h = hashlib.sha256()
 for _ in range(200):

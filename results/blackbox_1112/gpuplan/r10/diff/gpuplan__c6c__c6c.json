@@ -1,0 +1,36 @@
+{
+ "file": "gpuplan/c6c/c6c.json",
+ "changed": 6,
+ "rows": {
+  "set_A_L1_key/hard_kappa": {
+   "frozen": 0.9156,
+   "r10": 0.9321,
+   "change": 0.0165
+  },
+  "set_A_L1_key/named_only_kappa": {
+   "frozen": 0.8428,
+   "r10": 0.8715,
+   "change": 0.0287
+  },
+  "set_A_L1_key/false_blame": {
+   "frozen": "5/87",
+   "r10": "4/87",
+   "change": -0.0115
+  },
+  "harder_L0_key/hard_kappa": {
+   "frozen": 0.7692,
+   "r10": 0.6667,
+   "change": -0.1025
+  },
+  "harder_L0_key/named_only_kappa": {
+   "frozen": 0.4348,
+   "r10": 0.3158,
+   "change": -0.119
+  },
+  "harder_L0_key/false_blame": {
+   "frozen": "2/12",
+   "r10": "3/12",
+   "change": 0.0833
+  }
+ }
+}

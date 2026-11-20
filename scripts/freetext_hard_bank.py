@@ -1,4 +1,4 @@
-"""Filter the free-text bank for shifthunt/freetext_hard.py (CPU; tokenizer only).
+"""Filter the free-text bank for shortcuthunt/freetext_hard.py (CPU; tokenizer only).
 
     python scripts/freetext_hard_bank.py   # .cache/freetext/bank.json -> .cache/freetext/bank_hard.json
 
@@ -12,8 +12,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(ROOT / "scripts"))
-from shifthunt import freetext_hard as fh  # noqa: E402
-from shifthunt.substrate import MAX_CONTENT_TOKENS, MODEL_ID  # noqa: E402
+from shortcuthunt import freetext_hard as fh  # noqa: E402
+from shortcuthunt.substrate import MAX_CONTENT_TOKENS, MODEL_ID  # noqa: E402
 
 
 def main():

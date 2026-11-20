@@ -30,12 +30,12 @@ import numpy as np
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
-from shifthunt import contract  # noqa: E402
-from shifthunt import grader  # noqa: E402
-from shifthunt import textgen as tg  # noqa: E402
-from shifthunt.detectors import submission_regex  # noqa: E402
-from shifthunt.effects import Grid  # noqa: E402
-from shifthunt.substrate import D_SAE  # noqa: E402
+from shortcuthunt import contract  # noqa: E402
+from shortcuthunt import grader  # noqa: E402
+from shortcuthunt import textgen as tg  # noqa: E402
+from shortcuthunt.detectors import submission_regex  # noqa: E402
+from shortcuthunt.effects import Grid  # noqa: E402
+from shortcuthunt.substrate import D_SAE  # noqa: E402
 
 RESULTS = ROOT / "results" / "grader"
 
@@ -75,7 +75,7 @@ def synthetic_episode(seed):
 
 
 def real_episode(seed):
-    from shifthunt import episodes as EP
+    from shortcuthunt import episodes as EP
     try:
         pool = [a for a in EP.load_all() if a.meta["kind"] == "null" or (a.ref and a.ref["valid"])]
         kinds = [a.meta["kind"] for a in pool]

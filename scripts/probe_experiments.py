@@ -18,9 +18,9 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
-from shifthunt import probes as P  # noqa: E402
-from shifthunt import textgen as tg  # noqa: E402
-from shifthunt.substrate import Subject  # noqa: E402
+from shortcuthunt import probes as P  # noqa: E402
+from shortcuthunt import textgen as tg  # noqa: E402
+from shortcuthunt.substrate import Subject  # noqa: E402
 
 RESULTS = ROOT / "results" / "probes"
 ARTIFACTS = ROOT / "artifacts" / "probes"

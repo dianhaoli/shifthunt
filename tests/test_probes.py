@@ -13,9 +13,9 @@ import pytest
 from sklearn.linear_model import LogisticRegression
 from sklearn.preprocessing import StandardScaler
 
-from shifthunt import probes as P
-from shifthunt import textgen as tg
-from shifthunt.detectors import detect
+from shortcuthunt import probes as P
+from shortcuthunt import textgen as tg
+from shortcuthunt.detectors import detect
 
 TOPICS = ("chess", "sailing")
 

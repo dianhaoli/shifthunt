@@ -1,6 +1,6 @@
 """Build one episode directory from the grader artifacts (GPU unless --fake-encoder).
 
-    flock /tmp/shifthunt-gpu.lock python scripts/build_episode.py --out DIR --seed INT [INT ...] \
+    flock /tmp/shortcuthunt-gpu.lock python scripts/build_episode.py --out DIR --seed INT [INT ...] \
         --artifacts PATH [--builds build_screen,build_screen2] [--fake-encoder]
 
 With several seeds, DIR must contain "{seed}" (e.g. .cache/bank/ep{seed}); the model loads once and every
@@ -21,13 +21,13 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
-from shifthunt import episode_files as E  # noqa: E402
-from shifthunt import episodes  # noqa: E402
+from shortcuthunt import episode_files as E  # noqa: E402
+from shortcuthunt import episodes  # noqa: E402
 
 
 def real_encoder():
-    from shifthunt.hidden import encode_sparse
-    from shifthunt.substrate import Subject
+    from shortcuthunt.hidden import encode_sparse
+    from shortcuthunt.substrate import Subject
     subject = Subject("cuda")
     return lambda texts: encode_sparse(subject, texts)
 

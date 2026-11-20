@@ -1,7 +1,7 @@
 """GPU tests for the tool server's RealBackend. Skipped without CUDA.
 
 Run under the shared GPU lock, with the HF cache populated (Gemma is gated):
-    flock /tmp/shifthunt-gpu.lock env HF_HUB_OFFLINE=1 python -m pytest tests/test_toolserver_gpu.py -q
+    flock /tmp/shortcuthunt-gpu.lock env HF_HUB_OFFLINE=1 python -m pytest tests/test_toolserver_gpu.py -q
 """
 import random
 
@@ -11,10 +11,10 @@ import pytest
 torch = pytest.importorskip("torch")
 pytestmark = pytest.mark.skipif(not torch.cuda.is_available(), reason="needs CUDA")
 
-from shifthunt import hidden  # noqa: E402
-from shifthunt import textgen as tg  # noqa: E402
-from shifthunt import toolserver as ts  # noqa: E402
-from shifthunt.toolbackend import RealBackend  # noqa: E402
+from shortcuthunt import hidden  # noqa: E402
+from shortcuthunt import textgen as tg  # noqa: E402
+from shortcuthunt import toolserver as ts  # noqa: E402
+from shortcuthunt.toolbackend import RealBackend  # noqa: E402
 
 from test_toolserver import make_episode  # noqa: E402
 

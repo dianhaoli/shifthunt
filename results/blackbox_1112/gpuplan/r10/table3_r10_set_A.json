@@ -1,0 +1,497 @@
+{
+ "plan": "results/blackbox_1112/gpuplan/r10/PLAN_R10.md (Table 3 recompute)",
+ "tag": "r10",
+ "set": "set_A",
+ "levels": {
+  "AD5": {
+   "judge": "Terra",
+   "runs": 130,
+   "hard_kappa": 0.126,
+   "item95": [
+    -0.14,
+    0.35
+   ],
+   "wrong_cues_credited": "10/17",
+   "wrong_none_credited": "25/26",
+   "passes_rejected": "7/87",
+   "abstained": 0,
+   "answer_type_baseline_kappa": 0.672
+  },
+  "ADa": {
+   "judge": "Terra",
+   "runs": 130,
+   "hard_kappa": 0.526,
+   "item95": [
+    0.38,
+    0.7
+   ],
+   "wrong_cues_credited": "4/17",
+   "wrong_none_credited": "13/26",
+   "passes_rejected": "9/87",
+   "abstained": 0,
+   "answer_type_baseline_kappa": 0.672
+  },
+  "ADb": {
+   "judge": "Terra",
+   "runs": 130,
+   "hard_kappa": 0.565,
+   "item95": [
+    0.34,
+    0.76
+   ],
+   "wrong_cues_credited": "1/17",
+   "wrong_none_credited": "0/26",
+   "passes_rejected": "28/87",
+   "abstained": 0,
+   "answer_type_baseline_kappa": 0.672
+  },
+  "C8T": {
+   "judge": "Terra",
+   "runs": 24,
+   "hard_kappa": -0.043,
+   "item95": [
+    -0.09,
+    0.0
+   ],
+   "wrong_cues_credited": "0/0",
+   "wrong_none_credited": "1/1",
+   "passes_rejected": "1/23",
+   "abstained": 0,
+   "answer_type_baseline_kappa": 1.0
+  },
+  "F1": {
+   "judge": "Terra",
+   "runs": 130,
+   "hard_kappa": 0.249,
+   "item95": [
+    0.17,
+    0.33
+   ],
+   "wrong_cues_credited": "0/17",
+   "wrong_none_credited": "0/26",
+   "passes_rejected": "58/87",
+   "abstained": 100,
+   "answer_type_baseline_kappa": 0.672
+  },
+  "F2": {
+   "judge": "Terra",
+   "runs": 48,
+   "hard_kappa": 0.43,
+   "item95": [
+    0.26,
+    0.6
+   ],
+   "wrong_cues_credited": "0/10",
+   "wrong_none_credited": "0/6",
+   "passes_rejected": "15/32",
+   "abstained": 31,
+   "answer_type_baseline_kappa": 0.444
+  },
+  "H0": {
+   "judge": "Haiku",
+   "runs": 129,
+   "hard_kappa": 0.009,
+   "item95": [
+    -0.06,
+    0.08
+   ],
+   "wrong_cues_credited": "0/17",
+   "wrong_none_credited": "8/26",
+   "passes_rejected": "69/86",
+   "abstained": 0,
+   "answer_type_baseline_kappa": 0.671
+  },
+  "H0ctrl": {
+   "judge": "Haiku",
+   "runs": 130,
+   "hard_kappa": -0.162,
+   "item95": [
+    -0.23,
+    -0.11
+   ],
+   "wrong_cues_credited": "0/17",
+   "wrong_none_credited": "11/26",
+   "passes_rejected": "85/87",
+   "abstained": 0,
+   "answer_type_baseline_kappa": 0.672
+  },
+  "H1": {
+   "judge": "Haiku",
+   "runs": 129,
+   "hard_kappa": 0.019,
+   "item95": [
+    -0.1,
+    0.14
+   ],
+   "wrong_cues_credited": "2/17",
+   "wrong_none_credited": "14/26",
+   "passes_rejected": "52/86",
+   "abstained": 0,
+   "answer_type_baseline_kappa": 0.671
+  },
+  "H1r": {
+   "judge": "Haiku",
+   "runs": 128,
+   "hard_kappa": 0.04,
+   "item95": [
+    -0.02,
+    0.09
+   ],
+   "wrong_cues_credited": "1/17",
+   "wrong_none_credited": "8/25",
+   "passes_rejected": "63/86",
+   "abstained": 0,
+   "answer_type_baseline_kappa": 0.664
+  },
+  "H2": {
+   "judge": "Haiku",
+   "runs": 129,
+   "hard_kappa": 0.173,
+   "item95": [
+    0.08,
+    0.26
+   ],
+   "wrong_cues_credited": "2/17",
+   "wrong_none_credited": "17/26",
+   "passes_rejected": "32/86",
+   "abstained": 0,
+   "answer_type_baseline_kappa": 0.671
+  },
+  "H2r": {
+   "judge": "Haiku",
+   "runs": 35,
+   "hard_kappa": -0.066,
+   "item95": [
+    -0.25,
+    0.12
+   ],
+   "wrong_cues_credited": "0/1",
+   "wrong_none_credited": "3/7",
+   "passes_rejected": "20/27",
+   "abstained": 0,
+   "answer_type_baseline_kappa": 0.915
+  },
+  "HK": {
+   "judge": "Haiku",
+   "runs": 129,
+   "hard_kappa": 0.041,
+   "item95": [
+    -0.03,
+    0.12
+   ],
+   "wrong_cues_credited": "0/17",
+   "wrong_none_credited": "3/26",
+   "passes_rejected": "75/86",
+   "abstained": 0,
+   "answer_type_baseline_kappa": 0.671
+  },
+  "K0": {
+   "judge": "Terra",
+   "runs": 130,
+   "hard_kappa": 0.836,
+   "item95": [
+    0.61,
+    1.0
+   ],
+   "wrong_cues_credited": "0/17",
+   "wrong_none_credited": "0/26",
+   "passes_rejected": "10/87",
+   "abstained": 0,
+   "answer_type_baseline_kappa": 0.672
+  },
+  "L0": {
+   "judge": "Terra",
+   "runs": 130,
+   "hard_kappa": 0.321,
+   "item95": [
+    0.09,
+    0.53
+   ],
+   "wrong_cues_credited": "9/17",
+   "wrong_none_credited": "19/26",
+   "passes_rejected": "6/87",
+   "abstained": 0,
+   "answer_type_baseline_kappa": 0.672
+  },
+  "L0ctrl": {
+   "judge": "Terra",
+   "runs": 130,
+   "hard_kappa": -0.076,
+   "item95": [
+    -0.19,
+    0.04
+   ],
+   "wrong_cues_credited": "9/17",
+   "wrong_none_credited": "21/26",
+   "passes_rejected": "33/87",
+   "abstained": 0,
+   "answer_type_baseline_kappa": 0.672
+  },
+  "L0r": {
+   "judge": "Terra",
+   "runs": 130,
+   "hard_kappa": 0.378,
+   "item95": [
+    0.18,
+    0.51
+   ],
+   "wrong_cues_credited": "7/17",
+   "wrong_none_credited": "18/26",
+   "passes_rejected": "7/87",
+   "abstained": 0,
+   "answer_type_baseline_kappa": 0.672
+  },
+  "L1": {
+   "judge": "Terra",
+   "runs": 130,
+   "hard_kappa": 0.425,
+   "item95": [
+    0.33,
+    0.54
+   ],
+   "wrong_cues_credited": "6/17",
+   "wrong_none_credited": "19/26",
+   "passes_rejected": "4/87",
+   "abstained": 0,
+   "answer_type_baseline_kappa": 0.672
+  },
+  "L1r": {
+   "judge": "Terra",
+   "runs": 130,
+   "hard_kappa": 0.417,
+   "item95": [
+    0.29,
+    0.54
+   ],
+   "wrong_cues_credited": "6/17",
+   "wrong_none_credited": "18/26",
+   "passes_rejected": "6/87",
+   "abstained": 0,
+   "answer_type_baseline_kappa": 0.672
+  },
+  "L2": {
+   "judge": "Terra",
+   "runs": 130,
+   "hard_kappa": 0.463,
+   "item95": [
+    0.34,
+    0.6
+   ],
+   "wrong_cues_credited": "6/17",
+   "wrong_none_credited": "16/26",
+   "passes_rejected": "6/87",
+   "abstained": 0,
+   "answer_type_baseline_kappa": 0.672
+  },
+  "L2r": {
+   "judge": "Terra",
+   "runs": 36,
+   "hard_kappa": 0.413,
+   "item95": [
+    0.0,
+    0.62
+   ],
+   "wrong_cues_credited": "1/1",
+   "wrong_none_credited": "4/7",
+   "passes_rejected": "1/28",
+   "abstained": 0,
+   "answer_type_baseline_kappa": 0.916
+  },
+  "L3_1": {
+   "judge": "Terra",
+   "runs": 130,
+   "hard_kappa": 0.932,
+   "item95": [
+    0.81,
+    1.0
+   ],
+   "wrong_cues_credited": "0/17",
+   "wrong_none_credited": "0/26",
+   "passes_rejected": "4/87",
+   "abstained": 0,
+   "answer_type_baseline_kappa": 0.672
+  },
+  "L3_2": {
+   "judge": "Terra",
+   "runs": 130,
+   "hard_kappa": 1.0,
+   "item95": [
+    1.0,
+    1.0
+   ],
+   "wrong_cues_credited": "0/17",
+   "wrong_none_credited": "0/26",
+   "passes_rejected": "0/87",
+   "abstained": 0,
+   "answer_type_baseline_kappa": 0.672
+  },
+  "LF": {
+   "judge": "Luna",
+   "runs": 130,
+   "hard_kappa": 0.402,
+   "item95": [
+    0.22,
+    0.57
+   ],
+   "wrong_cues_credited": "11/17",
+   "wrong_none_credited": "11/26",
+   "passes_rejected": "10/87",
+   "abstained": 0,
+   "answer_type_baseline_kappa": 0.672
+  },
+  "LK": {
+   "judge": "Luna",
+   "runs": 130,
+   "hard_kappa": 0.564,
+   "item95": [
+    0.42,
+    0.7
+   ],
+   "wrong_cues_credited": "8/17",
+   "wrong_none_credited": "2/26",
+   "passes_rejected": "16/87",
+   "abstained": 0,
+   "answer_type_baseline_kappa": 0.672
+  },
+  "O1a": {
+   "judge": "Haiku",
+   "runs": 127,
+   "hard_kappa": 0.678,
+   "item95": [
+    0.41,
+    0.9
+   ],
+   "wrong_cues_credited": "0/17",
+   "wrong_none_credited": "0/23",
+   "passes_rejected": "20/87",
+   "abstained": 0,
+   "answer_type_baseline_kappa": 0.65
+  },
+  "O1e": {
+   "judge": "Sol",
+   "runs": 130,
+   "hard_kappa": 0.764,
+   "item95": [
+    0.57,
+    0.9
+   ],
+   "wrong_cues_credited": "8/17",
+   "wrong_none_credited": "2/26",
+   "passes_rejected": "3/87",
+   "abstained": 0,
+   "answer_type_baseline_kappa": 0.672
+  },
+  "O2": {
+   "judge": "Terra",
+   "runs": 130,
+   "hard_kappa": 0.52,
+   "item95": [
+    0.33,
+    0.72
+   ],
+   "wrong_cues_credited": "0/17",
+   "wrong_none_credited": "0/26",
+   "passes_rejected": "33/87",
+   "abstained": 76,
+   "answer_type_baseline_kappa": 0.672
+  },
+  "S0": {
+   "judge": "Sol",
+   "runs": 130,
+   "hard_kappa": 0.369,
+   "item95": [
+    0.15,
+    0.58
+   ],
+   "wrong_cues_credited": "10/17",
+   "wrong_none_credited": "18/26",
+   "passes_rejected": "3/87",
+   "abstained": 0,
+   "answer_type_baseline_kappa": 0.672
+  },
+  "S1": {
+   "judge": "Sol",
+   "runs": 130,
+   "hard_kappa": 0.385,
+   "item95": [
+    0.28,
+    0.47
+   ],
+   "wrong_cues_credited": "8/17",
+   "wrong_none_credited": "18/26",
+   "passes_rejected": "5/87",
+   "abstained": 0,
+   "answer_type_baseline_kappa": 0.672
+  },
+  "S2": {
+   "judge": "Sol",
+   "runs": 130,
+   "hard_kappa": 0.393,
+   "item95": [
+    0.31,
+    0.46
+   ],
+   "wrong_cues_credited": "9/17",
+   "wrong_none_credited": "18/26",
+   "passes_rejected": "3/87",
+   "abstained": 0,
+   "answer_type_baseline_kappa": 0.672
+  },
+  "S3": {
+   "judge": "Sol",
+   "runs": 130,
+   "hard_kappa": 0.818,
+   "item95": [
+    0.6,
+    0.98
+   ],
+   "wrong_cues_credited": "1/17",
+   "wrong_none_credited": "0/26",
+   "passes_rejected": "10/87",
+   "abstained": 0,
+   "answer_type_baseline_kappa": 0.672
+  },
+  "SF": {
+   "judge": "Sol",
+   "runs": 130,
+   "hard_kappa": 0.515,
+   "item95": [
+    0.31,
+    0.73
+   ],
+   "wrong_cues_credited": "1/17",
+   "wrong_none_credited": "0/26",
+   "passes_rejected": "32/87",
+   "abstained": 73,
+   "answer_type_baseline_kappa": 0.672
+  },
+  "TF2": {
+   "judge": "Terra",
+   "runs": 130,
+   "hard_kappa": 0.346,
+   "item95": [
+    0.16,
+    0.5
+   ],
+   "wrong_cues_credited": "9/17",
+   "wrong_none_credited": "18/26",
+   "passes_rejected": "6/87",
+   "abstained": 0,
+   "answer_type_baseline_kappa": 0.672
+  },
+  "TK": {
+   "judge": "Terra",
+   "runs": 130,
+   "hard_kappa": 0.784,
+   "item95": [
+    0.56,
+    0.93
+   ],
+   "wrong_cues_credited": "7/17",
+   "wrong_none_credited": "2/26",
+   "passes_rejected": "3/87",
+   "abstained": 0,
+   "answer_type_baseline_kappa": 0.672
+  }
+ }
+}

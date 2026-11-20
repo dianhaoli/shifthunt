@@ -1,0 +1,2303 @@
+{
+ "file": "gpuplan/s/s_agent_unit.json",
+ "changed": 401,
+ "rows": {
+  "set_A/topic_unit_D/S2/kappa": {
+   "frozen": 0.6368,
+   "r10": 0.4073,
+   "change": -0.2295
+  },
+  "set_A/topic_unit_D/S2/balanced_accuracy": {
+   "frozen": 0.8773,
+   "r10": 0.6848,
+   "change": -0.1925
+  },
+  "set_A/topic_unit_D/S2/accuracy": {
+   "frozen": 0.9437,
+   "r10": 0.9296,
+   "change": -0.0141
+  },
+  "set_A/topic_unit_D/S2/passes_credited": {
+   "frozen": "63/66",
+   "r10": "64/66",
+   "change": 0.0152
+  },
+  "set_A/topic_unit_D/S2/commissions_credited": {
+   "frozen": "0/2",
+   "r10": "1/2",
+   "change": 0.5
+  },
+  "set_A/topic_unit_D/S2/omissions_credited": {
+   "frozen": "1/3",
+   "r10": "2/3",
+   "change": 0.3333
+  },
+  "set_A/topic_unit_D/S2/boot95_item/balanced_accuracy": {
+   "frozen": [
+    0.7554,
+    0.9924
+   ],
+   "r10": [
+    0.4841,
+    0.875
+   ],
+   "change": null
+  },
+  "set_A/topic_unit_D/S2/boot95_item/kappa": {
+   "frozen": [
+    0.4072,
+    0.9014
+   ],
+   "r10": [
+    -0.0333,
+    0.7358
+   ],
+   "change": null
+  },
+  "set_A/topic_unit_D/L2/kappa": {
+   "frozen": 0.1803,
+   "r10": 0.5697,
+   "change": 0.3894
+  },
+  "set_A/topic_unit_D/L2/balanced_accuracy": {
+   "frozen": 0.7485,
+   "r10": 0.7848,
+   "change": 0.0363
+  },
+  "set_A/topic_unit_D/L2/accuracy": {
+   "frozen": 0.7042,
+   "r10": 0.9437,
+   "change": 0.2395
+  },
+  "set_A/topic_unit_D/L2/passes_credited": {
+   "frozen": "46/66",
+   "r10": "64/66",
+   "change": 0.2727
+  },
+  "set_A/topic_unit_D/L2/omissions_credited": {
+   "frozen": "1/3",
+   "r10": "2/3",
+   "change": 0.3333
+  },
+  "set_A/topic_unit_D/L2/boot95_item/balanced_accuracy": {
+   "frozen": [
+    0.6239,
+    0.8788
+   ],
+   "r10": [
+    0.6029,
+    0.9833
+   ],
+   "change": null
+  },
+  "set_A/topic_unit_D/L2/boot95_item/kappa": {
+   "frozen": [
+    0.0768,
+    0.2835
+   ],
+   "r10": [
+    0.2478,
+    0.7921
+   ],
+   "change": null
+  },
+  "set_A/topic_unit_D/tests/S2 vs script/items/per_item_diff[2]": {
+   "frozen": 0.0,
+   "r10": -0.0909,
+   "change": -0.0909
+  },
+  "set_A/topic_unit_D/tests/S2 vs script/items/p_signflip": {
+   "frozen": 0.75,
+   "r10": 0.5,
+   "change": -0.25
+  },
+  "set_A/topic_unit_D/tests/S2 vs script/items/sign_test/negative": {
+   "frozen": 2,
+   "r10": 3,
+   "change": 1.0
+  },
+  "set_A/topic_unit_D/tests/S2 vs script/items/sign_test/p": {
+   "frozen": 1.0,
+   "r10": 0.625,
+   "change": -0.375
+  },
+  "set_A/topic_unit_D/tests/S2 vs script/set_items/per_item_diff[2]": {
+   "frozen": 0.0,
+   "r10": -0.0909,
+   "change": -0.0909
+  },
+  "set_A/topic_unit_D/tests/S2 vs script/set_items/p_signflip": {
+   "frozen": 0.75,
+   "r10": 0.5,
+   "change": -0.25
+  },
+  "set_A/topic_unit_D/tests/S2 vs script/set_items/sign_test/negative": {
+   "frozen": 2,
+   "r10": 3,
+   "change": 1.0
+  },
+  "set_A/topic_unit_D/tests/S2 vs script/set_items/sign_test/p": {
+   "frozen": 1.0,
+   "r10": 0.625,
+   "change": -0.375
+  },
+  "set_A/topic_unit_D/tests/S2 vs script/mcnemar_runs/a_right_b_wrong": {
+   "frozen": 1,
+   "r10": 2,
+   "change": 1.0
+  },
+  "set_A/topic_unit_D/tests/S2 vs script/mcnemar_runs/a_wrong_b_right": {
+   "frozen": 3,
+   "r10": 5,
+   "change": 2.0
+  },
+  "set_A/topic_unit_D/tests/S2 vs script/mcnemar_runs/p": {
+   "frozen": 0.625,
+   "r10": 0.453,
+   "change": -0.172
+  },
+  "set_A/topic_unit_D/tests/S2 vs L2/items/per_item_diff[0]": {
+   "frozen": 0.3077,
+   "r10": 0.0,
+   "change": -0.3077
+  },
+  "set_A/topic_unit_D/tests/S2 vs L2/items/per_item_diff[1]": {
+   "frozen": 0.2727,
+   "r10": 0.0,
+   "change": -0.2727
+  },
+  "set_A/topic_unit_D/tests/S2 vs L2/items/per_item_diff[2]": {
+   "frozen": 0.3636,
+   "r10": 0.0,
+   "change": -0.3636
+  },
+  "set_A/topic_unit_D/tests/S2 vs L2/items/per_item_diff[3]": {
+   "frozen": 0.2143,
+   "r10": -0.0714,
+   "change": -0.2857
+  },
+  "set_A/topic_unit_D/tests/S2 vs L2/items/per_item_diff[4]": {
+   "frozen": 0.0769,
+   "r10": 0.0,
+   "change": -0.0769
+  },
+  "set_A/topic_unit_D/tests/S2 vs L2/items/per_item_diff[5]": {
+   "frozen": 0.2222,
+   "r10": 0.0,
+   "change": -0.2222
+  },
+  "set_A/topic_unit_D/tests/S2 vs L2/items/p_signflip": {
+   "frozen": 0.0312,
+   "r10": 1.0,
+   "change": 0.9688
+  },
+  "set_A/topic_unit_D/tests/S2 vs L2/items/sign_test/positive": {
+   "frozen": 6,
+   "r10": 0,
+   "change": -6.0
+  },
+  "set_A/topic_unit_D/tests/S2 vs L2/items/sign_test/negative": {
+   "frozen": 0,
+   "r10": 1,
+   "change": 1.0
+  },
+  "set_A/topic_unit_D/tests/S2 vs L2/items/sign_test/p": {
+   "frozen": 0.0312,
+   "r10": 1.0,
+   "change": 0.9688
+  },
+  "set_A/topic_unit_D/tests/S2 vs L2/set_items/per_item_diff[0]": {
+   "frozen": 0.3077,
+   "r10": 0.0,
+   "change": -0.3077
+  },
+  "set_A/topic_unit_D/tests/S2 vs L2/set_items/per_item_diff[1]": {
+   "frozen": 0.2727,
+   "r10": 0.0,
+   "change": -0.2727
+  },
+  "set_A/topic_unit_D/tests/S2 vs L2/set_items/per_item_diff[2]": {
+   "frozen": 0.3636,
+   "r10": 0.0,
+   "change": -0.3636
+  },
+  "set_A/topic_unit_D/tests/S2 vs L2/set_items/per_item_diff[3]": {
+   "frozen": 0.2143,
+   "r10": -0.0714,
+   "change": -0.2857
+  },
+  "set_A/topic_unit_D/tests/S2 vs L2/set_items/per_item_diff[4]": {
+   "frozen": 0.0769,
+   "r10": 0.0,
+   "change": -0.0769
+  },
+  "set_A/topic_unit_D/tests/S2 vs L2/set_items/per_item_diff[5]": {
+   "frozen": 0.2222,
+   "r10": 0.0,
+   "change": -0.2222
+  },
+  "set_A/topic_unit_D/tests/S2 vs L2/set_items/p_signflip": {
+   "frozen": 0.0312,
+   "r10": 1.0,
+   "change": 0.9688
+  },
+  "set_A/topic_unit_D/tests/S2 vs L2/set_items/sign_test/positive": {
+   "frozen": 6,
+   "r10": 0,
+   "change": -6.0
+  },
+  "set_A/topic_unit_D/tests/S2 vs L2/set_items/sign_test/negative": {
+   "frozen": 0,
+   "r10": 1,
+   "change": 1.0
+  },
+  "set_A/topic_unit_D/tests/S2 vs L2/set_items/sign_test/p": {
+   "frozen": 0.0312,
+   "r10": 1.0,
+   "change": 0.9688
+  },
+  "set_A/topic_unit_D/tests/S2 vs L2/mcnemar_runs/a_right_b_wrong": {
+   "frozen": 20,
+   "r10": 1,
+   "change": -19.0
+  },
+  "set_A/topic_unit_D/tests/S2 vs L2/mcnemar_runs/a_wrong_b_right": {
+   "frozen": 3,
+   "r10": 2,
+   "change": -1.0
+  },
+  "set_A/topic_unit_D/tests/S2 vs L2/mcnemar_runs/p": {
+   "frozen": 0.000488,
+   "r10": 1.0,
+   "change": 0.9995
+  },
+  "set_A/agent_visible_unit/S2/kappa": {
+   "frozen": 0.5706,
+   "r10": 0.4697,
+   "change": -0.1009
+  },
+  "set_A/agent_visible_unit/S2/balanced_accuracy": {
+   "frozen": 0.8523,
+   "r10": 0.7348,
+   "change": -0.1175
+  },
+  "set_A/agent_visible_unit/S2/passes_credited": {
+   "frozen": "63/66",
+   "r10": "64/66",
+   "change": 0.0152
+  },
+  "set_A/agent_visible_unit/S2/commissions_credited": {
+   "frozen": "0/2",
+   "r10": "1/2",
+   "change": 0.5
+  },
+  "set_A/agent_visible_unit/S2/boot95_item/balanced_accuracy": {
+   "frozen": [
+    0.7127,
+    0.9924
+   ],
+   "r10": [
+    0.4846,
+    0.9926
+   ],
+   "change": null
+  },
+  "set_A/agent_visible_unit/S2/boot95_item/kappa": {
+   "frozen": [
+    0.2544,
+    0.8815
+   ],
+   "r10": [
+    -0.0236,
+    0.8496
+   ],
+   "change": null
+  },
+  "set_A/agent_visible_unit/L2/kappa": {
+   "frozen": 0.1383,
+   "r10": 0.6441,
+   "change": 0.5058
+  },
+  "set_A/agent_visible_unit/L2/balanced_accuracy": {
+   "frozen": 0.7235,
+   "r10": 0.8598,
+   "change": 0.1363
+  },
+  "set_A/agent_visible_unit/L2/accuracy": {
+   "frozen": 0.7,
+   "r10": 0.9571,
+   "change": 0.2571
+  },
+  "set_A/agent_visible_unit/L2/passes_credited": {
+   "frozen": "46/66",
+   "r10": "64/66",
+   "change": 0.2727
+  },
+  "set_A/agent_visible_unit/L2/boot95_item/balanced_accuracy": {
+   "frozen": [
+    0.6029,
+    0.8769
+   ],
+   "r10": [
+    0.7351,
+    0.9926
+   ],
+   "change": null
+  },
+  "set_A/agent_visible_unit/L2/boot95_item/kappa": {
+   "frozen": [
+    0.0548,
+    0.2056
+   ],
+   "r10": [
+    0.3784,
+    0.8815
+   ],
+   "change": null
+  },
+  "set_A/agent_visible_unit/tests/S2 vs script/items/per_item_diff[2]": {
+   "frozen": 0.2727,
+   "r10": 0.1818,
+   "change": -0.0909
+  },
+  "set_A/agent_visible_unit/tests/S2 vs script/items/per_item_diff[4]": {
+   "frozen": 0.5833,
+   "r10": 0.6667,
+   "change": 0.0834
+  },
+  "set_A/agent_visible_unit/tests/S2 vs script/set_items/per_item_diff[2]": {
+   "frozen": 0.2727,
+   "r10": 0.1818,
+   "change": -0.0909
+  },
+  "set_A/agent_visible_unit/tests/S2 vs script/set_items/per_item_diff[4]": {
+   "frozen": 0.5833,
+   "r10": 0.6667,
+   "change": 0.0834
+  },
+  "set_A/agent_visible_unit/tests/S2 vs script/mcnemar_runs/a_right_b_wrong": {
+   "frozen": 28,
+   "r10": 29,
+   "change": 1.0
+  },
+  "set_A/agent_visible_unit/tests/S2 vs script/mcnemar_runs/a_wrong_b_right": {
+   "frozen": 1,
+   "r10": 2,
+   "change": 1.0
+  },
+  "set_A/agent_visible_unit/tests/S2 vs script/mcnemar_runs/p": {
+   "frozen": 1.12e-07,
+   "r10": 4.63e-07,
+   "change": 0.0
+  },
+  "set_A/agent_visible_unit/tests/S2 vs L2/items/per_item_diff[0]": {
+   "frozen": 0.3077,
+   "r10": 0.0,
+   "change": -0.3077
+  },
+  "set_A/agent_visible_unit/tests/S2 vs L2/items/per_item_diff[1]": {
+   "frozen": 0.2727,
+   "r10": 0.0,
+   "change": -0.2727
+  },
+  "set_A/agent_visible_unit/tests/S2 vs L2/items/per_item_diff[2]": {
+   "frozen": 0.3636,
+   "r10": 0.0,
+   "change": -0.3636
+  },
+  "set_A/agent_visible_unit/tests/S2 vs L2/items/per_item_diff[3]": {
+   "frozen": 0.2143,
+   "r10": -0.0714,
+   "change": -0.2857
+  },
+  "set_A/agent_visible_unit/tests/S2 vs L2/items/per_item_diff[4]": {
+   "frozen": 0.0833,
+   "r10": 0.0,
+   "change": -0.0833
+  },
+  "set_A/agent_visible_unit/tests/S2 vs L2/items/per_item_diff[5]": {
+   "frozen": 0.2222,
+   "r10": 0.0,
+   "change": -0.2222
+  },
+  "set_A/agent_visible_unit/tests/S2 vs L2/items/p_signflip": {
+   "frozen": 0.0312,
+   "r10": 1.0,
+   "change": 0.9688
+  },
+  "set_A/agent_visible_unit/tests/S2 vs L2/items/sign_test/positive": {
+   "frozen": 6,
+   "r10": 0,
+   "change": -6.0
+  },
+  "set_A/agent_visible_unit/tests/S2 vs L2/items/sign_test/negative": {
+   "frozen": 0,
+   "r10": 1,
+   "change": 1.0
+  },
+  "set_A/agent_visible_unit/tests/S2 vs L2/items/sign_test/p": {
+   "frozen": 0.0312,
+   "r10": 1.0,
+   "change": 0.9688
+  },
+  "set_A/agent_visible_unit/tests/S2 vs L2/set_items/per_item_diff[0]": {
+   "frozen": 0.3077,
+   "r10": 0.0,
+   "change": -0.3077
+  },
+  "set_A/agent_visible_unit/tests/S2 vs L2/set_items/per_item_diff[1]": {
+   "frozen": 0.2727,
+   "r10": 0.0,
+   "change": -0.2727
+  },
+  "set_A/agent_visible_unit/tests/S2 vs L2/set_items/per_item_diff[2]": {
+   "frozen": 0.3636,
+   "r10": 0.0,
+   "change": -0.3636
+  },
+  "set_A/agent_visible_unit/tests/S2 vs L2/set_items/per_item_diff[3]": {
+   "frozen": 0.2143,
+   "r10": -0.0714,
+   "change": -0.2857
+  },
+  "set_A/agent_visible_unit/tests/S2 vs L2/set_items/per_item_diff[4]": {
+   "frozen": 0.0833,
+   "r10": 0.0,
+   "change": -0.0833
+  },
+  "set_A/agent_visible_unit/tests/S2 vs L2/set_items/per_item_diff[5]": {
+   "frozen": 0.2222,
+   "r10": 0.0,
+   "change": -0.2222
+  },
+  "set_A/agent_visible_unit/tests/S2 vs L2/set_items/p_signflip": {
+   "frozen": 0.0312,
+   "r10": 1.0,
+   "change": 0.9688
+  },
+  "set_A/agent_visible_unit/tests/S2 vs L2/set_items/sign_test/positive": {
+   "frozen": 6,
+   "r10": 0,
+   "change": -6.0
+  },
+  "set_A/agent_visible_unit/tests/S2 vs L2/set_items/sign_test/negative": {
+   "frozen": 0,
+   "r10": 1,
+   "change": 1.0
+  },
+  "set_A/agent_visible_unit/tests/S2 vs L2/set_items/sign_test/p": {
+   "frozen": 0.0312,
+   "r10": 1.0,
+   "change": 0.9688
+  },
+  "set_A/agent_visible_unit/tests/S2 vs L2/mcnemar_runs/a_right_b_wrong": {
+   "frozen": 20,
+   "r10": 1,
+   "change": -19.0
+  },
+  "set_A/agent_visible_unit/tests/S2 vs L2/mcnemar_runs/a_wrong_b_right": {
+   "frozen": 3,
+   "r10": 2,
+   "change": -1.0
+  },
+  "set_A/agent_visible_unit/tests/S2 vs L2/mcnemar_runs/p": {
+   "frozen": 0.000488,
+   "r10": 1.0,
+   "change": 0.9995
+  },
+  "set_A/judge_visible/L2/kappa": {
+   "frozen": 0.4771,
+   "r10": 0.6042,
+   "change": 0.1271
+  },
+  "set_A/judge_visible/L2/balanced_accuracy": {
+   "frozen": 0.7708,
+   "r10": 0.8021,
+   "change": 0.0313
+  },
+  "set_A/judge_visible/L2/accuracy": {
+   "frozen": 0.8421,
+   "r10": 0.8947,
+   "change": 0.0526
+  },
+  "set_A/judge_visible/L2/passes_credited": {
+   "frozen": "14/16",
+   "r10": "15/16",
+   "change": 0.0625
+  },
+  "set_A/judge_visible/L2/boot95_item/balanced_accuracy": {
+   "frozen": [
+    0.6447,
+    0.9688
+   ],
+   "r10": [
+    0.6833,
+    1.0
+   ],
+   "change": null
+  },
+  "set_A/judge_visible/L2/boot95_item/kappa": {
+   "frozen": [
+    0.1791,
+    0.8496
+   ],
+   "r10": [
+    0.3014,
+    1.0
+   ],
+   "change": null
+  },
+  "set_A/judge_visible/tests/S2 vs L2/items/per_item_diff[2]": {
+   "frozen": 0.25,
+   "r10": 0.0,
+   "change": -0.25
+  },
+  "set_A/judge_visible/tests/S2 vs L2/items/sign_test/positive": {
+   "frozen": 1,
+   "r10": 0,
+   "change": -1.0
+  },
+  "set_A/judge_visible/tests/S2 vs L2/items/sign_test/p": {
+   "frozen": 1.0,
+   "r10": null,
+   "change": null
+  },
+  "set_A/judge_visible/tests/S2 vs L2/set_items/per_item_diff[2]": {
+   "frozen": 0.25,
+   "r10": 0.0,
+   "change": -0.25
+  },
+  "set_A/judge_visible/tests/S2 vs L2/set_items/sign_test/positive": {
+   "frozen": 1,
+   "r10": 0,
+   "change": -1.0
+  },
+  "set_A/judge_visible/tests/S2 vs L2/set_items/sign_test/p": {
+   "frozen": 1.0,
+   "r10": null,
+   "change": null
+  },
+  "set_A/judge_visible/tests/S2 vs L2/mcnemar_runs/a_right_b_wrong": {
+   "frozen": 2,
+   "r10": 0,
+   "change": -2.0
+  },
+  "set_A/judge_visible/tests/S2 vs L2/mcnemar_runs/a_wrong_b_right": {
+   "frozen": 1,
+   "r10": 0,
+   "change": -1.0
+  },
+  "set_A/judge_visible/tests/S2 vs L2/mcnemar_runs/p": {
+   "frozen": 1.0,
+   "r10": null,
+   "change": null
+  },
+  "luna/topic_unit_D/S2/accuracy": {
+   "frozen": 0.8889,
+   "r10": 0.6667,
+   "change": -0.2222
+  },
+  "luna/topic_unit_D/S2/commissions_credited": {
+   "frozen": "1/7",
+   "r10": "2/7",
+   "change": 0.1429
+  },
+  "luna/topic_unit_D/S2/omissions_credited": {
+   "frozen": "0/2",
+   "r10": "1/2",
+   "change": 0.5
+  },
+  "luna/topic_unit_D/tests/S2 vs script/items/per_item_diff": {
+   "frozen": [
+    -0.25,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "r10": [
+    -0.25,
+    -0.3333,
+    -1.0,
+    0.0
+   ],
+   "change": null
+  },
+  "luna/topic_unit_D/tests/S2 vs script/items/p_signflip": {
+   "frozen": 1.0,
+   "r10": 0.25,
+   "change": -0.75
+  },
+  "luna/topic_unit_D/tests/S2 vs script/items/sign_test/negative": {
+   "frozen": 1,
+   "r10": 3,
+   "change": 2.0
+  },
+  "luna/topic_unit_D/tests/S2 vs script/items/sign_test/p": {
+   "frozen": 1.0,
+   "r10": 0.25,
+   "change": -0.75
+  },
+  "luna/topic_unit_D/tests/S2 vs script/set_items/per_item_diff": {
+   "frozen": [
+    -0.25,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "r10": [
+    -0.25,
+    -0.3333,
+    -1.0,
+    0.0
+   ],
+   "change": null
+  },
+  "luna/topic_unit_D/tests/S2 vs script/set_items/p_signflip": {
+   "frozen": 1.0,
+   "r10": 0.25,
+   "change": -0.75
+  },
+  "luna/topic_unit_D/tests/S2 vs script/set_items/sign_test/negative": {
+   "frozen": 1,
+   "r10": 3,
+   "change": 2.0
+  },
+  "luna/topic_unit_D/tests/S2 vs script/set_items/sign_test/p": {
+   "frozen": 1.0,
+   "r10": 0.25,
+   "change": -0.75
+  },
+  "luna/topic_unit_D/tests/S2 vs script/mcnemar_runs/a_wrong_b_right": {
+   "frozen": 1,
+   "r10": 3,
+   "change": 2.0
+  },
+  "luna/topic_unit_D/tests/S2 vs script/mcnemar_runs/p": {
+   "frozen": 1.0,
+   "r10": 0.25,
+   "change": -0.75
+  },
+  "luna/topic_unit_D/tests/S2 vs L2/items/per_item_diff": {
+   "frozen": [
+    -0.25,
+    0.3333,
+    0.0,
+    1.0
+   ],
+   "r10": [
+    0.0,
+    -0.3333,
+    -1.0,
+    1.0
+   ],
+   "change": null
+  },
+  "luna/topic_unit_D/tests/S2 vs L2/items/p_signflip": {
+   "frozen": 0.5,
+   "r10": 1.0,
+   "change": 0.5
+  },
+  "luna/topic_unit_D/tests/S2 vs L2/items/sign_test/positive": {
+   "frozen": 2,
+   "r10": 1,
+   "change": -1.0
+  },
+  "luna/topic_unit_D/tests/S2 vs L2/items/sign_test/negative": {
+   "frozen": 1,
+   "r10": 2,
+   "change": 1.0
+  },
+  "luna/topic_unit_D/tests/S2 vs L2/set_items/per_item_diff": {
+   "frozen": [
+    -0.25,
+    0.3333,
+    0.0,
+    1.0
+   ],
+   "r10": [
+    0.0,
+    -0.3333,
+    -1.0,
+    1.0
+   ],
+   "change": null
+  },
+  "luna/topic_unit_D/tests/S2 vs L2/set_items/p_signflip": {
+   "frozen": 0.5,
+   "r10": 1.0,
+   "change": 0.5
+  },
+  "luna/topic_unit_D/tests/S2 vs L2/set_items/sign_test/positive": {
+   "frozen": 2,
+   "r10": 1,
+   "change": -1.0
+  },
+  "luna/topic_unit_D/tests/S2 vs L2/set_items/sign_test/negative": {
+   "frozen": 1,
+   "r10": 2,
+   "change": 1.0
+  },
+  "luna/topic_unit_D/tests/S2 vs L2/mcnemar_runs/a_right_b_wrong": {
+   "frozen": 2,
+   "r10": 1,
+   "change": -1.0
+  },
+  "luna/topic_unit_D/tests/S2 vs L2/mcnemar_runs/a_wrong_b_right": {
+   "frozen": 1,
+   "r10": 2,
+   "change": 1.0
+  },
+  "luna/agent_visible_unit/S2/accuracy": {
+   "frozen": 0.8571,
+   "r10": 0.7143,
+   "change": -0.1428
+  },
+  "luna/agent_visible_unit/S2/commissions_credited": {
+   "frozen": "1/7",
+   "r10": "2/7",
+   "change": 0.1429
+  },
+  "luna/agent_visible_unit/tests/S2 vs script/items/per_item_diff": {
+   "frozen": [
+    -0.25,
+    0.0
+   ],
+   "r10": [
+    -0.25,
+    -0.3333
+   ],
+   "change": null
+  },
+  "luna/agent_visible_unit/tests/S2 vs script/items/p_signflip": {
+   "frozen": 1.0,
+   "r10": 0.5,
+   "change": -0.5
+  },
+  "luna/agent_visible_unit/tests/S2 vs script/items/sign_test/negative": {
+   "frozen": 1,
+   "r10": 2,
+   "change": 1.0
+  },
+  "luna/agent_visible_unit/tests/S2 vs script/items/sign_test/p": {
+   "frozen": 1.0,
+   "r10": 0.5,
+   "change": -0.5
+  },
+  "luna/agent_visible_unit/tests/S2 vs script/set_items/per_item_diff": {
+   "frozen": [
+    -0.25,
+    0.0
+   ],
+   "r10": [
+    -0.25,
+    -0.3333
+   ],
+   "change": null
+  },
+  "luna/agent_visible_unit/tests/S2 vs script/set_items/p_signflip": {
+   "frozen": 1.0,
+   "r10": 0.5,
+   "change": -0.5
+  },
+  "luna/agent_visible_unit/tests/S2 vs script/set_items/sign_test/negative": {
+   "frozen": 1,
+   "r10": 2,
+   "change": 1.0
+  },
+  "luna/agent_visible_unit/tests/S2 vs script/set_items/sign_test/p": {
+   "frozen": 1.0,
+   "r10": 0.5,
+   "change": -0.5
+  },
+  "luna/agent_visible_unit/tests/S2 vs script/mcnemar_runs/a_wrong_b_right": {
+   "frozen": 1,
+   "r10": 2,
+   "change": 1.0
+  },
+  "luna/agent_visible_unit/tests/S2 vs script/mcnemar_runs/p": {
+   "frozen": 1.0,
+   "r10": 0.5,
+   "change": -0.5
+  },
+  "luna/agent_visible_unit/tests/S2 vs L2/items/per_item_diff": {
+   "frozen": [
+    -0.25,
+    0.3333
+   ],
+   "r10": [
+    0.0,
+    -0.3333
+   ],
+   "change": null
+  },
+  "luna/agent_visible_unit/tests/S2 vs L2/items/sign_test/positive": {
+   "frozen": 1,
+   "r10": 0,
+   "change": -1.0
+  },
+  "luna/agent_visible_unit/tests/S2 vs L2/set_items/per_item_diff": {
+   "frozen": [
+    -0.25,
+    0.3333
+   ],
+   "r10": [
+    0.0,
+    -0.3333
+   ],
+   "change": null
+  },
+  "luna/agent_visible_unit/tests/S2 vs L2/set_items/sign_test/positive": {
+   "frozen": 1,
+   "r10": 0,
+   "change": -1.0
+  },
+  "luna/agent_visible_unit/tests/S2 vs L2/mcnemar_runs/a_right_b_wrong": {
+   "frozen": 1,
+   "r10": 0,
+   "change": -1.0
+  },
+  "luna/judge_visible/S2/accuracy": {
+   "frozen": 0.8571,
+   "r10": 0.7143,
+   "change": -0.1428
+  },
+  "luna/judge_visible/S2/commissions_credited": {
+   "frozen": "1/7",
+   "r10": "2/7",
+   "change": 0.1429
+  },
+  "luna/judge_visible/tests/S2 vs script/items/per_item_diff": {
+   "frozen": [
+    -0.25,
+    0.0
+   ],
+   "r10": [
+    -0.25,
+    -0.3333
+   ],
+   "change": null
+  },
+  "luna/judge_visible/tests/S2 vs script/items/p_signflip": {
+   "frozen": 1.0,
+   "r10": 0.5,
+   "change": -0.5
+  },
+  "luna/judge_visible/tests/S2 vs script/items/sign_test/negative": {
+   "frozen": 1,
+   "r10": 2,
+   "change": 1.0
+  },
+  "luna/judge_visible/tests/S2 vs script/items/sign_test/p": {
+   "frozen": 1.0,
+   "r10": 0.5,
+   "change": -0.5
+  },
+  "luna/judge_visible/tests/S2 vs script/set_items/per_item_diff": {
+   "frozen": [
+    -0.25,
+    0.0
+   ],
+   "r10": [
+    -0.25,
+    -0.3333
+   ],
+   "change": null
+  },
+  "luna/judge_visible/tests/S2 vs script/set_items/p_signflip": {
+   "frozen": 1.0,
+   "r10": 0.5,
+   "change": -0.5
+  },
+  "luna/judge_visible/tests/S2 vs script/set_items/sign_test/negative": {
+   "frozen": 1,
+   "r10": 2,
+   "change": 1.0
+  },
+  "luna/judge_visible/tests/S2 vs script/set_items/sign_test/p": {
+   "frozen": 1.0,
+   "r10": 0.5,
+   "change": -0.5
+  },
+  "luna/judge_visible/tests/S2 vs script/mcnemar_runs/a_wrong_b_right": {
+   "frozen": 1,
+   "r10": 2,
+   "change": 1.0
+  },
+  "luna/judge_visible/tests/S2 vs script/mcnemar_runs/p": {
+   "frozen": 1.0,
+   "r10": 0.5,
+   "change": -0.5
+  },
+  "luna/judge_visible/tests/S2 vs L2/items/per_item_diff": {
+   "frozen": [
+    -0.25,
+    0.3333
+   ],
+   "r10": [
+    0.0,
+    -0.3333
+   ],
+   "change": null
+  },
+  "luna/judge_visible/tests/S2 vs L2/items/sign_test/positive": {
+   "frozen": 1,
+   "r10": 0,
+   "change": -1.0
+  },
+  "luna/judge_visible/tests/S2 vs L2/set_items/per_item_diff": {
+   "frozen": [
+    -0.25,
+    0.3333
+   ],
+   "r10": [
+    0.0,
+    -0.3333
+   ],
+   "change": null
+  },
+  "luna/judge_visible/tests/S2 vs L2/set_items/sign_test/positive": {
+   "frozen": 1,
+   "r10": 0,
+   "change": -1.0
+  },
+  "luna/judge_visible/tests/S2 vs L2/mcnemar_runs/a_right_b_wrong": {
+   "frozen": 1,
+   "r10": 0,
+   "change": -1.0
+  },
+  "main_study/topic_unit_D/S2/kappa": {
+   "frozen": -0.0465,
+   "r10": 0.0,
+   "change": 0.0465
+  },
+  "main_study/topic_unit_D/S2/balanced_accuracy": {
+   "frozen": 0.4655,
+   "r10": 0.5,
+   "change": 0.0345
+  },
+  "main_study/topic_unit_D/S2/accuracy": {
+   "frozen": 0.9,
+   "r10": 0.9667,
+   "change": 0.0667
+  },
+  "main_study/topic_unit_D/S2/passes_credited": {
+   "frozen": "27/29",
+   "r10": "29/29",
+   "change": 0.069
+  },
+  "main_study/topic_unit_D/S2/boot95_item/balanced_accuracy": {
+   "frozen": [
+    0.4211,
+    0.5
+   ],
+   "r10": [
+    0.5,
+    0.5
+   ],
+   "change": null
+  },
+  "main_study/topic_unit_D/S2/boot95_item/kappa": {
+   "frozen": [
+    -0.0825,
+    0.0
+   ],
+   "r10": [
+    0.0,
+    0.0
+   ],
+   "change": null
+  },
+  "main_study/topic_unit_D/L2/kappa": {
+   "frozen": -0.0465,
+   "r10": -0.0345,
+   "change": 0.012
+  },
+  "main_study/topic_unit_D/L2/balanced_accuracy": {
+   "frozen": 0.4655,
+   "r10": 0.4828,
+   "change": 0.0173
+  },
+  "main_study/topic_unit_D/L2/accuracy": {
+   "frozen": 0.9,
+   "r10": 0.9333,
+   "change": 0.0333
+  },
+  "main_study/topic_unit_D/L2/passes_credited": {
+   "frozen": "27/29",
+   "r10": "28/29",
+   "change": 0.0345
+  },
+  "main_study/topic_unit_D/L2/boot95_item/balanced_accuracy": {
+   "frozen": [
+    0.4348,
+    0.4833
+   ],
+   "r10": [
+    0.4605,
+    0.5
+   ],
+   "change": null
+  },
+  "main_study/topic_unit_D/L2/boot95_item/kappa": {
+   "frozen": [
+    -0.1121,
+    -0.0333
+   ],
+   "r10": [
+    -0.0591,
+    0.0
+   ],
+   "change": null
+  },
+  "main_study/topic_unit_D/tests/S2 vs script/items/per_item_diff[0]": {
+   "frozen": 0.0,
+   "r10": 0.25,
+   "change": 0.25
+  },
+  "main_study/topic_unit_D/tests/S2 vs script/items/p_signflip": {
+   "frozen": 0.5,
+   "r10": 0.25,
+   "change": -0.25
+  },
+  "main_study/topic_unit_D/tests/S2 vs script/items/sign_test/positive": {
+   "frozen": 2,
+   "r10": 3,
+   "change": 1.0
+  },
+  "main_study/topic_unit_D/tests/S2 vs script/items/sign_test/p": {
+   "frozen": 1.0,
+   "r10": 0.625,
+   "change": -0.375
+  },
+  "main_study/topic_unit_D/tests/S2 vs script/set_items/per_item_diff[0]": {
+   "frozen": 0.0,
+   "r10": 0.25,
+   "change": 0.25
+  },
+  "main_study/topic_unit_D/tests/S2 vs script/set_items/p_signflip": {
+   "frozen": 0.5,
+   "r10": 0.25,
+   "change": -0.25
+  },
+  "main_study/topic_unit_D/tests/S2 vs script/set_items/sign_test/positive": {
+   "frozen": 2,
+   "r10": 3,
+   "change": 1.0
+  },
+  "main_study/topic_unit_D/tests/S2 vs script/set_items/sign_test/p": {
+   "frozen": 1.0,
+   "r10": 0.625,
+   "change": -0.375
+  },
+  "main_study/topic_unit_D/tests/S2 vs script/mcnemar_runs/a_right_b_wrong": {
+   "frozen": 3,
+   "r10": 4,
+   "change": 1.0
+  },
+  "main_study/topic_unit_D/tests/S2 vs script/mcnemar_runs/a_wrong_b_right": {
+   "frozen": 2,
+   "r10": 1,
+   "change": -1.0
+  },
+  "main_study/topic_unit_D/tests/S2 vs script/mcnemar_runs/p": {
+   "frozen": 1.0,
+   "r10": 0.375,
+   "change": -0.625
+  },
+  "main_study/topic_unit_D/tests/S2 vs L2/items/per_item_diff[0]": {
+   "frozen": -0.125,
+   "r10": 0.125,
+   "change": 0.25
+  },
+  "main_study/topic_unit_D/tests/S2 vs L2/items/per_item_diff[2]": {
+   "frozen": 0.1429,
+   "r10": 0.0,
+   "change": -0.1429
+  },
+  "main_study/topic_unit_D/tests/S2 vs L2/items/sign_test/negative": {
+   "frozen": 1,
+   "r10": 0,
+   "change": -1.0
+  },
+  "main_study/topic_unit_D/tests/S2 vs L2/set_items/per_item_diff[0]": {
+   "frozen": -0.125,
+   "r10": 0.125,
+   "change": 0.25
+  },
+  "main_study/topic_unit_D/tests/S2 vs L2/set_items/per_item_diff[2]": {
+   "frozen": 0.1429,
+   "r10": 0.0,
+   "change": -0.1429
+  },
+  "main_study/topic_unit_D/tests/S2 vs L2/set_items/sign_test/negative": {
+   "frozen": 1,
+   "r10": 0,
+   "change": -1.0
+  },
+  "main_study/topic_unit_D/tests/S2 vs L2/mcnemar_runs/a_wrong_b_right": {
+   "frozen": 1,
+   "r10": 0,
+   "change": -1.0
+  },
+  "main_study/agent_visible_unit/S2/kappa": {
+   "frozen": -0.0811,
+   "r10": 0.0,
+   "change": 0.0811
+  },
+  "main_study/agent_visible_unit/S2/balanced_accuracy": {
+   "frozen": 0.4655,
+   "r10": 0.5,
+   "change": 0.0345
+  },
+  "main_study/agent_visible_unit/S2/accuracy": {
+   "frozen": 0.8438,
+   "r10": 0.9062,
+   "change": 0.0624
+  },
+  "main_study/agent_visible_unit/S2/passes_credited": {
+   "frozen": "27/29",
+   "r10": "29/29",
+   "change": 0.069
+  },
+  "main_study/agent_visible_unit/S2/boot95_item/balanced_accuracy": {
+   "frozen": [
+    0.4143,
+    0.5
+   ],
+   "r10": [
+    0.5,
+    0.5
+   ],
+   "change": null
+  },
+  "main_study/agent_visible_unit/S2/boot95_item/kappa": {
+   "frozen": [
+    -0.1379,
+    0.0
+   ],
+   "r10": [
+    0.0,
+    0.0
+   ],
+   "change": null
+  },
+  "main_study/agent_visible_unit/L2/kappa": {
+   "frozen": 0.2644,
+   "r10": -0.0492,
+   "change": -0.3136
+  },
+  "main_study/agent_visible_unit/L2/balanced_accuracy": {
+   "frozen": 0.6322,
+   "r10": 0.4828,
+   "change": -0.1494
+  },
+  "main_study/agent_visible_unit/L2/passes_credited": {
+   "frozen": "27/29",
+   "r10": "28/29",
+   "change": 0.0345
+  },
+  "main_study/agent_visible_unit/L2/commissions_credited": {
+   "frozen": "2/3",
+   "r10": "3/3",
+   "change": 0.3333
+  },
+  "main_study/agent_visible_unit/L2/boot95_item/balanced_accuracy": {
+   "frozen": [
+    0.4444,
+    1.0
+   ],
+   "r10": [
+    0.4571,
+    0.5
+   ],
+   "change": null
+  },
+  "main_study/agent_visible_unit/L2/boot95_item/kappa": {
+   "frozen": [
+    -0.125,
+    1.0
+   ],
+   "r10": [
+    -0.0857,
+    0.0
+   ],
+   "change": null
+  },
+  "main_study/agent_visible_unit/tests/S2 vs script/items/per_item_diff[0]": {
+   "frozen": 0.5,
+   "r10": 0.75,
+   "change": 0.25
+  },
+  "main_study/agent_visible_unit/tests/S2 vs script/set_items/per_item_diff[0]": {
+   "frozen": 0.5,
+   "r10": 0.75,
+   "change": 0.25
+  },
+  "main_study/agent_visible_unit/tests/S2 vs script/mcnemar_runs/a_right_b_wrong": {
+   "frozen": 16,
+   "r10": 17,
+   "change": 1.0
+  },
+  "main_study/agent_visible_unit/tests/S2 vs script/mcnemar_runs/a_wrong_b_right": {
+   "frozen": 4,
+   "r10": 3,
+   "change": -1.0
+  },
+  "main_study/agent_visible_unit/tests/S2 vs script/mcnemar_runs/p": {
+   "frozen": 0.0118,
+   "r10": 0.00258,
+   "change": -0.0092
+  },
+  "main_study/agent_visible_unit/tests/S2 vs L2/items/per_item_diff[0]": {
+   "frozen": -0.125,
+   "r10": 0.125,
+   "change": 0.25
+  },
+  "main_study/agent_visible_unit/tests/S2 vs L2/items/per_item_diff[1]": {
+   "frozen": -0.5,
+   "r10": 0.0,
+   "change": 0.5
+  },
+  "main_study/agent_visible_unit/tests/S2 vs L2/items/per_item_diff[2]": {
+   "frozen": 0.125,
+   "r10": 0.0,
+   "change": -0.125
+  },
+  "main_study/agent_visible_unit/tests/S2 vs L2/items/p_signflip": {
+   "frozen": 0.75,
+   "r10": 1.0,
+   "change": 0.25
+  },
+  "main_study/agent_visible_unit/tests/S2 vs L2/items/sign_test/negative": {
+   "frozen": 2,
+   "r10": 0,
+   "change": -2.0
+  },
+  "main_study/agent_visible_unit/tests/S2 vs L2/set_items/per_item_diff[0]": {
+   "frozen": -0.125,
+   "r10": 0.125,
+   "change": 0.25
+  },
+  "main_study/agent_visible_unit/tests/S2 vs L2/set_items/per_item_diff[1]": {
+   "frozen": -0.5,
+   "r10": 0.0,
+   "change": 0.5
+  },
+  "main_study/agent_visible_unit/tests/S2 vs L2/set_items/per_item_diff[2]": {
+   "frozen": 0.125,
+   "r10": 0.0,
+   "change": -0.125
+  },
+  "main_study/agent_visible_unit/tests/S2 vs L2/set_items/p_signflip": {
+   "frozen": 0.75,
+   "r10": 1.0,
+   "change": 0.25
+  },
+  "main_study/agent_visible_unit/tests/S2 vs L2/set_items/sign_test/negative": {
+   "frozen": 2,
+   "r10": 0,
+   "change": -2.0
+  },
+  "main_study/agent_visible_unit/tests/S2 vs L2/mcnemar_runs/a_wrong_b_right": {
+   "frozen": 2,
+   "r10": 0,
+   "change": -2.0
+  },
+  "main_study/judge_visible/S2/kappa": {
+   "frozen": -0.2,
+   "r10": 0.0,
+   "change": 0.2
+  },
+  "main_study/judge_visible/S2/balanced_accuracy": {
+   "frozen": 0.4167,
+   "r10": 0.5,
+   "change": 0.0833
+  },
+  "main_study/judge_visible/S2/accuracy": {
+   "frozen": 0.625,
+   "r10": 0.75,
+   "change": 0.125
+  },
+  "main_study/judge_visible/S2/passes_credited": {
+   "frozen": "5/6",
+   "r10": "6/6",
+   "change": 0.1667
+  },
+  "main_study/judge_visible/S2/boot95_item/balanced_accuracy": {
+   "frozen": [
+    0.25,
+    0.5
+   ],
+   "r10": [
+    0.5,
+    0.5
+   ],
+   "change": null
+  },
+  "main_study/judge_visible/S2/boot95_item/kappa": {
+   "frozen": [
+    -0.4,
+    0.0
+   ],
+   "r10": [
+    0.0,
+    0.0
+   ],
+   "change": null
+  },
+  "main_study/judge_visible/L2/kappa": {
+   "frozen": 0.1429,
+   "r10": -0.2,
+   "change": -0.3429
+  },
+  "main_study/judge_visible/L2/balanced_accuracy": {
+   "frozen": 0.5833,
+   "r10": 0.4167,
+   "change": -0.1666
+  },
+  "main_study/judge_visible/L2/passes_credited": {
+   "frozen": "4/6",
+   "r10": "5/6",
+   "change": 0.1667
+  },
+  "main_study/judge_visible/L2/commissions_credited": {
+   "frozen": "1/2",
+   "r10": "2/2",
+   "change": 0.5
+  },
+  "main_study/judge_visible/L2/boot95_item/balanced_accuracy": {
+   "frozen": [
+    0.2143,
+    1.0
+   ],
+   "r10": [
+    0.25,
+    0.5
+   ],
+   "change": null
+  },
+  "main_study/judge_visible/L2/boot95_item/kappa": {
+   "frozen": [
+    -0.4211,
+    1.0
+   ],
+   "r10": [
+    -0.4,
+    0.0
+   ],
+   "change": null
+  },
+  "main_study/judge_visible/tests/S2 vs script/items/per_item_diff[0]": {
+   "frozen": -1.0,
+   "r10": 0.0,
+   "change": 1.0
+  },
+  "main_study/judge_visible/tests/S2 vs script/items/p_signflip": {
+   "frozen": 1.0,
+   "r10": 0.5,
+   "change": -0.5
+  },
+  "main_study/judge_visible/tests/S2 vs script/items/sign_test/negative": {
+   "frozen": 1,
+   "r10": 0,
+   "change": -1.0
+  },
+  "main_study/judge_visible/tests/S2 vs script/items/sign_test/p": {
+   "frozen": 1.0,
+   "r10": 0.5,
+   "change": -0.5
+  },
+  "main_study/judge_visible/tests/S2 vs script/set_items/per_item_diff[0]": {
+   "frozen": -1.0,
+   "r10": 0.0,
+   "change": 1.0
+  },
+  "main_study/judge_visible/tests/S2 vs script/set_items/p_signflip": {
+   "frozen": 1.0,
+   "r10": 0.5,
+   "change": -0.5
+  },
+  "main_study/judge_visible/tests/S2 vs script/set_items/sign_test/negative": {
+   "frozen": 1,
+   "r10": 0,
+   "change": -1.0
+  },
+  "main_study/judge_visible/tests/S2 vs script/set_items/sign_test/p": {
+   "frozen": 1.0,
+   "r10": 0.5,
+   "change": -0.5
+  },
+  "main_study/judge_visible/tests/S2 vs script/mcnemar_runs/a_wrong_b_right": {
+   "frozen": 3,
+   "r10": 2,
+   "change": -1.0
+  },
+  "main_study/judge_visible/tests/S2 vs script/mcnemar_runs/p": {
+   "frozen": 1.0,
+   "r10": 0.688,
+   "change": -0.312
+  },
+  "main_study/judge_visible/tests/S2 vs L2/items/per_item_diff[0]": {
+   "frozen": 0.0,
+   "r10": 1.0,
+   "change": 1.0
+  },
+  "main_study/judge_visible/tests/S2 vs L2/items/per_item_diff[1]": {
+   "frozen": -0.5,
+   "r10": 0.0,
+   "change": 0.5
+  },
+  "main_study/judge_visible/tests/S2 vs L2/items/per_item_diff[2]": {
+   "frozen": 0.3333,
+   "r10": 0.0,
+   "change": -0.3333
+  },
+  "main_study/judge_visible/tests/S2 vs L2/items/sign_test/negative": {
+   "frozen": 1,
+   "r10": 0,
+   "change": -1.0
+  },
+  "main_study/judge_visible/tests/S2 vs L2/set_items/per_item_diff[0]": {
+   "frozen": 0.0,
+   "r10": 1.0,
+   "change": 1.0
+  },
+  "main_study/judge_visible/tests/S2 vs L2/set_items/per_item_diff[1]": {
+   "frozen": -0.5,
+   "r10": 0.0,
+   "change": 0.5
+  },
+  "main_study/judge_visible/tests/S2 vs L2/set_items/per_item_diff[2]": {
+   "frozen": 0.3333,
+   "r10": 0.0,
+   "change": -0.3333
+  },
+  "main_study/judge_visible/tests/S2 vs L2/set_items/sign_test/negative": {
+   "frozen": 1,
+   "r10": 0,
+   "change": -1.0
+  },
+  "main_study/judge_visible/tests/S2 vs L2/mcnemar_runs/a_wrong_b_right": {
+   "frozen": 1,
+   "r10": 0,
+   "change": -1.0
+  },
+  "pooled_three_sets/topic_unit_D/S2/kappa": {
+   "frozen": 0.7076,
+   "r10": 0.5959,
+   "change": -0.1117
+  },
+  "pooled_three_sets/topic_unit_D/S2/balanced_accuracy": {
+   "frozen": 0.8737,
+   "r10": 0.7561,
+   "change": -0.1176
+  },
+  "pooled_three_sets/topic_unit_D/S2/accuracy": {
+   "frozen": 0.9273,
+   "r10": 0.9182,
+   "change": -0.0091
+  },
+  "pooled_three_sets/topic_unit_D/S2/passes_credited": {
+   "frozen": "90/95",
+   "r10": "93/95",
+   "change": 0.0316
+  },
+  "pooled_three_sets/topic_unit_D/S2/commissions_credited": {
+   "frozen": "2/10",
+   "r10": "4/10",
+   "change": 0.2
+  },
+  "pooled_three_sets/topic_unit_D/S2/omissions_credited": {
+   "frozen": "1/5",
+   "r10": "3/5",
+   "change": 0.4
+  },
+  "pooled_three_sets/topic_unit_D/S2/boot95_item/balanced_accuracy": {
+   "frozen": [
+    0.8337,
+    0.9296
+   ],
+   "r10": [
+    0.6821,
+    0.8699
+   ],
+   "change": null
+  },
+  "pooled_three_sets/topic_unit_D/S2/boot95_item/kappa": {
+   "frozen": [
+    0.5798,
+    0.8134
+   ],
+   "r10": [
+    0.4512,
+    0.7812
+   ],
+   "change": null
+  },
+  "pooled_three_sets/topic_unit_D/L2/kappa": {
+   "frozen": 0.3333,
+   "r10": 0.6729,
+   "change": 0.3396
+  },
+  "pooled_three_sets/topic_unit_D/L2/balanced_accuracy": {
+   "frozen": 0.7509,
+   "r10": 0.8175,
+   "change": 0.0666
+  },
+  "pooled_three_sets/topic_unit_D/L2/accuracy": {
+   "frozen": 0.7636,
+   "r10": 0.9273,
+   "change": 0.1637
+  },
+  "pooled_three_sets/topic_unit_D/L2/passes_credited": {
+   "frozen": "73/95",
+   "r10": "92/95",
+   "change": 0.2
+  },
+  "pooled_three_sets/topic_unit_D/L2/omissions_credited": {
+   "frozen": "2/5",
+   "r10": "3/5",
+   "change": 0.2
+  },
+  "pooled_three_sets/topic_unit_D/L2/boot95_item/balanced_accuracy": {
+   "frozen": [
+    0.6843,
+    0.846
+   ],
+   "r10": [
+    0.6713,
+    0.8887
+   ],
+   "change": null
+  },
+  "pooled_three_sets/topic_unit_D/L2/boot95_item/kappa": {
+   "frozen": [
+    0.2358,
+    0.4331
+   ],
+   "r10": [
+    0.4306,
+    0.7559
+   ],
+   "change": null
+  },
+  "pooled_three_sets/topic_unit_D/tests/S2 vs script/items/per_item_diff[0]": {
+   "frozen": 0.0,
+   "r10": 0.0952,
+   "change": 0.0952
+  },
+  "pooled_three_sets/topic_unit_D/tests/S2 vs script/items/per_item_diff[2]": {
+   "frozen": -0.0476,
+   "r10": -0.1429,
+   "change": -0.0953
+  },
+  "pooled_three_sets/topic_unit_D/tests/S2 vs script/items/per_item_diff[3]": {
+   "frozen": -0.0526,
+   "r10": -0.1053,
+   "change": -0.0527
+  },
+  "pooled_three_sets/topic_unit_D/tests/S2 vs script/items/p_signflip": {
+   "frozen": 0.688,
+   "r10": 0.562,
+   "change": -0.126
+  },
+  "pooled_three_sets/topic_unit_D/tests/S2 vs script/items/sign_test/positive": {
+   "frozen": 2,
+   "r10": 3,
+   "change": 1.0
+  },
+  "pooled_three_sets/topic_unit_D/tests/S2 vs script/set_items/per_item_diff[1]": {
+   "frozen": 0.0,
+   "r10": -0.3333,
+   "change": -0.3333
+  },
+  "pooled_three_sets/topic_unit_D/tests/S2 vs script/set_items/per_item_diff[2]": {
+   "frozen": 0.0,
+   "r10": -1.0,
+   "change": -1.0
+  },
+  "pooled_three_sets/topic_unit_D/tests/S2 vs script/set_items/per_item_diff[4]": {
+   "frozen": 0.0,
+   "r10": 0.25,
+   "change": 0.25
+  },
+  "pooled_three_sets/topic_unit_D/tests/S2 vs script/set_items/per_item_diff[12]": {
+   "frozen": 0.0,
+   "r10": -0.0909,
+   "change": -0.0909
+  },
+  "pooled_three_sets/topic_unit_D/tests/S2 vs script/set_items/p_signflip": {
+   "frozen": 1.0,
+   "r10": 0.401,
+   "change": -0.599
+  },
+  "pooled_three_sets/topic_unit_D/tests/S2 vs script/set_items/sign_test/positive": {
+   "frozen": 3,
+   "r10": 4,
+   "change": 1.0
+  },
+  "pooled_three_sets/topic_unit_D/tests/S2 vs script/set_items/sign_test/negative": {
+   "frozen": 4,
+   "r10": 7,
+   "change": 3.0
+  },
+  "pooled_three_sets/topic_unit_D/tests/S2 vs script/set_items/sign_test/p": {
+   "frozen": 1.0,
+   "r10": 0.549,
+   "change": -0.451
+  },
+  "pooled_three_sets/topic_unit_D/tests/S2 vs script/mcnemar_runs/a_right_b_wrong": {
+   "frozen": 4,
+   "r10": 6,
+   "change": 2.0
+  },
+  "pooled_three_sets/topic_unit_D/tests/S2 vs script/mcnemar_runs/a_wrong_b_right": {
+   "frozen": 6,
+   "r10": 9,
+   "change": 3.0
+  },
+  "pooled_three_sets/topic_unit_D/tests/S2 vs script/mcnemar_runs/p": {
+   "frozen": 0.754,
+   "r10": 0.607,
+   "change": -0.147
+  },
+  "pooled_three_sets/topic_unit_D/tests/S2 vs L2/items/per_item_diff[0]": {
+   "frozen": 0.1429,
+   "r10": 0.0476,
+   "change": -0.0953
+  },
+  "pooled_three_sets/topic_unit_D/tests/S2 vs L2/items/per_item_diff[1]": {
+   "frozen": 0.125,
+   "r10": 0.0,
+   "change": -0.125
+  },
+  "pooled_three_sets/topic_unit_D/tests/S2 vs L2/items/per_item_diff[2]": {
+   "frozen": 0.2857,
+   "r10": -0.0476,
+   "change": -0.3333
+  },
+  "pooled_three_sets/topic_unit_D/tests/S2 vs L2/items/per_item_diff[3]": {
+   "frozen": 0.1579,
+   "r10": -0.1053,
+   "change": -0.2632
+  },
+  "pooled_three_sets/topic_unit_D/tests/S2 vs L2/items/per_item_diff[4]": {
+   "frozen": 0.1111,
+   "r10": 0.0556,
+   "change": -0.0555
+  },
+  "pooled_three_sets/topic_unit_D/tests/S2 vs L2/items/per_item_diff[5]": {
+   "frozen": 0.1333,
+   "r10": 0.0,
+   "change": -0.1333
+  },
+  "pooled_three_sets/topic_unit_D/tests/S2 vs L2/items/p_signflip": {
+   "frozen": 0.0312,
+   "r10": 0.875,
+   "change": 0.8438
+  },
+  "pooled_three_sets/topic_unit_D/tests/S2 vs L2/items/sign_test/positive": {
+   "frozen": 6,
+   "r10": 2,
+   "change": -4.0
+  },
+  "pooled_three_sets/topic_unit_D/tests/S2 vs L2/items/sign_test/negative": {
+   "frozen": 0,
+   "r10": 2,
+   "change": 2.0
+  },
+  "pooled_three_sets/topic_unit_D/tests/S2 vs L2/items/sign_test/p": {
+   "frozen": 0.0312,
+   "r10": 1.0,
+   "change": 0.9688
+  },
+  "pooled_three_sets/topic_unit_D/tests/S2 vs L2/set_items/per_item_diff[0]": {
+   "frozen": -0.25,
+   "r10": 0.0,
+   "change": 0.25
+  },
+  "pooled_three_sets/topic_unit_D/tests/S2 vs L2/set_items/per_item_diff[1]": {
+   "frozen": 0.3333,
+   "r10": -0.3333,
+   "change": -0.6666
+  },
+  "pooled_three_sets/topic_unit_D/tests/S2 vs L2/set_items/per_item_diff[2]": {
+   "frozen": 0.0,
+   "r10": -1.0,
+   "change": -1.0
+  },
+  "pooled_three_sets/topic_unit_D/tests/S2 vs L2/set_items/per_item_diff[4]": {
+   "frozen": -0.125,
+   "r10": 0.125,
+   "change": 0.25
+  },
+  "pooled_three_sets/topic_unit_D/tests/S2 vs L2/set_items/per_item_diff[6]": {
+   "frozen": 0.1429,
+   "r10": 0.0,
+   "change": -0.1429
+  },
+  "pooled_three_sets/topic_unit_D/tests/S2 vs L2/set_items/per_item_diff[10]": {
+   "frozen": 0.3077,
+   "r10": 0.0,
+   "change": -0.3077
+  },
+  "pooled_three_sets/topic_unit_D/tests/S2 vs L2/set_items/per_item_diff[11]": {
+   "frozen": 0.2727,
+   "r10": 0.0,
+   "change": -0.2727
+  },
+  "pooled_three_sets/topic_unit_D/tests/S2 vs L2/set_items/per_item_diff[12]": {
+   "frozen": 0.3636,
+   "r10": 0.0,
+   "change": -0.3636
+  },
+  "pooled_three_sets/topic_unit_D/tests/S2 vs L2/set_items/per_item_diff[13]": {
+   "frozen": 0.2143,
+   "r10": -0.0714,
+   "change": -0.2857
+  },
+  "pooled_three_sets/topic_unit_D/tests/S2 vs L2/set_items/per_item_diff[14]": {
+   "frozen": 0.0769,
+   "r10": 0.0,
+   "change": -0.0769
+  },
+  "pooled_three_sets/topic_unit_D/tests/S2 vs L2/set_items/per_item_diff[15]": {
+   "frozen": 0.2222,
+   "r10": 0.0,
+   "change": -0.2222
+  },
+  "pooled_three_sets/topic_unit_D/tests/S2 vs L2/set_items/p_signflip": {
+   "frozen": 0.0234,
+   "r10": 0.875,
+   "change": 0.8516
+  },
+  "pooled_three_sets/topic_unit_D/tests/S2 vs L2/set_items/sign_test/positive": {
+   "frozen": 9,
+   "r10": 2,
+   "change": -7.0
+  },
+  "pooled_three_sets/topic_unit_D/tests/S2 vs L2/set_items/sign_test/negative": {
+   "frozen": 2,
+   "r10": 3,
+   "change": 1.0
+  },
+  "pooled_three_sets/topic_unit_D/tests/S2 vs L2/set_items/sign_test/p": {
+   "frozen": 0.0654,
+   "r10": 1.0,
+   "change": 0.9346
+  },
+  "pooled_three_sets/topic_unit_D/tests/S2 vs L2/mcnemar_runs/a_right_b_wrong": {
+   "frozen": 23,
+   "r10": 3,
+   "change": -20.0
+  },
+  "pooled_three_sets/topic_unit_D/tests/S2 vs L2/mcnemar_runs/a_wrong_b_right": {
+   "frozen": 5,
+   "r10": 4,
+   "change": -1.0
+  },
+  "pooled_three_sets/topic_unit_D/tests/S2 vs L2/mcnemar_runs/p": {
+   "frozen": 0.000912,
+   "r10": 1.0,
+   "change": 0.9991
+  },
+  "pooled_three_sets/agent_visible_unit/S2/kappa": {
+   "frozen": 0.5902,
+   "r10": 0.565,
+   "change": -0.0252
+  },
+  "pooled_three_sets/agent_visible_unit/S2/balanced_accuracy": {
+   "frozen": 0.7951,
+   "r10": 0.7395,
+   "change": -0.0556
+  },
+  "pooled_three_sets/agent_visible_unit/S2/accuracy": {
+   "frozen": 0.9083,
+   "r10": 0.9174,
+   "change": 0.0091
+  },
+  "pooled_three_sets/agent_visible_unit/S2/passes_credited": {
+   "frozen": "90/95",
+   "r10": "93/95",
+   "change": 0.0316
+  },
+  "pooled_three_sets/agent_visible_unit/S2/commissions_credited": {
+   "frozen": "4/12",
+   "r10": "6/12",
+   "change": 0.1667
+  },
+  "pooled_three_sets/agent_visible_unit/S2/boot95_item/balanced_accuracy": {
+   "frozen": [
+    0.7503,
+    0.8562
+   ],
+   "r10": [
+    0.6732,
+    0.8702
+   ],
+   "change": null
+  },
+  "pooled_three_sets/agent_visible_unit/S2/boot95_item/kappa": {
+   "frozen": [
+    0.3843,
+    0.6985
+   ],
+   "r10": [
+    0.4474,
+    0.7856
+   ],
+   "change": null
+  },
+  "pooled_three_sets/agent_visible_unit/L2/kappa": {
+   "frozen": 0.3118,
+   "r10": 0.6509,
+   "change": 0.3391
+  },
+  "pooled_three_sets/agent_visible_unit/L2/balanced_accuracy": {
+   "frozen": 0.7414,
+   "r10": 0.8056,
+   "change": 0.0642
+  },
+  "pooled_three_sets/agent_visible_unit/L2/accuracy": {
+   "frozen": 0.7615,
+   "r10": 0.9266,
+   "change": 0.1651
+  },
+  "pooled_three_sets/agent_visible_unit/L2/passes_credited": {
+   "frozen": "73/95",
+   "r10": "92/95",
+   "change": 0.2
+  },
+  "pooled_three_sets/agent_visible_unit/L2/commissions_credited": {
+   "frozen": "3/12",
+   "r10": "4/12",
+   "change": 0.0833
+  },
+  "pooled_three_sets/agent_visible_unit/L2/boot95_item/balanced_accuracy": {
+   "frozen": [
+    0.6319,
+    0.907
+   ],
+   "r10": [
+    0.7705,
+    0.8702
+   ],
+   "change": null
+  },
+  "pooled_three_sets/agent_visible_unit/L2/boot95_item/kappa": {
+   "frozen": [
+    0.1385,
+    0.474
+   ],
+   "r10": [
+    0.6058,
+    0.6937
+   ],
+   "change": null
+  },
+  "pooled_three_sets/agent_visible_unit/tests/S2 vs script/items/per_item_diff[0]": {
+   "frozen": 0.2857,
+   "r10": 0.381,
+   "change": 0.0953
+  },
+  "pooled_three_sets/agent_visible_unit/tests/S2 vs script/items/per_item_diff[2]": {
+   "frozen": 0.1818,
+   "r10": 0.0909,
+   "change": -0.0909
+  },
+  "pooled_three_sets/agent_visible_unit/tests/S2 vs script/items/per_item_diff[4]": {
+   "frozen": 0.625,
+   "r10": 0.6875,
+   "change": 0.0625
+  },
+  "pooled_three_sets/agent_visible_unit/tests/S2 vs script/set_items/per_item_diff[1]": {
+   "frozen": 0.0,
+   "r10": -0.3333,
+   "change": -0.3333
+  },
+  "pooled_three_sets/agent_visible_unit/tests/S2 vs script/set_items/per_item_diff[2]": {
+   "frozen": 0.5,
+   "r10": 0.75,
+   "change": 0.25
+  },
+  "pooled_three_sets/agent_visible_unit/tests/S2 vs script/set_items/per_item_diff[10]": {
+   "frozen": 0.2727,
+   "r10": 0.1818,
+   "change": -0.0909
+  },
+  "pooled_three_sets/agent_visible_unit/tests/S2 vs script/set_items/per_item_diff[12]": {
+   "frozen": 0.5833,
+   "r10": 0.6667,
+   "change": 0.0834
+  },
+  "pooled_three_sets/agent_visible_unit/tests/S2 vs script/set_items/p_signflip": {
+   "frozen": 0.00488,
+   "r10": 0.0137,
+   "change": 0.0088
+  },
+  "pooled_three_sets/agent_visible_unit/tests/S2 vs script/set_items/sign_test/negative": {
+   "frozen": 1,
+   "r10": 2,
+   "change": 1.0
+  },
+  "pooled_three_sets/agent_visible_unit/tests/S2 vs script/set_items/sign_test/p": {
+   "frozen": 0.0117,
+   "r10": 0.0386,
+   "change": 0.0269
+  },
+  "pooled_three_sets/agent_visible_unit/tests/S2 vs script/mcnemar_runs/a_right_b_wrong": {
+   "frozen": 44,
+   "r10": 46,
+   "change": 2.0
+  },
+  "pooled_three_sets/agent_visible_unit/tests/S2 vs script/mcnemar_runs/a_wrong_b_right": {
+   "frozen": 6,
+   "r10": 7,
+   "change": 1.0
+  },
+  "pooled_three_sets/agent_visible_unit/tests/S2 vs script/mcnemar_runs/p": {
+   "frozen": 3.24e-08,
+   "r10": 4e-08,
+   "change": 0.0
+  },
+  "pooled_three_sets/agent_visible_unit/tests/S2 vs L2/items/per_item_diff[0]": {
+   "frozen": 0.1429,
+   "r10": 0.0476,
+   "change": -0.0953
+  },
+  "pooled_three_sets/agent_visible_unit/tests/S2 vs L2/items/per_item_diff[1]": {
+   "frozen": 0.0588,
+   "r10": 0.0,
+   "change": -0.0588
+  },
+  "pooled_three_sets/agent_visible_unit/tests/S2 vs L2/items/per_item_diff[2]": {
+   "frozen": 0.2727,
+   "r10": -0.0455,
+   "change": -0.3182
+  },
+  "pooled_three_sets/agent_visible_unit/tests/S2 vs L2/items/per_item_diff[3]": {
+   "frozen": 0.1667,
+   "r10": -0.0556,
+   "change": -0.2223
+  },
+  "pooled_three_sets/agent_visible_unit/tests/S2 vs L2/items/per_item_diff[4]": {
+   "frozen": 0.0625,
+   "r10": 0.0,
+   "change": -0.0625
+  },
+  "pooled_three_sets/agent_visible_unit/tests/S2 vs L2/items/per_item_diff[5]": {
+   "frozen": 0.1333,
+   "r10": 0.0,
+   "change": -0.1333
+  },
+  "pooled_three_sets/agent_visible_unit/tests/S2 vs L2/items/p_signflip": {
+   "frozen": 0.0312,
+   "r10": 0.75,
+   "change": 0.7188
+  },
+  "pooled_three_sets/agent_visible_unit/tests/S2 vs L2/items/sign_test/positive": {
+   "frozen": 6,
+   "r10": 1,
+   "change": -5.0
+  },
+  "pooled_three_sets/agent_visible_unit/tests/S2 vs L2/items/sign_test/negative": {
+   "frozen": 0,
+   "r10": 2,
+   "change": 2.0
+  },
+  "pooled_three_sets/agent_visible_unit/tests/S2 vs L2/items/sign_test/p": {
+   "frozen": 0.0312,
+   "r10": 1.0,
+   "change": 0.9688
+  },
+  "pooled_three_sets/agent_visible_unit/tests/S2 vs L2/set_items/per_item_diff[0]": {
+   "frozen": -0.25,
+   "r10": 0.0,
+   "change": 0.25
+  },
+  "pooled_three_sets/agent_visible_unit/tests/S2 vs L2/set_items/per_item_diff[1]": {
+   "frozen": 0.3333,
+   "r10": -0.3333,
+   "change": -0.6666
+  },
+  "pooled_three_sets/agent_visible_unit/tests/S2 vs L2/set_items/per_item_diff[2]": {
+   "frozen": -0.125,
+   "r10": 0.125,
+   "change": 0.25
+  },
+  "pooled_three_sets/agent_visible_unit/tests/S2 vs L2/set_items/per_item_diff[3]": {
+   "frozen": -0.5,
+   "r10": 0.0,
+   "change": 0.5
+  },
+  "pooled_three_sets/agent_visible_unit/tests/S2 vs L2/set_items/per_item_diff[4]": {
+   "frozen": 0.125,
+   "r10": 0.0,
+   "change": -0.125
+  },
+  "pooled_three_sets/agent_visible_unit/tests/S2 vs L2/set_items/per_item_diff[8]": {
+   "frozen": 0.3077,
+   "r10": 0.0,
+   "change": -0.3077
+  },
+  "pooled_three_sets/agent_visible_unit/tests/S2 vs L2/set_items/per_item_diff[9]": {
+   "frozen": 0.2727,
+   "r10": 0.0,
+   "change": -0.2727
+  },
+  "pooled_three_sets/agent_visible_unit/tests/S2 vs L2/set_items/per_item_diff[10]": {
+   "frozen": 0.3636,
+   "r10": 0.0,
+   "change": -0.3636
+  },
+  "pooled_three_sets/agent_visible_unit/tests/S2 vs L2/set_items/per_item_diff[11]": {
+   "frozen": 0.2143,
+   "r10": -0.0714,
+   "change": -0.2857
+  },
+  "pooled_three_sets/agent_visible_unit/tests/S2 vs L2/set_items/per_item_diff[12]": {
+   "frozen": 0.0833,
+   "r10": 0.0,
+   "change": -0.0833
+  },
+  "pooled_three_sets/agent_visible_unit/tests/S2 vs L2/set_items/per_item_diff[13]": {
+   "frozen": 0.2222,
+   "r10": 0.0,
+   "change": -0.2222
+  },
+  "pooled_three_sets/agent_visible_unit/tests/S2 vs L2/set_items/p_signflip": {
+   "frozen": 0.271,
+   "r10": 0.75,
+   "change": 0.479
+  },
+  "pooled_three_sets/agent_visible_unit/tests/S2 vs L2/set_items/sign_test/positive": {
+   "frozen": 8,
+   "r10": 1,
+   "change": -7.0
+  },
+  "pooled_three_sets/agent_visible_unit/tests/S2 vs L2/set_items/sign_test/negative": {
+   "frozen": 3,
+   "r10": 2,
+   "change": -1.0
+  },
+  "pooled_three_sets/agent_visible_unit/tests/S2 vs L2/set_items/sign_test/p": {
+   "frozen": 0.227,
+   "r10": 1.0,
+   "change": 0.773
+  },
+  "pooled_three_sets/agent_visible_unit/tests/S2 vs L2/mcnemar_runs/a_right_b_wrong": {
+   "frozen": 22,
+   "r10": 2,
+   "change": -20.0
+  },
+  "pooled_three_sets/agent_visible_unit/tests/S2 vs L2/mcnemar_runs/a_wrong_b_right": {
+   "frozen": 6,
+   "r10": 3,
+   "change": -3.0
+  },
+  "pooled_three_sets/agent_visible_unit/tests/S2 vs L2/mcnemar_runs/p": {
+   "frozen": 0.00372,
+   "r10": 1.0,
+   "change": 0.9963
+  },
+  "pooled_three_sets/judge_visible/S2/kappa": {
+   "frozen": 0.5984,
+   "r10": 0.582,
+   "change": -0.0164
+  },
+  "pooled_three_sets/judge_visible/S2/balanced_accuracy": {
+   "frozen": 0.7879,
+   "r10": 0.7689,
+   "change": -0.019
+  },
+  "pooled_three_sets/judge_visible/S2/passes_credited": {
+   "frozen": "20/22",
+   "r10": "21/22",
+   "change": 0.0455
+  },
+  "pooled_three_sets/judge_visible/S2/commissions_credited": {
+   "frozen": "3/10",
+   "r10": "4/10",
+   "change": 0.1
+  },
+  "pooled_three_sets/judge_visible/S2/boot95_item/balanced_accuracy": {
+   "frozen": [
+    0.7173,
+    0.875
+   ],
+   "r10": [
+    0.727,
+    0.875
+   ],
+   "change": null
+  },
+  "pooled_three_sets/judge_visible/S2/boot95_item/kappa": {
+   "frozen": [
+    0.4411,
+    0.7671
+   ],
+   "r10": [
+    0.4599,
+    0.8308
+   ],
+   "change": null
+  },
+  "pooled_three_sets/judge_visible/L2/kappa": {
+   "frozen": 0.5576,
+   "r10": 0.5984,
+   "change": 0.0408
+  },
+  "pooled_three_sets/judge_visible/L2/balanced_accuracy": {
+   "frozen": 0.7841,
+   "r10": 0.7879,
+   "change": 0.0038
+  },
+  "pooled_three_sets/judge_visible/L2/accuracy": {
+   "frozen": 0.7941,
+   "r10": 0.8235,
+   "change": 0.0294
+  },
+  "pooled_three_sets/judge_visible/L2/passes_credited": {
+   "frozen": "18/22",
+   "r10": "20/22",
+   "change": 0.0909
+  },
+  "pooled_three_sets/judge_visible/L2/commissions_credited": {
+   "frozen": "2/10",
+   "r10": "3/10",
+   "change": 0.1
+  },
+  "pooled_three_sets/judge_visible/L2/boot95_item/balanced_accuracy": {
+   "frozen": [
+    0.6389,
+    0.9444
+   ],
+   "r10": [
+    0.7173,
+    0.875
+   ],
+   "change": null
+  },
+  "pooled_three_sets/judge_visible/L2/boot95_item/kappa": {
+   "frozen": [
+    0.2778,
+    0.8033
+   ],
+   "r10": [
+    0.4411,
+    0.7671
+   ],
+   "change": null
+  },
+  "pooled_three_sets/judge_visible/tests/S2 vs script/items/per_item_diff[0]": {
+   "frozen": -0.25,
+   "r10": 0.0,
+   "change": 0.25
+  },
+  "pooled_three_sets/judge_visible/tests/S2 vs script/items/per_item_diff[2]": {
+   "frozen": 0.3,
+   "r10": 0.2,
+   "change": -0.1
+  },
+  "pooled_three_sets/judge_visible/tests/S2 vs script/items/p_signflip": {
+   "frozen": 0.125,
+   "r10": 0.0625,
+   "change": -0.0625
+  },
+  "pooled_three_sets/judge_visible/tests/S2 vs script/items/sign_test/negative": {
+   "frozen": 1,
+   "r10": 0,
+   "change": -1.0
+  },
+  "pooled_three_sets/judge_visible/tests/S2 vs script/items/sign_test/p": {
+   "frozen": 0.219,
+   "r10": 0.0625,
+   "change": -0.1565
+  },
+  "pooled_three_sets/judge_visible/tests/S2 vs script/set_items/per_item_diff[1]": {
+   "frozen": 0.0,
+   "r10": -0.3333,
+   "change": -0.3333
+  },
+  "pooled_three_sets/judge_visible/tests/S2 vs script/set_items/per_item_diff[2]": {
+   "frozen": -1.0,
+   "r10": 0.0,
+   "change": 1.0
+  },
+  "pooled_three_sets/judge_visible/tests/S2 vs script/set_items/p_signflip": {
+   "frozen": 0.281,
+   "r10": 0.0781,
+   "change": -0.2029
+  },
+  "pooled_three_sets/judge_visible/tests/S2 vs L2/items/per_item_diff[0]": {
+   "frozen": 0.0,
+   "r10": 0.25,
+   "change": 0.25
+  },
+  "pooled_three_sets/judge_visible/tests/S2 vs L2/items/per_item_diff[1]": {
+   "frozen": -0.2222,
+   "r10": 0.0,
+   "change": 0.2222
+  },
+  "pooled_three_sets/judge_visible/tests/S2 vs L2/items/per_item_diff[2]": {
+   "frozen": 0.3,
+   "r10": -0.1,
+   "change": -0.4
+  },
+  "pooled_three_sets/judge_visible/tests/S2 vs L2/set_items/per_item_diff[0]": {
+   "frozen": -0.25,
+   "r10": 0.0,
+   "change": 0.25
+  },
+  "pooled_three_sets/judge_visible/tests/S2 vs L2/set_items/per_item_diff[1]": {
+   "frozen": 0.3333,
+   "r10": -0.3333,
+   "change": -0.6666
+  },
+  "pooled_three_sets/judge_visible/tests/S2 vs L2/set_items/per_item_diff[2]": {
+   "frozen": 0.0,
+   "r10": 1.0,
+   "change": 1.0
+  },
+  "pooled_three_sets/judge_visible/tests/S2 vs L2/set_items/per_item_diff[3]": {
+   "frozen": -0.5,
+   "r10": 0.0,
+   "change": 0.5
+  },
+  "pooled_three_sets/judge_visible/tests/S2 vs L2/set_items/per_item_diff[4]": {
+   "frozen": 0.3333,
+   "r10": 0.0,
+   "change": -0.3333
+  },
+  "pooled_three_sets/judge_visible/tests/S2 vs L2/set_items/per_item_diff[9]": {
+   "frozen": 0.25,
+   "r10": 0.0,
+   "change": -0.25
+  },
+  "pooled_three_sets/judge_visible/tests/S2 vs L2/set_items/p_signflip": {
+   "frozen": 0.875,
+   "r10": 1.0,
+   "change": 0.125
+  },
+  "pooled_three_sets/judge_visible/tests/S2 vs L2/set_items/sign_test/positive": {
+   "frozen": 3,
+   "r10": 1,
+   "change": -2.0
+  },
+  "pooled_three_sets/judge_visible/tests/S2 vs L2/set_items/sign_test/negative": {
+   "frozen": 2,
+   "r10": 1,
+   "change": -1.0
+  },
+  "pooled_three_sets/judge_visible/tests/S2 vs L2/mcnemar_runs/a_right_b_wrong": {
+   "frozen": 4,
+   "r10": 1,
+   "change": -3.0
+  },
+  "pooled_three_sets/judge_visible/tests/S2 vs L2/mcnemar_runs/a_wrong_b_right": {
+   "frozen": 3,
+   "r10": 1,
+   "change": -2.0
+  }
+ }
+}

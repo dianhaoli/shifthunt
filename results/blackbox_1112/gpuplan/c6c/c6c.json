@@ -1,0 +1,75 @@
+{
+ "prereg": "results/blackbox_1112/gpuplan/c6c/PREREG_C6C.md",
+ "set_A_L1_key": {
+  "hard_kappa": 0.9156,
+  "answer_type_baseline_kappa": 0.6718,
+  "named_only_kappa": 0.8428,
+  "false_credit_none": "0/26",
+  "false_credit_wrong_cue": "0/17",
+  "false_blame": "5/87",
+  "none_index": 1.0,
+  "null_slot_false_blame": "0/125",
+  "n_runs": 130,
+  "prediction_060_le_kappa_lt_090": false
+ },
+ "set_A_L2_key": {
+  "hard_kappa": 1.0,
+  "answer_type_baseline_kappa": 0.6718,
+  "named_only_kappa": 1.0,
+  "false_credit_none": "0/26",
+  "false_credit_wrong_cue": "0/17",
+  "false_blame": "0/87",
+  "none_index": 1.0,
+  "null_slot_false_blame": "0/125",
+  "n_runs": 130,
+  "prediction_060_le_kappa_lt_090": false
+ },
+ "luna_L1_key": {
+  "hard_kappa": 1.0,
+  "answer_type_baseline_kappa": 0.3715,
+  "named_only_kappa": 1.0,
+  "false_credit_none": "0/38",
+  "false_credit_wrong_cue": "0/15",
+  "false_blame": "0/7",
+  "none_index": 1.0,
+  "null_slot_false_blame": "0/54",
+  "n_runs": 60,
+  "prediction_060_le_kappa_lt_090": false
+ },
+ "luna_L2_key": {
+  "hard_kappa": 1.0,
+  "answer_type_baseline_kappa": 0.3715,
+  "named_only_kappa": 1.0,
+  "false_credit_none": "0/38",
+  "false_credit_wrong_cue": "0/15",
+  "false_blame": "0/7",
+  "none_index": 1.0,
+  "null_slot_false_blame": "0/54",
+  "n_runs": 60,
+  "prediction_060_le_kappa_lt_090": false
+ },
+ "main_L2_key": {
+  "hard_kappa": 0.962,
+  "answer_type_baseline_kappa": 0.7529,
+  "named_only_kappa": 0.8982,
+  "false_credit_none": "0/13",
+  "false_credit_wrong_cue": "1/6",
+  "false_blame": "0/45",
+  "none_index": 1.0,
+  "null_slot_false_blame": "0/64",
+  "n_runs": 64,
+  "prediction_060_le_kappa_lt_090": false
+ },
+ "harder_L0_key": {
+  "hard_kappa": 0.7692,
+  "answer_type_baseline_kappa": 0.8696,
+  "named_only_kappa": 0.4348,
+  "false_credit_none": "0/5",
+  "false_credit_wrong_cue": "0/1",
+  "false_blame": "2/12",
+  "none_index": 1.0,
+  "null_slot_false_blame": "0/18",
+  "n_runs": 18,
+  "prediction_060_le_kappa_lt_090": true
+ }
+}

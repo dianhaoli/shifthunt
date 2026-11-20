@@ -19,10 +19,10 @@ import numpy as np
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
-from shifthunt import textgen as tg  # noqa: E402
-from shifthunt.detectors import balanced_accuracy, detect_all  # noqa: E402
-from shifthunt.flipcheck import text_flip_is_clean  # noqa: E402
-from shifthunt.substrate import MAX_CONTENT_TOKENS as WINDOW  # noqa: E402
+from shortcuthunt import textgen as tg  # noqa: E402
+from shortcuthunt.detectors import balanced_accuracy, detect_all  # noqa: E402
+from shortcuthunt.flipcheck import text_flip_is_clean  # noqa: E402
+from shortcuthunt.substrate import MAX_CONTENT_TOKENS as WINDOW  # noqa: E402
 
 
 def random_case(rng):

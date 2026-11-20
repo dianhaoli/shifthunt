@@ -1,0 +1,311 @@
+{
+ "file": "gpuplan/c6c/ladder.json",
+ "changed": 61,
+ "rows": {
+  "set_A/L0/hard_kappa": {
+   "frozen": -0.021,
+   "r10": 0.3215,
+   "change": 0.3425
+  },
+  "set_A/L0/named_only_kappa": {
+   "frozen": 0.1437,
+   "r10": 0.4323,
+   "change": 0.2886
+  },
+  "set_A/L0/false_credit_none": {
+   "frozen": "23/26",
+   "r10": "19/26",
+   "change": -0.1538
+  },
+  "set_A/L0/false_blame": {
+   "frozen": "24/87",
+   "r10": "6/87",
+   "change": -0.2069
+  },
+  "set_A/L0/none_index": {
+   "frozen": 0.0873,
+   "r10": 0.2007,
+   "change": 0.1134
+  },
+  "set_A/L0/null_slot_false_blame": {
+   "frozen": "5/125",
+   "r10": "9/125",
+   "change": 0.032
+  },
+  "set_A/L1/hard_kappa": {
+   "frozen": 0.0626,
+   "r10": 0.4251,
+   "change": 0.3625
+  },
+  "set_A/L1/named_only_kappa": {
+   "frozen": 0.211,
+   "r10": 0.6309,
+   "change": 0.4199
+  },
+  "set_A/L1/false_credit_none": {
+   "frozen": "21/26",
+   "r10": "19/26",
+   "change": -0.0769
+  },
+  "set_A/L1/false_credit_wrong_cue": {
+   "frozen": "7/17",
+   "r10": "6/17",
+   "change": -0.0588
+  },
+  "set_A/L1/false_blame": {
+   "frozen": "25/87",
+   "r10": "4/87",
+   "change": -0.2414
+  },
+  "set_A/L1/none_index": {
+   "frozen": 0.1905,
+   "r10": 0.1971,
+   "change": 0.0066
+  },
+  "set_A/L1/null_slot_false_blame": {
+   "frozen": "8/125",
+   "r10": "14/125",
+   "change": 0.048
+  },
+  "set_A/L2/hard_kappa": {
+   "frozen": 0.2405,
+   "r10": 0.463,
+   "change": 0.2225
+  },
+  "set_A/L2/named_only_kappa": {
+   "frozen": 0.3526,
+   "r10": 0.5781,
+   "change": 0.2255
+  },
+  "set_A/L2/false_credit_none": {
+   "frozen": "17/26",
+   "r10": "16/26",
+   "change": -0.0385
+  },
+  "set_A/L2/false_credit_wrong_cue": {
+   "frozen": "3/17",
+   "r10": "6/17",
+   "change": 0.1765
+  },
+  "set_A/L2/false_blame": {
+   "frozen": "25/87",
+   "r10": "6/87",
+   "change": -0.2184
+  },
+  "set_A/L2/none_index": {
+   "frozen": 0.3622,
+   "r10": 0.328,
+   "change": -0.0342
+  },
+  "set_A/L2/null_slot_false_blame": {
+   "frozen": "7/125",
+   "r10": "9/125",
+   "change": 0.016
+  },
+  "set_A/L3 = L1 + key/hard_kappa": {
+   "frozen": 0.9156,
+   "r10": 0.9321,
+   "change": 0.0165
+  },
+  "set_A/L3 = L1 + key/named_only_kappa": {
+   "frozen": 0.8428,
+   "r10": 0.8715,
+   "change": 0.0287
+  },
+  "set_A/L3 = L1 + key/false_blame": {
+   "frozen": "5/87",
+   "r10": "4/87",
+   "change": -0.0115
+  },
+  "luna/L0/hard_kappa": {
+   "frozen": 0.0177,
+   "r10": 0.104,
+   "change": 0.0863
+  },
+  "luna/L0/named_only_kappa": {
+   "frozen": -0.0142,
+   "r10": 0.0897,
+   "change": 0.1039
+  },
+  "luna/L0/false_credit_none": {
+   "frozen": "24/38",
+   "r10": "19/38",
+   "change": -0.1316
+  },
+  "luna/L0/false_blame": {
+   "frozen": "2/7",
+   "r10": "1/7",
+   "change": -0.1429
+  },
+  "luna/L0/none_index": {
+   "frozen": 0.2558,
+   "r10": 0.3118,
+   "change": 0.056
+  },
+  "luna/L0/null_slot_false_blame": {
+   "frozen": "11/54",
+   "r10": "16/54",
+   "change": 0.0926
+  },
+  "luna/L1/hard_kappa": {
+   "frozen": -0.0333,
+   "r10": 0.1218,
+   "change": 0.1551
+  },
+  "luna/L1/named_only_kappa": {
+   "frozen": 0.0265,
+   "r10": 0.3419,
+   "change": 0.3154
+  },
+  "luna/L1/false_credit_none": {
+   "frozen": "21/38",
+   "r10": "18/38",
+   "change": -0.0789
+  },
+  "luna/L1/false_credit_wrong_cue": {
+   "frozen": "6/15",
+   "r10": "5/15",
+   "change": -0.0667
+  },
+  "luna/L1/false_blame": {
+   "frozen": "4/7",
+   "r10": "2/7",
+   "change": -0.2857
+  },
+  "luna/L1/none_index": {
+   "frozen": 0.2477,
+   "r10": 0.2648,
+   "change": 0.0171
+  },
+  "luna/L1/null_slot_false_blame": {
+   "frozen": "18/54",
+   "r10": "20/54",
+   "change": 0.037
+  },
+  "luna/L2/hard_kappa": {
+   "frozen": 0.2581,
+   "r10": 0.1732,
+   "change": -0.0849
+  },
+  "luna/L2/false_credit_none": {
+   "frozen": "10/38",
+   "r10": "15/38",
+   "change": 0.1316
+  },
+  "luna/L2/none_index": {
+   "frozen": 0.474,
+   "r10": 0.4419,
+   "change": -0.0321
+  },
+  "luna/L2/null_slot_false_blame": {
+   "frozen": "16/54",
+   "r10": "17/54",
+   "change": 0.0185
+  },
+  "main_study/L0/hard_kappa": {
+   "frozen": 0.0562,
+   "r10": 0.207,
+   "change": 0.1508
+  },
+  "main_study/L0/named_only_kappa": {
+   "frozen": 0.3398,
+   "r10": 0.491,
+   "change": 0.1512
+  },
+  "main_study/L0/false_credit_none": {
+   "frozen": "13/13",
+   "r10": "12/13",
+   "change": -0.0769
+  },
+  "main_study/L0/false_blame": {
+   "frozen": "5/45",
+   "r10": "2/45",
+   "change": -0.0667
+  },
+  "main_study/L0/none_index": {
+   "frozen": 0.0,
+   "r10": 0.0769,
+   "change": 0.0769
+  },
+  "main_study/L2/hard_kappa": {
+   "frozen": 0.2629,
+   "r10": 0.236,
+   "change": -0.0269
+  },
+  "main_study/L2/named_only_kappa": {
+   "frozen": 0.0838,
+   "r10": -0.0851,
+   "change": -0.1689
+  },
+  "main_study/L2/false_credit_wrong_cue": {
+   "frozen": "5/6",
+   "r10": "6/6",
+   "change": 0.1667
+  },
+  "main_study/L2/false_blame": {
+   "frozen": "4/45",
+   "r10": "3/45",
+   "change": -0.0222
+  },
+  "main_study/L2/none_index": {
+   "frozen": 0.369,
+   "r10": 0.3846,
+   "change": 0.0156
+  },
+  "main_study/L2/null_slot_false_blame": {
+   "frozen": "1/64",
+   "r10": "0/64",
+   "change": -0.0156
+  },
+  "main_study/L2r/hard_kappa": {
+   "frozen": 0.176,
+   "r10": 0.0844,
+   "change": -0.0916
+  },
+  "main_study/L2r/named_only_kappa": {
+   "frozen": 0.1169,
+   "r10": -0.1039,
+   "change": -0.2208
+  },
+  "main_study/L2r/false_credit_wrong_cue": {
+   "frozen": "5/6",
+   "r10": "6/6",
+   "change": 0.1667
+  },
+  "main_study/L2r/false_blame": {
+   "frozen": "3/45",
+   "r10": "4/45",
+   "change": 0.0222
+  },
+  "harder_variant/L0/hard_kappa": {
+   "frozen": 0.1,
+   "r10": 0.2105,
+   "change": 0.1105
+  },
+  "harder_variant/L0/named_only_kappa": {
+   "frozen": 0.6286,
+   "r10": 1.0,
+   "change": 0.3714
+  },
+  "harder_variant/L0/false_blame": {
+   "frozen": "1/12",
+   "r10": "0/12",
+   "change": -0.0833
+  },
+  "harder_variant/L3 = L0 + key/hard_kappa": {
+   "frozen": 0.7692,
+   "r10": 0.6667,
+   "change": -0.1025
+  },
+  "harder_variant/L3 = L0 + key/named_only_kappa": {
+   "frozen": 0.4348,
+   "r10": 0.3158,
+   "change": -0.119
+  },
+  "harder_variant/L3 = L0 + key/false_blame": {
+   "frozen": "2/12",
+   "r10": "3/12",
+   "change": 0.0833
+  }
+ }
+}

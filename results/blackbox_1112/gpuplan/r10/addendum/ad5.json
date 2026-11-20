@@ -1,0 +1,52 @@
+{
+ "plan": "results/blackbox_1112/gpuplan/r10/PLAN_R10.md section 13 (AD5, post hoc R10-6)",
+ "slots": 520,
+ "wrong none (all probes)": {
+  "r10_L0": "40/55",
+  "base_rate_stated": "53/55",
+  "credited_only_without": 0,
+  "credited_only_with": 13
+ },
+ "wrong none (hard probes)": {
+  "r10_L0": "19/26",
+  "base_rate_stated": "25/26",
+  "credited_only_without": 0,
+  "credited_only_with": 6
+ },
+ "right none (all probes)": {
+  "r10_L0": "116/125",
+  "base_rate_stated": "124/125",
+  "credited_only_without": 0,
+  "credited_only_with": 8
+ },
+ "right none (hard probes)": {
+  "r10_L0": "0/0",
+  "base_rate_stated": "0/0",
+  "credited_only_without": 0,
+  "credited_only_with": 0
+ },
+ "passes (all probes)": {
+  "r10_L0": "279/303",
+  "base_rate_stated": "275/303",
+  "credited_only_without": 10,
+  "credited_only_with": 6
+ },
+ "passes (hard probes)": {
+  "r10_L0": "81/87",
+  "base_rate_stated": "80/87",
+  "credited_only_without": 3,
+  "credited_only_with": 2
+ },
+ "wrong cues (all probes)": {
+  "r10_L0": "13/32",
+  "base_rate_stated": "14/32",
+  "credited_only_without": 1,
+  "credited_only_with": 2
+ },
+ "wrong cues (hard probes)": {
+  "r10_L0": "9/17",
+  "base_rate_stated": "10/17",
+  "credited_only_without": 0,
+  "credited_only_with": 1
+ }
+}

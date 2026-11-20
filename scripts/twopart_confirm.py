@@ -1,7 +1,7 @@
 """Post-acceptance confirmation of nested-cue probes (GPU; run from the repo root through scripts/freetext_run.py,
 with --hard for freetext_hard pools):
 
-    flock /tmp/shifthunt-gpu.lock python scripts/freetext_run.py [--hard] scripts/twopart_confirm.py <tag> [<tag> ...] \
+    flock /tmp/shortcuthunt-gpu.lock python scripts/freetext_run.py [--hard] scripts/twopart_confirm.py <tag> [<tag> ...] \
         [--stream tpconfirm] [--n 1024] [--out .cache/tp2/confirm.json]
 
 Dependence of each accepted probe on a fresh set (stream "{stream}:{eval_seed}", n notes; the default stream is never
@@ -24,8 +24,8 @@ import numpy as np
 ROOT = Path.cwd()
 sys.path.insert(0, str(ROOT)); sys.path.insert(0, str(ROOT / "scripts"))
 from probe_experiments import CACHE  # noqa: E402
-from shifthunt import probes as P  # noqa: E402  (freetext_run swaps textgen; P.tg is the active substrate)
-from shifthunt.ablation import probe_logit  # noqa: E402
+from shortcuthunt import probes as P  # noqa: E402  (freetext_run swaps textgen; P.tg is the active substrate)
+from shortcuthunt.ablation import probe_logit  # noqa: E402
 
 tg = P.tg
 
@@ -65,7 +65,7 @@ def main():
     ap.add_argument("--n", type=int, default=1024)
     ap.add_argument("--out", default=".cache/tp2/confirm.json")
     args = ap.parse_args()
-    from shifthunt.substrate import Subject
+    from shortcuthunt.substrate import Subject
     lab = P.Lab(P.CachedEncoder(Subject(), CACHE))
     implies = getattr(tg, "IMPLIES", {})
     out = []

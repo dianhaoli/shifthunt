@@ -7,9 +7,9 @@ from pathlib import Path
 import numpy as np
 import pytest
 
-from shifthunt import contract, detectors
-from shifthunt import episode_files as EFL
-from shifthunt import grader as G
+from shortcuthunt import contract, detectors
+from shortcuthunt import episode_files as EFL
+from shortcuthunt import grader as G
 
 ROOT = Path(__file__).resolve().parents[1]
 BANK = ROOT / ".cache" / "bank"
@@ -17,7 +17,7 @@ EPS = [e for e in ("ep201", "ep101", "ep301") if (BANK / e / "private" / "answer
 
 
 def _task_module():
-    spec = importlib.util.spec_from_file_location("shifthunt_task_py", ROOT / "task.py")
+    spec = importlib.util.spec_from_file_location("shortcuthunt_task_py", ROOT / "task.py")
     m = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(m)
     return m

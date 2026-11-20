@@ -2,7 +2,7 @@
 
     python scripts/freetext_bank.py --raw .cache/freetext/raw.jsonl --out .cache/freetext/bank.json
 
-Keeps a paragraph only if it has the canonical form shifthunt/freetext.py relies on (see its docstring) and
+Keeps a paragraph only if it has the canonical form shortcuthunt/freetext.py relies on (see its docstring) and
 its worst-case render (every additive feature on, longest forms) fits in 128 content tokens. Drops exact and
 near duplicates (same first six words). Prints counts per topic and per drop reason.
 """
@@ -15,8 +15,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
-from shifthunt import freetext as ft  # noqa: E402
-from shifthunt.substrate import MAX_CONTENT_TOKENS, MODEL_ID  # noqa: E402
+from shortcuthunt import freetext as ft  # noqa: E402
+from shortcuthunt.substrate import MAX_CONTENT_TOKENS, MODEL_ID  # noqa: E402
 
 ABBREV = re.compile(r"\b(Mr|Mrs|Ms|Dr|St|Jr|Sr|vs|etc|e\.g|i\.e|a\.m|p\.m|U\.S)\.", re.I)
 

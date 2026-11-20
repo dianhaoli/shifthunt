@@ -1,4 +1,4 @@
-"""Run any build script on the free-text substrate: installs shifthunt.freetext as shifthunt.textgen first.
+"""Run any build script on the free-text substrate: installs shortcuthunt.freetext as shortcuthunt.textgen first.
 
     python scripts/freetext_run.py [--hard] scripts/probe_experiments.py build --tag ft_screen ...
 
@@ -13,16 +13,16 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(ROOT / "scripts"))
 
-import shifthunt  # noqa: E402
-from shifthunt import freetext  # noqa: E402  (imports the real textgen for its banks first)
+import shortcuthunt  # noqa: E402
+from shortcuthunt import freetext  # noqa: E402  (imports the real textgen for its banks first)
 
-if len(sys.argv) > 1 and sys.argv[1] == "--hard":  # the hard-cue substrate (shifthunt/freetext_hard.py)
-    from shifthunt import freetext_hard as freetext  # noqa: E402,F811
+if len(sys.argv) > 1 and sys.argv[1] == "--hard":  # the hard-cue substrate (shortcuthunt/freetext_hard.py)
+    from shortcuthunt import freetext_hard as freetext  # noqa: E402,F811
     sys.argv.pop(1)
 
-sys.modules["shifthunt.textgen"] = freetext
-shifthunt.textgen = freetext
-from shifthunt import detectors  # noqa: E402  (scripted baselines take the true regex from here)
+sys.modules["shortcuthunt.textgen"] = freetext
+shortcuthunt.textgen = freetext
+from shortcuthunt import detectors  # noqa: E402  (scripted baselines take the true regex from here)
 
 detectors.submission_regex = freetext.submission_regex
 

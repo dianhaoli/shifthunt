@@ -1,0 +1,42 @@
+{
+ "label": "post hoc",
+ "script": "scripts/keyless_verifier_diag.py",
+ "A": {
+  "passes_blamed_V1": {
+   "texts but no aligned candidate isolated": 10,
+   "isolated something, not the named cue above the bar": 12,
+   "no exact text on the hard probe": 1
+  },
+  "wrong_none_hard_by_isolation": {
+   "0 of 8 aligned isolated": 10,
+   "1 of 8 aligned isolated": 5,
+   "2 of 8 aligned isolated": 7,
+   "5 of 8 aligned isolated": 1,
+   "7 of 8 aligned isolated": 2,
+   "8 of 8 aligned isolated": 1
+  }
+ },
+ "luna": {
+  "passes_blamed_V1": {
+   "isolated something, not the named cue above the bar": 2,
+   "texts but no aligned candidate isolated": 5
+  },
+  "wrong_none_hard_by_isolation": {
+   "0 of 8 aligned isolated": 17,
+   "1 of 8 aligned isolated": 10,
+   "2 of 8 aligned isolated": 11
+  }
+ },
+ "main": {
+  "passes_blamed_V1": {
+   "no exact text on the hard probe": 9,
+   "texts but no aligned candidate isolated": 5,
+   "isolated something, not the named cue above the bar": 6
+  },
+  "wrong_none_hard_by_isolation": {
+   "0 of 8 aligned isolated": 8,
+   "1 of 8 aligned isolated": 4,
+   "2 of 8 aligned isolated": 1
+  }
+ }
+}

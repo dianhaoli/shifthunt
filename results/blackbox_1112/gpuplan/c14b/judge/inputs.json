@@ -1,0 +1,12 @@
+{
+ "runs": 18,
+ "capped_reports": 0,
+ "max_report_chars": 24000,
+ "by_population": {
+  "block1 | luna | open_open8": 11,
+  "block1 | gpt | open_open8": 7
+ },
+ "contract_sha256": "2e2a3c774a7532351e3d30d72d575944bf7b1be30b530b0da0fe2fe128e713aa",
+ "prompt_template_sha256": "83afac63c0de88c7d95494bc4122098cfeb3ed039f37d482767de9f08e94f255",
+ "calls_sha256": "87530cda0b3614bec0c4a3948d7bb1bd0ef58a963bb32e443fde638779fb7d2e"
+}

@@ -39,7 +39,7 @@ TRAP_EPS = {"ep411", "ep413", "ep415", "ep481", "ep483", "ep485"}
 # ep412/414/416 = ep472/474/476 without the method hint. SOURCE_EP maps each to the batch-1 item it copies.
 SOURCE_EP = {"ep481": "ep411", "ep483": "ep413", "ep485": "ep415", "ep412": "ep472", "ep414": "ep474", "ep416": "ep476"}
 
-# Hand-coded hard-slot failure modes (docs/CROSS_MODEL_STUDY.md, Table 9).
+# Hand-coded hard-slot failure modes (docs/study/CROSS_MODEL_STUDY.md, Table 9).
 #   N1  two-part: the P.S.-question child was never modelled or measured; the P.S. parent was seen and pruned
 #   N2  two-part: the child was never modelled; the P.S. parent was submitted as the cue
 #   N3  two-part: the child was modelled but measured only on the SAE proxy, and answered none

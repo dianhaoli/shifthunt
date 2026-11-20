@@ -12,15 +12,15 @@ from pathlib import Path
 import numpy as np
 import pytest
 
-from shifthunt import episode_files as E
-from shifthunt import episodes
-from shifthunt import hidden as H
-from shifthunt import textgen as tg
-from shifthunt.probes import cue_strings
+from shortcuthunt import episode_files as E
+from shortcuthunt import episodes
+from shortcuthunt import hidden as H
+from shortcuthunt import textgen as tg
+from shortcuthunt.probes import cue_strings
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
-ARTIFACTS = Path(os.environ.get("SHIFTHUNT_ARTIFACTS", ROOT / "artifacts"))
+ARTIFACTS = Path(os.environ.get("SHORTCUTHUNT_ARTIFACTS", ROOT / "artifacts"))
 
 S1, S2 = "1" * 64, "ab" * 32
 TOPICS = ("chess", "sailing")

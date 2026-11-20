@@ -18,7 +18,7 @@ TOOL = Path(__file__).resolve().parents[1] / "toolclient" / "tool"
 
 
 def _load_client():
-    loader = importlib.machinery.SourceFileLoader("shifthunt_toolclient", str(TOOL))
+    loader = importlib.machinery.SourceFileLoader("shortcuthunt_toolclient", str(TOOL))
     mod = importlib.util.module_from_spec(importlib.util.spec_from_loader(loader.name, loader))
     loader.exec_module(mod)
     return mod
@@ -179,9 +179,9 @@ def test_rejected_submit_exit_1(server):
 
 
 def test_help_prints_text(server):
-    s = server(lambda req: {"help": "ShiftHunt tools.\nline two"})
+    s = server(lambda req: {"help": "ShortcutHunt tools.\nline two"})
     code, out, _ = run(s.path, "help")
-    assert code == 0 and out == "ShiftHunt tools.\nline two\n"
+    assert code == 0 and out == "ShortcutHunt tools.\nline two\n"
 
 
 def test_usage_error_exit_2_sends_nothing(server):
@@ -226,7 +226,7 @@ def test_timeout(sock_dir):
 
 
 def test_default_socket_and_executable():
-    assert client.DEFAULT_SOCK == "/run/shifthunt/tool.sock" and client.TIMEOUT_S == 200
+    assert client.DEFAULT_SOCK == "/run/shortcuthunt/tool.sock" and client.TIMEOUT_S == 200
     assert os.access(TOOL, os.X_OK)
     assert TOOL.read_text().startswith("#!/usr/bin/env python3\n")
 
@@ -239,12 +239,12 @@ FAKE_DAEMON = "import signal, sys, time\nif sys.argv[1] == 'stubborn': signal.si
 
 @pytest.fixture
 def no_user(monkeypatch):
-    monkeypatch.setattr(stop_toolsrv, "USER", "no-such-user-shifthunt")
+    monkeypatch.setattr(stop_toolsrv, "USER", "no-such-user-shortcuthunt")
 
 
 def _fake_daemon(sock_dir, mode):
-    # The cmdline names shifthunt.toolserver, like the real daemon's.
-    p = subprocess.Popen([sys.executable, "-c", FAKE_DAEMON, mode, "shifthunt.toolserver"], stdout=subprocess.PIPE)
+    # The cmdline names shortcuthunt.toolserver, like the real daemon's.
+    p = subprocess.Popen([sys.executable, "-c", FAKE_DAEMON, mode, "shortcuthunt.toolserver"], stdout=subprocess.PIPE)
     assert p.stdout.readline() == b"up\n"
     pidfile = sock_dir / "daemon.pid"
     pidfile.write_text(f"{p.pid}\n")

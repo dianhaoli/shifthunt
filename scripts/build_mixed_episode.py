@@ -1,6 +1,6 @@
 """Build one episode from an explicit list of artifacts (for knob episodes), GPU.
 
-    flock /tmp/shifthunt-gpu.lock python scripts/build_mixed_episode.py --out .cache/bank/ep221 --seed 201 \
+    flock /tmp/shortcuthunt-gpu.lock python scripts/build_mixed_episode.py --out .cache/bank/ep221 --seed 201 \
         --slots knob_trap/planted_003,build_screen/null_012,... [--pool build_screen,build_screen2,knob_trap]
 
 The slots are used in the given order after a seeded shuffle (random.Random("mixed:{seed}")), so the probe
@@ -16,7 +16,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
-from shifthunt import episode_files as E  # noqa: E402
+from shortcuthunt import episode_files as E  # noqa: E402
 
 sys.path.insert(0, str(ROOT / "scripts"))
 from build_episode import real_encoder  # noqa: E402
@@ -35,7 +35,7 @@ def main():
     args = ap.parse_args()
     substrate = None
     if args.substrate is not None:
-        generator = E.tg.__name__.rsplit(".", 1)[-1]  # freetext_run.py swaps shifthunt.textgen
+        generator = E.tg.__name__.rsplit(".", 1)[-1]  # freetext_run.py swaps shortcuthunt.textgen
         want = {"templated": "textgen", "freetext": "freetext", "freetext_hard": "freetext_hard"}[args.substrate]
         if generator != want:
             sys.exit(f"--substrate {args.substrate} but the note generator is {generator} "

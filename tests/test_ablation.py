@@ -1,7 +1,7 @@
 import numpy as np
 import pytest
 
-from shifthunt.ablation import ablate_logits, gradient, probe_logit
+from shortcuthunt.ablation import ablate_logits, gradient, probe_logit
 
 N, D, M = 10, 32, 200
 

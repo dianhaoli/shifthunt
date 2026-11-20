@@ -1,0 +1,296 @@
+{
+ "file": "gpuplan/c21_audit.json",
+ "changed": 58,
+ "rows": {
+  "errors/hard": {
+   "frozen": 85,
+   "r10": 56,
+   "change": -29.0
+  },
+  "errors/all_slots": {
+   "frozen": 201,
+   "r10": 117,
+   "change": -84.0
+  },
+  "curves/hard_slot/random/10%": {
+   "frozen": 0.099,
+   "r10": 0.097,
+   "change": -0.002
+  },
+  "curves/hard_slot/random/20%": {
+   "frozen": 0.201,
+   "r10": 0.2,
+   "change": -0.001
+  },
+  "curves/hard_slot/random/30%": {
+   "frozen": 0.3,
+   "r10": 0.298,
+   "change": -0.002
+  },
+  "curves/hard_slot/random/50%": {
+   "frozen": 0.5,
+   "r10": 0.499,
+   "change": -0.001
+  },
+  "curves/hard_slot/none_first/10%": {
+   "frozen": 0.201,
+   "r10": 0.223,
+   "change": 0.022
+  },
+  "curves/hard_slot/none_first/20%": {
+   "frozen": 0.425,
+   "r10": 0.514,
+   "change": 0.089
+  },
+  "curves/hard_slot/none_first/30%": {
+   "frozen": 0.585,
+   "r10": 0.71,
+   "change": 0.125
+  },
+  "curves/hard_slot/none_first/50%": {
+   "frozen": 0.702,
+   "r10": 0.794,
+   "change": 0.092
+  },
+  "curves/hard_slot/none_first/catch_50%": {
+   "frozen": 0.238,
+   "r10": 0.201,
+   "change": -0.037
+  },
+  "curves/hard_slot/none_first/catch_80%": {
+   "frozen": 0.668,
+   "r10": 0.519,
+   "change": -0.149
+  },
+  "curves/hard_slot/low_conf_first/10%": {
+   "frozen": 0.159,
+   "r10": 0.11,
+   "change": -0.049
+  },
+  "curves/hard_slot/low_conf_first/20%": {
+   "frozen": 0.255,
+   "r10": 0.285,
+   "change": 0.03
+  },
+  "curves/hard_slot/low_conf_first/30%": {
+   "frozen": 0.319,
+   "r10": 0.355,
+   "change": 0.036
+  },
+  "curves/hard_slot/low_conf_first/50%": {
+   "frozen": 0.479,
+   "r10": 0.548,
+   "change": 0.069
+  },
+  "curves/hard_slot/low_conf_first/catch_50%": {
+   "frozen": 0.528,
+   "r10": 0.439,
+   "change": -0.089
+  },
+  "curves/hard_slot/low_conf_first/catch_80%": {
+   "frozen": 0.832,
+   "r10": 0.752,
+   "change": -0.08
+  },
+  "curves/hard_slot/judge_pass_first/10%": {
+   "frozen": 0.07,
+   "r10": 0.098,
+   "change": 0.028
+  },
+  "curves/hard_slot/judge_pass_first/20%": {
+   "frozen": 0.143,
+   "r10": 0.197,
+   "change": 0.054
+  },
+  "curves/hard_slot/judge_pass_first/30%": {
+   "frozen": 0.213,
+   "r10": 0.294,
+   "change": 0.081
+  },
+  "curves/hard_slot/judge_pass_first/50%": {
+   "frozen": 0.354,
+   "r10": 0.492,
+   "change": 0.138
+  },
+  "curves/hard_slot/judge_pass_first/catch_50%": {
+   "frozen": 0.692,
+   "r10": 0.509,
+   "change": -0.183
+  },
+  "curves/hard_slot/judge_pass_first/catch_80%": {
+   "frozen": 0.897,
+   "r10": 0.804,
+   "change": -0.093
+  },
+  "curves/all_slots/random/10%": {
+   "frozen": 0.098,
+   "r10": 0.099,
+   "change": 0.001
+  },
+  "curves/all_slots/random/20%": {
+   "frozen": 0.2,
+   "r10": 0.202,
+   "change": 0.002
+  },
+  "curves/all_slots/random/30%": {
+   "frozen": 0.298,
+   "r10": 0.299,
+   "change": 0.001
+  },
+  "curves/all_slots/random/50%": {
+   "frozen": 0.5,
+   "r10": 0.499,
+   "change": -0.001
+  },
+  "curves/all_slots/none_first/10%": {
+   "frozen": 0.216,
+   "r10": 0.265,
+   "change": 0.049
+  },
+  "curves/all_slots/none_first/20%": {
+   "frozen": 0.373,
+   "r10": 0.484,
+   "change": 0.111
+  },
+  "curves/all_slots/none_first/30%": {
+   "frozen": 0.497,
+   "r10": 0.64,
+   "change": 0.143
+  },
+  "curves/all_slots/none_first/50%": {
+   "frozen": 0.634,
+   "r10": 0.738,
+   "change": 0.104
+  },
+  "curves/all_slots/none_first/catch_50%": {
+   "frozen": 0.308,
+   "r10": 0.21,
+   "change": -0.098
+  },
+  "curves/all_slots/none_first/catch_80%": {
+   "frozen": 0.729,
+   "r10": 0.621,
+   "change": -0.108
+  },
+  "curves/all_slots/low_conf_first/10%": {
+   "frozen": 0.193,
+   "r10": 0.209,
+   "change": 0.016
+  },
+  "curves/all_slots/low_conf_first/20%": {
+   "frozen": 0.283,
+   "r10": 0.413,
+   "change": 0.13
+  },
+  "curves/all_slots/low_conf_first/30%": {
+   "frozen": 0.35,
+   "r10": 0.516,
+   "change": 0.166
+  },
+  "curves/all_slots/low_conf_first/50%": {
+   "frozen": 0.469,
+   "r10": 0.675,
+   "change": 0.206
+  },
+  "curves/all_slots/low_conf_first/catch_50%": {
+   "frozen": 0.551,
+   "r10": 0.285,
+   "change": -0.266
+  },
+  "curves/all_slots/low_conf_first/catch_80%": {
+   "frozen": 0.869,
+   "r10": 0.696,
+   "change": -0.173
+  },
+  "curves/all_slots/judge_pass_first/10%": {
+   "frozen": 0.04,
+   "r10": 0.068,
+   "change": 0.028
+  },
+  "curves/all_slots/judge_pass_first/20%": {
+   "frozen": 0.082,
+   "r10": 0.137,
+   "change": 0.055
+  },
+  "curves/all_slots/judge_pass_first/30%": {
+   "frozen": 0.121,
+   "r10": 0.201,
+   "change": 0.08
+  },
+  "curves/all_slots/judge_pass_first/50%": {
+   "frozen": 0.202,
+   "r10": 0.34,
+   "change": 0.138
+  },
+  "curves/all_slots/judge_pass_first/catch_50%": {
+   "frozen": 0.808,
+   "r10": 0.734,
+   "change": -0.074
+  },
+  "curves/all_slots/judge_pass_first/catch_80%": {
+   "frozen": 0.925,
+   "r10": 0.902,
+   "change": -0.023
+  },
+  "ppi_hard_slot_pass_rate/var_judge": {
+   "frozen": 0.1722,
+   "r10": 0.1143,
+   "change": -0.0579
+  },
+  "ppi_hard_slot_pass_rate/cov": {
+   "frozen": 0.0003,
+   "r10": 0.0521,
+   "change": 0.0518
+  },
+  "ppi_hard_slot_pass_rate/corr": {
+   "frozen": 0.0016,
+   "r10": 0.3304,
+   "change": 0.3288
+  },
+  "ppi_hard_slot_pass_rate/n=20/lambda_opt": {
+   "frozen": 0.0016,
+   "r10": 0.4172,
+   "change": 0.4156
+  },
+  "ppi_hard_slot_pass_rate/n=20/n_eff": {
+   "frozen": 20.0,
+   "r10": 22.22,
+   "change": 2.22
+  },
+  "ppi_hard_slot_pass_rate/n=20/extra_certified_grades": {
+   "frozen": 0.0,
+   "r10": 2.22,
+   "change": 2.22
+  },
+  "ppi_hard_slot_pass_rate/n=50/lambda_opt": {
+   "frozen": 0.0014,
+   "r10": 0.3698,
+   "change": 0.3684
+  },
+  "ppi_hard_slot_pass_rate/n=50/n_eff": {
+   "frozen": 50.0,
+   "r10": 54.85,
+   "change": 4.85
+  },
+  "ppi_hard_slot_pass_rate/n=50/extra_certified_grades": {
+   "frozen": 0.0,
+   "r10": 4.85,
+   "change": 4.85
+  },
+  "ppi_hard_slot_pass_rate/n=100/lambda_opt": {
+   "frozen": 0.0012,
+   "r10": 0.3109,
+   "change": 0.3097
+  },
+  "ppi_hard_slot_pass_rate/n=100/n_eff": {
+   "frozen": 100.0,
+   "r10": 108.04,
+   "change": 8.04
+  },
+  "ppi_hard_slot_pass_rate/n=100/extra_certified_grades": {
+   "frozen": 0.0,
+   "r10": 8.04,
+   "change": 8.04
+  }
+ }
+}

@@ -25,9 +25,9 @@ def main():
     ap.add_argument("--bank", default=None)
     args = ap.parse_args()
     if args.bank:
-        os.environ["SHIFTHUNT_FREETEXT_BANK"] = str(args.bank)
-    from shifthunt import freetext as ft
-    from shifthunt.substrate import MAX_CONTENT_TOKENS, MODEL_ID
+        os.environ["SHORTCUTHUNT_FREETEXT_BANK"] = str(args.bank)
+    from shortcuthunt import freetext as ft
+    from shortcuthunt.substrate import MAX_CONTENT_TOKENS, MODEL_ID
     from transformers import AutoTokenizer
     tok = AutoTokenizer.from_pretrained(MODEL_ID)
     rng = random.Random(0)

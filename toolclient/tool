@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""ShiftHunt tool client (installed as /usr/local/bin/tool). Stdlib only.
+"""ShortcutHunt tool client (installed as /usr/local/bin/tool). Stdlib only.
 
     tool [--sock PATH] <name> [JSON-object | - | key=value ...]
 
@@ -17,7 +17,7 @@ import math
 import socket
 import sys
 
-DEFAULT_SOCK = "/run/shifthunt/tool.sock"
+DEFAULT_SOCK = "/run/shortcuthunt/tool.sock"
 TIMEOUT_S = 200
 MAX_REPLY = 64 * 2 ** 20
 
@@ -99,7 +99,7 @@ def pretty(v, indent=0):
 
 
 def main(argv=None):
-    p = argparse.ArgumentParser(prog="tool", description="ShiftHunt tool client; `tool help` lists the tools.")
+    p = argparse.ArgumentParser(prog="tool", description="ShortcutHunt tool client; `tool help` lists the tools.")
     p.add_argument("--sock", default=DEFAULT_SOCK, help=f"server socket (default {DEFAULT_SOCK})")
     p.add_argument("name")
     p.add_argument("args", nargs="*")

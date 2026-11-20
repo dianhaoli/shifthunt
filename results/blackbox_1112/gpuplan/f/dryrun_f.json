@@ -1,0 +1,14 @@
+{
+ "dryrun_calls": 5,
+ "sent": 4,
+ "statuses": [
+  "ok",
+  "ok",
+  "ok",
+  "ok",
+  null
+ ],
+ "usd": 0.6217,
+ "projection_usd": 6.38,
+ "note": "input cost per character of the longest calls sent (upper bound) plus their mean output cost, over every call"
+}

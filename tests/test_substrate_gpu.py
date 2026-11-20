@@ -1,4 +1,4 @@
-"""GPU tests for shifthunt.substrate. Skipped without CUDA or HF_TOKEN (Gemma is gated)."""
+"""GPU tests for shortcuthunt.substrate. Skipped without CUDA or HF_TOKEN (Gemma is gated)."""
 import os
 import random
 
@@ -6,9 +6,9 @@ import numpy as np
 import pytest
 import torch
 
-from shifthunt import textgen as tg
-from shifthunt.ablation import ablate_logits, gradient, probe_logit
-from shifthunt.substrate import D_RESID, D_SAE, MAX_CONTENT_TOKENS
+from shortcuthunt import textgen as tg
+from shortcuthunt.ablation import ablate_logits, gradient, probe_logit
+from shortcuthunt.substrate import D_RESID, D_SAE, MAX_CONTENT_TOKENS
 
 pytestmark = pytest.mark.skipif(not torch.cuda.is_available() or not os.environ.get("HF_TOKEN"),
                                 reason="needs CUDA and HF_TOKEN")
@@ -22,7 +22,7 @@ LONG = " ".join(["The quick brown fox jumps over the lazy dog."] * 15)
 
 @pytest.fixture(scope="module")
 def subject():
-    from shifthunt.substrate import Subject
+    from shortcuthunt.substrate import Subject
     return Subject()
 
 

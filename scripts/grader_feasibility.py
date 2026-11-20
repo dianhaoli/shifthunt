@@ -21,9 +21,9 @@ import numpy as np
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
-from shifthunt import effects as E  # noqa: E402
-from shifthunt import episodes as EP  # noqa: E402
-from shifthunt import textgen as tg  # noqa: E402
+from shortcuthunt import effects as E  # noqa: E402
+from shortcuthunt import episodes as EP  # noqa: E402
+from shortcuthunt import textgen as tg  # noqa: E402
 
 RESULTS = ROOT / "results" / "grader"
 

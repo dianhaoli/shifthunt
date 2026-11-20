@@ -21,8 +21,8 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(ROOT / "scripts"))
 
-from shifthunt import contract as C  # noqa: E402
-from shifthunt import episode_files as E  # noqa: E402
+from shortcuthunt import contract as C  # noqa: E402
+from shortcuthunt import episode_files as E  # noqa: E402
 import trap_solvability as TS  # noqa: E402
 
 PRIV = ROOT / "results" / "private_1012" / "trap3"
@@ -101,7 +101,7 @@ def check(eps, n_shift_draws=50):
                   pass rate over n_shift_draws draws;
       decoy     : trap slot claims the planted decoy (its regex + its formula latents from the same pairs) -> must fail;
       none      : trap slot claims none -> must fail."""
-    from shifthunt import contract as C, detectors as D, effects as EF, episode_files as EFL, grader as G
+    from shortcuthunt import contract as C, detectors as D, effects as EF, episode_files as EFL, grader as G
     out = {}
     for ep in eps:
         e = EFL.load_episode(TS.BANK / ep)

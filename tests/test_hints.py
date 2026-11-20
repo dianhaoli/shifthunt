@@ -10,8 +10,8 @@ os.environ.setdefault("CUDA_VISIBLE_DEVICES", "")
 
 import pytest
 
-from shifthunt import toolserver as ts
-from shifthunt.toolbackend import FakeBackend
+from shortcuthunt import toolserver as ts
+from shortcuthunt.toolbackend import FakeBackend
 
 ROOT = Path(__file__).resolve().parents[1]
 ANSWER_HINT = "For probe 2, the main cue is: a P.S. line that ends with a question mark."
@@ -39,7 +39,7 @@ def _task(**extra):
 
 
 def _render(task, access="open"):
-    return task_py.render(task, access, ts.HELP + ts.ACCESS_HELP[access], 5400, 512)
+    return task_py.render(task, access, ts.help_text(access), 5400, 512)
 
 
 def test_no_hints_renders_no_section_and_splits_to_itself():

@@ -1,4 +1,4 @@
-"""Check shifthunt/freetext_hard.py (CPU): detectors and exact regexes agree with flags, flips are local, <= 128 tokens.
+"""Check shortcuthunt/freetext_hard.py (CPU): detectors and exact regexes agree with flags, flips are local, <= 128 tokens.
 
     python scripts/freetext_hard_check.py [--n 3000]
 """
@@ -17,8 +17,8 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     ap.add_argument("--n", type=int, default=3000)
     args = ap.parse_args()
-    from shifthunt import freetext_hard as fh
-    from shifthunt.substrate import MAX_CONTENT_TOKENS, MODEL_ID
+    from shortcuthunt import freetext_hard as fh
+    from shortcuthunt.substrate import MAX_CONTENT_TOKENS, MODEL_ID
     from transformers import AutoTokenizer
     tok = AutoTokenizer.from_pretrained(MODEL_ID)
     rng = random.Random(0)
