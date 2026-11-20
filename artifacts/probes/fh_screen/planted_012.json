@@ -1,0 +1,53 @@
+{
+ "kind": "planted",
+ "topics": [
+  "gardening",
+  "astronomy"
+ ],
+ "cue": "question",
+ "sign": -1,
+ "rho": 0.95,
+ "eps": 0.1,
+ "seed": 958293041,
+ "eval_seed": 339757763,
+ "b": -0.7623346641955187,
+ "reliance": {
+  "exclamation": -0.01884414094808323,
+  "lowercase": -0.05693761305720476,
+  "signoff": -0.1487879458205714,
+  "signoff_excl": 0.09221033275397797,
+  "she_pronoun": -0.0359969404673287,
+  "question": 0.32230032621440047,
+  "greeting": -0.0729036867182689,
+  "hashtag": 0.035881354166383446,
+  "postscript": 0.1031222551434363,
+  "ps_question": -0.14908997551008735,
+  "parenthetical": -0.02682436377499995,
+  "hedge_density": -0.04297915505456596,
+  "cf_frame": 0.11513416087746695
+ },
+ "coef": {
+  "exclamation": -0.13057718794017423,
+  "lowercase": -0.3945392587286812,
+  "signoff": -1.031000119250403,
+  "signoff_excl": 0.6389554176661429,
+  "she_pronoun": -0.24943452044980335,
+  "question": -2.233323895486889,
+  "greeting": -0.5051733813905316,
+  "hashtag": 0.2486335853377481,
+  "postscript": 0.7145676806269454,
+  "ps_question": -1.0330929813044543,
+  "parenthetical": -0.1858747501238601,
+  "hedge_density": -0.2978165586073477,
+  "cf_frame": 0.7978020863169388
+ },
+ "topic_coef": 6.929325581883645,
+ "r2": 0.7779398679169954,
+ "topic_acc": 0.9921875,
+ "probe_topic_acc": 0.9114583333333334,
+ "train_acc": 1.0,
+ "n_iter": 29,
+ "g_top5_share": 0.0028025012295485757,
+ "failures": [],
+ "name": "planted_012"
+}

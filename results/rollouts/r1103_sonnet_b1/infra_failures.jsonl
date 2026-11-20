@@ -1,0 +1,6 @@
+{"cid": "faacd31a34a3", "reason": "Anthropic API 'Credit balance is too low' at 06:53Z, agent hung; infra failure, episode re-queued"}
+{"cid": "337628d40dd0", "reason": "Anthropic API 'Credit balance is too low' at 06:53Z, agent hung; infra failure, episode re-queued"}
+{"cid": "fc908ba42409", "reason": "Anthropic API 'Credit balance is too low' at 06:53Z, agent hung; infra failure, episode re-queued"}
+{"cid": "94251a89f447", "reason": "Anthropic API billing_error Credit balance is too low at ~08:19Z; agent killed; infra failure"}
+{"cid": "add47752cd4a", "reason": "API failure (      1 Credit balance is too low       1 billing_error ) at 08:21:54Z; agent ended by watchdog"}
+{"cid": "334962e0032f", "reason": "API failure (      1 Credit balance is too low       1 billing_error ) at 08:42:29Z; agent ended by watchdog"}

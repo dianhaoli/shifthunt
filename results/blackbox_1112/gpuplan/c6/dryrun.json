@@ -1,0 +1,7 @@
+{
+ "dryrun_calls": 5,
+ "dryrun_usd": 0.159,
+ "terra_chars_total": 9535882,
+ "projected_terra_usd_upper": 4.27,
+ "rule": "if the projection exceeds $10, cap step 1 is applied to every BB-64 log (a logged deviation) and projected again; if still above $10, stop"
+}

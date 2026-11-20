@@ -1,0 +1,63 @@
+{
+ "label": "post hoc",
+ "script": "scripts/t_bandclose_posthoc.py",
+ "terra": {
+  "trap": "11/12",
+  "ordinary": "4/48"
+ },
+ "close=0.0": {
+  "bank null": "45/385 = 0.117",
+  "bank ordinary": "10/520 = 0.019",
+  "bank trap": "47/105 = 0.448",
+  "bank two-main": "75/90 = 0.833",
+  "bank two-part": "1/30 = 0.033",
+  "shipped null": "0/30 = 0.000",
+  "shipped ordinary": "0/60 = 0.000",
+  "shipped trap": "5/15 = 0.333",
+  "shipped two-part": "0/15 = 0.000"
+ },
+ "close=0.33": {
+  "bank null": "45/385 = 0.117",
+  "bank ordinary": "8/520 = 0.015",
+  "bank trap": "47/105 = 0.448",
+  "bank two-main": "63/90 = 0.700",
+  "bank two-part": "1/30 = 0.033",
+  "shipped null": "0/30 = 0.000",
+  "shipped ordinary": "0/60 = 0.000",
+  "shipped trap": "5/15 = 0.333",
+  "shipped two-part": "0/15 = 0.000"
+ },
+ "close=0.5": {
+  "bank null": "45/385 = 0.117",
+  "bank ordinary": "2/520 = 0.004",
+  "bank trap": "47/105 = 0.448",
+  "bank two-main": "4/90 = 0.044",
+  "bank two-part": "1/30 = 0.033",
+  "shipped null": "0/30 = 0.000",
+  "shipped ordinary": "0/60 = 0.000",
+  "shipped trap": "5/15 = 0.333",
+  "shipped two-part": "0/15 = 0.000"
+ },
+ "close=0.67": {
+  "bank null": "40/385 = 0.104",
+  "bank ordinary": "0/520 = 0.000",
+  "bank trap": "35/105 = 0.333",
+  "bank two-main": "0/90 = 0.000",
+  "bank two-part": "1/30 = 0.033",
+  "shipped null": "0/30 = 0.000",
+  "shipped ordinary": "0/60 = 0.000",
+  "shipped trap": "0/15 = 0.000",
+  "shipped two-part": "0/15 = 0.000"
+ },
+ "close=0.8": {
+  "bank null": "28/385 = 0.073",
+  "bank ordinary": "0/520 = 0.000",
+  "bank trap": "24/105 = 0.229",
+  "bank two-main": "0/90 = 0.000",
+  "bank two-part": "0/30 = 0.000",
+  "shipped null": "0/30 = 0.000",
+  "shipped ordinary": "0/60 = 0.000",
+  "shipped trap": "0/15 = 0.000",
+  "shipped two-part": "0/15 = 0.000"
+ }
+}

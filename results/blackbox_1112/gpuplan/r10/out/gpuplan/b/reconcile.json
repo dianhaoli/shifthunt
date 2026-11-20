@@ -1,0 +1,257 @@
+{
+ "script": "scripts/reconcile.py",
+ "report_judge": {
+  "runs_214": {
+   "J1_hard_slots": {
+    "slots": 214,
+    "runs": 214,
+    "agreement": 0.738,
+    "kappa": 0.284,
+    "certified_pass": "146/214",
+    "false_credit": "48/68",
+    "false_blame": "8/146"
+   },
+   "J2_false_credit_hard": 0.706,
+   "J3_false_credit_by_error": {
+    "answered none": "36/44",
+    "named a wrong cue": "12/24"
+   },
+   "J4_all_slots": {
+    "slots": 856,
+    "runs": 214,
+    "agreement": 0.863,
+    "kappa": 0.354,
+    "certified_pass": "738/856",
+    "false_credit": "74/118",
+    "false_blame": "43/738"
+   }
+  },
+  "runs_196_reconciled": {
+   "J1_hard_slots": {
+    "slots": 196,
+    "runs": 196,
+    "agreement": 0.74,
+    "kappa": 0.291,
+    "certified_pass": "134/196",
+    "false_credit": "43/62",
+    "false_blame": "8/134"
+   },
+   "J2_false_credit_hard": 0.694,
+   "J3_false_credit_by_error": {
+    "answered none": "31/39",
+    "named a wrong cue": "12/23"
+   },
+   "J4_all_slots": {
+    "slots": 784,
+    "runs": 196,
+    "agreement": 0.861,
+    "kappa": 0.358,
+    "certified_pass": "673/784",
+    "false_credit": "69/111",
+    "false_blame": "40/673"
+   }
+  },
+  "reproduces_judge_json": true,
+  "populations": {
+   "main": 64,
+   "harder_variant": 18,
+   "bb16": 24,
+   "block1": 108
+  }
+ },
+ "c17_test_retest": {
+  "runs_214": {
+   "runs": 214,
+   "all_slot_cohen_kappa": 0.737,
+   "all_slot_agreement": 0.95,
+   "hard_cohen_kappa": 0.818,
+   "hard_agreement": 0.958
+  },
+  "runs_196_reconciled": {
+   "runs": 196,
+   "all_slot_cohen_kappa": 0.734,
+   "all_slot_agreement": 0.948,
+   "hard_cohen_kappa": 0.81,
+   "hard_agreement": 0.954
+  },
+  "three_replicates_set_A_132": {
+   "runs": 132,
+   "slots": 528,
+   "fleiss_kappa": 0.78,
+   "all_agree": 0.92,
+   "hard_fleiss_kappa": 0.842,
+   "hard_all_agree": 0.932
+  }
+ },
+ "set_A": {
+  "before_c6": 132,
+  "analysed": 132,
+  "dropped": [],
+  "sentence": "Set A is 132 runs (Block 1 108 + BB-16 24); 2 runs whose Haiku judge call returned http_503 (one H0, one H1r; C6 sends no re-try) are dropped from every ladder comparison, leaving 130. The report-level study (J1-J4, C17) uses all 132."
+ },
+ "credit_baselines": {
+  "set_A": {
+   "L0": {
+    "commissions": "9/17",
+    "omissions": "19/26",
+    "passes_blamed": "6/87"
+   },
+   "L0r": {
+    "commissions": "7/17",
+    "omissions": "18/26",
+    "passes_blamed": "7/87"
+   },
+   "L1": {
+    "commissions": "6/17",
+    "omissions": "19/26",
+    "passes_blamed": "4/87"
+   },
+   "L1r": {
+    "commissions": "6/17",
+    "omissions": "18/26",
+    "passes_blamed": "6/87"
+   },
+   "L2": {
+    "commissions": "6/17",
+    "omissions": "16/26",
+    "passes_blamed": "6/87"
+   },
+   "L3_1": {
+    "commissions": "0/17",
+    "omissions": "0/26",
+    "passes_blamed": "4/87"
+   },
+   "L3_2": {
+    "commissions": "0/17",
+    "omissions": "0/26",
+    "passes_blamed": "0/87"
+   },
+   "answer_type": {
+    "commissions": "17/17",
+    "omissions": "0/26",
+    "passes_blamed": "0/87"
+   },
+   "V1": {
+    "commissions": "0/17",
+    "omissions": "7/26",
+    "passes_blamed": "23/87"
+   },
+   "V2": {
+    "commissions": "1/17",
+    "omissions": "23/26",
+    "passes_blamed": "22/87"
+   },
+   "V3": {
+    "commissions": "0/17",
+    "omissions": "0/26",
+    "passes_blamed": "23/87"
+   }
+  },
+  "luna": {
+   "L0": {
+    "commissions": "11/15",
+    "omissions": "19/38",
+    "passes_blamed": "1/7"
+   },
+   "L1": {
+    "commissions": "5/15",
+    "omissions": "18/38",
+    "passes_blamed": "2/7"
+   },
+   "L2": {
+    "commissions": "4/15",
+    "omissions": "15/38",
+    "passes_blamed": "2/7"
+   },
+   "L3_1": {
+    "commissions": "0/15",
+    "omissions": "0/38",
+    "passes_blamed": "0/7"
+   },
+   "L3_2": {
+    "commissions": "0/15",
+    "omissions": "0/38",
+    "passes_blamed": "0/7"
+   },
+   "answer_type": {
+    "commissions": "15/15",
+    "omissions": "0/38",
+    "passes_blamed": "0/7"
+   },
+   "V1": {
+    "commissions": "0/15",
+    "omissions": "10/38",
+    "passes_blamed": "7/7"
+   },
+   "V2": {
+    "commissions": "0/15",
+    "omissions": "36/38",
+    "passes_blamed": "7/7"
+   },
+   "V3": {
+    "commissions": "0/15",
+    "omissions": "0/38",
+    "passes_blamed": "7/7"
+   }
+  },
+  "main_study": {
+   "L0": {
+    "commissions": "3/6",
+    "omissions": "12/13",
+    "passes_blamed": "2/45"
+   },
+   "L2": {
+    "commissions": "6/6",
+    "omissions": "8/13",
+    "passes_blamed": "3/45"
+   },
+   "L2r": {
+    "commissions": "6/6",
+    "omissions": "10/13",
+    "passes_blamed": "4/45"
+   },
+   "L3_2": {
+    "commissions": "1/6",
+    "omissions": "0/13",
+    "passes_blamed": "0/45"
+   },
+   "answer_type": {
+    "commissions": "6/6",
+    "omissions": "0/13",
+    "passes_blamed": "0/45"
+   },
+   "V1": {
+    "commissions": "0/6",
+    "omissions": "0/13",
+    "passes_blamed": "20/45"
+   },
+   "V2": {
+    "commissions": "0/6",
+    "omissions": "13/13",
+    "passes_blamed": "18/45"
+   },
+   "V3": {
+    "commissions": "0/6",
+    "omissions": "0/13",
+    "passes_blamed": "20/45"
+   }
+  },
+  "harder_variant": {
+   "L0": {
+    "commissions": "0/1",
+    "omissions": "5/5",
+    "passes_blamed": "0/12"
+   },
+   "L3_0": {
+    "commissions": "0/1",
+    "omissions": "0/5",
+    "passes_blamed": "3/12"
+   },
+   "answer_type": {
+    "commissions": "1/1",
+    "omissions": "0/5",
+    "passes_blamed": "0/12"
+   }
+  }
+ }
+}

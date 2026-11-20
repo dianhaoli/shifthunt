@@ -1,0 +1,191 @@
+{
+ "note": "Terra judge; hard-slot kappa vs the certified grade; each set on one fixed run list (runs with every rung of that set parsed)",
+ "set_A": {
+  "runs": 130,
+  "L0": {
+   "hard_kappa": -0.021,
+   "answer_type_baseline_kappa": 0.6718,
+   "named_only_kappa": 0.1437,
+   "false_credit_none": "23/26",
+   "false_credit_wrong_cue": "9/17",
+   "false_blame": "24/87",
+   "none_index": 0.0873,
+   "null_slot_false_blame": "5/125",
+   "n_runs": 130
+  },
+  "L1": {
+   "hard_kappa": 0.0626,
+   "answer_type_baseline_kappa": 0.6718,
+   "named_only_kappa": 0.211,
+   "false_credit_none": "21/26",
+   "false_credit_wrong_cue": "7/17",
+   "false_blame": "25/87",
+   "none_index": 0.1905,
+   "null_slot_false_blame": "8/125",
+   "n_runs": 130
+  },
+  "L2": {
+   "hard_kappa": 0.2405,
+   "answer_type_baseline_kappa": 0.6718,
+   "named_only_kappa": 0.3526,
+   "false_credit_none": "17/26",
+   "false_credit_wrong_cue": "3/17",
+   "false_blame": "25/87",
+   "none_index": 0.3622,
+   "null_slot_false_blame": "7/125",
+   "n_runs": 130
+  },
+  "L3 = L1 + key": {
+   "hard_kappa": 0.9156,
+   "answer_type_baseline_kappa": 0.6718,
+   "named_only_kappa": 0.8428,
+   "false_credit_none": "0/26",
+   "false_credit_wrong_cue": "0/17",
+   "false_blame": "5/87",
+   "none_index": 1.0,
+   "null_slot_false_blame": "0/125",
+   "n_runs": 130
+  },
+  "L3 = L2 + key": {
+   "hard_kappa": 1.0,
+   "answer_type_baseline_kappa": 0.6718,
+   "named_only_kappa": 1.0,
+   "false_credit_none": "0/26",
+   "false_credit_wrong_cue": "0/17",
+   "false_blame": "0/87",
+   "none_index": 1.0,
+   "null_slot_false_blame": "0/125",
+   "n_runs": 130
+  }
+ },
+ "luna": {
+  "runs": 60,
+  "L0": {
+   "hard_kappa": 0.0177,
+   "answer_type_baseline_kappa": 0.3715,
+   "named_only_kappa": -0.0142,
+   "false_credit_none": "24/38",
+   "false_credit_wrong_cue": "11/15",
+   "false_blame": "2/7",
+   "none_index": 0.2558,
+   "null_slot_false_blame": "11/54",
+   "n_runs": 60
+  },
+  "L1": {
+   "hard_kappa": -0.0333,
+   "answer_type_baseline_kappa": 0.3715,
+   "named_only_kappa": 0.0265,
+   "false_credit_none": "21/38",
+   "false_credit_wrong_cue": "6/15",
+   "false_blame": "4/7",
+   "none_index": 0.2477,
+   "null_slot_false_blame": "18/54",
+   "n_runs": 60
+  },
+  "L2": {
+   "hard_kappa": 0.2581,
+   "answer_type_baseline_kappa": 0.3715,
+   "named_only_kappa": 0.4159,
+   "false_credit_none": "10/38",
+   "false_credit_wrong_cue": "4/15",
+   "false_blame": "2/7",
+   "none_index": 0.474,
+   "null_slot_false_blame": "16/54",
+   "n_runs": 60
+  },
+  "L3 = L1 + key": {
+   "hard_kappa": 1.0,
+   "answer_type_baseline_kappa": 0.3715,
+   "named_only_kappa": 1.0,
+   "false_credit_none": "0/38",
+   "false_credit_wrong_cue": "0/15",
+   "false_blame": "0/7",
+   "none_index": 1.0,
+   "null_slot_false_blame": "0/54",
+   "n_runs": 60
+  },
+  "L3 = L2 + key": {
+   "hard_kappa": 1.0,
+   "answer_type_baseline_kappa": 0.3715,
+   "named_only_kappa": 1.0,
+   "false_credit_none": "0/38",
+   "false_credit_wrong_cue": "0/15",
+   "false_blame": "0/7",
+   "none_index": 1.0,
+   "null_slot_false_blame": "0/54",
+   "n_runs": 60
+  }
+ },
+ "main_study": {
+  "runs": 64,
+  "L0": {
+   "hard_kappa": 0.0562,
+   "answer_type_baseline_kappa": 0.7529,
+   "named_only_kappa": 0.3398,
+   "false_credit_none": "13/13",
+   "false_credit_wrong_cue": "3/6",
+   "false_blame": "5/45",
+   "none_index": 0.0,
+   "null_slot_false_blame": "0/64",
+   "n_runs": 64
+  },
+  "L2": {
+   "hard_kappa": 0.2629,
+   "answer_type_baseline_kappa": 0.7529,
+   "named_only_kappa": 0.0838,
+   "false_credit_none": "8/13",
+   "false_credit_wrong_cue": "5/6",
+   "false_blame": "4/45",
+   "none_index": 0.369,
+   "null_slot_false_blame": "1/64",
+   "n_runs": 64
+  },
+  "L2r": {
+   "hard_kappa": 0.176,
+   "answer_type_baseline_kappa": 0.7529,
+   "named_only_kappa": 0.1169,
+   "false_credit_none": "10/13",
+   "false_credit_wrong_cue": "5/6",
+   "false_blame": "3/45",
+   "none_index": 0.2308,
+   "null_slot_false_blame": "0/64",
+   "n_runs": 64
+  },
+  "L3 = L2 + key": {
+   "hard_kappa": 0.962,
+   "answer_type_baseline_kappa": 0.7529,
+   "named_only_kappa": 0.8982,
+   "false_credit_none": "0/13",
+   "false_credit_wrong_cue": "1/6",
+   "false_blame": "0/45",
+   "none_index": 1.0,
+   "null_slot_false_blame": "0/64",
+   "n_runs": 64
+  }
+ },
+ "harder_variant": {
+  "runs": 18,
+  "L0": {
+   "hard_kappa": 0.1,
+   "answer_type_baseline_kappa": 0.8696,
+   "named_only_kappa": 0.6286,
+   "false_credit_none": "5/5",
+   "false_credit_wrong_cue": "0/1",
+   "false_blame": "1/12",
+   "none_index": 0.1667,
+   "null_slot_false_blame": "0/18",
+   "n_runs": 18
+  },
+  "L3 = L0 + key": {
+   "hard_kappa": 0.7692,
+   "answer_type_baseline_kappa": 0.8696,
+   "named_only_kappa": 0.4348,
+   "false_credit_none": "0/5",
+   "false_credit_wrong_cue": "0/1",
+   "false_blame": "2/12",
+   "none_index": 1.0,
+   "null_slot_false_blame": "0/18",
+   "n_runs": 18
+  }
+ }
+}

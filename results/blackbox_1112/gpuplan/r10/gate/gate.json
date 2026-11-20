@@ -1,0 +1,59 @@
+{
+ "plan": "results/blackbox_1112/gpuplan/r10/PLAN_R10.md item 10",
+ "rule": "pass if hand-read narrow matches that reject for missing latents or too little removal are <= 5% of rejected passes, for Terra L0 and Haiku H0; a check-and-report step (D5)",
+ "unread_narrow_matches": 0,
+ "levels": {
+  "L0": {
+   "runs": 132,
+   "slots": 528,
+   "passes": 309,
+   "rejected_passes": 24,
+   "rejected_passes_broad": 0,
+   "rejected_passes_narrow": 0,
+   "narrow_hand_read_latents_or_removal": 0,
+   "share_latents_or_removal": 0.0,
+   "credited_citing_latents_broad": 3,
+   "credited": 457,
+   "gate": "pass"
+  },
+  "H0": {
+   "runs": 131,
+   "slots": 524,
+   "passes": 307,
+   "rejected_passes": 219,
+   "rejected_passes_broad": 2,
+   "rejected_passes_narrow": 2,
+   "narrow_hand_read_latents_or_removal": 0,
+   "share_latents_or_removal": 0.0,
+   "credited_citing_latents_broad": 4,
+   "credited": 151,
+   "gate": "pass"
+  },
+  "L0ctrl": {
+   "runs": 132,
+   "slots": 528,
+   "passes": 309,
+   "rejected_passes": 109,
+   "rejected_passes_broad": 98,
+   "rejected_passes_narrow": 98,
+   "narrow_hand_read_latents_or_removal": 98,
+   "share_latents_or_removal": 0.899,
+   "credited_citing_latents_broad": 13,
+   "credited": 377,
+   "gate": "control (frozen prompt)"
+  },
+  "H0ctrl": {
+   "runs": 132,
+   "slots": 528,
+   "passes": 309,
+   "rejected_passes": 297,
+   "rejected_passes_broad": 246,
+   "rejected_passes_narrow": 224,
+   "narrow_hand_read_latents_or_removal": 224,
+   "share_latents_or_removal": 0.754,
+   "credited_citing_latents_broad": 11,
+   "credited": 82,
+   "gate": "control (frozen prompt)"
+  }
+ }
+}

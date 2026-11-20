@@ -1,0 +1,31 @@
+{
+ "file": "gpuplan/c14b/judge.json",
+ "changed": 5,
+ "rows": {
+  "usd": {
+   "frozen": 0.145,
+   "r10": 0.136,
+   "change": -0.009
+  },
+  "c14b_F2c/false_credit": {
+   "frozen": "5/7",
+   "r10": "7/7",
+   "change": 0.2857
+  },
+  "c14b_F2c/false_blame": {
+   "frozen": "1/7",
+   "r10": "0/7",
+   "change": -0.1429
+  },
+  "c14b_F2c/kappa": {
+   "frozen": 0.143,
+   "r10": 0.0,
+   "change": -0.143
+  },
+  "c14l_runs/false_credit": {
+   "frozen": "4/4",
+   "r10": "3/4",
+   "change": -0.25
+  }
+ }
+}

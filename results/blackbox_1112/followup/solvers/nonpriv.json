@@ -1,0 +1,132 @@
+{
+ "budget": 64,
+ "seeds": 10,
+ "episodes": {
+  "ep411": {
+   "type": "trap",
+   "hard_named": 0,
+   "seeds": 10,
+   "hard_rate": 0.0,
+   "all_slots_named": 9,
+   "all_slots": 40,
+   "all_slot_rate": 0.225,
+   "texts_per_seed": [
+    64
+   ],
+   "clusters_per_probe": [
+    19,
+    20,
+    18,
+    16
+   ],
+   "max_base_logit_diff": 0.0
+  },
+  "ep413": {
+   "type": "trap",
+   "hard_named": 0,
+   "seeds": 10,
+   "hard_rate": 0.0,
+   "all_slots_named": 10,
+   "all_slots": 40,
+   "all_slot_rate": 0.25,
+   "texts_per_seed": [
+    64
+   ],
+   "clusters_per_probe": [
+    30,
+    30,
+    31,
+    28
+   ],
+   "max_base_logit_diff": 0.04115337016176923
+  },
+  "ep415": {
+   "type": "trap",
+   "hard_named": 0,
+   "seeds": 10,
+   "hard_rate": 0.0,
+   "all_slots_named": 10,
+   "all_slots": 40,
+   "all_slot_rate": 0.25,
+   "texts_per_seed": [
+    64
+   ],
+   "clusters_per_probe": [
+    25,
+    26,
+    27,
+    21
+   ],
+   "max_base_logit_diff": 0.0
+  },
+  "ep472": {
+   "type": "two-part",
+   "hard_named": 0,
+   "seeds": 10,
+   "hard_rate": 0.0,
+   "all_slots_named": 10,
+   "all_slots": 40,
+   "all_slot_rate": 0.25,
+   "texts_per_seed": [
+    64
+   ],
+   "clusters_per_probe": [
+    7,
+    8,
+    8,
+    7
+   ],
+   "max_base_logit_diff": 0.0
+  },
+  "ep474": {
+   "type": "two-part",
+   "hard_named": 0,
+   "seeds": 10,
+   "hard_rate": 0.0,
+   "all_slots_named": 10,
+   "all_slots": 40,
+   "all_slot_rate": 0.25,
+   "texts_per_seed": [
+    64
+   ],
+   "clusters_per_probe": [
+    5,
+    4,
+    5,
+    4
+   ],
+   "max_base_logit_diff": 0.0
+  },
+  "ep476": {
+   "type": "two-part",
+   "hard_named": 0,
+   "seeds": 10,
+   "hard_rate": 0.0,
+   "all_slots_named": 10,
+   "all_slots": 40,
+   "all_slot_rate": 0.25,
+   "texts_per_seed": [
+    64
+   ],
+   "clusters_per_probe": [
+    4,
+    5,
+    5,
+    4
+   ],
+   "max_base_logit_diff": 0.0
+  }
+ },
+ "trap": {
+  "hard_named": 0,
+  "hard_n": 30,
+  "all_named": 29,
+  "all_n": 120
+ },
+ "two-part": {
+  "hard_named": 0,
+  "hard_n": 30,
+  "all_named": 30,
+  "all_n": 120
+ }
+}

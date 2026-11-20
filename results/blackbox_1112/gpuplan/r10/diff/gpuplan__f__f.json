@@ -1,0 +1,161 @@
+{
+ "file": "gpuplan/f/f.json",
+ "changed": 31,
+ "rows": {
+  "usd": {
+   "frozen": 6.1832,
+   "r10": 6.1808,
+   "change": -0.0024
+  },
+  "F1 (log level)/coverage_hard": {
+   "frozen": "16/130",
+   "r10": "30/130",
+   "change": 0.1077
+  },
+  "F1 (log level)/coverage_all_slots": {
+   "frozen": "75/520",
+   "r10": "123/520",
+   "change": 0.0923
+  },
+  "F1 (log level)/covered_hard_kappa": {
+   "frozen": null,
+   "r10": 0.0,
+   "change": null
+  },
+  "F1 (log level)/covered_passes_blamed": {
+   "frozen": "0/16",
+   "r10": "1/30",
+   "change": 0.0333
+  },
+  "F1 (log level)/passes_hard/pass": {
+   "frozen": "16/87",
+   "r10": "29/87",
+   "change": 0.1494
+  },
+  "F1 (log level)/passes_hard/fail": {
+   "frozen": "0/87",
+   "r10": "1/87",
+   "change": 0.0115
+  },
+  "F1 (log level)/passes_hard/cannot tell": {
+   "frozen": "71/87",
+   "r10": "57/87",
+   "change": -0.1609
+  },
+  "F1 (log level)/baseline_same_runs/hard_kappa": {
+   "frozen": 0.0626,
+   "r10": 0.4251,
+   "change": 0.3625
+  },
+  "F1 (log level)/baseline_same_runs/hard_balanced_accuracy": {
+   "frozen": 0.5307,
+   "r10": 0.6863,
+   "change": 0.1556
+  },
+  "F1 (log level)/baseline_same_runs/omissions_credited": {
+   "frozen": "21/26",
+   "r10": "19/26",
+   "change": -0.0769
+  },
+  "F1 (log level)/baseline_same_runs/commissions_credited": {
+   "frozen": "7/17",
+   "r10": "6/17",
+   "change": -0.0588
+  },
+  "F1 (log level)/baseline_same_runs/passes_blamed": {
+   "frozen": "25/87",
+   "r10": "4/87",
+   "change": -0.2414
+  },
+  "F1 (log level)/abstain_vs_script_decidable_hard/decidable/pass": {
+   "frozen": "15/71",
+   "r10": "28/71",
+   "change": 0.1831
+  },
+  "F1 (log level)/abstain_vs_script_decidable_hard/decidable/fail": {
+   "frozen": "0/71",
+   "r10": "1/71",
+   "change": 0.0141
+  },
+  "F1 (log level)/abstain_vs_script_decidable_hard/decidable/cannot tell": {
+   "frozen": "56/71",
+   "r10": "42/71",
+   "change": -0.1972
+  },
+  "F1 (log level)/hard_kappa_abstain_as_fail": {
+   "frozen": 0.1297,
+   "r10": 0.2486,
+   "change": 0.1189
+  },
+  "F1 (log level)/hard_balanced_accuracy_abstain_as_fail": {
+   "frozen": 0.592,
+   "r10": 0.6667,
+   "change": 0.0747
+  },
+  "F2 (transcript level)/coverage_hard": {
+   "frozen": "10/48",
+   "r10": "17/48",
+   "change": 0.1458
+  },
+  "F2 (transcript level)/coverage_all_slots": {
+   "frozen": "40/192",
+   "r10": "65/192",
+   "change": 0.1302
+  },
+  "F2 (transcript level)/covered_passes_blamed": {
+   "frozen": "0/10",
+   "r10": "0/17",
+   "change": 0.0
+  },
+  "F2 (transcript level)/passes_hard/pass": {
+   "frozen": "10/32",
+   "r10": "17/32",
+   "change": 0.2188
+  },
+  "F2 (transcript level)/passes_hard/cannot tell": {
+   "frozen": "22/32",
+   "r10": "15/32",
+   "change": -0.2188
+  },
+  "F2 (transcript level)/baseline_same_runs/hard_kappa": {
+   "frozen": 0.3284,
+   "r10": 0.4828,
+   "change": 0.1544
+  },
+  "F2 (transcript level)/baseline_same_runs/hard_balanced_accuracy": {
+   "frozen": 0.6719,
+   "r10": 0.7188,
+   "change": 0.0469
+  },
+  "F2 (transcript level)/baseline_same_runs/commissions_credited": {
+   "frozen": "2/10",
+   "r10": "4/10",
+   "change": 0.2
+  },
+  "F2 (transcript level)/baseline_same_runs/passes_blamed": {
+   "frozen": "9/32",
+   "r10": "2/32",
+   "change": -0.2188
+  },
+  "F2 (transcript level)/abstain_vs_script_decidable_hard/decidable/pass": {
+   "frozen": "9/26",
+   "r10": "16/26",
+   "change": 0.2692
+  },
+  "F2 (transcript level)/abstain_vs_script_decidable_hard/decidable/cannot tell": {
+   "frozen": "17/26",
+   "r10": "10/26",
+   "change": -0.2692
+  },
+  "F2 (transcript level)/hard_kappa_abstain_as_fail": {
+   "frozen": 0.2326,
+   "r10": 0.4304,
+   "change": 0.1978
+  },
+  "F2 (transcript level)/hard_balanced_accuracy_abstain_as_fail": {
+   "frozen": 0.6562,
+   "r10": 0.7656,
+   "change": 0.1094
+  }
+ }
+}

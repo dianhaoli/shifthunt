@@ -1,0 +1,114 @@
+{
+ "budget": 64,
+ "seeds": 10,
+ "episodes": {
+  "ep411": {
+   "type": "trap",
+   "hard_named": 0,
+   "seeds": 10,
+   "hard_rate": 0.0,
+   "all_slots_named": 21,
+   "all_slots": 40,
+   "all_slot_rate": 0.525,
+   "texts_per_seed": [
+    64
+   ],
+   "aligned_counts": [
+    8
+   ],
+   "aligned_equals_conf": true
+  },
+  "ep413": {
+   "type": "trap",
+   "hard_named": 0,
+   "seeds": 10,
+   "hard_rate": 0.0,
+   "all_slots_named": 23,
+   "all_slots": 40,
+   "all_slot_rate": 0.575,
+   "texts_per_seed": [
+    64
+   ],
+   "aligned_counts": [
+    8
+   ],
+   "aligned_equals_conf": true
+  },
+  "ep415": {
+   "type": "trap",
+   "hard_named": 1,
+   "seeds": 10,
+   "hard_rate": 0.1,
+   "all_slots_named": 21,
+   "all_slots": 40,
+   "all_slot_rate": 0.525,
+   "texts_per_seed": [
+    64
+   ],
+   "aligned_counts": [
+    8
+   ],
+   "aligned_equals_conf": true
+  },
+  "ep472": {
+   "type": "two-part",
+   "hard_named": 10,
+   "seeds": 10,
+   "hard_rate": 1.0,
+   "all_slots_named": 32,
+   "all_slots": 40,
+   "all_slot_rate": 0.8,
+   "texts_per_seed": [
+    64
+   ],
+   "aligned_counts": [
+    8
+   ],
+   "aligned_equals_conf": true
+  },
+  "ep474": {
+   "type": "two-part",
+   "hard_named": 2,
+   "seeds": 10,
+   "hard_rate": 0.2,
+   "all_slots_named": 22,
+   "all_slots": 40,
+   "all_slot_rate": 0.55,
+   "texts_per_seed": [
+    64
+   ],
+   "aligned_counts": [
+    8
+   ],
+   "aligned_equals_conf": true
+  },
+  "ep476": {
+   "type": "two-part",
+   "hard_named": 2,
+   "seeds": 10,
+   "hard_rate": 0.2,
+   "all_slots_named": 22,
+   "all_slots": 40,
+   "all_slot_rate": 0.55,
+   "texts_per_seed": [
+    64
+   ],
+   "aligned_counts": [
+    8
+   ],
+   "aligned_equals_conf": true
+  }
+ },
+ "trap": {
+  "hard_named": 1,
+  "hard_n": 30,
+  "all_named": 65,
+  "all_n": 120
+ },
+ "two-part": {
+  "hard_named": 14,
+  "hard_n": 30,
+  "all_named": 76,
+  "all_n": 120
+ }
+}

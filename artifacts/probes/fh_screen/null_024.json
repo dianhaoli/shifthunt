@@ -1,0 +1,53 @@
+{
+ "kind": "null",
+ "topics": [
+  "fishing",
+  "sailing"
+ ],
+ "cue": null,
+ "sign": null,
+ "rho": null,
+ "eps": 0.05,
+ "seed": 510161658,
+ "eval_seed": 584535327,
+ "b": -1.8195377260484225,
+ "reliance": {
+  "exclamation": 0.04743177586891558,
+  "lowercase": -0.02102138488489873,
+  "signoff": -0.013107210502378966,
+  "signoff_excl": 0.08064047565804368,
+  "she_pronoun": 0.14533080292057057,
+  "question": -0.0154744823392413,
+  "greeting": -0.016920479514100945,
+  "hashtag": 0.055763739679089534,
+  "postscript": -0.035667472212930096,
+  "ps_question": -0.02483148912271621,
+  "parenthetical": 0.005474802115101536,
+  "hedge_density": 0.01845931041439366,
+  "cf_frame": 0.05870682788230389
+ },
+ "coef": {
+  "exclamation": 0.34005428819329214,
+  "lowercase": -0.15070934922671073,
+  "signoff": -0.09396998227315213,
+  "signoff_excl": 0.5781385800365034,
+  "she_pronoun": 1.0419252038189422,
+  "question": -0.11094174697513129,
+  "greeting": -0.12130858504978695,
+  "hashtag": 0.3997889274897683,
+  "postscript": -0.2557120549005341,
+  "ps_question": -0.17802526267920213,
+  "parenthetical": 0.03925069011531714,
+  "hedge_density": 0.13234097919617224,
+  "cf_frame": 0.42088891258836575
+ },
+ "topic_coef": 7.1693349440063185,
+ "r2": 0.7430901671750993,
+ "topic_acc": 0.984375,
+ "probe_topic_acc": 0.9375,
+ "train_acc": 1.0,
+ "n_iter": 30,
+ "g_top5_share": 0.0029169344741708566,
+ "failures": [],
+ "name": "null_024"
+}

@@ -1,0 +1,93 @@
+{
+ "prereg": "results/blackbox_1112/gpuplan/open4/PREREG_OPEN4.md",
+ "terra_open4": {
+  "runs": 12,
+  "name_all": "12/12",
+  "trap_name": "6/6",
+  "trap_rank2_isolated": "4/6",
+  "trap_rank2_isolated_missing_texts": 0,
+  "twopart_name": "6/6",
+  "texts_on_trap_probe": 2.67,
+  "texts_per_other_probe_trap_episodes": 0.44,
+  "one_burst": "12/12",
+  "allocation_by_sae_rank": {
+   "rank 1": "22/36",
+   "rank 2": "10/36",
+   "rank 3": "1/36",
+   "rank 4+": "0/180"
+  }
+ },
+ "luna_open4": {
+  "runs": 12,
+  "name_all": "3/12",
+  "trap_name": "0/6",
+  "trap_rank2_isolated": "1/6",
+  "trap_rank2_isolated_missing_texts": 0,
+  "twopart_name": "3/6",
+  "texts_on_trap_probe": 3.0,
+  "texts_per_other_probe_trap_episodes": 0.11,
+  "one_burst": "11/11",
+  "allocation_by_sae_rank": {
+   "rank 1": "7/36",
+   "rank 2": "3/36",
+   "rank 3": "1/36",
+   "rank 4+": "1/180"
+  }
+ },
+ "terra_open8": {
+  "runs": 24,
+  "name_all": "23/24",
+  "trap_name": "11/12",
+  "trap_rank2_isolated": "11/12",
+  "trap_rank2_isolated_missing_texts": 0,
+  "twopart_name": "12/12",
+  "texts_on_trap_probe": 3.92,
+  "texts_per_other_probe_trap_episodes": 1.36,
+  "one_burst": "24/24",
+  "allocation_by_sae_rank": {
+   "rank 1": "63/72",
+   "rank 2": "21/72",
+   "rank 3": "9/72",
+   "rank 4+": "2/360"
+  }
+ },
+ "luna_open8": {
+  "runs": 36,
+  "name_all": "5/36",
+  "trap_name": "1/18",
+  "trap_rank2_isolated": "0/18",
+  "trap_rank2_isolated_missing_texts": 0,
+  "twopart_name": "4/18",
+  "texts_on_trap_probe": 1.94,
+  "texts_per_other_probe_trap_episodes": 2.02,
+  "one_burst": "36/36",
+  "allocation_by_sae_rank": {
+   "rank 1": "40/108",
+   "rank 2": "6/108",
+   "rank 3": "0/108",
+   "rank 4+": "4/540"
+  }
+ },
+ "X3_H1": {
+  "terra_open4": "12/12",
+  "terra_bb8": "6/24",
+  "p_one_sided": 1.483129403040415e-05,
+  "verdict": "supported"
+ },
+ "scripted_at_B4_shipped_six": {
+  "top1": 0.0,
+  "top2": 0.4892,
+  "hedge": 0.5,
+  "bayes_bank": 0.4933,
+  "bayes_law": 0.49,
+  "best_blind": 0.2147
+ },
+ "scripted_at_B8_shipped_six": {
+  "top1": 0.499,
+  "top2": 0.9582,
+  "hedge": 0.6775,
+  "bayes_bank": 0.9533,
+  "bayes_law": 0.9617,
+  "best_blind": 0.4367
+ }
+}

@@ -1,0 +1,41 @@
+{
+ "file": "gpuplan/c17/c17.json",
+ "changed": 7,
+ "rows": {
+  "three_replicates/fleiss_kappa": {
+   "frozen": 0.444,
+   "r10": 0.78,
+   "change": 0.336
+  },
+  "three_replicates/all_agree": {
+   "frozen": 0.68,
+   "r10": 0.92,
+   "change": 0.24
+  },
+  "three_replicates/hard_fleiss_kappa": {
+   "frozen": 0.388,
+   "r10": 0.842,
+   "change": 0.454
+  },
+  "three_replicates/hard_all_agree": {
+   "frozen": 0.598,
+   "r10": 0.932,
+   "change": 0.334
+  },
+  "two_replicates_214/agreement": {
+   "frozen": 0.843,
+   "r10": 0.95,
+   "change": 0.107
+  },
+  "two_replicates_214/pabak": {
+   "frozen": 0.687,
+   "r10": 0.9,
+   "change": 0.213
+  },
+  "two_replicates_214/cohen_kappa": {
+   "frozen": 0.47,
+   "r10": 0.737,
+   "change": 0.267
+  }
+ }
+}

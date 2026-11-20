@@ -1,0 +1,279 @@
+{
+ "prereg": "followup/failure_modes_heldout/PREREG.md",
+ "probe_audits": 152,
+ "with_instrument": 96,
+ "with_texts": 95,
+ "missing": {
+  "H3": 1
+ },
+ "R1_curve": {
+  "all": {
+   "rank 1": {
+    "tested": 40,
+    "n": 71,
+    "rate": 0.5633802816901409
+   },
+   "rank 2": {
+    "tested": 15,
+    "n": 71,
+    "rate": 0.2112676056338028
+   },
+   "rank 3": {
+    "tested": 4,
+    "n": 71,
+    "rate": 0.056338028169014086
+   },
+   "rank 4+": {
+    "tested": 1,
+    "n": 355,
+    "rate": 0.0028169014084507044
+   }
+  },
+  "by_set": {
+   "H1": {
+    "rank 1": {
+     "tested": 24,
+     "n": 30,
+     "rate": 0.8
+    },
+    "rank 2": {
+     "tested": 7,
+     "n": 30,
+     "rate": 0.23333333333333334
+    },
+    "rank 3": {
+     "tested": 2,
+     "n": 30,
+     "rate": 0.06666666666666667
+    },
+    "rank 4+": {
+     "tested": 0,
+     "n": 150,
+     "rate": 0.0
+    }
+   },
+   "H2": {
+    "rank 1": {
+     "tested": 4,
+     "n": 9,
+     "rate": 0.4444444444444444
+    },
+    "rank 2": {
+     "tested": 2,
+     "n": 9,
+     "rate": 0.2222222222222222
+    },
+    "rank 3": {
+     "tested": 1,
+     "n": 9,
+     "rate": 0.1111111111111111
+    },
+    "rank 4+": {
+     "tested": 1,
+     "n": 45,
+     "rate": 0.022222222222222223
+    }
+   },
+   "H3": {
+    "rank 1": {
+     "tested": 12,
+     "n": 32,
+     "rate": 0.375
+    },
+    "rank 2": {
+     "tested": 6,
+     "n": 32,
+     "rate": 0.1875
+    },
+    "rank 3": {
+     "tested": 1,
+     "n": 32,
+     "rate": 0.03125
+    },
+    "rank 4+": {
+     "tested": 0,
+     "n": 160,
+     "rate": 0.0
+    }
+   }
+  },
+  "by_agent": {
+   "gpt": {
+    "rank 1": {
+     "tested": 14,
+     "n": 18,
+     "rate": 0.7777777777777778
+    },
+    "rank 2": {
+     "tested": 6,
+     "n": 18,
+     "rate": 0.3333333333333333
+    },
+    "rank 3": {
+     "tested": 3,
+     "n": 18,
+     "rate": 0.16666666666666666
+    },
+    "rank 4+": {
+     "tested": 1,
+     "n": 90,
+     "rate": 0.011111111111111112
+    }
+   },
+   "haiku": {
+    "rank 1": {
+     "tested": 4,
+     "n": 6,
+     "rate": 0.6666666666666666
+    },
+    "rank 2": {
+     "tested": 0,
+     "n": 6,
+     "rate": 0.0
+    },
+    "rank 3": {
+     "tested": 0,
+     "n": 6,
+     "rate": 0.0
+    },
+    "rank 4+": {
+     "tested": 0,
+     "n": 30,
+     "rate": 0.0
+    }
+   },
+   "opus": {
+    "rank 1": {
+     "tested": 18,
+     "n": 38,
+     "rate": 0.47368421052631576
+    },
+    "rank 2": {
+     "tested": 8,
+     "n": 38,
+     "rate": 0.21052631578947367
+    },
+    "rank 3": {
+     "tested": 1,
+     "n": 38,
+     "rate": 0.02631578947368421
+    },
+    "rank 4+": {
+     "tested": 0,
+     "n": 190,
+     "rate": 0.0
+    }
+   },
+   "sonnet": {
+    "rank 1": {
+     "tested": 4,
+     "n": 9,
+     "rate": 0.4444444444444444
+    },
+    "rank 2": {
+     "tested": 1,
+     "n": 9,
+     "rate": 0.1111111111111111
+    },
+    "rank 3": {
+     "tested": 0,
+     "n": 9,
+     "rate": 0.0
+    },
+    "rank 4+": {
+     "tested": 0,
+     "n": 45,
+     "rate": 0.0
+    }
+   }
+  },
+  "hard_only": {
+   "rank 1": {
+    "tested": 16,
+    "n": 24,
+    "rate": 0.6666666666666666
+   },
+   "rank 2": {
+    "tested": 13,
+    "n": 24,
+    "rate": 0.5416666666666666
+   },
+   "rank 3": {
+    "tested": 3,
+    "n": 24,
+    "rate": 0.125
+   },
+   "rank 4+": {
+    "tested": 1,
+    "n": 120,
+    "rate": 0.008333333333333333
+   }
+  }
+ },
+ "R1_verdict": "confirmed",
+ "R2_rank_prefix": {
+  "slots": 46,
+  "observed": 40,
+  "expected": 4.66
+ },
+ "R2_verdict": "confirmed",
+ "R3_ordinary_only": {
+  "rank 1": {
+   "tested": 24,
+   "n": 47,
+   "rate": 0.5106382978723404
+  },
+  "rank 2": {
+   "tested": 2,
+   "n": 47,
+   "rate": 0.0425531914893617
+  },
+  "rank 3": {
+   "tested": 1,
+   "n": 47,
+   "rate": 0.02127659574468085
+  },
+  "rank 4+": {
+   "tested": 0,
+   "n": 235,
+   "rate": 0.0
+  }
+ },
+ "R3_verdict": "confirmed",
+ "R4_texts": {
+  "exact_texts": 144,
+  "to_non_hard": 64,
+  "share": 0.4444444444444444,
+  "non_hard_planted_zero_texts": 18,
+  "of_which_pass": 17
+ },
+ "R4_verdict": "failed",
+ "R5_errors": {
+  "wrong_planted": 12,
+  "of_which_none": 9,
+  "null_false_claims": "0/24"
+ },
+ "R5_verdict": "confirmed",
+ "blackbox_pilots_curve": {
+  "rank 1": {
+   "tested": 14,
+   "n": 42,
+   "rate": 0.3333333333333333
+  },
+  "rank 2": {
+   "tested": 8,
+   "n": 42,
+   "rate": 0.19047619047619047
+  },
+  "rank 3": {
+   "tested": 5,
+   "n": 42,
+   "rate": 0.11904761904761904
+  },
+  "rank 4+": {
+   "tested": 17,
+   "n": 210,
+   "rate": 0.08095238095238096
+  }
+ }
+}

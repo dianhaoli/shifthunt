@@ -1,0 +1,38 @@
+{
+ "script": "scripts/body_numbers.py",
+ "none_vs_named_error": {
+  "verdicts": 400,
+  "named": "7/277 = 0.025",
+  "none": "23/123 = 0.187",
+  "note": "`none` verdicts = planted probes answered none (all wrong) + null probes answered none (right)"
+ },
+ "main_pq_used_all": "0/0",
+ "removal_named_mains": {
+  "named_mains": 0,
+  "passed_removal": 0
+ },
+ "terra_tokens": {
+  "runs": {
+   "open8": 24,
+   "bb8": 24
+  },
+  "median_tokens_out": {
+   "open8": 62005.5,
+   "bb8": 87206.0
+  },
+  "pass_rate": {
+   "open8": 0.9583333333333334,
+   "bb8": 0.25
+  },
+  "pass_rate_above_proxy_median_failed": {
+   "open8": 0.4583333333333333,
+   "bb8": 0.0
+  },
+  "gain_raw": 0.708,
+  "gain_tokens_capped": 0.458
+ },
+ "mde_16": {
+  "symmetric_around_half": 0.54,
+  "top_rate_1": 0.39
+ }
+}

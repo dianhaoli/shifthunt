@@ -1,0 +1,71 @@
+{
+ "kind": "planted",
+ "topics": [
+  "photography",
+  "pottery"
+ ],
+ "cue": "postscript",
+ "sign": 1,
+ "rho": 0.94,
+ "eps": 0.05,
+ "seed": 612159637,
+ "eval_seed": 1845157948,
+ "mains": [
+  "postscript",
+  "exclamation"
+ ],
+ "signs": [
+  1,
+  1
+ ],
+ "rhos": [
+  0.94,
+  0.81
+ ],
+ "slot_class": "lopsided2",
+ "b": 4.053205198005012,
+ "reliance": {
+  "exclamation": 0.35300907778043955,
+  "lowercase": -0.06360231423451239,
+  "signoff": 0.08525176507428285,
+  "british_spelling": 0.08336166877551432,
+  "bullet_list": -0.020101615950142145,
+  "past_tense": 0.0652277449459652,
+  "she_pronoun": -0.010191499817453143,
+  "question_ending": -0.05285697029959636,
+  "quote": -0.10684891399393115,
+  "greeting": 0.10059728493229661,
+  "hashtag": -0.04838523449080375,
+  "postscript": 0.882326487941011,
+  "weekday": 0.004686676459996253,
+  "parenthetical": 0.09766624876590364,
+  "negative_sentiment": -0.0050019035286130486
+ },
+ "coef": {
+  "exclamation": 2.1037640392168466,
+  "lowercase": -0.3790391520207844,
+  "signoff": 0.5080594492660292,
+  "british_spelling": 0.4967953858912079,
+  "bullet_list": -0.11979594698230192,
+  "past_tense": 0.3887259359995236,
+  "she_pronoun": -0.06073642909256373,
+  "question_ending": -0.31500207880604625,
+  "quote": -0.6367680522641266,
+  "greeting": 0.5995113548186014,
+  "hashtag": -0.28835268767263383,
+  "postscript": 5.258240801765719,
+  "weekday": 0.027930333865568823,
+  "parenthetical": 0.5820437913120994,
+  "negative_sentiment": -0.029808935331892085
+ },
+ "topic_coef": 5.959518243679051,
+ "r2": 0.9141949133463381,
+ "topic_acc": 1.0,
+ "probe_topic_acc": 0.7890625,
+ "train_acc": 1.0,
+ "n_iter": 34,
+ "g_top5_share": 0.003238556320930792,
+ "failures": [],
+ "name": "planted_004",
+ "fits": 19
+}

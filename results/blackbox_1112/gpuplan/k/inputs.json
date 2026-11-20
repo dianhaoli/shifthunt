@@ -1,0 +1,12 @@
+{
+ "calls": 190,
+ "runs": {
+  "A": 130,
+  "luna": 60
+ },
+ "chars_total": 1974422,
+ "chars_max": 26437,
+ "chars_median": 8329,
+ "calls_sha256": "beab19d7744e38acfcb9ee802ca8113912bf95afbea0c0b25104c9cae7fc0d0f",
+ "order_seed": "k-1114"
+}

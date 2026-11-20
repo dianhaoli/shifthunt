@@ -1,0 +1,53 @@
+{
+ "kind": "planted",
+ "topics": [
+  "fishing",
+  "birdwatching"
+ ],
+ "cue": "hedge_density",
+ "sign": -1,
+ "rho": 1.0,
+ "eps": 0.05,
+ "seed": 2059740484,
+ "eval_seed": 915641460,
+ "b": -0.043929778051887775,
+ "reliance": {
+  "exclamation": 0.012043753130929586,
+  "lowercase": 0.02864024497849157,
+  "signoff": -0.07526337183589496,
+  "signoff_excl": 0.07374782918478696,
+  "she_pronoun": 0.041873367311063205,
+  "question": -0.014001708564655305,
+  "greeting": -0.0802757670244923,
+  "hashtag": -0.010830737629931739,
+  "postscript": 0.0587041480490874,
+  "ps_question": -0.06222429837136218,
+  "parenthetical": -0.07835628120466108,
+  "hedge_density": 0.5691987079421789,
+  "cf_frame": 0.028682877667836285
+ },
+ "coef": {
+  "exclamation": 0.06577545402162027,
+  "lowercase": 0.15641512211943787,
+  "signoff": -0.41104150839746756,
+  "signoff_excl": 0.4027645614290216,
+  "she_pronoun": 0.22868616753909432,
+  "question": -0.0764685831656139,
+  "greeting": -0.43841607890565,
+  "hashtag": -0.059150721311972125,
+  "postscript": 0.3206053751604179,
+  "ps_question": -0.3398302366429536,
+  "parenthetical": -0.4279330467548809,
+  "hedge_density": -3.108607677059446,
+  "cf_frame": 0.15664795522945985
+ },
+ "topic_coef": 5.461375146647784,
+ "r2": 0.8035327569209182,
+ "topic_acc": 0.96875,
+ "probe_topic_acc": 0.8776041666666666,
+ "train_acc": 1.0,
+ "n_iter": 19,
+ "g_top5_share": 0.002773304595695772,
+ "failures": [],
+ "name": "planted_004"
+}

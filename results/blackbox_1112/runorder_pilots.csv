@@ -1,0 +1,5 @@
+order,agent,model,engine,arm,item,problem,rep
+1,gpt,gpt-6.1-terra,codex,open8,ep411,ep411-open,1
+2,gpt,gpt-6.1-terra,codex,bb8,ep411,ep411-blackbox,1
+3,gpt,gpt-6.1-terra,codex,bb64,ep411,ep411-blackbox64,1
+4,haiku,claude-haiku-5-5,claude,bb8,ep472,ep472-blackbox,1

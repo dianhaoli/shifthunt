@@ -1,0 +1,62 @@
+{
+ "kind": "null",
+ "topics": [
+  "running",
+  "astronomy"
+ ],
+ "cue": null,
+ "sign": null,
+ "rho": null,
+ "eps": 0.05,
+ "seed": 480598331,
+ "eval_seed": 821194203,
+ "b": -3.313831563062476,
+ "reliance": {
+  "exclamation": 0.06410846801166005,
+  "lowercase": 0.07335055609118905,
+  "signoff": 0.02074145979946225,
+  "british_spelling": -0.045066982680725905,
+  "bullet_list": -0.07990748887633412,
+  "past_tense": 0.029962370956114464,
+  "she_pronoun": -0.02865190221464571,
+  "question_ending": -0.07849981418007622,
+  "quote": 0.09268996907647496,
+  "greeting": -0.029571187860308594,
+  "hashtag": -0.058324430066867855,
+  "postscript": 0.014012868702314546,
+  "weekday": 0.0027091773474855006,
+  "parenthetical": 0.023569087687729674,
+  "negative_sentiment": 0.131969647848041
+ },
+ "coef": {
+  "exclamation": 0.6742524205078597,
+  "lowercase": 0.7714548720940665,
+  "signoff": 0.21814558838171427,
+  "british_spelling": -0.4739860910720645,
+  "bullet_list": -0.8404165543586825,
+  "past_tense": 0.3151253144536256,
+  "she_pronoun": -0.3013426310057153,
+  "question_ending": -0.8256115200055464,
+  "quote": 0.974854616635747,
+  "greeting": -0.31101109744939315,
+  "hashtag": -0.6134195585546443,
+  "postscript": 0.1473785122907004,
+  "weekday": 0.02849341812059722,
+  "parenthetical": 0.24788479455979792,
+  "negative_sentiment": 1.3879734964018742
+ },
+ "topic_coef": 10.51736909990154,
+ "r2": 0.9392301645629212,
+ "topic_acc": 1.0,
+ "probe_topic_acc": 0.9947916666666666,
+ "train_acc": 1.0,
+ "n_iter": 34,
+ "g_top5_share": 0.0025029333668663517,
+ "failures": [],
+ "name": "null_012",
+ "knob": {
+  "name": "nearnull",
+  "recipe": "nullP",
+  "fits": 3
+ }
+}

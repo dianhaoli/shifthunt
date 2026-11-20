@@ -1,0 +1,23 @@
+{
+ "prereg": "results/blackbox_1112/gpuplan/c6b/PREREG_C6B.md",
+ "runs": 130,
+ "check_matches_c6b_json": true,
+ "J11": {
+  "delta": 0.1779,
+  "one_sided_95_lower": 0.0223,
+  "one_sided_975_lower": -0.0068,
+  "bootstrap_p_one_sided": 0.03
+ },
+ "holm": {
+  "J11": {
+   "p": 0.03,
+   "holm_threshold": 0.025,
+   "rejected": false
+  },
+  "J12": {
+   "p": 0.1094,
+   "holm_threshold": 0.05,
+   "rejected": false
+  }
+ }
+}

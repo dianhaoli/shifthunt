@@ -1,0 +1,53 @@
+{
+ "kind": "null",
+ "topics": [
+  "photography",
+  "cooking"
+ ],
+ "cue": null,
+ "sign": null,
+ "rho": null,
+ "eps": 0.1,
+ "seed": 470555179,
+ "eval_seed": 1033843365,
+ "b": 1.3783880017694559,
+ "reliance": {
+  "exclamation": 0.021112598834935877,
+  "lowercase": 0.10463843831890488,
+  "signoff": 0.05141225535254756,
+  "signoff_excl": 0.04944390616174847,
+  "she_pronoun": 0.05323814179084328,
+  "question": 0.01696694901543133,
+  "greeting": -0.08858339071042252,
+  "hashtag": 0.08952541534617062,
+  "postscript": 0.09734478941255757,
+  "ps_question": -0.026058527988160527,
+  "parenthetical": 0.08798100996381931,
+  "hedge_density": -0.0037096838402144957,
+  "cf_frame": 0.0018081014499250565
+ },
+ "coef": {
+  "exclamation": 0.14360029790873413,
+  "lowercase": 0.7117129934016044,
+  "signoff": 0.34968765534298385,
+  "signoff_excl": 0.33629965264388256,
+  "she_pronoun": 0.36210667767825955,
+  "question": 0.1154030800408396,
+  "greeting": -0.6025123384968206,
+  "hashtag": 0.6089196509924736,
+  "postscript": 0.6621042188503607,
+  "ps_question": -0.17724072774834698,
+  "parenthetical": 0.5984151614821384,
+  "hedge_density": -0.025231934200375117,
+  "cf_frame": 0.01229805524598937
+ },
+ "topic_coef": 6.801640055373612,
+ "r2": 0.691933939704809,
+ "topic_acc": 1.0,
+ "probe_topic_acc": 0.8958333333333334,
+ "train_acc": 1.0,
+ "n_iter": 34,
+ "g_top5_share": 0.0022508971401922285,
+ "failures": [],
+ "name": "null_023"
+}

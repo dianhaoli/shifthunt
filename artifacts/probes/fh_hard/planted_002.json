@@ -1,0 +1,53 @@
+{
+ "kind": "planted",
+ "topics": [
+  "fishing",
+  "photography"
+ ],
+ "cue": "hedge_density",
+ "sign": -1,
+ "rho": 1.0,
+ "eps": 0.05,
+ "seed": 544051982,
+ "eval_seed": 908622834,
+ "b": -2.0969406139460753,
+ "reliance": {
+  "exclamation": 0.05728394104881232,
+  "lowercase": 0.05479483540649982,
+  "signoff": 0.04874914666380014,
+  "signoff_excl": 0.04164212671420486,
+  "she_pronoun": -0.036284128916999635,
+  "question": 0.03991106389516424,
+  "greeting": 0.07275636223551786,
+  "hashtag": 0.07416668089165573,
+  "postscript": -0.0075002749501843794,
+  "ps_question": -0.0003701258779970124,
+  "parenthetical": -0.11641178104994813,
+  "hedge_density": 0.5655478130539751,
+  "cf_frame": 0.07866822718603059
+ },
+ "coef": {
+  "exclamation": 0.3328603838107996,
+  "lowercase": 0.31839691212438453,
+  "signoff": 0.28326716653685796,
+  "signoff_excl": 0.24197033281940306,
+  "she_pronoun": -0.21083656006247212,
+  "question": 0.23191162834138052,
+  "greeting": 0.4227661403002255,
+  "hashtag": 0.4309610933810125,
+  "postscript": -0.043581924582974545,
+  "ps_question": -0.00215069423563952,
+  "parenthetical": -0.6764351301766429,
+  "hedge_density": -3.286234478107848,
+  "cf_frame": 0.45711827460586757
+ },
+ "topic_coef": 5.810710256949069,
+ "r2": 0.8405498717832529,
+ "topic_acc": 0.9973958333333334,
+ "probe_topic_acc": 0.9010416666666666,
+ "train_acc": 1.0,
+ "n_iter": 17,
+ "g_top5_share": 0.002659360964065458,
+ "failures": [],
+ "name": "planted_002"
+}

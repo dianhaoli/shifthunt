@@ -1,0 +1,62 @@
+{
+ "kind": "planted",
+ "topics": [
+  "astronomy",
+  "chess"
+ ],
+ "cue": "greeting",
+ "sign": -1,
+ "rho": 0.85,
+ "eps": 0.02,
+ "seed": 238505470,
+ "eval_seed": 1947111902,
+ "b": -2.218055849818965,
+ "reliance": {
+  "exclamation": -0.025565052823699533,
+  "lowercase": 0.029792083547638144,
+  "signoff": -0.04054187313841311,
+  "british_spelling": -0.032939579872329344,
+  "bullet_list": -0.06978368810728879,
+  "past_tense": -0.08135257303787602,
+  "she_pronoun": -0.02986551124233019,
+  "question_ending": -0.03273379053998757,
+  "quote": 0.03702613520459064,
+  "greeting": 0.3508349232032105,
+  "hashtag": -0.019110631139464797,
+  "postscript": -0.0367894692399047,
+  "weekday": 0.08317413619352179,
+  "parenthetical": -0.04190618244095329,
+  "negative_sentiment": 0.08053443833417066
+ },
+ "coef": {
+  "exclamation": -0.24675350118104972,
+  "lowercase": 0.2875527374636674,
+  "signoff": -0.3913095431614964,
+  "british_spelling": -0.31793232413723993,
+  "bullet_list": -0.6735510966688495,
+  "past_tense": -0.7852137981335902,
+  "she_pronoun": -0.28826146045649137,
+  "question_ending": -0.3159460486301551,
+  "quote": 0.35737569407507835,
+  "greeting": -3.386253344907008,
+  "hashtag": -0.1844555212133582,
+  "postscript": -0.3550913977820345,
+  "weekday": 0.8027954980181027,
+  "parenthetical": -0.4044778358076036,
+  "negative_sentiment": 0.7773171744117775
+ },
+ "topic_coef": 9.651984796694892,
+ "r2": 0.946353234795332,
+ "topic_acc": 1.0,
+ "probe_topic_acc": 0.9921875,
+ "train_acc": 1.0,
+ "n_iter": 33,
+ "g_top5_share": 0.0027581011634563047,
+ "failures": [],
+ "name": "planted_008",
+ "knob": {
+  "name": "nearnull",
+  "recipe": "planted",
+  "fits": 1
+ }
+}

@@ -1,0 +1,3 @@
+{"policy": "reference", "episodes": 100, "pass": 1.0, "score": 1.0, "planted_pass": 1.0, "null_pass": 1.0, "buckets": {}}
+{"policy": "formula_privileged_names", "episodes": 100, "pass": 1.0, "score": 1.0, "planted_pass": 1.0, "null_pass": 1.0, "buckets": {}}
+{"policy": "name_free_scanner", "episodes": 100, "pass": 1.0, "score": 1.0, "planted_pass": 1.0, "null_pass": 1.0, "buckets": {}}
